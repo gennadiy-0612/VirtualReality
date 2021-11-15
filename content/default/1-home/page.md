@@ -76,11 +76,11 @@ Title: Home
 <p class="colorW">go to the page</p>
 </div>
 <div class="outSlideSet">
-<img alt="Alt" src="./media/images/img/inSlideImgBig1.png">
-<img alt="Alt" src="./media/images/img/inSlideImgBig2.png">
-<img alt="Alt" src="./media/images/img/inSlideImgBig3.png">
-<img alt="Alt" src="./media/images/img/inSlideImgBig4.png">
-<img alt="Alt" src="./media/images/img/inSlideImgBig5.png">
+<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" src="./media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig4.png">
+<img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig5.png">
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg" src="./media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg" src="./media/images/img/inSlideImg2.png">
