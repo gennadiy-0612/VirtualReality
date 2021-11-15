@@ -117,6 +117,7 @@ a {
     margin: 12px 0;
     letter-spacing: 2.3px;
     max-width: 240px;
+    background-image: url("./img/sprite.svg");
 }
 
 .virtual {
