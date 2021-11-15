@@ -7,6 +7,10 @@
     display: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -19,10 +23,16 @@ p {
 
 ol, ul {
     padding: 0;
+    margin: 0;
 }
 
 li {
     list-style-type: none;
+}
+
+.a1440 {
+    max-width: 1440px;
+    margin: auto;
 }
 
 .colorW {
@@ -33,12 +43,24 @@ li {
     font-family: "HeliosExtC", sans-serif;
 }
 
+.Ag18 {
+    font: normal 400 18px/22px "HeliosExtC", sans-serif;
+}
+
 .Ag24 {
     font: normal normal 24px/30px "HeliosExtC", sans-serif;
 }
 
+.Ag48 {
+    font: normal 400 48px/60px "HeliosExtC", sans-serif;
+}
+
 a {
     text-decoration: none;
+}
+
+.upperText {
+    text-transform: uppercase;
 }
 
 .backBlack {
@@ -74,8 +96,8 @@ a {
 .logoA {
     width: 224px;
     height: 51px;
-    /*background-image: url("img/logo.svg");*/
-    background-image: url("img/sprite.svg#logo");
+    background: url("img/logo.svg") center center no-repeat;
+    background-size: contain;
 }
 
 .languageSet {
@@ -105,11 +127,34 @@ a {
     background-color: #FFFFFF;
 }
 
+.navy {
+    width: 38px;
+    height: 25px;
+    background: url("img/menu.svg") 0 0 no-repeat;
+    background-size: contain;
+}
+
 .mainTitle {
     display: flex;
     flex-direction: column;
     max-width: 1270px;
     margin: auto;
+}
+
+.virtual-word {
+    width: 100%;
+    height: 108px;
+    background: url("/img/Virtual.svg") left center no-repeat;
+    background-size: contain;
+    margin: 12px 0;
+}
+
+.reality-word {
+    width: 100%;
+    height: 105px;
+    background: url("img/Reality.svg") right center no-repeat;
+    background-size: contain;
+    margin: 16px 0;
 }
 
 .frame {
@@ -121,7 +166,7 @@ a {
 }
 
 .opportunity {
-    margin: 12px 0;
+    margin: 17px 0;
     letter-spacing: 2.3px;
     max-width: 240px;
 }
@@ -138,7 +183,7 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 33px 0;
+    padding: 21px 0;
 }
 
 .playPanel {
@@ -157,7 +202,7 @@ a {
     height: 120px;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
-    padding: 30px 25px 30px 35px;
+    padding: 30px 20px 30px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,4 +248,28 @@ a {
 
 .R {
     margin: 0;
+}
+
+.scroll {
+    width: 32px;
+    height: 50px;
+    background: url("/img/mouse.svg") right center no-repeat;
+    background-size: contain;
+    margin: 16px 0;
+}
+
+/* Screen 2*/
+.whatDid {
+    max-width: 288px;
+    position: relative;
+}
+
+.doLinks {
+    display: flex;
+}
+
+.whatDidWe {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

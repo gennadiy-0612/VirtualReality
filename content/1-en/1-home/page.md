@@ -5,7 +5,7 @@ Language: en
 <div class="firstScreen">
     <header class="topMenu">
         <div class="mainLinks">
-            <a class="logoA" href="/"></a>
+            <a title="title" class="logoA" href="/"></a>
             <ul class="languageSet">
                 <li class="language"><a class="languageText HeliosExtC active" href="/en/">EN</a></li>
                 <li class="language"><a class="languageText HeliosExtC" href="/ru/">RU</a></li>
@@ -19,8 +19,8 @@ Language: en
     <section class="mainTitle">
         <div class="frame">
             <h2 class="opportunity colorW Ag24">Unlock new opportunities with</h2>
-            <img alt="Demo" src="./media/images/img/Virtual.svg">
-            <img alt="Demo" src="./media/images/img/Reality.svg">
+            <div class="virtual-word"></div>
+            <div class="reality-word"></div>
         </div>
     </section>
     <div class="video">

@@ -20,8 +20,8 @@ Language: ru
     <section class="mainTitle">
         <div class="frame">
             <h2 class="opportunity colorW Ag24">Открыть новые возможности с</h2>
-            <img alt="Demo" src="./media/images/img/Virtual.svg">
-            <img alt="Demo" src="./media/images/img/Reality.svg">
+            <div class="virtual-word"></div>
+            <div class="reality-word"></div>
         </div>
     </section>
     <div class="video">

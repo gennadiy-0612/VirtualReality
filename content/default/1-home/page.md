@@ -12,15 +12,13 @@ Title: Home
                 <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
             </ul>
         </div>
-        <nav class="navy">
-           <img alt="Demo" src="./media/images/img/menu.svg">
-        </nav>
+        <a href="#Screen2" title="Demo" class="navy"></a>
     </header>
     <section class="mainTitle">
         <div class="frame">
             <h2 class="opportunity colorW Ag24">Unlock new opportunities with</h2>
-            <img alt="Demo" src="./media/images/img/Virtual.svg">
-            <img alt="Demo" src="./media/images/img/Reality.svg">
+            <div class="virtual-word"></div>
+            <div class="reality-word"></div>
         </div>
     </section>
     <div class="video">
@@ -32,8 +30,26 @@ Title: Home
         </div>
         <img alt="Demo" class="topPoster" src="./media/images/img/topVideoPoster.png">
     </div>
-</div>
+<div class="scroll"></div>
 <div class="VR">
     <img alt="Demo" src="./media/images/img/V.svg">
     <img alt="Demo" src="./media/images/img/R.svg">
 </div>
+</div>
+<section id="Screen2" class="do a1440">
+<div class="doInfo">
+<h2 class="whatDo upperText Ag48 colorW">What do we do?</h2>
+<ul class="doLinks">
+<li class=""><a class="colorW Ag18" alt="#ImmersiveTrainings">Immersive Trainings</a></li>
+<li class=""><a class="colorW Ag18" alt="#ImmersiveTrainings">Realistic Simulations</a></li>
+<li class=""><a class="colorW Ag18" alt="#ImmersiveTrainings">Aptitude Testing</a></li>
+</ul>
+</div>
+<div class="doImages">
+<ul class="whatDid">
+<li class="whatDidWe"><img alt="Demo" src="./media/images/img/WhatDoWeDo1.png"></li>
+<li class="whatDidWe"><img alt="Demo" src="./media/images/img/WhatDoWeDo2.png"></li>
+<li class="whatDidWe"><img alt="Demo" src="./media/images/img/WhatDoWeDo3.png"></li>
+</ul>
+</div>
+</section>
