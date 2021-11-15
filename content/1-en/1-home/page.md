@@ -32,7 +32,11 @@ Language: en
         </div>
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
-        <img alt="Demo" class="topPoster" src="./media/images/img/topVideoPoster.png">
+        <picture>
+         <source srcset="./media/images/img/topVideoPoster.webp" type="image/webp">
+         <source srcset="./media/images/img/topVideoPoster.png" type="image/jpeg"> 
+         <img alt="Demo" class="topPoster" src="./media/images/img/topVideoPoster.png">
+        </picture>
     </div>
 </div>
 <div class="VR">
