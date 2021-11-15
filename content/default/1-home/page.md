@@ -18,7 +18,7 @@ Title: Home
     </header>
     <section class="mainTitle">
         <div class="frame">
-            <p class="opportunity colorW Ag24">Unlock new opportunities with</p>
+            <h1 class="opportunity colorW Ag24">Unlock new opportunities with</h1>
             <img alt="Demo" src="./media/images/img/Virtual.svg">
             <img alt="Demo" src="./media/images/img/Reality.svg">
         </div>
