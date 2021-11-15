@@ -66,14 +66,14 @@ Title: Home
 <div class="outSlide">
 <div class="inSlide">
 <div class="inSlideText">
-<h2 class="outSlideH2">safety</h2>
+<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText">safety</h2>
 <ul class="outSlideUl">
-<li class="outSlideLi">Interactive health and safety immersive training </li>
-<li class="outSlideLi">Simulation of high risk, hazardous environments without any risk </li>
-<li class="outSlideLi">Replica of real-life locations, working tasks and equipment </li>
-<li class="outSlideLi">Multi-industry assignments Education and examination modes ...</li>
+<li class="outSlideLi colorW Ag18 lineHeight40">Interactive health and safety immersive training </li>
+<li class="outSlideLi colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
+<li class="outSlideLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
+<li class="outSlideLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
 </ul>
-<p>go to the page</p>
+<p class="colorW">go to the page</p>
 </div>
 <div class="outSlideSet">
 <img alt="Alt" src="">
