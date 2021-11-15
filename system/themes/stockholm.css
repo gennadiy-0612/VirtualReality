@@ -71,6 +71,13 @@ a {
     flex: 1 1 auto;
 }
 
+.logoA {
+    width: 224px;
+    height: 51px;
+    /*background-image: url("img/logo.svg");*/
+    background-image: url("img/sprite.svg#logo");
+}
+
 .languageSet {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +124,6 @@ a {
     margin: 12px 0;
     letter-spacing: 2.3px;
     max-width: 240px;
-    background-image: url("sprite.svg");
 }
 
 .virtual {

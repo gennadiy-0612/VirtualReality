@@ -6,7 +6,6 @@ Language: ru
     <header class="topMenu">
         <div class="mainLinks">
             <a class="logoA" href=/">
-            <img alt="alt" src="./media/images/img/logo.svg">
             </a>
             <ul class="languageSet">
                 <li class="language"><a class="languageText HeliosExtC" href="/en/">EN</a></li>
