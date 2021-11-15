@@ -30,7 +30,7 @@ Title: Home
         </div>
         <img alt="Demo" class="topPoster" src="./media/images/img/topVideoPoster.png">
     </div>
-<div class="scroll"></div>
+<div class="scroll"><a title="title" class="moveScreen" href="#Screen2"></a></div>
 <div class="VR">
     <img alt="Demo" src="./media/images/img/V.svg">
     <img alt="Demo" src="./media/images/img/R.svg">
@@ -38,18 +38,48 @@ Title: Home
 </div>
 <section id="Screen2" class="do a1440">
 <div class="doInfo">
+<div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW">What do we do?</h2>
+</div>
 <ul class="doLinks">
-<li class=""><a class="colorW Ag18" alt="#ImmersiveTrainings">Immersive Trainings</a></li>
-<li class=""><a class="colorW Ag18" alt="#ImmersiveTrainings">Realistic Simulations</a></li>
-<li class=""><a class="colorW Ag18" alt="#ImmersiveTrainings">Aptitude Testing</a></li>
+<li class="doli"><a href="#whatDid1" class="Ag18 doA doLinksActive" alt="#ImmersiveTrainings">Immersive Trainings</a></li>
+<li class="doli"><a href="#whatDid2" class="colorGrey doA Ag18" alt="#ImmersiveTrainings">Realistic Simulations</a></li>
+<li class="doli"><a href="#whatDid3" class="colorGrey doA Ag18" alt="#ImmersiveTrainings">Aptitude Testing</a></li>
 </ul>
 </div>
 <div class="doImages">
 <ul class="whatDid">
-<li class="whatDidWe"><img alt="Demo" src="./media/images/img/WhatDoWeDo1.png"></li>
-<li class="whatDidWe"><img alt="Demo" src="./media/images/img/WhatDoWeDo2.png"></li>
-<li class="whatDidWe"><img alt="Demo" src="./media/images/img/WhatDoWeDo3.png"></li>
+<li class="whatDidWe" id="whatDid1"><img alt="Demo" src="./media/images/img/WhatDoWeDo1.png"></li>
+<li class="whatDidWe" id="whatDid2"><img alt="Demo" src="./media/images/img/WhatDoWeDo2.png"></li>
+<li class="whatDidWe" id="whatDid3"><img alt="Demo" src="./media/images/img/WhatDoWeDo3.png"></li>
 </ul>
+</div>
+</section>
+<section class="screen3 a1440">
+<div class="doInfoH2">
+<h2 class="whatDo upperText Ag48 colorW">Our projects</h2>
+</div>
+<ul class="doLinks doLinks-project">
+<li class="doli doli-projects"><a href="#whatDid1" class="Ag24 doA doA-project doLinksActive" alt="#ImmersiveTrainings">01. safety</a></li>
+<li class="doli doli-projects"><a href="#whatDid2" class="colorGrey doA doA-project Ag24" alt="#ImmersiveTrainings">02. defense</a></li>
+</ul>
+<div class="outSlide">
+<div class="inSlide">
+<div class="inSlideText">
+<h2 class="outSlideH2">safety</h2>
+<ul class="outSlideUl">
+<li class="outSlideLi">Interactive health and safety immersive training </li>
+<li class="outSlideLi">Simulation of high risk, hazardous environments without any risk </li>
+<li class="outSlideLi">Replica of real-life locations, working tasks and equipment </li>
+<li class="outSlideLi">Multi-industry assignments Education and examination modes ...</li>
+</ul>
+<p>go to the page</p>
+</div>
+<div class="outSlideSet">
+<img alt="Alt" src="">
+<div class="outSlideImages">
+<img alt="alt"  class="outSlideImg src="">
+</div>
+</div>
 </div>
 </section>

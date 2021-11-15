@@ -21,7 +21,7 @@ p {
     margin: 0;
 }
 
-ol, ul {
+ol, ul, h1, h2 {
     padding: 0;
     margin: 0;
 }
@@ -39,6 +39,10 @@ li {
     color: #FFFFFF;
 }
 
+.colorGrey {
+    color: #707070;
+}
+
 .HeliosExtC {
     font-family: "HeliosExtC", sans-serif;
 }
@@ -49,6 +53,10 @@ li {
 
 .Ag24 {
     font: normal normal 24px/30px "HeliosExtC", sans-serif;
+}
+
+.Ag36 {
+    font: normal normal 36px/42px "HeliosExtC", sans-serif;
 }
 
 .Ag48 {
@@ -67,12 +75,15 @@ a {
     background-color: black;
 }
 
+.page, .content, .main, .firstScreen {
+    width: 100%;
+}
+
 .backWhite {
     background-color: #FFFFFF;
 }
 
 .firstScreen {
-    padding: 0 20px;
     position: relative;
 }
 
@@ -159,7 +170,7 @@ a {
 
 .frame {
     margin: 0 0 0 auto;
-    max-width: 1000px;
+    max-width: 75%;
     display: flex;
     flex-direction: column;
     min-width: 994px;
@@ -251,25 +262,102 @@ a {
 }
 
 .scroll {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.moveScreen {
     width: 32px;
     height: 50px;
-    background: url("/img/mouse.svg") right center no-repeat;
+    background: url("img/mouse.svg") right center no-repeat;
     background-size: contain;
-    margin: 16px 0;
+    margin: 52px auto 44px 0;
+    display: block;
 }
 
 /* Screen 2*/
+.doInfoH2 {
+    flex: 1 1 auto;
+}
+
+.whatDo {
+    max-width: 270px;
+    flex: 1 1 auto;
+    letter-spacing: 4.6px;
+}
+
+.doInfo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 20px 0;
+}
+
 .whatDid {
-    max-width: 288px;
     position: relative;
 }
 
 .doLinks {
     display: flex;
+    flex: 4.9 1 auto;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.doli {
+    padding: 0 0;
+    width: 100%;
+}
+
+.doA {
+    width: 100%;
+    display: block;
+    padding: 14px 0;
+    letter-spacing: .7px;
+    margin: 0 0 16px;
+    border-bottom: 1px solid #707070;
+    text-transform: uppercase;
+}
+
+.doLinksActive {
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .whatDidWe {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
+
+.whatDidWe:first-child {
+    display: block;
+}
+
+.whatDidWe:first-child ~ .whatDidWe {
+    display: none;
+}
+
+.whatDidWe:target {
+    display: block;
+}
+
+.doImages {
+    margin: 26px auto 89px;
+}
+
+.screen3 {
+
+}
+
+.doLinks-project {
+    padding: 71px 0 48px;
+    justify-content: flex-start;
+}
+
+.doli-projects {
+    flex: 1 1 auto;
+    max-width: 360px;
+}
+
+.doA-project {
+    border-bottom-width: 0;
+    letter-spacing: 1.9px;
+}
+
