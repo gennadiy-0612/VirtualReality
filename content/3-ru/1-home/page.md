@@ -19,7 +19,7 @@ Language: ru
     </header>
     <section class="mainTitle">
         <div class="frame">
-            <h1 class="opportunity colorW Ag24">Открыть новые возможности с</h1>
+            <p class="opportunity colorW Ag24">Открыть новые возможности с</p>
             <img alt="Demo" src="./media/images/img/Virtual.svg">
             <img alt="Demo" src="./media/images/img/Reality.svg">
         </div>
