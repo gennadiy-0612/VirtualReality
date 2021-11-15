@@ -136,13 +136,3 @@
         var u = n(1), o = r(u), c = n(2), l = r(c), g = n(4), i = r(g)
     }])
 });
-if (((navigator.language || navigator.userLanguage) === 'en') && (location.href === 'https://p.cx.ua/virtual/')) {
-    window.location.replace('https://p.cx.ua/virtual/en/')
-}
-if (((navigator.language || navigator.userLanguage) === 'ru') && (location.href === 'https://p.cx.ua/virtual/')) {
-    window.location.replace('https://p.cx.ua/virtual/ru/')
-}
-if (((navigator.language || navigator.userLanguage) === 'uk') && (location.href === 'https://p.cx.ua/virtual/')) {
-    window.location.replace('https://p.cx.ua/virtual/ru/')
-}
-console.log(navigator.language + ' ' + navigator.userLanguage);

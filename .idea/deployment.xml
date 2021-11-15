@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" persistUploadOnCheckin="false" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" uploadOnCheckin="456e6e88-b142-4ea2-a383-47a112febeca" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="pcxua">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/www/p.cx.ua/vr" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/www/p.cx.ua/vr/system/extensions/yellow-system.ini" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="pcxua" />
   </component>
 </project>
