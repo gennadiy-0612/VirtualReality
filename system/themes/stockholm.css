@@ -672,13 +672,14 @@ a {
 }
 
 .stepsBefore::before {
-    osition: absolute;
+    position: absolute;
     top: -51px;
     left: 0;
     counter-increment: section;
     content: counter(section);
     color: #A64DFF;
-    font-size: 50px;
+    font: normal 400 18px/30px "HeliosExtC", sans-serif;
+
 }
 
 .one {
