@@ -88,6 +88,12 @@ li {
     line-height: 44px;
 }
 
+/*Geometry*/
+.mw235 {
+    max-width: 235px;
+}
+
+/*Geometry*/
 a {
     text-decoration: none;
 }
@@ -400,4 +406,43 @@ a {
 .digits {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1370px;
+    padding: 49px 0;
+}
+
+.digitsDigit {
+    letter-spacing: 8.1px;
+}
+
+.digitsLi {
+    flex: 1 1 auto;
+}
+
+.digits1 {
+    flex: 1 1 250px;
+}
+
+.digits2 {
+    flex: 1 1 250px;
+}
+
+.digits3 {
+    flex: 1 1 250px;
+}
+
+.digits4 {
+    flex: 1 1 250px;
+}
+
+.digitsLiUp {
+    margin-top: -22px;
+}
+
+.digitsText {
+    letter-spacing: 1.8px;
+}
+
+.faster {
+    max-width: 200px;
 }

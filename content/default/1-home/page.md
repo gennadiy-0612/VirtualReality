@@ -95,22 +95,22 @@ Title: Home
 <section id="S4" class="doInfoH2 a1440">
 <h2 class="whatDo upperText Ag48 colorW">why vr?</h2>
 <ul class="digits">
-<li class="digitsLi">
+<li class="digitsLi digits1">
 <p class="digitsDigit Ag72 colorViolet">4x</p>
-<p class="digitsText Ag18 lineHeight24 colorW">faster to train than in the classroom</p>
+<p class="digitsText mw235 Ag18 lineHeight24 colorW faster">faster to train than in the classroom</p>
 </li>
-<li class="digitsLi">
+<li class="digitsLi digits2">
 <p class="digitsDigit Ag72 colorViolet">275%</p>
-<p class="digitsText Ag18 lineHeight24 colorW">more confident to apply skills learned after training</p>
+<p class="digitsText mw235 Ag18 lineHeight24 colorW">more confident to apply skills learned after training</p>
 </li>
-<li class="digitsLi">
+<li class="digitsLi digits3">
 <p class="digitsDigit Ag72 colorViolet">3.75x</p>
-<p class="digitsText Ag18 lineHeight24 colorW">more emotionally connected to content than classroom learners</p>
+<p class="digitsText mw235 Ag18 lineHeight24 colorW">more emotionally connected to content than classroom learners</p>
 </li>
-<li class="digitsLi">
-<p class="digitsText Ag18 lineHeight24 colorW">up to</p>
+<li class="digitsLi digits4 digitsLiUp">
+<p class="digitsText mw235 Ag18 lineHeight24 colorW">up to</p>
 <p class="digitsDigit Ag72 colorViolet">90%</p>
-<p class=" digitsText Ag18 lineHeight24 colorW">knowledge retention</p>
+<p class="digitsText mw235 Ag18 lineHeight24 colorW">knowledge retention</p>
 </li>
 </ul>
 </section>
