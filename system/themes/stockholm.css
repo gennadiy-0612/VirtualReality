@@ -649,11 +649,11 @@ a {
 /*screen 6*/
 .approach {
     display: flex;
+    border-top: 1px solid #FFF;
 }
 
 .approachOl {
-    margin-top: 45px;
-    border-top: 1px solid #FFF;
+    margin-top: 18px;
     padding-top: 61px;
     flex: 1 0 auto;
 }
@@ -667,9 +667,14 @@ a {
 .steps {
     flex: 46 1 auto;
     margin: 40px 0;
-    background: url("img/appraochSteps.svg") 14.4% 95.5% no-repeat;
-    background-size: 74.7%;
+    background: url("img/appraochSteps.svg") 19.5% 97.4% no-repeat;
+    background-size: 73.8%;
     counter-reset: section;
+}
+
+.stepsP {
+    line-height: 29px;
+    letter-spacing: 1.7px;
 }
 
 .stepsBefore {
@@ -678,32 +683,33 @@ a {
 
 .stepsBefore::before {
     position: absolute;
-    top: -51px;
+    top: -29px;
     left: 0;
     counter-increment: section;
-    content: counter(section);
+    content: "0" counter(section);
     color: #A64DFF;
     font: normal 400 18px/30px "HeliosExtC", sans-serif;
+    letter-spacing: 3px;
 }
 
 .one {
-    margin: 47.4% auto auto;
+    margin: 47.4% auto auto 1.7%;
 }
 
 .two {
-    margin: -29% auto auto 33.7%;
+    margin: -33.5% auto auto 34.7%;
 }
 
 .three {
-    margin: 11% auto auto 66.7%;
+    margin: 9% auto auto 67.1%;
 }
 
 .four {
-    margin: 20.1% auto auto 66.7%;
+    margin: 19% auto auto 67.1%;
 }
 
 .five {
-    margin: 4% auto auto 34%;
+    margin: 4% auto auto 34.6%;
 }
 
 .approachH2 {
@@ -719,6 +725,11 @@ a {
 .partnersSet {
     display: flex;
     flex-wrap: wrap;
+    padding: 188px 0 0;
+}
+
+.partnersSetText {
+    margin: 0 0 50px 20px;
 }
 
 .partnersSetH2 {

@@ -170,24 +170,33 @@ Title: Home
 </div>
 <div class="stepPartners">
 <ol class="steps">
-<li class="one stepsBefore"><p class="Ag18 colorGrey7">Understanding of your needs → </p>
-<p class="Ag18 colorW">Defined challenge</p></li>
-<li class="two stepsBefore"><p class="Ag18 colorGrey7">Solution options proposal → </p>
-<p class="Ag18 colorW">Requirements specification </p></li>
-<li class="three stepsBefore"><p class="Ag18 colorGrey7">Cost & time estimation planning → </p>
-<p class="Ag18 colorW">Delivery planning</p></li>
-<li class="four stepsBefore"><p class="Ag18 colorGrey7">Development with regular reviews → </p>
-<p class="Ag18 colorW">Product versions </p></li>
-<li class="five stepsBefore"><p class="Ag18 colorGrey7">Final review & evaluation →</p>
-<p class="Ag18 colorW">Final product & support</p></li>
+<li class="one stepsBefore">
+<p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs → </p>
+<p class="Ag18 stepsP colorW">Defined challenge</p></li>
+<li class="two stepsBefore">
+<p class="Ag18 stepsP colorGrey7">Solution options proposal → </p>
+<p class="Ag18 stepsP colorW">Requirements specification </p></li>
+<li class="three stepsBefore">
+<p class="Ag18 stepsP colorGrey7">Cost & time estimation planning → </p>
+<p class="Ag18 stepsP colorW">Delivery planning</p></li>
+<li class="four stepsBefore">
+<p class="Ag18 stepsP colorGrey7">Development with regular reviews → </p>
+<p class="Ag18 stepsP colorW">Product versions </p></li>
+<li class="five stepsBefore">
+<p class="Ag18 stepsP colorGrey7">Final review & evaluation →</p>
+<p class="Ag18 stepsP colorW">Final product & support</p></li>
 </ol>
 <div class="partnersSet">
-<h2 class="partnersSetH2 whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
+<div class="partnersSetH2">
+<h2 class="partnersSetText whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
+</div>
+<div class="partnersSetIcons">
 <p class="partner partner1"></p>
 <p class="partner partner2"></p>
 <p class="partner partner3"></p>
 <p class="partner partner4"></p>
 <p class="partner partner5"></p>
+</div>
 </div>
 </div>
 </div>
@@ -210,4 +219,3 @@ Title: Home
 <address class="address Ag18 colorGrey8">VR.Consulting Sp. z o.o., NIP: 7011030959
 Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
 </footer>
-</section>
