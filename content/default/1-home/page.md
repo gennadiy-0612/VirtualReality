@@ -204,11 +204,13 @@ Title: Home
 <div class="partners20H2 partnersSetH2">
 <h2 class="whatDo upperText Ag48 colorW">awards</h2>
 </div>
-<p class="partner partner11"></p>
-<p class="partner partner12"></p>
-<p class="partner partner13"></p>
-<p class="partner partner14"></p>
-<p class="partner partner15"></p>
+<div class="partnersSetIcons">
+<p class="partner partner1"></p>
+<p class="partner partner2"></p>
+<p class="partner partner3"></p>
+<p class="partner partner4"></p>
+<p class="partner partner5"></p>
+</div>
 </div>
 </section>
 <footer id="foot" class="foot">
