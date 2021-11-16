@@ -667,7 +667,7 @@ a {
 .steps {
     flex: 46 1 auto;
     margin: 40px 0;
-    background: url("img/appraochSteps.svg") 14.4% 26.5% no-repeat;
+    background: url("img/appraochSteps.svg") 14.4% 95.5% no-repeat;
     background-size: 74.7%;
     counter-reset: section;
 }
