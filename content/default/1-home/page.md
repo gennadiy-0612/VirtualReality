@@ -168,6 +168,7 @@ Title: Home
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
 <img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
 </div>
+<div class="stepPartners">
 <ol class="steps">
 <li class="one stepsBefore"><p class="Ag18 colorGrey7">Understanding of your needs → </p>
 <p class="Ag18 colorW">Defined challenge</p></li>
@@ -180,10 +181,8 @@ Title: Home
 <li class="five stepsBefore"><p class="Ag18 colorGrey7">Final review & evaluation →</p>
 <p class="Ag18 colorW">Final product & support</p></li>
 </ol>
-</div>
-<div>
 <div class="partnersSet">
-<h2 class="whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
+<h2 class="partnersSetH2 whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
 <p class="partner partner1"></p>
 <p class="partner partner2"></p>
 <p class="partner partner3"></p>
@@ -191,14 +190,16 @@ Title: Home
 <p class="partner partner5"></p>
 </div>
 </div>
-<div>
-<h2 class="whatDo upperText Ag48 colorW">awards</h2>
-<p class="partner11"></p>
-<p class="partner12"></p>
-<p class="partner13"></p>
-<p class="partner14"></p>
-<p class="partner15"></p>
 </div>
+<div class="partners20">
+<h2 class="whatDo upperText Ag48 colorW">awards</h2>
+<p class="partner partner11"></p>
+<p class="partner partner12"></p>
+<p class="partner partner13"></p>
+<p class="partner partner14"></p>
+<p class="partner partner15"></p>
+</div>
+</section>
 <footer id="foot" class="foot">
 <a class="logoA" href="/"></a>
 <ul class="contacts">

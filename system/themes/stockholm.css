@@ -649,7 +649,6 @@ a {
 /*screen 6*/
 .approach {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .approachOl {
@@ -657,6 +656,12 @@ a {
     border-top: 1px solid #FFF;
     padding-top: 61px;
     flex: 1 0 auto;
+}
+
+.stepPartners {
+    flex: 46 1 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .steps {
@@ -679,7 +684,6 @@ a {
     content: counter(section);
     color: #A64DFF;
     font: normal 400 18px/30px "HeliosExtC", sans-serif;
-
 }
 
 .one {
@@ -710,11 +714,16 @@ a {
 .approachH3 {
     max-width: 230px;
     margin: 38px 0 33px;
-
 }
 
 .partnersSet {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.partnersSetH2 {
+    flex: 1 1 100%;
+    max-width: initial;
 }
 
 .partner {
@@ -740,6 +749,30 @@ a {
 
 .partner5 {
     background: url("img/partners.svg") -930px 0 no-repeat;
+}
+
+.partner11 {
+    background: url("img/partners2.svg") 10px 0 no-repeat;
+}
+
+.partner12 {
+    background: url("img/partners2.svg") -240px 0 no-repeat;
+}
+
+.partner13 {
+    background: url("img/partners2.svg") -470px 0 no-repeat;
+}
+
+.partner14 {
+    background: url("img/partners2.svg") -710px 0 no-repeat;
+}
+
+.partner15 {
+    background: url("img/partners2.svg") -930px 0 no-repeat;
+}
+
+.partners20 {
+    display: flex;
 }
 
 /*screen 6*/
