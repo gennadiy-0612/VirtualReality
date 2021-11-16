@@ -318,9 +318,11 @@ a {
 .doInfoH2 {
     flex: 1 1 auto;
 }
-.WhyVR{
+
+.Compare {
     border-bottom: 1px solid #FFFFFF;
 }
+
 .whatDo {
     max-width: 270px;
     flex: 1 1 auto;
@@ -589,7 +591,8 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 35px;
-    padding: 30px 0;
+    padding-top: 30px;
+    margin-bottom: 30px;
     background: url("img/VRvision.png") 38% 60% no-repeat;
     background-size: 71%;
 }

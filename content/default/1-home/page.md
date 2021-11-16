@@ -163,9 +163,11 @@ Title: Home
 </div>
 </section>
 <section id="S6" class="a1440 approach">
+<div class="approachOl">
 <h2 class="whatDo upperText Ag48 colorW">Our approach?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Phases and output:</h3>
 <img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+</div>
 <dl>
 <dt>Understanding of your needs → </dt>
 <dd>Defined challenge</dd>
@@ -179,7 +181,25 @@ Title: Home
 <dd>Final product & suppor</dd>
 </dl>
 <div>
+<div>
+<div>
 <h2 class="whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
-<h2 class="whatDo upperText Ag48 colorW">awards</h2>
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
 </div>
+</div>
+<div>
+<h2 class="whatDo upperText Ag48 colorW">awards</h2>
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+</div>
+</div>
+<footer class="foot">
+</footer>
 </section>
