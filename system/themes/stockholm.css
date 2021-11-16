@@ -31,7 +31,7 @@ li {
 }
 
 .a1440 {
-    max-width: 1480px;
+    max-width: 1440px;
     margin: auto;
     padding: 0 20px;
 }
@@ -44,20 +44,20 @@ li {
     color: #707070;
 }
 
+.colorViolet {
+    color: #A64DFF;
+}
+
+.w100percents {
+    width: 100%;
+}
+
 .HeliosExtC {
     font-family: "HeliosExtC", sans-serif;
 }
 
 .Ag18 {
     font: normal 400 18px/22px "HeliosExtC", sans-serif;
-}
-
-.lineHeight40 {
-    line-height: 40px;
-}
-
-.lineHeight44 {
-    line-height: 44px;
 }
 
 .Ag24 {
@@ -70,6 +70,22 @@ li {
 
 .Ag48 {
     font: normal 400 48px/60px "HeliosExtC", sans-serif;
+}
+
+.Ag72 {
+    font: normal 400 72px/86px "HeliosExtC", sans-serif;
+}
+
+.lineHeight24 {
+    line-height: 24px;
+}
+
+.lineHeight40 {
+    line-height: 40px;
+}
+
+.lineHeight44 {
+    line-height: 44px;
 }
 
 a {
@@ -99,7 +115,6 @@ a {
 .topMenu {
     display: flex;
     margin: 50px auto;
-    max-width: 1440px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -159,6 +174,7 @@ a {
     flex-direction: column;
     max-width: 1270px;
     margin: auto;
+    padding: 0 20px;
 }
 
 .virtual-word {
@@ -203,7 +219,8 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 21px 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 
 .playPanel {
@@ -268,11 +285,6 @@ a {
 
 .R {
     margin: 0;
-}
-
-.scroll {
-    max-width: 1440px;
-    margin: auto;
 }
 
 .moveScreen {
@@ -381,4 +393,11 @@ a {
 
 .outSlideBigImgAct {
     display: block;
+}
+
+/*Screen 4*/
+
+.digits {
+    display: flex;
+    flex-wrap: wrap;
 }

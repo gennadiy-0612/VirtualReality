@@ -23,7 +23,7 @@ Language: en
             <div class="reality-word"></div>
         </div>
     </section>
-    <div class="video">
+    <div class="video a1440">
         <div class="playPanel">
         <div class="play">
           <img alt="Demo" src="./media/images/img/playButton.svg">

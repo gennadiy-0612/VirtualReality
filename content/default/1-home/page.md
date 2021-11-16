@@ -2,7 +2,7 @@
 Title: Home
 ---
 <div class="firstScreen">
-    <header class="topMenu">
+    <header class="topMenu a1440">
         <div class="mainLinks">
             <a class="logoA" href="/">
             </a>
@@ -21,7 +21,7 @@ Title: Home
             <div class="reality-word"></div>
         </div>
     </section>
-    <div class="video">
+    <div class="video a1440">
         <div class="playPanel">
         <div class="play">
           <img alt="Demo" src="./media/images/img/playButton.svg">
@@ -30,7 +30,7 @@ Title: Home
         </div>
         <img alt="Demo" class="topPoster" src="./media/images/img/topVideoPoster.png">
     </div>
-<div class="scroll"><a title="title" class="moveScreen" href="#Screen2"></a></div>
+<div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
 <div class="VR">
     <img alt="Demo" src="./media/images/img/V.svg">
     <img alt="Demo" src="./media/images/img/R.svg">
@@ -49,9 +49,9 @@ Title: Home
 </div>
 <div class="doImages">
 <ul class="whatDid">
-<li class="whatDidWe" id="whatDid1"><img alt="Demo" src="./media/images/img/WhatDoWeDo1.png"></li>
-<li class="whatDidWe" id="whatDid2"><img alt="Demo" src="./media/images/img/WhatDoWeDo2.png"></li>
-<li class="whatDidWe" id="whatDid3"><img alt="Demo" src="./media/images/img/WhatDoWeDo3.png"></li>
+<li class="whatDidWe" id="whatDid1"><img class="w100percents" alt="Demo" src="./media/images/img/WhatDoWeDo1.png"></li>
+<li class="whatDidWe" id="whatDid2"><img class="w100percents" alt="Demo" src="./media/images/img/WhatDoWeDo2.png"></li>
+<li class="whatDidWe" id="whatDid3"><img class="w100percents" alt="Demo" src="./media/images/img/WhatDoWeDo3.png"></li>
 </ul>
 </div>
 </section>
@@ -92,6 +92,25 @@ Title: Home
 </div>
 </div>
 </section>
-<section class="VR">
+<section id="S4" class="doInfoH2 a1440">
 <h2 class="whatDo upperText Ag48 colorW">why vr?</h2>
+<ul class="digits">
+<li class="digitsLi">
+<p class="digitsDigit Ag72 colorViolet">4x</p>
+<p class="digitsText Ag18 lineHeight24 colorW">faster to train than in the classroom</p>
+</li>
+<li class="digitsLi">
+<p class="digitsDigit Ag72 colorViolet">275%</p>
+<p class="digitsText Ag18 lineHeight24 colorW">more confident to apply skills learned after training</p>
+</li>
+<li class="digitsLi">
+<p class="digitsDigit Ag72 colorViolet">3.75x</p>
+<p class="digitsText Ag18 lineHeight24 colorW">more emotionally connected to content than classroom learners</p>
+</li>
+<li class="digitsLi">
+<p class="digitsText Ag18 lineHeight24 colorW">up to</p>
+<p class="digitsDigit Ag72 colorViolet">90%</p>
+<p class=" digitsText Ag18 lineHeight24 colorW">knowledge retention</p>
+</li>
+</ul>
 </section>
