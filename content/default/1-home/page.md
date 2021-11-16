@@ -176,7 +176,7 @@ Title: Home
 <p class="Ag18 colorW">Delivery planning</p></li>
 <li class="four stepsBefore"><p class="Ag18 colorGrey7">Development with regular reviews → </p>
 <p class="Ag18 colorW">Product versions </p></li>
-<li class="five stepsBefore"><p class="Ag18 colorGrey7">Final review & evaluation →t</p>
+<li class="five stepsBefore"><p class="Ag18 colorGrey7">Final review & evaluation →</p>
 <p class="Ag18 colorW">Final product & support</p></li>
 </ol>
 <div>
