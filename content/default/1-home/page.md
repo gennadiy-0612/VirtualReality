@@ -68,12 +68,12 @@ Title: Home
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText">safety</h2>
 <ul class="outSlideUl">
-<li class="outSlideLi colorW Ag18 lineHeight40">Interactive health and safety immersive training </li>
-<li class="outSlideLi colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
-<li class="outSlideLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
-<li class="outSlideLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
+<li class="outSlideLi blueLine colorW Ag18 lineHeight40">Interactive health and safety immersive training </li>
+<li class="outSlideLi blueLine colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
+<li class="outSlideLi blueLine colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
+<li class="outSlideLi blueLine colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
 </ul>
-<p class="colorW">go to the page</p>
+<a title="title" href="/" class="GoTo colorW Ag14 lineHeight30 upperText">go to the page</a>
 </div>
 <div class="outSlideSet">
 <img class="outSlideBigImg outSlideBigImgAct" alt="Alt" src="./media/images/img/inSlideImgBig1.png">
@@ -92,7 +92,7 @@ Title: Home
 </div>
 </div>
 </section>
-<section id="S4" class="a1440">
+<section id="S4" class="a1440 WhyVR">
 <h2 class="whatDo upperText Ag48 colorW">why vr?</h2>
 <ul class="digits">
 <li class="digitsLi digits1">

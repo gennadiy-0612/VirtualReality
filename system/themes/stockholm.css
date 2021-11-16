@@ -318,7 +318,9 @@ a {
 .doInfoH2 {
     flex: 1 1 auto;
 }
-
+.WhyVR{
+    border-bottom: 1px solid #FFFFFF;
+}
 .whatDo {
     max-width: 270px;
     flex: 1 1 auto;
@@ -387,7 +389,7 @@ a {
 }
 
 .doLinks-project {
-    padding: 71px 0 48px;
+    padding: 71px 0 0;
     justify-content: flex-start;
 }
 
@@ -399,14 +401,48 @@ a {
 .doA-project {
     border-bottom-width: 0;
     letter-spacing: 1.9px;
+    margin-bottom: 4px;
 }
 
 .inSlide {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.outSlide {
+    padding: 59px 0 67px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 76px;
+}
+
+.outSlideH2 {
+    padding: 22px 0 17px 0;
+    letter-spacing: 2.1px;
+}
+
+.outSlideUl {
+    padding: 0 0 0 41px;
+    max-width: 300px;
+}
+
+.GoTo {
+    display: block;
+    letter-spacing: 1.8px;
+    padding: 0 34px 0 0;
+    max-width: 163px;
+    background: url("img/arrow.svg") right center no-repeat;
+    background-size: contain;
+    margin: 37px 0;
 }
 
 .outSlideSet {
     max-width: 1080px;
+}
+
+.outSlideLi {
+    letter-spacing: 1.8px;
 }
 
 .outSlideImages {
@@ -416,9 +452,17 @@ a {
     overflow-y: hidden;
 }
 
+.outSlideImages {
+    margin-left: -2px;
+}
+
 .outSlideBigImg {
     display: none;
     scroll-snap-align: start;
+}
+
+.outSlideImg {
+    margin: 12px 6px -4px 0;
 }
 
 .outSlideBigImgAct {
@@ -432,7 +476,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1430px;
-    padding: 49px 0;
+    padding: 47px 0 44px;
 }
 
 .digitsDigit {
@@ -484,7 +528,7 @@ a {
 .Compare {
     display: flex;
     justify-content: space-around;
-    margin: 7px 0 35px;
+    margin: 7px 0;
 }
 
 .good {
@@ -511,7 +555,7 @@ a {
     max-width: 296px;
     position: relative;
     letter-spacing: 1.7px;
-    padding: 0 0 29px;
+    padding: 0 0 31px;
 }
 
 .goodLi::before, .badLi::before, .blueLine::before {
@@ -544,7 +588,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 35px;
-    padding: 37px 0;
+    padding: 30px 0;
 }
 
 .leftInfo, .rightInfo {
