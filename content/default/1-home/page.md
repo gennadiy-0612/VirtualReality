@@ -92,3 +92,6 @@ Title: Home
 </div>
 </div>
 </section>
+<section class="VR">
+<h2 class="whatDo upperText Ag48 colorW">why vr?</h2>
+</section>
