@@ -213,7 +213,7 @@ Title: Home
 </div>
 </div>
 </section>
-<footer id="foot" class="foot">
+<footer id="foot" class="a1440 foot">
 <a class="logoA" href="/"></a>
 <ul class="contacts">
 <li class="contactNumber Ag18 colorViolet">+49 15225698736</li>

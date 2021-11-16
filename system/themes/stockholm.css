@@ -807,6 +807,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 100px 0;
 }
 
 .logoA {
@@ -823,6 +824,7 @@ a {
 
 .address {
     flex: 1 1 190px;
+    padding: 31px 0 0 60px;
 }
 
 /*Footer*/
