@@ -42,9 +42,9 @@ Title: Home
 <h2 class="whatDo upperText Ag48 colorW">What do we do?</h2>
 </div>
 <ul class="doLinks">
-<li class="doli"><a href="#whatDid1" class="Ag18 doA doLinksActive" alt="#ImmersiveTrainings">Immersive Trainings</a></li>
-<li class="doli"><a href="#whatDid2" class="colorGrey doA Ag18" alt="#ImmersiveTrainings">Realistic Simulations</a></li>
-<li class="doli"><a href="#whatDid3" class="colorGrey doA Ag18" alt="#ImmersiveTrainings">Aptitude Testing</a></li>
+<li class="doli"><a title="title" href="#whatDid1" class="Ag18 doA doLinksActive">Immersive Trainings</a></li>
+<li class="doli"><a title="title"  href="#whatDid2" class="colorGrey doA Ag18">Realistic Simulations</a></li>
+<li class="doli"><a title="title"  href="#whatDid3" class="colorGrey doA Ag18">Aptitude Testing</a></li>
 </ul>
 </div>
 <div class="doImages">
@@ -60,8 +60,8 @@ Title: Home
 <h2 class="whatDo upperText Ag48 colorW">Our projects</h2>
 </div>
 <ul class="doLinks doLinks-project">
-<li class="doli doli-projects"><a href="#whatDid1" class="Ag24 doA doA-project doLinksActive" alt="#ImmersiveTrainings">01. safety</a></li>
-<li class="doli doli-projects"><a href="#whatDid2" class="colorGrey doA doA-project Ag24" alt="#ImmersiveTrainings">02. defense</a></li>
+<li class="doli doli-projects"><a title="title" href="#whatDid1" class="Ag24 doA doA-project doLinksActive">01. safety</a></li>
+<li class="doli doli-projects"><a title="title" href="#whatDid2" class="colorGrey doA doA-project Ag24">02. defense</a></li>
 </ul>
 <div class="outSlide">
 <div class="inSlide">
@@ -135,5 +135,6 @@ Title: Home
 <li class="Ag18 lineHeight30 badLi colorGrey7">Poor knowledge retention</li>
 <li class="Ag18 lineHeight30 badLi colorGrey7">Limited skills development in extreme situations</li>
 </ul>
+</div>
 </div>
 </section>
