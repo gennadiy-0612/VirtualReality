@@ -21,7 +21,7 @@ p {
     margin: 0;
 }
 
-ol, ul, h1, h2, h3 {
+ol, ul, h1, h2, h3, dd {
     padding: 0;
     margin: 0;
 }
@@ -595,7 +595,7 @@ a {
     margin-top: 35px;
     padding-top: 30px;
     margin-bottom: 30px;
-    background: url("img/VRvision.png")  39% 53% no-repeat;
+    background: url("img/VRvision.png") 39% 53% no-repeat;
     background-size: 69%;
 }
 
@@ -647,10 +647,58 @@ a {
 }
 
 /*screen 6*/
+.approach {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .approachOl {
     margin-top: 45px;
     border-top: 1px solid #FFF;
     padding-top: 61px;
+    flex: 1 0 auto;
+}
+
+.steps {
+    flex: 46 1 auto;
+    margin: 40px 0;
+    background: url("img/appraochSteps.svg") 14.4% 26.5% no-repeat;
+    background-size: 74.7%;
+    counter-reset: section;
+}
+
+.stepsBefore {
+    position: relative;
+}
+
+.stepsBefore::before {
+    osition: absolute;
+    top: -51px;
+    left: 0;
+    counter-increment: section;
+    content: counter(section);
+    color: #A64DFF;
+    font-size: 50px;
+}
+
+.one {
+    margin: 47.4% 0 0;
+}
+
+.two {
+    margin: -29% 0 0 33.7%;
+}
+
+.three {
+    margin: 11% 0 0 66.7%;
+}
+
+.four {
+    margin: 20.1% 0 0 66.7%;
+}
+
+.five {
+    margin: 0% 0 0 0%;
 }
 
 .approachH2 {

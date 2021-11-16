@@ -167,18 +167,18 @@ Title: Home
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
 <img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
 </div>
-<dl class="steps">
-<dt>Understanding of your needs → </dt>
-<dd>Defined challenge</dd>
-<dt>Solution options proposal → </dt>
-<dd>Requirements specification </dd>
-<dt>Cost & time estimation planning → </dt>
-<dd>Delivery planning</dd>
-<dt>Development with regular reviews → </dt>
-<dd>Product versions </dd>
-<dt>Final review & evaluation →t</dt>
-<dd>Final product & suppor</dd>
-</dl>
+<ol class="steps">
+<li class="one stepsBefore"><p class="Ag18 colorGrey7">Understanding of your needs → </p>
+<p class="Ag18 colorW">Defined challenge</p></li>
+<li class="two stepsBefore"><p class="Ag18 colorGrey7">Solution options proposal → </p>
+<p class="Ag18 colorW">Requirements specification </p></li>
+<li class="three stepsBefore"><p class="Ag18 colorGrey7">Cost & time estimation planning → </p>
+<p class="Ag18 colorW">Delivery planning</p></li>
+<li class="four stepsBefore"><p class="Ag18 colorGrey7">Development with regular reviews → </p>
+<p class="Ag18 colorW">Product versions </p></li>
+<li class="five stepsBefore"><p class="Ag18 colorGrey7">Final review & evaluation →t</p>
+<p class="Ag18 colorW">Final product & support</p></li>
+</ol>
 <div>
 <div>
 <div>
