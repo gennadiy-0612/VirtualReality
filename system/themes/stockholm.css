@@ -490,10 +490,36 @@ a {
 
 .goodUl, .badUl {
     padding: 30px 0 30px 37px;
+    column-count: 2;
+    column-gap: 30px;
 }
 
 .goodLi, .badLi {
-    max-width: 330px;
+    max-width: 296px;
+    position: relative;
+}
+
+.goodLi::before, .badLi::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    bottom: 0;
+}
+
+.goodLi::before {
+    background: url("img/burd.svg") center center no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 14px;
+    left: -36px;
+}
+
+.badLi::before {
+    background: url("img/cross.svg") center center no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    left: -34px;
 }
 
 /*Compare screen3*/
