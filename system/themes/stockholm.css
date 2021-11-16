@@ -683,23 +683,23 @@ a {
 }
 
 .one {
-    margin: 47.4% 0 0;
+    margin: 47.4% auto auto;
 }
 
 .two {
-    margin: -29% 0 0 33.7%;
+    margin: -29% auto auto 33.7%;
 }
 
 .three {
-    margin: 11% 0 0 66.7%;
+    margin: 11% auto auto 66.7%;
 }
 
 .four {
-    margin: 20.1% 0 0 66.7%;
+    margin: 20.1% auto auto 66.7%;
 }
 
 .five {
-    margin: 0% 0 0 0%;
+    margin: 4% auto auto 34%;
 }
 
 .approachH2 {
@@ -711,6 +711,35 @@ a {
     max-width: 230px;
     margin: 38px 0 33px;
 
+}
+
+.partnersSet {
+    display: flex;
+}
+
+.partner {
+    height: 170px;
+    width: 400px;
+}
+
+.partner1 {
+    background: url("img/partners.svg") 10px 0 no-repeat;
+}
+
+.partner2 {
+    background: url("img/partners.svg") -240px 0 no-repeat;
+}
+
+.partner3 {
+    background: url("img/partners.svg") -470px 0 no-repeat;
+}
+
+.partner4 {
+    background: url("img/partners.svg") -710px 0 no-repeat;
+}
+
+.partner5 {
+    background: url("img/partners.svg") -930px 0 no-repeat;
 }
 
 /*screen 6*/
