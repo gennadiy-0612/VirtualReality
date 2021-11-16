@@ -4,8 +4,7 @@ Title: Home
 <div class="firstScreen">
     <header class="topMenu a1440">
         <div class="mainLinks">
-            <a class="logoA" href="/">
-            </a>
+            <a class="logoA" href="/"></a>
             <ul class="languageSet">
                 <li class="language"><a class="languageText HeliosExtC active" href="/en/">EN</a></li>
                 <li class="language"><a class="languageText HeliosExtC" href="/ru/">RU</a></li>
@@ -200,6 +199,14 @@ Title: Home
 <img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
 </div>
 </div>
-<footer class="foot">
+<footer id="foot" class="foot">
+<a class="logoA" href="/"></a>
+<ul class="contacts">
+<li class="contactNumber Ag18 colorViolet">+49 15225698736</li>
+<li class="contactEmail Ag18 colorViolet">office@vr.consulting</li>
+</ul>
+<p class="copyRight Ag14 colorW">© 2021<br/>All Rights Reserved</p>
+<address class="address Ag18 colorGrey8">VR.Consulting Sp. z o.o., NIP: 7011030959
+Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
 </footer>
 </section>
