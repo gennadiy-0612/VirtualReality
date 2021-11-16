@@ -201,7 +201,9 @@ Title: Home
 </div>
 </div>
 <div class="partners20">
+<div class="partners20H2 partnersSetH2">
 <h2 class="whatDo upperText Ag48 colorW">awards</h2>
+</div>
 <p class="partner partner11"></p>
 <p class="partner partner12"></p>
 <p class="partner partner13"></p>

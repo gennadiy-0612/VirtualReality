@@ -737,9 +737,22 @@ a {
     max-width: initial;
 }
 
+.partners20H2 {
+    min-width: 100%;
+    padding: 25px 0 0 6px;
+}
+
+.partnersSetIcons {
+    max-width: 1170px;
+    flex-wrap: wrap;
+    display: flex;
+    height: 170px;
+    overflow: hidden;
+}
+
 .partner {
     height: 170px;
-    width: 400px;
+    width: 220px;
 }
 
 .partner1 {
@@ -747,11 +760,11 @@ a {
 }
 
 .partner2 {
-    background: url("img/partners.svg") -240px 0 no-repeat;
+    background: url("img/partners.svg") -211px 0 no-repeat;
 }
 
 .partner3 {
-    background: url("img/partners.svg") -470px 0 no-repeat;
+    background: url("img/partners.svg") -472px 0 no-repeat;
 }
 
 .partner4 {
