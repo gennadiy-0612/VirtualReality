@@ -590,8 +590,8 @@ a {
     justify-content: space-between;
     margin-top: 35px;
     padding: 30px 0;
-    background: url("img/VRvision.png") center center no-repeat;
-    background-size: contain;
+    background: url("img/VRvision.png") 38% 60% no-repeat;
+    background-size: 71%;
 }
 
 .leftInfo, .rightInfo {
