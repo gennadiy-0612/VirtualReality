@@ -92,7 +92,7 @@ Title: Home
 </div>
 </div>
 </section>
-<section id="S4" class="doInfoH2 a1440">
+<section id="S4" class="a1440">
 <h2 class="whatDo upperText Ag48 colorW">why vr?</h2>
 <ul class="digits">
 <li class="digitsLi digits1">
@@ -136,5 +136,29 @@ Title: Home
 <li class="Ag18 lineHeight30 badLi colorGrey7">Limited skills development in extreme situations</li>
 </ul>
 </div>
+</div>
+</section>
+<section id="S5" class="a1440 WhoWe">
+<div class="leftInfo">
+<h2 class="whatDo upperText Ag48 colorW">Why to work with us?</h2>
+<h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>
+<ol class="WhoWeOl WhoWeOlLeft">
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Business, IT, science, art and medicine</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Front-to-back solutions</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Subject matter experts</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Own R&D and In-house development</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">We focus on solving your business needs</li>
+</ol>
+</div>
+<div class="rightInfo">
+<h2 class="whatDo upperText Ag48 colorW WhoWeH2Right">Who we are?</h2>
+<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Unique expert team of:</h3>
+<ol class="WhoWeOl WhoWeOlRight">
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Management consultants</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Hardware and software experts</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Graphic and sound designers</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Retired military officers</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Psychologists and doctors</li>
+</ol>
 </div>
 </section>

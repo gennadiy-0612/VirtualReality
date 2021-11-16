@@ -21,7 +21,7 @@ p {
     margin: 0;
 }
 
-ol, ul, h1, h2 {
+ol, ul, h1, h2, h3 {
     padding: 0;
     margin: 0;
 }
@@ -405,8 +405,20 @@ a {
     display: flex;
 }
 
+.outSlideSet {
+    max-width: 1080px;
+}
+
+.outSlideImages {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 .outSlideBigImg {
     display: none;
+    scroll-snap-align: start;
 }
 
 .outSlideBigImgAct {
@@ -472,7 +484,7 @@ a {
 .Compare {
     display: flex;
     justify-content: space-around;
-    margin: 7px 0;
+    margin: 7px 0 35px;
 }
 
 .good {
@@ -489,17 +501,20 @@ a {
 }
 
 .goodUl, .badUl {
-    padding: 30px 0 30px 37px;
+    padding: 29px 0 30px 37px;
     column-count: 2;
     column-gap: 30px;
+    min-height: 370px;
 }
 
 .goodLi, .badLi {
     max-width: 296px;
     position: relative;
+    letter-spacing: 1.7px;
+    padding: 0 0 29px;
 }
 
-.goodLi::before, .badLi::before {
+.goodLi::before, .badLi::before, .blueLine::before {
     content: '';
     position: absolute;
     top: 7px;
@@ -523,3 +538,60 @@ a {
 }
 
 /*Compare screen3*/
+/*Why to work with us?*/
+.WhoWe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding: 37px 0;
+}
+
+.leftInfo, .rightInfo {
+    flex: 1 1 auto;
+    max-width: 360px;
+}
+
+.WhoWeH3 {
+    margin: 51px 0 18px;
+    max-width: 320px;
+    letter-spacing: 1.8px;
+}
+
+.WhoWeH2Right {
+    max-width: 200px;
+}
+
+.WhoWeH3Right {
+    max-width: 230px;
+}
+
+.WhoWeOl {
+    padding: 0 0 0 46px;
+}
+
+.WhoWeOlLeft {
+    max-width: 260px;
+}
+
+.WhoWeOlRight {
+    max-width: 320px;
+}
+
+.blueLine {
+    position: relative;
+}
+
+.blueLine::before {
+    height: 1px;
+    width: 27px;
+    background: #A64DFF;
+    top: 20px;
+    left: -45px;
+}
+
+.WhoWeTex {
+    letter-spacing: 2.1px;
+}
+
+/*Why to work with us?*/
