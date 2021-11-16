@@ -113,4 +113,27 @@ Title: Home
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText">knowledge retention</p>
 </li>
 </ul>
+<div class="Compare">
+<div class="good">
+<h3 class="goodH3 Ag24 colorW upperText">VR-enabled training</h3>
+<ul class="goodUl">
+<li class="Ag18 lineHeight30 goodLi colorW">Cost effective and highly scalable</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Realistic and immersive</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Any environment, hazard, risk can be simulated with no risk</li>
+<li class="Ag18 lineHeight30 goodLi colorW">High concentration (no way to cheat) and engagement (gaming experience)</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Suited for new generation who is used to new technologies</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Sensor-powered emotional and psycho-physiological assessment</li>
+</ul>
+</div>
+<div class="bad">
+<h3 class="goodH3 Ag24 colorGrey7 upperText">Classical training</h3>
+<ul class="badUl">
+<li class="Ag18 lineHeight30 badLi colorGrey7">Expensive</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Time consuming</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Risky or even impossible to simulate high-risk / hazards</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Boring and not motivating</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Poor knowledge retention</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Limited skills development in extreme situations</li>
+</ul>
+</div>
 </section>
