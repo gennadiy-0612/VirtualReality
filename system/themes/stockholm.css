@@ -527,16 +527,17 @@ a {
 
 .Compare {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 7px 0;
 }
 
 .good {
-    flex: 1 1 300px;
+    flex: 1 1 auto;
 }
 
 .bad {
-    flex: 1 1 300px;
+    flex: 1 1 auto;
 }
 
 .goodH3, .badH3 {
