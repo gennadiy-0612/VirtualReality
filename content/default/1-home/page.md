@@ -163,11 +163,11 @@ Title: Home
 </section>
 <section id="S6" class="a1440 approach">
 <div class="approachOl">
-<h2 class="whatDo upperText Ag48 colorW">Our approach?</h2>
-<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Phases and output:</h3>
+<h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
+<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
 <img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
 </div>
-<dl>
+<dl class="steps">
 <dt>Understanding of your needs → </dt>
 <dd>Defined challenge</dd>
 <dt>Solution options proposal → </dt>

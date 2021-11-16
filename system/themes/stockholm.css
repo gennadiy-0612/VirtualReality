@@ -324,10 +324,6 @@ a {
     flex: 1 1 auto;
 }
 
-.Compare {
-    border-bottom: 1px solid #FFFFFF;
-}
-
 .whatDo {
     max-width: 270px;
     flex: 1 1 auto;
@@ -536,7 +532,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 7px 0;
+    margin: 13px 0 0;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .good {
@@ -598,8 +595,8 @@ a {
     margin-top: 35px;
     padding-top: 30px;
     margin-bottom: 30px;
-    background: url("img/VRvision.png") 38% 60% no-repeat;
-    background-size: 71%;
+    background: url("img/VRvision.png")  39% 53% no-repeat;
+    background-size: 69%;
 }
 
 .leftInfo, .rightInfo {
@@ -649,6 +646,25 @@ a {
     letter-spacing: 2.1px;
 }
 
+/*screen 6*/
+.approachOl {
+    margin-top: 45px;
+    border-top: 1px solid #FFF;
+    padding-top: 61px;
+}
+
+.approachH2 {
+    max-width: 340px;
+    letter-spacing: 3.7px;
+}
+
+.approachH3 {
+    max-width: 230px;
+    margin: 38px 0 33px;
+
+}
+
+/*screen 6*/
 /*Why to work with us?*/
 /*Footer*/
 .foot {
