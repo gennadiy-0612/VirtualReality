@@ -6,8 +6,8 @@ Title: Home
         <div class="mainLinks">
             <a class="logoA" href="/"></a>
             <ul class="languageSet">
-                <li class="language"><a class="languageText HeliosExtC active" href="/en/">EN</a></li>
-                <li class="language"><a class="languageText HeliosExtC" href="/ru/">RU</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="/en/">EN</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC" href="/ru/">RU</a></li>
                 <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
             </ul>
         </div>

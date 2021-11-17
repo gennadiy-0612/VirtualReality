@@ -116,7 +116,7 @@ li {
     position: relative;
 }
 
-.horizonLine {
+.horizonLine, .verticalLine {
     position: relative;
 }
 
@@ -127,6 +127,18 @@ li {
     width: 100%;
     background-color: #FFFFFF;
     height: 1px;
+}
+
+.verticalLine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 50%;
+    background-color: #C4C4C4;
+    right: 0;
+    margin: auto;
+    bottom: 0;
 }
 
 /*Decoration*/
@@ -178,8 +190,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid #FFFFFF;
-    margin: -2px 23px 0 0;
+    border: 1px solid #FFF;
+    margin: 3px 23px 0 0;
 }
 
 .language {
@@ -194,6 +206,7 @@ a {
     height: 24px;
     line-height: 24px;
     text-align: center;
+    font-size: 10px;
 }
 
 .active, .languageText:hover {
