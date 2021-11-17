@@ -79,13 +79,11 @@ Title: Home
 <img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig2.png">
 <img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig3.png">
 <img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig4.png">
-<img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig5.png">
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg" src="./media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg" src="./media/images/img/inSlideImg2.png">
 <img alt="alt" class="outSlideImg" src="./media/images/img/inSlideImg3.png">
 <img alt="alt" class="outSlideImg" src="./media/images/img/inSlideImg4.png">
-<img alt="alt" class="outSlideImg" src="./media/images/img/inSlideImg5.png">
 </div>
 </div>
 </div>

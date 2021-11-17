@@ -481,10 +481,9 @@ a {
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-}
-
-.outSlideImages {
-    margin-left: -2px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
 }
 
 .outSlideBigImg {
@@ -493,7 +492,8 @@ a {
 }
 
 .outSlideImg {
-    margin: 12px 6px -4px 0;
+    height: 100%;
+    width: 24.1%;
 }
 
 .outSlideBigImgAct {
@@ -849,10 +849,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 104px 0;
-}
-
-.logoA {
-    flex: 1 1 auto;
 }
 
 .logoA-bottom {
