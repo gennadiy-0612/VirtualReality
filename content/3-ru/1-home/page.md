@@ -133,23 +133,23 @@ Language: ru
 <div class="good">
 <h3 class="goodH3 Ag24 colorW upperText">Обучение с использованием виртуальной реальности</h3>
 <ul class="goodUl">
-<li class="Ag18 lineHeight30 goodLi colorW">Cost effective and highly scalable</li>
-<li class="Ag18 lineHeight30 goodLi colorW">Realistic and immersive</li>
-<li class="Ag18 lineHeight30 goodLi colorW">Any environment, hazard, risk can be simulated with no risk</li>
-<li class="Ag18 lineHeight30 goodLi colorW">High concentration (no way to cheat) and engagement (gaming experience)</li>
-<li class="Ag18 lineHeight30 goodLi colorW">Suited for new generation who is used to new technologies</li>
-<li class="Ag18 lineHeight30 goodLi colorW">Sensor-powered emotional and psycho-physiological assessment</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Экономичный и масштабируемый</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Реалистичный и захватывающий</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Любая среда, опасность, риск можно смоделировать без риска</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Высокая концентрация (нет возможности обманывать) и вовлеченность (игровой опыт)</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Подходит для нового поколения, привыкшего к новым технологиям</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Сенсорная эмоциональная и психофизиологическая оценка</li>
 </ul>
 </div>
 <div class="bad">
-<h3 class="goodH3 Ag24 colorGrey7 upperText">Classical training</h3>
+<h3 class="goodH3 Ag24 colorGrey7 upperText">Классическое обучение</h3>
 <ul class="badUl">
-<li class="Ag18 lineHeight30 badLi colorGrey7">Expensive</li>
-<li class="Ag18 lineHeight30 badLi colorGrey7">Time consuming</li>
-<li class="Ag18 lineHeight30 badLi colorGrey7">Risky or even impossible to simulate high-risk / hazards</li>
-<li class="Ag18 lineHeight30 badLi colorGrey7">Boring and not motivating</li>
-<li class="Ag18 lineHeight30 badLi colorGrey7">Poor knowledge retention</li>
-<li class="Ag18 lineHeight30 badLi colorGrey7">Limited skills development in extreme situations</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Дорогие</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Кропотливый</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Рискованно или даже невозможно смоделировать высокий риск / опасности</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Скучно и не мотивирующе</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Плохое удержание знаний</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Ограниченное развитие навыков в экстремальных ситуациях</li>
 </ul>
 </div>
 </div>
@@ -159,25 +159,25 @@ Language: ru
 <div class="faceGlasses">
 <section id="S5" class="a1440 WhoWe">
 <div class="leftInfo">
-<h2 class="whatDo upperText Ag48 colorW">Why to work with us?</h2>
-<h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>
+<h2 class="whatDo upperText Ag48 colorW">Почему с нами работать?</h2>
+<h3 class="colorW Ag24 upperText WhoWeH3">Мы предлагаем вам больше, чем ИТ-компания:</h3>
 <ol class="WhoWeOl WhoWeOlLeft">
-<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Business, IT, science, art and medicine</li>
-<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Front-to-back solutions</li>
-<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Subject matter experts</li>
-<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Own R&D and In-house development</li>
-<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">We focus on solving your business needs</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Бизнес, IT, наука, искусство и медицина</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Решения спереди назад</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Специалисты в предметной области</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Собственные НИОКР и собственные разработки</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Мы ориентируемся на решение задач вашего бизнеса</li>
 </ol>
 </div>
 <div class="rightInfo">
-<h2 class="whatDo upperText Ag48 colorW WhoWeH2Right">Who we are?</h2>
-<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Unique expert team of:</h3>
+<h2 class="whatDo upperText Ag48 colorW WhoWeH2Right">Кто мы есть?</h2>
+<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Уникальная команда экспертов:</h3>
 <ol class="WhoWeOl WhoWeOlRight">
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Management consultants</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Hardware and software experts</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Graphic and sound designers</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Retired military officers</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Psychologists and doctors</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Консультанты по менеджменту</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Эксперты по аппаратному и программному обеспечению</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Графические и звуковые дизайнеры</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Военнослужащие в отставке</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Психологи и врачи</li>
 </ol>
 </div>
 </section>
@@ -186,31 +186,31 @@ Language: ru
 <section id="S6" class="a1440 relative">
 <div class="approach horizonLine">
 <div class="approachOl">
-<h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
-<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
+<h2 class="approachH2 upperText Ag48 colorW">Наш подход?</h2>
+<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Фазы и мощность:</h3>
 <img alt="alt" class="approachImg" src="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.png">
 </div>
 <div class="stepPartners">
 <ol class="steps">
 <li class="one stepsBefore">
-<p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs → </p>
-<p class="Ag18 stepsP colorW">Defined challenge</p></li>
+<p class="Ag18 stepsP colorGrey7">Понимание<br/> ваших потребностей → </p>
+<p class="Ag18 stepsP colorW">Определенная проблема</p></li>
 <li class="two stepsBefore">
-<p class="Ag18 stepsP colorGrey7">Solution options proposal → </p>
-<p class="Ag18 stepsP colorW">Requirements specification </p></li>
+<p class="Ag18 stepsP colorGrey7">Предложение вариантов решения → </p>
+<p class="Ag18 stepsP colorW">Технические требования </p></li>
 <li class="three stepsBefore">
-<p class="Ag18 stepsP colorGrey7">Cost & time estimation planning → </p>
-<p class="Ag18 stepsP colorW">Delivery planning</p></li>
+<p class="Ag18 stepsP colorGrey7">Планирование оценки затрат и времени → </p>
+<p class="Ag18 stepsP colorW">Планирование доставки</p></li>
 <li class="four stepsBefore">
-<p class="Ag18 stepsP colorGrey7">Development with regular reviews → </p>
-<p class="Ag18 stepsP colorW">Product versions </p></li>
+<p class="Ag18 stepsP colorGrey7">Разработка с регулярными отзывами → </p>
+<p class="Ag18 stepsP colorW">Версии продукта </p></li>
 <li class="five stepsBefore">
-<p class="Ag18 stepsP colorGrey7">Final review & evaluation →</p>
-<p class="Ag18 stepsP colorW">Final product & support</p></li>
+<p class="Ag18 stepsP colorGrey7">Окончательный обзор и оценка →</p>
+<p class="Ag18 stepsP colorW">Конечный продукт и поддержка</p></li>
 </ol>
 <div class="partnersSet">
 <div class="partnersSetH2 horizonLine">
-<h2 class="partnersSetText whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
+<h2 class="partnersSetText whatDo upperText Ag48 colorW">НАШИ ПАРТНЕРЫ</h2>
 </div>
 <div class="partnersSetIcons">
 <p class="partner partner1"></p>
@@ -224,7 +224,7 @@ Language: ru
 </div>
 <div class="partners20">
 <div class="partners20H2 partnersSetH2">
-<h2 class="whatDo upperText Ag48 colorW">awards</h2>
+<h2 class="whatDo upperText Ag48 colorW">награды</h2>
 </div>
 <div class="partnersSetIcons">
 <p class="partner partner1"></p>
@@ -248,8 +248,7 @@ Language: ru
 </ul>
 <p class="copyRight">
 <span class="copyRightSpan CR Ag14 colorW">© 2021</span>
-<span class="copyRightSpan Law Ag14 colorW">All Rights Reserved</span>
+<span class="copyRightSpan Law Ag14 colorW">Все права защищены</span>
 </p>
-<address class="address Ag18 colorGrey8">VR.Consulting Sp. z o.o., NIP: 7011030959
-Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
+<address class="address Ag18 colorGrey8">VR.Consulting Sp. z oo, НИП: 7011030959 ул. Новогродская, 50-515, 00-695,<br/>Варшава</address>
 </footer>
