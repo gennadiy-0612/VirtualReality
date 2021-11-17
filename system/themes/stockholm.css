@@ -100,6 +100,10 @@ li {
     line-height: 40px;
 }
 
+.lineHeight30 {
+    line-height: 30px;
+}
+
 .lineHeight44 {
     line-height: 44px;
 }
@@ -411,9 +415,6 @@ a {
     border-bottom: 1px solid #FFFFFF;
 }
 
-.whatDidWe {
-}
-
 .whatDidWe:first-child {
     display: block;
 }
@@ -639,12 +640,14 @@ a {
 }
 
 .goodUl, .badUl {
-    padding: 29px 0 30px 37px;
+    padding: 24px 0 34px 37px;
     column-count: 2;
     column-gap: 30px;
     min-height: 370px;
 }
-
+.badUl {
+    padding: 13px 0 0 14px;
+}
 .goodLi, .badLi {
     max-width: 296px;
     position: relative;
@@ -681,15 +684,15 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 65px;
+    padding-top: 10px;
     padding-bottom: 46px;
+    margin-bottom: 30px;
 }
 .faceGlasses{
     max-width: 1920px;
     margin: -60px auto;
     padding: 60px 0;
-    background: url("img/VRvision.png") 44.5% 56.9% no-repeat;
-
+    background: url("img/VRvision.png") 44.5% 73.9% no-repeat;
     background-size: 53%;
 }
 .leftInfo, .rightInfo {
@@ -722,7 +725,14 @@ a {
 .WhoWeOlRight {
     max-width: 320px;
 }
-
+.WhoWeLi0{
+    line-height: 30px;
+    padding-bottom: 10px;
+    letter-spacing: 1.6px;
+}
+.WhoWeLi1{
+    letter-spacing: 1.9px;
+}
 .blueLine {
     position: relative;
 }
@@ -842,7 +852,7 @@ a {
 .partnersSetH2 {
     flex: 1 1 100%;
     max-width: initial;
-    padding-top: 72px;
+    padding:110px 0 0;
 }
 
 .partners20H2 {
@@ -858,10 +868,6 @@ a {
 .partner {
     height: 170px;
     width: 220px;
-}
-
-.partnerP {
-    width: 260px;
 }
 
 .partner1 {

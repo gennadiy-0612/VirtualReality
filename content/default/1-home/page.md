@@ -29,10 +29,9 @@ Title: Home
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
 <picture class="topPoster">
-                <source srcset="./img/top-logo.webp" type="image/webp">
-                <source srcset="./img/top-logo.jpg" type="image/jpeg">
-                <img class="Demo" loading="lazy" src="./img/top-logo.jpg" alt="Образовательный центр FaVareli">
-        <img alt="Demo" class="topPoster" src="./media/images/img/topVideoPoster.png">
+<source srcset="./media/images/img/topVideoPoster.webp" type="image/webp">
+<source srcset="./media/images/img/topVideoPoster.jpg" type="image/jpeg">
+<img alt="Demo" class="topPoster" src="./media/images/img/topVideoPoster.png">
 </picture>
     </div>
 <div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
@@ -162,22 +161,22 @@ Title: Home
 <h2 class="whatDo upperText Ag48 colorW">Why to work with us?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>
 <ol class="WhoWeOl WhoWeOlLeft">
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Business, IT, science, art and medicine</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Front-to-back solutions</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Subject matter experts</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Own R&D and In-house development</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">We focus on solving your business needs</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Business, IT, science, art and medicine</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Front-to-back solutions</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Subject matter experts</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Own R&D and In-house development</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">We focus on solving your business needs</li>
 </ol>
 </div>
 <div class="rightInfo">
 <h2 class="whatDo upperText Ag48 colorW WhoWeH2Right">Who we are?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Unique expert team of:</h3>
 <ol class="WhoWeOl WhoWeOlRight">
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Management consultants</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Hardware and software experts</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Graphic and sound designers</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Retired military officers</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW">Psychologists and doctors</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Management consultants</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Hardware and software experts</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Graphic and sound designers</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Retired military officers</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Psychologists and doctors</li>
 </ol>
 </div>
 </section>
@@ -227,12 +226,12 @@ Title: Home
 <h2 class="whatDo upperText Ag48 colorW">awards</h2>
 </div>
 <div class="partnersSetIcons">
-<p class="partner partner1 partnerP"></p>
-<p class="partner partner2 partnerP"></p>
-<p class="partner partner3 partnerP"></p>
-<p class="partner partner4 partnerP"></p>
-<p class="partner partner5 partnerP"></p>
-<p class="partner partner3 partnerP"></p>
+<p class="partner partner1"></p>
+<p class="partner partner2"></p>
+<p class="partner partner3"></p>
+<p class="partner partner4"></p>
+<p class="partner partner5"></p>
+<p class="partner partner3"></p>
 </div>
 </div>
 </section>
