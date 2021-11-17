@@ -718,15 +718,16 @@ a {
 .approach {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .approachOl {
     padding-top: 61px;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 
 .stepPartners {
-    flex: 46 1 auto;
+    flex: 46 1 1096px;
     display: flex;
     flex-direction: column;
 }
