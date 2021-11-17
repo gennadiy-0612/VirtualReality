@@ -431,7 +431,6 @@ a {
 }
 
 .doA-project {
-    border-bottom-width: 0;
     letter-spacing: 1.9px;
     margin-bottom: 4px;
 }
@@ -443,9 +442,24 @@ a {
 }
 
 .outSlide {
-    padding: 59px 0 143px;
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
+    padding: 59px 0 72px;
+}
+
+.arrowDirectionOut {
+    height: 94px;
+    width: 94px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.arrowRightOut {
+    right: -125px;
+}
+
+.arrowLeftOut {
+    left: -130px;
 }
 
 .outSlideH2 {
@@ -486,6 +500,23 @@ a {
     padding-top: 1%;
 }
 
+.arrowDirectionIn {
+    height: 41px;
+    width: 41px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.arrowLeftIn {
+    left: 50px;
+}
+
+.arrowRightIn {
+    right: 50px;
+}
+
 .outSlideBigImg {
     display: none;
     scroll-snap-align: start;
@@ -505,6 +536,10 @@ a {
 .WhyVR {
     background: url("img/Digits.svg") center center no-repeat;
     background-size: 100% 160%;
+}
+
+.WhyVRLine {
+    padding-top: 75px;
 }
 
 .digits {
@@ -566,7 +601,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 13px 0 0;
-    border-bottom: 1px solid #FFFFFF;
 }
 
 .good {
@@ -626,7 +660,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 65px;
-    padding-bottom: 30px;
+    padding-bottom: 46px;
     background: url("img/VRvision.png") 39% 53% no-repeat;
     background-size: 69%;
 }
@@ -681,11 +715,9 @@ a {
 /*screen 6*/
 .approach {
     display: flex;
-    border-top: 1px solid #FFF;
 }
 
 .approachOl {
-    margin-top: 18px;
     padding-top: 61px;
     flex: 1 0 auto;
 }
@@ -725,7 +757,7 @@ a {
 }
 
 .one {
-    margin: 47.4% auto auto 1.7%;
+    margin: 46.3% auto auto 1.7%;
 }
 
 .two {
@@ -751,7 +783,7 @@ a {
 
 .approachH3 {
     max-width: 230px;
-    margin: 38px 0 33px;
+    margin: 38px 0 47px;
 }
 
 .partnersSet {

@@ -54,7 +54,7 @@ Title: Home
 </ul>
 </div>
 </section>
-<section class="screen3 a1440">
+<section class="screen3 a1440 horizonLine">
 <div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW">Our projects</h2>
 </div>
@@ -62,7 +62,9 @@ Title: Home
 <li class="doli doli-projects"><a title="title" href="#whatDid1" class="Ag24 doA doA-project doLinksActive">01. safety</a></li>
 <li class="doli doli-projects"><a title="title" href="#whatDid2" class="colorGrey doA doA-project Ag24">02. defense</a></li>
 </ul>
-<div class="outSlide">
+<div class="outSlide relative">
+<img class="arrowDirectionOut arrowLeftOut" alt="arrowLeftIn" src="./media/images/img/arrowLeftOut.svg">
+<img class="arrowDirectionOut arrowRightOut" alt="arrowRightIn" src="./media/images/img/arrowRightOut.svg">
 <div class="inSlide">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText">safety</h2>
@@ -75,10 +77,14 @@ Title: Home
 <a title="title" href="/" class="GoTo colorW Ag14 lineHeight30 upperText">go to the page</a>
 </div>
 <div class="outSlideSet">
+<div class="SlideSetIn relative">
+<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" src="./media/images/img/arrowLeftIn.svg">
+<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" src="./media/images/img/arrowRightIn.svg">
 <img class="outSlideBigImg outSlideBigImgAct" alt="Alt" src="./media/images/img/inSlideImgBig1.png">
 <img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig2.png">
 <img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig3.png">
 <img class="outSlideBigImg" alt="Alt" src="./media/images/img/inSlideImgBig4.png">
+</div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg" src="./media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg" src="./media/images/img/inSlideImg2.png">
@@ -90,7 +96,7 @@ Title: Home
 </div>
 </section>
 <section id="S4" class="WhyVR">
-<div class="a1440">
+<div class="a1440 horizonLine WhyVRLine">
 <h2 class="whatDo upperText Ag48 colorW">why vr?</h2>
 <ul class="digits">
 <li class="digitsLi digits1">
@@ -161,12 +167,12 @@ Title: Home
 </ol>
 </div>
 </section>
-<section id="S6" class="a1440 relative">
-<div class="approach">
+<section id="S6 relative" class="a1440">
+<div class="approach horizonLine">
 <div class="approachOl">
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
-<img alt="alt" class="outSlideImg" src="./media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="approachImg" src="./media/images/img/PhasesAndOutput.png">
 </div>
 <div class="stepPartners">
 <ol class="steps">
