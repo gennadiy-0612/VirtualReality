@@ -28,7 +28,12 @@ Title: Home
         </div>
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
+<picture class="topPoster">
+                <source srcset="./img/top-logo.webp" type="image/webp">
+                <source srcset="./img/top-logo.jpg" type="image/jpeg">
+                <img class="Demo" loading="lazy" src="./img/top-logo.jpg" alt="Образовательный центр FaVareli">
         <img alt="Demo" class="topPoster" src="./media/images/img/topVideoPoster.png">
+</picture>
     </div>
 <div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
 <div class="VR">
