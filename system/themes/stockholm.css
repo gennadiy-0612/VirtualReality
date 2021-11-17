@@ -414,10 +414,9 @@ a {
 }
 
 .outSlide {
-    padding: 59px 0 67px;
+    padding: 59px 0 143px;
     border-top: 1px solid #FFF;
     border-bottom: 1px solid #FFF;
-    margin-bottom: 76px;
 }
 
 .outSlideH2 {
@@ -473,7 +472,11 @@ a {
     width: 100%;
 }
 
-/*Screen 4*/
+/*Screen 4 Why VR*/
+.WhyVR {
+    background: url("img/Digits.svg") center center no-repeat;
+    background-size: cover;
+}
 
 .digits {
     display: flex;
@@ -593,9 +596,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 35px;
-    padding-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 65px;
+    padding-bottom: 30px;
     background: url("img/VRvision.png") 39% 53% no-repeat;
     background-size: 69%;
 }
@@ -813,6 +815,9 @@ a {
 
 .logoA {
     flex: 1 1 auto;
+}
+
+.logoA-bottom {
 }
 
 .contacts {

@@ -91,7 +91,8 @@ Title: Home
 </div>
 </div>
 </section>
-<section id="S4" class="a1440 WhyVR">
+<section id="S4" class="WhyVR">
+<div class="a1440">
 <h2 class="whatDo upperText Ag48 colorW">why vr?</h2>
 <ul class="digits">
 <li class="digitsLi digits1">
@@ -134,6 +135,7 @@ Title: Home
 <li class="Ag18 lineHeight30 badLi colorGrey7">Poor knowledge retention</li>
 <li class="Ag18 lineHeight30 badLi colorGrey7">Limited skills development in extreme situations</li>
 </ul>
+</div>
 </div>
 </div>
 </section>
@@ -214,7 +216,7 @@ Title: Home
 </div>
 </section>
 <footer id="foot" class="a1440 foot">
-<a class="logoA" href="/"></a>
+<a class="logoA logoA-bottom" href="/"></a>
 <ul class="contacts">
 <li class="contactNumber Ag18 colorViolet">+49 15225698736</li>
 <li class="contactEmail Ag18 colorViolet">office@vr.consulting</li>
