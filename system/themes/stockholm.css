@@ -717,6 +717,7 @@ a {
 /*screen 6*/
 .approach {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .approachOl {
