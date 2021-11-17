@@ -54,7 +54,7 @@ Title: Home
 </ul>
 </div>
 </section>
-<section class="screen3 a1440 horizonLine">
+<section class="screen3 a1440">
 <div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW">Our projects</h2>
 </div>
@@ -96,8 +96,8 @@ Title: Home
 </div>
 </section>
 <section id="S4" class="WhyVR">
-<div class="a1440 horizonLine WhyVRLine">
-<h2 class="whatDo upperText Ag48 colorW">why vr?</h2>
+<div class="a1440">
+<h2 class="WhyVRH2 upperText Ag48 colorW horizonLine">why vr?</h2>
 <ul class="digits">
 <li class="digitsLi digits1">
 <p class="digitsDigit Ag72 colorViolet">4x</p>
@@ -167,7 +167,7 @@ Title: Home
 </ol>
 </div>
 </section>
-<section id="S6 relative" class="a1440">
+<section id="S6" class="a1440 relative">
 <div class="approach horizonLine">
 <div class="approachOl">
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
@@ -223,10 +223,16 @@ Title: Home
 <footer id="foot" class="a1440 foot horizonLine">
 <a class="logoA logoA-bottom" href="/"></a>
 <ul class="contacts">
-<li class="contactNumber Ag18 colorViolet">+49 15225698736</li>
-<li class="contactEmail Ag18 colorViolet">office@vr.consulting</li>
+<li class="contactsLi">
+<a class="contactsA contactsPhone Ag18 colorViolet" href="tel:4915225698736">+49 15225698736</a>
+</li>
+<li class="contactsLi">
+<a class="contactsA  contactEmail Ag18 colorViolet" href="mailto:office@vr.consulting">office@vr.consulting</a></li>
 </ul>
-<p class="copyRight Ag14 colorW">© 2021<br/>All Rights Reserved</p>
+<p class="copyRight">
+<span class="copyRightSpan CR Ag14 colorW">© 2021</span>
+<span class="copyRightSpan Law Ag14 colorW">All Rights Reserved</span>
+</p>
 <address class="address Ag18 colorGrey8">VR.Consulting Sp. z o.o., NIP: 7011030959
 Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
 </footer>
