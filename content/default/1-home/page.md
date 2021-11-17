@@ -1,7 +1,7 @@
 ---
 Title: Home
 ---
-<div class="firstScreen">
+<div class="firstScreen relative">
     <header class="topMenu a1440">
         <div class="mainLinks">
             <a class="logoA" href="/"></a>
@@ -163,7 +163,7 @@ Title: Home
 </ol>
 </div>
 </section>
-<section id="S6" class="a1440">
+<section id="S6" class="a1440 relative">
 <div class="approach">
 <div class="approachOl">
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
@@ -189,7 +189,7 @@ Title: Home
 <p class="Ag18 stepsP colorW">Final product & support</p></li>
 </ol>
 <div class="partnersSet">
-<div class="partnersSetH2">
+<div class="partnersSetH2 horizonLine">
 <h2 class="partnersSetText whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
 </div>
 <div class="partnersSetIcons">
@@ -214,8 +214,9 @@ Title: Home
 <p class="partner partner5"></p>
 </div>
 </div>
+<img class="VRbottom" src="./media/images/img/VRbottom.svg">
 </section>
-<footer id="foot" class="a1440 foot">
+<footer id="foot" class="a1440 foot horizonLine">
 <a class="logoA logoA-bottom" href="/"></a>
 <ul class="contacts">
 <li class="contactNumber Ag18 colorViolet">+49 15225698736</li>

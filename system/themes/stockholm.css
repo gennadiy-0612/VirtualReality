@@ -110,6 +110,26 @@ li {
 }
 
 /*Geometry*/
+
+/*Decoration*/
+.relative {
+    position: relative;
+}
+
+.horizonLine {
+    position: relative;
+}
+
+.horizonLine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 1px;
+}
+
+/*Decoration*/
 a {
     text-decoration: none;
 }
@@ -128,10 +148,6 @@ a {
 
 .backWhite {
     background-color: #FFFFFF;
-}
-
-.firstScreen {
-    position: relative;
 }
 
 .topMenu {
@@ -475,7 +491,7 @@ a {
 /*Screen 4 Why VR*/
 .WhyVR {
     background: url("img/Digits.svg") center center no-repeat;
-    background-size: cover;
+    background-size: 100% 160%;
 }
 
 .digits {
@@ -803,6 +819,15 @@ a {
     flex-direction: column;
 }
 
+.VRbottom {
+    width: 1450px;
+    height: 652px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
 /*screen 6*/
 /*Why to work with us?*/
 /*Footer*/
@@ -810,7 +835,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 100px 0;
+    padding: 104px 0;
 }
 
 .logoA {
@@ -818,6 +843,8 @@ a {
 }
 
 .logoA-bottom {
+    background-position-x: 0;
+    flex: 1 1 20px;
 }
 
 .contacts {
