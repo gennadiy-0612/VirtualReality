@@ -1,6 +1,7 @@
 ---
 Title: Home
 ---
+<div class="firstBack">
 <div class="firstScreen relative">
     <header class="topMenu a1440">
         <div class="mainLinks">
@@ -13,13 +14,13 @@ Title: Home
         </div>
         <a href="#Screen2" title="Demo" class="navy"></a>
     </header>
-    <section class="mainTitle">
+    <div class="mainTitle">
         <div class="frame">
             <h2 class="opportunity colorW Ag24">Unlock new opportunities with</h2>
             <div class="virtual-word"></div>
             <div class="reality-word"></div>
         </div>
-    </section>
+    </div>
     <div class="video a1440">
         <div class="playPanel">
         <div class="play">
@@ -33,6 +34,7 @@ Title: Home
 <div class="VR">
     <img class="V" alt="Demo" src="./media/images/img/V.svg">
     <img class="R" alt="Demo" src="./media/images/img/R.svg">
+</div>
 </div>
 </div>
 <section id="Screen2" class="do a1440">
@@ -70,10 +72,10 @@ Title: Home
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText">safety</h2>
 <ul class="outSlideUl">
-<li class="outSlideLi blueLine colorW Ag18 lineHeight40">Interactive health and safety immersive training </li>
-<li class="outSlideLi blueLine colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
-<li class="outSlideLi blueLine colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
-<li class="outSlideLi blueLine colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Interactive health and safety immersive training </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
 </ul>
 <a title="title" href="/" class="GoTo colorW Ag14 lineHeight30 upperText">go to the page</a>
 </div>
@@ -99,6 +101,7 @@ Title: Home
 </a>
 </div>
 </section>
+<div class="Digits">
 <section id="S4" class="WhyVR">
 <div class="a1440">
 <h2 class="WhyVRH2 upperText Ag48 colorW horizonLine">why vr?</h2>
@@ -147,6 +150,8 @@ Title: Home
 </div>
 </div>
 </section>
+</div>
+<div class="faceGlasses">
 <section id="S5" class="a1440 WhoWe">
 <div class="leftInfo">
 <h2 class="whatDo upperText Ag48 colorW">Why to work with us?</h2>
@@ -171,6 +176,7 @@ Title: Home
 </ol>
 </div>
 </section>
+</div>
 <div class="BackWords">
 <section id="S6" class="a1440 relative">
 <div class="approach horizonLine">
@@ -216,11 +222,12 @@ Title: Home
 <h2 class="whatDo upperText Ag48 colorW">awards</h2>
 </div>
 <div class="partnersSetIcons">
-<p class="partner partner1"></p>
-<p class="partner partner2"></p>
-<p class="partner partner3"></p>
-<p class="partner partner4"></p>
-<p class="partner partner5"></p>
+<p class="partner partner1 partnerP"></p>
+<p class="partner partner2 partnerP"></p>
+<p class="partner partner3 partnerP"></p>
+<p class="partner partner4 partnerP"></p>
+<p class="partner partner5 partnerP"></p>
+<p class="partner partner3 partnerP"></p>
 </div>
 </div>
 </section>

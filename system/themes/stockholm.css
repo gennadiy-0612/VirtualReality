@@ -157,8 +157,15 @@ a {
 .page, .content, .main, .firstScreen {
     width: 100%;
 }
-.firstScreen{
+
+.firstScreen {
     padding-top: 0;
+}
+.firstBack{
+    max-width: 1920px;
+    margin: auto;
+    background: url("img/firstBack.svg") center 150px no-repeat;
+    background-size: contain;
 }
 .backWhite {
     background-color: #FFFFFF;
@@ -477,8 +484,14 @@ a {
 }
 
 .outSlideUl {
-    padding: 0 0 0 41px;
+    padding: 7px 31px 44px 26px;
     max-width: 300px;
+}
+
+.outSlideLi {
+    letter-spacing: 1.6px;
+    padding: 0 5px 13px 16px;
+    line-height: 30px;
 }
 
 .GoTo {
@@ -493,10 +506,6 @@ a {
 
 .outSlideSet {
     max-width: 1080px;
-}
-
-.outSlideLi {
-    letter-spacing: 1.8px;
 }
 
 .outSlideImages {
@@ -542,9 +551,12 @@ a {
 }
 
 /*Screen 4 Why VR*/
-.WhyVR {
+.Digits {
+    max-width: 1920px;
+    margin: -110px auto;
+    padding: 110px 0;
     background: url("img/Digits.svg") center center no-repeat;
-    background-size: 100% 160%;
+    background-size: 100%;
 }
 
 .WhyVRH2 {
@@ -671,10 +683,15 @@ a {
     justify-content: space-between;
     padding-top: 65px;
     padding-bottom: 46px;
-    background: url("img/VRvision.png") 39% 53% no-repeat;
-    background-size: 69%;
 }
+.faceGlasses{
+    max-width: 1920px;
+    margin: -60px auto;
+    padding: 60px 0;
+    background: url("img/VRvision.png") 44.5% 56.9% no-repeat;
 
+    background-size: 53%;
+}
 .leftInfo, .rightInfo {
     flex: 1 1 auto;
     max-width: 360px;
@@ -716,6 +733,11 @@ a {
     background: #A64DFF;
     top: 20px;
     left: -45px;
+}
+
+.blueLineLi::before {
+    left: -26px;
+    top: 15px;
 }
 
 .WhoWeTex {
@@ -836,6 +858,10 @@ a {
 .partner {
     height: 170px;
     width: 220px;
+}
+
+.partnerP {
+    width: 260px;
 }
 
 .partner1 {
