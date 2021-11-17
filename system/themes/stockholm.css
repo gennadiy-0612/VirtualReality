@@ -157,7 +157,9 @@ a {
 .page, .content, .main, .firstScreen {
     width: 100%;
 }
-
+.firstScreen{
+    padding-top: 0;
+}
 .backWhite {
     background-color: #FFFFFF;
 }
@@ -324,22 +326,23 @@ a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 4px;
+    top: -64px;
     z-index: -1;
     margin: auto;
     max-width: 1474px;
     opacity: .3;
     display: flex;
     width: 100%;
+    justify-content: space-around;
 }
 
 .V {
-    width: 50%;
+    width: 48.6%;
 }
 
 .R {
     margin: 0;
-    width: 50%;
+    width: 46.9%;
 }
 
 .moveScreen {
@@ -720,6 +723,15 @@ a {
 }
 
 /*screen 6*/
+.BackWords {
+    max-width: 1820px;
+    margin: auto;
+    background: url("img/VRbottom.svg") bottom center no-repeat;
+    background-size: 79.6%;
+    background-position-x: 0;
+    padding-bottom: 11px;
+}
+
 .approach {
     display: flex;
     flex-wrap: wrap;
@@ -798,7 +810,7 @@ a {
 .partnersSet {
     display: flex;
     flex-wrap: wrap;
-    padding: 188px 0 0;
+    padding: 117px 0 0;
 }
 
 .partnersSetText {
@@ -808,6 +820,7 @@ a {
 .partnersSetH2 {
     flex: 1 1 100%;
     max-width: initial;
+    padding-top: 72px;
 }
 
 .partners20H2 {
@@ -868,16 +881,6 @@ a {
 .partners20 {
     display: flex;
     flex-direction: column;
-}
-
-.VRbottom {
-    width: 96%;
-    max-height: 652px;
-    object-fit: contain;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    margin: auto;
 }
 
 /*screen 6*/

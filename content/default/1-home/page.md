@@ -171,6 +171,7 @@ Title: Home
 </ol>
 </div>
 </section>
+<div class="BackWords">
 <section id="S6" class="a1440 relative">
 <div class="approach horizonLine">
 <div class="approachOl">
@@ -222,8 +223,8 @@ Title: Home
 <p class="partner partner5"></p>
 </div>
 </div>
-<img alt="alt" class="VRbottom" src="./media/images/img/VRbottom.svg">
 </section>
+</div>
 <footer id="foot" class="a1440 foot horizonLine">
 <a class="logoA logoA-bottom" href="/"></a>
 <ul class="contacts">
