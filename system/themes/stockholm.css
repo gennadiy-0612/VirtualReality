@@ -227,6 +227,8 @@ a {
     max-width: 1270px;
     margin: auto;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .virtual-word {
@@ -247,10 +249,9 @@ a {
 
 .frame {
     margin: 0 0 0 auto;
-    max-width: 75%;
     display: flex;
     flex-direction: column;
-    min-width: 994px;
+    width: 78.3%;
 }
 
 .opportunity {
@@ -329,14 +330,16 @@ a {
     max-width: 1474px;
     opacity: .3;
     display: flex;
+    width: 100%;
 }
 
 .V {
-    margin: 0 47px 0 0;
+    width: 50%;
 }
 
 .R {
     margin: 0;
+    width: 50%;
 }
 
 .moveScreen {
@@ -351,6 +354,8 @@ a {
 /* Screen 2*/
 .doInfoH2 {
     flex: 1 1 auto;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .whatDo {
@@ -416,6 +421,12 @@ a {
 }
 
 /*Screen 3*/
+.Slides {
+    max-width: 1700px;
+    margin: auto;
+    padding: 0 20px;
+}
+
 .screen3 {
 
 }
@@ -424,6 +435,8 @@ a {
     padding: 71px 0 0;
     justify-content: flex-start;
     border-bottom: 1px solid #707070;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .doli-projects {
@@ -440,27 +453,19 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .outSlide {
     padding: 59px 0 72px;
+    display: flex;
 }
 
 .arrowDirectionOut {
     height: 94px;
     width: 94px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.arrowRightOut {
-    right: -125px;
-}
-
-.arrowLeftOut {
-    left: -130px;
+    align-self: center;
 }
 
 .outSlideH2 {
@@ -811,11 +816,8 @@ a {
 }
 
 .partnersSetIcons {
-    max-width: 1170px;
     flex-wrap: wrap;
     display: flex;
-    height: 170px;
-    overflow: hidden;
 }
 
 .partner {
@@ -869,12 +871,13 @@ a {
 }
 
 .VRbottom {
-    width: 1450px;
-    height: 652px;
+    width: 96%;
+    max-height: 652px;
     object-fit: contain;
     position: absolute;
     bottom: 0;
     z-index: -1;
+    margin: auto;
 }
 
 /*screen 6*/

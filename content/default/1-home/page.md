@@ -31,8 +31,8 @@ Title: Home
     </div>
 <div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
 <div class="VR">
-    <img alt="Demo" src="./media/images/img/V.svg">
-    <img alt="Demo" src="./media/images/img/R.svg">
+    <img class="V" alt="Demo" src="./media/images/img/V.svg">
+    <img class="R" alt="Demo" src="./media/images/img/R.svg">
 </div>
 </div>
 <section id="Screen2" class="do a1440">
@@ -54,7 +54,7 @@ Title: Home
 </ul>
 </div>
 </section>
-<section class="screen3 a1440">
+<section class="screen3 Slides">
 <div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW">Our projects</h2>
 </div>
@@ -62,9 +62,10 @@ Title: Home
 <li class="doli doli-projects"><a title="title" href="#whatDid1" class="Ag24 doA doA-project doLinksActive">01. safety</a></li>
 <li class="doli doli-projects"><a title="title" href="#whatDid2" class="colorGrey doA doA-project Ag24">02. defense</a></li>
 </ul>
-<div class="outSlide relative">
-<img class="arrowDirectionOut arrowLeftOut" alt="arrowLeftIn" src="./media/images/img/arrowLeftOut.svg">
-<img class="arrowDirectionOut arrowRightOut" alt="arrowRightIn" src="./media/images/img/arrowRightOut.svg">
+<div class="outSlide">
+<a title="title" class="outSlideLeft arrowDirectionOut" href="/">
+<img class="arrowDirectionOut" alt="arrowLeftIn" src="./media/images/img/arrowLeftOut.svg">
+</a>
 <div class="inSlide">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText">safety</h2>
@@ -93,6 +94,9 @@ Title: Home
 </div>
 </div>
 </div>
+<a title="title" class="outSlideLeft arrowDirectionOut" href="/">
+<img class="arrowDirectionOut" alt="arrowRightIn" src="./media/images/img/arrowRightOut.svg">
+</a>
 </div>
 </section>
 <section id="S4" class="WhyVR">
@@ -218,7 +222,7 @@ Title: Home
 <p class="partner partner5"></p>
 </div>
 </div>
-<img class="VRbottom" src="./media/images/img/VRbottom.svg">
+<img alt="alt" class="VRbottom" src="./media/images/img/VRbottom.svg">
 </section>
 <footer id="foot" class="a1440 foot horizonLine">
 <a class="logoA logoA-bottom" href="/"></a>
