@@ -2,7 +2,6 @@
 Title: Home
 Language: en
 ---
----
 Title: Home
 ---
 <div class="firstBack">
