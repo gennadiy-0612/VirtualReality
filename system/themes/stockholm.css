@@ -642,10 +642,9 @@ a {
 }
 
 .goodUl, .badUl {
-    padding: 24px 0 34px 37px;
+    padding: 24px 0 100px 37px;
     column-count: 2;
     column-gap: 30px;
-    min-height: 370px;
 }
 
 .badUl {
