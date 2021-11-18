@@ -77,7 +77,7 @@ Language: ru
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText">безопасность</h2>
 <ul class="outSlideUl">
-<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Моделирование опасных сред с высоким риском без какого-либо риска</li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Интерактивный иммерсивный тренинг по охране здоровья и безопасности</li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Моделирование опасных сред с высоким риском без какого-либо риска</li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Реплика реальных локаций, рабочих задач и оборудования</li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Многоотраслевые задания Режимы обучения и экзаменов ...</li>
