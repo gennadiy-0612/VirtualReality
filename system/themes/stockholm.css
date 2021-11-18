@@ -239,7 +239,7 @@ a {
 .mainTitle {
     display: flex;
     flex-direction: column;
-    max-width: 1270px;
+    max-width: 1310px;
     margin: auto;
     padding: 0 20px;
     width: 100%;
