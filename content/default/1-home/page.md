@@ -31,7 +31,7 @@ Title: Home1
 <picture class="topPoster">
 <source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.jpg" type="image/jpeg">
-<img alt="Demo" class="topPoster" src="https://p.cx.ua/vr/media/images/img/topVideoPoster.png">
+<img alt="Demo" width="1440" height="815" class="topPoster" src="https://p.cx.ua/vr/media/images/img/topVideoPoster.png">
 </picture>
     </div>
 <div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
@@ -85,18 +85,18 @@ Title: Home1
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
-<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftIn.svg">
-<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" src="https://p.cx.ua/vr/media/images/img/arrowRightIn.svg">
-<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig2.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig3.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig4.png">
+<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" width="41" height="41" src="https://p.cx.ua/vr/media/images/img/arrowLeftIn.svg">
+<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="https://p.cx.ua/vr/media/images/img/arrowRightIn.svg">
+<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg2.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg3.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg4.png">
+<img alt="alt" class="outSlideImg" width="260" height="141" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" width="260" height="141" src="https://p.cx.ua/vr/media/images/img/inSlideImg2.png">
+<img alt="alt" class="outSlideImg" width="260" height="141" src="https://p.cx.ua/vr/media/images/img/inSlideImg3.png">
+<img alt="alt" class="outSlideImg" width="260" height="141" src="https://p.cx.ua/vr/media/images/img/inSlideImg4.png">
 </div>
 </div>
 </div>

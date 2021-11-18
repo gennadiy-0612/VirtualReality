@@ -34,7 +34,7 @@ Title: Home
 <picture class="topPoster">
 <source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.jpg" type="image/jpeg">
-<img alt="Demo" class="topPoster" src="https://p.cx.ua/vr/media/images/img/topVideoPoster.png">
+<img alt="Demo" class="topPoster" width="1440" height="815" src="https://p.cx.ua/vr/media/images/img/topVideoPoster.png">
 </picture>
     </div>
 <div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
@@ -73,7 +73,7 @@ Title: Home
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="/">
-<img class="arrowDirectionOut" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftOut.svg">
+<img class="arrowDirectionOut" width="94" height="94" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftOut.svg">
 </a>
 <div class="inSlide">
 <div class="inSlideText">
@@ -88,12 +88,12 @@ Title: Home
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
-<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftIn.svg">
-<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" src="https://p.cx.ua/vr/media/images/img/arrowRightIn.svg">
-<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" width="41" height="41" src="https://p.cx.ua/vr/media/images/img/arrowLeftIn.svg">
+<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="https://p.cx.ua/vr/media/images/img/arrowRightIn.svg">
+<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
 </div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
