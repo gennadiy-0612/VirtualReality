@@ -56,8 +56,8 @@ Language: ru
 <div class="doImages">
 <ul class="whatDid">
 <li class="whatDidWe" id="whatDid1"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png"></li>
-<li class="whatDidWe" id="whatDid2"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo2.png"></li>
-<li class="whatDidWe" id="whatDid3"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo3.png"></li>
+<li class="whatDidWe" id="whatDid2"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png"></li>
+<li class="whatDidWe" id="whatDid3"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png"></li>
 </ul>
 </div>
 </section>
@@ -89,15 +89,15 @@ Language: ru
 <img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftIn.svg">
 <img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" src="https://p.cx.ua/vr/media/images/img/arrowRightIn.svg">
 <img class="outSlideBigImg outSlideBigImgAct" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig2.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig3.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig4.png">
+<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
 </div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg2.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg3.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg4.png">
+<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
