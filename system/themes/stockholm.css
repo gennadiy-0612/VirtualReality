@@ -3,7 +3,7 @@
     src: url("./fonts/HeliosExtC Regular.otf") format("otf");
 }
 
-.header, hr, hide {
+.header, hr, .hide > h2 {
     display: none;
 }
 
