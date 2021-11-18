@@ -24,7 +24,7 @@ Title: Home1
     <div class="video a1440">
         <div class="playPanel">
         <div class="play">
-          <img alt="Demo" src="https://p.cx.ua/vr/media/images/img/playButton.svg">
+          <img alt="Demo" width="1439" height="543" src="https://p.cx.ua/vr/media/images/img/playButton.svg">
         </div>
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
