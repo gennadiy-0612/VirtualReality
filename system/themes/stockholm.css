@@ -572,7 +572,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1430px;
-    padding: 47px 0 44px;
 }
 
 .digitsDigit {
@@ -581,6 +580,7 @@ a {
 
 .digitsLi {
     flex: 1 1 auto;
+    padding: 47px 0 44px;
 }
 
 .digits1 {
