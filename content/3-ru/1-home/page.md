@@ -156,8 +156,8 @@ Language: ru
 </div>
 </section>
 </div>
-<div class="faceGlasses horizonLine">
-<section id="S5" class="a1440 WhoWe">
+<div class="faceGlasses">
+<section id="S5" class="a1440 WhoWe horizonLine">
 <div class="leftInfo">
 <h2 class="whatDo upperText Ag48 colorW">Почему с нами работать?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3">Мы предлагаем вам больше, чем ИТ-компания:</h3>
