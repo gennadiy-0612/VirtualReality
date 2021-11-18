@@ -629,7 +629,7 @@ a {
 }
 
 .good {
-    flex: 1 1 auto;
+    flex: 2 1 auto;
 }
 
 .bad {
