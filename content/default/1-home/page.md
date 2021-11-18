@@ -1,5 +1,8 @@
 ---
-Title: Home1
+Title: Home
+Language: en
+---
+Title: Home
 ---
 <div class="firstBack">
 <div class="firstScreen relative">
@@ -24,14 +27,14 @@ Title: Home1
     <div class="video a1440">
         <div class="playPanel">
         <div class="play">
-          <img alt="Demo" width="1439" height="543" src="https://p.cx.ua/vr/media/images/img/playButton.svg">
+          <img alt="Demo" src="https://p.cx.ua/vr/media/images/img/playButton.svg">
         </div>
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
 <picture class="topPoster">
 <source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.jpg" type="image/jpeg">
-<img alt="Demo" width="1440" height="815" class="topPoster" src="https://p.cx.ua/vr/media/images/img/topVideoPoster.png">
+<img alt="Demo" class="topPoster" width="1440" height="815" src="https://p.cx.ua/vr/media/images/img/topVideoPoster.png">
 </picture>
     </div>
 <div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
@@ -54,9 +57,15 @@ Title: Home1
 </div>
 <div class="doImages">
 <ul class="whatDid">
-<li class="whatDidWe" id="whatDid1"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png"></li>
-<li class="whatDidWe" id="whatDid2"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo2.png"></li>
-<li class="whatDidWe" id="whatDid3"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo3.png"></li>
+<li class="whatDidWe" id="whatDid1">
+<picture  class="w100percents">
+<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
+<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<img class="w100percents" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+</picture>
+</li>
+<li class="whatDidWe" id="whatDid2"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png"></li>
+<li class="whatDidWe" id="whatDid3"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png"></li>
 </ul>
 </div>
 </section>
@@ -70,7 +79,7 @@ Title: Home1
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="/">
-<img class="arrowDirectionOut" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftOut.svg">
+<img class="arrowDirectionOut" width="94" height="94" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftOut.svg">
 </a>
 <div class="inSlide">
 <div class="inSlideText">
@@ -88,15 +97,15 @@ Title: Home1
 <img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" width="41" height="41" src="https://p.cx.ua/vr/media/images/img/arrowLeftIn.svg">
 <img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="https://p.cx.ua/vr/media/images/img/arrowRightIn.svg">
 <img class="outSlideBigImg outSlideBigImgAct" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig2.png">
-<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig3.png">
-<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig4.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg" width="260" height="141" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" width="260" height="141" src="https://p.cx.ua/vr/media/images/img/inSlideImg2.png">
-<img alt="alt" class="outSlideImg" width="260" height="141" src="https://p.cx.ua/vr/media/images/img/inSlideImg3.png">
-<img alt="alt" class="outSlideImg" width="260" height="141" src="https://p.cx.ua/vr/media/images/img/inSlideImg4.png">
+<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
@@ -187,7 +196,11 @@ Title: Home1
 <div class="approachOl">
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
-<img alt="alt" class="approachImg" src="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.png">
+<picture>
+<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
+<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<img alt="alt" width="289" height="1011" class="approachImg" src="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.png">
+</picture>
 </div>
 <div class="stepPartners">
 <ol class="steps">
