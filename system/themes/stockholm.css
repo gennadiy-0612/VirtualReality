@@ -3,7 +3,7 @@
     src: url("./fonts/HeliosExtC Regular.otf") format("otf");
 }
 
-.header, hr {
+.header, hr, hide {
     display: none;
 }
 
@@ -165,12 +165,14 @@ a {
 .firstScreen {
     padding-top: 0;
 }
-.firstBack{
+
+.firstBack {
     max-width: 1920px;
     margin: auto;
     background: url("img/firstBack.svg") center 150px no-repeat;
     background-size: contain;
 }
+
 .backWhite {
     background-color: #FFFFFF;
 }
@@ -645,9 +647,11 @@ a {
     column-gap: 30px;
     min-height: 370px;
 }
+
 .badUl {
     padding: 13px 0 0 14px;
 }
+
 .goodLi, .badLi {
     max-width: 296px;
     position: relative;
@@ -688,13 +692,15 @@ a {
     padding-bottom: 46px;
     margin-bottom: 30px;
 }
-.faceGlasses{
+
+.faceGlasses {
     max-width: 1920px;
     margin: -60px auto;
     padding: 60px 0;
     background: url("img/VRvision.png") 44.5% 73.9% no-repeat;
     background-size: 53%;
 }
+
 .leftInfo, .rightInfo {
     flex: 1 1 auto;
     max-width: 360px;
@@ -725,14 +731,17 @@ a {
 .WhoWeOlRight {
     max-width: 320px;
 }
-.WhoWeLi0{
+
+.WhoWeLi0 {
     line-height: 30px;
     padding-bottom: 10px;
     letter-spacing: 1.6px;
 }
-.WhoWeLi1{
+
+.WhoWeLi1 {
     letter-spacing: 1.9px;
 }
+
 .blueLine {
     position: relative;
 }
@@ -852,7 +861,7 @@ a {
 .partnersSetH2 {
     flex: 1 1 100%;
     max-width: initial;
-    padding:110px 0 0;
+    padding: 110px 0 0;
 }
 
 .partners20H2 {
