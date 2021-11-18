@@ -155,7 +155,7 @@ Title: Home1
 </div>
 </section>
 </div>
-<div class="faceGlasses">
+<div class="faceGlasses horizonLine">
 <section id="S5" class="a1440 WhoWe">
 <div class="leftInfo">
 <h2 class="whatDo upperText Ag48 colorW">Why to work with us?</h2>
