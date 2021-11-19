@@ -6,11 +6,11 @@ Language: ru
 <div class="firstScreen relative">
     <header class="topMenu a1440">
         <div class="mainLinks">
-            <a class="logoA" href="/"></a>
+            <a class="logoA" href="https://p.cx.ua/vr/"></a>
             <ul class="languageSet">
                 <li class="language verticalLine"><a class="languageText HeliosExtC" href="https://p.cx.ua/vr/">EN</a></li>
                 <li class="language verticalLine"><a class="languageText HeliosExtC active" href="https://p.cx.ua/vr/ru/">RU</a></li>
-                <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
+                <li class="language"><a class="languageText HeliosExtC" href="/">PL</a></li>
             </ul>
         </div>
         <a href="#Screen2" title="Demo" class="navy"></a>
