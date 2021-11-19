@@ -33,7 +33,7 @@ Language: ru
 <source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.jpg" type="image/jpeg">
 <img alt="Demo" class="topPoster" src="/media/images/img/topVideoPoster.png">
-<img alt="Demo" class="topPoster" src="/media/images/old-fence.jpg">
+<img alt="Demo" class="topPoster" src="/media/images/a.jpg">
 </picture>
     </div>
 <div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
