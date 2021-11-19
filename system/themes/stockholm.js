@@ -55,7 +55,6 @@ shch.LoadFunc = function () {
     //
     // shch.watch3 = new shch.addDetect();
     // shch.watch3.checkVision(shch.watch.screen3);
-    alert('ppp');
 }
 
 window.addEventListener('load', shch.LoadFunc);
