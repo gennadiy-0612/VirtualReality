@@ -58,24 +58,24 @@ Title: Home
 <div class="doImages">
 <ul class="whatDid">
 <li class="whatDidWe" id="whatDid1">
-<picture  class="w100percents">
+<picture class="w100percents">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 <li class="whatDidWe" id="whatDid2">
 <picture  class="w100percents">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 <li class="whatDidWe" id="whatDid3">
 <picture  class="w100percents">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 </ul>

@@ -429,6 +429,12 @@ a {
     display: block;
 }
 
+.WhatDoIMG {
+    max-width: 1438px;
+    height: 814px;
+    object-fit: contain;
+}
+
 .doImages {
     margin: 26px auto 89px;
 }
@@ -541,6 +547,9 @@ a {
 .outSlideBigImg {
     display: none;
     scroll-snap-align: start;
+    max-width: 1080px;
+    height: 450px;
+    object-fit: cover;
 }
 
 .outSlideImg {
@@ -849,6 +858,12 @@ a {
 .approachH3 {
     max-width: 230px;
     margin: 38px 0 47px;
+}
+
+.approachImg {
+    max-width: 289px;
+    height: 1011px;
+    object-fit: contain;
 }
 
 .partnersSet {
