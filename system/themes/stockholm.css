@@ -646,7 +646,7 @@ a {
 }
 
 .goodUl, .badUl {
-    padding: 37px;
+    padding: 32px 37px 37px;
     column-count: 2;
     column-gap: 47px;
 }
@@ -691,7 +691,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 41px;
+    padding-top: 72px;
     padding-bottom: 46px;
     margin-bottom: 30px;
 }
