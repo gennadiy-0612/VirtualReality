@@ -24,7 +24,7 @@ Title: Home
             <div class="reality-word RealityWordAnim"></div>
         </div>
     </div>
-    <section class="video a1440">
+    <div class="video a1440">
         <div class="playPanel">
         <div class="play">
           <img alt="Demo" src="/media/images/img/playButton.svg">
