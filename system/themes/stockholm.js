@@ -12,7 +12,6 @@ shch.addDetect = function () {
             els.forEach((data) => {
                 if (data.intersectionRatio > .1) {
                     data.target.classList.add(init.animationName);
-                    // data.target.classList.remove(init.moveInit);
                 }
             });
         }
@@ -30,18 +29,15 @@ shch.addDetect = function () {
 shch.watch = {
     screen1: {
         selector: '.VirtualWordAnim',
-        animationName: 'VirtualWordAnim',
-        moveInit: 'VirtualWordAnim'
+        animationName: 'VirtualWordAnim'
     },
     screen2: {
         selector: '.Mouse',
-        animationName: 'MouseAnim',
-        moveInit: 'MouseAnimInit'
+        animationName: 'MouseAnim'
     },
     screen3: {
         selector: '.Appear',
-        animationName: 'AppearAnim',
-        moveInit: 'AppearInit'
+        animationName: 'AppearAnim'
     }
 }
 
