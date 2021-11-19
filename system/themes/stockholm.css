@@ -30,6 +30,72 @@ li {
     list-style-type: none;
 }
 
+
+/*Animation*/
+/*.VirtualWordAnim {*/
+/*    animation-name: FromRightAnim;*/
+/*    animation-duration: 2s;*/
+/*    animation-timing-function: ease-in;*/
+/*}*/
+
+/*.RealityWordAnim {*/
+/*    animation-name: FromLeftAnim;*/
+/*    animation-duration: 2s;*/
+/*    animation-timing-function: ease-in;*/
+/*}*/
+
+.MouseAnimInit {
+    opacity: 1;
+}
+
+.MouseAnim {
+    animation-name: FromRightAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes FromRightAnim {
+    from {
+        opacity: 0;
+        /*transform: translateX(20px);*/
+    }
+    to {
+        opacity: 1;
+        /*transform: translateX(0);*/
+    }
+}
+
+@keyframes FromLeftAnim {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.AppearInit {
+    /*opacity: 0;*/
+}
+
+.AppearAnim {
+    animation-name: Appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes Appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Animation*/
 .a1440 {
     max-width: 1440px;
     margin: auto;
@@ -1085,72 +1151,3 @@ a {
         column-count: 1;
     }
 }
-
-/*Animation*/
-.VirtualWordAnim {
-    animation-name: FromRightAnim;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-}
-
-.RealityWordAnim {
-    animation-name: FromLeftAnim;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-}
-
-.frame, .Mouse {
-    overflow: hidden;
-}
-
-.MouseAnimInit {
-}
-
-.MouseAnim {
-    animation-name: FromRightAnim;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-}
-
-@keyframes FromRightAnim {
-    from {
-        opacity: 0;
-        /*transform: translateX(20px);*/
-    }
-    to {
-        opacity: 1;
-        /*transform: translateX(0);*/
-    }
-}
-
-@keyframes FromLeftAnim {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.AppearInit {
-    /*opacity: 0;*/
-}
-
-.AppearAnim {
-    animation-name: Appear;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-}
-
-@keyframes Appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/*Animation*/
