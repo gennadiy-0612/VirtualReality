@@ -1031,11 +1031,6 @@ a {
         margin-top: -65px;
     }
 
-    .approachImg {
-        object-fit: contain;
-        max-height: 289px;
-    }
-
     .horizonLinePartners::before {
         width: 98%;
     }
