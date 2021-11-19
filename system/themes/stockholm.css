@@ -700,7 +700,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 72px;
     padding-bottom: 46px;
     margin-bottom: 30px;
 }
@@ -718,8 +717,14 @@ a {
     max-width: 360px;
 }
 
+.whyWork {
+    max-width: 270px;
+    padding: 72px 0;
+    letter-spacing: 3.5px;
+}
+
 .WhoWeH3 {
-    margin: 51px 0 18px;
+    margin: -19px 0 18px;
     max-width: 320px;
     letter-spacing: 1.8px;
 }
