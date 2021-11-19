@@ -12,7 +12,7 @@ shch.addDetect = function () {
             els.forEach((data) => {
                 if (data.intersectionRatio > .1) {
                     data.target.classList.add(init.animationName);
-                    data.target.classList.remove(init.moveInit);
+                    // data.target.classList.remove(init.moveInit);
                 }
             });
         }
