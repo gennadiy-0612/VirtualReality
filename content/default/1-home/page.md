@@ -12,7 +12,7 @@ Title: Home
             <ul class="languageSet">
                 <li class="language verticalLine"><a class="languageText HeliosExtC active" href="https://p.cx.ua/vr/">EN</a></li>
                 <li class="language verticalLine"><a class="languageText HeliosExtC" href="https://p.cx.ua/vr/ru/">RU</a></li>
-                <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
+                <li class="language"><a class="languageText HeliosExtC" href="/">PL</a></li>
             </ul>
         </div>
         <a href="#Screen2" title="Demo" class="navy"></a>
