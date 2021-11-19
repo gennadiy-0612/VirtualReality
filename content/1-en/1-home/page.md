@@ -20,8 +20,8 @@ Title: Home
     <div class="mainTitle">
         <div class="frame">
             <h2 class="opportunity colorW Ag24">Unlock new opportunities with</h2>
-            <div class="virtual-word"></div>
-            <div class="reality-word"></div>
+            <div class="virtual-word VirtualWordAnim"></div>
+            <div class="reality-word RealityWordAnim"></div>
         </div>
     </div>
     <div class="video a1440">
@@ -145,7 +145,7 @@ Title: Home
 </li>
 <li class="digitsLi digits4 digitsLiUp">
 <p class="digitsText mw235 Ag14 colorW digitsUp">up to</p>
-<p class="digitsDigit Ag72 colorViolet">90%</p>
+<p class="digitsDigit digitsBig Ag72 colorViolet">90%</p>
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText">knowledge retention</p>
 </li>
 </ul>

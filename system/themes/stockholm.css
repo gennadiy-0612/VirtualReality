@@ -587,6 +587,10 @@ a {
     letter-spacing: 8.1px;
 }
 
+.digitsBig {
+    font-weight: 700;
+}
+
 .digitsLi {
     flex: 1 1 auto;
     padding: 47px 0 44px;
@@ -1046,3 +1050,40 @@ a {
         max-width: 95%;
     }
 }
+
+/*Animation*/
+.VirtualWordAnim {
+    animation-name: FromRightAnim;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.18,.89,.32,1.28);
+}
+
+.RealityWordAnim {
+    animation-name: FromLeftAnim;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.18,.89,.32,1.28);
+}
+
+@keyframes FromRightAnim {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes FromLeftAnim {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*Animation*/

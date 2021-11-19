@@ -29,26 +29,16 @@ shch.addDetect = function () {
 
 shch.watch = {
     screen1: {
-        selector: '.p1',
-        animationName: 'SCALE',
-        moveInit:'SCALEinit'
-    },
-    screen2: {
-        selector: '.p2',
-        animationName: 'SCALE',
-        moveInit:'SCALEinit'
-    },
-    screen3: {
-        selector: '.p3',
-        animationName: 'SCALE',
-        moveInit:'SCALEinit'
+        selector: '.VirtualWordAnim',
+        animationName: 'VirtualWordAnim',
+        moveInit:'VirtualWordAnim'
     }
 }
 
 shch.LoadFunc = function () {
 
-    // shch.watch1 = new shch.addDetect();
-    // shch.watch1.checkVision(shch.watch.screen1);
+    shch.watch1 = new shch.addDetect();
+    shch.watch1.checkVision(shch.watch.screen1);
     //
     // shch.watch2 = new shch.addDetect();
     // shch.watch2.checkVision(shch.watch.screen2);
