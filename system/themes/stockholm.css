@@ -1060,7 +1060,6 @@ a {
 
 .RealityWordAnim {
     animation-name: FromLeftAnim;
-    animation-delay: 2s;
     animation-duration: 2s;
     animation-timing-function: ease-in;
 }
