@@ -1049,6 +1049,10 @@ a {
     .horizonLineWhoWe::before {
         max-width: 95%;
     }
+
+    .goodUl, .badUl {
+        column-count: 1;
+    }
 }
 
 /*Animation*/
