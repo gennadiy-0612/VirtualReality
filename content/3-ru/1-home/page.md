@@ -24,7 +24,7 @@ Title: Home
             <div class="reality-word RealityWordAnim"></div>
         </div>
     </div>
-    <div class="video a1440">
+    <section class="video a1440">
         <div class="playPanel">
         <div class="play">
           <img alt="Demo" src="/media/images/img/playButton.svg">
@@ -36,7 +36,7 @@ Title: Home
 <source srcset="/media/images/img/topVideoPoster.jpg" type="image/jpeg">
 <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
-    </div>
+    </section>
 <div class="a1440 Mouse"><a title="title" class="moveScreen MouseAnim MouseAnimInit" href="#Screen2"></a></div>
 <div class="VR">
     <img class="V" alt="Demo" src="/media/images/img/V.svg">
