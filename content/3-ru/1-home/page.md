@@ -1,25 +1,27 @@
 ---
 Title: Home
-Language: ru
+Language: en
+---
+Title: Home
 ---
 <div class="firstBack">
 <div class="firstScreen relative">
     <header class="topMenu a1440">
         <div class="mainLinks">
-            <a class="logoA" href="./"></a>
+            <a class="logoA" href="/"></a>
             <ul class="languageSet">
-                <li class="language verticalLine"><a class="languageText HeliosExtC" href="./">EN</a></li>
-                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="./ru/">RU</a></li>
-                <li class="language"><a class="languageText HeliosExtC" href="/">PL</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC" href="/">EN</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="/ru/">RU</a></li>
+                <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
             </ul>
         </div>
         <a href="#Screen2" title="Demo" class="navy"></a>
     </header>
     <div class="mainTitle">
         <div class="frame">
-            <h2 class="opportunity colorW Ag24">Откройте новые возможности с</h2>
-            <div class="virtual-word"></div>
-            <div class="reality-word"></div>
+            <h2 class="opportunity colorW Ag24 Appear AppearInit">Раскройте новые возможности с</h2>
+            <div class="virtual-word VirtualWordAnim"></div>
+            <div class="reality-word RealityWordAnim"></div>
         </div>
     </div>
     <div class="video a1440">
@@ -27,7 +29,7 @@ Language: ru
         <div class="play">
           <img alt="Demo" src="/media/images/img/playButton.svg">
         </div>
-        <p class="watch HeliosExtC">СМОТРЕТЬ ПОЛНОЕ ВИДЕО</p>
+        <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
 <picture class="topPoster">
 <source srcset="/media/images/img/topVideoPoster.webp" type="image/webp">
@@ -35,7 +37,7 @@ Language: ru
 <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
     </div>
-<div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
+<div class="a1440 Mouse"><a title="title" class="moveScreen MouseAnim MouseAnimInit" href="#Screen2"></a></div>
 <div class="VR">
     <img class="V" alt="Demo" src="/media/images/img/V.svg">
     <img class="R" alt="Demo" src="/media/images/img/R.svg">
@@ -45,53 +47,71 @@ Language: ru
 <section id="Screen2" class="do a1440">
 <div class="doInfo">
 <div class="doInfoH2">
-<h2 class="whatDo upperText Ag48 colorW">Что мы делаем?</h2>
+<h2 class="whatDo upperText Ag48 colorW">ЧТО МЫ ДЕЛАЕМ?</h2>
 </div>
 <ul class="doLinks">
-<li class="doli"><a title="title" href="#whatDid1" class="Ag18 doA doLinksActive">Иммерсивные тренинги</a></li>
-<li class="doli"><a title="title"  href="#whatDid2" class="colorGrey doA Ag18">Реалистичные симуляции</a></li>
-<li class="doli"><a title="title"  href="#whatDid3" class="colorGrey doA Ag18">Тестирование способностей</a></li>
+<li class="doli"><a title="title" href="#whatDid1" class="Ag18 doA doLinksActive">ИММЕРСИВНЫЕ ТРЕНИНГИ</a></li>
+<li class="doli"><a title="title"  href="#whatDid2" class="colorGrey doA Ag18">РЕАЛИСТИЧНОЕ МОДЕЛИРОВАНИЕ</a></li>
+<li class="doli"><a title="title"  href="#whatDid3" class="colorGrey doA Ag18">ТЕСТИРОВАНИЕ СПОСОБНОСТЕЙ</a></li>
 </ul>
 </div>
 <div class="doImages">
 <ul class="whatDid">
-<li class="whatDidWe" id="whatDid1"><img class="w100percents" alt="Demo" src="/media/images/img/WhatDoWeDo1.png"></li>
-<li class="whatDidWe" id="whatDid2"><img class="w100percents" alt="Demo" src="/media/images/img/WhatDoWeDo1.png"></li>
-<li class="whatDidWe" id="whatDid3"><img class="w100percents" alt="Demo" src="/media/images/img/WhatDoWeDo1.png"></li>
+<li class="whatDidWe" id="whatDid1">
+<picture class="w100percents">
+<source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
+<source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
+</picture>
+</li>
+<li class="whatDidWe" id="whatDid2">
+<picture  class="w100percents">
+<source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
+<source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
+</picture>
+</li>
+<li class="whatDidWe" id="whatDid3">
+<picture  class="w100percents">
+<source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
+<source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
+</picture>
+</li>
 </ul>
 </div>
 </section>
 <section class="screen3 Slides">
 <div class="doInfoH2">
-<h2 class="whatDo upperText Ag48 colorW">Наши проекты</h2>
+<h2 class="whatDo upperText Ag48 colorW">НАШИ ПРОЕКТЫ</h2>
 </div>
 <ul class="doLinks doLinks-project">
-<li class="doli doli-projects"><a title="title" href="#whatDid1" class="Ag24 doA doA-project doLinksActive">01. безопасность</a></li>
-<li class="doli doli-projects"><a title="title" href="#whatDid2" class="colorGrey doA doA-project Ag24">02. оборона</a></li>
+<li class="doli doli-projects"><a title="title" href="#whatDid1" class="Ag24 doA doA-project doLinksActive">01. БЕЗОПАСНОСТЬ</a></li>
+<li class="doli doli-projects"><a title="title" href="#whatDid2" class="colorGrey doA doA-project Ag24">02. защита</a></li>
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="/">
-<img class="arrowDirectionOut" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
+<img class="arrowDirectionOut" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
 <div class="inSlide">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText">безопасность</h2>
 <ul class="outSlideUl">
-<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Интерактивный иммерсивный тренинг по охране здоровья и безопасности</li>
-<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Моделирование опасных сред с высоким риском без какого-либо риска</li>
-<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Реплика реальных локаций, рабочих задач и оборудования</li>
-<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Многоотраслевые задания Режимы обучения и экзаменов ...</li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Интерактивное иммерсивное обучение по охране труда и технике безопасности</li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Моделирование опасных сред с высоким уровнем риска без какого-либо риска </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Реплики реальных мест, рабочих задач и оборудования </li>
 </ul>
 <a title="title" href="/" class="GoTo colorW Ag14 lineHeight30 upperText">перейти на страницу</a>
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
-<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" src="/media/images/img/arrowLeftIn.svg">
-<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" src="/media/images/img/arrowRightIn.svg">
-<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
+<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
+<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
+<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
 </div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
@@ -101,7 +121,7 @@ Language: ru
 </div>
 </div>
 </div>
-<a title="title" class="outSlideLeft arrowDirectionOut" href="/">
+<a title="title" class="outSlideRight arrowDirectionOut" href="/">
 <img class="arrowDirectionOut" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
 </div>
@@ -113,7 +133,7 @@ Language: ru
 <ul class="digits">
 <li class="digitsLi digits1">
 <p class="digitsDigit Ag72 colorViolet">4x</p>
-<p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText1">тренироваться быстрее, чем в классе</p>
+<p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText1">обучение проходит быстрее, чем в классе</p>
 </li>
 <li class="digitsLi digits2">
 <p class="digitsDigit Ag72 colorViolet">275%</p>
@@ -121,34 +141,34 @@ Language: ru
 </li>
 <li class="digitsLi digits3">
 <p class="digitsDigit Ag72 colorViolet">3.75x</p>
-<p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText3">более эмоционально связаны с контентом, чем учащиеся в классе</p>
+<p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText3">более эмоционально связаны с содержанием, чем учащиеся в классе</p>
 </li>
 <li class="digitsLi digits4 digitsLiUp">
-<p class="digitsText mw235 Ag14 colorW digitsUp">вплоть до</p>
-<p class="digitsDigit Ag72 colorViolet">90%</p>
+<p class="digitsText mw235 Ag14 colorW digitsUp">до</p>
+<p class="digitsDigit digitsBig Ag72 colorViolet">90%</p>
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText">сохранение знаний</p>
 </li>
 </ul>
 <div class="Compare">
 <div class="good">
-<h3 class="goodH3 Ag24 colorW upperText">Обучение с использованием виртуальной реальности</h3>
+<h3 class="goodH3 Ag24 colorW upperText">Обучение с использованием VR</h3>
 <ul class="goodUl">
-<li class="Ag18 lineHeight30 goodLi colorW">Экономичный и масштабируемый</li>
-<li class="Ag18 lineHeight30 goodLi colorW">Реалистичный и захватывающий</li>
-<li class="Ag18 lineHeight30 goodLi colorW">Любая среда, опасность, риск можно смоделировать без риска</li>
-<li class="Ag18 lineHeight30 goodLi colorW">Высокая концентрация (нет возможности обманывать) и вовлеченность (игровой опыт)</li>
-<li class="Ag18 lineHeight30 goodLi colorW">Подходит для нового поколения, привыкшего к новым технологиям</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Экономическая эффективность и высокая масштабируемость</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Реалистичность и погружение</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Любая среда, опасность, риск могут быть смоделированы без риска</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Высокая концентрация (нет возможности обмануть) и вовлеченность (игровой опыт)</li>
+<li class="Ag18 lineHeight30 goodLi colorW">Подходит для нового поколения, которое привыкло к новым технологиям</li>
 <li class="Ag18 lineHeight30 goodLi colorW">Сенсорная эмоциональная и психофизиологическая оценка</li>
 </ul>
 </div>
 <div class="bad">
 <h3 class="badH3 Ag24 colorGrey7 upperText">Классическое обучение</h3>
 <ul class="badUl">
-<li class="Ag18 lineHeight30 badLi colorGrey7">Дорогие</li>
-<li class="Ag18 lineHeight30 badLi colorGrey7">Кропотливый</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Дорого</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Time consuming</li>
 <li class="Ag18 lineHeight30 badLi colorGrey7">Рискованно или даже невозможно смоделировать высокий риск / опасности</li>
-<li class="Ag18 lineHeight30 badLi colorGrey7">Скучно и не мотивирующе</li>
-<li class="Ag18 lineHeight30 badLi colorGrey7">Плохое удержание знаний</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Скучно и не мотивирует</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Плохая сохранность знаний</li>
 <li class="Ag18 lineHeight30 badLi colorGrey7">Ограниченное развитие навыков в экстремальных ситуациях</li>
 </ul>
 </div>
@@ -157,26 +177,26 @@ Language: ru
 </section>
 </div>
 <div class="faceGlasses">
-<section id="S5" class="a1440 WhoWe horizonLine">
+<section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
 <div class="leftInfo">
-<h2 class="whatDo upperText Ag48 colorW">Почему с нами работать?</h2>
-<h3 class="colorW Ag24 upperText WhoWeH3">Мы предлагаем вам больше, чем ИТ-компания:</h3>
+<h2 class="whyWork upperText Ag48 colorW">Почему стоит работать с нами?</h2>
+<h3 class="colorW Ag24 upperText WhoWeH3">Мы предлагаем вам больше, чем ИТ-компании:</h3>
 <ol class="WhoWeOl WhoWeOlLeft">
-<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Бизнес, IT, наука, искусство и медицина</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Бизнес, информационные технологии, наука, искусство и медицина</li>
 <li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Решения спереди назад</li>
-<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Специалисты в предметной области</li>
-<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Собственные НИОКР и собственные разработки</li>
-<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Мы ориентируемся на решение задач вашего бизнеса</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Эксперты по конкретным вопросам</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Собственные НИОКР и внутренние разработки</li>
+<li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Мы сосредоточены на решении ваших бизнес-задач</li>
 </ol>
 </div>
 <div class="rightInfo">
-<h2 class="whatDo upperText Ag48 colorW WhoWeH2Right">Кто мы есть?</h2>
+<h2 class="whyWork upperText Ag48 colorW WhoWeH2Right">Кто мы?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Уникальная команда экспертов:</h3>
 <ol class="WhoWeOl WhoWeOlRight">
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Консультанты по менеджменту</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Консультанты по управлению</li>
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Эксперты по аппаратному и программному обеспечению</li>
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Графические и звуковые дизайнеры</li>
-<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Военнослужащие в отставке</li>
+<li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Отставные военные офицеры</li>
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Психологи и врачи</li>
 </ol>
 </div>
@@ -187,29 +207,33 @@ Language: ru
 <div class="approach horizonLine">
 <div class="approachOl">
 <h2 class="approachH2 upperText Ag48 colorW">Наш подход?</h2>
-<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Фазы и мощность:</h3>
-<img alt="alt" class="approachImg" src="/media/images/img/PhasesAndOutput.png">
+<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Фазы и производительность:</h3>
+<picture>
+<source srcset="/media/images/img/PhasesAndOutput.webp" type="image/webp">
+<source srcset="/media/images/img/PhasesAndOutput.jpg" type="image/jpeg">
+<img alt="alt" width="289" height="1011" class="approachImg" src="/media/images/img/PhasesAndOutput.png">
+</picture>
 </div>
 <div class="stepPartners">
 <ol class="steps">
 <li class="one stepsBefore">
 <p class="Ag18 stepsP colorGrey7">Понимание<br/> ваших потребностей → </p>
-<p class="Ag18 stepsP colorW">Определенная проблема</p></li>
+<p class="Ag18 stepsP colorW">Определенный вызов</p></li>
 <li class="two stepsBefore">
 <p class="Ag18 stepsP colorGrey7">Предложение вариантов решения → </p>
-<p class="Ag18 stepsP colorW">Технические требования </p></li>
+<p class="Ag18 stepsP colorW">Техническое задание </p></li>
 <li class="three stepsBefore">
 <p class="Ag18 stepsP colorGrey7">Планирование оценки затрат и времени → </p>
-<p class="Ag18 stepsP colorW">Планирование доставки</p></li>
+<p class="Ag18 stepsP colorW">Планирование поставок</p></li>
 <li class="four stepsBefore">
-<p class="Ag18 stepsP colorGrey7">Разработка с регулярными отзывами → </p>
-<p class="Ag18 stepsP colorW">Версии продукта </p></li>
+<p class="Ag18 stepsP colorGrey7">Развитие с регулярными обзорами → </p>
+<p class="Ag18 stepsP colorW">Product versions </p></li>
 <li class="five stepsBefore">
-<p class="Ag18 stepsP colorGrey7">Окончательный обзор и оценка →</p>
+<p class="Ag18 stepsP colorGrey7">Варианты продукции →</p>
 <p class="Ag18 stepsP colorW">Конечный продукт и поддержка</p></li>
 </ol>
 <div class="partnersSet">
-<div class="partnersSetTop partnersSetH2 horizonLine">
+<div class="partnersSetTop partnersSetH2 horizonLine horizonLinePartners">
 <h2 class="partnersSetText whatDo upperText Ag48 colorW">НАШИ ПАРТНЕРЫ</h2>
 </div>
 <div class="partnersSetIcons">
@@ -237,6 +261,7 @@ Language: ru
 </div>
 </section>
 </div>
+<div class="forLine">
 <footer id="foot" class="a1440 foot horizonLine">
 <a class="logoA logoA-bottom" href="/"></a>
 <ul class="contacts">
@@ -248,7 +273,9 @@ Language: ru
 </ul>
 <p class="copyRight">
 <span class="copyRightSpan CR Ag14 colorW">© 2021</span>
-<span class="copyRightSpan Law Ag14 colorW">Все права защищены</span>
+<span class="copyRightSpan Law Ag14 colorW">All Rights Reserved</span>
 </p>
-<address class="address Ag18 colorGrey8">VR.Consulting Sp. z oo, НИП: 7011030959 ул. Новогродская, 50-515, 00-695,<br/>Варшава</address>
+<address class="address Ag18 colorGrey8">VR.Consulting Sp. z o.o., NIP: 7011030959
+Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
 </footer>
+</div>
