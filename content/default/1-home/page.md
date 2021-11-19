@@ -58,24 +58,24 @@ Title: Home
 <div class="doImages">
 <ul class="whatDid">
 <li class="whatDidWe" id="whatDid1">
-<picture  class="w100percents">
+<picture class="w100percents">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 <li class="whatDidWe" id="whatDid2">
 <picture  class="w100percents">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 <li class="whatDidWe" id="whatDid3">
 <picture  class="w100percents">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 </ul>
@@ -121,7 +121,7 @@ Title: Home
 </div>
 </div>
 </div>
-<a title="title" class="outSlideLeft arrowDirectionOut" href="/">
+<a title="title" class="outSlideRight arrowDirectionOut" href="/">
 <img class="arrowDirectionOut" alt="arrowRightIn" src="https://p.cx.ua/vr/media/images/img/arrowRightOut.svg">
 </a>
 </div>
@@ -177,7 +177,7 @@ Title: Home
 </section>
 </div>
 <div class="faceGlasses">
-<section id="S5" class="a1440 WhoWe horizonLine">
+<section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
 <div class="leftInfo">
 <h2 class="whatDo upperText Ag48 colorW">Why to work with us?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>
@@ -209,8 +209,8 @@ Title: Home
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
 <picture>
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<source srcset="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.webp" type="image/webp">
+<source srcset="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.jpg" type="image/jpeg">
 <img alt="alt" width="289" height="1011" class="approachImg" src="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.png">
 </picture>
 </div>
@@ -233,7 +233,7 @@ Title: Home
 <p class="Ag18 stepsP colorW">Final product & support</p></li>
 </ol>
 <div class="partnersSet">
-<div class="partnersSetTop partnersSetH2 horizonLine">
+<div class="partnersSetTop partnersSetH2 horizonLine horizonLinePartners">
 <h2 class="partnersSetText whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
 </div>
 <div class="partnersSetIcons">
@@ -261,6 +261,7 @@ Title: Home
 </div>
 </section>
 </div>
+<div class="forLine">
 <footer id="foot" class="a1440 foot horizonLine">
 <a class="logoA logoA-bottom" href="/"></a>
 <ul class="contacts">
@@ -277,3 +278,4 @@ Title: Home
 <address class="address Ag18 colorGrey8">VR.Consulting Sp. z o.o., NIP: 7011030959
 Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
 </footer>
+</div>
