@@ -935,9 +935,12 @@ a {
 /*screen 6*/
 /*Why to work with us?*/
 /*Footer*/
-.forLine{
-
+.forLine {
+    max-width: 1960px;
+    margin: auto;
+    padding: 0 20px;
 }
+
 .foot {
     display: flex;
     flex-wrap: wrap;
