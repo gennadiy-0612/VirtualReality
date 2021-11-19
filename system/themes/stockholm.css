@@ -1084,7 +1084,7 @@ a {
 @keyframes FromRightAnim {
     from {
         opacity: 0;
-        transform: translateX(200px);
+        transform: translateX(100px);
     }
     to {
         opacity: 1;
@@ -1095,7 +1095,7 @@ a {
 @keyframes FromLeftAnim {
     from {
         opacity: 0;
-        transform: translateX(-200px);
+        transform: translateX(-100px);
     }
     to {
         opacity: 1;
