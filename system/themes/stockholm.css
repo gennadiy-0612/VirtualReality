@@ -1017,6 +1017,33 @@ a {
 
 /*Footer*/
 
+@media (max-width: 576px) {
+    .one {
+        margin: 0;
+    }
+
+    .two {
+        margin: 0;
+    }
+
+    .three {
+        margin: 0;
+    }
+
+    .four {
+        margin: 0;
+    }
+
+    .five {
+        margin: 0;
+    }
+
+    .steps {
+        background-size: 150%;
+        background-position: center;
+    }
+}
+
 @media (max-width: 1036px) {
     .steps {
         background-position-y: 67.4%;
@@ -1025,7 +1052,8 @@ a {
     .contactsA {
         line-height: 30px;
     }
-    .goodLi, .badLi{
+
+    .goodLi, .badLi {
         max-width: initial;
     }
 }
