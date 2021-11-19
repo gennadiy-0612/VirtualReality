@@ -8,10 +8,10 @@ Title: Home
 <div class="firstScreen relative">
     <header class="topMenu a1440">
         <div class="mainLinks">
-            <a class="logoA" href="https://p.cx.ua/vr/"></a>
+            <a class="logoA" href="/"></a>
             <ul class="languageSet">
-                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="https://p.cx.ua/vr/">EN</a></li>
-                <li class="language verticalLine"><a class="languageText HeliosExtC" href="https://p.cx.ua/vr/ru/">RU</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="/">EN</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC" href="/ru/">RU</a></li>
                 <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
             </ul>
         </div>
@@ -27,20 +27,20 @@ Title: Home
     <div class="video a1440">
         <div class="playPanel">
         <div class="play">
-          <img alt="Demo" src="https://p.cx.ua/vr/media/images/img/playButton.svg">
+          <img alt="Demo" src="/media/images/img/playButton.svg">
         </div>
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
 <picture class="topPoster">
-<source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.webp" type="image/webp">
-<source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.jpg" type="image/jpeg">
-<img alt="Demo" class="topPoster" width="1440" height="815" src="https://p.cx.ua/vr/media/images/img/topVideoPoster.png">
+<source srcset="/media/images/img/topVideoPoster.webp" type="image/webp">
+<source srcset="/media/images/img/topVideoPoster.jpg" type="image/jpeg">
+<img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
     </div>
 <div class="a1440 Mouse"><a title="title" class="moveScreen MouseAnim MouseAnimInit" href="#Screen2"></a></div>
 <div class="VR">
-    <img class="V" alt="Demo" src="https://p.cx.ua/vr/media/images/img/V.svg">
-    <img class="R" alt="Demo" src="https://p.cx.ua/vr/media/images/img/R.svg">
+    <img class="V" alt="Demo" src="/media/images/img/V.svg">
+    <img class="R" alt="Demo" src="/media/images/img/R.svg">
 </div>
 </div>
 </div>
@@ -59,23 +59,23 @@ Title: Home
 <ul class="whatDid">
 <li class="whatDidWe" id="whatDid1">
 <picture class="w100percents">
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+<source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
+<source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 <li class="whatDidWe" id="whatDid2">
 <picture  class="w100percents">
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+<source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
+<source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 <li class="whatDidWe" id="whatDid3">
 <picture  class="w100percents">
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png">
+<source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
+<source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 </ul>
@@ -91,7 +91,7 @@ Title: Home
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="/">
-<img class="arrowDirectionOut" width="94" height="94" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftOut.svg">
+<img class="arrowDirectionOut" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
 <div class="inSlide">
 <div class="inSlideText">
@@ -106,23 +106,23 @@ Title: Home
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
-<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" width="41" height="41" src="https://p.cx.ua/vr/media/images/img/arrowLeftIn.svg">
-<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="https://p.cx.ua/vr/media/images/img/arrowRightIn.svg">
-<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" width="1080" height="450" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
+<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
+<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
 <a title="title" class="outSlideRight arrowDirectionOut" href="/">
-<img class="arrowDirectionOut" alt="arrowRightIn" src="https://p.cx.ua/vr/media/images/img/arrowRightOut.svg">
+<img class="arrowDirectionOut" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
 </div>
 </section>
@@ -209,9 +209,9 @@ Title: Home
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
 <picture>
-<source srcset="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.webp" type="image/webp">
-<source srcset="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.jpg" type="image/jpeg">
-<img alt="alt" width="289" height="1011" class="approachImg" src="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.png">
+<source srcset="/media/images/img/PhasesAndOutput.webp" type="image/webp">
+<source srcset="/media/images/img/PhasesAndOutput.jpg" type="image/jpeg">
+<img alt="alt" width="289" height="1011" class="approachImg" src="/media/images/img/PhasesAndOutput.png">
 </picture>
 </div>
 <div class="stepPartners">
