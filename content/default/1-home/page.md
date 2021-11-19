@@ -233,7 +233,7 @@ Title: Home
 <p class="Ag18 stepsP colorW">Final product & support</p></li>
 </ol>
 <div class="partnersSet">
-<div class="partnersSetH2 horizonLine">
+<div class="partnersSetTop partnersSetH2 horizonLine">
 <h2 class="partnersSetText whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
 </div>
 <div class="partnersSetIcons">

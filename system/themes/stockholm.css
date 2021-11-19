@@ -640,13 +640,15 @@ a {
     letter-spacing: 1.5px;
     margin: 25px 0;
 }
-.goodH3{
+
+.goodH3 {
     margin-left: -14px;
 }
+
 .goodUl, .badUl {
     padding: 37px;
     column-count: 2;
-    column-gap: 30px;
+    column-gap: 47px;
 }
 
 .badUl {
@@ -689,7 +691,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 41px;
     padding-bottom: 46px;
     margin-bottom: 30px;
 }
@@ -853,6 +855,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     padding: 112px 0 0;
+}
+
+.partnersSetTop {
+    padding: 50px 0 0;
 }
 
 .partnersSetText {

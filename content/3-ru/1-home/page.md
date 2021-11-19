@@ -209,7 +209,7 @@ Language: ru
 <p class="Ag18 stepsP colorW">Конечный продукт и поддержка</p></li>
 </ol>
 <div class="partnersSet">
-<div class="partnersSetH2 horizonLine">
+<div class="partnersSetTop partnersSetH2 horizonLine">
 <h2 class="partnersSetText whatDo upperText Ag48 colorW">НАШИ ПАРТНЕРЫ</h2>
 </div>
 <div class="partnersSetIcons">
