@@ -432,7 +432,7 @@ a {
 .WhatDoImg {
     max-width: 1438px;
     height: 814px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .doImages {
