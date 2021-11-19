@@ -1019,23 +1019,23 @@ a {
 
 @media (max-width: 576px) {
     .one {
-        margin:50px 0;
+        margin: 50px 0;
     }
 
     .two {
-        margin:50px 0;
+        margin: 50px 0;
     }
 
     .three {
-        margin:50px 0;
+        margin: 50px 0;
     }
 
     .four {
-        margin:50px 0;
+        margin: 50px 0;
     }
 
     .five {
-        margin:50px 0;
+        margin: 50px 0;
     }
 
     .steps {
@@ -1133,12 +1133,18 @@ a {
         transform: translateX(0);
     }
 }
-.AppearAnim{
+
+.AppearInit {
+    opacity: 0;
+}
+
+.AppearAnim {
     animation-name: AppearAnim;
     animation-duration: 2s;
     animation-timing-function: ease-in;
 }
-@keyframes  AppearAnim {
+
+@keyframes AppearAnim {
     from {
         opacity: 0;
     }

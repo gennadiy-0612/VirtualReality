@@ -31,17 +31,17 @@ shch.watch = {
     screen1: {
         selector: '.frame',
         animationName: 'VirtualWordAnim',
-        moveInit:'VirtualWordAnim'
+        moveInit: 'VirtualWordAnim'
     },
     screen2: {
         selector: '.Mouse',
         animationName: 'MouseAnim',
-        moveInit:'MouseAnimInit'
+        moveInit: 'MouseAnimInit'
     },
     screen2: {
         selector: '.frame',
         animationName: 'AppearAnim',
-        moveInit:''
+        moveInit: 'AppearInit'
     }
 }
 
