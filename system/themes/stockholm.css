@@ -991,3 +991,10 @@ a {
 }
 
 /*Footer*/
+
+@media (max-width: 1036px) {
+    .steps {
+        background-position-y: 67.4%;
+    }
+
+}
