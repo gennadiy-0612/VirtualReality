@@ -1138,7 +1138,7 @@ a {
     /*opacity: 0;*/
 }
 
-.Appear {
+.AppearAnim {
     animation-name: AppearAnim;
     animation-duration: 1s;
     animation-timing-function: ease-in;
