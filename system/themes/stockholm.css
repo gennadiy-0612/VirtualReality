@@ -935,6 +935,9 @@ a {
 /*screen 6*/
 /*Why to work with us?*/
 /*Footer*/
+.forLine{
+
+}
 .foot {
     display: flex;
     flex-wrap: wrap;

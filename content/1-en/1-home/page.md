@@ -261,6 +261,7 @@ Title: Home
 </div>
 </section>
 </div>
+<div class="forLine">
 <footer id="foot" class="a1440 foot horizonLine">
 <a class="logoA logoA-bottom" href="/"></a>
 <ul class="contacts">
@@ -277,3 +278,4 @@ Title: Home
 <address class="address Ag18 colorGrey8">VR.Consulting Sp. z o.o., NIP: 7011030959
 Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
 </footer>
+</div>
