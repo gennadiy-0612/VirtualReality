@@ -39,7 +39,7 @@ shch.watch = {
         moveInit: 'MouseAnimInit'
     },
     screen3: {
-        selector: '.AppearAnim',
+        selector: '.Appear',
         animationName: 'AppearAnim',
         moveInit: 'AppearInit'
     }

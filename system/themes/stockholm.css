@@ -1115,7 +1115,7 @@ a {
 @keyframes FromRightAnim {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(20px);
     }
     to {
         opacity: 1;
@@ -1126,7 +1126,7 @@ a {
 @keyframes FromLeftAnim {
     from {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-20px);
     }
     to {
         opacity: 1;
@@ -1138,7 +1138,7 @@ a {
     /*opacity: 0;*/
 }
 
-.AppearAnim {
+.Appear {
     animation-name: AppearAnim;
     animation-duration: 1s;
     animation-timing-function: ease-in;
