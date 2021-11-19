@@ -6,7 +6,7 @@ Language: ru
 <div class="firstScreen relative">
     <header class="topMenu a1440">
         <div class="mainLinks">
-            <a class="logoA" href="https://p.cx.ua/vr/"></a>
+            <a class="logoA" href="./"></a>
             <ul class="languageSet">
                 <li class="language verticalLine"><a class="languageText HeliosExtC" href="./">EN</a></li>
                 <li class="language verticalLine"><a class="languageText HeliosExtC active" href="./ru/">RU</a></li>
@@ -25,20 +25,20 @@ Language: ru
     <div class="video a1440">
         <div class="playPanel">
         <div class="play">
-          <img alt="Demo" src="https://p.cx.ua/vr/media/images/img/playButton.svg">
+          <img alt="Demo" src="/media/images/img/playButton.svg">
         </div>
         <p class="watch HeliosExtC">СМОТРЕТЬ ПОЛНОЕ ВИДЕО</p>
         </div>
 <picture class="topPoster">
-<source srcset="/vr/media/images/img/topVideoPoster.webp" type="image/webp">
-<source srcset="/vr/media/images/img/topVideoPoster.jpg" type="image/jpeg">
-<img alt="Demo" class="topPoster" width="1440" height="815" src="/vr/media/images/img/topVideoPoster.jpg">
+<source srcset="/media/images/img/topVideoPoster.webp" type="image/webp">
+<source srcset="/media/images/img/topVideoPoster.jpg" type="image/jpeg">
+<img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
     </div>
 <div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
 <div class="VR">
-    <img class="V" alt="Demo" src="https://p.cx.ua/vr/media/images/img/V.svg">
-    <img class="R" alt="Demo" src="https://p.cx.ua/vr/media/images/img/R.svg">
+    <img class="V" alt="Demo" src="/media/images/img/V.svg">
+    <img class="R" alt="Demo" src="/media/images/img/R.svg">
 </div>
 </div>
 </div>
@@ -55,9 +55,9 @@ Language: ru
 </div>
 <div class="doImages">
 <ul class="whatDid">
-<li class="whatDidWe" id="whatDid1"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png"></li>
-<li class="whatDidWe" id="whatDid2"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png"></li>
-<li class="whatDidWe" id="whatDid3"><img class="w100percents" alt="Demo" src="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.png"></li>
+<li class="whatDidWe" id="whatDid1"><img class="w100percents" alt="Demo" src="/media/images/img/WhatDoWeDo1.png"></li>
+<li class="whatDidWe" id="whatDid2"><img class="w100percents" alt="Demo" src="/media/images/img/WhatDoWeDo1.png"></li>
+<li class="whatDidWe" id="whatDid3"><img class="w100percents" alt="Demo" src="/media/images/img/WhatDoWeDo1.png"></li>
 </ul>
 </div>
 </section>
@@ -71,7 +71,7 @@ Language: ru
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="/">
-<img class="arrowDirectionOut" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftOut.svg">
+<img class="arrowDirectionOut" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
 <div class="inSlide">
 <div class="inSlideText">
@@ -86,23 +86,23 @@ Language: ru
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
-<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" src="https://p.cx.ua/vr/media/images/img/arrowLeftIn.svg">
-<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" src="https://p.cx.ua/vr/media/images/img/arrowRightIn.svg">
-<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg" alt="Alt" src="https://p.cx.ua/vr/media/images/img/inSlideImgBig1.png">
+<img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" src="/media/images/img/arrowLeftIn.svg">
+<img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" src="/media/images/img/arrowRightIn.svg">
+<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="https://p.cx.ua/vr/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
 <a title="title" class="outSlideLeft arrowDirectionOut" href="/">
-<img class="arrowDirectionOut" alt="arrowRightIn" src="https://p.cx.ua/vr/media/images/img/arrowRightOut.svg">
+<img class="arrowDirectionOut" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
 </div>
 </section>
@@ -188,7 +188,7 @@ Language: ru
 <div class="approachOl">
 <h2 class="approachH2 upperText Ag48 colorW">Наш подход?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Фазы и мощность:</h3>
-<img alt="alt" class="approachImg" src="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.png">
+<img alt="alt" class="approachImg" src="/media/images/img/PhasesAndOutput.png">
 </div>
 <div class="stepPartners">
 <ol class="steps">
