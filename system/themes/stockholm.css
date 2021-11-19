@@ -1055,13 +1055,13 @@ a {
 .VirtualWordAnim {
     animation-name: FromRightAnim;
     animation-duration: 2s;
-    animation-timing-function: cubic-bezier(.18,.89,.32,1.28);
+    animation-timing-function: ease-in-out;
 }
 
 .RealityWordAnim {
     animation-name: FromLeftAnim;
     animation-duration: 2s;
-    animation-timing-function: cubic-bezier(.18,.89,.32,1.28);
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes FromRightAnim {
