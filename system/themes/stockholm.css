@@ -267,7 +267,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 78.3%;
-    overflow: hidden;
 }
 
 .opportunity {
@@ -1063,6 +1062,10 @@ a {
     animation-name: FromLeftAnim;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
+}
+
+.frame, .Mouse {
+    overflow: hidden;
 }
 
 .MouseAnim {
