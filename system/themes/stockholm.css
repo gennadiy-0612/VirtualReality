@@ -1025,6 +1025,9 @@ a {
     .contactsA {
         line-height: 30px;
     }
+    .goodLi, .badLi{
+        max-width: initial;
+    }
 }
 
 @media (max-width: 1480px) {
