@@ -1104,3 +1104,54 @@ a {
 }
 
 /*Animation*/
+
+
+/*Animation*/
+.VirtualWordAnim {
+    animation-name: FromRightAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.RealityWordAnim {
+    animation-name: FromLeftAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.frame, .Mouse {
+    overflow: hidden;
+}
+
+.MouseAnimInit {
+}
+
+.MouseAnim {
+    animation-name: FromRightAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes FromRightAnim {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes FromLeftAnim {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*Animation*/
