@@ -177,7 +177,7 @@ Title: Home
 </section>
 </div>
 <div class="faceGlasses">
-<section id="S5" class="a1440 WhoWe horizonLine">
+<section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
 <div class="leftInfo">
 <h2 class="whatDo upperText Ag48 colorW">Why to work with us?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>

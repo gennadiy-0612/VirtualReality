@@ -1041,3 +1041,8 @@ a {
     }
 }
 
+@media (max-width: 1550px) {
+    .horizonLineWhoWe::before {
+        max-width: 98%;
+    }
+}
