@@ -37,6 +37,11 @@ shch.watch = {
         selector: '.Mouse',
         animationName: 'MouseAnim',
         moveInit:'MouseAnimInit'
+    },
+    screen2: {
+        selector: '.frame',
+        animationName: 'AppearAnim',
+        moveInit:''
     }
 }
 

@@ -1133,5 +1133,18 @@ a {
         transform: translateX(0);
     }
 }
+.AppearAnim{
+    animation-name: AppearAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+@keyframes  AppearAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 /*Animation*/
