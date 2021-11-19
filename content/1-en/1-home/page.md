@@ -121,7 +121,7 @@ Title: Home
 </div>
 </div>
 </div>
-<a title="title" class="outSlideLeft arrowDirectionOut" href="/">
+<a title="title" class="outSlideRight arrowDirectionOut" href="/">
 <img class="arrowDirectionOut" alt="arrowRightIn" src="https://p.cx.ua/vr/media/images/img/arrowRightOut.svg">
 </a>
 </div>
@@ -209,8 +209,8 @@ Title: Home
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
 <picture>
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.webp" type="image/webp">
-<source srcset="https://p.cx.ua/vr/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<source srcset="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.webp" type="image/webp">
+<source srcset="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.jpg" type="image/jpeg">
 <img alt="alt" width="289" height="1011" class="approachImg" src="https://p.cx.ua/vr/media/images/img/PhasesAndOutput.png">
 </picture>
 </div>
@@ -233,7 +233,7 @@ Title: Home
 <p class="Ag18 stepsP colorW">Final product & support</p></li>
 </ol>
 <div class="partnersSet">
-<div class="partnersSetTop partnersSetH2 horizonLine">
+<div class="partnersSetTop partnersSetH2 horizonLine horizonLinePartners">
 <h2 class="partnersSetText whatDo upperText Ag48 colorW">OUR PARTNERS</h2>
 </div>
 <div class="partnersSetIcons">

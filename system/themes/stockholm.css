@@ -1003,6 +1003,7 @@ a {
 .address {
     flex: 1 1 296px;
     margin: 40px 0;
+    max-width: 430px;
 }
 
 /*Footer*/
@@ -1012,4 +1013,31 @@ a {
         background-position-y: 67.4%;
     }
 
+    .contactsA {
+        line-height: 30px;
+    }
 }
+
+@media (max-width: 1480px) {
+    .outSlideUl {
+        max-width: initial;
+    }
+
+    .outSlideImages {
+        display: none;
+    }
+
+    .arrowDirectionOut {
+        margin-top: -65px;
+    }
+
+    .approachImg {
+        object-fit: contain;
+        max-height: 289px;
+    }
+
+    .horizonLinePartners::before {
+        width: 98%;
+    }
+}
+
