@@ -10,7 +10,7 @@ Title: Home
         <div class="mainLinks">
             <a class="logoA" href="/"></a>
             <ul class="languageSet">
-                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="https://p.cx.ua/vr/en/">EN</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="https://p.cx.ua/vr/">EN</a></li>
                 <li class="language verticalLine"><a class="languageText HeliosExtC" href="https://p.cx.ua/vr/ru/">RU</a></li>
                 <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
             </ul>
@@ -20,8 +20,8 @@ Title: Home
     <div class="mainTitle">
         <div class="frame">
             <h2 class="opportunity colorW Ag24">Unlock new opportunities with</h2>
-            <div class="virtual-word"></div>
-            <div class="reality-word"></div>
+            <div class="virtual-word VirtualWordAnim"></div>
+            <div class="reality-word RealityWordAnim"></div>
         </div>
     </div>
     <div class="video a1440">
@@ -37,7 +37,7 @@ Title: Home
 <img alt="Demo" class="topPoster" width="1440" height="815" src="https://p.cx.ua/vr/media/images/img/topVideoPoster.png">
 </picture>
     </div>
-<div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
+<div class="a1440 Mouse"><a title="title" class="moveScreen MouseAnim MouseAnimInit" href="#Screen2"></a></div>
 <div class="VR">
     <img class="V" alt="Demo" src="https://p.cx.ua/vr/media/images/img/V.svg">
     <img class="R" alt="Demo" src="https://p.cx.ua/vr/media/images/img/R.svg">
@@ -145,7 +145,7 @@ Title: Home
 </li>
 <li class="digitsLi digits4 digitsLiUp">
 <p class="digitsText mw235 Ag14 colorW digitsUp">up to</p>
-<p class="digitsDigit Ag72 colorViolet">90%</p>
+<p class="digitsDigit digitsBig Ag72 colorViolet">90%</p>
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText">knowledge retention</p>
 </li>
 </ul>
@@ -179,7 +179,7 @@ Title: Home
 <div class="faceGlasses">
 <section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
 <div class="leftInfo">
-<h2 class="whatDo upperText Ag48 colorW">Why to work with us?</h2>
+<h2 class="whyWork upperText Ag48 colorW">Why to work with us?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>
 <ol class="WhoWeOl WhoWeOlLeft">
 <li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Business, IT, science, art and medicine</li>
@@ -190,7 +190,7 @@ Title: Home
 </ol>
 </div>
 <div class="rightInfo">
-<h2 class="whatDo upperText Ag48 colorW WhoWeH2Right">Who we are?</h2>
+<h2 class="whyWork upperText Ag48 colorW WhoWeH2Right">Who we are?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Unique expert team of:</h3>
 <ol class="WhoWeOl WhoWeOlRight">
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Management consultants</li>
