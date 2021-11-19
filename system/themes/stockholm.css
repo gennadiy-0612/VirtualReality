@@ -952,7 +952,6 @@ a {
     flex: 1 1 324px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 40px 0;
 }
 
