@@ -1139,12 +1139,12 @@ a {
 }
 
 .AppearAnim {
-    animation-name: AppearAnim;
+    animation-name: Appear;
     animation-duration: 1s;
     animation-timing-function: ease-in;
 }
 
-@keyframes AppearAnim {
+@keyframes Appear {
     from {
         opacity: 0;
     }
