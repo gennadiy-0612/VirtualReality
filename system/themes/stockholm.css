@@ -857,10 +857,6 @@ a {
     padding: 112px 0 0;
 }
 
-.partnersSetTop {
-    padding: 50px 0 0;
-}
-
 .partnersSetText {
     margin: 0 0 50px 0;
     letter-spacing: 3px;
@@ -870,6 +866,10 @@ a {
     flex: 1 1 100%;
     max-width: initial;
     padding: 80px 0 0;
+}
+
+.partnersSetTop {
+    padding: 50px 0 0;
 }
 
 .partners20H2 {
