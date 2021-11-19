@@ -37,7 +37,7 @@ Title: Home
 <img alt="Demo" class="topPoster" width="1440" height="815" src="https://p.cx.ua/vr/media/images/img/topVideoPoster.png">
 </picture>
     </div>
-<div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
+<div class="a1440 Mouse"><a title="title" class="moveScreen MouseAnim" href="#Screen2"></a></div>
 <div class="VR">
     <img class="V" alt="Demo" src="https://p.cx.ua/vr/media/images/img/V.svg">
     <img class="R" alt="Demo" src="https://p.cx.ua/vr/media/images/img/R.svg">
