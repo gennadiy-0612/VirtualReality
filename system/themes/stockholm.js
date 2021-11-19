@@ -38,7 +38,7 @@ shch.watch = {
         animationName: 'MouseAnim',
         moveInit: 'MouseAnimInit'
     },
-    screen2: {
+    screen3: {
         selector: '.frame',
         animationName: 'AppearAnim',
         moveInit: 'AppearInit'
@@ -52,9 +52,9 @@ shch.LoadFunc = function () {
 
     shch.watch2 = new shch.addDetect();
     shch.watch2.checkVision(shch.watch.screen2);
-    //
-    // shch.watch3 = new shch.addDetect();
-    // shch.watch3.checkVision(shch.watch.screen3);
+
+    shch.watch3 = new shch.addDetect();
+    shch.watch3.checkVision(shch.watch.screen3);
 }
 
 window.addEventListener('load', shch.LoadFunc);
