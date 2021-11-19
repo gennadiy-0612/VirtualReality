@@ -640,15 +640,17 @@ a {
     letter-spacing: 1.5px;
     margin: 25px 0;
 }
-
+.goodH3{
+    margin-left: -14px;
+}
 .goodUl, .badUl {
-    padding: 24px 0 100px 37px;
+    padding: 37px;
     column-count: 2;
     column-gap: 30px;
 }
 
 .badUl {
-    padding: 13px 0 0 14px;
+    margin: -12px 0 0 -32px;
 }
 
 .goodLi, .badLi {
@@ -678,7 +680,7 @@ a {
     background-size: contain;
     width: 13px;
     height: 13px;
-    left: -34px;
+    left: -23px;
 }
 
 /*Compare screen3*/
