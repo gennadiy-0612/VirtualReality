@@ -939,7 +939,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 50px 0 30px;
 }
 
 .logoA-bottom {
@@ -949,7 +949,7 @@ a {
 }
 
 .contacts {
-    flex: 1 1 414px;
+    flex: 1 1 324px;
     display: flex;
     flex-direction: column;
     align-items: center;
