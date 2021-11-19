@@ -30,9 +30,9 @@ Language: ru
         <p class="watch HeliosExtC">СМОТРЕТЬ ПОЛНОЕ ВИДЕО</p>
         </div>
 <picture class="topPoster">
-<source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.webp" type="image/webp">
-<source srcset="https://p.cx.ua/vr/media/images/img/topVideoPoster.jpg" type="image/jpeg">
-<img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.jpg">
+<source srcset="/vr/media/images/img/topVideoPoster.webp" type="image/webp">
+<source srcset="/vr/media/images/img/topVideoPoster.jpg" type="image/jpeg">
+<img alt="Demo" class="topPoster" width="1440" height="815" src="/vr/media/images/img/topVideoPoster.jpg">
 </picture>
     </div>
 <div class="a1440"><a title="title" class="moveScreen" href="#Screen2"></a></div>
