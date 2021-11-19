@@ -36,7 +36,7 @@ shch.watch = {
     screen2: {
         selector: '.Mouse',
         animationName: 'MouseAnim',
-        moveInit:''
+        moveInit:'MouseAnimInit'
     }
 }
 
