@@ -972,6 +972,7 @@ a {
     flex: .5 1 238px;
     display: flex;
     flex-direction: column;
+    margin: 40px 0;
 }
 
 .copyRightSpan {
@@ -981,6 +982,7 @@ a {
 
 .address {
     flex: 1 1 296px;
+    margin: 40px 0;
 }
 
 /*Footer*/
