@@ -162,7 +162,7 @@ Title: Home
 </ul>
 </div>
 <div class="bad">
-<h3 class="goodH3 Ag24 colorGrey7 upperText">Classical training</h3>
+<h3 class="badH3 Ag24 colorGrey7 upperText">Classical training</h3>
 <ul class="badUl">
 <li class="Ag18 lineHeight30 badLi colorGrey7">Expensive</li>
 <li class="Ag18 lineHeight30 badLi colorGrey7">Time consuming</li>
