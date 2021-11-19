@@ -863,12 +863,12 @@ class YellowPage {
                     $this->yellow->system->get("coreThemeLocation").$this->yellow->lookup->normaliseName($this->get("theme")).".css";
                 $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"$locationTheme\" />\n";
             }
-            $fileNameScript = $this->yellow->system->get("coreThemeDirectory").$this->yellow->lookup->normaliseName($this->get("theme")).".js";
-            if (is_file($fileNameScript)) {
-                $locationScript = $this->yellow->system->get("coreServerBase").
-                    $this->yellow->system->get("coreThemeLocation").$this->yellow->lookup->normaliseName($this->get("theme")).".js";
-                $output .= "<script type=\"text/javascript\" src=\"$locationScript\"></script>\n";
-            }
+//            $fileNameScript = $this->yellow->system->get("coreThemeDirectory").$this->yellow->lookup->normaliseName($this->get("theme")).".js";
+//            if (is_file($fileNameScript)) {
+//                $locationScript = $this->yellow->system->get("coreServerBase").
+//                    $this->yellow->system->get("coreThemeLocation").$this->yellow->lookup->normaliseName($this->get("theme")).".js";
+//                $output .= "<script type=\"text/javascript\" src=\"$locationScript\"></script>\n";
+//            }
             $fileNameFavicon = $this->yellow->system->get("coreThemeDirectory").$this->yellow->lookup->normaliseName($this->get("theme")).".png";
             if (is_file($fileNameFavicon)) {
                 $locationFavicon = $this->yellow->system->get("coreServerBase").
