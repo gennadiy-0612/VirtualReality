@@ -267,6 +267,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 78.3%;
+    overflow: hidden;
 }
 
 .opportunity {
