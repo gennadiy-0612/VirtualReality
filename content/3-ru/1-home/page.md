@@ -8,8 +8,8 @@ Language: ru
         <div class="mainLinks">
             <a class="logoA" href="https://p.cx.ua/vr/"></a>
             <ul class="languageSet">
-                <li class="language verticalLine"><a class="languageText HeliosExtC" href="https://p.cx.ua/vr/">EN</a></li>
-                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="https://p.cx.ua/vr/ru/">RU</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC" href="./">EN</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="./ru/">RU</a></li>
                 <li class="language"><a class="languageText HeliosExtC" href="/">PL</a></li>
             </ul>
         </div>
