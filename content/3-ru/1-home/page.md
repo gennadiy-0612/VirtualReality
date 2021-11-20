@@ -20,8 +20,8 @@ Title: Home
     <div class="mainTitle">
         <div class="frame">
             <h2 class="opportunity colorW Ag24 Know">Раскройте новые возможности с</h2>
-            <div class="virtual-word VirtualWordAnim VirtualWord"></div>
-            <div class="reality-word RealityWordAnim RealityWord"></div>
+            <div class="virtual-word VirtualWord"></div>
+            <div class="reality-word RealityWord"></div>
         </div>
     </div>
     <div class="video a1440">
