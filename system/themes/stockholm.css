@@ -425,6 +425,10 @@ a {
     width: 46.9%;
 }
 
+.Mouse {
+    margin-left: 0;
+}
+
 .moveScreen {
     width: 32px;
     height: 50px;
