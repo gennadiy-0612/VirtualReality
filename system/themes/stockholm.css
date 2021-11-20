@@ -1097,7 +1097,7 @@ a {
 
 .Know {
     opacity: 0;
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 5px #fff;
 }
 
 .KnowAnim {
@@ -1110,11 +1110,13 @@ a {
 
 .VirtualWord {
     opacity: 0;
+    transform: translateY(20px);
 }
 
 .VirtualWordAnim {
     opacity: 1;
-    transition-property: opacity;
+    transform: translateY(0);
+    transition-property: opacity, transform;
     transition-delay: 1s;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
