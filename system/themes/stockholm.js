@@ -36,16 +36,16 @@ shch.addDetect = function () {
 
 shch.watch = {
     screen1: {
-        selector: '.VirtualInit',
+        selector: '.VirtualWordAnim',
         animationName: 'VirtualWordAnim'
     },
     screen2: {
-        selector: '.Mouse',
-        animationName: 'MouseAnim'
+        selector: '.RealityWordAnim',
+        animationName: 'RealityWordAnim'
     },
     screen3: {
-        selector: '.frame',
-        animationName: 'AppearAnim'
+        selector: '.Mouse',
+        animationName: 'MouseAnim'
     }
 }
 
