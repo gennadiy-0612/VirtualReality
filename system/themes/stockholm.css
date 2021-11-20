@@ -34,7 +34,7 @@ li {
 /*Animation*/
 .Appear {
     animation-name: Appear;
- animation-duration: .7s;
+    animation-duration: .7s;
     animation-timing-function: ease-in;
 }
 
@@ -45,19 +45,19 @@ li {
 
 .VirtualWordAnim {
     animation-name: FromRightAnim;
- animation-duration: .7s;
+    animation-duration: .7s;
     animation-timing-function: ease-in;
 }
 
 .RealityWordAnim {
     animation-name: FromLeftAnim;
- animation-duration: .7s;
+    animation-duration: .7s;
     animation-timing-function: ease-in;
 }
 
 .MouseAnim {
-    animation-name: FromRightAnim;
- animation-duration: .7s;
+    animation-name: Appear;
+    animation-duration: .7s;
     animation-timing-function: ease-in;
 }
 
