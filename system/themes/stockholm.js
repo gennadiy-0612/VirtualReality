@@ -14,7 +14,7 @@ shch.addDetect = function () {
 
         function vdHandler(els) {
             els.forEach((data) => {
-                if (data.intersectionRatio > .1) {
+                if (data.intersectionRatio > .01) {
                     if (!shch.observertag[init.selector]) {
                         console.log(init.selector)
                         data.target.classList.add(init.animationName);
