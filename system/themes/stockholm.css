@@ -57,7 +57,7 @@ li {
 @keyframes FromRightAnim {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(-120px);
     }
     to {
         opacity: 1;
@@ -68,7 +68,7 @@ li {
 @keyframes FromLeftAnim {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(120px);
     }
     to {
         opacity: 1;
