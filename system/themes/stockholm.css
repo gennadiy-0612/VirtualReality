@@ -249,7 +249,7 @@ a {
 .virtual-word {
     width: 100%;
     height: 108px;
-    background: url("/img/Virtual.svg") left center no-repeat;
+    background: url("/img/Virtual.svg") 0 center no-repeat;
     background-size: contain;
     margin: 12px 0;
 }
