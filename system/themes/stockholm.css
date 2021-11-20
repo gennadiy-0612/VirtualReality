@@ -1107,14 +1107,14 @@ a {
 }
 
 .VirtualWord {
-    transition-property: opacity;
-    transition-duration: 2s;
-    transition-timing-function: ease-in;
     opacity: 0;
 }
 
 .VirtualWordAnim {
     opacity: 1;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
 .RealityWord {
@@ -1124,8 +1124,8 @@ a {
 .RealityWordAnim {
     opacity: 1;
     transition-property: opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
 .Mouse {
