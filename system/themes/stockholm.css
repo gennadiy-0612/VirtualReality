@@ -337,7 +337,7 @@ a {
 }
 
 .mouseBlock {
-    display: flex;
+    padding: 0 20px;
 }
 
 .VR {
