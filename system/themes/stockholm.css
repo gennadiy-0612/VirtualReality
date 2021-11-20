@@ -31,7 +31,7 @@ li {
 }
 
 
-Animation
+/*Animation*/
 .VirtualWordAnim {
     animation-name: FromRightAnim;
     animation-duration: 2s;
