@@ -32,6 +32,10 @@ li {
 
 
 /*Animation*/
+.frame{
+    max-width: 100vw;
+    overflow: hidden;
+}
 .VirtualWordAnim {
     animation-name: FromRightAnim;
     animation-duration: 2s;
