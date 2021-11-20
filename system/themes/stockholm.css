@@ -1111,7 +1111,7 @@ a {
 }
 
 .VirtualWordAnim {
-    opacity: 0;
+    opacity: 1;
     transition-delay: 1s;
     transition-property: opacity;
     transition-duration: 1s;
@@ -1123,7 +1123,7 @@ a {
 }
 
 .RealityWordAnim {
-    opacity: 0;
+    opacity: 1;
     transition-delay: 2s;
     transition-property: opacity;
     transition-duration: 1s;
