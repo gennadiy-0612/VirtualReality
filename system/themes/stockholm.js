@@ -40,7 +40,7 @@ shch.watch = {
         animationName: 'VirtualWordAnim'
     },
     screen2: {
-        selector: '.RealityWordAnim',
+        selector: '.reality-word',
         animationName: 'RealityWordAnim'
     },
     screen3: {
