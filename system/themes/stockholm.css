@@ -32,6 +32,12 @@ li {
 
 
 /*Animation*/
+.Appear {
+    animation-name: Appear;
+ animation-duration: .7s;
+    animation-timing-function: ease-in;
+}
+
 .frame {
     max-width: 100vw;
     overflow: hidden;
@@ -39,23 +45,19 @@ li {
 
 .VirtualWordAnim {
     animation-name: FromRightAnim;
-    animation-duration: 2s;
+ animation-duration: .7s;
     animation-timing-function: ease-in;
 }
 
 .RealityWordAnim {
     animation-name: FromLeftAnim;
-    animation-duration: 2s;
+ animation-duration: .7s;
     animation-timing-function: ease-in;
-}
-
-.MouseAnimInit {
-    opacity: 1;
 }
 
 .MouseAnim {
     animation-name: FromRightAnim;
-    animation-duration: 2s;
+ animation-duration: .7s;
     animation-timing-function: ease-in;
 }
 

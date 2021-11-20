@@ -19,7 +19,7 @@ Title: Home
     </header>
     <div class="mainTitle">
         <div class="frame">
-            <h2 class="opportunity colorW Ag24 Appear AppearInit">Раскройте новые возможности с</h2>
+            <h2 class="opportunity colorW Ag24 Know">Раскройте новые возможности с</h2>
             <div class="virtual-word VirtualWordAnim"></div>
             <div class="reality-word RealityWordAnim"></div>
         </div>
