@@ -336,6 +336,10 @@ a {
     max-width: 1439px;
 }
 
+.mouseBlock {
+    display: flex;
+}
+
 .VR {
     position: absolute;
     left: 0;
