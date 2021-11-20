@@ -1104,7 +1104,7 @@ a {
     opacity: 1;
     text-shadow: 0 0 5px #FFFFFF;
     transition-property: opacity, text-shadow;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
@@ -1115,7 +1115,8 @@ a {
 .VirtualWordAnim {
     opacity: 1;
     transition-property: opacity;
-    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
@@ -1126,7 +1127,8 @@ a {
 .RealityWordAnim {
     opacity: 1;
     transition-property: opacity;
-    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
@@ -1137,7 +1139,7 @@ a {
 .MouseAnim {
     opacity: 1;
     transition-property: opacity;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
