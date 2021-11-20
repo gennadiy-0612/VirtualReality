@@ -9,7 +9,7 @@ shch.addDetect = function () {
     this.checkVision = function (init) {
         const options = {
             rootMargins: '200px',
-            threshold: [0.1]
+            threshold: [0.4]
         };
 
         function vdHandler(els) {
@@ -49,7 +49,7 @@ shch.watch = {
     },
     screen4: {
         selector: '.Know',
-        animationName: 'Appear'
+        animationName: 'KnowAnim'
     }
 }
 
