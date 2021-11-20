@@ -60,10 +60,12 @@ shch.LoadFunc = function () {
 
     shch.watch2 = new shch.addDetect();
     shch.watch2.checkVision(shch.watch.screen2);
-    //
-    // shch.watch3 = new shch.addDetect();
-    // shch.watch3.checkVision(shch.watch.screen3);
-    // alert('ppppppppppp')
+
+    shch.watch3 = new shch.addDetect();
+    shch.watch3.checkVision(shch.watch.screen3);
+
+    shch.watch4 = new shch.addDetect();
+    shch.watch4.checkVision(shch.watch.screen3);
 }
 
 window.addEventListener('load', shch.LoadFunc);
