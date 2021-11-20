@@ -1106,7 +1106,7 @@ a {
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
-.virtual-word {
+.VirtualWord{
     opacity: 0;
 }
 
@@ -1117,7 +1117,7 @@ a {
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
-.reality-word {
+.RealityWord {
     opacity: 0;
 }
 
