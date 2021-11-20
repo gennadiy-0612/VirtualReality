@@ -1118,12 +1118,12 @@ a {
 }
 
 .RealityWord {
-    opacity: 0;
+    background-position-x: 100%;
 }
 
 .RealityWordAnim {
-    opacity: 1;
-    transition-property: opacity;
+    background-position-x: 0;
+    transition-property: background-position-x;
     transition-duration: 2s;
     transition-timing-function: ease-in;
 }
