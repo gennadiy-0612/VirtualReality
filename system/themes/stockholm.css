@@ -43,13 +43,13 @@ li {
     overflow: hidden;
 }
 
-.KnowAnim {
-    opacity: 1;
-}
-
 .Know {
     opacity: 0;
     transition: opacity 2s;
+}
+
+.KnowAnim {
+    opacity: 1;
 }
 
 .VirtualWordAnim {
