@@ -1114,7 +1114,7 @@ a {
     opacity: 1;
     transition-property: opacity;
     transition-duration: 2s;
-    transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
+    transition-timing-function: ease-in;
 }
 
 .RealityWord {
@@ -1125,7 +1125,7 @@ a {
     opacity: 1;
     transition-property: opacity;
     transition-duration: 2s;
-    transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
+    transition-timing-function: ease-in;
 }
 
 .Mouse {
