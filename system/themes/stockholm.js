@@ -8,8 +8,8 @@ shch.addDetect = function () {
 
     this.checkVision = function (init) {
         const options = {
-            rootMargins: '200px',
-            threshold: [0.4]
+            rootMargins: '300px',
+            threshold: [0.1]
         };
 
         function vdHandler(els) {
