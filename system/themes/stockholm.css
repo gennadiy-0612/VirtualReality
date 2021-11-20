@@ -1097,17 +1097,17 @@ a {
 
 .Know {
     opacity: 0;
+}
+
+.KnowAnim {
+    opacity: 0;
     transition-property: opacity;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
-.KnowAnim {
-    opacity: 1;
-}
-
 .virtual-word {
-    opacity: 0;
+    opacity: 1;
     transition-property: opacity;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
