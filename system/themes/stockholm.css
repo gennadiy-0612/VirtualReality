@@ -355,6 +355,7 @@ a {
     justify-content: center;
     padding-top: 21px;
     padding-bottom: 21px;
+    flex-direction: column;
 }
 
 .playPanel {
