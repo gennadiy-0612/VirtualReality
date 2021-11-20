@@ -43,6 +43,15 @@ li {
     overflow: hidden;
 }
 
+.Know {
+    opacity: 0;
+}
+
+.KnowAnim {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
 .VirtualWordAnim {
     animation-name: FromRightAnim;
     animation-duration: .7s;
@@ -58,12 +67,6 @@ li {
 .MouseAnim {
     animation-name: Appear;
     animation-duration: .7s;
-    animation-timing-function: ease-in;
-}
-
-.KnowAnim {
-    animation-name: Appear;
-    animation-duration: 2s;
     animation-timing-function: ease-in;
 }
 
