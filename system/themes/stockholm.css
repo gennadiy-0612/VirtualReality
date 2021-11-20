@@ -1106,7 +1106,7 @@ a {
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
-.VirtualWord{
+.VirtualWord {
     opacity: 0;
 }
 
@@ -1118,7 +1118,7 @@ a {
 }
 
 .RealityWord {
-    background-position-x: 100%;
+    background-position-x: -100%;
 }
 
 .RealityWordAnim {
