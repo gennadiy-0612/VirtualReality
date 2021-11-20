@@ -31,18 +31,18 @@ li {
 }
 
 
-/*Animation*/
-/*.VirtualWordAnim {*/
-/*    animation-name: FromRightAnim;*/
-/*    animation-duration: 2s;*/
-/*    animation-timing-function: ease-in;*/
-/*}*/
+Animation
+.VirtualWordAnim {
+    animation-name: FromRightAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
 
-/*.RealityWordAnim {*/
-/*    animation-name: FromLeftAnim;*/
-/*    animation-duration: 2s;*/
-/*    animation-timing-function: ease-in;*/
-/*}*/
+.RealityWordAnim {
+    animation-name: FromLeftAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
 
 .MouseAnimInit {
     opacity: 1;
