@@ -1123,7 +1123,6 @@ a {
 
 .RealityWordAnim {
     opacity: 1;
-    background-position-x: 100%;
     transition-property: opacity;
     transition-duration: 1s;
     transition-timing-function: ease-in;
