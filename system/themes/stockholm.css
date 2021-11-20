@@ -1106,6 +1106,13 @@ a {
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
+.virtual-word {
+    background-position-x: 0;
+    transition-property: background-position-x, opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
 .VirtualWord {
     opacity: 0;
     background-position-x: 30%;
@@ -1113,10 +1120,6 @@ a {
 
 .VirtualWordAnim {
     opacity: 1;
-    background-position-x: 0;
-    transition-property: background-position-x, opacity;
-    transition-duration: 2s;
-    transition-timing-function: ease-in;
 }
 
 .RealityWord {
