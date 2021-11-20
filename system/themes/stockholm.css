@@ -1181,7 +1181,7 @@ a {
 .DoLI2Anim {
     opacity: 1;
     transition-property: opacity;
-    transition-delay: 2s;
+    transition-delay: 2.5s;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
@@ -1193,7 +1193,7 @@ a {
 .DoLI3Anim {
     opacity: 1;
     transition-property: opacity;
-    transition-delay: 3s;
+    transition-delay: 2.75s;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }

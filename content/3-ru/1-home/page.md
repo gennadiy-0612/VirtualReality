@@ -50,9 +50,9 @@ Title: Home
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">ЧТО МЫ ДЕЛАЕМ?</h2>
 </div>
 <ul class="doLinks">
-<li class="doli"><a title="title" href="#whatDid1" class="Ag18 doA doLinksActive">ИММЕРСИВНЫЕ ТРЕНИНГИ</a></li>
-<li class="doli"><a title="title" href="#whatDid2" class="colorGrey doA Ag18">РЕАЛИСТИЧНОЕ МОДЕЛИРОВАНИЕ</a></li>
-<li class="doli"><a title="title" href="#whatDid3" class="colorGrey doA Ag18">ТЕСТИРОВАНИЕ СПОСОБНОСТЕЙ</a></li>
+<li class="doli DoLI1"><a title="title" href="#whatDid1" class="Ag18 doA doLinksActive">ИММЕРСИВНЫЕ ТРЕНИНГИ</a></li>
+<li class="doli DoLI2"><a title="title" href="#whatDid2" class="colorGrey doA Ag18">РЕАЛИСТИЧНОЕ МОДЕЛИРОВАНИЕ</a></li>
+<li class="doli DoLI3"><a title="title" href="#whatDid3" class="colorGrey doA Ag18">ТЕСТИРОВАНИЕ СПОСОБНОСТЕЙ</a></li>
 </ul>
 </div>
 <div class="doImages">
