@@ -61,11 +61,11 @@ shch.watch = {
     },
     screen7: {
         selector: '.DoLI2',
-        animationName: 'DoLI1Anim'
+        animationName: 'DoLI2Anim'
     },
     screen8: {
         selector: '.DoLI3',
-        animationName: 'DoLI1Anim'
+        animationName: 'DoLI3Anim'
     }
 }
 
