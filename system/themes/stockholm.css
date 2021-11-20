@@ -1164,11 +1164,13 @@ a {
 
 .DoLI1 {
     opacity: 0;
+    transform: scale(1.2);
 }
 
 .DoLI1Anim {
     opacity: 1;
-    transition-property: opacity;
+    transform: scale(1);
+    transition-property: opacity, tranform;
     transition-delay: 2s;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
@@ -1176,11 +1178,13 @@ a {
 
 .DoLI2 {
     opacity: 0;
+    transform: scale(1.2);
 }
 
 .DoLI2Anim {
     opacity: 1;
-    transition-property: opacity;
+    transform: scale(1);
+    transition-property: opacity, tranform;
     transition-delay: 2.5s;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
@@ -1188,11 +1192,13 @@ a {
 
 .DoLI3 {
     opacity: 0;
+    transform: scale(1.2);
 }
 
 .DoLI3Anim {
     opacity: 1;
-    transition-property: opacity;
+    transform: scale(1);
+    transition-property: opacity, tranform;
     transition-delay: 2.75s;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
