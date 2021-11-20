@@ -8,7 +8,7 @@ shch.addDetect = function () {
 
     this.checkVision = function (init) {
         const options = {
-            rootMargins: '300px',
+            rootMargins: '500px 0',
             threshold: [0.1]
         };
 
