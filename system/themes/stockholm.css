@@ -1124,11 +1124,13 @@ a {
 
 .RealityWord {
     opacity: 0;
+    transform: translateY(-10px);
 }
 
 .RealityWordAnim {
     opacity: 1;
-    transition-property: opacity;
+    transform: translateY(0);
+    transition-property: opacity, transform;;
     transition-delay: 2s;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
