@@ -1098,12 +1098,14 @@ a {
 .Know {
     opacity: 0;
     text-shadow: 0 0 5px #fff;
+    color: #777777;
 }
 
 .KnowAnim {
     opacity: 1;
     text-shadow: 0 0 0 #FFFFFF;
-    transition-property: opacity, text-shadow;
+    color: #FFFFFF;
+    transition-property: opacity, text-shadow, color;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
