@@ -50,6 +50,22 @@ shch.watch = {
     screen4: {
         selector: '.Mouse',
         animationName: 'MouseAnim'
+    },
+    screen5: {
+        selector: '.WhatWeDo',
+        animationName: 'WhatWeDoAnim'
+    },
+    screen6: {
+        selector: '.DoLI1',
+        animationName: 'DoLI1Anim'
+    },
+    screen7: {
+        selector: '.DoLI2',
+        animationName: 'DoLI1Anim'
+    },
+    screen8: {
+        selector: '.DoLI3',
+        animationName: 'DoLI1Anim'
     }
 }
 
@@ -66,6 +82,18 @@ shch.LoadFunc = function () {
 
     shch.watch4 = new shch.addDetect();
     shch.watch4.checkVision(shch.watch.screen4);
+
+    shch.watch5 = new shch.addDetect();
+    shch.watch5.checkVision(shch.watch.screen5);
+
+    shch.watch6 = new shch.addDetect();
+    shch.watch6.checkVision(shch.watch.screen6);
+
+    shch.watch7 = new shch.addDetect();
+    shch.watch7.checkVision(shch.watch.screen7);
+
+    shch.watch8 = new shch.addDetect();
+    shch.watch8.checkVision(shch.watch.screen8);
 }
 
 window.addEventListener('load', shch.LoadFunc);

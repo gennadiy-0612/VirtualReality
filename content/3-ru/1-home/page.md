@@ -47,7 +47,7 @@ Title: Home
 <section id="Screen2" class="do a1440">
 <div class="doInfo">
 <div class="doInfoH2">
-<h2 class="whatDo upperText Ag48 colorW">ЧТО МЫ ДЕЛАЕМ?</h2>
+<h2 class="whatDo upperText Ag48 colorW WhatWeDo">ЧТО МЫ ДЕЛАЕМ?</h2>
 </div>
 <ul class="doLinks">
 <li class="doli"><a title="title" href="#whatDid1" class="Ag18 doA doLinksActive">ИММЕРСИВНЫЕ ТРЕНИНГИ</a></li>
@@ -165,7 +165,7 @@ Title: Home
 <h3 class="badH3 Ag24 colorGrey7 upperText">Классическое обучение</h3>
 <ul class="badUl">
 <li class="Ag18 lineHeight30 badLi colorGrey7">Дорого</li>
-<li class="Ag18 lineHeight30 badLi colorGrey7">Time consuming</li>
+<li class="Ag18 lineHeight30 badLi colorGrey7">Затраты времени</li>
 <li class="Ag18 lineHeight30 badLi colorGrey7">Рискованно или даже невозможно смоделировать высокий риск / опасности</li>
 <li class="Ag18 lineHeight30 badLi colorGrey7">Скучно и не мотивирует</li>
 <li class="Ag18 lineHeight30 badLi colorGrey7">Плохая сохранность знаний</li>

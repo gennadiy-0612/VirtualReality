@@ -47,12 +47,12 @@ Title: Home
 <section id="Screen2" class="do a1440">
 <div class="doInfo">
 <div class="doInfoH2">
-<h2 class="whatDo upperText Ag48 colorW">What do we do?</h2>
+<h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
 </div>
 <ul class="doLinks">
-<li class="doli"><a title="title" href="#whatDid1" class="Ag18 doA doLinksActive">Immersive Trainings</a></li>
-<li class="doli"><a title="title"  href="#whatDid2" class="colorGrey doA Ag18">Realistic Simulations</a></li>
-<li class="doli"><a title="title"  href="#whatDid3" class="colorGrey doA Ag18">Aptitude Testing</a></li>
+<li class="doli DoLI1"><a title="title" href="#whatDid1" class="Ag18 doA doLinksActive">Immersive Trainings</a></li>
+<li class="doli DoLI2"><a title="title"  href="#whatDid2" class="colorGrey doA Ag18">Realistic Simulations</a></li>
+<li class="doli DoLI3"><a title="title"  href="#whatDid3" class="colorGrey doA Ag18">Aptitude Testing</a></li>
 </ul>
 </div>
 <div class="doImages">
