@@ -1126,7 +1126,7 @@ a {
     opacity: 1;
     background-position-x: 100%;
     transition-property: background-position-x, opacity;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-timing-function: ease-in;
 }
 
