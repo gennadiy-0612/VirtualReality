@@ -47,7 +47,7 @@ shch.watch = {
         selector: '.Mouse',
         animationName: 'MouseAnim'
     },
-    screen3: {
+    screen4: {
         selector: '.Know',
         animationName: 'Appear'
     }

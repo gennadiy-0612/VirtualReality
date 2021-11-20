@@ -83,10 +83,6 @@ li {
     }
 }
 
-.AppearInit {
-    /*opacity: 0;*/
-}
-
 .AppearAnim {
     animation-name: Appear;
     animation-duration: 1s;
