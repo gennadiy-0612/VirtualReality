@@ -1111,10 +1111,10 @@ a {
     transition-property: background-position-x, opacity;
     transition-duration: 2s;
     transition-timing-function: ease-in;
+    opacity: 0;
 }
 
 .VirtualWord {
-    opacity: 0;
     background-position-x: 30%;
 }
 
