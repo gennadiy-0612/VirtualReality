@@ -1108,14 +1108,14 @@ a {
 
 .virtual-word {
     opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
 .VirtualWordAnim {
     opacity: 1;
     transition-delay: 1s;
-    transition-property: opacity;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
 .reality-word {
