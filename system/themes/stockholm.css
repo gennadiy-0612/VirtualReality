@@ -61,6 +61,12 @@ li {
     animation-timing-function: ease-in;
 }
 
+.Know {
+    animation-name: Appear;
+    animation-duration: .7s;
+    animation-timing-function: ease-in;
+}
+
 @keyframes FromRightAnim {
     from {
         opacity: 0;
