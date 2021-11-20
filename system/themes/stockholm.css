@@ -1108,12 +1108,12 @@ a {
 
 .VirtualWord {
     opacity: 0;
-    background-position-x: -30%;
+    background-position-x: 30%;
 }
 
 .VirtualWordAnim {
     opacity: 1;
-    background-position-x: 0;
+    background-position-x: 100%;
     transition-property: background-position-x, opacity;
     transition-duration: 2s;
     transition-timing-function: ease-in;
