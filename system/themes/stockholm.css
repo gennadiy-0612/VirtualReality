@@ -1106,16 +1106,11 @@ a {
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
-.virtual-word {
-    background-position-x: 20%;
-    transition-property: background-position-x, opacity;
+.VirtualWord {
+    transition-property: opacity;
     transition-duration: 2s;
     transition-timing-function: ease-in;
     opacity: 0;
-}
-
-.VirtualWord {
-    background-position-x: 0;
 }
 
 .VirtualWordAnim {
