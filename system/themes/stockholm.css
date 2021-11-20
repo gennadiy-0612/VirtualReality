@@ -1097,10 +1097,12 @@ a {
 
 .Know {
     opacity: 0;
+    box-shadow: 0 0 0 #FFFFFF;
 }
 
 .KnowAnim {
     opacity: 1;
+    box-shadow: 0 0 5px #FFFFFF;
     transition-property: opacity;
     transition-duration: 2s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
