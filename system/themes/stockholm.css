@@ -1118,11 +1118,11 @@ a {
 }
 
 .RealityWord {
-    background-position-x: -100%;
+    background-position-x: 0;
 }
 
 .RealityWordAnim {
-    background-position-x: 0;
+    background-position-x: 100%;
     transition-property: background-position-x;
     transition-duration: 2s;
     transition-timing-function: ease-in;
