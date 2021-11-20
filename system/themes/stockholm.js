@@ -15,10 +15,11 @@ shch.addDetect = function () {
         function vdHandler(els) {
             els.forEach((data) => {
                 if (data.intersectionRatio > .1) {
-                    if (shch.observertag[init.selector]) return;
-                    console.log(init.selector)
-                    data.target.classList.add(init.animationName);
-                    shch.observertag[init.selector] = 1;
+                    if (!shch.observertag[init.selector]) {
+                        console.log(init.selector)
+                        data.target.classList.add(init.animationName);
+                        shch.observertag[init.selector] = 1;
+                    }
                 }
             });
         }
