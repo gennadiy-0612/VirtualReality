@@ -36,7 +36,7 @@ shch.addDetect = function () {
 
 shch.watch = {
     screen1: {
-        selector: '.VirtualWordAnim',
+        selector: '.virtual-word',
         animationName: 'VirtualWordAnim'
     },
     screen2: {
