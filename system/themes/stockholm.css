@@ -707,6 +707,7 @@ a {
     opacity: 0;
     visibility: collapse;
     height: 450px;
+    display: none;
 }
 
 .outSlideImg {
@@ -716,12 +717,11 @@ a {
 
 .unActInSlide {
     opacity: 0;
-    visibility: collapse;
 }
 
 .actInSlide {
     opacity: 1;
-    visibility: visible;
+    display: block;
     width: 100%;
 }
 
