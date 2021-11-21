@@ -70,8 +70,9 @@ shch.InSlide = {
         this.frameIn[0].classList.toggle('AppOne');
         if (!this.frameIn[0].classList.contains('AppTwo')) {
             this.frameIn[0].classList.add('AppTwo');
+        } else {
+            this.frameIn[0].classList.toggle('AppTwo');
         }
-        this.frameIn[0].classList.toggle('AppTwo');
         console.log(this.frameIn[0]);
         console.log('loaded');
     }
