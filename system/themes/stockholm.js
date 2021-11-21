@@ -40,7 +40,6 @@ shch.InSlide = {
         this.prevDisplay = this.frameIn[this.display];
         this.display++;
         if (this.display < this.frameInLength) {
-            this.prevDisplay.classList.remove(this.actSelector);
             this.changeDisplay();
         } else {
             this.display = this.frameInLength - 1;
@@ -55,15 +54,11 @@ shch.InSlide = {
             this.display = 0;
             return true;
         } else {
-            this.prevDisplay.classList.remove(this.actSelector);
-            this.frameIn[this.display].classList.add(this.actSelector);
             this.changeDisplay();
         }
     },
     changeDisplay: function () {
         this.currentDisplay = this.frameIn[this.display];
-        console.log(this.frameIn[this.display]);
-        this.frameIn[this.display].classList.add(this.actSelector);
         this.frameIn[0].setAttribute('src',this.frameIn[this.display].getAttribute('data-src'));
         // console.log(this.frameIn[this.display].getAttribute('data-src'));
     }

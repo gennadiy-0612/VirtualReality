@@ -716,10 +716,6 @@ a {
     width: 100%;
 }
 
-.outSlideBigImg:first-of-type {
-    opacity: 1;
-}
-
 .outSlideImg {
     height: 100%;
     width: 24.1%;
