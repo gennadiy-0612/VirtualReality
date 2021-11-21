@@ -58,17 +58,18 @@ shch.InSlide = {
         }
     },
     changeDisplay: function () {
-        this.currentDisplay = this.frameIn[this.display];
-        this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
         this.addEv = 1;
         if (this.addEv) this.frameIn[0].addEventListener('load', this.addVision);
         this.addEv = 0;
+        this.currentDisplay = this.frameIn[this.display];
+        this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
     },
     addVision: function () {
         if (this.frameIn[0].classList.contains('AppOne')) this.frameIn[0].classList.toggle('AppTwo');
         else {
             this.frameIn[0].classList.toggle('AppOne');
         }
+        console.log('loaded')
     }
 }
 
