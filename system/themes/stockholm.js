@@ -33,13 +33,13 @@ shch.InSlide = {
     frameIn: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     moveNext: function () {
-        if (this.display === this.frameInLength) return;
         this.display++;
+        if (this.display === this.frameInLength) this.display = this.frameInLength;
         this.changeDisplay();
     },
     movePrev: function () {
         this.display--;
-        if (!this.display) return;
+        if (!this.display) this.display = 0;
         this.changeDisplay();
     },
     changeDisplay: function () {
