@@ -29,8 +29,8 @@ shch.addDetect = function () {
     }
 }
 shch.InSlide = {
-    actSelector: 'actInSlide',
-    unActSelector: 'unActInSlide',
+    actSelector: 'actInSlide1',
+    unActSelector: 'unActInSlide1',
     prevDisplay: {},
     currentDisplay: {},
     display: 0,
@@ -64,7 +64,7 @@ shch.InSlide = {
         this.currentDisplay = this.frameIn[this.display];
         console.log(this.frameIn[this.display]);
         this.frameIn[this.display].classList.add(this.actSelector);
-        this.frameIn[0].setAttribute('src',this.frameIn[this.display].getAttribute('data-src'));
+        this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
         // console.log(this.frameIn[this.display].getAttribute('data-src'));
     }
 }
