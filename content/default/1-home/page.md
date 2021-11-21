@@ -108,16 +108,16 @@ Title: Home
 <div class="SlideSetIn relative">
 <img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
 <img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
-<img class="outSlideBigImg outSlideBigImgAct" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg outSlideBigImgAct FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png">
 <img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
 <img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
 <img class="outSlideBigImg" width="1080" height="450" alt="Alt" src="/media/images/img/inSlideImgBig1.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
