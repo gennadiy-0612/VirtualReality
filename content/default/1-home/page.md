@@ -95,7 +95,7 @@ Title: Home
 </a>
 <div class="inSlide">
 <div class="inSlideText">
-<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText">safety</h2>
+<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">safety</h2>
 <ul class="outSlideUl">
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Interactive health and safety immersive training </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
@@ -129,7 +129,7 @@ Title: Home
 <div class="Digits">
 <section id="S4" class="WhyVR">
 <div class="a1440">
-<h2 class="WhyVRH2 upperText Ag48 colorW horizonLine">why vr?</h2>
+<h2 class="WhyVRH2 upperText Ag48 colorW horizonLine WhatWeDo">why vr?</h2>
 <ul class="digits">
 <li class="digitsLi digits1">
 <p class="digitsDigit Ag72 colorViolet">4x</p>
@@ -179,7 +179,7 @@ Title: Home
 <div class="faceGlasses">
 <section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
 <div class="leftInfo">
-<h2 class="whyWork upperText Ag48 colorW">Why to work with us?</h2>
+<h2 class="whyWork upperText Ag48 colorW WhatWeDo">Why to work with us?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>
 <ol class="WhoWeOl WhoWeOlLeft">
 <li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Business, IT, science, art and medicine</li>
@@ -190,7 +190,7 @@ Title: Home
 </ol>
 </div>
 <div class="rightInfo">
-<h2 class="whyWork upperText Ag48 colorW WhoWeH2Right">Who we are?</h2>
+<h2 class="whyWork upperText Ag48 colorW WhatWeDo WhoWeH2Right">Who we are?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Unique expert team of:</h3>
 <ol class="WhoWeOl WhoWeOlRight">
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Management consultants</li>

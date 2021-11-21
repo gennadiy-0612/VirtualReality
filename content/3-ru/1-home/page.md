@@ -95,7 +95,7 @@ Title: Home
 </a>
 <div class="inSlide">
 <div class="inSlideText">
-<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText">безопасность</h2>
+<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">безопасность</h2>
 <ul class="outSlideUl">
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Интерактивное иммерсивное обучение по охране труда и технике безопасности</li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Моделирование опасных сред с высоким уровнем риска без какого-либо риска </li>
@@ -129,7 +129,7 @@ Title: Home
 <div class="Digits">
 <section id="S4" class="WhyVR">
 <div class="a1440">
-<h2 class="WhyVRH2 upperText Ag48 colorW horizonLine">почему vr?</h2>
+<h2 class="WhyVRH2 upperText Ag48 colorW horizonLine WhatWeDo">почему vr?</h2>
 <ul class="digits">
 <li class="digitsLi digits1">
 <p class="digitsDigit Ag72 colorViolet">4x</p>
@@ -179,7 +179,7 @@ Title: Home
 <div class="faceGlasses">
 <section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
 <div class="leftInfo">
-<h2 class="whyWork upperText Ag48 colorW">Почему стоит работать с нами?</h2>
+<h2 class="whyWork upperText Ag48 colorW WhatWeDo">Почему стоит работать с нами?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3">Мы предлагаем вам больше, чем ИТ-компании:</h3>
 <ol class="WhoWeOl WhoWeOlLeft">
 <li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Бизнес, информационные технологии, наука, искусство и медицина</li>
@@ -190,7 +190,7 @@ Title: Home
 </ol>
 </div>
 <div class="rightInfo">
-<h2 class="whyWork upperText Ag48 colorW WhoWeH2Right">Кто мы?</h2>
+<h2 class="whyWork upperText Ag48 colorW WhatWeDo WhoWeH2Right">Кто мы?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Уникальная команда экспертов:</h3>
 <ol class="WhoWeOl WhoWeOlRight">
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Консультанты по управлению</li>
