@@ -66,6 +66,10 @@ shch.watch = {
     screen8: {
         selector: '.DoLI3',
         animationName: 'DoLI3Anim'
+    },
+    screen9: {
+        selector: '.ImgFromSmall',
+        animationName: 'ImgFromSmallAnim'
     }
 }
 
@@ -94,6 +98,9 @@ shch.LoadFunc = function () {
 
     shch.watch8 = new shch.addDetect();
     shch.watch8.checkVision(shch.watch.screen8);
+
+    shch.watch9 = new shch.addDetect();
+    shch.watch9.checkVision(shch.watch.screen9);
 }
 
 window.addEventListener('load', shch.LoadFunc);
