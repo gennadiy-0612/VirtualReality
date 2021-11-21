@@ -719,7 +719,6 @@ a {
 }
 
 .unActInSlide {
-    display: none;
     visibility: collapse;
 }
 
