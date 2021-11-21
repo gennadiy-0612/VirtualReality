@@ -37,7 +37,7 @@ Title: Home
 <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
     </div>
-<div class="mouseBlock"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
+<div class="mouseBlock w100percents"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
 <div class="VR">
     <img class="V" alt="Demo" src="/media/images/img/V.svg">
     <img class="R" alt="Demo" src="/media/images/img/R.svg">
