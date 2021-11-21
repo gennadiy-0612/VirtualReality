@@ -30,7 +30,7 @@ shch.addDetect = function () {
 }
 shch.InSlide = {
     actSelector: 'actInSlide',
-    unActSelector: 'UnActInSlide',
+    unActSelector: 'unActInSlide',
     prevDisplay: {},
     currentDisplay: {},
     display: 0,
