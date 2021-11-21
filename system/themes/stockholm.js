@@ -30,6 +30,7 @@ shch.addDetect = function () {
 }
 shch.InSlide = {
     actSelector: 'actInSlide',
+    unActSelector: 'UnActInSlide',
     prevDisplay: {},
     currentDisplay: {},
     display: 0,
@@ -38,6 +39,7 @@ shch.InSlide = {
     moveNext: function () {
         this.prevDisplay = this.frameIn[this.display];
         this.prevDisplay.classList.remove(this.actSelector);
+        this.prevDisplay.classList.add(this.unActSelector);
         this.display++;
         if (this.display < this.frameInLength) {
             this.changeDisplay();
@@ -49,6 +51,7 @@ shch.InSlide = {
     movePrev: function () {
         this.prevDisplay = this.frameIn[this.display];
         this.prevDisplay.classList.remove(this.actSelector);
+        this.prevDisplay.classList.add(this.unActSelector);
         this.display--;
         if (this.display < 0) {
             this.display = 0;
