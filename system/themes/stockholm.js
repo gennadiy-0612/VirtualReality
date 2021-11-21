@@ -68,9 +68,6 @@ shch.InSlide = {
     },
     addVision: function () {
         this.frameIn[0].classList.toggle('AppOne');
-        shch.sdd = 1;
-        if (shch.sdd) this.frameIn[0].classList.toggle('AppTwo');
-        shch.sdd = 0;
         console.log(this.frameIn[0]);
         console.log('loaded');
     }
