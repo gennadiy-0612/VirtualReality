@@ -565,14 +565,9 @@ a {
     width: 24.1%;
 }
 
-.outSlideBigImg:first-of-type,
-.outSlideBigImg:target {
+.actInSlide {
     display: block;
     width: 100%;
-}
-
-.outSlideBigImg:not(:target) {
-    display: none;
 }
 
 /*Screen 4 Why VR*/

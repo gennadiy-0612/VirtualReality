@@ -60,7 +60,7 @@ shch.InSlide = {
     changeDisplay: function () {
         this.currentDisplay = this.frameIn[this.display];
         console.log(this.frameIn[this.display]);
-        this.frameIn[this.display].classList.add('actInSlide');
+        this.frameIn[this.display].classList.add(this.actSelector);
     }
 }
 
