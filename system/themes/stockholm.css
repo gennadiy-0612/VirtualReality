@@ -552,12 +552,12 @@ a {
     right: 50px;
 }
 
-.outSlideBigImg:not(.outSlideBigImg:target) {
-    display: none;
+.outSlideBigImg {
     scroll-snap-align: start;
     max-width: 1080px;
-    height: 450px;
     object-fit: cover;
+    display: none;
+    height: auto;
 }
 
 .outSlideImg {
@@ -569,6 +569,9 @@ a {
 .outSlideBigImg:target {
     display: block;
     width: 100%;
+}
+.outSlideBigImg:not(.outSlideBigImg:target) {
+    display: none;
 }
 
 /*Screen 4 Why VR*/
