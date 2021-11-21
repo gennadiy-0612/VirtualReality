@@ -234,7 +234,7 @@ Title: Home
 </ol>
 <div class="partnersSet">
 <div class="partnersSetTop partnersSetH2 horizonLine horizonLinePartners">
-<h2 class="partnersSetText whatDo upperText Ag48 colorW WhatWeDoAnim">OUR PARTNERS</h2>
+<h2 class="partnersSetText whatDo upperText Ag48 colorW WhatWeDo">OUR PARTNERS</h2>
 </div>
 <div class="partnersSetIcons">
 <p class="partner partner1"></p>
@@ -248,7 +248,7 @@ Title: Home
 </div>
 <div class="partners20">
 <div class="partners20H2 partnersSetH2">
-<h2 class="whatDo upperText Ag48 colorW WhatWeDoAnim">awards</h2>
+<h2 class="whatDo upperText Ag48 colorW WhatWeDo">awards</h2>
 </div>
 <div class="partnersSetIcons">
 <p class="partner partner1"></p>
