@@ -36,12 +36,12 @@ Title: Home
 <source srcset="/media/images/img/topVideoPoster.jpg" type="image/jpeg">
 <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
+<div class="mouseBlock w100percents"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
+</div>
+</div>
 <div class="VR">
     <img class="V" alt="Demo" src="/media/images/img/V.svg">
     <img class="R" alt="Demo" src="/media/images/img/R.svg">
-</div>
-<div class="mouseBlock w100percents"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
-</div>
 </div>
 </div>
 <section id="Screen2" class="do a1440">
