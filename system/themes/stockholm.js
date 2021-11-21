@@ -35,11 +35,17 @@ shch.InSlide = {
     moveNext: function () {
         if (this.display === this.frameInLength) return;
         this.display++;
+        this.changeDisplay();
         console.log(this.display);
-    }, movePrev: function () {
+    },
+    movePrev: function () {
         if (!this.display) return;
         this.display--;
+        this.changeDisplay();
         console.log(this.display);
+    },
+    changeDisplay: function () {
+        this.frameIn[this.display].classList('actInSlide');
     }
 }
 
