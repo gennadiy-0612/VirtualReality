@@ -52,6 +52,7 @@ shch.InSlide = {
         this.prevDisplay = this.frameIn[this.display];
         this.display--;
         if (this.display < 0) {
+            this.prevDisplay = this.frameIn[0];
             this.display = 0;
             return true;
         } else {
