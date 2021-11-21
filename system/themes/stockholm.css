@@ -713,13 +713,13 @@ a {
     width: 24.1%;
 }
 
+.unActInSlide {
+    opacity: 0;
+}
+
 .actInSlide {
     opacity: 1;
     width: 100%;
-}
-
-.unActInSlide {
-    opacity: 0;
 }
 
 /*Screen 4 Why VR*/
