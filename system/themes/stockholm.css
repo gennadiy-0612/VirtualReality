@@ -1228,4 +1228,17 @@ a {
     transition-timing-function: ease;
 }
 
+.BadTraining {
+    opacity: 0;
+    filter: brightness(.3) blur(5px);
+}
+
+.GBadTrainingAnim {
+    filter: brightness(1) blur(0);
+    opacity: 1;
+    transition-property: opacity, filter;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
 /*Animation*/
