@@ -29,6 +29,7 @@ shch.addDetect = function () {
     }
 }
 shch.InSlide = {
+    actSelector: 'actInSlide',
     prevDisplay: {},
     currentDisplay: {},
     display: 0,
@@ -36,7 +37,7 @@ shch.InSlide = {
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     moveNext: function () {
         this.prevDisplay = this.frameIn[this.display];
-        this.prevDisplay.classList.remove('actInSlide');
+        this.prevDisplay.classList.remove(this.actSelector);
         this.display++;
         if (this.display < this.frameInLength) {
             this.changeDisplay();
@@ -47,7 +48,7 @@ shch.InSlide = {
     },
     movePrev: function () {
         this.prevDisplay = this.frameIn[this.display];
-        this.prevDisplay.classList.remove('actInSlide');
+        this.prevDisplay.classList.remove(this.actSelector);
         this.display--;
         if (this.display < 0) {
             this.display = 0;
