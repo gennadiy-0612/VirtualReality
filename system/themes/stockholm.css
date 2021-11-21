@@ -300,6 +300,7 @@ a {
     margin: auto;
     width: 180px;
     height: 140px;
+    z-index: 1;
 }
 
 .play {
