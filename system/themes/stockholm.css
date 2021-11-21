@@ -705,6 +705,7 @@ a {
     max-width: 1080px;
     object-fit: cover;
     opacity: 0;
+    visibility: collapse;
     height: 450px;
 }
 
@@ -715,10 +716,12 @@ a {
 
 .unActInSlide {
     opacity: 0;
+    visibility: collapse;
 }
 
 .actInSlide {
     opacity: 1;
+    visibility: visible;
     width: 100%;
 }
 
