@@ -32,12 +32,11 @@ shch.InSlide = {
     display: 0,
     frameIn: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
-    movePrev: function () {
+    moveNext: function () {
         if (this.display === this.frameInLength) return;
         this.display++;
         console.log(this.display);
-    },
-    moveNext: function () {
+    }, movePrev: function () {
         if (!this.display) return;
         this.display--;
         console.log(this.display);
