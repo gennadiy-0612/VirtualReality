@@ -16,7 +16,6 @@ shch.addDetect = function () {
             els.forEach((data) => {
                 if (data.intersectionRatio > .01) {
                     if (!shch.observertag[init.selector]) {
-                        console.log(init.selector)
                         data.target.classList.add(init.animationName);
                         shch.observertag[init.selector] = 1;
                     }
@@ -30,6 +29,7 @@ shch.addDetect = function () {
 
         cImgs.forEach((el) => {
             vd.observe(el);
+            console.log(init.selector);
         });
     }
 }
