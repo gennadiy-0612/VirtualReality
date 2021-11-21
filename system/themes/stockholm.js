@@ -38,8 +38,8 @@ shch.InSlide = {
         this.changeDisplay();
     },
     movePrev: function () {
-        if (!this.display) return;
         this.display--;
+        if (!this.display) return;
         this.changeDisplay();
     },
     changeDisplay: function () {
