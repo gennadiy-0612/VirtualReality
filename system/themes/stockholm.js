@@ -29,10 +29,14 @@ shch.addDetect = function () {
     }
 }
 shch.InSlide = {
+    prevDisplay: {},
+    currentDisplay: {},
     display: 0,
     frameIn: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     moveNext: function () {
+        this.prevDisplay = this.frameIn[this.display];
+        this.prevDisplay.classList.remove('actInSlide');
         this.display++;
         if (this.display < this.frameInLength) {
             this.changeDisplay();
@@ -42,6 +46,8 @@ shch.InSlide = {
         }
     },
     movePrev: function () {
+        this.prevDisplay = this.frameIn[this.display];
+        this.prevDisplay.classList.remove('actInSlide');
         this.display--;
         if (this.display < 0) {
             this.display = 0;
@@ -51,8 +57,9 @@ shch.InSlide = {
         }
     },
     changeDisplay: function () {
+        this.currentDisplay = this.frameIn[this.display];
         console.log(this.frameIn[this.display]);
-        // this.frameIn[this.display].classList('actInSlide');
+        this.frameIn[this.display].classList.add('actInSlide');
     }
 }
 
