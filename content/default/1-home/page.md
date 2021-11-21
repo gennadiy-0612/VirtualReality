@@ -119,9 +119,9 @@ Title: Home
 </div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
+<div id="in1" class="outSlideBigImg" width="1080" height="450" style="background-color: #A64DFF"></div>
+<div id="in2" class="outSlideBigImg" width="1080" height="450" style="background-color: #796957"></div>
+<div id="in3" class="outSlideBigImg" width="1080" height="450" style="background-color: #ff7c4d"></div>
 </div>
 </div>
 </div>
