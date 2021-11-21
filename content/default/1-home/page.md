@@ -149,8 +149,8 @@ Title: Home
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText">knowledge retention</p>
 </li>
 </ul>
-<div class="Compare GoodTraining">
-<div class="good">
+<div class="Compare">
+<div class="good GoodTraining">
 <h3 class="goodH3 Ag24 colorW upperText">VR-enabled training</h3>
 <ul class="goodUl">
 <li class="Ag18 lineHeight30 goodLi colorW">Cost effective and highly scalable</li>
