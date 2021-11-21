@@ -46,7 +46,9 @@ shch.InSlide = {
             this.display = 0;
             return true;
         }
-        this.changeDisplay();
+        else {
+            this.changeDisplay();
+        }
     },
     changeDisplay: function () {
         console.log(this.frameIn[this.display]);
