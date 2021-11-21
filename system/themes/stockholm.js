@@ -68,10 +68,10 @@ shch.InSlide = {
     },
     addVision: function () {
         this.frameIn[0].classList.toggle('AppOne');
-        if (!this.frameIn[0].classList.toggle('AppOne')) {
+        if (!this.frameIn[0].classList.contains('AppOne')) {
             this.frameIn[0].classList.add('AppTwo');
         }
-        if (this.frameIn[0].classList.toggle('AppOne')) {
+        if (this.frameIn[0].classList.contains('AppOne')) {
             this.frameIn[0].classList.remove('AppTwo');
         }
         console.log(this.frameIn[0]);
