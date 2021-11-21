@@ -299,7 +299,7 @@ a {
     right: 0;
     margin: auto;
     width: 180px;
-    height: 140px;
+    height: 180px;
     z-index: 1;
 }
 
@@ -1204,13 +1204,24 @@ a {
 
 .FromSmall {
     opacity: 0;
-    margin-top: -50px;
-    transform:scale(.8);
+    transform: scale(.8);
 }
 
 .FromSmallAnim {
     transform: scale(1);
-    margin-top: 0;
+    opacity: 1;
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.GoodTraining {
+    opacity: 0;
+    transform: scale(.9);
+}
+
+.GoodTrainingAnim {
+    transform: scale(1);
     opacity: 1;
     transition-property: opacity, transform;
     transition-duration: 1s;
