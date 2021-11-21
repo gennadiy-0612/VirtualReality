@@ -29,8 +29,12 @@ shch.addDetect = function () {
     }
 }
 shch.InSlide = {
+    display: 0,
+    frameIn: document.querySelectorAll('.outSlideBigImg'),
+    frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     movePrev: function () {
-        console.log(this);
+        this.display = this.display + this.display;
+        console.log(this.frameIn);
     }
 }
 
