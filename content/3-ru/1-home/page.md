@@ -1,6 +1,5 @@
 ---
-Title: Home
-Language: en
+Title: Home Language: en
 ---
 Title: Home
 ---
@@ -115,12 +114,12 @@ Title: Home
 <div class="outSlideBigImg" width="1080" height="450" style="background-color: #ff7c4d"></div>
 <div class="outSlideBigImg" width="1080" height="450" style="background-color: #cdff4d"></div>
 <div class="outSlideBigImg" width="1080" height="450" style="background-color: #594dff"></div>
+</div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
-</div>
 </div>
 </div>
 <a title="title" class="outSlideRight arrowDirectionOut" href="/">
