@@ -61,7 +61,6 @@ shch.InSlide = {
         this.addEv = 1;
         if (this.addEv === 1) {
             this.frameIn[0].addEventListener('load', this.addVision);
-            console.log(this.frameIn[0])
         }
         this.addEv = 0;
         this.currentDisplay = this.frameIn[this.display];
@@ -72,6 +71,7 @@ shch.InSlide = {
         // else {
         //     this.frameIn[0].classList.toggle('AppOne');
         // }
+        console.log(this.frameIn[0])
         console.log('loaded')
     }
 }
