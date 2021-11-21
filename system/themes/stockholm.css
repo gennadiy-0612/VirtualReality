@@ -292,8 +292,16 @@ li {
     transition-timing-function: ease;
 }
 
+@keyframes Appear1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-@keyframes Appear {
+@keyframes Appear2 {
     from {
         opacity: 0;
     }
@@ -303,11 +311,11 @@ li {
 }
 
 .AppOne {
-    animation: Appear .7s;
+    animation: Appear1 .7s;
 }
 
 .AppTwo {
-    animation: Appear .7s;
+    animation: Appear2 .7s;
 }
 
 /*Transitions*/
