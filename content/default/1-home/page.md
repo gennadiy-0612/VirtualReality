@@ -112,7 +112,7 @@ Title: Home
 <a class="inLinkRight" title="title" href="">
 <img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg ctInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png">
 <div class="outSlideBigImg" width="1080" height="450" style="background-color: #ff7c4d"></div>
 <div class="outSlideBigImg" width="1080" height="450" style="background-color: #cdff4d"></div>
 <div class="outSlideBigImg" width="1080" height="450" style="background-color: #594dff"></div>
