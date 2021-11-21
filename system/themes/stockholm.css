@@ -570,7 +570,8 @@ a {
     display: block;
     width: 100%;
 }
-.outSlideBigImg:not(.outSlideBigImg:target) {
+
+.outSlideBigImg:not(:target) {
     display: none;
 }
 
