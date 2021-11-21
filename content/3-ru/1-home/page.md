@@ -83,7 +83,7 @@ Title: Home
 </section>
 <section class="screen3 Slides">
 <div class="doInfoH2">
-<h2 class="whatDo upperText Ag48 colorW">НАШИ ПРОЕКТЫ</h2>
+<h2 class="whatDo upperText Ag48 colorW WhatWeDo">НАШИ ПРОЕКТЫ</h2>
 </div>
 <ul class="doLinks doLinks-project">
 <li class="doli doli-projects"><a title="title" href="#whatDid1" class="Ag24 doA doA-project doLinksActive">01. БЕЗОПАСНОСТЬ</a></li>
