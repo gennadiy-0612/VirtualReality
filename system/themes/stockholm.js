@@ -3,7 +3,6 @@
 
 
 let shch = {};
-shch.observertag = {};
 shch.addDetect = function () {
 
     this.checkVision = function (init) {
@@ -15,12 +14,9 @@ shch.addDetect = function () {
         function vdHandler(els) {
             els.forEach((data) => {
                 if (data.intersectionRatio > .01) {
-                    // if (!shch.observertag[init.selector]) {
-                        data.target.classList.add(init.animationName);
-                        shch.observertag[init.selector] = 1;
-                        console.log(init.selector);
-                        console.log(data.target);
-                    // }
+                    data.target.classList.add(init.animationName);
+                    console.log(init.selector);
+                    console.log(data.target);
                 }
             });
         }
