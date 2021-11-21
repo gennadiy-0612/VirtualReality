@@ -707,6 +707,7 @@ a {
     opacity: 0;
     height: 450px;
     display: none;
+    transition: opacity .7s;
 }
 
 .outSlideImg {
