@@ -35,6 +35,10 @@ shch.InSlide = {
     movePrev: function () {
         this.display = this.display + 1;
         console.log(this.display);
+    },
+    moveNext: function () {
+        this.display = this.display - 1;
+        console.log(this.display);
     }
 }
 
@@ -90,7 +94,7 @@ shch.LoadFunc = function () {
     shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
 
     shch.InSlide.aRight = document.querySelector('.inLinkRight');
-    shch.InSlide.aRight.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
+    shch.InSlide.aRight.addEventListener('click', shch.InSlide.moveNext.bind(shch.InSlide));
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
