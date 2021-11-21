@@ -570,6 +570,10 @@ a {
     width: 100%;
 }
 
+.unActInSlide {
+    display: none;
+}
+
 /*Screen 4 Why VR*/
 .Digits {
     max-width: 1920px;
