@@ -169,11 +169,11 @@ li {
 }
 
 .AppOne {
-    animation: Appear1 .7s;
+    animation: Appear1 1s;
 }
 
 .AppTwo {
-    animation: Appear2 .7s;
+    animation: Appear2 1s;
 }
 
 /*Transitions*/
