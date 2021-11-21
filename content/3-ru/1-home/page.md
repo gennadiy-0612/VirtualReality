@@ -111,9 +111,12 @@ Title: Home
 <img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
 <img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png">
-<div class="outSlideBigImg" width="1080" height="450" style="background-color: #ff7c4d"></div>
-<div class="outSlideBigImg" width="1080" height="450" style="background-color: #cdff4d"></div>
+<div class="outSlideBigImg" width="1080" height="450" style="background-color: #858585"></div>
+<div class="outSlideBigImg" width="1080" height="450" style="background-color: #4b4b4b"></div>
+<div class="outSlideBigImg" width="1080" height="450" style="background-color: #140c86"></div>
+<div class="outSlideBigImg" width="1080" height="450" style="background-color: #651111"></div>
 <div class="outSlideBigImg" width="1080" height="450" style="background-color: #594dff"></div>
+<div class="outSlideBigImg" width="1080" height="450" style="background-color: #2e2b49"></div>
 </div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
