@@ -58,6 +58,7 @@ shch.InSlide = {
         } else {
             this.prevDisplay.classList.remove(this.unActSelector);
             this.prevDisplay.classList.add(this.actSelector);
+            this.frameIn[this.display].classList.add(this.actSelector);
             this.changeDisplay();
         }
     },
