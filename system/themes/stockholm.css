@@ -704,7 +704,6 @@ a {
     scroll-snap-align: start;
     max-width: 1080px;
     object-fit: cover;
-    opacity: 0;
     height: 450px;
     display: none;
     transition: opacity .7s;
@@ -715,12 +714,7 @@ a {
     width: 24.1%;
 }
 
-.unActInSlide {
-    opacity: 0;
-}
-
 .actInSlide {
-    opacity: 1;
     display: block;
     width: 100%;
 }
