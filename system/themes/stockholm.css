@@ -293,7 +293,7 @@ li {
 }
 
 .AppBase {
-    opacity: 0;
+    opacity: 1;
     transition: opacity .7s;
 }
 
