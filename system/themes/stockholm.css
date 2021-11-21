@@ -565,7 +565,8 @@ a {
     width: 24.1%;
 }
 
-.outSlideBigImgAct {
+.outSlideBigImg:first-of-type,
+.outSlideBigImg:target {
     display: block;
     width: 100%;
 }
