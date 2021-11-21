@@ -292,9 +292,6 @@ li {
     transition-timing-function: ease;
 }
 
-.AppBase {
-    animation: Appear .7s;
-}
 
 @keyframes Appear {
     from {
@@ -306,11 +303,11 @@ li {
 }
 
 .AppOne {
-    opacity: 1;
+    animation: Appear .7s;
 }
 
 .AppTwo {
-    opacity: 1;
+    animation: Appear .7s;
 }
 
 /*Transitions*/
