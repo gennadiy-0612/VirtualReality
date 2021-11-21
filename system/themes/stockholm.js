@@ -30,6 +30,11 @@ shch.addDetect = function () {
         });
     }
 }
+shch.InSlide = {
+    movePrev: function () {
+        console.log('11');
+    }
+}
 
 shch.watch = {
     screen1: {
@@ -79,6 +84,11 @@ shch.watch = {
 }
 
 shch.LoadFunc = function () {
+    shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
+    shch.InSlide.addEventListener('click', shch.InSlide.movePrev);
+
+    shch.InSlide.aLeft = document.querySelector('.inLinkRight');
+    shch.InSlide.addEventListener('click', shch.InSlide.movePrev);
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
