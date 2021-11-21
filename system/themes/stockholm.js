@@ -67,6 +67,10 @@ shch.watch = {
     screen9: {
         selector: '.FromSmall',
         animationName: 'FromSmallAnim'
+    },
+    screen10: {
+        selector: '.GoodTraining',
+        animationName: 'GoodTrainingAnim'
     }
 }
 
@@ -98,6 +102,9 @@ shch.LoadFunc = function () {
 
     shch.watch9 = new shch.addDetect();
     shch.watch9.checkVision(shch.watch.screen9);
+
+    shch.watch10 = new shch.addDetect();
+    shch.watch10.checkVision(shch.watch.screen10);
 }
 
 window.addEventListener('load', shch.LoadFunc);

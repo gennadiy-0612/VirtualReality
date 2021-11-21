@@ -151,7 +151,7 @@ Title: Home
 </ul>
 <div class="Compare">
 <div class="good">
-<h3 class="goodH3 Ag24 colorW upperText">Обучение с использованием VR</h3>
+<h3 class="goodH3 Ag24 colorW upperText GoodTraining">Обучение с использованием VR</h3>
 <ul class="goodUl">
 <li class="Ag18 lineHeight30 goodLi colorW">Экономическая эффективность и высокая масштабируемость</li>
 <li class="Ag18 lineHeight30 goodLi colorW">Реалистичность и погружение</li>
