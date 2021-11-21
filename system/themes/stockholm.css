@@ -147,7 +147,7 @@ li {
 
 /*Decoration*/
 
-/*Animation*/
+/*Transitions*/
 
 .frame {
     max-width: 100vw;
@@ -292,8 +292,20 @@ li {
     transition-timing-function: ease;
 }
 
-/*Animation*/
+.AppBase {
+    opacity: 0;
+    transition: opacity .7s;
+}
 
+.AppOne {
+    opacity: 1;
+}
+
+.AppTwo {
+    opacity: 1;
+}
+
+/*Transitions*/
 a {
     text-decoration: none;
 }
