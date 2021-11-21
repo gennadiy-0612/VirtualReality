@@ -49,7 +49,7 @@ shch.InSlide = {
         this.changeDisplay();
     },
     changeDisplay: function () {
-        console.log(this.frameIn[this.display]);
+        console.log(this.frameIn);
         this.frameIn[this.display].classList('actInSlide');
     }
 }
