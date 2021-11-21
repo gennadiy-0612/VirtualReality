@@ -90,7 +90,7 @@ shch.LoadFunc = function () {
     shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
 
     shch.InSlide.aRight = document.querySelector('.inLinkRight');
-    shch.InSlide.aRight.addEventListener('click', shch.InSlide.movePrev);
+    shch.InSlide.aRight.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
