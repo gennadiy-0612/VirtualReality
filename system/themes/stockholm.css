@@ -1202,14 +1202,14 @@ a {
 .FromSmall {
     opacity: 0;
     transform: translateZ(0) scale(.6);
+    transition-property: opacity, tranform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 .FromSmallAnim {
     opacity: 1;
     transform: translateZ(0) scale(1);
-    transition-property: opacity, tranform;
-    transition-duration: 1s;
-    transition-timing-function: ease;
 }
 
 /*Animation*/
