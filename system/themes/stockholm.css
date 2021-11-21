@@ -705,7 +705,6 @@ a {
     max-width: 1080px;
     object-fit: cover;
     opacity: 0;
-    visibility: collapse;
     height: 450px;
     display: none;
 }
