@@ -18,6 +18,7 @@ shch.addDetect = function () {
                     if (!shch.observertag[init.selector]) {
                         data.target.classList.add(init.animationName);
                         shch.observertag[init.selector] = 1;
+                        console.clear()
                         console.log(init.selector);
                         console.log(data.target);
                     }
