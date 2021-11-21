@@ -15,8 +15,6 @@ shch.addDetect = function () {
             els.forEach((data) => {
                 if (data.intersectionRatio > .01) {
                     data.target.classList.add(init.animationName);
-                    console.log(init.selector);
-                    console.log(data.target);
                 }
             });
         }
@@ -32,7 +30,7 @@ shch.addDetect = function () {
 }
 shch.InSlide = {
     movePrev: function () {
-        console.log('11');
+        console.log(this);
     }
 }
 
