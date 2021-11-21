@@ -49,12 +49,13 @@ shch.InSlide = {
         }
     },
     movePrev: function () {
-        this.prevDisplay = this.frameIn[this.display];
+
         this.display--;
         if (this.display < 0) {
             this.display = 0;
             return true;
         } else {
+            this.prevDisplay = this.frameIn[this.display] - 1;
             this.prevDisplay.classList.remove(this.actSelector);
             this.prevDisplay.classList.add(this.unActSelector);
             this.changeDisplay();
