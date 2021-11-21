@@ -30,6 +30,7 @@ shch.addDetect = function () {
         cImgs.forEach((el) => {
             vd.observe(el);
             console.log(init.selector);
+            console.log(el);
         });
     }
 }
