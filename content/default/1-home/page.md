@@ -55,7 +55,7 @@ Title: Home
 <li class="doli DoLI3"><a title="title"  href="#whatDid3" class="colorGrey doA Ag18">Aptitude Testing</a></li>
 </ul>
 </div>
-<div class="doImages">
+<div class="doImages FromSmall">
 <ul class="whatDid">
 <li class="whatDidWe" id="whatDid1">
 <picture class="w100percents">

@@ -1204,11 +1204,13 @@ a {
 
 .FromSmall {
     opacity: 0;
+    margin-top: -50px;
 }
 
 .FromSmallAnim {
+    margin-top: 0;
     opacity: 1;
-    transition-property: opacity;
+    transition-property: opacity, margin-top;
     transition-duration: 1s;
     transition-timing-function: ease;
 }
