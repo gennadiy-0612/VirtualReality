@@ -146,6 +146,35 @@ li {
 }
 
 /*Decoration*/
+/*Animation*/
+/*Transitions*/
+
+
+@keyframes Appear1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Appear2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.AppOne {
+    animation: Appear1 .7s;
+}
+
+.AppTwo {
+    animation: Appear2 .7s;
+}
 
 /*Transitions*/
 
@@ -290,32 +319,6 @@ li {
     transition-property: opacity, filter;
     transition-duration: 2s;
     transition-timing-function: ease;
-}
-
-@keyframes Appear1 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes Appear2 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.AppOne {
-    animation: Appear1 .7s;
-}
-
-.AppTwo {
-    animation: Appear2 .7s;
 }
 
 /*Transitions*/
