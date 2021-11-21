@@ -107,10 +107,10 @@ Title: Home
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
 <div id="SlideSetIn1" class="SlideSetIn">
-<a class="inLinkLeft" title="title" href="#">
+<a class="inLinkLeft" title="title" href="">
 <img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
 </a>
-<a class="inLinkRight" title="title" href="#">
+<a class="inLinkRight" title="title" href="">
 <img class="arrowDirectionIn arrowRightIn" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
 <img id="in0" class="outSlideBigImga ctInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png">
