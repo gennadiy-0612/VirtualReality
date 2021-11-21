@@ -72,7 +72,7 @@ shch.watch = {
         selector: '.GoodTraining',
         animationName: 'GoodTrainingAnim'
     },
-    screen10: {
+    screen11: {
         selector: '.BadTraining',
         animationName: 'BadTrainingAnim'
     }
