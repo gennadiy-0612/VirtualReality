@@ -37,6 +37,11 @@ shch.InSlide = {
     frameIn: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     moveNext: function () {
+        this.addEv = 1;
+        if (this.addEv === 1) {
+            this.frameIn[0].addEventListener('load', this.addVision);
+        }
+        this.addEv = 0;
         this.prevDisplay = this.frameIn[this.display];
         this.display++;
         if (this.display < this.frameInLength) {
@@ -58,11 +63,6 @@ shch.InSlide = {
         }
     },
     changeDisplay: function () {
-        this.addEv = 1;
-        if (this.addEv === 1) {
-            this.frameIn[0].addEventListener('load', this.addVision);
-        }
-        this.addEv = 0;
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
     },
