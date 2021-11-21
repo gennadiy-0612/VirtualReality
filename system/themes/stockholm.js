@@ -64,7 +64,7 @@ shch.InSlide = {
         this.currentDisplay = this.frameIn[this.display];
         console.log(this.frameIn[this.display]);
         this.frameIn[this.display].classList.add(this.actSelector);
-        this.frameIn[this.display].setAttribute('src',this.frameIn[this.display].getAttribute('data-src'));
+        this.frameIn[0].setAttribute('src',this.frameIn[this.display].getAttribute('data-src'));
         // console.log(this.frameIn[this.display].getAttribute('data-src'));
     }
 }
