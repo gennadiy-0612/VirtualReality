@@ -38,10 +38,10 @@ shch.InSlide = {
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     moveNext: function () {
         this.prevDisplay = this.frameIn[this.display];
-        this.prevDisplay.classList.remove(this.actSelector);
-        this.prevDisplay.classList.add(this.unActSelector);
         this.display++;
         if (this.display < this.frameInLength) {
+            this.prevDisplay.classList.remove(this.actSelector);
+            this.prevDisplay.classList.add(this.unActSelector);
             this.changeDisplay();
         } else {
             this.display = this.frameInLength - 1;
@@ -50,13 +50,13 @@ shch.InSlide = {
     },
     movePrev: function () {
         this.prevDisplay = this.frameIn[this.display];
-        this.prevDisplay.classList.remove(this.actSelector);
-        this.prevDisplay.classList.add(this.unActSelector);
         this.display--;
         if (this.display < 0) {
             this.display = 0;
             return true;
         } else {
+            this.prevDisplay.classList.remove(this.actSelector);
+            this.prevDisplay.classList.add(this.unActSelector);
             this.changeDisplay();
         }
     },
