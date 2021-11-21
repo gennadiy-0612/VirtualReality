@@ -37,7 +37,8 @@ shch.InSlide = {
         console.log(this.display);
     },
     moveNext: function () {
-        this.display = this.display - 1;
+        if (!this.display) return;
+        this.display--;
         console.log(this.display);
     }
 }
