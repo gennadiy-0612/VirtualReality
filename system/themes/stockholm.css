@@ -716,7 +716,7 @@ a {
     width: 100%;
 }
 
-.outSlideBigImg:first-child {
+.outSlideBigImg:first-of-type {
     opacity: 1;
 }
 
