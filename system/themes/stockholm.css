@@ -1205,7 +1205,7 @@ a {
 .FromSmall {
     opacity: 0;
     margin-top: -50px;
-    transform:scale(.6);
+    transform:scale(.8);
 }
 
 .FromSmallAnim {
