@@ -704,7 +704,7 @@ a {
     scroll-snap-align: start;
     max-width: 1080px;
     object-fit: cover;
-    visibility: collapse;
+    opacity: 0;
     height: 450px;
 }
 
@@ -714,12 +714,12 @@ a {
 }
 
 .actInSlide {
-    visibility: visible;
+    opacity: 1;
     width: 100%;
 }
 
 .unActInSlide {
-    visibility: collapse;
+    opacity: 0;
 }
 
 /*Screen 4 Why VR*/
