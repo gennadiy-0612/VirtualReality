@@ -768,10 +768,6 @@ a {
     letter-spacing: 1.6px;
 }
 
-.WhoWeLi0::before {
-    top: 14px;
-}
-
 .WhoWeLi1 {
     letter-spacing: 1.9px;
 }
@@ -786,6 +782,10 @@ a {
     background: #A64DFF;
     top: 20px;
     left: -45px;
+}
+
+.WhoWeLi0::before {
+    top: 14px;
 }
 
 .blueLineLi::before {
