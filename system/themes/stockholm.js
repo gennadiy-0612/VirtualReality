@@ -37,8 +37,9 @@ shch.InSlide = {
         if (this.display === this.frameInLength) {
             this.display = this.frameInLength;
             return true;
+        } else {
+            this.changeDisplay();
         }
-        this.changeDisplay();
     },
     movePrev: function () {
         this.display--;
