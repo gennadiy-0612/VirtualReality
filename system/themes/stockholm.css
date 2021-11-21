@@ -1217,13 +1217,11 @@ a {
 
 .GoodTraining {
     opacity: 0;
-    transform: scale(.9);
 }
 
 .GoodTrainingAnim {
-    transform: scale(1);
     opacity: 1;
-    transition-property: opacity, transform;
+    transition-property: opacity;
     transition-duration: 1s;
     transition-timing-function: ease;
 }
@@ -1236,8 +1234,9 @@ a {
 .BadTrainingAnim {
     filter: brightness(1) blur(0);
     opacity: 1;
+    transition-delay: 1s;
     transition-property: opacity, filter;
-    transition-duration: 1s;
+    transition-duration: 2s;
     transition-timing-function: ease;
 }
 
