@@ -13,7 +13,7 @@ shch.addDetect = function () {
 
         function vdHandler(els) {
             els.forEach((data) => {
-                if (data.intersectionRatio > .09) {
+                if (data.intersectionRatio > .01) {
                     data.target.classList.add(init.animationName);
                     console.log(init.selector);
                     console.log(data.target);
