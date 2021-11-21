@@ -714,12 +714,13 @@ a {
 }
 
 .actInSlide {
-    display: block;
+    visibility: visible;
     width: 100%;
 }
 
 .unActInSlide {
     display: none;
+    visibility: collapse;
 }
 
 /*Screen 4 Why VR*/
