@@ -67,14 +67,8 @@ shch.InSlide = {
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
     },
     addVision: function () {
-        if (this.frameIn[0].classList.contains('AppOne')) {
-            this.frameIn[0].classList.remove('AppOne');
-            this.frameIn[0].classList.add('AppTwo');
-        }
-        if (this.frameIn[0].classList.contains('AppTwo')) {
-            this.frameIn[0].classList.remove('AppTwo');
-            this.frameIn[0].classList.add('AppOne');
-        }
+        this.frameIn[0].classList.toggle('AppOne');
+        this.frameIn[0].classList.toggle('AppTwo');
         console.log(this.frameIn[0]);
         console.log('loaded');
     }
