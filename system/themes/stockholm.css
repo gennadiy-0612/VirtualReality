@@ -1199,12 +1199,12 @@ a {
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
-.ImgFromSmall {
+.FromSmall {
     opacity: 0;
     transform: scale(.7);
 }
 
-.ImgFromSmallAnim {
+.FromSmallAnim {
     opacity: 1;
     transform: scale(1);
     transition-property: opacity, tranform;

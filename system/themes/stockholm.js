@@ -68,8 +68,8 @@ shch.watch = {
         animationName: 'DoLI3Anim'
     },
     screen9: {
-        selector: '.ImgFromSmall',
-        animationName: 'ImgFromSmallAnim'
+        selector: '.FromSmall',
+        animationName: 'FromSmallAnim'
     }
 }
 
