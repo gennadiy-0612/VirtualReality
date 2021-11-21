@@ -707,16 +707,17 @@ a {
     height: 450px;
     display: none;
     transition: opacity .7s;
-}
-
-.outSlideImg {
-    height: 100%;
-    width: 24.1%;
+    opacity: 0;
 }
 
 .actInSlide {
+    opacity: 1;
     display: block;
     width: 100%;
+}
+.outSlideImg {
+    height: 100%;
+    width: 24.1%;
 }
 
 /*Screen 4 Why VR*/
