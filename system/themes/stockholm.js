@@ -41,7 +41,6 @@ shch.InSlide = {
         this.display++;
         if (this.display < this.frameInLength) {
             this.prevDisplay.classList.remove(this.actSelector);
-            this.prevDisplay.classList.add(this.unActSelector);
             this.changeDisplay();
         } else {
             this.display = this.frameInLength - 1;
@@ -56,10 +55,8 @@ shch.InSlide = {
             this.display = 0;
             return true;
         } else {
-            this.prevDisplay.classList.add(this.unActSelector);
             this.prevDisplay.classList.remove(this.actSelector);
             this.frameIn[this.display].classList.add(this.actSelector);
-            this.frameIn[this.display].classList.remove(this.unActSelector);
             this.changeDisplay();
         }
     },
