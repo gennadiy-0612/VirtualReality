@@ -1209,11 +1209,11 @@ a {
 
 .FromSmall {
     opacity: 0;
-    /*transform: scale(.8);*/
+    transform: scale(.8);
 }
 
 .FromSmallAnim {
-    /*transform: scale(1);*/
+    transform: scale(1);
     opacity: 1;
     transition-property: opacity, transform;
     transition-duration: 1s;
