@@ -34,7 +34,7 @@ Title: Home
 <picture class="topPoster">
 <source srcset="/media/images/img/topVideoPoster.webp" type="image/webp">
 <source srcset="/media/images/img/topVideoPoster.jpg" type="image/jpeg">
-<img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
+<img alt="Demo" class="topPoster ImgFromSmall" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
     </div>
 <div class="mouseBlock"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>

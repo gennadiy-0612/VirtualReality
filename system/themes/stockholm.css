@@ -1188,10 +1188,22 @@ a {
 
 .DoLI3 {
     opacity: 0;
-    transform: scale(1.2);
 }
 
 .DoLI3Anim {
+    opacity: 1;
+    transition-property: opacity;
+    transition-delay: 2.75s;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
+}
+
+.ImgFromSmall {
+    opacity: 1;
+    transform: scale(.7);
+}
+
+.ImgFromSmallAnim {
     opacity: 1;
     transform: scale(1);
     transition-property: opacity, tranform;
