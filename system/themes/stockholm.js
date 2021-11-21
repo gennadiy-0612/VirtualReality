@@ -61,7 +61,9 @@ shch.InSlide = {
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
         if (this.frameIn[0].classList.contains('AppOne')) this.frameIn[0].classList.toggle('AppTwo');
-        this.frameIn[0].classList.toggle('AppOne');
+        else {
+            this.frameIn[0].classList.toggle('AppOne');
+        }
     }
 }
 
