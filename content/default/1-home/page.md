@@ -106,7 +106,6 @@ Title: Home
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
-<div id="SlideSetIn1" class="SlideSetIn">
 <a class="inLinkLeft" title="title" href="">
 <img class="arrowDirectionIn arrowLeftIn" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
 </a>
@@ -115,10 +114,9 @@ Title: Home
 </a>
 <img id="in0" class="outSlideBigImg ctInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png">
 </div>
-<div id="in1" class="outSlideBigImg" width="1080" height="450" style="background-color: #ff7c4d"></div>
-<div id="in2" class="outSlideBigImg" width="1080" height="450" style="background-color: #cdff4d"></div>
-<div id="in3" class="outSlideBigImg" width="1080" height="450" style="background-color: #594dff"></div>
-</div>
+<div class="outSlideBigImg" width="1080" height="450" style="background-color: #ff7c4d"></div>
+<div class="outSlideBigImg" width="1080" height="450" style="background-color: #cdff4d"></div>
+<div class="outSlideBigImg" width="1080" height="450" style="background-color: #594dff"></div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
