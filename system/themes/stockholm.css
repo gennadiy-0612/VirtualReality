@@ -293,8 +293,16 @@ li {
 }
 
 .AppBase {
-    opacity: 1;
-    transition: opacity .7s;
+    animation: Appear .7s;
+}
+
+@keyframes Appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .AppOne {
