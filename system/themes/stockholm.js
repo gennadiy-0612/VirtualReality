@@ -44,7 +44,7 @@ shch.InSlide = {
         if (this.display < this.frameInLength) {
             this.changeDisplay();
         } else {
-            this.display = this.frameInLength;
+            this.display = this.frameInLength - 1;
             return true;
         }
     },
