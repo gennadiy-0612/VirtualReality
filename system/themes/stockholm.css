@@ -1233,7 +1233,7 @@ a {
     filter: brightness(.3) blur(5px);
 }
 
-.GBadTrainingAnim {
+.BadTrainingAnim {
     filter: brightness(1) blur(0);
     opacity: 1;
     transition-property: opacity, filter;
