@@ -1208,7 +1208,7 @@ a {
     opacity: 1;
     transform: scale(1);
     transition-property: opacity, tranform;
-    transition-delay: 2.75s;
+    transition-delay: 1s;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
