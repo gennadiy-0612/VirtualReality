@@ -42,11 +42,10 @@ shch.InSlide = {
     },
     movePrev: function () {
         this.display--;
-        if (!this.display) {
+        if (this.display < 0) {
             this.display = 0;
             return true;
-        }
-        else {
+        } else {
             this.changeDisplay();
         }
     },
