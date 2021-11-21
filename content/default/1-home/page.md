@@ -43,7 +43,7 @@ Title: Home
 </div>
 </div>
 </div>
-<div class="mouseBlock"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
+<div class="mouseBlock a1440"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
 <section id="Screen2" class="do a1440">
 <div class="doInfo">
 <div class="doInfoH2">
