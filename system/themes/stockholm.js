@@ -37,11 +37,6 @@ shch.InSlide = {
     frameIn: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     moveNext: function () {
-        this.addEv = 1;
-        if (this.addEv === 1) {
-            this.frameIn[0].addEventListener('load', this.addVision);
-        }
-        this.addEv = 0;
         this.prevDisplay = this.frameIn[this.display];
         this.display++;
         if (this.display < this.frameInLength) {
@@ -63,14 +58,19 @@ shch.InSlide = {
         }
     },
     changeDisplay: function () {
+        this.addEv = 1;
+        if (this.addEv === 1) {
+            this.frameIn[0].addEventListener('load', this.addVision.bind(shch.InSlide));
+        }
+        this.addEv = 0;
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
     },
     addVision: function () {
-        // if (this.frameIn[0].classList.contains('AppOne')) this.frameIn[0].classList.toggle('AppTwo');
-        // else {
-        //     this.frameIn[0].classList.toggle('AppOne');
-        // }
+        if (this.frameIn[0].classList.contains('AppOne')) this.frameIn[0].classList.toggle('AppTwo');
+        else {
+            this.frameIn[0].classList.toggle('AppOne');
+        }
         console.log(this.frameIn[0])
         console.log('loaded')
     }
