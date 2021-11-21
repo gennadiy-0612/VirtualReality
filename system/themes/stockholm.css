@@ -1205,14 +1205,14 @@ a {
 .FromSmall {
     opacity: 0;
     margin-top: -50px;
-    transform: scale(.6);
+    transform:scale(.6);
 }
 
 .FromSmallAnim {
-    transform: translateZ(0) scale(1);
+    transform: scale(1);
     margin-top: 0;
     opacity: 1;
-    transition-property: opacity;
+    transition-property: opacity, transform;
     transition-duration: 1s;
     transition-timing-function: ease;
 }
