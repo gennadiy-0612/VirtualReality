@@ -387,7 +387,7 @@ li {
 
 .StepAnim {
     opacity: 1;
-    filter: invert(100%);
+    filter: invert(0);
     transition-property: opacity, filter;
     transition-duration: .7s;
     transition-delay: .7s;
