@@ -81,6 +81,26 @@ shch.InSlide = {
         }
     }
 }
+
+shch.switchBigIMG = function (selectorLittle) {
+    this.tags = document.querySelectorAll(selectorLittle);
+    this.tagAll = document.querySelectorAll(selectorLittle).length;
+    this.changeBig = function () {
+        for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
+            this.tags[this.tagStart].addEventListener('click', this.switchIt);
+            this.tags[this.tagStart].numberItem = this.startClass;
+        }
+    }
+    this.switchIt = function () {
+        let num = this.getAttribute('data-id');
+        shch.InSlide.currentDisplay.classList.remove('AppAnim0');
+        shch.InSlide.currentDisplay.classList.add('AppAnim1');
+        shch.InSlide.frameIn[0].setAttribute('src', shch.InSlide.frameIn[num].getAttribute('data-src'));
+        shch.InSlide.currentDisplay = shch.InSlide.frameIn[num];
+        shch.InSlide.display = num;
+    }
+}
+
 shch.OutSlide = {
     addEv: 1,
     startClass: 1,
@@ -134,20 +154,21 @@ shch.OutSlide = {
         }
     }
 }
-shch.switchBigIMG = function (selectorLittle) {
+
+
+shch.switchBigSlide = function (selectorLittle) {
     this.tags = document.querySelectorAll(selectorLittle);
     this.tagAll = document.querySelectorAll(selectorLittle).length;
-    this.changeBig = function () {
+    this.changeBigSlide = function () {
         for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
-            this.tags[this.tagStart].addEventListener('click', this.switchIt);
+            this.tags[this.tagStart].addEventListener('click', this.switchIts);
             this.tags[this.tagStart].numberItem = this.startClass;
         }
     }
-    this.switchIt = function () {
+    this.switchIts = function () {
         let num = this.getAttribute('data-id');
         shch.InSlide.currentDisplay.classList.remove('AppAnim0');
         shch.InSlide.currentDisplay.classList.add('AppAnim1');
-        shch.InSlide.frameIn[0].setAttribute('src', shch.InSlide.frameIn[num].getAttribute('data-src'));
         shch.InSlide.currentDisplay = shch.InSlide.frameIn[num];
         shch.InSlide.display = num;
     }
@@ -218,6 +239,8 @@ shch.LoadFunc = function () {
     shch.OutSlide.aRight = document.querySelector('.OutR');
     shch.OutSlide.aRight.addEventListener('click', shch.OutSlide.next.bind(shch.OutSlide));
 
+    shch.bigSlide = new shch.switchBigSlide('.biggerSlide');
+    shch.bigSlide.changeBigSlide(shch.bigSlide.tags);
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
