@@ -166,6 +166,7 @@ shch.switchBigSlide = function (selectorLittle) {
         }
     }
     this.switchIts = function () {
+        console.log(this)
         let num = this.getAttribute('data-id');
         shch.InSlide.currentDisplay.classList.remove('AppAnim0');
         shch.InSlide.currentDisplay.classList.add('AppAnim1');
