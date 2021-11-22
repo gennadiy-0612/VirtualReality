@@ -88,7 +88,7 @@ shch.InSlide = {
         this.changeBig = function () {
             if (this.doIt) {
                 for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
-                    this.tags[this.tagStart].addEventListener('click', this.switchIt)
+                    this.tags[this.tagStart].addEventListener('click', this.switchIt.bind(this.switchIt));
                     console.log(this.tags[this.tagStart])
                 }
                 this.doIt = 0;
