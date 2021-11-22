@@ -158,8 +158,27 @@ shch.OutSlide = {
     currentDisplay: document.querySelectorAll('.biggerSlide')[0],
     frameIn: document.querySelectorAll('.biggerSlide'),
     frameInLength: document.querySelectorAll('.biggerSlide').length,
-    moveNext: shch.InSlide.moveNext,
-    movePrev: shch.InSlide.movePrev,
+    moveNext: function () {
+        this.prevDisplay = this.frameIn[this.display];
+        this.display++;
+        if (this.display < this.frameInLength) {
+            this.changeDisplay();
+        } else {
+            this.display = this.frameInLength - 1;
+            return true;
+        }
+    },
+    movePrev: function () {
+        this.prevDisplay = this.frameIn[this.display];
+        this.display--;
+        if (this.display < 0) {
+            this.prevDisplay = this.frameIn[0];
+            this.display = 0;
+            return true;
+        } else {
+            this.changeDisplay();
+        }
+    },
     changeDisplay: function () {
         if (this.addEv === 1) {
             this.frameIn[0].addEventListener('load', this.addVision.bind(shch.InSlide));
@@ -169,7 +188,18 @@ shch.OutSlide = {
         this.currentDisplay = this.frameIn[this.display];
         this.currentDisplay.classList.add('biggerSlideAct');
     },
-    addVision: shch.InSlide.addVision
+    aaddVision: function () {
+        if (this.startClass) {
+            this.frameIn[0].classList.add('AppAnim0');
+            this.frameIn[0].classList.remove('AppAnim1');
+            this.startClass = 0
+        } else {
+            this.frameIn[0].classList.add('AppAnim1');
+            this.frameIn[0].classList.remove('AppAnim0');
+            this.startClass = 1;
+            console.log(this)
+        }
+    }
 }
 shch.LoadFunc = function () {
 
@@ -178,7 +208,6 @@ shch.LoadFunc = function () {
 
     shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
     shch.littleIMGS.changeBig(shch.littleIMGS.tags);
-
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
