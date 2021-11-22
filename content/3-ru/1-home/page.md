@@ -116,10 +116,10 @@ Title: Home
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig4.png"></div>
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint overBigger" src="/media/images/img/inSlideImg1.png" data-id="0">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint overBigger" src="/media/images/img/inSlideImg1.png" data-id="1">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint overBigger" src="/media/images/img/inSlideImg1.png" data-id="2">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint overBigger" src="/media/images/img/inSlideImg1.png" data-id="3">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverBigger" src="/media/images/img/inSlideImg1.png" data-id="0">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverBigger" src="/media/images/img/inSlideImg1.png" data-id="1">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverBigger" src="/media/images/img/inSlideImg1.png" data-id="2">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverBigger" src="/media/images/img/inSlideImg1.png" data-id="3">
 </div>
 </div>
 <a title="title" class="outSlideRight arrowDirectionOut" href="/">

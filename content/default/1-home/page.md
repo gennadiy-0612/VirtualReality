@@ -107,10 +107,10 @@ Title: Home
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
 <a class="inLinkLeft" title="title" href="">
-<img class="arrowDirectionIn arrowLeftIn cursorPoint overBigger" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
+<img class="arrowDirectionIn arrowLeftIn cursorPoint hoverBigger" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
 </a>
 <a class="inLinkRight" title="title" href="">
-<img class="arrowDirectionIn arrowRightIn cursorPoint overBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
+<img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
 <img class="outSlideBigImg actInSlide FromSmall AppOne" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig2.png"></div>
@@ -118,10 +118,10 @@ Title: Home
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig4.png"></div>
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint overBigger" src="/media/images/img/inSlideImg1.png" data-id="0">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint overBigger" src="/media/images/img/inSlideImg1.png" data-id="1">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint overBigger" src="/media/images/img/inSlideImg1.png" data-id="2">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint overBigger" src="/media/images/img/inSlideImg1.png" data-id="3">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverBigger" src="/media/images/img/inSlideImg1.png" data-id="0">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverBigger" src="/media/images/img/inSlideImg1.png" data-id="1">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverBigger" src="/media/images/img/inSlideImg1.png" data-id="2">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverBigger" src="/media/images/img/inSlideImg1.png" data-id="3">
 </div>
 </div>
 </div>
