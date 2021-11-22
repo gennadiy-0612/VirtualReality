@@ -82,13 +82,21 @@ shch.InSlide = {
         }
     },
     switchBigIMG: function (selectorLittle) {
+        this.doIt = 1;
         this.tags = document.querySelectorAll(selectorLittle);
-        this.tagAll = document.querySelectorAll('.outSlideImg').length;
+        this.tagAll = document.querySelectorAll(selectorLittle).length;
         this.changeBig = function () {
-            for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
-                console.log(this.tags[this.tagStart])
+            if (this.doIt) {
+                for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
+                    this.tags[this.tagStart].addEventListener('click', this.switchIt)
+                    console.log(this.tags[this.tagStart])
+                }
+                this.doIt = 0;
             }
         }
+    },
+    switchIt: function () {
+        console.log('ppp');
     }
 }
 
