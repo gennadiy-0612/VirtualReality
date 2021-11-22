@@ -158,6 +158,7 @@ shch.LoadFunc = function () {
     shch.littleIMGS.changeBig(shch.littleIMGS.tags);
 
     shch.obj = Object.assign(shch.littleIMGS);
+    if (shch.obj === shch.littleIMGS) console.log('obj equal')
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
