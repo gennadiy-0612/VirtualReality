@@ -36,9 +36,9 @@ shch.InSlide = {
     unActSelector: 'unActInSlide1',
     prevDisplay: {},
     display: 0,
-    currentDisplay: document.querySelectorAll('.biggerSlide')[0],
-    frameIn: document.querySelectorAll('.biggerSlide'),
-    frameInLength: document.querySelectorAll('.biggerSlide').length,
+    currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
+    frameIn: document.querySelectorAll('.outSlideBigImg'),
+    frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     moveNext: function () {
         this.prevDisplay = this.frameIn[this.display];
         this.display++;
@@ -88,9 +88,9 @@ shch.OutSlide = {
     unActSelector: 'unActInSlide1',
     prevDisplay: {},
     display: 0,
-    currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
-    frameOut: document.querySelectorAll('.outSlideBigImg'),
-    frameInLength: document.querySelectorAll('.outSlideBigImg').length,
+    currentDisplay: document.querySelectorAll('.biggerSlide')[0],
+    frameOut: document.querySelectorAll('.biggerSlide'),
+    frameInLength: document.querySelectorAll('.biggerSlide').length,
     next: function () {
         this.prevDisplay = this.frameOut[this.display];
         this.display++;
