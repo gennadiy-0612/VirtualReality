@@ -1298,8 +1298,11 @@ a {
         column-count: 1;
     }
 }
-#whatDo1 .outSlideH2 {
-    text-shadow: 0 0 1px #fff;
-    box-shadow: 0 0 4px #fff;
-    border-radius: 10%;
+
+#whatDo1 {
+    background-color: #174367;
+}
+
+#whatDo2 {
+    background-color: #6e2c1f;
 }
