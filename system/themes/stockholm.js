@@ -51,7 +51,6 @@ shch.InSlide = {
     },
     movePrev: function () {
         this.prevDisplay = this.frameIn[this.display];
-        console.log(this)
         this.display--;
         if (this.display < 0) {
             this.prevDisplay = this.frameIn[0];
@@ -68,7 +67,7 @@ shch.InSlide = {
         }
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
-        console.log(this)
+
     },
     addVision: function () {
         if (this.startClass) {
@@ -79,6 +78,7 @@ shch.InSlide = {
             this.frameIn[0].classList.add('AppAnim1');
             this.frameIn[0].classList.remove('AppAnim0');
             this.startClass = 1;
+            console.log(this)
         }
     }
 }
