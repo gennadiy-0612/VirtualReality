@@ -67,7 +67,7 @@ shch.InSlide = {
         }
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
-        this.switcher = new this.switchBigIMG();
+        this.switcher = new this.switchBigIMG('.outSlideImg');
         this.switcher.changeBig();
     },
     addVision: function () {
@@ -81,8 +81,8 @@ shch.InSlide = {
             this.startClass = 1;
         }
     },
-    switchBigIMG: function () {
-        this.tags = document.querySelectorAll('.outSlideImg');
+    switchBigIMG: function (selectorLittle) {
+        this.tags = document.querySelectorAll(selectorLittle);
         this.tagAll = document.querySelectorAll('.outSlideImg').length;
         this.changeBig = function () {
             for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
