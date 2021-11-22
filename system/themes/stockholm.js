@@ -86,12 +86,12 @@ shch.InSlide = {
         this.tags = document.querySelectorAll(selectorLittle);
         this.tagAll = document.querySelectorAll(selectorLittle).length;
         this.changeBig = function () {
-            if (this.doIt) {
+            // if (this.doIt) {
                 for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
                     this.tags[this.tagStart].addEventListener('click', this.switchIt);
                     console.log(this.tags[this.tagStart])
-                }
-                this.doIt = 0;
+                // }
+                // this.doIt = 0;
             }
         }
     },
