@@ -145,6 +145,10 @@ li {
     bottom: 0;
 }
 
+.cursorPoint {
+    cursor: pointer;
+}
+
 /*Decoration*/
 /*Animation*/
 /*Transitions*/
