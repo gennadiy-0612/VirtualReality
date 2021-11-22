@@ -109,7 +109,7 @@ shch.OutSlide = {
             this.display = 0;
             return true;
         } else {
-            this.changeDisplay();
+            this.changeDisp();
         }
     },
     changeDisp: function () {
