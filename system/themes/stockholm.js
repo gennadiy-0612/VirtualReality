@@ -28,7 +28,9 @@ shch.addDetect = function () {
         });
     }
 }
+
 shch.InSlide = {
+    addEv: 1,
     startClass: 1,
     actSelector: 'actInSlide1',
     unActSelector: 'unActInSlide1',
@@ -59,7 +61,6 @@ shch.InSlide = {
         }
     },
     changeDisplay: function () {
-        this.addEv = 1;
         if (this.addEv === 1) {
             this.frameIn[0].addEventListener('load', this.addVision.bind(shch.InSlide));
             this.addEv = 0;
