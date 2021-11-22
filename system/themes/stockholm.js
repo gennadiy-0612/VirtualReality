@@ -67,8 +67,6 @@ shch.InSlide = {
         }
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
-        this.switcher = new this.switchBigIMG('.outSlideImg');
-        this.switcher.changeBig();
     },
     addVision: function () {
         if (this.startClass) {
@@ -153,6 +151,9 @@ shch.LoadFunc = function () {
 
     shch.InSlide.aRight = document.querySelector('.inLinkRight');
     shch.InSlide.aRight.addEventListener('click', shch.InSlide.moveNext.bind(shch.InSlide));
+
+    shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
+    shch.littleIMGS.changeBig();
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
