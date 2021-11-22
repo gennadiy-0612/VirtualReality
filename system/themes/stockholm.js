@@ -174,7 +174,7 @@ shch.LoadFunc = function () {
     shch.littleIMGS.changeBig(shch.littleIMGS.tags);
 
 
-    shch.OutSlide.aLeft = document.querySelector('.arrowLeftIn');
+    shch.OutSlide.aLeft = document.querySelector('.arrowDirectionOut');
     shch.OutSlide.aLeft.addEventListener('click', shch.OutSlide.movePrev.bind(shch.OutSlide));
 
 
