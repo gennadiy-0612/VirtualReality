@@ -77,6 +77,7 @@ shch.InSlide = {
             this.frameIn[0].classList.remove('AppAnim0');
             this.startClass = 1;
         }
+        console.log(this.startClass)
     }
 }
 
