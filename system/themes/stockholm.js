@@ -50,8 +50,8 @@ shch.InSlide = {
         }
     },
     movePrev: function () {
-        console.log(this)
         this.prevDisplay = this.frameIn[this.display];
+        console.log(this)
         this.display--;
         if (this.display < 0) {
             this.prevDisplay = this.frameIn[0];
