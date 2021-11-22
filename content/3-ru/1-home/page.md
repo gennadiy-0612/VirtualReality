@@ -89,7 +89,7 @@ Title: Home
 <li class="doli doli-projects"><a title="title" href="#whatDid2" class="colorGrey doA doA-project Ag24">02. защита</a></li>
 </ul>
 <div class="outSlide">
-<a title="title" class="outSlideLeft arrowDirectionOut" href="/">
+<a title="title" class="outSlideLeft arrowDirectionOut" href="">
 <img class="arrowDirectionOut" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
 <div class="inSlide">
@@ -101,7 +101,7 @@ Title: Home
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Реплики реальных мест, рабочих задач и оборудования </li>
 </ul>
-<a title="title" href="/" class="GoTo colorW Ag14 lineHeight30 upperText">перейти на страницу</a>
+<a title="title" href="" class="GoTo colorW Ag14 lineHeight30 upperText">перейти на страницу</a>
 </div>
 <div class="outSlideSet relative">
 <a class="inLinkLeft" title="title" href="">
