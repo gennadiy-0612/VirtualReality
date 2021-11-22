@@ -150,6 +150,9 @@ shch.watch = {
 
 shch.LoadFunc = function () {
 
+    shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
+    shch.InSlide.aLeft.addEventListener('click', shch.InSlide.moveNext.bind(shch.InSlide));
+
     shch.InSlide.aRight = document.querySelector('.inLinkRight');
     shch.InSlide.aRight.addEventListener('click', shch.InSlide.moveNext.bind(shch.InSlide));
 
