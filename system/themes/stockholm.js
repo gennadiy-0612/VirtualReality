@@ -159,6 +159,9 @@ shch.LoadFunc = function () {
 
     shch.obj = Object.create(shch.littleIMGS);
     if (shch.obj === shch.littleIMGS) console.log('obj equal')
+    else {
+        console.log('obj no equal')
+    }
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
