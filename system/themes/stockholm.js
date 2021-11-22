@@ -67,6 +67,7 @@ shch.InSlide = {
         }
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
+        this.switchBigIMG.changeBig();
     },
     addVision: function () {
         if (this.startClass) {
@@ -78,7 +79,15 @@ shch.InSlide = {
             this.frameIn[0].classList.remove('AppAnim0');
             this.startClass = 1;
         }
-        console.log(this.startClass)
+    },
+    switchBigIMG: function () {
+        this.tags = document.querySelectorAll('.outSlideImg');
+        this.tagAll = document.querySelectorAll('.outSlideImg').length;
+        this.changeBig = function () {
+            for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
+                console.log(this.tags[this.tagStart])
+            }
+        }
     }
 }
 
