@@ -157,38 +157,6 @@ Title: Home
 </div>
 </div>
 </div>
-<div id="whatDo2" class="biggerSlide BigSlide2">
-<div class="inSlideText">
-<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">safety</h2>
-<ul class="outSlideUl">
-<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Interactive health and safety immersive training </li>
-<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
-<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
-<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
-</ul>
-<a title="title" href="" class="GoTo colorW Ag14 lineHeight30 upperText">go to the page</a>
-</div>
-<div class="outSlideSet">
-<div class="SlideSetIn relative">
-<a class="inLinkLeft" title="title" href="">
-<img class="arrowDirectionIn arrowLeftIn cursorPoint hoverBigger" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
-</a>
-<a class="inLinkRight" title="title" href="">
-<img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
-</a>
-<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
-<div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig2.png"></div>
-<div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig3.png"></div>
-<div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig4.png"></div>
-</div>
-<div class="outSlideImages">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="0">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="1">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="2">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="3">
-</div>
-</div>
-</div>
 <a title="title" class="outSlideRight arrowDirectionOut" href="">
 <img class="arrowDirectionOut OutR" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
