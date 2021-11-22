@@ -297,11 +297,11 @@ Title: Home
 <h2 class="partnersSetText whatDo upperText Ag48 colorW WhatWeDo">НАШИ ПАРТНЕРЫ</h2>
 </div>
 <div class="partnersSetIcons">
-<p class="partner partner1"></p>
-<p class="partner partner2"></p>
-<p class="partner partner3"></p>
-<p class="partner partner4"></p>
-<p class="partner partner5"></p>
+<p class="partner Partner1 partner1"></p>
+<p class="partner Partner2 partner2"></p>
+<p class="partner Partner3 partner3"></p>
+<p class="partner Partner4 partner4"></p>
+<p class="partner Partner5 partner5"></p>
 </div>
 </div>
 </div>
@@ -311,12 +311,12 @@ Title: Home
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">награды</h2>
 </div>
 <div class="partnersSetIcons">
-<p class="partner partner1"></p>
-<p class="partner partner2"></p>
-<p class="partner partner3"></p>
-<p class="partner partner4"></p>
-<p class="partner partner5"></p>
-<p class="partner partner3"></p>
+<p class="partner Partner1 partner1"></p>
+<p class="partner Partner2 partner2"></p>
+<p class="partner Partner3 partner3"></p>
+<p class="partner Partner4 partner4"></p>
+<p class="partner Partner5 partner5"></p>
+<p class="partner Partner6 partner3"></p>
 </div>
 </div>
 </section>

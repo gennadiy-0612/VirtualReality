@@ -243,6 +243,30 @@ shch.watch = {
     screen17: {
         selector: '.Step',
         animationName: 'StepAnim'
+    },
+    screen18: {
+        selector: '.Partner1',
+        animationName: 'Partner1Anim'
+    },
+    screen19: {
+        selector: '.Partner2',
+        animationName: 'Partner2Anim'
+    },
+    screen20: {
+        selector: '.Partner3',
+        animationName: 'Partner3Anim'
+    },
+    screen21: {
+        selector: '.Partner4',
+        animationName: 'Partner4Anim'
+    },
+    screen22: {
+        selector: '.Partner5',
+        animationName: 'Partner5Anim'
+    },
+    screen23: {
+        selector: '.Partner6',
+        animationName: 'Partner6Anim'
     }
 }
 
@@ -317,6 +341,22 @@ shch.LoadFunc = function () {
 
     shch.watch17 = new shch.addDetect();
     shch.watch17.checkVision(shch.watch.screen17);
+
+
+    shch.watch18 = new shch.addDetect();
+    shch.watch18.checkVision(shch.watch.screen18);
+
+    shch.watch19 = new shch.addDetect();
+    shch.watch19.checkVision(shch.watch.screen19);
+
+    shch.watch20 = new shch.addDetect();
+    shch.watch20.checkVision(shch.watch.screen20);
+
+    shch.watch21 = new shch.addDetect();
+    shch.watch21.checkVision(shch.watch.screen22);
+
+    shch.watch23 = new shch.addDetect();
+    shch.watch23.checkVision(shch.watch.screen23);
 }
 
 window.addEventListener('load', shch.LoadFunc);
