@@ -84,7 +84,7 @@ Title: Home
 <div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">НАШИ ПРОЕКТЫ</h2>
 </div>
-<ul class="doLinks doLinks-project">
+<ul class="doLinks doLinks-project Know">
 <li class="doli doli-projects"><a title="title" href="" class="Ag24 doA doA-project DoAPro doLinksActive" data-id="0">01. БЕЗОПАСНОСТЬ</a></li>
 <li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA-project DoAPro Ag24" data-id="1">02. защита</a></li>
 </ul>
