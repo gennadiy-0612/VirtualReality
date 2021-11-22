@@ -163,7 +163,7 @@ shch.LoadFunc = function () {
     shch.OutSlidercurrentDisplay = document.querySelectorAll('.outSlideBigImg')[0];
     shch.OutSliderframeIn = document.querySelectorAll('.outSlideBigImg');
     shch.OutSliderframeInLength = document.querySelectorAll('.outSlideBigImg').length;
-    shch.OutSlider.aLeft.addEventListener('click', shch.OutSlider.movePrev.bind(shch.InSlide));
+    shch.OutSlider.aLeft.addEventListener('click', shch.OutSlider.movePrev.bind(shch.OutSlider));
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
