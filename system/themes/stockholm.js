@@ -164,14 +164,14 @@ shch.switchBigSlide = function (selectorBig) {
             this.tags[this.tagStart].addEventListener('click', this.switchIts);
             this.tags[this.tagStart].numberItem = this.startClass;
         }
-        console.log(this)
     }
     this.switchIts = function () {
-        let num = this.getAttribute('data-id');
-        shch.OutSlide.currentDisplay.classList.remove('AppAnim0');
-        shch.OutSlide.currentDisplay.classList.add('AppAnim1');
-        shch.OutSlide.currentDisplay = shch.OutSlide.frameIn[num];
-        shch.OutSlide.display = num;
+        console.log('ppp')
+        // let num = this.getAttribute('data-id');
+        // shch.OutSlide.currentDisplay.classList.remove('AppAnim0');
+        // shch.OutSlide.currentDisplay.classList.add('AppAnim1');
+        // shch.OutSlide.currentDisplay = shch.OutSlide.frameIn[num];
+        // shch.OutSlide.display = num;
     }
 }
 
