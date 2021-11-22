@@ -118,10 +118,10 @@ Title: Home
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig4.png"></div>
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png" data-id="0">
+<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png" data-id="1">
+<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png" data-id="2">
+<img alt="alt" class="outSlideImg FromSmall" src="/media/images/img/inSlideImg1.png" data-id="3">
 </div>
 </div>
 </div>
