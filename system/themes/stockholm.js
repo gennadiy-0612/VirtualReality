@@ -240,7 +240,7 @@ shch.LoadFunc = function () {
     shch.OutSlide.aRight = document.querySelector('.OutR');
     shch.OutSlide.aRight.addEventListener('click', shch.OutSlide.next.bind(shch.OutSlide));
 
-    shch.bigSlide = new shch.switchBigSlide('.DoAPro');
+    shch.bigSlide = new shch.switchBigSlide('.biggerSlide');
     shch.bigSlide.changeBigSlide(shch.bigSlide.tags);
 
     shch.watch1 = new shch.addDetect();
