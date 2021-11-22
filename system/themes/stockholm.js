@@ -86,8 +86,8 @@ shch.switchBigIMG = function (selectorLittle) {
     this.tagAll = document.querySelectorAll(selectorLittle).length;
     this.changeBig = function () {
         for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
-            this.tags[this.tagStart].addEventListener('click', this.switchIt);
             this.tags[this.tagStart].numberItem = this.startClass;
+            this.tags[this.tagStart].addEventListener('click', this.switchIt.bind(this.tags[this.tagStart].numberItem));
         }
     }
     this.switchIt = function () {
