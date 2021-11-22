@@ -148,6 +148,21 @@ shch.watch = {
     }
 }
 
+shch.OutSlide = {
+    addEv: 1,
+    startClass: 1,
+    actSelector: 'actInSlide1',
+    unActSelector: 'unActInSlide1',
+    prevDisplay: {},
+    display: 0,
+    currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
+    frameIn: document.querySelectorAll('.outSlideBigImg'),
+    frameInLength: document.querySelectorAll('.outSlideBigImg').length,
+    moveNext:shch.InSlide.moveNext,
+    movePrev:shch.InSlide.movePrev,
+    changeDisplay:shch.InSlide.changeDisplay,
+    addVision:shch.InSlide.addVision
+}
 shch.LoadFunc = function () {
     shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
     shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
@@ -158,12 +173,10 @@ shch.LoadFunc = function () {
     shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
     shch.littleIMGS.changeBig(shch.littleIMGS.tags);
 
-    shch.OutSlider = Object.create(shch.littleIMGS);
-    shch.OutSlider.prototype.aLeft = document.querySelector('.arrowLeftIn');
-    shch.OutSlider.prototype.currentDisplay = document.querySelectorAll('.outSlideBigImg')[0];
-    shch.OutSlider.prototype.frameIn = document.querySelectorAll('.outSlideBigImg');
-    shch.OutSlider.prototype.frameInLength = document.querySelectorAll('.outSlideBigImg').length;
-    shch.OutSlider.prototype.aLeft.addEventListener('click', shch.OutSlider.prototype.movePrev.bind(shch.OutSlider.prototype));
+
+    shch.OutSlide.aLeft = document.querySelector('.inLinkLeft');
+    shch.OutSlide.aLeft.addEventListener('click', shch.OutSlide.movePrev.bind(shch.OutSlide));
+
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
