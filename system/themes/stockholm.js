@@ -29,6 +29,7 @@ shch.addDetect = function () {
     }
 }
 shch.InSlide = {
+    startClass: 1,
     actSelector: 'actInSlide1',
     unActSelector: 'unActInSlide1',
     prevDisplay: {},
@@ -67,9 +68,8 @@ shch.InSlide = {
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
     },
     addVision: function () {
-        this.frameIn[0].classList.toggle('AppOne');
-        console.log(this.frameIn[0].classList);
-        console.log('loaded');
+        this.frameIn[0].classList.add('AppAnim' + this.startClass);
+        this.startClass ? this.startClass = 0 : this.startClass = 1;
     }
 }
 
