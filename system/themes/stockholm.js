@@ -159,11 +159,11 @@ shch.LoadFunc = function () {
     shch.littleIMGS.changeBig(shch.littleIMGS.tags);
 
     shch.OutSlider = Object.create(shch.littleIMGS);
-    shch.OutSlider.aLeft = document.querySelector('.arrowLeftIn');
-    shch.OutSlider.currentDisplay = document.querySelectorAll('.outSlideBigImg')[0];
-    shch.OutSlider.frameIn = document.querySelectorAll('.outSlideBigImg');
-    shch.OutSlider.frameInLength = document.querySelectorAll('.outSlideBigImg').length;
-    shch.OutSlider.aLeft.addEventListener('click', shch.OutSlider.movePrev.bind(shch.OutSlider));
+    shch.OutSlider.prototype.aLeft = document.querySelector('.arrowLeftIn');
+    shch.OutSlider.prototype.currentDisplay = document.querySelectorAll('.outSlideBigImg')[0];
+    shch.OutSlider.prototype.frameIn = document.querySelectorAll('.outSlideBigImg');
+    shch.OutSlider.prototype.frameInLength = document.querySelectorAll('.outSlideBigImg').length;
+    shch.OutSlider.prototype.aLeft.addEventListener('click', shch.OutSlider.prototype.movePrev.bind(shch.OutSlider.prototype));
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
