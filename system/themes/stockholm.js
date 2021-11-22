@@ -90,7 +90,8 @@ shch.switchBigIMG = function (selectorLittle) {
             this.tags[this.tagStart].numberItem = this.startClass;
         }
     }
-    this.switchIt = function () {
+    this.switchIt = function (tagSet) {
+        console.log(tagSet);
         console.log(this);
     }
 }
@@ -150,7 +151,7 @@ shch.LoadFunc = function () {
     shch.InSlide.aRight.addEventListener('click', shch.InSlide.moveNext.bind(shch.InSlide));
 
     shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
-    shch.littleIMGS.changeBig();
+    shch.littleIMGS.changeBig(shch.littleIMGS.tags);
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
