@@ -185,7 +185,6 @@ Title: Home
 <a title="title" class="outSlideRight arrowDirectionOut" href="">
 <img class="arrowDirectionOut OutR" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
-</div>
 </section>
 <div class="Digits">
 <section id="S4" class="WhyVR">
