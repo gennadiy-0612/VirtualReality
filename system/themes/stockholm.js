@@ -81,7 +81,37 @@ shch.InSlide = {
         }
     }
 }
-
+shch.OutSlide = {
+    addEv: 1,
+    startClass: 1,
+    actSelector: 'actInSlide1',
+    unActSelector: 'unActInSlide1',
+    prevDisplay: {},
+    display: 0,
+    currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
+    frameIn: document.querySelectorAll('.outSlideBigImg'),
+    frameInLength: document.querySelectorAll('.outSlideBigImg').length,
+    next: function () {
+        this.prevDisplay = this.frameIn[this.display];
+        this.display++;
+        if (this.display < this.frameInLength) {
+            this.changeDisplay();
+        } else {
+            this.display = this.frameInLength - 1;
+            return true;
+        }
+    },
+    prev: function () {
+        this.prevDisplay = this.frameIn[this.display];
+        this.display++;
+        if (this.display < this.frameInLength) {
+            this.changeDisplay();
+        } else {
+            this.display = this.frameInLength - 1;
+            return true;
+        }
+    }
+}
 shch.switchBigIMG = function (selectorLittle) {
     this.tags = document.querySelectorAll(selectorLittle);
     this.tagAll = document.querySelectorAll(selectorLittle).length;
@@ -158,6 +188,14 @@ shch.LoadFunc = function () {
 
     shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
     shch.littleIMGS.changeBig(shch.littleIMGS.tags);
+
+
+    shch.OutSlide.aLeft = document.querySelector('.OutL');
+    shch.OutSlide.aLeft.addEventListener('click', shch.OutSlide.next.bind(shch.OutSlide));
+
+    shch.OutSlide.aRight = document.querySelector('.OutR');
+    shch.OutSlide.aRight.addEventListener('click', shch.OutSlide.prev.bind(shch.OutSlide));
+
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
