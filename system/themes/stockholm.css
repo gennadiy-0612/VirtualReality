@@ -190,7 +190,7 @@ li {
 .KnowAnim {
     opacity: 1;
     transition-property: opacity;
-    transition-duration: 1s;
+    transition-duration: .7s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
@@ -203,8 +203,7 @@ li {
     opacity: 1;
     transform: translateY(0);
     transition-property: opacity, transform;
-    transition-delay: 1s;
-    transition-duration: 1s;
+    transition-duration: .7s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
