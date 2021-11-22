@@ -681,7 +681,7 @@ a {
 }
 
 .biggerSlideAct {
-    display: block;
+    display: flex;
 }
 
 .outSlide {
