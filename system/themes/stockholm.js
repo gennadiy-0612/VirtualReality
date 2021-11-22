@@ -159,8 +159,8 @@ shch.OutSlide = {
 shch.switchBigSlide = function (selectorBig) {
     this.tags = document.querySelectorAll(selectorBig);
     this.tagAll = document.querySelectorAll(selectorBig).length;
-    console.log(this)
     this.changeBigSlide = function () {
+        console.log(this)
         for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
             this.tags[this.tagStart].addEventListener('click', this.switchIts);
             this.tags[this.tagStart].numberItem = this.startClass;
