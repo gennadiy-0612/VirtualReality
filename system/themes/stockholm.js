@@ -67,7 +67,6 @@ shch.InSlide = {
         }
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
-
     },
     addVision: function () {
         if (this.startClass) {
@@ -161,7 +160,14 @@ shch.OutSlide = {
     frameInLength: document.querySelectorAll('.biggerSlide').length,
     moveNext: shch.InSlide.moveNext,
     movePrev: shch.InSlide.movePrev,
-    changeDisplay: shch.InSlide.changeDisplay,
+    changeDisplay: function () {
+        if (this.addEv === 1) {
+            this.frameIn[0].addEventListener('load', this.addVision.bind(shch.InSlide));
+            this.addEv = 0;
+        }
+        this.currentDisplay = this.frameIn[this.display];
+        this.currentDisplay.classList.remove('biggerSlideAct');
+    },
     addVision: shch.InSlide.addVision
 }
 shch.LoadFunc = function () {
