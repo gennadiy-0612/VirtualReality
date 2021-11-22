@@ -127,7 +127,7 @@ Title: Home
 </div>
 <div id="whatDo1" class="biggerSlide BigSlide1">
 <div class="inSlideText">
-<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">безопасность</h2>
+<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">2безопасность</h2>
 <ul class="outSlideUl">
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Интерактивное иммерсивное обучение по охране труда и технике безопасности</li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Моделирование опасных сред с высоким уровнем риска без какого-либо риска </li>
