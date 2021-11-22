@@ -35,7 +35,7 @@ shch.InSlide = {
     actSelector: 'actInSlide1',
     unActSelector: 'unActInSlide1',
     prevDisplay: {},
-    currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
+    currentDisplay: {},
     display: 0,
     frameIn: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
@@ -91,6 +91,7 @@ shch.switchBigIMG = function (selectorLittle) {
         }
     }
     this.switchIt = function () {
+        if (!shch.InSlide.currentDisplay) shch.InSlide.currentDisplay = !document.querySelectorAll('.outSlideBigImg')[0];
         let num = this.getAttribute('data-id');
         shch.InSlide.currentDisplay.classList.remove('AppAnim0');
         shch.InSlide.currentDisplay.classList.add('AppAnim1');
