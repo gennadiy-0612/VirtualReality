@@ -671,12 +671,17 @@ a {
     margin-bottom: 0;
 }
 
-.inSlide {
+.biggerSlide {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1440px;
     margin: auto;
+    display: none;
+}
+
+.biggerSlideAct {
+    display: block;
 }
 
 .outSlide {
