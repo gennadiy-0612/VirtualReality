@@ -213,10 +213,10 @@ shch.LoadFunc = function () {
 
 
     shch.OutSlide.aLeft = document.querySelector('.OutL');
-    shch.OutSlide.aLeft.addEventListener('click', shch.OutSlide.next.bind(shch.OutSlide));
+    shch.OutSlide.aLeft.addEventListener('click', shch.OutSlide.prev.bind(shch.OutSlide));
 
     shch.OutSlide.aRight = document.querySelector('.OutR');
-    shch.OutSlide.aRight.addEventListener('click', shch.OutSlide.prev.bind(shch.OutSlide));
+    shch.OutSlide.aRight.addEventListener('click', shch.OutSlide.next.bind(shch.OutSlide));
 
 
     shch.watch1 = new shch.addDetect();
