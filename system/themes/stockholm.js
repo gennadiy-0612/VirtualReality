@@ -156,9 +156,10 @@ shch.OutSlide = {
 }
 
 
-shch.switchBigSlide = function (selectorLittle) {
-    this.tags = document.querySelectorAll(selectorLittle);
-    this.tagAll = document.querySelectorAll(selectorLittle).length;
+shch.switchBigSlide = function (selectorBig) {
+    this.tags = document.querySelectorAll(selectorBig);
+    this.tagAll = document.querySelectorAll(selectorBig).length;
+    console.log(this)
     this.changeBigSlide = function () {
         for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
             this.tags[this.tagStart].addEventListener('click', this.switchIts);
@@ -166,7 +167,6 @@ shch.switchBigSlide = function (selectorLittle) {
         }
     }
     this.switchIts = function () {
-        console.log(this)
         let num = this.getAttribute('data-id');
         shch.InSlide.currentDisplay.classList.remove('AppAnim0');
         shch.InSlide.currentDisplay.classList.add('AppAnim1');
