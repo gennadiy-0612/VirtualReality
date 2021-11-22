@@ -152,7 +152,7 @@ Title: Home
 <img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="3">
 </div>
 </div>
-<div id="whatDo1" class="biggerSlide BigSlide2">
+<div id="whatDo2" class="biggerSlide BigSlide2">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">безопасность</h2>
 <ul class="outSlideUl">
