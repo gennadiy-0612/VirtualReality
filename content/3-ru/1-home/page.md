@@ -122,7 +122,7 @@ Title: Home
 <img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="3">
 </div>
 </div>
-<a title="title" class="outSlideRight arrowDirectionOut" href="/">
+<a title="title" class="outSlideRight arrowDirectionOut" href="">
 <img class="arrowDirectionOut" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
 </div>

@@ -125,7 +125,7 @@ Title: Home
 </div>
 </div>
 </div>
-<a title="title" class="outSlideRight arrowDirectionOut" href="/">
+<a title="title" class="outSlideRight arrowDirectionOut" href="">
 <img class="arrowDirectionOut" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
 </div>
