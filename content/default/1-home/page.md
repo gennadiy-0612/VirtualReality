@@ -241,7 +241,7 @@ Title: Home
 <div class="BackWords">
 <section id="S6" class="a1440 relative">
 <div class="approach horizonLine">
-<div class="approachOl">
+<div class="approachOl Approach">
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
 <picture>
@@ -251,7 +251,7 @@ Title: Home
 </picture>
 </div>
 <div class="stepPartners">
-<ol class="steps">
+<ol class="steps Step">
 <li class="one stepsBefore">
 <p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs → </p>
 <p class="Ag18 stepsP colorW">Defined challenge</p></li>

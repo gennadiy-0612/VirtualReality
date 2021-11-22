@@ -369,6 +369,29 @@ li {
     transition-timing-function: ease;
 }
 
+.Approach {
+    opacity: 0;
+}
+
+.ApproachAnim {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+
+.Step {
+    opacity: 0;
+}
+
+.StepAnim {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-delay: .7s;
+    transition-timing-function: ease;
+}
+
 .hoverBigger {
     transform: scale(1);
     transition: transform .7s;
