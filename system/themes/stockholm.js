@@ -112,13 +112,14 @@ shch.OutSlide = {
         }
     },
     changeDisp: function () {
+        console.log('ggg')
         if (this.addEv === 1) {
             this.frameIn[0].addEventListener('load', this.addVis.bind(shch.OutSlide));
             this.addEv = 0;
         }
-        this.currentDisplay.classList.remove('biggerSlideAc');
+        this.currentDisplay.classList.remove('biggerSlideAct');
         this.currentDisplay = this.frameIn[this.display];
-        this.currentDisplay.classList.add('biggerSlideAc');
+        this.currentDisplay.classList.add('biggerSlideAct');
     },
     addVis: function () {
         if (this.startClass) {
