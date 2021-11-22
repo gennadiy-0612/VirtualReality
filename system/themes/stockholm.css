@@ -168,11 +168,11 @@ li {
     }
 }
 
-.AppAnim1 {
+.AppAnim0 {
     animation: Appear1 1s;
 }
 
-.AppAnim2 {
+.AppAnim1 {
     animation: Appear2 1s;
 }
 

@@ -68,8 +68,15 @@ shch.InSlide = {
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
     },
     addVision: function () {
-        this.frameIn[0].classList.add('AppAnim' + this.startClass);
-        this.startClass ? this.startClass = 0 : this.startClass = 1;
+        if (this.startClass) {
+            this.frameIn[0].classList.add('AppAnim0');
+            this.frameIn[0].classList.remove('AppAnim1');
+            this.startClass = 0
+        } else {
+            this.frameIn[0].classList.add('AppAnim1');
+            this.frameIn[0].classList.remove('AppAnim0');
+            this.startClass = 1;
+        }
     }
 }
 
