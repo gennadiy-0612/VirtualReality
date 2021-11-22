@@ -92,7 +92,7 @@ shch.switchBigIMG = function (selectorLittle) {
     }
     this.switchIt = function () {
         let num = this.getAttribute('data-id');
-        shch.InSlide.frameIn[num].classList.add('lllllllllll')
+        shch.InSlide.frameIn[0].setAttribute('src', shch.InSlide.frameIn[num].getAttribute('data-src'));
         console.log(this.getAttribute('data-id'));
     }
 }
