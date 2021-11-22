@@ -167,19 +167,19 @@ Title: Home
 <div class="a1440">
 <h2 class="WhyVRH2 upperText Ag48 colorW horizonLine WhatWeDo">why vr?</h2>
 <ul class="digits">
-<li class="digitsLi digits1">
+<li class="digitsLi digits1 Dig1">
 <p class="digitsDigit Ag72 colorViolet">4x</p>
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText1">faster to train than in the classroom</p>
 </li>
-<li class="digitsLi digits2">
+<li class="digitsLi digits2 Dig2">
 <p class="digitsDigit Ag72 colorViolet">275%</p>
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText2">more confident to apply skills learned after training</p>
 </li>
-<li class="digitsLi digits3">
+<li class="digitsLi digits3 Dig3">
 <p class="digitsDigit Ag72 colorViolet">3.75x</p>
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText3">more emotionally connected to content than classroom learners</p>
 </li>
-<li class="digitsLi digits4 digitsLiUp">
+<li class="digitsLi digits4 digitsLiUp Dig4">
 <p class="digitsText mw235 Ag14 colorW digitsUp">up to</p>
 <p class="digitsDigit digitsBig Ag72 colorViolet">90%</p>
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText">knowledge retention</p>

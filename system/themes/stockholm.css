@@ -151,7 +151,6 @@ li {
 
 /*Decoration*/
 /*Animation*/
-/*Transitions*/
 
 
 @keyframes Appear1 {
@@ -180,7 +179,7 @@ li {
     animation: Appear2 1s;
 }
 
-/*Transitions*/
+/*Animations*/
 
 .frame {
     max-width: 100vw;
@@ -320,6 +319,53 @@ li {
     transition-delay: 1s;
     transition-property: opacity, filter;
     transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.Dig1 {
+    opacity: 0;
+}
+
+.Dig1Anim {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+
+.Dig2 {
+    opacity: 0;
+}
+
+.Dig2Anim {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-delay: .7s;
+    transition-timing-function: ease;
+}
+
+.Dig3 {
+    opacity: 0;
+}
+
+.Dig3Anim {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-delay: .9s;
+    transition-timing-function: ease;
+}
+
+.Dig4 {
+    opacity: 0;
+}
+
+.Dig4Anim {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-delay: 1.3s;
     transition-timing-function: ease;
 }
 

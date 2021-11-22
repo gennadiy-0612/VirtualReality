@@ -219,6 +219,22 @@ shch.watch = {
     screen11: {
         selector: '.BadTraining',
         animationName: 'BadTrainingAnim'
+    },
+    screen12: {
+        selector: '.Dig1',
+        animationName: 'Dig1Anim'
+    },
+    screen13: {
+        selector: '.Dig2',
+        animationName: 'Dig2Anim'
+    },
+    screen14: {
+        selector: '.Dig3',
+        animationName: 'Dig3Anim'
+    },
+    screen15: {
+        selector: '.Dig4',
+        animationName: 'Dig4Anim'
     }
 }
 
@@ -275,6 +291,18 @@ shch.LoadFunc = function () {
 
     shch.watch11 = new shch.addDetect();
     shch.watch11.checkVision(shch.watch.screen11);
+
+    shch.watch12 = new shch.addDetect();
+    shch.watch12.checkVision(shch.watch.screen12);
+
+    shch.watch13 = new shch.addDetect();
+    shch.watch13.checkVision(shch.watch.screen13);
+
+    shch.watch14 = new shch.addDetect();
+    shch.watch14.checkVision(shch.watch.screen14);
+
+    shch.watch15 = new shch.addDetect();
+    shch.watch15.checkVision(shch.watch.screen15);
 }
 
 window.addEventListener('load', shch.LoadFunc);
