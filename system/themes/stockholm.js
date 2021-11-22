@@ -119,7 +119,7 @@ shch.OutSlide = {
         this.currentDisplay.classList.remove('biggerSlideAct');
         this.currentDisplay = this.frameIn[this.display];
         this.currentDisplay.classList.add('biggerSlideAct');
-        console.log('ggg')
+        console.log(this)
     },
     addVis: function () {
         if (this.startClass) {
