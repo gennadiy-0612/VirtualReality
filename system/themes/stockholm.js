@@ -35,7 +35,7 @@ shch.InSlide = {
     actSelector: 'actInSlide1',
     unActSelector: 'unActInSlide1',
     prevDisplay: {},
-    currentDisplay: {},
+    currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
     display: 0,
     frameIn: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
