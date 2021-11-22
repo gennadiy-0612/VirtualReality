@@ -35,8 +35,8 @@ shch.InSlide = {
     actSelector: 'actInSlide1',
     unActSelector: 'unActInSlide1',
     prevDisplay: {},
-    currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
     display: 0,
+    currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
     frameIn: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     moveNext: function () {
@@ -160,6 +160,9 @@ shch.LoadFunc = function () {
 
     shch.OutSlider = Object.create(shch.littleIMGS);
     shch.OutSlider.aLeft = document.querySelector('.arrowLeftIn');
+    shch.OutSlidercurrentDisplay = document.querySelectorAll('.outSlideBigImg')[0];
+    shch.OutSliderframeIn = document.querySelectorAll('.outSlideBigImg');
+    shch.OutSliderframeInLength = document.querySelectorAll('.outSlideBigImg').length;
     shch.OutSlider.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
 
     shch.watch1 = new shch.addDetect();
