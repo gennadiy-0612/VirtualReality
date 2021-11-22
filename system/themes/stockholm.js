@@ -165,9 +165,9 @@ shch.OutSlide = {
             this.frameIn[0].addEventListener('load', this.addVision.bind(shch.InSlide));
             this.addEv = 0;
         }
-        this.currentDisplay.classList.add('biggerSlideAct');
+        this.currentDisplay.classList.remove('biggerSlideAct');
         this.currentDisplay = this.frameIn[this.display];
-        this.frameIn[0].classList.remove('biggerSlideAct');
+        this.currentDisplay.classList.add('biggerSlideAct');
     },
     addVision: shch.InSlide.addVision
 }
