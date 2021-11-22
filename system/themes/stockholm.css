@@ -732,7 +732,7 @@ a {
     scroll-snap-align: start;
     max-width: 1080px;
     object-fit: cover;
-    height: 450px;
+    height: 41.6%;
     display: none;
     transition: opacity .7s;
 }
