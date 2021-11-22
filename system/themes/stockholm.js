@@ -91,7 +91,7 @@ shch.switchBigIMG = function (selectorLittle) {
         }
     }
     this.switchIt = function () {
-        console.log(this.numberItem);
+        console.log(this);
     }
 }
 
