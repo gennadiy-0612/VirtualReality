@@ -157,6 +157,8 @@ shch.LoadFunc = function () {
     shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
     shch.littleIMGS.changeBig(shch.littleIMGS.tags);
 
+    shch.obj = Object.assign(shch.littleIMGS);
+
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
 
