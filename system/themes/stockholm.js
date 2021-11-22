@@ -93,12 +93,13 @@ shch.OutSlide = {
     frameInLength: document.querySelectorAll('.biggerSlide').length,
     next: function () {
         this.prevDisplay = this.frameOut[this.display];
-        this.display++;
-        if (this.display < this.frameInLength) {
-            this.changeDisp();
-        } else {
-            this.display = this.frameInLength - 1;
+        this.display--;
+        if (this.display < 0) {
+            this.prevDisplay = this.frameOut[0];
+            this.display = 0;
             return true;
+        } else {
+            this.changeDisplay();
         }
     },
     prev: function () {
