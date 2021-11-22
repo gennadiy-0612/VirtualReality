@@ -157,11 +157,9 @@ shch.LoadFunc = function () {
     shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
     shch.littleIMGS.changeBig(shch.littleIMGS.tags);
 
-    shch.obj = Object.create(shch.littleIMGS);
-    if (shch.obj === shch.littleIMGS) console.log('obj equal')
-    else {
-        console.log('obj no equal')
-    }
+    shch.OutSlider = Object.create(shch.littleIMGS);
+    shch.OutSlider.aLeft = document.querySelector('.arrowLeftIn');
+    shch.OutSlider.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
