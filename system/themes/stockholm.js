@@ -163,10 +163,10 @@ shch.switchBigSlide = function (selectorBig) {
         for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
             this.tags[this.tagStart].addEventListener('click', this.switchIts);
             this.tags[this.tagStart].numberItem = this.startClass;
+            console.log(this)
         }
     }
     this.switchIts = function () {
-        console.log(this)
         let num = this.getAttribute('data-id');
         shch.InSlide.currentDisplay.classList.remove('AppAnim0');
         shch.InSlide.currentDisplay.classList.add('AppAnim1');
