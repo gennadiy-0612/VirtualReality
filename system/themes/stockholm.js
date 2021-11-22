@@ -78,23 +78,24 @@ shch.InSlide = {
             this.frameIn[0].classList.remove('AppAnim0');
             this.startClass = 1;
         }
-    },
-    switchBigIMG: function (selectorLittle) {
-        this.doIt = 1;
-        this.tags = document.querySelectorAll(selectorLittle);
-        this.tagAll = document.querySelectorAll(selectorLittle).length;
-        this.changeBig = function () {
-            // if (this.doIt) {
-            for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
-                this.tags[this.tagStart].addEventListener('click', this.switchIt);
-                console.log(this.tags[this.tagStart])
-                // }
-                // this.doIt = 0;
-            }
+    }
+}
+
+shch.switchBigIMG = function (selectorLittle) {
+    this.doIt = 1;
+    this.tags = document.querySelectorAll(selectorLittle);
+    this.tagAll = document.querySelectorAll(selectorLittle).length;
+    this.changeBig = function () {
+        // if (this.doIt) {
+        for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
+            this.tags[this.tagStart].addEventListener('click', this.switchIt);
+            console.log(this.tags[this.tagStart])
+            // }
+            // this.doIt = 0;
         }
-        this.switchIt = function () {
-            console.log('ppp');
-        }
+    }
+    this.switchIt = function () {
+        console.log('ppp');
     }
 }
 
