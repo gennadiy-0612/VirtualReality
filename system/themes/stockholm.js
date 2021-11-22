@@ -92,7 +92,7 @@ shch.OutSlide = {
     frameIn: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     next: function () {
-        this.prevDisplay = this.frameIn[this.display];
+        this.prevDisplay = this.frameOut[this.display];
         this.display++;
         if (this.display < this.frameInLength) {
             this.changeDisp();
@@ -102,7 +102,7 @@ shch.OutSlide = {
         }
     },
     prev: function () {
-        this.prevDisplay = this.frameIn[this.display];
+        this.prevDisplay = this.frameOut[this.display];
         this.display++;
         if (this.display < this.frameInLength) {
             this.changeDisp();
@@ -113,22 +113,22 @@ shch.OutSlide = {
     },
     changeDisp: function () {
         if (this.addEv === 1) {
-            this.frameIn[0].addEventListener('load', this.addVis.bind(shch.OutSlide));
+            this.frameOut[0].addEventListener('load', this.addVis.bind(shch.OutSlide));
             this.addEv = 0;
         }
         this.currentDisplay.classList.remove('biggerSlideAct');
-        this.currentDisplay = this.frameIn[this.display];
+        this.currentDisplay = this.frameOut[this.display];
         this.currentDisplay.classList.add('biggerSlideAct');
         console.log(this.currentDisplay)
     },
     addVis: function () {
         if (this.startClass) {
-            this.frameIn[0].classList.add('AppAnim0');
-            this.frameIn[0].classList.remove('AppAnim1');
+            this.frameOut[0].classList.add('AppAnim0');
+            this.frameOut[0].classList.remove('AppAnim1');
             this.startClass = 0
         } else {
-            this.frameIn[0].classList.add('AppAnim1');
-            this.frameIn[0].classList.remove('AppAnim0');
+            this.frameOut[0].classList.add('AppAnim1');
+            this.frameOut[0].classList.remove('AppAnim0');
             this.startClass = 1;
             console.log(this)
         }
