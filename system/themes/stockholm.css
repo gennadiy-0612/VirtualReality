@@ -469,7 +469,7 @@ a {
 
 .playPanel {
     position: absolute;
-    top: 0;
+    top: 40px;
     left: 0;
     bottom: 129px;
     right: 0;
@@ -522,7 +522,7 @@ a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 4px;
+    top: -46px;
     z-index: -1;
     margin: auto;
     max-width: 1474px;
