@@ -157,7 +157,7 @@ shch.LoadFunc = function () {
     shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
     shch.littleIMGS.changeBig(shch.littleIMGS.tags);
 
-    shch.obj = Object.assign(shch.littleIMGS);
+    shch.obj = Object.create(shch.littleIMGS);
     if (shch.obj === shch.littleIMGS) console.log('obj equal')
 
     shch.watch1 = new shch.addDetect();
