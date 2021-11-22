@@ -89,7 +89,7 @@ shch.OutSlide = {
     prevDisplay: {},
     display: 0,
     currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
-    frameIn: document.querySelectorAll('.outSlideBigImg'),
+    frameOut: document.querySelectorAll('.outSlideBigImg'),
     frameInLength: document.querySelectorAll('.outSlideBigImg').length,
     next: function () {
         this.prevDisplay = this.frameOut[this.display];
