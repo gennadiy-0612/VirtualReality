@@ -167,11 +167,11 @@ shch.switchBigSlide = function (selectorBig) {
     }
     this.switchIts = function () {
         console.log('ppp')
-        // let num = this.getAttribute('data-id');
-        // shch.OutSlide.currentDisplay.classList.remove('AppAnim0');
-        // shch.OutSlide.currentDisplay.classList.add('AppAnim1');
-        // shch.OutSlide.currentDisplay = shch.OutSlide.frameIn[num];
-        // shch.OutSlide.display = num;
+        let num = this.getAttribute('data-id');
+        shch.OutSlide.currentDisplay.classList.remove('AppAnim0');
+        shch.OutSlide.currentDisplay.classList.add('AppAnim1');
+        shch.OutSlide.currentDisplay = shch.OutSlide.frameIn[num];
+        shch.OutSlide.display = num;
     }
 }
 
@@ -240,7 +240,7 @@ shch.LoadFunc = function () {
     shch.OutSlide.aRight = document.querySelector('.OutR');
     shch.OutSlide.aRight.addEventListener('click', shch.OutSlide.next.bind(shch.OutSlide));
 
-    shch.bigSlide = new shch.switchBigSlide('.biggerSlide');
+    shch.bigSlide = new shch.switchBigSlide('.DoAPro');
     shch.bigSlide.changeBigSlide(shch.bigSlide.tags);
 
     shch.watch1 = new shch.addDetect();
