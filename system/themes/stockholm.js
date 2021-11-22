@@ -62,8 +62,8 @@ shch.InSlide = {
         this.addEv = 1;
         if (this.addEv === 1) {
             this.frameIn[0].addEventListener('load', this.addVision.bind(shch.InSlide));
+            this.addEv = 0;
         }
-        this.addEv = 0;
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
     },
