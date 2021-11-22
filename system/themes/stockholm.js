@@ -92,6 +92,8 @@ shch.switchBigIMG = function (selectorLittle) {
     }
     this.switchIt = function () {
         let num = this.getAttribute('data-id');
+        shch.InSlide.currentDisplay.classList.remove('AppAnim1');
+        shch.InSlide.currentDisplay.classList.add('AppAnim0');
         shch.InSlide.frameIn[0].setAttribute('src', shch.InSlide.frameIn[num].getAttribute('data-src'));
         console.log(this.getAttribute('data-id'));
     }
