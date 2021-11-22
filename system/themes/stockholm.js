@@ -95,7 +95,7 @@ shch.OutSlide = {
         this.prevDisplay = this.frameIn[this.display];
         this.display++;
         if (this.display < this.frameInLength) {
-            this.changeDisplay();
+            this.changeDisp();
         } else {
             this.display = this.frameInLength - 1;
             return true;
@@ -105,10 +105,30 @@ shch.OutSlide = {
         this.prevDisplay = this.frameIn[this.display];
         this.display++;
         if (this.display < this.frameInLength) {
-            this.changeDisplay();
+            this.changeDisp();
         } else {
             this.display = this.frameInLength - 1;
             return true;
+        }
+    },
+    changeDisp: function () {
+        if (this.addEv === 1) {
+            this.frameIn[0].addEventListener('load', this.addVis.bind(shch.OutSlide));
+            this.addEv = 0;
+        }
+        this.currentDisplay = this.frameIn[this.display];
+        this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
+    },
+    addVis: function () {
+        if (this.startClass) {
+            this.frameIn[0].classList.add('AppAnim0');
+            this.frameIn[0].classList.remove('AppAnim1');
+            this.startClass = 0
+        } else {
+            this.frameIn[0].classList.add('AppAnim1');
+            this.frameIn[0].classList.remove('AppAnim0');
+            this.startClass = 1;
+            console.log(this)
         }
     }
 }
