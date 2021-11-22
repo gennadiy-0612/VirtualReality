@@ -85,14 +85,14 @@ Title: Home
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">НАШИ ПРОЕКТЫ</h2>
 </div>
 <ul class="doLinks doLinks-project">
-<li class="doli doli-projects"><a title="title" href="#whatDid1" class="Ag24 doA doA-project doLinksActive">01. БЕЗОПАСНОСТЬ</a></li>
-<li class="doli doli-projects"><a title="title" href="#whatDid2" class="colorGrey doA doA-project Ag24">02. защита</a></li>
+<li class="doli doli-projects"><a title="title" href="#whatDo0" class="Ag24 doA doA-project doLinksActive">01. БЕЗОПАСНОСТЬ</a></li>
+<li class="doli doli-projects"><a title="title" href="#whatDo1" class="colorGrey doA doA-project Ag24">02. защита</a></li>
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="">
 <img class="arrowDirectionOut OutL" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
-<div class="inSlide BigSlide0">
+<div id="whatDo0" class="inSlide BigSlide0">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">безопасность</h2>
 <ul class="outSlideUl">
@@ -122,7 +122,7 @@ Title: Home
 <img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="3">
 </div>
 </div>
-<div class="inSlide BigSlide1">
+<div id="whatDo1" class="inSlide BigSlide1">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">безопасность</h2>
 <ul class="outSlideUl">
