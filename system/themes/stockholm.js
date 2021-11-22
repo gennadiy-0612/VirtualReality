@@ -67,7 +67,8 @@ shch.InSlide = {
         }
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
-        this.switchBigIMG.changeBig();
+        this.switcher = new this.switchBigIMG();
+        this.switcher.changeBig();
     },
     addVision: function () {
         if (this.startClass) {
