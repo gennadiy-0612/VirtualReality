@@ -240,8 +240,8 @@ li {
 .WhatWeDoAnim {
     opacity: 1;
     transition-property: opacity;
-    transition-delay: 1s;
-    transition-duration: 1s;
+    transition-delay: .2s;
+    transition-duration: .7s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
@@ -252,7 +252,7 @@ li {
 .DoLI1Anim {
     opacity: 1;
     transition-property: opacity;
-    transition-delay: 2s;
+    transition-delay: .5s;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
@@ -264,8 +264,8 @@ li {
 .DoLI2Anim {
     opacity: 1;
     transition-property: opacity;
-    transition-delay: 2.5s;
-    transition-duration: 1s;
+    transition-delay: .7s;
+    transition-duration: .7s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
@@ -276,14 +276,14 @@ li {
 .DoLI3Anim {
     opacity: 1;
     transition-property: opacity;
-    transition-delay: 2.75s;
-    transition-duration: 1s;
+    transition-delay: .8s;
+    transition-duration: .7s;
     transition-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
 .FromSmall {
     opacity: 0;
-    transform: scale(.8);
+    transform: scale(.9);
 }
 
 .FromSmallAnim {
