@@ -324,12 +324,12 @@ li {
 }
 
 .hoverBigger {
-    transform: scale(1);
+    opacity: 1;
     transition: transform .7s;
 }
 
 .hoverBigger:hover {
-    transform: scale(1.1);
+    opacity: .8;
 }
 
 /*Transitions*/
