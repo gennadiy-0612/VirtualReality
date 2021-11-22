@@ -95,6 +95,7 @@ shch.switchBigIMG = function (selectorLittle) {
         let num = this.getAttribute('data-id');
         shch.InSlide.currentDisplay.classList.remove('AppAnim0');
         shch.InSlide.currentDisplay.classList.add('AppAnim1');
+        shch.InSlide.frameIn[0].setAttribute('src', shch.InSlide.frameIn[num].getAttribute('data-src'));
         shch.InSlide.currentDisplay = shch.InSlide.frameIn[num];
         shch.InSlide.display = num;
     }
@@ -162,15 +163,15 @@ shch.switchBigSlide = function (selectorBig) {
         for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
             this.tags[this.tagStart].addEventListener('click', this.switchIts);
             this.tags[this.tagStart].numberItem = this.startClass;
-            console.log(this)
         }
     }
     this.switchIts = function () {
+        console.log(this)
         let num = this.getAttribute('data-id');
-        shch.InSlide.currentDisplay.classList.remove('AppAnim0');
-        shch.InSlide.currentDisplay.classList.add('AppAnim1');
-        shch.InSlide.currentDisplay = shch.InSlide.frameIn[num];
-        shch.InSlide.display = num;
+        shch.OutSlide.currentDisplay.classList.remove('AppAnim0');
+        shch.OutSlide.currentDisplay.classList.add('AppAnim1');
+        shch.OutSlide.currentDisplay = shch.OutSlide.frameIn[num];
+        shch.OutSlide.display = num;
     }
 }
 
