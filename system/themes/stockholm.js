@@ -59,6 +59,7 @@ shch.InSlide = {
         } else {
             this.changeDisplay();
         }
+        console.log(this)
     },
     changeDisplay: function () {
         if (this.addEv === 1) {
