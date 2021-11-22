@@ -85,7 +85,7 @@ Title: Home
 <div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
 </div>
-<ul class="doLinks doLinks-project Know">
+<ul class="doLinks doLinks-project WhatWeDo">
 <li class="doli doli-projects"><a title="title" href="" class="Ag24 doA doA-project doLinksActive DoAPro" data-id="0">01. safety</a></li>
 <li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA-project DoAPro Ag24" data-id="1">02. defense</a></li>
 </ul>
@@ -96,7 +96,7 @@ Title: Home
 <div id="whatDo0" class="biggerSlide biggerSlideAct BigSlide0">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">safety</h2>
-<ul class="outSlideUl">
+<ul class="outSlideUl WhatWeDo">
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Interactive health and safety immersive training </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
