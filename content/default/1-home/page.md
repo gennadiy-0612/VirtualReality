@@ -86,8 +86,8 @@ Title: Home
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
 </div>
 <ul class="doLinks doLinks-project">
-<li class="doli doli-projects"><a title="title" href="" class="Ag24 doA doA-project doLinksActive DoAPro">01. safety</a></li>
-<li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA-project DoAPro Ag24">02. defense</a></li>
+<li class="doli doli-projects"><a title="title" href="" class="Ag24 doA doA-project doLinksActive DoAPro" data-id="0">01. safety</a></li>
+<li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA-project DoAPro Ag24" data-id="0">02. defense</a></li>
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="">
