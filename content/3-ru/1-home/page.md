@@ -90,9 +90,39 @@ Title: Home
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="">
-<img class="arrowDirectionOut" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
+<img class="arrowDirectionOut OutL" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
-<div class="inSlide">
+<div class="inSlide BigSlide0">
+<div class="inSlideText">
+<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">безопасность</h2>
+<ul class="outSlideUl">
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Интерактивное иммерсивное обучение по охране труда и технике безопасности</li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Моделирование опасных сред с высоким уровнем риска без какого-либо риска </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Реплики реальных мест, рабочих задач и оборудования </li>
+</ul>
+<a title="title" href="" class="GoTo colorW Ag14 lineHeight30 upperText">перейти на страницу</a>
+</div>
+<div class="outSlideSet relative">
+<a class="inLinkLeft" title="title" href="">
+<img class="arrowDirectionIn arrowLeftIn cursorPoint overBigger" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
+</a>
+<a class="inLinkRight" title="title" href="">
+<img class="arrowDirectionIn arrowRightIn cursorPoint overBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
+</a>
+<img class="outSlideBigImg actInSlide FromSmall AppOne" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig2.png"></div>
+<div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig3.png"></div>
+<div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig4.png"></div>
+</div>
+<div class="outSlideImages">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="0">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="1">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="2">
+<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="3">
+</div>
+</div>
+<div class="inSlide BigSlide1">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">безопасность</h2>
 <ul class="outSlideUl">
@@ -123,7 +153,7 @@ Title: Home
 </div>
 </div>
 <a title="title" class="outSlideRight arrowDirectionOut" href="">
-<img class="arrowDirectionOut" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
+<img class="arrowDirectionOut OutR" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
 </div>
 </section>
