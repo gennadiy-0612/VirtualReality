@@ -59,7 +59,6 @@ shch.InSlide = {
         } else {
             this.changeDisplay();
         }
-        console.log(this)
     },
     changeDisplay: function () {
         if (this.addEv === 1) {
@@ -68,6 +67,7 @@ shch.InSlide = {
         }
         this.currentDisplay = this.frameIn[this.display];
         this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
+        console.log(this)
     },
     addVision: function () {
         if (this.startClass) {
