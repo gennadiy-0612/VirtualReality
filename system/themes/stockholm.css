@@ -168,11 +168,11 @@ li {
     }
 }
 
-.AppOne {
+.AppAnim1 {
     animation: Appear1 1s;
 }
 
-.AppTwo {
+.AppAnim2 {
     animation: Appear2 1s;
 }
 
@@ -505,7 +505,7 @@ a {
 
 .topPoster {
     width: 100%;
-    height: 543px;
+    height: 56,6%;
     object-fit: cover;
     max-width: 1439px;
 }
@@ -612,7 +612,7 @@ a {
 
 .WhatDoImg {
     max-width: 1438px;
-    height: 814px;
+    height: 56.6%;
     object-fit: cover;
 }
 
