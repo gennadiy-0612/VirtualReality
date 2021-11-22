@@ -116,8 +116,9 @@ shch.OutSlide = {
             this.frameIn[0].addEventListener('load', this.addVis.bind(shch.OutSlide));
             this.addEv = 0;
         }
+        this.currentDisplay.classList.remove('biggerSlideAc');
         this.currentDisplay = this.frameIn[this.display];
-        this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
+        this.currentDisplay.classList.add('biggerSlideAc');
     },
     addVis: function () {
         if (this.startClass) {
