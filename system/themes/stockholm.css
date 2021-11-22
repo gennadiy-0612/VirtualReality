@@ -402,7 +402,7 @@ li {
     opacity: 1;
     transition-property: opacity;
     transition-duration: .7s;
-    transition-delay: .3s;
+    transition-delay: .7s;
     transition-timing-function: ease;
 }
 
@@ -414,7 +414,7 @@ li {
     opacity: 1;
     transition-property: opacity;
     transition-duration: .7s;
-    transition-delay: .6s;
+    transition-delay: 1s;
     transition-timing-function: ease;
 }
 
@@ -426,7 +426,7 @@ li {
     opacity: 1;
     transition-property: opacity;
     transition-duration: .7s;
-    transition-delay: .9s;
+    transition-delay: 1.3s;
     transition-timing-function: ease;
 }
 
@@ -438,7 +438,7 @@ li {
     opacity: 1;
     transition-property: opacity;
     transition-duration: .7s;
-    transition-delay: 1.2s;
+    transition-delay: 1.5s;
     transition-timing-function: ease;
 }
 
@@ -450,7 +450,7 @@ li {
     opacity: 1;
     transition-property: opacity;
     transition-duration: .7s;
-    transition-delay: 1.5s;
+    transition-delay: 1.8s;
     transition-timing-function: ease;
 }
 
@@ -462,7 +462,7 @@ li {
     opacity: 1;
     transition-property: opacity;
     transition-duration: .7s;
-    transition-delay: 1.8s;
+    transition-delay: 2.1s;
     transition-timing-function: ease;
 }
 
