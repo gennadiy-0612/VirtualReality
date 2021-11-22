@@ -119,7 +119,7 @@ shch.OutSlide = {
         this.currentDisplay.classList.remove('biggerSlideAct');
         this.currentDisplay = this.frameIn[this.display];
         this.currentDisplay.classList.add('biggerSlideAct');
-        console.log(this)
+        console.log(this.currentDisplay)
     },
     addVis: function () {
         if (this.startClass) {
