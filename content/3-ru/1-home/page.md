@@ -110,7 +110,7 @@ Title: Home
 <a class="inLinkRight" title="title" href="">
 <img class="arrowDirectionIn arrowRightIn cursorPoint overBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg actInSlide FromSmall AppOne" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig2.png"></div>
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig3.png"></div>
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig4.png"></div>
@@ -140,7 +140,7 @@ Title: Home
 <a class="inLinkRight" title="title" href="">
 <img class="arrowDirectionIn arrowRightIn cursorPoint overBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg actInSlide FromSmall AppOne" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig2.png"></div>
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig3.png"></div>
 <div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig4.png"></div>
