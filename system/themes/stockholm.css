@@ -334,12 +334,10 @@ li {
 
 .hoverOpacity {
     opacity: 1;
-    filter: grayscale(0);
-    transition: opacity, filter .7s;
+    transition: opacity .7s;
 }
 
 .hoverOpacity:hover {
-    filter: grayscale(100%);
     opacity: .8;
 }
 
