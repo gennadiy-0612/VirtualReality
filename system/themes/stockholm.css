@@ -1400,6 +1400,12 @@ a {
     }
 }
 
+@media (max-width: 780px) {
+    .goodLi, .badLi{
+        max-width: 600px;
+    }
+}
+
 @media (max-width: 1036px) {
     .steps {
         background-position-y: 67.4%;
