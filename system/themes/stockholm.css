@@ -1401,8 +1401,8 @@ a {
 }
 
 @media (max-width: 780px) {
-    .goodLi, .badLi{
-        max-width: 600px;
+    .goodLi, .badLi {
+        max-width: initial;
     }
 }
 
