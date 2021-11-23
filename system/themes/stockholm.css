@@ -1400,12 +1400,6 @@ a {
     }
 }
 
-@media (max-width: 780px) {
-    .goodLi {
-        max-width: 600px;
-    }
-}
-
 @media (max-width: 1036px) {
     .steps {
         background-position-y: 67.4%;
@@ -1431,6 +1425,9 @@ a {
 
     .horizonLinePartners::before {
         width: 98%;
+    }
+    .goodLi {
+        max-width: 600px;
     }
 }
 
