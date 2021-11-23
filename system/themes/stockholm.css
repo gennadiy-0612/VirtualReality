@@ -880,6 +880,10 @@ a {
 .arrowDirectionIn {
     height: 41px;
     width: 41px;
+
+}
+
+.inLink {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -887,11 +891,11 @@ a {
     z-index: 1;
 }
 
-.arrowLeftIn {
+.nLinkLeft {
     left: 50px;
 }
 
-.arrowRightIn {
+.nLinkRight {
     right: 50px;
 }
 
@@ -1422,6 +1426,7 @@ a {
     .horizonLinePartners::before {
         width: 98%;
     }
+
     .goodLi {
         max-width: 600px;
     }
