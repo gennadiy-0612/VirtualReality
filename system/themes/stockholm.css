@@ -1380,8 +1380,18 @@ a {
 /*Footer*/
 
 @media (max-width: 576px) {
+    .topMenu {
+        margin-top: 20px;
+    }
+
     .logoA {
+        order: 1;
         flex: 1 1 auto;
+        margin-top: 20px;
+    }
+
+    .navy {
+        margin: -168px -1px 0 auto;
     }
 
     .doLinks {
