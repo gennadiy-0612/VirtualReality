@@ -1401,7 +1401,7 @@ a {
     .outSlideUl::before {
         content: '...';
         position: absolute;
-        bottom: 0;
+        bottom: -6px;
         color: #FFF;
         font-size: 30px;
         z-index: 1;
