@@ -154,8 +154,6 @@ shch.OutSlide = {
         }
     }
 }
-
-
 shch.switchBigSlide = function (selectorBig) {
     this.tags = document.querySelectorAll(selectorBig);
     this.tagAll = document.querySelectorAll(selectorBig).length;
@@ -172,6 +170,29 @@ shch.switchBigSlide = function (selectorBig) {
         // shch.OutSlide.currentDisplay.classList.add('AppAnim1');
         // shch.OutSlide.currentDisplay = shch.OutSlide.frameIn[num];
         // shch.OutSlide.display = num;
+    }
+}
+
+shch.BS = function (cs, ps) {
+    this.start = 0;
+    this.contrS = document.querySelectorAll(cs);
+    this.passS = document.querySelectorAll(ps);
+    this.passScurrent = document.querySelectorAll(ps)[0];
+    this.passAll = document.querySelectorAll(ps).length;
+    this.moveBack = function () {
+        this.start++;
+    }
+    this.moveToward = function () {
+        this.start--;
+    }
+    this.acts = function () {
+        console.log('l');
+    }
+    this.addAct = function () {
+        let i = 0;
+        for (; i < this.passAll; i++) {
+            this[i].addEventListener('click', this.acts.bind(this[i]))
+        }
     }
 }
 
@@ -271,6 +292,9 @@ shch.watch = {
 }
 
 shch.LoadFunc = function () {
+
+    // shch.BSone = new shch.BS('.DoLI1', '.whatDidWe');
+    // shch.BSone.addAct();
 
     shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
     shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));

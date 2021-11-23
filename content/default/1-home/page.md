@@ -100,7 +100,7 @@ Language: en
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
 </ul>
-<a title="title" href="" class="GoTo colorW Ag14 lineHeight30 upperText">go to the page</a>
+<a title="title" href="" class="GoTo colorW Ag14 lineHeight30 upperText">Learn more</a>
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
