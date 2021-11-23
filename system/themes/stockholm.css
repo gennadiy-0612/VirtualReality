@@ -1384,6 +1384,10 @@ a {
         flex: 1 1 auto;
     }
 
+    .navy {
+        margin: -25px 0 0 auto;
+    }
+
     .doLinks {
         flex-wrap: wrap;
     }
