@@ -1030,7 +1030,7 @@ a {
     max-width: 296px;
     position: relative;
     letter-spacing: 1.7px;
-    padding: 0 0 31px;
+    padding: 15px 0;
 }
 
 .goodLi::before, .badLi::before, .blueLine::before {
@@ -1483,23 +1483,6 @@ a {
 @media (max-width: 1550px) {
     .horizonLineWhoWe::before {
         max-width: 95%;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .topMenu {
-        margin-top: 20px;
-    }
-
-    .logoA {
-        order: 1;
-        flex: 1 1 auto;
-        margin-top: 20px;
-    }
-
-    .navy {
-        margin: -168px -1px 0 auto;
     }
 }
 
