@@ -1,8 +1,6 @@
 ---
-Title: Home Language: en
-Language: ru
----
 Title: Home
+Language: en
 ---
 <div class="firstBack">
 <div class="firstScreen relative">
