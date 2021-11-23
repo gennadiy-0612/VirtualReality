@@ -1425,6 +1425,10 @@ a {
         margin-top: -65px;
     }
 
+    .outSlideLi-1 ~ li {
+        display: none;
+    }
+
     .horizonLinePartners::before {
         width: 98%;
     }
