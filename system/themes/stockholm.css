@@ -1415,10 +1415,6 @@ a {
         max-width: initial;
     }
 
-    .outSlideImages {
-        display: none;
-    }
-
     .arrowDirectionOut {
         margin-top: -65px;
     }
