@@ -1392,7 +1392,7 @@ a {
 
 @media (max-width: 1480px) {
     .outSlideUl {
-        height: 280px;
+        height: 260px;
         overflow: hidden;
         max-width: initial;
         position: relative;
@@ -1410,7 +1410,7 @@ a {
         bottom: 0;
         right: 0;
         margin: auto;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #000000);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #000000);
         font-size: 20px;
     }
 
