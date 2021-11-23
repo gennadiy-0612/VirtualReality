@@ -1429,15 +1429,6 @@ a {
 }
 
 @media (max-width: 1036px) {
-    .playPanel{
-        top: 0;
-    }
-    .play {
-        height: 23%;
-        Width: 23%;
-        margin: auto;
-    }
-
     .biggerSlide {
         flex-direction: column;
     }
