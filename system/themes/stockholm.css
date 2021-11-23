@@ -880,10 +880,11 @@ a {
 .arrowDirectionIn {
     height: 41px;
     width: 41px;
-
 }
 
 .inLink {
+    height: 41px;
+    width: 41px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -891,7 +892,7 @@ a {
     z-index: 1;
 }
 
-.inLinkRight {
+.inLinkLeft {
     left: 50px;
 }
 
