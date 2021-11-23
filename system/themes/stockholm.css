@@ -1392,10 +1392,12 @@ a {
 
 @media (max-width: 1480px) {
     .outSlideUl {
-        height: 100px;
+        height: 280px;
         overflow: hidden;
         max-width: initial;
         position: relative;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .outSlideUl::after {
@@ -1424,6 +1426,10 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .outSlideH2 {
+        padding: 0;
     }
 
     .horizonLinePartners::before {
