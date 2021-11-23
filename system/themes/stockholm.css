@@ -1398,6 +1398,16 @@ a {
         position: relative;
     }
 
+    .outSlideUl::before {
+        content: '...';
+        position: absolute;
+        bottom: 0;
+        color: #FFF;
+        font-size: 30px;
+        z-index: 1;
+        left: 40px;
+    }
+
     .outSlideUl::after {
         content: '';
         position: absolute;
