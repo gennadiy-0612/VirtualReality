@@ -1419,6 +1419,10 @@ a {
         display: none;
     }
 
+    .arrowDirectionOut {
+        margin-top: -22%;
+    }
+
     .steps {
         background-position-y: 67.4%;
     }
