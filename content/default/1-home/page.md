@@ -139,7 +139,7 @@ Language: en
 <a class="inLinkLeft inLink" title="title" href="">
 <img class="arrowDirectionIn arrowLeftIn cursorPoint hoverBigger" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
 </a>
-<a class="inLinkRight" title="title" href="">
+<a class="inLinkRight inLink" title="title" href="">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
 <img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
