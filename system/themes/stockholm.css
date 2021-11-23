@@ -891,11 +891,11 @@ a {
     z-index: 1;
 }
 
-.nLinkLeft {
+.inLinkRight {
     left: 50px;
 }
 
-.nLinkRight {
+.inLinkRight {
     right: 50px;
 }
 
