@@ -1429,6 +1429,9 @@ a {
 }
 
 @media (max-width: 1036px) {
+    .inLink{
+        top: 35.2%;
+    }
     .biggerSlide {
         flex-direction: column;
     }
