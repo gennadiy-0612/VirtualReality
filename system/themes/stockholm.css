@@ -1449,6 +1449,10 @@ a {
         width: 98%;
     }
 
+    .digitsLi {
+        flex: 1 1 300px;
+    }
+
     .goodLi {
         max-width: 600px;
     }
