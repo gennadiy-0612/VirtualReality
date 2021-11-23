@@ -1046,6 +1046,7 @@ a {
     width: 18px;
     height: 14px;
     left: -36px;
+    top: 32px;
 }
 
 .badLi::before {
