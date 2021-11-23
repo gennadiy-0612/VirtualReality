@@ -1,6 +1,6 @@
 ---
 Title: Home
-Language: en
+Language: ru
 ---
 <div class="firstBack">
 <div class="firstScreen relative">
