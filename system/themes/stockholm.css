@@ -1407,6 +1407,18 @@ a {
 }
 
 @media (max-width: 1036px) {
+    .biggerSlide {
+        flex-direction: column;
+    }
+
+    .outSlideUl {
+        padding: 0;
+    }
+
+    .outSlideImages {
+        display: none;
+    }
+
     .steps {
         background-position-y: 67.4%;
     }
