@@ -814,8 +814,14 @@ a {
     margin-bottom: 0;
 }
 
+.inSlideText {
+
+}
+
+.outSlideSet {
+}
+
 .biggerSlide {
-    flex-wrap: wrap;
     justify-content: center;
     max-width: 1440px;
     margin: auto;
@@ -941,10 +947,6 @@ a {
 
 .digitsDigit {
     letter-spacing: 8.1px;
-}
-
-.digitsBig {
-    font-weight: 700;
 }
 
 .digitsLi {
@@ -1435,10 +1437,6 @@ a {
 @media (max-width: 1550px) {
     .horizonLineWhoWe::before {
         max-width: 95%;
-    }
-
-    .goodUl, .badUl {
-        column-count: 1;
     }
 }
 

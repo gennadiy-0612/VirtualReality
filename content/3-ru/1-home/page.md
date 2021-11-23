@@ -175,7 +175,7 @@ Language: ru
 </li>
 <li class="digitsLi digits4 digitsLiUp Dig4">
 <p class="digitsText mw235 Ag14 colorW digitsUp">до</p>
-<p class="digitsDigit digitsBig Ag72 colorViolet">90%</p>
+<p class="digitsDigit Ag72 colorViolet">90%</p>
 <p class="digitsText mw235 Ag18 lineHeight24 colorW digitsText">сохранение знаний</p>
 </li>
 </ul>
