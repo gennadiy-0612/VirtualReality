@@ -886,18 +886,17 @@ a {
     height: 41px;
     width: 41px;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 28.2%;
     margin: auto;
     z-index: 1;
 }
 
 .inLinkLeft {
-    left: 50px;
+    left: 46px;
 }
 
 .inLinkRight {
-    right: 50px;
+    right: 46px;
 }
 
 .outSlideBigImg {
