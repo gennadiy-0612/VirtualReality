@@ -1423,9 +1423,6 @@ a {
         margin-top: -22%;
     }
 
-    .digitsLi {
-        flex: 1 1 300px;
-    }
     .steps {
         background-position-y: 67.4%;
     }
@@ -1450,10 +1447,6 @@ a {
 
     .horizonLinePartners::before {
         width: 98%;
-    }
-
-    .digitsLi {
-        flex: 1 1 480px;
     }
 
     .goodLi {
