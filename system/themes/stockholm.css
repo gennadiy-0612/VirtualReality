@@ -1380,20 +1380,6 @@ a {
 /*Footer*/
 
 @media (max-width: 576px) {
-    .topMenu {
-        margin-top: 20px;
-    }
-
-    .logoA {
-        order: 1;
-        flex: 1 1 auto;
-        margin-top: 20px;
-    }
-
-    .navy {
-        margin: -168px -1px 0 auto;
-    }
-
     .doLinks {
         flex-wrap: wrap;
     }
@@ -1497,6 +1483,23 @@ a {
 @media (max-width: 1550px) {
     .horizonLineWhoWe::before {
         max-width: 95%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .topMenu {
+        margin-top: 20px;
+    }
+
+    .logoA {
+        order: 1;
+        flex: 1 1 auto;
+        margin-top: 20px;
+    }
+
+    .navy {
+        margin: -168px -1px 0 auto;
     }
 }
 
