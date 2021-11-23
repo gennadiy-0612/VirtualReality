@@ -1030,7 +1030,12 @@ a {
     max-width: 296px;
     position: relative;
     letter-spacing: 1.7px;
-    padding: 0 0 31px;
+}
+
+.goodLi, .badLi {
+    content: '';
+    display: block;
+    height: 30px;
 }
 
 .goodLi::before, .badLi::before, .blueLine::before {
