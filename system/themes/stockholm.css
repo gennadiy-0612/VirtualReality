@@ -1384,6 +1384,19 @@ a {
         flex-wrap: wrap;
     }
 
+    .arrowDirectionOut {
+        width: 24px;
+        height: 24px;
+    }
+
+    .outSlideLeft {
+        margin-right: -34px;
+    }
+
+    .outSlideRight {
+        margin-left: -34px;
+    }
+
     .one {
         margin: 50px 0;
     }
