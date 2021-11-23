@@ -1384,6 +1384,87 @@ a {
 
 /*Footer*/
 
+@media (max-width: 1550px) {
+    .horizonLineWhoWe::before {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 1480px) {
+    .outSlideUl {
+        height: 100px;
+        overflow: hidden;
+        max-width: initial;
+        position: relative;
+    }
+
+    .outSlideUl::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #000000);
+        font-size: 20px;
+    }
+
+    .arrowDirectionOut {
+        margin-top: -65px;
+    }
+
+    .GoTo {
+        margin-bottom: 0;
+    }
+
+    .inSlideText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .horizonLinePartners::before {
+        width: 98%;
+    }
+
+    .goodLi {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1036px) {
+    .inLink {
+        top: 35.2%;
+    }
+
+    .biggerSlide {
+        flex-direction: column;
+    }
+
+    .outSlideUl {
+        padding: 0;
+    }
+
+    .outSlideImages {
+        display: none;
+    }
+
+    .arrowDirectionOut {
+        margin-top: -22%;
+    }
+
+    .steps {
+        background-position-y: 67.4%;
+    }
+
+    .contactsA {
+        line-height: 30px;
+    }
+}
+
 @media (max-width: 576px) {
     .doLinks {
         flex-wrap: wrap;
@@ -1430,64 +1511,6 @@ a {
     .steps {
         background-size: 150%;
         background-position: center;
-    }
-}
-
-@media (max-width: 1036px) {
-    .inLink {
-        top: 35.2%;
-    }
-
-    .biggerSlide {
-        flex-direction: column;
-    }
-
-    .outSlideUl {
-        padding: 0;
-    }
-
-    .outSlideImages {
-        display: none;
-    }
-
-    .arrowDirectionOut {
-        margin-top: -22%;
-    }
-
-    .steps {
-        background-position-y: 67.4%;
-    }
-
-    .contactsA {
-        line-height: 30px;
-    }
-}
-
-@media (max-width: 1480px) {
-    .outSlideUl {
-        max-width: initial;
-    }
-
-    .arrowDirectionOut {
-        margin-top: -65px;
-    }
-
-    .outSlideLi-1 ~ li {
-        display: none;
-    }
-
-    .horizonLinePartners::before {
-        width: 98%;
-    }
-
-    .goodLi {
-        max-width: 600px;
-    }
-}
-
-@media (max-width: 1550px) {
-    .horizonLineWhoWe::before {
-        max-width: 95%;
     }
 }
 
