@@ -10,7 +10,7 @@ Language: ru
             <ul class="languageSet">
                 <li class="language verticalLine"><a class="languageText HeliosExtC" href="/">EN</a></li>
                 <li class="language verticalLine"><a class="languageText HeliosExtC active" href="/ru/">RU</a></li>
-                <li class="language"><a class="languageText HeliosExtC" href="/pl/">PL</a></li>
+               <li class="language"><a class="languageText HeliosExtC" href="./pl/">PL</a></li>
             </ul>
         </div>
         <a href="#Screen2" title="Demo" class="navy"></a>
