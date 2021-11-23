@@ -1032,7 +1032,7 @@ a {
     letter-spacing: 1.7px;
 }
 
-.goodLi, .badLi {
+.goodLi::after, .badLi::after {
     content: '';
     display: block;
     height: 30px;
