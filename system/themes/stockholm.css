@@ -911,14 +911,17 @@ a {
     transition: opacity .7s;
 }
 
+.outSlideImg {
+    transition: filter 1s;
+    filter: grayscale(100%);
+    height: 100%;
+    width: 24.1%;
+}
+
 .actInSlide {
     display: block;
     width: 100%;
-}
-
-.outSlideImg {
-    height: 100%;
-    width: 24.1%;
+    filter: grayscale(0);
 }
 
 /*Screen 4 Why VR*/
