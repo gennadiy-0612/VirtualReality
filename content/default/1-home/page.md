@@ -84,11 +84,11 @@ Language: en
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
 </div>
 <ul class="doLinks doLinks-project WhatWeDo">
-<li class="doli doli-projects"><a title="title" href="" class="colorGrey Ag24 doA doA2 doA-project doLinksActive DoAPro" data-id="0">01. safety</a></li>
-<li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA2 doA-project DoAPro Ag24" data-id="1">02. defense</a></li>
+<li class="doli doli-projects"><a title="title" href="" class="colorGrey Ag24 doA doA2 doA-project doLinksActive DoAPro cursorPoint">01. safety</a></li>
+<li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA2 doA-project DoAPro Ag24 cursorPoint">02. defense</a></li>
 </ul>
-<div class="outSlide">
-<a title="title" class="outSlideLeft arrowDirectionOut" href="">
+<div id="outSlide" class="outSlide">
+<a title="title" class="outSlideLeft arrowDirectionOut" href="#outSlide">
 <img class="arrowDirectionOut OutL" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
 <div class="biggerSlide biggerSlideAct BigSlide0">
@@ -110,20 +110,20 @@ Language: en
 <a class="inLinkRight inLink" title="title" href="">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
-<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
-<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
+<img class="outSlideBigImg outI1 actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg outI1 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg outI1 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg outI1 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="0">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="1">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="2">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="3">
+<img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
-<div id="whatDo1" class="biggerSlide BigSlide1">
+<div class="biggerSlide BigSlide1">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">safety</h2>
 <ul class="outSlideUl">
@@ -132,7 +132,7 @@ Language: en
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
 </ul>
-<a title="title" href="" class="GoTo colorW Ag14 lineHeight30 upperText">go to the page</a>
+<a title="title" href="" class="GoTo colorW Ag14 lineHeight30 upperText">learn more</a>
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
@@ -142,20 +142,20 @@ Language: en
 <a class="inLinkRight inLink" title="title" href="">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
-<div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig2.png"></div>
-<div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig3.png"></div>
-<div class="outSlideBigImg" width="1080" height="450" data-src="/media/images/img/inSlideImgBig4.png"></div>
+<img class="outSlideBigImg outI2 actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="0">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="1">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="2">
-<img alt="alt" class="outSlideImg FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png" data-id="3">
+<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
-<a title="title" class="outSlideRight arrowDirectionOut" href="">
+<a title="title" class="outSlideRight arrowDirectionOut" href="#outSlide">
 <img class="arrowDirectionOut OutR" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
 </div>

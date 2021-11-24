@@ -121,7 +121,7 @@ Language: ru
 </div>
 </div>
 </div>
-<div id="whatDo1" class="biggerSlide BigSlide1">
+<div class="biggerSlide BigSlide1">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">безопасность</h2>
 <ul class="outSlideUl">
