@@ -196,17 +196,17 @@ shch.BS = function (cs, ps) {
         }
         this.display++;
     }
-    this.setDisplay = function (id, event) {
+    this.setDisplay = function (id, active) {
         this.controlerDisolay.classList.remove('doLinksActive');
-        this.passivecurrent.classList.remove('whatDidWeAct');
+        this.passivecurrent.classList.remove(active);
         this.controler[id].classList.add('doLinksActive')
-        this.passive[id].classList.add('whatDidWeAct')
+        this.passive[id].classList.add(active)
         this.controlerDisolay = document.querySelectorAll(cs)[id]
         this.passivecurrent = this.passive[id];
     }
-    this.addAct = function () {
+    this.addAct = function (actSelect) {
         for (; this.i < this.controlerAll; this.i++) {
-            this.controler[this.i].addEventListener('click', this.setDisplay.bind(this, this.i))
+            this.controler[this.i].addEventListener('click', this.setDisplay.bind(this, this.i, actSelect))
         }
     }
 }
@@ -309,10 +309,10 @@ shch.watch = {
 shch.LoadFunc = function () {
 
     shch.BSone = new shch.BS('.doA1', '.whatDidWe');
-    shch.BSone.addAct();
+    shch.BSone.addAct('whatDidWeAct');
 
     shch.BSoneComp = new shch.BS('.doA2', '.biggerSlide');
-    shch.BSoneComp.addAct();
+    shch.BSoneComp.addAct('biggerSlideAct');
 
     // shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
     // shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
