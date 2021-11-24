@@ -1432,7 +1432,17 @@ a {
     }
 }
 
+@media (min-width: 1037px) {
+    .mobile {
+        display: none;
+    }
+}
+
 @media (max-width: 1036px) {
+    .arrowDirectionOut {
+        display: none;
+    }
+
     .inLink {
         top: 35.2%;
     }
@@ -1442,7 +1452,8 @@ a {
     }
 
     .outSlideUl {
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .outSlideImages {

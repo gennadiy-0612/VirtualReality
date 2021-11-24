@@ -251,18 +251,23 @@ Language: en
 <div class="stepPartners">
 <ol class="steps Step">
 <li class="one stepsBefore">
+<p class="mobile">Step 1</p>
 <p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs → </p>
 <p class="Ag18 stepsP colorW">Defined challenge</p></li>
 <li class="two stepsBefore">
+<p class="mobile stage">Step 2</p>
 <p class="Ag18 stepsP colorGrey7">Solution options proposal → </p>
 <p class="Ag18 stepsP colorW">Requirements specification </p></li>
 <li class="three stepsBefore">
+<p class="mobile stage">Step 3</p>
 <p class="Ag18 stepsP colorGrey7">Cost & time estimation planning → </p>
 <p class="Ag18 stepsP colorW">Delivery planning</p></li>
 <li class="four stepsBefore">
+<p class="mobile stage">Step 4</p>
 <p class="Ag18 stepsP colorGrey7">Development with regular reviews → </p>
 <p class="Ag18 stepsP colorW">Product versions </p></li>
 <li class="five stepsBefore">
+<p class="mobile stage">Step 5</p>
 <p class="Ag18 stepsP colorGrey7">Final review & evaluation →</p>
 <p class="Ag18 stepsP colorW">Final product & support</p></li>
 </ol>
