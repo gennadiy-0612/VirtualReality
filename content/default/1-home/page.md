@@ -251,23 +251,43 @@ Language: en
 <div class="stepPartners">
 <ol class="steps Step">
 <li class="one stepsBefore">
-<p class="mobile">Step 1</p>
+<span class="roadmap-item__title Ag18 colorW">
+<span class="roadmap-item__title-decor-top"></span>
+<span class="roadmap-item__title-decor-bottom"></span>
+Step 01
+</span>
 <p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs → </p>
 <p class="Ag18 stepsP colorW">Defined challenge</p></li>
 <li class="two stepsBefore">
-<p class="mobile stage colorW">Step 2</p>
+<span class="roadmap-item__title Ag18 colorW">
+<span class="roadmap-item__title-decor-top"></span>
+<span class="roadmap-item__title-decor-bottom"></span>
+Step 02
+</span>
 <p class="Ag18 stepsP colorGrey7">Solution options proposal → </p>
 <p class="Ag18 stepsP colorW">Requirements specification </p></li>
 <li class="three stepsBefore">
-<p class="mobile stage colorW">Step 3</p>
+<span class="roadmap-item__title Ag18 colorW">
+<span class="roadmap-item__title-decor-top"></span>
+<span class="roadmap-item__title-decor-bottom"></span>
+Step 03
+</span>
 <p class="Ag18 stepsP colorGrey7">Cost & time estimation planning → </p>
 <p class="Ag18 stepsP colorW">Delivery planning</p></li>
 <li class="four stepsBefore">
-<p class="mobile stage colorW">Step 4</p>
+<span class="roadmap-item__title Ag18 colorW">
+<span class="roadmap-item__title-decor-top"></span>
+<span class="roadmap-item__title-decor-bottom"></span>
+Step 04
+</span>
 <p class="Ag18 stepsP colorGrey7">Development with regular reviews → </p>
 <p class="Ag18 stepsP colorW">Product versions </p></li>
 <li class="five stepsBefore">
-<p class="mobile stage colorW">Step 5</p>
+<span class="roadmap-item__title Ag18 colorW">
+<span class="roadmap-item__title-decor-top"></span>
+<span class="roadmap-item__title-decor-bottom"></span>
+Step 05
+</span>
 <p class="Ag18 stepsP colorGrey7">Final review & evaluation →</p>
 <p class="Ag18 stepsP colorW">Final product & support</p></li>
 </ol>

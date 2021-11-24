@@ -1495,6 +1495,12 @@ a {
     .outSlideRight {
         margin: 0;
     }
+    .stepsBefore::before{
+        content: none;
+    }
+    .steps {
+        background-image: none;
+    }
 
     .one {
         margin: 50px 0;
@@ -1516,8 +1522,96 @@ a {
         margin: 50px 0;
     }
 
-    .steps {
-        background-size: 150%;
-        background-position: center;
+    /*Stages*/
+    .roadmap-item__title {
+        margin: auto;
+        display: block;
+        position: relative;
+        padding: 12px 43px;
+        border: 1px solid rgba(29, 224, 254, .2);
+        box-shadow: 0 0 15px rgb(29 224 254 / 20%), inset 0 0 15px rgb(29 224 254 / 20%);
+        text-align: center;
+        font-size: 34px;
+        line-height: 31px;
+        text-transform: uppercase;
+        max-width: 140px;
     }
+
+    .roadmap-item__title-decor-top {
+        position: absolute;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+    }
+
+    .roadmap-item__title-decor-bottom {
+        position: absolute;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        bottom: -2px;
+        right: -2px;
+    }
+
+    .roadmap-item__title-decor-top:before {
+        left: 0;
+        border-left: 3px solid #A64DFF;
+    }
+
+    .roadmap-item__title-decor-top:before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-top: 3px solid #A64DFF;
+    }
+
+    .roadmap-item__title-decor-top:after {
+        right: 0;
+        border-right: 3px solid #A64DFF;
+    }
+
+    .roadmap-item__title-decor-top:after, .roadmap-item__title-decor-top:before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-top: 3px solid #A64DFF;
+    }
+
+    .roadmap-item__title-decor-bottom:before {
+        left: 0;
+        border-left: 3px solid #A64DFF;
+    }
+
+    .roadmap-item__title-decor-bottom:before {
+        display: block;
+        position: absolute;
+        content: "";
+        bottom: 0;
+        width: 15px;
+        height: 15px;
+        border-bottom: 3px solid #A64DFF;
+    }
+
+    .roadmap-item__title-decor-bottom:after, .roadmap-item__title-decor-bottom:before {
+        display: block;
+        position: absolute;
+        content: "";
+        bottom: 0;
+        width: 15px;
+        height: 15px;
+        border-bottom: 3px solid #A64DFF;
+    }
+
+    .roadmap-item__title-decor-bottom:after {
+        right: 0;
+        border-right: 3px solid #A64DFF;
+    }
+
+    /*Stages*/
 }
