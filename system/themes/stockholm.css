@@ -1506,6 +1506,10 @@ a {
         background-image: none;
     }
 
+    .stepsP {
+        max-width: 360px;
+    }
+
     .one {
         margin: 50px 0;
     }
@@ -1531,7 +1535,7 @@ a {
 
     /*Stages*/
     .roadmap-item__title {
-        margin: 20px auto;
+        margin: 60px auto 30px;;
         display: block;
         position: relative;
         padding: 12px;
