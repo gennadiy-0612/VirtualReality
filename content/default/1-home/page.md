@@ -84,14 +84,14 @@ Language: en
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
 </div>
 <ul class="doLinks doLinks-project WhatWeDo">
-<li class="doli doli-projects"><a title="title" href="" class="Ag24 doA doA2 doA-project doLinksActive DoAPro" data-id="0">01. safety</a></li>
+<li class="doli doli-projects"><a title="title" href="" class="colorGrey Ag24 doA doA2 doA-project doLinksActive DoAPro" data-id="0">01. safety</a></li>
 <li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA2 doA-project DoAPro Ag24" data-id="1">02. defense</a></li>
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="">
 <img class="arrowDirectionOut OutL" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
-<div id="whatDo0" class="biggerSlide biggerSlideAct BigSlide0">
+<div class="biggerSlide biggerSlideAct BigSlide0">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">safety</h2>
 <ul class="outSlideUl">
@@ -127,7 +127,7 @@ Language: en
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">safety</h2>
 <ul class="outSlideUl">
-<li class="outSlideLi outSlideLi-1 blueLine blueLineLi colorW Ag18 lineHeight40">Interactive health and safety immersive training </li>
+<li class="outSlideLi outSlideLi-1 blueLine blueLineLi colorW Ag18 lineHeight40">2 Interactive health and safety immersive training </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>

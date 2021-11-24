@@ -771,6 +771,7 @@ a {
 .whatDidWeAct {
     display: block;
 }
+
 .WhatDoImg {
     max-width: 1438px;
     height: 56.6%;
@@ -1514,12 +1515,4 @@ a {
         background-size: 150%;
         background-position: center;
     }
-}
-
-#whatDo1 {
-    background-color: #174367;
-}
-
-#whatDo2 {
-    background-color: #6e2c1f;
 }

@@ -311,6 +311,9 @@ shch.LoadFunc = function () {
     shch.BSone = new shch.BS('.doA1', '.whatDidWe');
     shch.BSone.addAct();
 
+    shch.BSone = new shch.BS('.doA2', '.biggerSlide');
+    shch.BSone.addAct();
+
     // shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
     // shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
     //
