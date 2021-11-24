@@ -1180,6 +1180,8 @@ a {
     flex: 46 1 1096px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .steps {
@@ -1495,9 +1497,11 @@ a {
     .outSlideRight {
         margin: 0;
     }
-    .stepsBefore::before{
+
+    .stepsBefore::before {
         content: none;
     }
+
     .steps {
         background-image: none;
     }
@@ -1522,12 +1526,15 @@ a {
         margin: 50px 0;
     }
 
+    .stepsBefore {
+    }
+
     /*Stages*/
     .roadmap-item__title {
-        margin: auto;
+        margin: 20px auto;
         display: block;
         position: relative;
-        padding: 12px 43px;
+        padding: 12px;
         border: 1px solid rgba(29, 224, 254, .2);
         box-shadow: 0 0 15px rgb(29 224 254 / 20%), inset 0 0 15px rgb(29 224 254 / 20%);
         text-align: center;
