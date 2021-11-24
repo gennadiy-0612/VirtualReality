@@ -182,11 +182,14 @@ shch.BS = function (cs, ps) {
     this.passive = document.querySelectorAll(ps);
     this.passivecurrent = document.querySelectorAll(ps)[0];
     this.moveBack = function (act) {
+        this.controlerDisolay.classList.remove('doLinksActive');
         this.passive[this.display].classList.remove(act);
         this.display--;
         if (this.display < 0) {
             this.display = 0;
         }
+        this.controlerDisolay = this.controler[this.display];
+        this.controlerDisolay.classList.add('doLinksActive');
         this.passivecurrent = this.passive[this.display];
         this.passivecurrent.classList.add(act);
 
@@ -202,7 +205,7 @@ shch.BS = function (cs, ps) {
         if (this.display === this.controlerAll) {
             this.display = this.controlerAll - 1;
         }
-        this.controlerDisolay = this.controlerAll[this.display];
+        this.controlerDisolay = this.controler[this.display];
         this.controlerDisolay.classList.add('doLinksActive');
         this.passivecurrent = this.passive[this.display];
         this.passivecurrent.classList.add(act);
