@@ -47,15 +47,15 @@ Language: en
 <div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
 </div>
-<ul class="doLinks">
-<li class="doli DoLI1"><a title="title" href="#whatDid1" class="Ag18 doA doLinksActive">Immersive Trainings</a></li>
-<li class="doli DoLI2"><a title="title"  href="#whatDid2" class="colorGrey doA Ag18">Realistic Simulations</a></li>
-<li class="doli DoLI3"><a title="title"  href="#whatDid3" class="colorGrey doA Ag18">Aptitude Testing</a></li>
+<ul class="doLinks" id="doLinks">
+<li class="doli DoLI1"><a title="title" href="#doLinks" class="Ag18 colorGrey doA doA1 doLinksActive">Immersive Trainings</a></li>
+<li class="doli DoLI2"><a title="title"  href="#doLinks" class="colorGrey doA doA1 Ag18">Realistic Simulations</a></li>
+<li class="doli DoLI3"><a title="title"  href="#doLinks" class="colorGrey doA doA1 Ag18">Aptitude Testing</a></li>
 </ul>
 </div>
 <div class="doImages FromSmall">
 <ul class="whatDid">
-<li class="whatDidWe" id="whatDid1">
+<li class="whatDidWe whatDidWeAct" id="whatDid1">
 <picture class="w100percents">
 <source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
@@ -66,14 +66,14 @@ Language: en
 <picture  class="w100percents">
 <source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo2.png">
 </picture>
 </li>
 <li class="whatDidWe" id="whatDid3">
 <picture  class="w100percents">
 <source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
-<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
+<img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo3.png">
 </picture>
 </li>
 </ul>
@@ -84,8 +84,8 @@ Language: en
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
 </div>
 <ul class="doLinks doLinks-project WhatWeDo">
-<li class="doli doli-projects"><a title="title" href="" class="Ag24 doA doA-project doLinksActive DoAPro" data-id="0">01. safety</a></li>
-<li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA-project DoAPro Ag24" data-id="1">02. defense</a></li>
+<li class="doli doli-projects"><a title="title" href="" class="Ag24 doA doA2 doA-project doLinksActive DoAPro" data-id="0">01. safety</a></li>
+<li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA2 doA-project DoAPro Ag24" data-id="1">02. defense</a></li>
 </ul>
 <div class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="">

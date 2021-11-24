@@ -174,24 +174,39 @@ shch.switchBigSlide = function (selectorBig) {
 }
 
 shch.BS = function (cs, ps) {
-    this.start = 0;
-    this.contrS = document.querySelectorAll(cs);
-    this.passS = document.querySelectorAll(ps);
-    this.passScurrent = document.querySelectorAll(ps)[0];
-    this.passAll = document.querySelectorAll(ps).length;
+    this.display = 0;
+    this.i = 0;
+    this.controler = document.querySelectorAll(cs);
+    this.controlerDisolay = document.querySelectorAll(cs)[0]
+    this.controlerAll = document.querySelectorAll(cs).length;
+    this.passive = document.querySelectorAll(ps);
+    this.passiveN = {};
+    this.passivecurrent = document.querySelectorAll(ps)[0];
     this.moveBack = function () {
-        this.start++;
+        this.display--;
+        if (this.display < 0) {
+            this.display = 0;
+            return this.display;
+        }
     }
     this.moveToward = function () {
-        this.start--;
+        if (this.display === this.controlerAll) {
+            this.display = this.controlerAll;
+            return this.display;
+        }
+        this.display++;
     }
-    this.acts = function () {
-        console.log('l');
+    this.setDisplay = function (id, event) {
+        this.controlerDisolay.classList.remove('doLinksActive');
+        this.passivecurrent.classList.remove('whatDidWeAct');
+        this.controler[id].classList.add('doLinksActive')
+        this.passive[id].classList.add('whatDidWeAct')
+        this.controlerDisolay = document.querySelectorAll(cs)[id]
+        this.passivecurrent = this.passive[id];
     }
     this.addAct = function () {
-        let i = 0;
-        for (; i < this.passAll; i++) {
-            this[i].addEventListener('click', this.acts.bind(this[i]))
+        for (; this.i < this.controlerAll; this.i++) {
+            this.controler[this.i].addEventListener('click', this.setDisplay.bind(this, this.i))
         }
     }
 }
@@ -293,27 +308,27 @@ shch.watch = {
 
 shch.LoadFunc = function () {
 
-    // shch.BSone = new shch.BS('.DoLI1', '.whatDidWe');
-    // shch.BSone.addAct();
+    shch.BSone = new shch.BS('.doA1', '.whatDidWe');
+    shch.BSone.addAct();
 
-    shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
-    shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
-
-    shch.InSlide.aRight = document.querySelector('.inLinkRight');
-    shch.InSlide.aRight.addEventListener('click', shch.InSlide.moveNext.bind(shch.InSlide));
-
-    shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
-    shch.littleIMGS.changeBig(shch.littleIMGS.tags);
-
-
-    shch.OutSlide.aLeft = document.querySelector('.OutL');
-    shch.OutSlide.aLeft.addEventListener('click', shch.OutSlide.prev.bind(shch.OutSlide));
-
-    shch.OutSlide.aRight = document.querySelector('.OutR');
-    shch.OutSlide.aRight.addEventListener('click', shch.OutSlide.next.bind(shch.OutSlide));
-
-    shch.bigSlide = new shch.switchBigSlide('.DoAPro');
-    shch.bigSlide.changeBigSlide(shch.bigSlide.tags);
+    // shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
+    // shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
+    //
+    // shch.InSlide.aRight = document.querySelector('.inLinkRight');
+    // shch.InSlide.aRight.addEventListener('click', shch.InSlide.moveNext.bind(shch.InSlide));
+    //
+    // shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
+    // shch.littleIMGS.changeBig(shch.littleIMGS.tags);
+    //
+    //
+    // shch.OutSlide.aLeft = document.querySelector('.OutL');
+    // shch.OutSlide.aLeft.addEventListener('click', shch.OutSlide.prev.bind(shch.OutSlide));
+    //
+    // shch.OutSlide.aRight = document.querySelector('.OutR');
+    // shch.OutSlide.aRight.addEventListener('click', shch.OutSlide.next.bind(shch.OutSlide));
+    //
+    // shch.bigSlide = new shch.switchBigSlide('.DoAPro');
+    // shch.bigSlide.changeBigSlide(shch.bigSlide.tags);
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);

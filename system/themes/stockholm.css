@@ -763,18 +763,14 @@ a {
     border-bottom: 1px solid #FFFFFF;
 }
 
-.whatDidWe:first-child {
-    display: block;
-}
-
-.whatDidWe:first-child ~ .whatDidWe {
+.whatDidWe {
     display: none;
 }
 
-.whatDidWe:target {
+
+.whatDidWeAct {
     display: block;
 }
-
 .WhatDoImg {
     max-width: 1438px;
     height: 56.6%;
