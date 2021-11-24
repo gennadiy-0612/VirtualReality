@@ -918,10 +918,14 @@ a {
     width: 24.1%;
 }
 
+.outSlideImgAct {
+    display: block;
+    filter: grayscale(0);
+}
+
 .actInSlide {
     display: block;
     width: 100%;
-    filter: grayscale(0);
 }
 
 /*Screen 4 Why VR*/
