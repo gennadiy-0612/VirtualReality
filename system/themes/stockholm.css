@@ -768,10 +768,6 @@ a {
 }
 
 
-.whatDidWeAct {
-    display: block;
-}
-
 .WhatDoImg {
     max-width: 1438px;
     height: 56.6%;
@@ -827,6 +823,11 @@ a {
 
 .biggerSlideAct {
     display: flex;
+}
+
+
+.whatDidWeAct {
+    display: block;
 }
 
 .outSlide {
