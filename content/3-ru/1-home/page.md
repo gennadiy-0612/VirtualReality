@@ -55,21 +55,21 @@ Language: ru
 </div>
 <div class="doImages FromSmall">
 <ul class="whatDid">
-<li class="whatDidWe" id="whatDid1">
+<li class="whatDidWe whatDidWeAct" id="whatDid1" data-id="0">
 <picture class="w100percents">
 <source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
-<li class="whatDidWe" id="whatDid2">
+<li class="whatDidWe" id="whatDid2" data-id="2">
 <picture  class="w100percents">
 <source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
-<li class="whatDidWe" id="whatDid3">
+<li class="whatDidWe" id="whatDid3" data-id="2">
 <picture  class="w100percents">
 <source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
 <source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
@@ -91,7 +91,7 @@ Language: ru
 <a title="title" class="outSlideLeft arrowDirectionOut" href="">
 <img class="arrowDirectionOut OutL" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
-<div id="whatDo0" class="biggerSlide biggerSlideAct BigSlide0">
+<div class="biggerSlide biggerSlideAct BigSlide0">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">безопасность</h2>
 <ul class="outSlideUl">
