@@ -29,150 +29,6 @@ shch.addDetect = function () {
     }
 }
 
-shch.InSlide = {
-    addEv: 1,
-    startClass: 1,
-    actSelector: 'actInSlide1',
-    unActSelector: 'unActInSlide1',
-    prevDisplay: {},
-    display: 0,
-    currentDisplay: document.querySelectorAll('.outSlideBigImg')[0],
-    frameIn: document.querySelectorAll('.outSlideBigImg'),
-    frameInLength: document.querySelectorAll('.outSlideBigImg').length,
-    moveNext: function () {
-        this.prevDisplay = this.frameIn[this.display];
-        this.display++;
-        if (this.display < this.frameInLength) {
-            this.changeDisplay();
-        } else {
-            this.display = this.frameInLength - 1;
-            return true;
-        }
-    },
-    movePrev: function () {
-        this.prevDisplay = this.frameIn[this.display];
-        this.display--;
-        if (this.display < 0) {
-            this.prevDisplay = this.frameIn[0];
-            this.display = 0;
-            return true;
-        } else {
-            this.changeDisplay();
-        }
-    },
-    changeDisplay: function () {
-        if (this.addEv === 1) {
-            this.frameIn[0].addEventListener('load', this.addVision.bind(shch.InSlide));
-            this.addEv = 0;
-        }
-        this.currentDisplay = this.frameIn[this.display];
-        this.frameIn[0].setAttribute('src', this.frameIn[this.display].getAttribute('data-src'));
-    },
-    addVision: function () {
-        if (this.startClass) {
-            this.frameIn[0].classList.add('AppAnim0');
-            this.frameIn[0].classList.remove('AppAnim1');
-            this.startClass = 0
-        } else {
-            this.frameIn[0].classList.add('AppAnim1');
-            this.frameIn[0].classList.remove('AppAnim0');
-            this.startClass = 1;
-            console.log(this)
-        }
-    }
-}
-
-shch.switchBigIMG = function (selectorLittle) {
-    this.tags = document.querySelectorAll(selectorLittle);
-    this.tagAll = document.querySelectorAll(selectorLittle).length;
-    this.changeBig = function () {
-        for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
-            this.tags[this.tagStart].addEventListener('click', this.switchIt);
-            this.tags[this.tagStart].numberItem = this.startClass;
-        }
-    }
-    this.switchIt = function () {
-        let num = this.getAttribute('data-id');
-        shch.InSlide.currentDisplay.classList.remove('AppAnim0');
-        shch.InSlide.currentDisplay.classList.add('AppAnim1');
-        shch.InSlide.frameIn[0].setAttribute('src', shch.InSlide.frameIn[num].getAttribute('data-src'));
-        shch.InSlide.currentDisplay = shch.InSlide.frameIn[num];
-        shch.InSlide.display = num;
-    }
-}
-
-shch.OutSlide = {
-    addEv: 1,
-    startClass: 1,
-    actSelector: 'actInSlide1',
-    unActSelector: 'unActInSlide1',
-    prevDisplay: {},
-    display: 0,
-    currentDisplay: document.querySelectorAll('.biggerSlide')[0],
-    frameOut: document.querySelectorAll('.biggerSlide'),
-    frameInLength: document.querySelectorAll('.biggerSlide').length,
-    next: function () {
-        this.prevDisplay = this.frameOut[this.display];
-        this.display++;
-        if (this.display < this.frameInLength) {
-            this.changeDisp();
-        } else {
-            this.display = this.frameInLength - 1;
-            return true;
-        }
-    },
-    prev: function () {
-        this.prevDisplay = this.frameOut[this.display];
-        this.display--;
-        if (this.display < 0) {
-            this.prevDisplay = this.frameOut[0];
-            this.display = 0;
-            return true;
-        } else {
-            this.changeDisp();
-        }
-    },
-    changeDisp: function () {
-        if (this.addEv === 1) {
-            this.frameOut[0].addEventListener('load', this.addVis.bind(shch.OutSlide));
-            this.addEv = 0;
-        }
-        this.currentDisplay.classList.remove('biggerSlideAct');
-        this.currentDisplay = this.frameOut[this.display];
-        this.currentDisplay.classList.add('biggerSlideAct');
-    },
-    addVis: function () {
-        if (this.startClass) {
-            this.frameOut[0].classList.add('AppAnim0');
-            this.frameOut[0].classList.remove('AppAnim1');
-            this.startClass = 0
-        } else {
-            this.frameOut[0].classList.add('AppAnim1');
-            this.frameOut[0].classList.remove('AppAnim0');
-            this.startClass = 1;
-            console.log(this)
-        }
-    }
-}
-shch.switchBigSlide = function (selectorBig) {
-    this.tags = document.querySelectorAll(selectorBig);
-    this.tagAll = document.querySelectorAll(selectorBig).length;
-    this.changeBigSlide = function () {
-        for (this.tagStart = 0; this.tagStart < this.tagAll; this.tagStart++) {
-            this.tags[this.tagStart].addEventListener('click', this.switchIts);
-            this.tags[this.tagStart].numberItem = this.startClass;
-        }
-    }
-    this.switchIts = function () {
-        console.log('ppp')
-        // let num = this.getAttribute('data-id');
-        // shch.OutSlide.currentDisplay.classList.remove('AppAnim0');
-        // shch.OutSlide.currentDisplay.classList.add('AppAnim1');
-        // shch.OutSlide.currentDisplay = shch.OutSlide.frameIn[num];
-        // shch.OutSlide.display = num;
-    }
-}
-
 shch.BS = function (cs, ps) {
     this.display = 0;
     this.i = 0;
@@ -181,38 +37,37 @@ shch.BS = function (cs, ps) {
     this.controlerAll = document.querySelectorAll(cs).length;
     this.passive = document.querySelectorAll(ps);
     this.passivecurrent = document.querySelectorAll(ps)[0];
-    this.moveBack = function (act) {
-        this.controlerDisolay.classList.remove('doLinksActive');
+    this.moveBack = function (act, actLink) {
+        this.controlerDisolay.classList.remove(actLink);
         this.passive[this.display].classList.remove(act);
         this.display--;
         if (this.display < 0) {
             this.display = 0;
         }
         this.controlerDisolay = this.controler[this.display];
-        this.controlerDisolay.classList.add('doLinksActive');
+        this.controlerDisolay.classList.add(actLink);
         this.passivecurrent = this.passive[this.display];
         this.passivecurrent.classList.add(act);
-
-        console.log(this.display);
+        console.log(act);
     }
-    this.back = function (selTag, act) {
-        document.querySelector(selTag).addEventListener('click', this.moveBack.bind(this, act))
+    this.back = function (selTag, act, actLink) {
+        document.querySelector(selTag).addEventListener('click', this.moveBack.bind(this, act, actLink))
     }
-    this.moveToward = function (act) {
-        this.controlerDisolay.classList.remove('doLinksActive');
+    this.moveToward = function (act, actLink) {
+        this.controlerDisolay.classList.remove(actLink);
         this.passive[this.display].classList.remove(act);
         this.display++;
         if (this.display === this.controlerAll) {
             this.display = this.controlerAll - 1;
         }
         this.controlerDisolay = this.controler[this.display];
-        this.controlerDisolay.classList.add('doLinksActive');
+        this.controlerDisolay.classList.add(actLink);
         this.passivecurrent = this.passive[this.display];
         this.passivecurrent.classList.add(act);
         console.log(this.display);
     }
-    this.toward = function (selTag, act) {
-        document.querySelector(selTag).addEventListener('click', this.moveToward.bind(this, act))
+    this.toward = function (selTag, act, actLink) {
+        document.querySelector(selTag).addEventListener('click', this.moveToward.bind(this, act, actLink))
     }
     this.setDisplay = function (id, actL, active) {
         this.display = id;
@@ -332,8 +187,8 @@ shch.LoadFunc = function () {
 
     shch.BComp = new shch.BS('.doA2', '.biggerSlide');
     shch.BComp.addAct('doLinksActive', 'biggerSlideAct');
-    shch.BComp.back('.OutL', 'biggerSlideAct');
-    shch.BComp.toward('.OutR', 'biggerSlideAct');
+    shch.BComp.back('.OutL', 'biggerSlideAct', 'doLinksActive');
+    shch.BComp.toward('.OutR', 'biggerSlideAct', 'doLinksActive');
 
     shch.BSImg1 = new shch.BS('.outL1', '.outI1');
     shch.BSImg1.addAct('doLinksActive', 'actInSlide');
@@ -341,26 +196,8 @@ shch.LoadFunc = function () {
     shch.BSImg1 = new shch.BS('.outL2', '.outI2');
     shch.BSImg1.addAct('doLinksActive', 'actInSlide');
 
-    // shch.BSImg2.addAct('doLinksActive', 'actInSlide');
-
-    // shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
-    // shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
-    //
-    // shch.InSlide.aRight = document.querySelector('.inLinkRight');
-    // shch.InSlide.aRight.addEventListener('click', shch.InSlide.moveNext.bind(shch.InSlide));
-    //
-    // shch.littleIMGS = new shch.switchBigIMG('.outSlideImg');
-    // shch.littleIMGS.changeBig(shch.littleIMGS.tags);
-    //
-    //
-    // shch.OutSlide.aLeft = document.querySelector('.OutL');
-    // shch.OutSlide.aLeft.addEventListener('click', shch.OutSlide.prev.bind(shch.OutSlide));
-    //
-    // shch.OutSlide.aRight = document.querySelector('.OutR');
-    // shch.OutSlide.aRight.addEventListener('click', shch.OutSlide.next.bind(shch.OutSlide));
-    //
-    // shch.bigSlide = new shch.switchBigSlide('.DoAPro');
-    // shch.bigSlide.changeBigSlide(shch.bigSlide.tags);
+    shch.BSone = new shch.BS('.doA1', '.whatDidWe');
+    shch.BSone.addAct('doLinksActive', 'whatDidWeAct');
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
