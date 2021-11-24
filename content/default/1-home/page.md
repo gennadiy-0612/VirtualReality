@@ -83,12 +83,12 @@ Language: en
 <div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
 </div>
-<ul class="doLinks doLinks-project WhatWeDo">
-<li class="doli doli-projects"><a title="title" href="" class="colorGrey Ag24 doA doA2 doA-project doLinksActive DoAPro cursorPoint">01. safety</a></li>
-<li class="doli doli-projects"><a title="title" href="" class="colorGrey doA doA2 doA-project DoAPro Ag24 cursorPoint">02. defense</a></li>
+<ul id="ListPro" class="doLinks doLinks-project WhatWeDo">
+<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey Ag24 doA doA2 doA-project doLinksActive DoAPro cursorPoint">01. safety</a></li>
+<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey doA doA2 doA-project DoAPro Ag24 cursorPoint">02. defense</a></li>
 </ul>
 <div id="outSlide" class="outSlide">
-<a title="title" class="outSlideLeft arrowDirectionOut" href="#outSlide">
+<a title="title" class="outSlideLeft arrowDirectionOut" href="#ListPro">
 <img class="arrowDirectionOut OutL" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
 <div class="biggerSlide biggerSlideAct BigSlide0">
@@ -100,14 +100,14 @@ Language: en
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
 </ul>
-<a title="title" href="" class="GoTo colorW Ag14 lineHeight30 upperText">Learn more</a>
+<a title="title" href="#ListPro" class="GoTo colorW Ag14 lineHeight30 upperText">Learn more</a>
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
-<a class="inLinkLeft inLink" title="title" href="">
+<a class="inLinkLeft inLink" title="title" href="#ListPro">
 <img class="arrowDirectionIn arrowLeftIn cursorPoint hoverBigger" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
 </a>
-<a class="inLinkRight inLink" title="title" href="">
+<a class="inLinkRight inLink" title="title" href="#ListPro">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
 <img class="outSlideBigImg outI1 actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
@@ -132,14 +132,14 @@ Language: en
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
 </ul>
-<a title="title" href="" class="GoTo colorW Ag14 lineHeight30 upperText">learn more</a>
+<a title="title" href="#ListPro" class="GoTo colorW Ag14 lineHeight30 upperText">learn more</a>
 </div>
 <div class="outSlideSet">
 <div class="SlideSetIn relative">
-<a class="inLinkLeft inLink" title="title" href="">
+<a class="inLinkLeft inLink" title="title" href="#ListPro">
 <img class="arrowDirectionIn arrowLeftIn cursorPoint hoverBigger" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
 </a>
-<a class="inLinkRight inLink" title="title" href="">
+<a class="inLinkRight inLink" title="title" href="#ListPro">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
 <img class="outSlideBigImg outI2 actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
@@ -155,7 +155,7 @@ Language: en
 </div>
 </div>
 </div>
-<a title="title" class="outSlideRight arrowDirectionOut" href="#outSlide">
+<a title="title" class="outSlideRight arrowDirectionOut" href="#ListPro">
 <img class="arrowDirectionOut OutR" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
 </a>
 </div>
