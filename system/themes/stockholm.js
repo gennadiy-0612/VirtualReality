@@ -180,24 +180,39 @@ shch.BS = function (cs, ps) {
     this.controlerDisolay = document.querySelectorAll(cs)[0]
     this.controlerAll = document.querySelectorAll(cs).length;
     this.passive = document.querySelectorAll(ps);
-    this.passiveN = {};
     this.passivecurrent = document.querySelectorAll(ps)[0];
-    this.moveBack = function () {
+    this.moveBack = function (act) {
+        this.passive[this.display].classList.remove(act);
         this.display--;
         if (this.display < 0) {
             this.display = 0;
-            return this.display;
         }
-        console.log('ppp');
+        this.passivecurrent = this.passive[this.display];
+        this.passivecurrent.classList.add(act);
+
+        console.log(this.display);
     }
-    this.moveToward = function () {
-        if (this.display === this.controlerAll) {
-            this.display = this.controlerAll;
-            return this.display;
-        }
+    this.back = function (selTag, act) {
+        document.querySelector(selTag).addEventListener('click', this.moveBack.bind(this, act))
+    }
+    this.moveToward = function (act) {
+        this.controlerDisolay.classList.remove('doLinksActive');
+        this.passive[this.display].classList.remove(act);
         this.display++;
+        if (this.display === this.controlerAll) {
+            this.display = this.controlerAll - 1;
+        }
+        this.controlerDisolay = this.controlerAll[this.display];
+        this.controlerDisolay.classList.add('doLinksActive');
+        this.passivecurrent = this.passive[this.display];
+        this.passivecurrent.classList.add(act);
+        console.log(this.display);
+    }
+    this.toward = function (selTag, act) {
+        document.querySelector(selTag).addEventListener('click', this.moveToward.bind(this, act))
     }
     this.setDisplay = function (id, actL, active) {
+        this.display = id;
         this.controlerDisolay.classList.remove(actL);
         this.passivecurrent.classList.remove(active);
         this.controler[id].classList.add(actL)
@@ -209,9 +224,6 @@ shch.BS = function (cs, ps) {
         for (; this.i < this.controlerAll; this.i++) {
             this.controler[this.i].addEventListener('click', this.setDisplay.bind(this, this.i, actLink, actSelect))
         }
-    }
-    this.back = function () {
-
     }
 }
 
@@ -317,13 +329,15 @@ shch.LoadFunc = function () {
 
     shch.BComp = new shch.BS('.doA2', '.biggerSlide');
     shch.BComp.addAct('doLinksActive', 'biggerSlideAct');
-    shch.BComp.moveBack('ppp');
+    shch.BComp.back('.OutL', 'biggerSlideAct');
+    shch.BComp.toward('.OutR', 'biggerSlideAct');
 
     shch.BSImg1 = new shch.BS('.outL1', '.outI1');
     shch.BSImg1.addAct('doLinksActive', 'actInSlide');
 
-    shch.BSImg2 = new shch.BS('.outL', '.biggerSlide');
-    shch.BSImg2.addAct('doLinksActive', 'actInSlide');
+    shch.BSImg1 = new shch.BS('.outL2', '.outI2');
+    shch.BSImg1.addAct('doLinksActive', 'actInSlide');
+
     // shch.BSImg2.addAct('doLinksActive', 'actInSlide');
 
     // shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
