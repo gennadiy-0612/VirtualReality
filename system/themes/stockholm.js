@@ -314,8 +314,11 @@ shch.LoadFunc = function () {
     shch.BSoneComp = new shch.BS('.doA2', '.biggerSlide');
     shch.BSoneComp.addAct('doLinksActive', 'biggerSlideAct');
 
-    shch.BSoneCompImg = new shch.BS('.outSlideImg', '.outSlideBigImg');
-    shch.BSoneCompImg.addAct('doLinksActive', 'actInSlide');
+    shch.BSImg1 = new shch.BS('.outL1', '.outI1');
+    shch.BSImg1.addAct('doLinksActive', 'actInSlide');
+
+    shch.BSImg2 = new shch.BS('.outL2', '.outI2');
+    shch.BSImg2.addAct('doLinksActive', 'actInSlide');
 
     // shch.InSlide.aLeft = document.querySelector('.inLinkLeft');
     // shch.InSlide.aLeft.addEventListener('click', shch.InSlide.movePrev.bind(shch.InSlide));
