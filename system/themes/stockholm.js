@@ -192,9 +192,16 @@ shch.LoadFunc = function () {
 
     shch.BSImg1 = new shch.BS('.outL1', '.outI1');
     shch.BSImg1.addAct('doLinksActive', 'actInSlide');
+    shch.BSImg1.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
+    shch.BSImg1.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
 
-    shch.BSImg1 = new shch.BS('.outL2', '.outI2');
-    shch.BSImg1.addAct('doLinksActive', 'actInSlide');
+    shch.BSImg2 = new shch.BS('.outL2', '.outI2');
+    shch.BSImg2.addAct('doLinksActive', 'actInSlide');
+    shch.BSImg2.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
+    shch.BSImg2.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
+
+
+
 
     shch.BSone = new shch.BS('.doA1', '.whatDidWe');
     shch.BSone.addAct('doLinksActive', 'whatDidWeAct');
