@@ -1340,50 +1340,38 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 50px 0 30px;
 }
 
 .logoA-bottom {
     background-position-x: 0;
-    flex: 1.2 1 258px;
-    margin: 40px 0;
+    flex: 0.5 1 160px;
 }
 
 .contacts {
-    flex: 1 1 324px;
+    flex: 1 1 50px;
     display: flex;
     flex-direction: column;
-    margin: 40px 0;
+    justify-content: center;
 }
 
-.contactsLi {
-    flex: 1 1 auto;
-}
-
-.contactsA {
-    line-height: 17px;
-    font-size: 25px;
-    letter-spacing: 2px;
-    display: block;
-    min-width: 268px;
-}
 
 .copyRight {
-    flex: .5 1 238px;
+    flex: .5 1 160px;
     display: flex;
     flex-direction: column;
-    margin: 40px 0;
+    justify-content: center;
 }
 
 .copyRightSpan {
-    letter-spacing: 3.2px;
     display: block;
 }
 
 .address {
-    flex: 1 1 296px;
+    flex: 1 1 160px;
     margin: 40px 0;
-    max-width: 430px;
+    max-width: 360px;
 }
 
 /*Footer*/

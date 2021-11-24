@@ -116,7 +116,7 @@ Language: en
 <img class="outSlideBigImg outI1 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outSlideImgAct outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
@@ -300,14 +300,14 @@ Language: en
 <a class="logoA logoA-bottom" href="/"></a>
 <ul class="contacts">
 <li class="contactsLi">
-<a class="contactsA contactsPhone Ag18 colorViolet" href="tel:4915225698736">+49 15225698736</a>
+<a class="contactsPhone Ag18 colorW" href="tel:4915225698736">+49 15225698736</a>
 </li>
 <li class="contactsLi">
-<a class="contactsA  contactEmail Ag18 colorViolet" href="mailto:office@vr.consulting">office@vr.consulting</a></li>
+<a class="contactEmail Ag18 colorW" href="mailto:office@vr.consulting">office@vr.consulting</a></li>
 </ul>
 <p class="copyRight">
-<span class="copyRightSpan CR Ag14 colorW">© 2021</span>
-<span class="copyRightSpan Law Ag14 colorW">All Rights Reserved</span>
+<span class="copyRightSpan CR Ag18 colorGrey8">© 2021</span>
+<span class="copyRightSpan Law Ag18 colorGrey8">All Rights Reserved</span>
 </p>
 <address class="address Ag18 colorGrey8">VR.Consulting Sp. z o.o., NIP: 7011030959
 Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
