@@ -42,15 +42,15 @@ Language: en
 </div>
 </div>
 <div class="mouseBlock a1440"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
-<section id="Screen2" class="do a1440">
+<section id="Screen2" class="do a1440 Screen2">
 <div class="doInfo">
 <div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
 </div>
 <ul class="doLinks" id="doLinks">
-<li class="doli DoLI1"><a title="title" href="#doLinks" class="Ag18 colorGrey doA doA1 doLinksActive">Immersive Trainings</a></li>
-<li class="doli DoLI2"><a title="title"  href="#doLinks" class="colorGrey doA doA1 Ag18">Realistic Simulations</a></li>
-<li class="doli DoLI3"><a title="title"  href="#doLinks" class="colorGrey doA doA1 Ag18">Aptitude Testing</a></li>
+<li class="doli DoLI1"><a title="title" href="#doLinks" class="Ag18 colorGrey doA doLinksActive">Immersive Trainings</a></li>
+<li class="doli DoLI2"><a title="title"  href="#doLinks" class="colorGrey doA Ag18">Realistic Simulations</a></li>
+<li class="doli DoLI3"><a title="title"  href="#doLinks" class="colorGrey doA Ag18">Aptitude Testing</a></li>
 </ul>
 </div>
 <div class="doImages FromSmall">
@@ -79,13 +79,13 @@ Language: en
 </ul>
 </div>
 </section>
-<section class="screen3 Slides">
+<section class="Screen3 Slides">
 <div class="doInfoH2">
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
 </div>
 <ul id="ListPro" class="doLinks doLinks-project WhatWeDo">
-<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey Ag24 doA doA2 doA-project doLinksActive DoAPro cursorPoint">01. safety</a></li>
-<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey doA doA2 doA-project DoAPro Ag24 cursorPoint">02. defense</a></li>
+<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey Ag24 doA doA-project doLinksActive DoAPro cursorPoint">01. safety</a></li>
+<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey doA doA-project DoAPro Ag24 cursorPoint">02. defense</a></li>
 </ul>
 <div id="outSlide" class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="#ListPro">
@@ -366,7 +366,7 @@ Step 05
 </div>
 <div class="forLine">
 <footer id="foot" class="a1440 foot horizonLine">
-<a class="logoA logoA-bottom" href="/"></a>
+<a title="title" class="logoA logoA-bottom" href="/"></a>
 <ul class="contacts">
 <li class="contactsLi">
 <a class="contactsPhone Ag18 colorW" href="tel:4915225698736">+49 15225698736</a>

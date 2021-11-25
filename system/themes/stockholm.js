@@ -29,53 +29,51 @@ shch.addDetect = function () {
     }
 }
 
-shch.BS = function (cs, ps) {
+shch.BS = function (cs, ps, papa) {
     this.display = 0;
     this.i = 0;
-    this.controler = document.querySelectorAll(cs);
-    this.controlerDisolay = document.querySelectorAll(cs)[0]
-    this.controlerAll = document.querySelectorAll(cs).length;
-    this.passive = document.querySelectorAll(ps);
-    this.passivecurrent = document.querySelectorAll(ps)[0];
+    this.controler = papa.querySelectorAll(cs);
+    this.controlerDisplay = papa.querySelectorAll(cs)[0]
+    this.controlerAll = papa.querySelectorAll(cs).length;
+    this.passive = papa.querySelectorAll(ps);
+    this.passivecurrent = papa.querySelectorAll(ps)[0];
     this.moveBack = function (act, actLink) {
-        this.controlerDisolay.classList.remove(actLink);
+        this.controlerDisplay.classList.remove(actLink);
         this.passive[this.display].classList.remove(act);
         this.display--;
         if (this.display < 0) {
             this.display = 0;
         }
-        this.controlerDisolay = this.controler[this.display];
-        this.controlerDisolay.classList.add(actLink);
+        this.controlerDisplay = this.controler[this.display];
+        this.controlerDisplay.classList.add(actLink);
         this.passivecurrent = this.passive[this.display];
         this.passivecurrent.classList.add(act);
-        console.log(act);
     }
     this.back = function (selTag, act, actLink) {
         document.querySelector(selTag).addEventListener('click', this.moveBack.bind(this, act, actLink))
     }
     this.moveToward = function (act, actLink) {
-        this.controlerDisolay.classList.remove(actLink);
+        this.controlerDisplay.classList.remove(actLink);
         this.passive[this.display].classList.remove(act);
         this.display++;
         if (this.display === this.controlerAll) {
             this.display = this.controlerAll - 1;
         }
-        this.controlerDisolay = this.controler[this.display];
-        this.controlerDisolay.classList.add(actLink);
+        this.controlerDisplay = this.controler[this.display];
+        this.controlerDisplay.classList.add(actLink);
         this.passivecurrent = this.passive[this.display];
         this.passivecurrent.classList.add(act);
-        console.log(this.display);
     }
     this.toward = function (selTag, act, actLink) {
         document.querySelector(selTag).addEventListener('click', this.moveToward.bind(this, act, actLink))
     }
     this.setDisplay = function (id, actL, active) {
         this.display = id;
-        this.controlerDisolay.classList.remove(actL);
+        this.controlerDisplay.classList.remove(actL);
         this.passivecurrent.classList.remove(active);
         this.controler[id].classList.add(actL)
         this.passive[id].classList.add(active)
-        this.controlerDisolay = document.querySelectorAll(cs)[id]
+        this.controlerDisplay = papa.querySelectorAll(cs)[id]
         this.passivecurrent = this.passive[id];
     }
     this.addAct = function (actLink, actSelect) {
@@ -182,38 +180,43 @@ shch.watch = {
 
 shch.LoadFunc = function () {
 
-    shch.BSone = new shch.BS('.doA1', '.whatDidWe');
-    shch.BSone.addAct('doLinksActive', 'whatDidWeAct');
-
-    shch.BComp = new shch.BS('.doA2', '.biggerSlide');
-    shch.BComp.addAct('doLinksActive', 'biggerSlideAct');
-    shch.BComp.back('.OutL', 'biggerSlideAct', 'doLinksActive');
-    shch.BComp.toward('.OutR', 'biggerSlideAct', 'doLinksActive');
-    shch.MaxSlide = document.querySelectorAll('.outSlide');
-    shch.MaxSlide.all = shch.MaxSlide.length;
-    shch.MaxSlide.start = 0;
-    shch.BSImg = {};
-
-    for (; shch.MaxSlide.start < shch.MaxSlide.all; shch.MaxSlide.start++) {
-        shch.BSImg[shch.MaxSlide.start] = new shch.BS('.outL', '.outI');
-        shch.BSImg[shch.MaxSlide.start].addAct('doLinksActive', 'actInSlide');
-        shch.BSImg[shch.MaxSlide.start].back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
-        shch.BSImg[shch.MaxSlide.start].toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
+    shch.WWD = {}
+    shch.WWD.Papa = document.querySelectorAll('.Screen2');
+    shch.WWD.Papa.start = 0;
+    shch.WWD.Papa.all = shch.WWD.Papa.length;
+    for (; shch.WWD.Papa.start < shch.WWD.Papa.all; shch.WWD.Papa.start++) {
+        shch.WWD[shch.WWD.Papa.start] = new shch.BS('.doA', '.whatDidWe', shch.WWD.Papa[shch.WWD.Papa.start]);
+        shch.WWD[shch.WWD.Papa.start].addAct('doLinksActive', 'whatDidWeAct');
     }
 
+    shch.OP = {}
+    shch.OP.Papa = document.querySelectorAll('.Screen3');
+    shch.OP.Papa.start = 0;
+    shch.OP.Papa.all = shch.OP.Papa.length;
+    for (; shch.OP.Papa.start < shch.OP.Papa.all; shch.OP.Papa.start++) {
+        shch.OP[shch.OP.Papa.start] = new shch.BS('.doA', '.biggerSlide', shch.OP.Papa[shch.OP.Papa.start]);
+        shch.OP[shch.OP.Papa.start].addAct('doLinksActive', 'biggerSlideAct');
+    }
+
+    // shch.BComp = new shch.BS('.doA2', '.biggerSlide');
+    // shch.BComp.addAct('doLinksActive', 'biggerSlideAct');
+    // shch.BComp.back('.OutL', 'biggerSlideAct', 'doLinksActive');
+    // shch.BComp.toward('.OutR', 'biggerSlideAct', 'doLinksActive');
+    //
+    // shch.BSImg = new shch.BS('.outL', '.outI');
+    // shch.BSImg.addAct('doLinksActive', 'actInSlide');
+    // shch.BSImg.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
+    // shch.BSImg.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
+    //
     // shch.BSImg1 = new shch.BS('.outL1', '.outI1');
     // shch.BSImg1.addAct('doLinksActive', 'actInSlide');
     // shch.BSImg1.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
     // shch.BSImg1.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
-
+    //
     // shch.BSImg2 = new shch.BS('.outL2', '.outI2');
     // shch.BSImg2.addAct('doLinksActive', 'actInSlide');
     // shch.BSImg2.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
     // shch.BSImg2.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
-
-
-    shch.BSone = new shch.BS('.doA1', '.whatDidWe');
-    shch.BSone.addAct('doLinksActive', 'whatDidWeAct');
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
