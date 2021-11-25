@@ -148,7 +148,7 @@ Title: Home Language: en
 <img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outSlideImgAct outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
@@ -180,7 +180,7 @@ Title: Home Language: en
 <img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outSlideImgAct outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 <img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
