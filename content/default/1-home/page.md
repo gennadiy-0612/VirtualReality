@@ -307,7 +307,15 @@ Step 03
 Step 04
 </span>
 <p class="Ag18 stepsP colorGrey7">Development with regular reviews → </p>
-<p class="Ag18 stepsP colorW">Product versions </p></li>
+<p class="Ag18 stepsP colorW">Product versions </p>
+<div class="success-checkmark">
+  <div class="check-icon">
+    <span class="icon-line line-tip"></span>
+    <span class="icon-line line-long"></span>
+    <div class="icon-circle"></div>
+    <div class="icon-fix"></div>
+  </div>
+</div></li>
 <li class="five stepsBefore">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
