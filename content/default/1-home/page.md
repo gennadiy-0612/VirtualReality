@@ -258,6 +258,14 @@ Step 01
 </span>
 <p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs → </p>
 <p class="Ag18 stepsP colorW">Defined challenge</p></li>
+<div class="success-checkmark">
+  <div class="check-icon Rotate">
+    <span class="icon-line line-tip"></span>
+    <span class="icon-line line-long"></span>
+    <div class="icon-circle"></div>
+    <div class="icon-fix"></div>
+  </div>
+</div>
 <li class="two stepsBefore">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
@@ -265,7 +273,16 @@ Step 01
 Step 02
 </span>
 <p class="Ag18 stepsP colorGrey7">Solution options proposal → </p>
-<p class="Ag18 stepsP colorW">Requirements specification </p></li>
+<p class="Ag18 stepsP colorW">Requirements specification </p>
+<div class="success-checkmark">
+  <div class="check-icon">
+    <span class="icon-line line-tip"></span>
+    <span class="icon-line line-long"></span>
+    <div class="icon-circle"></div>
+    <div class="icon-fix"></div>
+  </div>
+</div>
+</li>
 <li class="three stepsBefore">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
@@ -273,7 +290,16 @@ Step 02
 Step 03
 </span>
 <p class="Ag18 stepsP colorGrey7">Cost & time estimation planning → </p>
-<p class="Ag18 stepsP colorW">Delivery planning</p></li>
+<p class="Ag18 stepsP colorW">Delivery planning</p>
+<div class="success-checkmark">
+  <div class="check-icon">
+    <span class="icon-line line-tip"></span>
+    <span class="icon-line line-long"></span>
+    <div class="icon-circle"></div>
+    <div class="icon-fix"></div>
+  </div>
+</div>
+</li>
 <li class="four stepsBefore">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
@@ -289,7 +315,16 @@ Step 04
 Step 05
 </span>
 <p class="Ag18 stepsP colorGrey7">Final review & evaluation →</p>
-<p class="Ag18 stepsP colorW">Final product & support</p></li>
+<p class="Ag18 stepsP colorW">Final product & support</p>
+<div class="success-checkmark">
+  <div class="check-icon">
+    <span class="icon-line line-tip"></span>
+    <span class="icon-line line-long"></span>
+    <div class="icon-circle"></div>
+    <div class="icon-fix"></div>
+  </div>
+</div>
+</li>
 </ol>
 <div class="partnersSet">
 <div class="partnersSetTop partnersSetH2 horizonLine horizonLinePartners">

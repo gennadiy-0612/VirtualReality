@@ -150,10 +150,6 @@ shch.watch = {
         selector: '.Approach',
         animationName: 'ApproachAnim'
     },
-    screen17: {
-        selector: '.Step',
-        animationName: 'StepAnim'
-    },
     screen18: {
         selector: '.Partner1',
         animationName: 'Partner1Anim'
@@ -177,6 +173,10 @@ shch.watch = {
     screen23: {
         selector: '.Partner6',
         animationName: 'Partner6Anim'
+    },
+    screen24: {
+        selector: '.Rotate',
+        animationName: 'RotateAnim'
     }
 }
 
@@ -189,18 +189,27 @@ shch.LoadFunc = function () {
     shch.BComp.addAct('doLinksActive', 'biggerSlideAct');
     shch.BComp.back('.OutL', 'biggerSlideAct', 'doLinksActive');
     shch.BComp.toward('.OutR', 'biggerSlideAct', 'doLinksActive');
+    shch.MaxSlide = document.querySelectorAll('.outSlide');
+    shch.MaxSlide.all = shch.MaxSlide.length;
+    shch.MaxSlide.start = 0;
+    shch.BSImg = {};
 
-    shch.BSImg1 = new shch.BS('.outL1', '.outI1');
-    shch.BSImg1.addAct('doLinksActive', 'actInSlide');
-    shch.BSImg1.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
-    shch.BSImg1.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
+    for (; shch.MaxSlide.start < shch.MaxSlide.all; shch.MaxSlide.start++) {
+        shch.BSImg[shch.MaxSlide.start] = new shch.BS('.outL', '.outI');
+        shch.BSImg[shch.MaxSlide.start].addAct('doLinksActive', 'actInSlide');
+        shch.BSImg[shch.MaxSlide.start].back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
+        shch.BSImg[shch.MaxSlide.start].toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
+    }
 
-    shch.BSImg2 = new shch.BS('.outL2', '.outI2');
-    shch.BSImg2.addAct('doLinksActive', 'actInSlide');
-    shch.BSImg2.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
-    shch.BSImg2.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
+    // shch.BSImg1 = new shch.BS('.outL1', '.outI1');
+    // shch.BSImg1.addAct('doLinksActive', 'actInSlide');
+    // shch.BSImg1.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
+    // shch.BSImg1.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
 
-
+    // shch.BSImg2 = new shch.BS('.outL2', '.outI2');
+    // shch.BSImg2.addAct('doLinksActive', 'actInSlide');
+    // shch.BSImg2.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
+    // shch.BSImg2.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
 
 
     shch.BSone = new shch.BS('.doA1', '.whatDidWe');
@@ -254,9 +263,6 @@ shch.LoadFunc = function () {
     shch.watch16 = new shch.addDetect();
     shch.watch16.checkVision(shch.watch.screen16);
 
-    shch.watch17 = new shch.addDetect();
-    shch.watch17.checkVision(shch.watch.screen17);
-
 
     shch.watch18 = new shch.addDetect();
     shch.watch18.checkVision(shch.watch.screen18);
@@ -275,6 +281,9 @@ shch.LoadFunc = function () {
 
     shch.watch23 = new shch.addDetect();
     shch.watch23.checkVision(shch.watch.screen23);
+
+    shch.watch24 = new shch.addDetect();
+    shch.watch24.checkVision(shch.watch.screen24);
 }
 
 window.addEventListener('load', shch.LoadFunc);
