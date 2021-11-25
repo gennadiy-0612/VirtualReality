@@ -283,7 +283,7 @@ Language: en
 </div>
 <div class="stepPartners">
 <ol class="steps Step">
-<li class="one stepsBefore">
+<li class="one stepsBefore StepToLeft">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
@@ -300,7 +300,7 @@ Step 01
   </div>
 </div>
 </li>
-<li class="two stepsBefore">
+<li class="two stepsBefore StepToRight">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
@@ -317,7 +317,7 @@ Step 02
   </div>
 </div>
 </li>
-<li class="three stepsBefore">
+<li class="three stepsBefore StepToLeft">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
@@ -334,7 +334,7 @@ Step 03
   </div>
 </div>
 </li>
-<li class="four stepsBefore">
+<li class="four stepsBefore StepToRight">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
@@ -350,7 +350,7 @@ Step 04
     <div class="icon-fix"></div>
   </div>
 </div></li>
-<li class="five stepsBefore">
+<li class="five stepsBefore StepToLeft">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>

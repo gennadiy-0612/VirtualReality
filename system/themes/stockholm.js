@@ -1,16 +1,16 @@
 /* use strict*/
 let shch = {};
-shch.addDetect = function () {
+shch.addDetect = function (inter) {
 
     this.checkVision = function (init) {
         const options = {
             rootMargins: '500px 0',
-            threshold: [0.1]
+            threshold: [inter]
         };
 
         function vdHandler(els) {
             els.forEach((data) => {
-                if (data.intersectionRatio > .01) {
+                if (data.intersectionRatio > inter) {
                     data.target.classList.add(init.animationName);
                 }
             });
@@ -172,6 +172,14 @@ shch.watch = {
     screen24: {
         selector: '.Rotate',
         animationName: 'RotateAnim'
+    },
+    screen25: {
+        selector: '.StepToRight',
+        animationName: 'StepToRightAnim'
+    },
+    screen26: {
+        selector: '.StepToLeft',
+        animationName: 'StepToLeftAnim'
     }
 }
 
@@ -218,75 +226,81 @@ shch.LoadFunc = function () {
         shch.OPMini[shch.OPMini.Papa.start].back('.inLinkLeft', 'actInSlide', 'outSlideImgAct');
     }
 
-    shch.watch1 = new shch.addDetect();
+    shch.watch1 = new shch.addDetect(.1);
     shch.watch1.checkVision(shch.watch.screen1);
 
-    shch.watch2 = new shch.addDetect();
+    shch.watch2 =  new shch.addDetect(.1);
     shch.watch2.checkVision(shch.watch.screen2);
 
-    shch.watch3 = new shch.addDetect();
+    shch.watch3 =  new shch.addDetect(.1);
     shch.watch3.checkVision(shch.watch.screen3);
 
-    shch.watch4 = new shch.addDetect();
+    shch.watch4 =  new shch.addDetect(.1);
     shch.watch4.checkVision(shch.watch.screen4);
 
-    shch.watch5 = new shch.addDetect();
+    shch.watch5 =  new shch.addDetect(.1);
     shch.watch5.checkVision(shch.watch.screen5);
 
-    shch.watch6 = new shch.addDetect();
+    shch.watch6 =  new shch.addDetect(.1);
     shch.watch6.checkVision(shch.watch.screen6);
 
-    shch.watch7 = new shch.addDetect();
+    shch.watch7 =  new shch.addDetect(.1);
     shch.watch7.checkVision(shch.watch.screen7);
 
-    shch.watch8 = new shch.addDetect();
+    shch.watch8 =  new shch.addDetect(.1);
     shch.watch8.checkVision(shch.watch.screen8);
 
-    shch.watch9 = new shch.addDetect();
+    shch.watch9 =  new shch.addDetect(.1);
     shch.watch9.checkVision(shch.watch.screen9);
 
-    shch.watch10 = new shch.addDetect();
+    shch.watch10 =  new shch.addDetect(.1);
     shch.watch10.checkVision(shch.watch.screen10);
 
-    shch.watch11 = new shch.addDetect();
+    shch.watch11 =  new shch.addDetect(.1);
     shch.watch11.checkVision(shch.watch.screen11);
 
-    shch.watch12 = new shch.addDetect();
+    shch.watch12 =  new shch.addDetect(.1);
     shch.watch12.checkVision(shch.watch.screen12);
 
-    shch.watch13 = new shch.addDetect();
+    shch.watch13 =  new shch.addDetect(.1);
     shch.watch13.checkVision(shch.watch.screen13);
 
-    shch.watch14 = new shch.addDetect();
+    shch.watch14 =  new shch.addDetect(.1);
     shch.watch14.checkVision(shch.watch.screen14);
 
-    shch.watch15 = new shch.addDetect();
+    shch.watch15 =  new shch.addDetect(.1);
     shch.watch15.checkVision(shch.watch.screen15);
 
-    shch.watch16 = new shch.addDetect();
+    shch.watch16 =  new shch.addDetect(.1);
     shch.watch16.checkVision(shch.watch.screen16);
 
 
-    shch.watch18 = new shch.addDetect();
+    shch.watch18 =  new shch.addDetect(.1);
     shch.watch18.checkVision(shch.watch.screen18);
 
-    shch.watch19 = new shch.addDetect();
+    shch.watch19 =  new shch.addDetect(.1);
     shch.watch19.checkVision(shch.watch.screen19);
 
-    shch.watch20 = new shch.addDetect();
+    shch.watch20 =  new shch.addDetect(.1);
     shch.watch20.checkVision(shch.watch.screen20);
 
-    shch.watch21 = new shch.addDetect();
+    shch.watch21 =  new shch.addDetect(.1);
     shch.watch21.checkVision(shch.watch.screen21);
 
-    shch.watch22 = new shch.addDetect();
+    shch.watch22 =  new shch.addDetect(.1);
     shch.watch22.checkVision(shch.watch.screen22);
 
-    shch.watch23 = new shch.addDetect();
+    shch.watch23 =  new shch.addDetect(.1);
     shch.watch23.checkVision(shch.watch.screen23);
 
-    shch.watch24 = new shch.addDetect();
+    shch.watch24 =  new shch.addDetect(.1);
     shch.watch24.checkVision(shch.watch.screen24);
+
+    shch.watch25 =  new shch.addDetect(.5);
+    shch.watch25.checkVision(shch.watch.screen25);
+
+    shch.watch26 =  new shch.addDetect(.5);
+    shch.watch26.checkVision(shch.watch.screen26);
 }
 
 window.addEventListener('load', shch.LoadFunc);
