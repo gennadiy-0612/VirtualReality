@@ -257,7 +257,7 @@ Language: en
 Step 01
 </span>
 <p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs → </p>
-<p class="Ag18 stepsP colorW">Defined challenge</p></li>
+<p class="Ag18 stepsP colorW">Defined challenge</p>
 <div class="success-checkmark">
   <div class="check-icon Rotate">
     <span class="icon-line line-tip"></span>
@@ -266,6 +266,7 @@ Step 01
     <div class="icon-fix"></div>
   </div>
 </div>
+</li>
 <li class="two stepsBefore">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
