@@ -1176,6 +1176,7 @@ a {
     background: url("img/appraochSteps.svg") 19.5% 97.4% no-repeat;
     background-size: 73.8%;
     counter-reset: section;
+    width: 100%;
 }
 
 .stepsP {
@@ -1490,6 +1491,7 @@ a {
 
     .steps {
         background-image: none;
+        max-width: 360px;
     }
 
     .stepsP {
@@ -1517,7 +1519,7 @@ a {
     }
 
     .StepToLeft {
-        transform: translateX(-20px);
+        transform: translateX(-10%);
         transition: transform .7s;
     }
 
@@ -1526,7 +1528,7 @@ a {
     }
 
     .StepToRight {
-        transform: translateX(20px);
+        transform: translateX(10%);
         transition: transform .7s;
     }
 
