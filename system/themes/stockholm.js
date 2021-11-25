@@ -1,7 +1,4 @@
 /* use strict*/
-/*! lazysizes - v5.3.2 */
-
-
 let shch = {};
 shch.addDetect = function () {
 
@@ -33,7 +30,7 @@ shch.BS = function (cs, ps, papa) {
     this.display = 0;
     this.i = 0;
     this.controler = papa.querySelectorAll(cs);
-    this.controlerDisplay = papa.querySelectorAll(cs)[0]
+    this.controlerDisplay = papa.querySelectorAll(cs)[0];
     this.controlerAll = papa.querySelectorAll(cs).length;
     this.passive = papa.querySelectorAll(ps);
     this.passivecurrent = papa.querySelectorAll(ps)[0];
@@ -50,9 +47,11 @@ shch.BS = function (cs, ps, papa) {
         this.passivecurrent.classList.add(act);
     }
     this.back = function (selTag, act, actLink) {
-        document.querySelector(selTag).addEventListener('click', this.moveBack.bind(this, act, actLink))
+       papa.querySelector(selTag).addEventListener('click', this.moveBack.bind(this, act, actLink))
     }
     this.moveToward = function (act, actLink) {
+        console.log(this)
+        console.log(this.display)
         this.controlerDisplay.classList.remove(actLink);
         this.passive[this.display].classList.remove(act);
         this.display++;
@@ -65,7 +64,7 @@ shch.BS = function (cs, ps, papa) {
         this.passivecurrent.classList.add(act);
     }
     this.toward = function (selTag, act, actLink) {
-        document.querySelector(selTag).addEventListener('click', this.moveToward.bind(this, act, actLink))
+        papa.querySelector(selTag).addEventListener('click', this.moveToward.bind(this, act, actLink))
     }
     this.setDisplay = function (id, actL, active) {
         this.display = id;
@@ -198,15 +197,32 @@ shch.LoadFunc = function () {
         shch.OP[shch.OP.Papa.start].addAct('doLinksActive', 'biggerSlideAct');
     }
 
-    // shch.BComp = new shch.BS('.doA2', '.biggerSlide');
-    // shch.BComp.addAct('doLinksActive', 'biggerSlideAct');
-    // shch.BComp.back('.OutL', 'biggerSlideAct', 'doLinksActive');
-    // shch.BComp.toward('.OutR', 'biggerSlideAct', 'doLinksActive');
-    //
+    shch.OPMove = {}
+    shch.OPMove.Papa = document.querySelectorAll('.Screen3');
+    shch.OPMove.Papa.start = 0;
+    shch.OPMove.Papa.all = shch.OPMove.Papa.length;
+    for (; shch.OPMove.Papa.start < shch.OPMove.Papa.all; shch.OPMove.Papa.start++) {
+        shch.OPMove[shch.OPMove.Papa.start] = new shch.BS('.doA', '.biggerSlide', shch.OPMove.Papa[shch.OPMove.Papa.start]);
+        shch.OPMove[shch.OPMove.Papa.start].addAct('doLinksActive', 'biggerSlideAct');
+        shch.OPMove[shch.OPMove.Papa.start].toward('.OutR', 'biggerSlideAct', 'doLinksActive');
+        shch.OPMove[shch.OPMove.Papa.start].back('.OutL', 'biggerSlideAct', 'doLinksActive');
+    }
+
+    shch.OPMoveMini = {}
+    shch.OPMoveMini.Papa = document.querySelectorAll('.SlideSetIn');
+    shch.OPMoveMini.Papa.start = 0;
+    shch.OPMoveMini.Papa.all = shch.OPMoveMini.Papa.length;
+    for (; shch.OPMoveMini.Papa.start < shch.OPMoveMini.Papa.all; shch.OPMoveMini.Papa.start++) {
+        shch.OPMoveMini[shch.OPMoveMini.Papa.start] = new shch.BS('.outL', '.outI', shch.OPMoveMini.Papa[shch.OPMoveMini.Papa.start]);
+        shch.OPMoveMini[shch.OPMoveMini.Papa.start].addAct('doLinksActive', 'actInSlide');
+        shch.OPMoveMini[shch.OPMoveMini.Papa.start].toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
+        shch.OPMoveMini[shch.OPMoveMini.Papa.start].back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
+    }
+
     // shch.BSImg = new shch.BS('.outL', '.outI');
     // shch.BSImg.addAct('doLinksActive', 'actInSlide');
-    // shch.BSImg.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
     // shch.BSImg.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
+    // shch.BSImg.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
     //
     // shch.BSImg1 = new shch.BS('.outL1', '.outI1');
     // shch.BSImg1.addAct('doLinksActive', 'actInSlide');
