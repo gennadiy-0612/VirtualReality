@@ -208,28 +208,15 @@ shch.LoadFunc = function () {
 
 
     shch.OPMini = {}
-    shch.OPMini.Papa = document.querySelectorAll('.Screen3 .outSlide');
+    shch.OPMini.Papa = document.querySelectorAll('.biggerSlide');
     shch.OPMini.Papa.start = 0;
     shch.OPMini.Papa.all = shch.OPMini.Papa.length;
     for (; shch.OPMini.Papa.start < shch.OPMini.Papa.all; shch.OPMini.Papa.start++) {
         shch.OPMini[shch.OPMini.Papa.start] = new shch.BS('.outSlideImg', '.outSlideBigImg', shch.OPMini.Papa[shch.OPMini.Papa.start]);
         shch.OPMini[shch.OPMini.Papa.start].addAct('outSlideImgAct', 'actInSlide');
+        shch.OPMini[shch.OPMini.Papa.start].toward('.inLinkRight', 'actInSlide', 'outSlideImgAct');
+        shch.OPMini[shch.OPMini.Papa.start].back('.inLinkLeft', 'actInSlide', 'outSlideImgAct');
     }
-
-    // shch.BSImg = new shch.BS('.outL', '.outI');
-    // shch.BSImg.addAct('doLinksActive', 'actInSlide');
-    // shch.BSImg.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
-    // shch.BSImg.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
-    //
-    // shch.BSImg1 = new shch.BS('.outL1', '.outI1');
-    // shch.BSImg1.addAct('doLinksActive', 'actInSlide');
-    // shch.BSImg1.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
-    // shch.BSImg1.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
-    //
-    // shch.BSImg2 = new shch.BS('.outL2', '.outI2');
-    // shch.BSImg2.addAct('doLinksActive', 'actInSlide');
-    // shch.BSImg2.back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
-    // shch.BSImg2.toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
 
     shch.watch1 = new shch.addDetect();
     shch.watch1.checkVision(shch.watch.screen1);
