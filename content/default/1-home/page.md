@@ -86,12 +86,13 @@ Language: en
 <ul id="ListPro" class="doLinks doLinks-project WhatWeDo">
 <li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey Ag24 doA doA-project doLinksActive DoAPro cursorPoint">01. safety</a></li>
 <li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey doA doA-project DoAPro Ag24 cursorPoint">02. defense</a></li>
+<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey doA doA-project DoAPro Ag24 cursorPoint">03. your project</a></li>
 </ul>
 <div id="outSlide" class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="#ListPro">
 <img class="arrowDirectionOut OutL" width="94" height="94" alt="arrowLeftIn" src="/media/images/img/arrowLeftOut.svg">
 </a>
-<div class="biggerSlide biggerSlideAct BigSlide0">
+<div class="biggerSlide biggerSlideAct">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">safety</h2>
 <ul class="outSlideUl">
@@ -123,11 +124,43 @@ Language: en
 </div>
 </div>
 </div>
-<div class="biggerSlide BigSlide1">
+<div class="biggerSlide">
 <div class="inSlideText">
 <h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">safety</h2>
 <ul class="outSlideUl">
 <li class="outSlideLi outSlideLi-1 blueLine blueLineLi colorW Ag18 lineHeight40">2 Interactive health and safety immersive training </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
+<li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>
+</ul>
+<a title="title" href="#ListPro" class="GoTo colorW Ag14 lineHeight30 upperText">learn more</a>
+</div>
+<div class="outSlideSet">
+<div class="SlideSetIn relative">
+<a class="inLinkLeft inLink" title="title" href="#ListPro">
+<img class="arrowDirectionIn arrowLeftIn cursorPoint hoverBigger" alt="arrowLeftIn" width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
+</a>
+<a class="inLinkRight inLink" title="title" href="#ListPro">
+<img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
+</a>
+<img class="outSlideBigImg outI2 actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
+</div>
+<div class="outSlideImages">
+<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+</div>
+</div>
+</div>
+<div class="biggerSlide">
+<div class="inSlideText">
+<h2 class="outSlideH2 colorW Ag36 lineHeight44 upperText WhatWeDo">safety</h2>
+<ul class="outSlideUl">
+<li class="outSlideLi outSlideLi-1 blueLine blueLineLi colorW Ag18 lineHeight40">3 Interactive health and safety immersive training </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Simulation of high risk, hazardous environments without any risk </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Replica of real-life locations, working tasks and equipment </li>
 <li class="outSlideLi blueLine blueLineLi colorW Ag18 lineHeight40">Multi-industry assignments Education and examination modes ...</li>

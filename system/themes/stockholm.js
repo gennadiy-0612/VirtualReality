@@ -30,6 +30,7 @@ shch.BS = function (cs, ps, papa) {
     this.display = 0;
     this.i = 0;
     this.controler = papa.querySelectorAll(cs);
+    // document.querySelectorAll('.SlideSetIn').querySelectorAll('.outSlideImg');
     this.controlerDisplay = papa.querySelectorAll(cs)[0];
     this.controlerAll = papa.querySelectorAll(cs).length;
     this.passive = papa.querySelectorAll(ps);
@@ -47,11 +48,9 @@ shch.BS = function (cs, ps, papa) {
         this.passivecurrent.classList.add(act);
     }
     this.back = function (selTag, act, actLink) {
-       papa.querySelector(selTag).addEventListener('click', this.moveBack.bind(this, act, actLink))
+        papa.querySelector(selTag).addEventListener('click', this.moveBack.bind(this, act, actLink))
     }
     this.moveToward = function (act, actLink) {
-        console.log(this)
-        console.log(this.display)
         this.controlerDisplay.classList.remove(actLink);
         this.passive[this.display].classList.remove(act);
         this.display++;
@@ -204,19 +203,20 @@ shch.LoadFunc = function () {
     for (; shch.OPMove.Papa.start < shch.OPMove.Papa.all; shch.OPMove.Papa.start++) {
         shch.OPMove[shch.OPMove.Papa.start] = new shch.BS('.doA', '.biggerSlide', shch.OPMove.Papa[shch.OPMove.Papa.start]);
         shch.OPMove[shch.OPMove.Papa.start].addAct('doLinksActive', 'biggerSlideAct');
-        shch.OPMove[shch.OPMove.Papa.start].toward('.OutR', 'biggerSlideAct', 'doLinksActive');
         shch.OPMove[shch.OPMove.Papa.start].back('.OutL', 'biggerSlideAct', 'doLinksActive');
+        shch.OPMove[shch.OPMove.Papa.start].toward('.OutR', 'biggerSlideAct', 'doLinksActive');
     }
 
-    shch.OPMoveMini = {}
-    shch.OPMoveMini.Papa = document.querySelectorAll('.SlideSetIn');
-    shch.OPMoveMini.Papa.start = 0;
-    shch.OPMoveMini.Papa.all = shch.OPMoveMini.Papa.length;
-    for (; shch.OPMoveMini.Papa.start < shch.OPMoveMini.Papa.all; shch.OPMoveMini.Papa.start++) {
-        shch.OPMoveMini[shch.OPMoveMini.Papa.start] = new shch.BS('.outL', '.outI', shch.OPMoveMini.Papa[shch.OPMoveMini.Papa.start]);
-        shch.OPMoveMini[shch.OPMoveMini.Papa.start].addAct('doLinksActive', 'actInSlide');
-        shch.OPMoveMini[shch.OPMoveMini.Papa.start].toward('.arrowRightIn', 'actInSlide', 'doLinksActive');
-        shch.OPMoveMini[shch.OPMoveMini.Papa.start].back('.arrowLeftIn', 'actInSlide', 'doLinksActive');
+
+    shch.OPMini = {}
+    shch.OPMini.Papa = document.querySelectorAll('.Screen3 .outSlide');
+    shch.OPMini.Papa.start = 0;
+    shch.OPMini.Papa.all = shch.OPMini.Papa.length;
+    for (; shch.OPMini.Papa.start < shch.OPMini.Papa.all; shch.OPMini.Papa.start++) {
+        shch.OPMini[shch.OPMini.Papa.start] = new shch.BS('.inLink', '.outSlideBigImg', shch.OPMini.Papa[shch.OPMini.Papa.start]);
+        shch.OPMini[shch.OPMini.Papa.start].addAct('doLinksActive', 'biggerSlideAct');
+        shch.OPMini[shch.OPMini.Papa.start].back('.arrowRightIn', 'actInSlide', 'doLinksActive');
+        shch.OPMini[shch.OPMini.Papa.start].toward('.arrowLeftIn', 'actInSlide', 'doLinksActive');
     }
 
     // shch.BSImg = new shch.BS('.outL', '.outI');
