@@ -39,7 +39,7 @@ shch.BS = function (cs, ps, papa) {
         this.passive[this.display].classList.remove(act);
         this.display--;
         if (this.display < 0) {
-            this.display = 0;
+            this.display = this.controlerAll - 1;
         }
         this.controlerDisplay = this.controler[this.display];
         this.controlerDisplay.classList.add(actLink);
@@ -54,7 +54,7 @@ shch.BS = function (cs, ps, papa) {
         this.passive[this.display].classList.remove(act);
         this.display++;
         if (this.display === this.controlerAll) {
-            this.display = this.controlerAll - 1;
+            this.display = 0;
         }
         this.controlerDisplay = this.controler[this.display];
         this.controlerDisplay.classList.add(actLink);
