@@ -213,10 +213,8 @@ shch.LoadFunc = function () {
     shch.OPMini.Papa.start = 0;
     shch.OPMini.Papa.all = shch.OPMini.Papa.length;
     for (; shch.OPMini.Papa.start < shch.OPMini.Papa.all; shch.OPMini.Papa.start++) {
-        shch.OPMini[shch.OPMini.Papa.start] = new shch.BS('.inLink', '.outSlideBigImg', shch.OPMini.Papa[shch.OPMini.Papa.start]);
-        shch.OPMini[shch.OPMini.Papa.start].addAct('doLinksActive', 'biggerSlideAct');
-        shch.OPMini[shch.OPMini.Papa.start].back('.arrowRightIn', 'actInSlide', 'doLinksActive');
-        shch.OPMini[shch.OPMini.Papa.start].toward('.arrowLeftIn', 'actInSlide', 'doLinksActive');
+        shch.OPMini[shch.OPMini.Papa.start] = new shch.BS('.outSlideImg', '.outSlideBigImg', shch.OPMini.Papa[shch.OPMini.Papa.start]);
+        shch.OPMini[shch.OPMini.Papa.start].addAct('outSlideImgAct', 'actInSlide');
     }
 
     // shch.BSImg = new shch.BS('.outL', '.outI');
