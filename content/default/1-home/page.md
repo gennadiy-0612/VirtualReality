@@ -288,9 +288,9 @@ Title: Home Language: en
 <span class="roadmap-item__title-decor-bottom"></span>
 Step 01
 </span>
-<p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs <span class="arrowDir">→</span> </p>
+<p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs <span class="arrowDir arrow">→</span> </p>
 
-<p class="Ag18 stepsP colorW">Defined challenge</p>
+<p class="Ag18 stepsP colorW mobile7">Defined challenge</p>
 <div class="success-checkmark">
   <div class="check-icon Rotate">
     <span class="icon-line line-tip"></span>
@@ -306,9 +306,9 @@ Step 01
 <span class="roadmap-item__title-decor-bottom"></span>
 Step 02
 </span>
-<p class="Ag18 stepsP colorGrey7">Solution options proposal <span class="arrowDir">→</span> </p>
+<p class="Ag18 stepsP colorGrey7">Solution options proposal <span class="arrowDir arrow">→</span> </p>
 
-<p class="Ag18 stepsP colorW">Requirements specification </p>
+<p class="Ag18 stepsP colorW mobile7">Requirements specification </p>
 <div class="success-checkmark">
   <div class="check-icon">
     <span class="icon-line line-tip"></span>
@@ -324,9 +324,9 @@ Step 02
 <span class="roadmap-item__title-decor-bottom"></span>
 Step 03
 </span>
-<p class="Ag18 stepsP colorGrey7">Cost & time estimation planning <span class="arrowDir">→</span> </p>
+<p class="Ag18 stepsP colorGrey7">Cost & time estimation planning <span class="arrowDir arrow">→</span> </p>
 
-<p class="Ag18 stepsP colorW">Delivery planning</p>
+<p class="Ag18 stepsP colorW mobile7">Delivery planning</p>
 <div class="success-checkmark">
   <div class="check-icon">
     <span class="icon-line line-tip"></span>
@@ -342,9 +342,9 @@ Step 03
 <span class="roadmap-item__title-decor-bottom"></span>
 Step 04
 </span>
-<p class="Ag18 stepsP colorGrey7">Development with regular reviews <span class="arrowDir">→</span> </p>
+<p class="Ag18 stepsP colorGrey7">Development with regular reviews <span class="arrowDir arrow">→</span> </p>
 
-<p class="Ag18 stepsP colorW">Product versions </p>
+<p class="Ag18 stepsP colorW mobile7">Product versions </p>
 <div class="success-checkmark">
   <div class="check-icon">
     <span class="icon-line line-tip"></span>
@@ -359,9 +359,9 @@ Step 04
 <span class="roadmap-item__title-decor-bottom"></span>
 Step 05
 </span>
-<p class="Ag18 stepsP colorGrey7">Final review & evaluation <span class="arrowDir">→</span></p>
+<p class="Ag18 stepsP colorGrey7">Final review & evaluation <span class="arrowDir arrow">→</span></p>
 
-<p class="Ag18 stepsP colorW">Final product & support</p>
+<p class="Ag18 stepsP colorW mobile7">Final product & support</p>
 <div class="success-checkmark">
   <div class="check-icon">
     <span class="icon-line line-tip"></span>

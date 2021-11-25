@@ -248,19 +248,19 @@ Language: ru
 <ol class="steps Step">
 <li class="one stepsBefore">
 <p class="Ag18 stepsP colorGrey7">Понимание<br/> ваших потребностей → </p>
-<p class="Ag18 stepsP colorW">Определенный вызов</p></li>
+<p class="Ag18 stepsP colorW mobile7">Определенный вызов</p></li>
 <li class="two stepsBefore">
 <p class="Ag18 stepsP colorGrey7">Предложение вариантов решения → </p>
-<p class="Ag18 stepsP colorW">Техническое задание </p></li>
+<p class="Ag18 stepsP colorW mobile7">Техническое задание </p></li>
 <li class="three stepsBefore">
 <p class="Ag18 stepsP colorGrey7">Планирование оценки затрат и времени → </p>
-<p class="Ag18 stepsP colorW">Планирование поставок</p></li>
+<p class="Ag18 stepsP colorW mobile7">Планирование поставок</p></li>
 <li class="four stepsBefore">
 <p class="Ag18 stepsP colorGrey7">Развитие с регулярными обзорами → </p>
-<p class="Ag18 stepsP colorW">Product versions </p></li>
+<p class="Ag18 stepsP colorW mobile7">Product versions </p></li>
 <li class="five stepsBefore">
 <p class="Ag18 stepsP colorGrey7">Варианты продукции →</p>
-<p class="Ag18 stepsP colorW">Конечный продукт и поддержка</p></li>
+<p class="Ag18 stepsP colorW mobile7">Конечный продукт и поддержка</p></li>
 </ol>
 <div class="partnersSet">
 <div class="partnersSetTop partnersSetH2 horizonLine horizonLinePartners">
