@@ -30,7 +30,6 @@ shch.BS = function (cs, ps, papa) {
     this.display = 0;
     this.i = 0;
     this.controler = papa.querySelectorAll(cs);
-    // document.querySelectorAll('.SlideSetIn').querySelectorAll('.outSlideImg');
     this.controlerDisplay = papa.querySelectorAll(cs)[0];
     this.controlerAll = papa.querySelectorAll(cs).length;
     this.passive = papa.querySelectorAll(ps);
