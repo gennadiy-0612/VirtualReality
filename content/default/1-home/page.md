@@ -143,10 +143,10 @@ Language: en
 <a class="inLinkRight inLink" title="title" href="#ListPro">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg outI2 actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
-<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
-<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
+<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
@@ -175,10 +175,10 @@ Language: en
 <a class="inLinkRight inLink" title="title" href="#ListPro">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg outI2 actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
-<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
-<img class="outSlideBigImg outI2 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
+<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
 <img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
