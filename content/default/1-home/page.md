@@ -289,7 +289,10 @@ Language: en
 <span class="roadmap-item__title-decor-bottom"></span>
 Step 01
 </span>
-<p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs → </p>
+<p class="Ag18 stepsP colorGrey7 ссс">Understanding<br/> of your needs → </p>
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.59916 7.90088L11.1582 9.45996L4.22061 16.3976H35V18.6025H4.22061L11.1582 25.54L9.59916 27.0991L0 17.5L9.59916 7.90088Z" fill="white"/>
+</svg>
 <p class="Ag18 stepsP colorW">Defined challenge</p>
 <div class="success-checkmark">
   <div class="check-icon Rotate">
