@@ -1467,6 +1467,10 @@ a {
 }
 
 @media (max-width: 576px) {
+    .doli-projects {
+        min-width: 100%;
+    }
+
     .doLinks {
         flex-wrap: wrap;
     }
