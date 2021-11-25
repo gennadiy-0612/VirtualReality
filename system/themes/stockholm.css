@@ -1521,7 +1521,7 @@ a {
     }
 
     .StepToLeft {
-        transform: translateX(-10%);
+        transform: translateX(-20%);
         transition: transform .7s;
     }
 
@@ -1530,7 +1530,7 @@ a {
     }
 
     .StepToRight {
-        transform: translateX(10%);
+        transform: translateX(20%);
         transition: transform .7s;
     }
 
