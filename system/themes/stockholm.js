@@ -180,6 +180,18 @@ shch.watch = {
     screen26: {
         selector: '.StepToLeft',
         animationName: 'StepToLeftAnim'
+    },
+    screen27: {
+        selector: '.check-icon',
+        animationName: 'birdAnim'
+    },
+    screen28: {
+        selector: '.success-checkmark',
+        animationName: 'birdAnim'
+    },
+    screen29: {
+        selector: '.icon-line',
+        animationName: 'birdAnim'
     }
 }
 
@@ -301,6 +313,15 @@ shch.LoadFunc = function () {
 
     shch.watch26 =  new shch.addDetect(.5);
     shch.watch26.checkVision(shch.watch.screen26);
+
+    shch.watch27 =  new shch.addDetect(.5);
+    shch.watch27.checkVision(shch.watch.screen27);
+
+    shch.watch28 =  new shch.addDetect(.5);
+    shch.watch28.checkVision(shch.watch.screen28);
+
+    shch.watch29 =  new shch.addDetect(.5);
+    shch.watch29.checkVision(shch.watch.screen29);
 }
 
 window.addEventListener('load', shch.LoadFunc);
