@@ -399,19 +399,19 @@ Step 05
 </div>
 <div class="forLine">
 <footer id="foot" class="a1440 foot horizonLine">
-<a title="title" class="logoA logoA-bottom" href="/"></a>
-<ul class="contacts">
+<a title="title" class="logoA logoA-bottom foot__item" href="/"></a>
+<ul class="contacts foot__item">
 <li class="contactsLi">
 <a class="contactsPhone Ag18 colorW" href="tel:4915225698736">+49 15225698736</a>
 </li>
 <li class="contactsLi">
 <a class="contactEmail Ag18 colorW" href="mailto:office@vr.consulting">office@vr.consulting</a></li>
 </ul>
-<p class="copyRight">
+<p class="copyRight foot__item">
 <span class="copyRightSpan CR Ag18 colorGrey8">© 2021</span>
 <span class="copyRightSpan Law Ag18 colorGrey8">All Rights Reserved</span>
 </p>
-<address class="address Ag18 colorGrey8">VR.Consulting Sp. z o.o., NIP: 7011030959
+<address class="address Ag18 colorGrey8 foot__item">VR.Consulting Sp. z o.o., NIP: 7011030959
 Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
 </footer>
 </div>
