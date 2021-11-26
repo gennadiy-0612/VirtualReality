@@ -953,7 +953,9 @@ a {
     height: 108px;
     background: url(/img/Virtual.svg) left center no-repeat;
     background-size: contain;
-    margin: 12px 0
+    margin: 12px 0;
+    filter: blur(1.2px);
+    opacity: 0.5;
 }
 
 .reality-word {
@@ -961,7 +963,9 @@ a {
     height: 105px;
     background: url(img/Reality.svg) right center no-repeat;
     background-size: contain;
-    margin: 16px 0
+    margin: 16px 0;
+    filter: blur(1.2px);
+    opacity: 0.5;
 }
 
 .frame {
@@ -1834,12 +1838,12 @@ a {
         border-radius: 20px;
     }
 
-    .one::before , .three::before , .five::before  {
+    .one::before, .three::before, .five::before {
         right: auto;
         left: -28%;
     }
 
-    .two::before , .four::before  {
+    .two::before, .four::before {
         left: auto;
         right: -28%;
     }
