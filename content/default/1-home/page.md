@@ -288,7 +288,7 @@ Title: Home Language: en
 <span class="roadmap-item__title-decor-bottom"></span>
 Step 01
 </span>
-<p class="Ag18 stepsP colorGrey7">Understanding<br/> of your needs <span class="arrowDir arrow">→</span> </p>
+<p class="Ag18 stepsP colorGrey7">Understanding of your needs <span class="arrowDir arrow">→</span> </p>
 
 <p class="Ag18 stepsP colorW mobile7">Defined challenge</p>
 <div class="success-checkmark">

@@ -572,7 +572,7 @@ li {
 
 .StepToLeft {
     transform: translateX(-20%);
-    transition: transform .7s
+    transition: transform .7s;
 }
 
 .StepToLeftAnim {
@@ -1565,7 +1565,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: center
+    align-self: stretch;
 }
 
 .approachH2 {
@@ -1808,6 +1808,57 @@ a {
 
     .contactsA {
         line-height: 30px
+    }
+}
+
+@media (min-width: 576px) {
+    .steps {
+        max-width: initial;
+    }
+
+    .stepsInfo {
+        margin: 0;
+        align-self: center;
+    }
+
+    .arrow {
+        transform: none;
+        display: initial;
+    }
+
+    .roadmap-item__title, .stepsP {
+        background-color: #000;
+        margin: 0 auto;
+    }
+
+    .steps::before {
+        height: 90%;
+    }
+
+    .success-checkmark {
+        width: 88px;
+    }
+
+    .StepToRight {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    .StepToRightAnim {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .StepToLeft {
+        opacity: 0;
+        transform: translateX(-110%);
+        transition-property: opacity, transform;
+    }
+
+    .StepToLeftAnim {
+        opacity: 1;
+        transition-property: opacity, transform;
+        transform: translateX(0);
     }
 }
 
