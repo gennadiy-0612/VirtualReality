@@ -110,16 +110,16 @@ Title: Home Language: en
 <a class="inLinkRight inLink" title="title" href="#ListPro">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg outI1 actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg outI1 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
-<img class="outSlideBigImg outI1 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
-<img class="outSlideBigImg outI1 FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
+<img class="outSlideBigImg outI1 actInSlide" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg outI1" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg outI1" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg outI1" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg outSlideImgAct outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg outL1 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outSlideImgAct outL1 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL1 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL1 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL1 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
@@ -142,16 +142,16 @@ Title: Home Language: en
 <a class="inLinkRight inLink" title="title" href="#ListPro">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
-<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
-<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
+<img class="outSlideBigImg actInSlide" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg outSlideImgAct outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outSlideImgAct outL2 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
@@ -174,16 +174,16 @@ Title: Home Language: en
 <a class="inLinkRight inLink" title="title" href="#ListPro">
 <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn" width="41" height="41" src="/media/images/img/arrowRightIn.svg">
 </a>
-<img class="outSlideBigImg actInSlide FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
-<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
-<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
-<img class="outSlideBigImg FromSmall" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
+<img class="outSlideBigImg actInSlide" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig1.png" data-src="/media/images/img/inSlideImgBig1.png">
+<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig2.png" data-src="/media/images/img/inSlideImgBig2.png">
+<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig3.png" data-src="/media/images/img/inSlideImgBig3.png">
+<img class="outSlideBigImg" alt="Alt" width="1080" height="450" src="/media/images/img/inSlideImgBig4.png" data-src="/media/images/img/inSlideImgBig4.png">
 </div>
 <div class="outSlideImages">
-<img alt="alt" class="outSlideImg outSlideImgAct outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
-<img alt="alt" class="outSlideImg outL2 FromSmall cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outSlideImgAct outL2 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
+<img alt="alt" class="outSlideImg outL2 cursorPoint hoverOpacity" src="/media/images/img/inSlideImg1.png">
 </div>
 </div>
 </div>
