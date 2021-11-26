@@ -30,8 +30,7 @@ Language: ru
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
 <picture class="topPoster">
-<source srcset="/media/images/img/topVideoPoster.webp" type="image/webp">
-<source srcset="/media/images/img/topVideoPoster.jpg" type="image/jpeg">
+<source srcset="/media/images/img/topVideoPoster.webp" media="(min-width: 600px)">
 <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
 </div>

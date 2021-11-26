@@ -29,8 +29,7 @@ Title: Home Language: en
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
 <picture class="topPoster">
-<source srcset="/media/images/img/topVideoPoster.webp" type="image/webp">
-<source srcset="/media/images/img/topVideoPoster.jpg" type="image/jpeg">
+<source srcset="/media/images/img/topVideoPoster.webp" media="(min-width: 600px)">
 <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
     </div>
@@ -56,22 +55,19 @@ Title: Home Language: en
 <ul class="whatDid">
 <li class="whatDidWe whatDidWeAct" id="whatDid1">
 <picture class="w100percents">
-<source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
-<source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
 </picture>
 </li>
 <li class="whatDidWe" id="whatDid2">
 <picture  class="w100percents">
-<source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
-<source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo2.png">
 </picture>
 </li>
 <li class="whatDidWe" id="whatDid3">
 <picture  class="w100percents">
-<source srcset="/media/images/img/WhatDoWeDo1.webp" type="image/webp">
-<source srcset="/media/images/img/WhatDoWeDo1.jpg" type="image/jpeg">
+<source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo3.png">
 </picture>
 </li>
@@ -275,8 +271,7 @@ Title: Home Language: en
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
 <picture>
-<source srcset="/media/images/img/PhasesAndOutput.webp" type="image/webp">
-<source srcset="/media/images/img/PhasesAndOutput.jpg" type="image/jpeg">
+<source srcset="/media/images/img/PhasesAndOutput.webp" media="(min-width: 600px)">
 <img alt="alt" width="289" height="1011" class="approachImg" src="/media/images/img/PhasesAndOutput.png">
 </picture>
 </div>
