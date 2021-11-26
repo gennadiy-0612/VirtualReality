@@ -1832,6 +1832,9 @@ a {
         max-width: initial;
     }
 
+    .steps::before {
+        content: none;
+    }
     .stepsInfo {
         position: relative;
         align-self: center;
