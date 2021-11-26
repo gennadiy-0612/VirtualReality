@@ -1547,10 +1547,10 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 4px;
+    width: 0;
+    margin: auto;
+    border: 3px dashed #777;
     height: 100%;
-    background-color: #777;
-    margin: auto
 }
 
 .stepsP {
@@ -1817,8 +1817,32 @@ a {
     }
 
     .stepsInfo {
-        margin: 0;
+        position: relative;
         align-self: center;
+        margin: 0 0 -140px 0;
+    }
+
+    .stepsInfo::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        background-color: #777777;
+        box-shadow: 0 0 30px #000000 inset;
+        border-radius: 15px;
+    }
+
+    .one::before , .three::before , .five::before  {
+        right: auto;
+        left: -28%;
+    }
+
+    .two::before , .four::before  {
+        left: auto;
+        right: -28%;
     }
 
     .arrow {
@@ -1829,6 +1853,10 @@ a {
     .roadmap-item__title, .stepsP {
         background-color: #000;
         margin: 0 auto;
+    }
+
+    .roadmap-item__title {
+        opacity: .5;
     }
 
     .steps::before {
@@ -1846,19 +1874,19 @@ a {
 
     .StepToRightAnim {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(-70%);
     }
 
     .StepToLeft {
         opacity: 0;
-        transform: translateX(-110%);
+        transform: translateX(-100%);
         transition-property: opacity, transform;
     }
 
     .StepToLeftAnim {
         opacity: 1;
         transition-property: opacity, transform;
-        transform: translateX(0);
+        transform: translateX(70%);
     }
 }
 
