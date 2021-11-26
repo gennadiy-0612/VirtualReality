@@ -186,7 +186,7 @@ li {
 .whatDidWeAct,
 .biggerSlideAct {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: .7s;
     animation-timing-function: ease-in-out
 }
 
@@ -864,18 +864,20 @@ a {
 .content,
 .main,
 .firstScreen {
-    width: 100%
-}
-
-.firstScreen {
-    padding-top: 0
+    width: 100%;
+    height: 100%;
 }
 
 .firstBack {
     max-width: 1920px;
     margin: auto;
     background: url(img/firstBack.svg) center 50px no-repeat;
-    background-size: contain
+    background-size: contain;
+    height: 82%;
+}
+
+.firstScreen {
+    padding-top: 0
 }
 
 .backWhite {
@@ -884,7 +886,7 @@ a {
 
 .topMenu {
     display: flex;
-    margin: 50px auto;
+    margin: 2.7% auto;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center
@@ -945,6 +947,7 @@ a {
     margin: auto;
     padding: 0 20px;
     width: 100%;
+    height: 41%;
     box-sizing: border-box
 }
 
@@ -1054,7 +1057,8 @@ a {
 .mouseBlock {
     padding: 0 20px;
     max-width: 1440px;
-    margin: auto
+    margin: auto;
+    height: 18%;
 }
 
 .VR {

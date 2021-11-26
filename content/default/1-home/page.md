@@ -24,7 +24,7 @@ Title: Home Language: en
     <div class="video a1440 FromSmall">
         <div class="playPanel">
         <div class="play">
-          <img alt="Demo" src="/media/images/img/playButton.svg">
+          <img class="triangle" alt="Demo" src="/media/images/img/playButton.svg">
         </div>
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
