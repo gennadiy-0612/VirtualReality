@@ -874,7 +874,7 @@ a {
 .firstBack {
     max-width: 1920px;
     margin: auto;
-    background: url(img/firstBack.svg) center 150px no-repeat;
+    background: url(img/firstBack.svg) center 50px no-repeat;
     background-size: contain
 }
 
@@ -1000,29 +1000,36 @@ a {
 
 .playPanel {
     position: absolute;
-    top: 40px;
+    top: 30%;
     left: 0;
-    bottom: 129px;
     right: 0;
     margin: auto;
-    width: 180px;
-    height: 180px;
-    z-index: 1
+    width: 10%;
+    height: 80%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .play {
-    width: 120px;
-    height: 120px;
-    border: 1px solid #FFF;
+    width: 82%;
+    height: 40%;
+    border: 3px solid #FFF;
     border-radius: 50%;
-    padding: 30px 20px 30px 40px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .playButton {
     margin-left: 20px
+}
+
+.triangle {
+    height: 50%;
+    width: 50%;
+    margin-right: -13%;
 }
 
 .watch {
@@ -1040,7 +1047,8 @@ a {
     width: 100%;
     height: 56.6%;
     object-fit: cover;
-    max-width: 1439px
+    max-width: 900px;
+    margin: auto;
 }
 
 .mouseBlock {
