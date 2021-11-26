@@ -910,7 +910,6 @@ a {
     object-fit: cover;
     height: 60.7%;
     display: none;
-    transition: opacity .7s;
 }
 
 .outSlideImg {
