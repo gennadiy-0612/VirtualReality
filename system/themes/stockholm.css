@@ -1760,7 +1760,7 @@ a {
     }
 
     .arrowDirectionOut {
-        margin-top: -65px
+        display: none;
     }
 
     .GoTo {
@@ -1793,10 +1793,6 @@ a {
 }
 
 @media (max-width: 1036px) {
-    .arrowDirectionOut {
-        display: none
-    }
-
     .inLink {
         top: 35.2%
     }
