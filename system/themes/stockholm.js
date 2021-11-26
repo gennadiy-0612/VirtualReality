@@ -234,7 +234,6 @@ shch.LoadFunc = function () {
         shch.OPMove[shch.OPMove.Papa.start].toward('.OutR', 'biggerSlideAct', 'doLinksActive');
     }
 
-
     shch.OPMini = {}
     shch.OPMini.Papa = document.querySelectorAll('.biggerSlide');
     shch.OPMini.Papa.start = 0;

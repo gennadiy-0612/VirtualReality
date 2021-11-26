@@ -341,7 +341,7 @@ li {
     opacity: 1;
     transition-property: opacity;
     transition-duration: .7s;
-    transition-delay: .7s;
+    transition-delay: .3s;
     transition-timing-function: ease;
 }
 
@@ -353,7 +353,7 @@ li {
     opacity: 1;
     transition-property: opacity;
     transition-duration: .7s;
-    transition-delay: .9s;
+    transition-delay: .6s;
     transition-timing-function: ease;
 }
 
@@ -365,7 +365,7 @@ li {
     opacity: 1;
     transition-property: opacity;
     transition-duration: .7s;
-    transition-delay: 1.3s;
+    transition-delay: .9s;
     transition-timing-function: ease;
 }
 
