@@ -245,7 +245,7 @@ Title: Home Language: en
 <div class="faceGlasses">
 <section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
 <div class="leftInfo">
-<h2 class="whyWork upperText Ag48 colorW WhoWeH2Right">Why to work with us?</h2>
+<h2 class="whyWork upperText Ag48 colorW WhoWeH2Left">Why to work with us?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>
 <ol class="WhoWeOl WhoWeOlLeft">
 <li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Business, IT, science, art and medicine</li>
@@ -282,7 +282,7 @@ Title: Home Language: en
 </div>
 <div class="stepPartners">
 <ol class="steps Step">
-<li class="one stepsBefore StepToLeft">
+<li class="one stepsInfo StepToLeft">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
@@ -300,7 +300,7 @@ Step 01
   </div>
 </div>
 </li>
-<li class="two stepsBefore StepToRight">
+<li class="two stepsInfo StepToRight">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
@@ -318,7 +318,7 @@ Step 02
   </div>
 </div>
 </li>
-<li class="three stepsBefore StepToLeft">
+<li class="three stepsInfo StepToLeft">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
@@ -336,7 +336,7 @@ Step 03
   </div>
 </div>
 </li>
-<li class="four stepsBefore StepToRight">
+<li class="four stepsInfo StepToRight">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
@@ -353,7 +353,7 @@ Step 04
     <div class="icon-fix"></div>
   </div>
 </div></li>
-<li class="five stepsBefore StepToLeft">
+<li class="five stepsInfo StepToLeft">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>

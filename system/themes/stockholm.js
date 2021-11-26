@@ -145,9 +145,17 @@ shch.watch = {
         selector: '.WhoWeH2Left',
         animationName: 'WhoWeH2LeftAnim'
     },
+    screen1511: {
+        selector: '.WhoWeOlLeft',
+        animationName: 'WhoWeOlLeftAnim'
+    },
     screen152: {
         selector: '.WhoWeH2Right',
         animationName: 'WhoWeH2RightAnim'
+    },
+    screen1521: {
+        selector: '.WhoWeOlRight',
+        animationName: 'WhoWeOlRightAnim'
     },
     screen16: {
         selector: '.Approach',
@@ -204,10 +212,6 @@ shch.watch = {
     screen30: {
         selector: '.mobile7',
         animationName: 'mobile7Anim'
-    },
-    screen31: {
-        selector: '.arrow',
-        animationName: 'arrowAnim'
     }
 }
 
@@ -301,8 +305,14 @@ shch.LoadFunc = function () {
     shch.watch151 = new shch.addDetect(.1);
     shch.watch151.checkVision(shch.watch.screen151);
 
+    shch.watch1511 = new shch.addDetect(.1);
+    shch.watch1511.checkVision(shch.watch.screen1511);
+
     shch.watch152 = new shch.addDetect(.5);
     shch.watch152.checkVision(shch.watch.screen152);
+
+    shch.watch1521 = new shch.addDetect(.5);
+    shch.watch1521.checkVision(shch.watch.screen1521);
 
     shch.watch16 = new shch.addDetect(.1);
     shch.watch16.checkVision(shch.watch.screen16);
@@ -346,9 +356,6 @@ shch.LoadFunc = function () {
 
     shch.watch30 = new shch.addDetect(.1);
     shch.watch30.checkVision(shch.watch.screen30);
-
-    shch.watch31 = new shch.addDetect(.1);
-    shch.watch31.checkVision(shch.watch.screen31);
 }
 
 window.addEventListener('load', shch.LoadFunc);

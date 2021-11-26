@@ -246,19 +246,19 @@ Language: ru
 </div>
 <div class="stepPartners">
 <ol class="steps Step">
-<li class="one stepsBefore">
+<li class="one stepsInfo">
 <p class="Ag18 stepsP colorGrey7">Понимание<br/> ваших потребностей → </p>
 <p class="Ag18 stepsP colorW mobile7">Определенный вызов</p></li>
-<li class="two stepsBefore">
+<li class="two stepsInfo">
 <p class="Ag18 stepsP colorGrey7">Предложение вариантов решения → </p>
 <p class="Ag18 stepsP colorW mobile7">Техническое задание </p></li>
-<li class="three stepsBefore">
+<li class="three stepsInfo">
 <p class="Ag18 stepsP colorGrey7">Планирование оценки затрат и времени → </p>
 <p class="Ag18 stepsP colorW mobile7">Планирование поставок</p></li>
-<li class="four stepsBefore">
+<li class="four stepsInfo">
 <p class="Ag18 stepsP colorGrey7">Развитие с регулярными обзорами → </p>
 <p class="Ag18 stepsP colorW mobile7">Product versions </p></li>
-<li class="five stepsBefore">
+<li class="five stepsInfo">
 <p class="Ag18 stepsP colorGrey7">Варианты продукции →</p>
 <p class="Ag18 stepsP colorW mobile7">Конечный продукт и поддержка</p></li>
 </ol>
