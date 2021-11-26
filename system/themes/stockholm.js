@@ -141,6 +141,14 @@ shch.watch = {
         selector: '.Dig4',
         animationName: 'Dig4Anim'
     },
+    screen151: {
+        selector: '.WhoWeH2Left',
+        animationName: 'WhoWeH2LeftAnim'
+    },
+    screen152: {
+        selector: '.WhoWeH2Right',
+        animationName: 'WhoWeH2RightAnim'
+    },
     screen16: {
         selector: '.Approach',
         animationName: 'ApproachAnim'
@@ -289,6 +297,12 @@ shch.LoadFunc = function () {
 
     shch.watch15 = new shch.addDetect(.1);
     shch.watch15.checkVision(shch.watch.screen15);
+
+    shch.watch151 = new shch.addDetect(.1);
+    shch.watch151.checkVision(shch.watch.screen151);
+
+    shch.watch152 = new shch.addDetect(.5);
+    shch.watch152.checkVision(shch.watch.screen152);
 
     shch.watch16 = new shch.addDetect(.1);
     shch.watch16.checkVision(shch.watch.screen16);

@@ -245,7 +245,7 @@ Title: Home Language: en
 <div class="faceGlasses">
 <section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
 <div class="leftInfo">
-<h2 class="whyWork upperText Ag48 colorW WhatWeDo">Why to work with us?</h2>
+<h2 class="whyWork upperText Ag48 colorW WhoWeH2Right">Why to work with us?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>
 <ol class="WhoWeOl WhoWeOlLeft">
 <li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Business, IT, science, art and medicine</li>
@@ -256,7 +256,7 @@ Title: Home Language: en
 </ol>
 </div>
 <div class="rightInfo">
-<h2 class="whyWork upperText Ag48 colorW WhatWeDo WhoWeH2Right">Who we are?</h2>
+<h2 class="whyWork upperText Ag48 colorW WhoWeH2Right">Who we are?</h2>
 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right">Unique expert team of:</h3>
 <ol class="WhoWeOl WhoWeOlRight">
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Management consultants</li>

@@ -369,6 +369,28 @@ li {
     transition: opacity, filter 1s ease 2.2s;
 }
 
+.WhoWeH2Right {
+    opacity: 0;
+}
+
+.WhoWeH2RightAnim {
+    transition: opacity .7s ease;
+    opacity: 1;
+}
+
+.WhoWeH2Left {
+    opacity: 0;
+}
+
+.WhoWeH2LeftAnim {
+    transition: opacity .7s ease .7s;
+    opacity: 1;
+}
+
+.WhoWeH2Left {
+    opacity: 1;
+}
+
 .Approach {
     opacity: 0;
 }
