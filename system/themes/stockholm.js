@@ -91,7 +91,7 @@ shch.watch = {
     },
     screenS3: {
         selector: '.FromLeftCorner2',
-        animationName: 'FromSmallTopAnim2'
+        animationName: 'FromLeftCornerAnim2'
     },
     screen1: {
         selector: '.Know',
