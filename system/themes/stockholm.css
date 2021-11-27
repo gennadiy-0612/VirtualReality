@@ -220,7 +220,7 @@ li {
     transform: translate(100px, 100px) scale(1.4);
 }
 
-.FromLeftCornerAnim2 {
+.FromLeftCorner2Anim {
     opacity: 1;
     transform: translate(0) scale(1);
     transition-duration: 1s;
@@ -233,7 +233,7 @@ li {
     transform: translate(100px, 100px) scale(1.4);
 }
 
-.FromLeftCornerAnim3 {
+.FromLeftCorner3Anim {
     opacity: 1;
     transform: translate(0) scale(1);
     transition-property: opacity, transform;
