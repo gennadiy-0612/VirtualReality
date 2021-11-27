@@ -223,7 +223,7 @@ li {
 .FromLeftCorner2Anim {
     transform: translate(0) scale(1);
     opacity: 1;
-    transition: opacity, transform ease-in-out 1s;
+    transition: opacity, transform 1s ease-in-out 1s;
 }
 
 .FromSmallTop {
