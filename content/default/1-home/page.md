@@ -18,7 +18,7 @@ Title: Home Language: en
         <div class="frame">
             <h2 class="opportunity colorW Ag24 FromLeftCorner">Unlock new opportunities with</h2>
             <div class="virtual-word FromLeftCorner2"></div>
-            <div class="reality-word FromLeftCorner3"></div>
+            <div class="reality-word FromLeftCorner2"></div>
         </div>
     </div>
     <div class="video a1440 FromSmallTop">

@@ -229,20 +229,6 @@ li {
     transition-delay: 1s;
 }
 
-.FromLeftCorner3 {
-    transform: translate(100px, 100px) scale(1.4);
-    opacity: 0;
-}
-
-.FromLeftCorner3Anim {
-    opacity: 1;
-    transform: translate(0) scale(1);
-    transition-property: opacity, transform;
-    transition-duration: 1s;
-    transition-timing-function: ease, ease-in-out;
-    transition-delay: 1s;
-}
-
 .FromSmallTop {
     opacity: 0;
     transform: scale(.4);
