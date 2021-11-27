@@ -205,12 +205,12 @@ li {
 
 .FromLeftCorner {
     opacity: 0;
-    transform: translate(100px, 100px) scale(1.4);
+    transform: translateY(0);
 }
 
 .FromLeftCornerAnim {
     opacity: 1;
-    transform: translate(0) scale(1);
+    transform: translateY(0);
     transition: opacity, transform ease-in-out 1s;
 }
 
@@ -223,9 +223,9 @@ li {
     transform: translate(0);
     opacity: 1;
     transition-property: opacity, transform;
-    transition-delay: 1s;
+    transition-delay: .5s;
     transition-timing-function: ease-in-out;
-    transition-duration: 1s;
+    transition-duration: .5s;
 }
 
 .FromSmallTop {
