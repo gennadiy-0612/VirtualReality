@@ -225,6 +225,16 @@ li {
     transform: translate(0) scale(1);
     transition: opacity, transform 1s ease-in-out 1s;
 }
+.FromLeftCorner3 {
+    opacity: 0;
+    transform: translate(100px, 100px) scale(1.4);
+}
+
+.FromLeftCornerAnim3 {
+    opacity: 1;
+    transform: translate(0) scale(1);
+    transition: opacity, transform 1s ease-in-out 1s;
+}
 
 .FromSmallTop {
     opacity: 0;
