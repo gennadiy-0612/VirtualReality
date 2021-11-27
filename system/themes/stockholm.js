@@ -81,6 +81,14 @@ shch.BS = function (cs, ps, papa) {
 }
 
 shch.watch = {
+    screenS1: {
+        selector: '.FromLeftCorner',
+        animationName: 'FromLeftCornerAnim'
+    },
+    screenS2: {
+        selector: '.FromSmallTop',
+        animationName: 'FromSmallTopAnim'
+    },
     screen1: {
         selector: '.Know',
         animationName: 'KnowAnim'
@@ -256,6 +264,12 @@ shch.LoadFunc = function () {
         shch.OPMini[shch.OPMini.Papa.start].toward('.inLinkRight', 'actInSlide', 'outSlideImgAct');
         shch.OPMini[shch.OPMini.Papa.start].back('.inLinkLeft', 'actInSlide', 'outSlideImgAct');
     }
+
+    shch.watchS1 = new shch.addDetect(.1);
+    shch.watchS1.checkVision(shch.watch.screenS1);
+
+    shch.watchS2 = new shch.addDetect(.1);
+    shch.watchS2.checkVision(shch.watch.screenS2);
 
     shch.watch1 = new shch.addDetect(.1);
     shch.watch1.checkVision(shch.watch.screen1);

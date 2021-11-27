@@ -15,13 +15,13 @@ Title: Home Language: en
         <a href="#Screen2" title="Demo" class="navy"></a>
     </header>
     <div class="mainTitle">
-        <div class="frame">
-            <h2 class="opportunity colorW Ag24 Know">Unlock new opportunities with</h2>
-            <div class="virtual-word VirtualWord"></div>
-            <div class="reality-word RealityWord"></div>
+        <div class="frame FromLeftCorner">
+            <h2 class="opportunity colorW Ag24">Unlock new opportunities with</h2>
+            <div class="virtual-word"></div>
+            <div class="reality-word"></div>
         </div>
     </div>
-    <div class="video a1440 FromSmall">
+    <div class="video a1440 FromSmallTop">
         <div class="playPanel">
         <div class="play">
           <img class="triangle" alt="Demo" src="/media/images/img/playButton.svg">

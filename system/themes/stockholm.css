@@ -204,6 +204,36 @@ li {
     overflow: hidden
 }
 
+.FromLeftCorner {
+    opacity: 0;
+    transform: translate(100px, 100px) scale(1.4);
+}
+
+.FromLeftCornerAnim {
+    opacity: 1;
+    transform: translate(0) scale(1);
+    transition: opacity, transform ease-in-out 1s;
+}
+.FromLeftCornerAnim {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+
+.FromSmallTop{
+    opacity: 0;
+    transform: scale(.4);
+}
+
+.FromSmallTopAnim {
+    opacity: 1;
+    transform: scale(1);
+    transition-property: opacity, transform;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+}
+
 .Know {
     opacity: 0
 }
@@ -951,6 +981,13 @@ a {
     box-sizing: border-box
 }
 
+.frame {
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 78.3%
+}
+
 .virtual-word {
     width: 100%;
     height: 108px;
@@ -969,13 +1006,6 @@ a {
     margin: 16px 0;
     filter: blur(1.2px);
     opacity: 0.5;
-}
-
-.frame {
-    margin: 0 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 78.3%
 }
 
 .opportunity {
@@ -1018,7 +1048,7 @@ a {
 .play {
     width: 82%;
     height: 40%;
-    border: 3px solid #FFF;
+    border: 2px solid #FFF;
     border-radius: 50%;
     display: flex;
     justify-content: center;
