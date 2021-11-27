@@ -216,11 +216,11 @@ li {
 
 .FromLeftCorner2 {
     opacity: 0;
-    transform: translate(200px, 100px) scale(1.4);
+    transform: translateY(200px);
 }
 
 .FromLeftCorner2Anim {
-    transform: translate(0) scale(1);
+    transform: translate(0);
     opacity: 1;
     transition-property: opacity, transform;
     transition-delay: 1s;
