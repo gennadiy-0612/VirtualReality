@@ -237,7 +237,7 @@ li {
     opacity: 1;
     transform: scale(1);
     transition-property: opacity, transform;
-    transition-delay: 1s;
+    transition-delay: 1.5s;
     transition-timing-function: ease-in-out;
     transition-duration: .5s;
 }
