@@ -211,7 +211,7 @@ li {
 .FromLeftCornerAnim {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity, transform ease-in-out 1s;
+    transition: opacity, transform ease-in-out .5s;
 }
 
 .FromLeftCorner2 {
@@ -223,7 +223,7 @@ li {
     transform: translate(0);
     opacity: 1;
     transition-property: opacity, transform;
-    transition-delay: .5s;
+    transition-delay: .7s;
     transition-timing-function: ease-in-out;
     transition-duration: .5s;
 }
