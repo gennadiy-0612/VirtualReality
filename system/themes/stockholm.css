@@ -201,7 +201,6 @@ li {
 
 .frame {
     max-width: 100vw;
-    overflow: hidden
 }
 
 .FromLeftCorner {
@@ -921,6 +920,7 @@ a {
 
 .firstScreen {
     padding-top: 0;
+    overflow: hidden
 }
 
 .backWhite {
