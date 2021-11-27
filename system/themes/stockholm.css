@@ -216,7 +216,7 @@ li {
 
 .FromLeftCorner2 {
     opacity: 0;
-    transform: translate(100px, 100px) scale(1.4);
+    transform: translate(200px, 100px) scale(1.4);
 }
 
 .FromLeftCorner2Anim {
