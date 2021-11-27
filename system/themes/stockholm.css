@@ -993,8 +993,6 @@ a {
     background: url(/img/Virtual.svg) left center no-repeat;
     background-size: contain;
     margin: 12px 0;
-    filter: blur(1.2px);
-    opacity: 0.5;
 }
 
 .reality-word {
@@ -1003,8 +1001,6 @@ a {
     background: url(img/Reality.svg) right center no-repeat;
     background-size: contain;
     margin: 16px 0;
-    filter: blur(1.2px);
-    opacity: 0.5;
 }
 
 .opportunity {
@@ -1103,7 +1099,9 @@ a {
     opacity: .3;
     display: flex;
     width: 100%;
-    justify-content: space-around
+    justify-content: space-around;
+    filter: blur(1.2px);
+    opacity: 0.5;
 }
 
 .V {
