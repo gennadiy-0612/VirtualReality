@@ -10,15 +10,15 @@ hr,
     display: none
 }
 
-html {
-    scroll-behavior: smooth
-}
-
 html,
 body {
     height: 100%;
     width: 100%;
-    margin: 0
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 p {
@@ -223,7 +223,21 @@ li {
     transform: translate(0);
     opacity: 1;
     transition-property: opacity, transform;
-    transition-delay: .7s;
+    transition-delay: .5s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+}
+
+.FromSmallTop1 {
+    opacity: 0;
+    transform: scale(.4);
+}
+
+.FromSmallTop1Anim {
+    opacity: 1;
+    transform: scale(1);
+    transition-property: opacity, transform;
+    transition-delay: 1s;
     transition-timing-function: ease-in-out;
     transition-duration: .5s;
 }

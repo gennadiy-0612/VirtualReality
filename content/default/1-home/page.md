@@ -21,7 +21,7 @@ Title: Home Language: en
             <div class="reality-word FromLeftCorner2"></div>
         </div>
     </div>
-    <div class="video a1440 FromSmallTop">
+    <div class="video a1440 FromSmallTop1">
         <div class="playPanel">
         <div class="play">
           <img class="triangle" alt="Demo" src="/media/images/img/playButton.svg">

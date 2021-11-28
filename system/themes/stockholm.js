@@ -85,6 +85,10 @@ shch.watch = {
         selector: '.FromLeftCorner',
         animationName: 'FromLeftCornerAnim'
     },
+    screenS21: {
+        selector: '.FromSmallTop1',
+        animationName: 'FromSmallTop1Anim'
+    },
     screenS2: {
         selector: '.FromSmallTop',
         animationName: 'FromSmallTopAnim'
@@ -278,6 +282,9 @@ shch.LoadFunc = function () {
 
     shch.watchS2 = new shch.addDetect(.1);
     shch.watchS2.checkVision(shch.watch.screenS2);
+
+    shch.watchS21 = new shch.addDetect(.1);
+    shch.watchS21.checkVision(shch.watch.screenS21);
 
     shch.watchS3 = new shch.addDetect(.1);
     shch.watchS3.checkVision(shch.watch.screenS3);
