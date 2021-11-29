@@ -986,7 +986,9 @@ a {
 .whatDid {
  position:relative;
  display:flex;
- justify-content:space-between
+ justify-content:space-between;
+ height:814px;
+ align-items:center
 }
 .doLinks {
  display:flex;
@@ -1012,16 +1014,24 @@ a {
  border-bottom:1px solid #FFF
 }
 .whatDidWe {
- /*! display:none */flex:0 0 0;
+ /*! display:none */
+ transition-property:flex,height;
+ transition-duration:1s;
+ flex:0 0 2%;
+ height:30%;
+ overflow:hidden
 }
 .whatDidWeAct {
  display:block;
- /*! height: 300px; */flex:0 0 100%;
- transition: flex 1s;
+ height:100%;
+ flex:0 0 90%;
+ /*! transition: flex 1s; */
+
 }
 .WhatDoImg {
  max-width:1438px;
- /*! height:56.6%; */object-fit:cover
+ /*! height:56.6%; */
+ object-fit:cover
 }
 .doImages {
  margin:26px auto 89px
