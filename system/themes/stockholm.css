@@ -4,6 +4,10 @@
     src: url("fonts/HeliosExtC Regular.otf") format("otf")
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header,
 hr,
 .hide > h2 {
@@ -15,10 +19,6 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 p {
@@ -211,7 +211,7 @@ li {
 .FromLeftCornerAnim {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity, transform ease-in-out .5s;
+    transition: opacity, transform ease-in-out .7s;
 }
 
 .FromLeftCorner2 {
@@ -225,7 +225,7 @@ li {
     transition-property: opacity, transform;
     transition-delay: .4s;
     transition-timing-function: ease-in-out;
-    transition-duration: .5s;
+    transition-duration: .7s;
 }
 
 .FromSmallTop1 {
@@ -912,7 +912,7 @@ a {
     background-color: #000
 }
 
-.page,
+/*.page,*/
 .content,
 .main,
 .firstScreen {
