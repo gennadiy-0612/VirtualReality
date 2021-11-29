@@ -322,7 +322,7 @@ shch.LoadFunc = function () {
     shch.watch10 = new shch.addDetect(.1);
     shch.watch10.checkVision(shch.watch.screen10);
 
-    shch.watch11 = new shch.addDetect(.5);
+    shch.watch11 = new shch.addDetect(.9);
     shch.watch11.checkVision(shch.watch.screen11);
 
     shch.watch12 = new shch.addDetect(.1);
@@ -343,7 +343,7 @@ shch.LoadFunc = function () {
     shch.watch1511 = new shch.addDetect(.1);
     shch.watch1511.checkVision(shch.watch.screen1511);
 
-    shch.watch152 = new shch.addDetect(.5);
+    shch.watch152 = new shch.addDetect(.9);
     shch.watch152.checkVision(shch.watch.screen152);
 
     shch.watch1521 = new shch.addDetect(.5);
