@@ -345,7 +345,7 @@ li {
 .BadTrainingAnim {
  filter:brightness(1) blur(0);
  opacity:1;
- transition:opacity,filter 1s ease 2.2s
+ transition:opacity,filter 1s ease 1.2s
 }
 .WhoWeH2Left {
  opacity:0
@@ -927,11 +927,10 @@ a {
  text-shadow:0 0 2px #000
 }
 .topPoster {
- width:100%;
- height:56.6%;
- object-fit:cover;
- max-width:900px;
- margin:auto
+ max-height: 337px;
+ object-fit: cover;
+ max-width: 620px;
+ margin: auto;
 }
 .mouseBlock {
  padding:0 20px;
