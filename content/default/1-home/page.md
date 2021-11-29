@@ -240,9 +240,9 @@ Title: Home Language: en
 </div>
 <div class="faceGlasses">
 <section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
-<div class="leftInfo">
-<h2 class="whyWork upperText Ag48 colorW WhoWeH2Left">Why to work with us?</h2>
-<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH2Left">We offer you more than an IT firm does:</h3>
+<div class="leftInfo WhoWeH2Left">
+<h2 class="whyWork upperText Ag48 colorW">Why to work with us?</h2>
+<h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>
 <ol class="WhoWeOl WhoWeOlLeft">
 <li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Business, IT, science, art and medicine</li>
 <li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">Front-to-back solutions</li>
@@ -251,10 +251,10 @@ Title: Home Language: en
 <li class="Ag18 blueLine WhoWeText blueLine colorW WhoWeLi0">We focus on solving your business needs</li>
 </ol>
 </div>
-<div class="rightInfo">
-<h2 class="whyWork upperText Ag48 colorW WhoWeH2R WhoWeH2Right">Who we are?</h2>
-<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH2Right">Unique expert team of:</h3>
-<ol class="WhoWeOl WhoWeOlRight">
+<div class="rightInfo WhoWeH2Right">
+<h2 class="whyWork upperText Ag48 colorW WhoWeH2R">Who we are?</h2>
+<h3 class="colorW Ag24 upperText WhoWeH3">Unique expert team of:</h3>
+<ol class="WhoWeOl">
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Management consultants</li>
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Hardware and software experts</li>
 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Graphic and sound designers</li>
