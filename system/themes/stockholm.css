@@ -1019,7 +1019,10 @@ a {
  transition-duration:1s;
  flex:0 0 2%;
  height:30%;
- overflow:hidden
+ overflow:hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .whatDidWeAct {
  display:block;
