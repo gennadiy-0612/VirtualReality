@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Virtual" uploadOnCheckin="14992d53-375b-41ee-b4e0-ef7be8bcd473">
+  <component name="PublishConfigData" serverName="Virtual">
     <serverData>
       <paths name="Virtual">
         <serverdata>
@@ -23,6 +23,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="vrFast" />
   </component>
 </project>
