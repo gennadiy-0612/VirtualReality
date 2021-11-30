@@ -21,7 +21,7 @@ Title: Home Language: en
             <div class="reality-word FromLeftCorner2"></div>
         </div>
     </div>
-    <p class="video a1440 FromSmallTop1">
+    <div class="video a1440 FromSmallTop1">
         <div class="playPanel">
         <div class="play">
           <img class="triangle" alt="Demo" src="/media/images/img/playButton.svg">
@@ -32,11 +32,11 @@ Title: Home Language: en
 <source srcset="/media/images/img/topVideoPoster.webp" media="(min-width: 600px)">
 <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
-    </p>
-<p class="VR">
+    </div>
+<div class="VR">
     <img class="V" alt="Demo" src="/media/images/img/V.svg">
     <img class="R" alt="Demo" src="/media/images/img/R.svg">
-</p>
+</div>
 </div>
 </div>
 <div class="mouseBlock a1440"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
