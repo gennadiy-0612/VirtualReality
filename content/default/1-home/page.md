@@ -52,26 +52,26 @@ Title: Home Language: en
 </ul>
 </div>
 <div class="doImages FromSmall">
-<div class="whatDid">
-<p class="whatDidWe whatDidWeAct" id="whatDid1">
+<ul class="whatDid">
+<li class="whatDidWe whatDidWeAct" id="whatDid1">
 <picture>
 <source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
 </picture>
-</p>
-<p class="whatDidWe" id="whatDid2">
+</li>
+<li class="whatDidWe" id="whatDid2">
 <picture>
 <source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo2.png">
 </picture>
-</p>
-<p class="whatDidWe" id="whatDid3">
+</li>
+<li class="whatDidWe" id="whatDid3">
 <picture>
 <source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo3.png">
 </picture>
-</p>
-</div>
+</li>
+</ul>
 </div>
 </section>
 <section class="Screen3 Slides">
