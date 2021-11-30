@@ -887,27 +887,31 @@ a {
     flex-direction:column
 }
 .playPanel {
-    position:absolute;
-    top:30%;
-    left:0;
-    right:0;
-    margin:auto;
-    width:10%;
-    height:80%;
-    z-index:1;
-    display:flex;
-    flex-direction:column;
-    align-items:center
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10%;
+    height: 80%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
 }
 .play {
-    width:82%;
-    height:40%;
-    border:2px solid #FFF;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-shadow:0 0 2px #000
+    width: 13vh;
+    height: 13vh;
+    max-width: 140px;
+    max-height: 140px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px #000;
 }
 .playButton {
     margin-left:20px
