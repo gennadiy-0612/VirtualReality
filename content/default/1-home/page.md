@@ -21,7 +21,7 @@ Title: Home Language: en
             <div class="reality-word FromLeftCorner2"></div>
         </div>
     </div>
-    <div class="video a1440 FromSmallTop1">
+    <p class="video a1440 FromSmallTop1">
         <div class="playPanel">
         <div class="play">
           <img class="triangle" alt="Demo" src="/media/images/img/playButton.svg">
@@ -32,11 +32,11 @@ Title: Home Language: en
 <source srcset="/media/images/img/topVideoPoster.webp" media="(min-width: 600px)">
 <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
 </picture>
-    </div>
-<div class="VR">
+    </p>
+<p class="VR">
     <img class="V" alt="Demo" src="/media/images/img/V.svg">
     <img class="R" alt="Demo" src="/media/images/img/R.svg">
-</div>
+</p>
 </div>
 </div>
 <div class="mouseBlock a1440"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
@@ -52,26 +52,26 @@ Title: Home Language: en
 </ul>
 </div>
 <div class="doImages FromSmall">
-<ul class="whatDid">
-<li class="whatDidWe whatDidWeAct" id="whatDid1">
+<div class="whatDid">
+<p class="whatDidWe whatDidWeAct" id="whatDid1">
 <picture>
 <source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
 </picture>
-</li>
-<li class="whatDidWe" id="whatDid2">
+</p>
+<p class="whatDidWe" id="whatDid2">
 <picture>
 <source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo2.png">
 </picture>
-</li>
-<li class="whatDidWe" id="whatDid3">
+</p>
+<p class="whatDidWe" id="whatDid3">
 <picture>
 <source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo3.png">
 </picture>
-</li>
-</ul>
+</p>
+</div>
 </div>
 </section>
 <section class="Screen3 Slides">
