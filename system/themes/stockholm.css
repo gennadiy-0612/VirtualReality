@@ -778,7 +778,7 @@ a {
  margin:auto;
  background:url(img/firstBack.svg) center 50px no-repeat;
  background-size:contain;
- height:82%
+ height:93vh;
 }
 .firstScreen {
  padding-top:0;
@@ -847,10 +847,10 @@ a {
  box-sizing:border-box
 }
 .frame {
- margin: 0 auto;
- display: flex;
- flex-direction: column;
- width: 71%;
+ margin:0 auto;
+ display:flex;
+ flex-direction:column;
+ width:71%
 }
 .virtual-word {
  width:100%;
@@ -927,16 +927,18 @@ a {
  text-shadow:0 0 2px #000
 }
 .topPoster {
- max-height: 337px;
- object-fit: cover;
- max-width: 620px;
- margin: auto;
+ max-height:337px;
+ object-fit:cover;
+ max-width:620px;
+ margin:auto
 }
 .mouseBlock {
  padding:0 20px;
  max-width:1440px;
  margin:auto;
- height:18%
+ height:7vh;
+ display: flex;
+ align-items: center;
 }
 .VR {
  position:absolute;
@@ -1019,9 +1021,9 @@ a {
  flex:0 0 2%;
  height:30%;
  overflow:hidden;
- display: flex;
- justify-content: center;
- align-items: center;
+ display:flex;
+ justify-content:center;
+ align-items:center
 }
 .whatDidWeAct {
  display:block;
