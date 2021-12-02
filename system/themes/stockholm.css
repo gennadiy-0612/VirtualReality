@@ -204,12 +204,12 @@ li {
 }
 
 .Frame {
-    transform: scale(1.9) translate(67.2%,56%);
+    transform: scale(1.9) translate(0, 56%);
 }
 
 .FrameAnim {
     transition: transform .7s cubic-bezier(1, 0.99, 0, -0.01);
-    transform: scale(.5) translate(0,0);
+    transform: scale(.5) translate(0, 0);
 }
 
 /*.FromLeftCorner {*/
@@ -1007,6 +1007,7 @@ a {
 
 .frame {
     max-width: 500px;
+    margin: auto;
     display: flex;
     flex-direction: column;
 }
