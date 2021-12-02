@@ -81,6 +81,10 @@ shch.BS = function (cs, ps, papa) {
 }
 
 shch.watch = {
+    screenS01: {
+        selector: '.Frame',
+        animationName: 'FrameAnim'
+    },
     screenS1: {
         selector: '.FromLeftCorner',
         animationName: 'FromLeftCornerAnim'
@@ -276,6 +280,9 @@ shch.LoadFunc = function () {
         shch.OPMini[shch.OPMini.Papa.start].toward('.inLinkRight', 'actInSlide', 'outSlideImgAct');
         shch.OPMini[shch.OPMini.Papa.start].back('.inLinkLeft', 'actInSlide', 'outSlideImgAct');
     }
+
+    shch.watchS01 = new shch.addDetect(.1);
+    shch.watchS01.checkVision(shch.watch.screenS01);
 
     shch.watchS1 = new shch.addDetect(.1);
     shch.watchS1.checkVision(shch.watch.screenS1);
