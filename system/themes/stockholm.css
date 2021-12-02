@@ -204,12 +204,12 @@ li {
 }
 
 .Frame {
-    transition: transform .7s ease-in-out;
-    transform: scale(1.9) translate(67.2%, 36%);
+    transform: scale(1.9) translate(67.2%,56%);
 }
 
 .FrameAnim {
-    transform: scale(.5) translate(0, 0);
+    transition: transform .7s cubic-bezier(1, 0.99, 0, -0.01);
+    transform: scale(.5) translate(0,0);
 }
 
 /*.FromLeftCorner {*/
