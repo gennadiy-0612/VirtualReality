@@ -1209,10 +1209,10 @@ a {
 }
 
 .whatDidWe {
-    transition-property: flex, height;
+    transition-property: flex,height;
     transition-duration: 1s;
-    flex: 0 0 14.6%;
-    height: 78%;
+    flex: 0 0 2%;
+    height: 40%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -1222,7 +1222,7 @@ a {
 .whatDidWeAct {
     display: block;
     height: 100%;
-    flex: 0 0 70%;
+    flex: 0 0 94%;
 
 }
 
