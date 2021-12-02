@@ -204,12 +204,12 @@ li {
 }
 
 .Frame {
-    transition: transform .7s;
-    transform: scale(1.9) translate(0,36%);
+    transition: transform .7s ease-in-out;
+    transform: scale(1.9) translate(67.2%, 36%);
 }
 
 .FrameAnim {
-    transform: scale(.5) translate(-190%,-60%);
+    transform: scale(.5) translate(0, 0);
 }
 
 /*.FromLeftCorner {*/
@@ -996,16 +996,17 @@ a {
 .mainTitle {
     display: flex;
     flex-direction: column;
-    max-width: 1310px;
-    margin: auto;
+    max-width: 1740px;
     padding: 0 20px;
     width: 100%;
     height: 14%;
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin: auto;
+    justify-content: center;
 }
 
 .frame {
-    margin: 0 auto;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -1015,7 +1016,6 @@ a {
     max-height: 108px;
     background: url(/img/Virtual.svg) left center no-repeat;
     background-size: contain;
-    margin: 12px 0;
     height: 9.8vh;
 }
 
