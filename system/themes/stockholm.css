@@ -1868,6 +1868,10 @@ a {
     .mobile {
         display: none
     }
+
+    .stepsInfo {
+        width: 354px;
+    }
 }
 
 @media (max-width: 1036px) {
@@ -1928,13 +1932,13 @@ a {
     .three::before,
     .five::before {
         right: auto;
-        left: -28%
+        left: -27.9%
     }
 
     .two::before,
     .four::before {
         left: auto;
-        right: -28%
+        right: -29%
     }
 
     .arrow {
