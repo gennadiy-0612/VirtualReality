@@ -1209,22 +1209,20 @@ a {
 }
 
 .whatDidWe {
-    /*! display:none */
     transition-property: flex, height;
     transition-duration: 1s;
-    flex: 0 0 2%;
-    height: 30%;
+    flex: 0 0 14.6%;
+    height: 78%;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .whatDidWeAct {
     display: block;
     height: 100%;
-    flex: 0 0 90%;
-    /*! transition: flex 1s; */
+    flex: 0 0 70%;
 
 }
 
@@ -1841,10 +1839,6 @@ a {
         display: none
     }
 
-    .GoTo {
-        margin-bottom: 0
-    }
-
     .inSlideText {
         display: flex;
         flex-direction: column;
@@ -1902,6 +1896,12 @@ a {
 
     .contactsA {
         line-height: 30px
+    }
+}
+
+@media (max-width: 992px) {
+    .foot {
+        flex-direction: column
     }
 }
 
