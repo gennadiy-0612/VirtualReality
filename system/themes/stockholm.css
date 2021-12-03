@@ -582,26 +582,6 @@ li {
     transition-duration: .7s
 }
 
-.one {
-    margin: 120px 0
-}
-
-.two {
-    margin: 120px 0
-}
-
-.three {
-    margin: 120px 0
-}
-
-.four {
-    margin: 120px 0
-}
-
-.five {
-    margin: 120px 0
-}
-
 .partnersSetIcons {
     justify-content: center
 }
@@ -930,7 +910,9 @@ a {
 
 .firstScreen {
     padding-top: 0;
-    overflow: hidden
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .backWhite {
@@ -942,7 +924,9 @@ a {
     margin: 2.7% auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .mainLinks {
@@ -1046,10 +1030,11 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    padding-top: 21px;
-    padding-bottom: 21px;
     flex-direction: column;
     height: 64%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .playPanel {
@@ -1107,6 +1092,8 @@ a {
     object-fit: cover;
     max-width: 1440px;
     margin: auto;
+    height: 100%;
+    width: 100%;
 }
 
 .mouseBlock {
@@ -1163,6 +1150,10 @@ a {
     letter-spacing: 4.6px
 }
 
+.Screen2 {
+    height: 100%;
+}
+
 .doInfo {
     display: flex;
     flex-wrap: wrap;
@@ -1173,7 +1164,7 @@ a {
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 814px;
+    height: 78vh;
     align-items: center
 }
 
@@ -1224,7 +1215,7 @@ a {
 
 .WhatDoImg {
     max-width: 1438px;
-    /*! height:56.6%; */
+    height: 90%;
     object-fit: cover
 }
 
@@ -1455,7 +1446,7 @@ a {
 .badUl {
     padding: 32px 37px 37px;
     column-count: 2;
-    column-gap: 47px
+    column-gap: 47px;
 }
 
 .goodLi,
@@ -1899,6 +1890,11 @@ a {
     .foot {
         flex-direction: column
     }
+
+    .goodUl,
+    .badUl {
+        column-count: 1;
+    }
 }
 
 @media (min-width: 576px) {
@@ -1984,6 +1980,10 @@ a {
 }
 
 @media (max-width: 576px) {
+    .Ag48 {
+        font-size: 20px;
+    }
+
     .two::before,
     .four::before,
     .one::before,
@@ -2017,6 +2017,10 @@ a {
     .outSlideLeft,
     .outSlideRight {
         margin: 0
+    }
+
+    .approachImg {
+        display: none
     }
 }
 
