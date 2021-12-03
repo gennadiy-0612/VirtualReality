@@ -168,7 +168,7 @@ li {
  transform:scale(1.9) translate(0,56%)
 }
 .FrameAnim {
- transition:transform .7s cubic-bezier(.35,.34,.58,.59);
+ transition: transform .7s cubic-bezier(.22,.61,.36,1);
  transform:scale(0.8) translate(0,0);
 }
 .FromSmallTop1 {
