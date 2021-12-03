@@ -600,21 +600,27 @@ li {
 }
 
 .StepToLeft {
+    opacity: 0;
     transform: translateX(-20%);
-    transition: transform .7s
 }
 
 .StepToLeftAnim {
-    transform: translateX(0)
+    opacity: 1;
+    transform: translateX(0);
+    transition-property: transform, opacity;
+    transition-duration: .7s;
 }
 
 .StepToRight {
+    opacity: 0;
     transform: translateX(20%);
-    transition: transform .7s
+    transition-property: transform, opacity;
+    transition-duration: .7s;
 }
 
 .StepToRightAnim {
-    transform: translateX(0)
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .roadmap-item__title {
