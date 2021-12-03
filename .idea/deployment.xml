@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Virtual">
+  <component name="PublishConfigData" uploadOnCheckin="14992d53-375b-41ee-b4e0-ef7be8bcd473">
     <serverData>
-      <paths name="Virtual">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/www/ppp.in.ua" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-          <excludedPaths>
-            <excludedPath path="/www/ppp.in.ua/system/extensions/yellow-system.ini" />
-            <excludedPath path="/www/ppp.in.ua/.htaccess" />
-            <excludedPath path="/www/ppp.in.ua/system/extensions/yellow-system.ini" />
-            <excludedPath path="/www/ppp.in.ua/system/extensions/yellow-user.ini" />
-          </excludedPaths>
-        </serverdata>
-      </paths>
       <paths name="vrFast">
         <serverdata>
           <mappings>
@@ -23,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="vrFast" />
   </component>
 </project>
