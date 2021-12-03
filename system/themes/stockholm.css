@@ -771,8 +771,7 @@ li {
 }
 
 .success-checkmark .birdAnim.check-icon::after {
-    animation-delay: 3s;
-    animation: rotate-circle 4.25s ease-in
+    animation: rotate-circle 4.25s ease-in 1s
 }
 
 .success-checkmark .check-icon::before,
@@ -801,8 +800,7 @@ li {
 }
 
 .success-checkmark.birdAnim .check-icon .icon-line.line-tip {
-    animation-delay: 3s;
-    animation: icon-line-tip 0.75s
+    animation: icon-line-tip 0.75s 1s;
 }
 
 .success-checkmark .check-icon .icon-line.line-long {
@@ -813,8 +811,7 @@ li {
 }
 
 .success-checkmark .check-icon .icon-line.line-long.birdAnim {
-    animation-delay: 3s;
-    animation: icon-line-long 0.75s
+    animation: icon-line-long 0.75s 1s
 }
 
 .success-checkmark .check-icon .icon-circle {
