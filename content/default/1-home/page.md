@@ -7,7 +7,7 @@ Title: Home Language: en
         <div class="mainLinks">
             <a class="logoA" href="/"></a>
             <ul class="languageSet">
-                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="./">EN</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC active" href=".****/">EN</a></li>
                 <li class="language verticalLine"><a class="languageText HeliosExtC" href="./ru/">RU</a></li>
                 <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
             </ul>
@@ -54,22 +54,19 @@ Title: Home Language: en
 <div class="doImages FromSmall">
 <ul class="whatDid">
 <li class="whatDidWe whatDidWeAct" id="whatDid1">
-<picture>
-<source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
+<a class="ImgA" title="t" href="#doLinks">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
-</picture>
+</a>
 </li>
 <li class="whatDidWe" id="whatDid2">
-<picture>
-<source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
+<a class="ImgA" title="t" href="#doLinks">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo2.png">
-</picture>
+</a>
 </li>
 <li class="whatDidWe" id="whatDid3">
-<picture>
-<source srcset="/media/images/img/WhatDoWeDo1.webp" media="(min-width: 600px)">
+<a class="ImgA" title="t" href="#doLinks">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo3.png">
-</picture>
+</a>
 </li>
 </ul>
 </div>
@@ -190,7 +187,7 @@ Title: Home Language: en
 </section>
 <div class="Digits">
 <section id="S4" class="WhyVR">
-<div class="a1440">
+<div class="a1440 DigitsScreen">
 <h2 class="WhyVRH2 upperText Ag48 colorW horizonLine WhatWeDo">why vr?</h2>
 <ul class="digits">
 <li class="digitsLi digits1 Dig1">
@@ -269,22 +266,22 @@ Title: Home Language: en
 <div class="approach horizonLine">
 <div class="approachOl Approach">
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
-<h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3Right approachH3">Phases and output:</h3>
 <picture>
 <source srcset="/media/images/img/PhasesAndOutput.webp" media="(min-width: 600px)">
 <img alt="alt" width="289" height="1011" class="approachImg" src="/media/images/img/PhasesAndOutput.png">
 </picture>
 </div>
 <div class="stepPartners">
-<ol class="steps Step">
-<li class="one stepsInfo StepToLeft">
+<h3 class="colorW Ag24 upperText WhoWeH3 approachH3">Phases and output:</h3>
+<div class="steps Step">
+<div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
-Step 01
+01
 </span>
+<div class="one stepsInfo StepToLeft">
 <p class="Ag18 stepsP colorGrey7">Understanding of your needs <span class="arrowDir arrow">→</span> </p>
-
 <p class="Ag18 stepsP colorW mobile7">Defined challenge</p>
 <div class="success-checkmark">
   <div class="check-icon Rotate">
@@ -294,13 +291,15 @@ Step 01
     <div class="icon-fix"></div>
   </div>
 </div>
-</li>
-<li class="two stepsInfo StepToRight">
+</div>
+</div>
+<div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
-Step 02
+02
 </span>
+<div class="two stepsInfo StepToRight">
 <p class="Ag18 stepsP colorGrey7">Solution options proposal <span class="arrowDir arrow">→</span> </p>
 
 <p class="Ag18 stepsP colorW mobile7">Requirements specification </p>
@@ -312,13 +311,15 @@ Step 02
     <div class="icon-fix"></div>
   </div>
 </div>
-</li>
-<li class="three stepsInfo StepToLeft">
+</div>
+</div>
+<div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
-Step 03
+03
 </span>
+<div class="three stepsInfo StepToLeft">
 <p class="Ag18 stepsP colorGrey7">Cost & time estimation planning <span class="arrowDir arrow">→</span> </p>
 
 <p class="Ag18 stepsP colorW mobile7">Delivery planning</p>
@@ -330,13 +331,15 @@ Step 03
     <div class="icon-fix"></div>
   </div>
 </div>
-</li>
-<li class="four stepsInfo StepToRight">
+</div>
+</div>
+<div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
-Step 04
+04
 </span>
+<div class="four stepsInfo StepToRight">
 <p class="Ag18 stepsP colorGrey7">Development with regular reviews <span class="arrowDir arrow">→</span> </p>
 
 <p class="Ag18 stepsP colorW mobile7">Product versions </p>
@@ -347,13 +350,15 @@ Step 04
     <div class="icon-circle"></div>
     <div class="icon-fix"></div>
   </div>
-</div></li>
-<li class="five stepsInfo StepToLeft">
+</div></div>
+</div>
+<div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span>
-Step 05
+05
 </span>
+<div class="five stepsInfo StepToLeft">
 <p class="Ag18 stepsP colorGrey7">Final review & evaluation <span class="arrowDir arrow">→</span></p>
 
 <p class="Ag18 stepsP colorW mobile7">Final product & support</p>
@@ -365,8 +370,9 @@ Step 05
     <div class="icon-fix"></div>
   </div>
 </div>
-</li>
-</ol>
+</div>
+</div>
+</div>
 <div class="partnersSet">
 <div class="partnersSetTop partnersSetH2 horizonLine horizonLinePartners">
 <h2 class="partnersSetText whatDo upperText Ag48 colorW WhatWeDo">OUR PARTNERS</h2>

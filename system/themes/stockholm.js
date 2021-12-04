@@ -149,6 +149,10 @@ shch.watch = {
         selector: '.BadTraining',
         animationName: 'BadTrainingAnim'
     },
+    screenDigits: {
+        selector: '.DigitsScreen',
+        animationName: 'DigitsScreenAnim'
+    },
     screen12: {
         selector: '.Dig1',
         animationName: 'Dig1Anim'
@@ -250,6 +254,15 @@ shch.LoadFunc = function () {
         shch.WWD[shch.WWD.Papa.start].addAct('doLinksActive', 'whatDidWeAct');
     }
 
+    shch.WWDA = {}
+    shch.WWDA.Papa = document.querySelectorAll('.Screen2');
+    shch.WWDA.Papa.start = 0;
+    shch.WWDA.Papa.all = shch.WWDA.Papa.length;
+    for (; shch.WWDA.Papa.start < shch.WWDA.Papa.all; shch.WWDA.Papa.start++) {
+        shch.WWDA[shch.WWDA.Papa.start] = new shch.BS('.ImgA', '.whatDidWe', shch.WWDA.Papa[shch.WWDA.Papa.start]);
+        shch.WWDA[shch.WWDA.Papa.start].addAct('doLinksActive', 'whatDidWeAct');
+    }
+
     shch.OP = {}
     shch.OP.Papa = document.querySelectorAll('.Screen3');
     shch.OP.Papa.start = 0;
@@ -331,6 +344,9 @@ shch.LoadFunc = function () {
 
     shch.watch11 = new shch.addDetect(.9);
     shch.watch11.checkVision(shch.watch.screen11);
+
+    shch.watch120 = new shch.addDetect(.5);
+    shch.watch120.checkVision(shch.watch.screenDigits);
 
     shch.watch12 = new shch.addDetect(.1);
     shch.watch12.checkVision(shch.watch.screen12);
