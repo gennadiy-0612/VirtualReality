@@ -179,7 +179,6 @@ li {
  opacity:1;
  transform:translateY(0) scale(1);
  transition-property:opacity,transform;
- transition-delay:.8s;
  transition-timing-function:ease-in-out;
  transition-duration:.5s
 }
