@@ -246,7 +246,7 @@ li {
     transition-property: opacity, transform;
     transition-timing-function: ease-in-out;
     transition-duration: .5s;
-    transition-delay: 1s;
+    transition-delay: 1.3s;
 }
 
 .FromSmallTop {
@@ -1406,12 +1406,12 @@ a {
 }
 
 .DigitsScreen {
-    margin-top: 50vh;
+    transform: translateY(40vh);
 }
 
 .DigitsScreenAnim {
-    transition: margin-top 1s;
-    margin-top: 0;
+    transform: translateY(0);
+    transition: transform 1s;
 }
 
 .WhyVRH2 {
@@ -1703,7 +1703,7 @@ a {
 }
 
 .approachH3 {
-    margin: 68px 0 47px;
+    margin: 68px 0 -100px;
 }
 
 .approachImg {
