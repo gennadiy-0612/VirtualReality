@@ -206,12 +206,14 @@ li {
 }
 
 .Frame {
-    transform: translate3d(4vw, 39%, 3vw);
+    opacity: 0;
+    transform: translate3d(4.1vw, 44%, 4.6vw);
     max-width: 500px;
 }
 
 .FrameAnim {
-    transition: transform, max-width;
+    opacity: 1;
+    transition-property: transform, opacity;
     transition-duration: .7s;
     transition-timing-function: cubic-bezier(.22, .61, .36, 1);
     transform: translate3d(0, 0, 0);
