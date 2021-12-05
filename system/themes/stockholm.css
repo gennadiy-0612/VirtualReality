@@ -207,17 +207,32 @@ li {
 
 .Frame {
     opacity: 0;
-    transform: translate3d(4.1vw, 44%, 4.6vw);
-    max-width: 500px;
+    /*transform: translate3d(4.1vw, 44%, 4.6vw);*/
 }
 
 .FrameAnim {
     opacity: 1;
-    transition-property: transform, opacity;
-    transition-duration: .7s;
-    transition-timing-function: cubic-bezier(.22, .61, .36, 1);
-    transform: translate3d(0, 0, 0);
-    max-width: 370px;
+    /*transition-property: transform, opacity;*/
+    /*transition-duration: .7s;*/
+    /*transition-timing-function: cubic-bezier(.22, .61, .36, 1);*/
+    /*transform: translate3d(0, 0, 0);*/
+    /*max-width: 370px;*/
+    animation: title 2s cubic-bezier(.22, .61, .36, 1);
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+        transform: translate3d(4.1vw, 44%, 4.6vw);
+    }
+    70% {
+        opacity: 1;
+        transform: translate3d(4.1vw, 44%, 4.6vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .FromSmallTop1 {
@@ -231,6 +246,7 @@ li {
     transition-property: opacity, transform;
     transition-timing-function: ease-in-out;
     transition-duration: .5s;
+    transition-delay: 1s;
 }
 
 .FromSmallTop {
