@@ -1233,7 +1233,8 @@ a {
 }
 
 .whatDidWe {
-    transition-property: flex, height;
+    transform: scale(1);
+    transition-property: flex, height, transform;
     transition-duration: 1s;
     flex: 0 0 2%;
     height: 40%;
@@ -1241,6 +1242,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.whatDidWe:not(.whatDidWeAct):hover {
+    transform: scale(1.5);
 }
 
 .ImgA {
