@@ -1406,7 +1406,7 @@ a {
 }
 
 .WhyVR {
-    padding-top: 40vh;
+    padding-top: 30vh;
     transition-property: padding-top;
     transition-duration: 1.5s;
     transition-timing-function: ease-in-out

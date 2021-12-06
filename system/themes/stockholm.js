@@ -234,22 +234,21 @@ shch.digits = {
                 document.querySelector('.BadTraining').classList.add('BadTrainingAnim')
                 setTimeout(function () {
                     shch.digits.step = 2
-                }, 500);
+                }, 2000);
             }
         }
         if (shch.digits.step === 2) {
-            window.scrollBy(0, shch.digits.scroll);
             let papa = document.querySelector(".Digits");
             let son = document.querySelector(".WhyVR");
             let intViewportHeight = window.innerHeight / 20;
             let topPos = papa.offsetTop + intViewportHeight;
-            if (topPos < window.pageYOffset) {
+            if (shch.digits.step === 2) {
                 son.classList.add('WhyVRAnim');
+                // window.scrollBy(0, shch.digits.scroll);
                 shch.digits.start = 0;
+                shch.digits.step = 3
             }
-            shch.digits.step = 3
         }
-        console.log(shch.digits.start)
     }
 }
 shch.LoadFunc = function () {
