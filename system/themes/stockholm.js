@@ -34,6 +34,7 @@ shch.BS = function (cs, ps, papa) {
     this.controlerAll = papa.querySelectorAll(cs).length;
     this.passive = papa.querySelectorAll(ps);
     this.passivecurrent = papa.querySelectorAll(ps)[0];
+    this.more = '';
     this.moveBack = function (act, actLink) {
         this.controlerDisplay.classList.remove(actLink);
         this.passive[this.display].classList.remove(act);
@@ -74,6 +75,13 @@ shch.BS = function (cs, ps, papa) {
         this.passivecurrent = this.passive[id];
     }
     this.addAct = function (actLink, actSelect) {
+        for (; this.i < this.controlerAll; this.i++) {
+            this.controler[this.i].addEventListener('click', this.setDisplay.bind(this, this.i, actLink, actSelect))
+        }
+    }
+    this.actMore = function (actLink, actSelect) {
+        console.clear()
+        console.log('gsfdg')
         for (; this.i < this.controlerAll; this.i++) {
             this.controler[this.i].addEventListener('click', this.setDisplay.bind(this, this.i, actLink, actSelect))
         }
@@ -260,15 +268,7 @@ shch.LoadFunc = function () {
     for (; shch.WWD.Papa.start < shch.WWD.Papa.all; shch.WWD.Papa.start++) {
         shch.WWD[shch.WWD.Papa.start] = new shch.BS('.doA', '.whatDidWe', shch.WWD.Papa[shch.WWD.Papa.start]);
         shch.WWD[shch.WWD.Papa.start].addAct('doLinksActive', 'whatDidWeAct');
-    }
-
-    shch.WWDA = {}
-    shch.WWDA.Papa = document.querySelectorAll('.Screen2');
-    shch.WWDA.Papa.start = 0;
-    shch.WWDA.Papa.all = shch.WWDA.Papa.length;
-    for (; shch.WWDA.Papa.start < shch.WWDA.Papa.all; shch.WWDA.Papa.start++) {
-        shch.WWDA[shch.WWDA.Papa.start] = new shch.BS('.ImgA', '.whatDidWe', shch.WWDA.Papa[shch.WWDA.Papa.start]);
-        shch.WWDA[shch.WWDA.Papa.start].addAct('doLinksActive', 'whatDidWeAct');
+        shch.WWD[shch.WWD.Papa.start].actMore('.whatDidWe', '.whatDidWeAct');
     }
 
     shch.OP = {}

@@ -266,10 +266,6 @@ Title: Home Language: en
 <div class="approach horizonLine">
 <div class="approachOl Approach">
 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
-<picture>
-<source srcset="/media/images/img/PhasesAndOutput.webp" media="(min-width: 600px)">
-<img alt="alt" width="289" height="1011" class="approachImg" src="/media/images/img/PhasesAndOutput.png">
-</picture>
 </div>
 <div class="stepPartners">
 <h3 class="colorW Ag24 upperText WhoWeH3 approachH3">Phases and output:</h3>
@@ -277,9 +273,7 @@ Title: Home Language: en
 <div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
-<span class="roadmap-item__title-decor-bottom"></span>
-01
-</span>
+<span class="roadmap-item__title-decor-bottom"></span></span>
 <div class="one stepsInfo StepToLeft">
 <p class="Ag18 stepsP colorGrey7">Understanding of your needs <span class="arrowDir arrow">→</span> </p>
 <p class="Ag18 stepsP colorW mobile7">Defined challenge</p>
@@ -296,9 +290,7 @@ Title: Home Language: en
 <div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
-<span class="roadmap-item__title-decor-bottom"></span>
-02
-</span>
+<span class="roadmap-item__title-decor-bottom"></span></span>
 <div class="two stepsInfo StepToRight">
 <p class="Ag18 stepsP colorGrey7">Solution options proposal <span class="arrowDir arrow">→</span> </p>
 
@@ -316,9 +308,7 @@ Title: Home Language: en
 <div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
-<span class="roadmap-item__title-decor-bottom"></span>
-03
-</span>
+<span class="roadmap-item__title-decor-bottom"></span></span>
 <div class="three stepsInfo StepToLeft">
 <p class="Ag18 stepsP colorGrey7">Cost & time estimation planning <span class="arrowDir arrow">→</span> </p>
 
@@ -336,9 +326,7 @@ Title: Home Language: en
 <div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
-<span class="roadmap-item__title-decor-bottom"></span>
-04
-</span>
+<span class="roadmap-item__title-decor-bottom"></span></span>
 <div class="four stepsInfo StepToRight">
 <p class="Ag18 stepsP colorGrey7">Development with regular reviews <span class="arrowDir arrow">→</span> </p>
 
@@ -355,9 +343,7 @@ Title: Home Language: en
 <div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
-<span class="roadmap-item__title-decor-bottom"></span>
-05
-</span>
+<span class="roadmap-item__title-decor-bottom"></span></span>
 <div class="five stepsInfo StepToLeft">
 <p class="Ag18 stepsP colorGrey7">Final review & evaluation <span class="arrowDir arrow">→</span></p>
 
