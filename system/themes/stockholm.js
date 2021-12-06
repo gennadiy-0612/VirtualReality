@@ -149,10 +149,7 @@ shch.watch = {
         selector: '.BadTraining',
         animationName: 'BadTrainingAnim'
     },
-    screenDigits: {
-        selector: '.DigitsScreen',
-        animationName: 'DigitsScreenAnim'
-    },
+
     screen12: {
         selector: '.Dig1',
         animationName: 'Dig1Anim'
@@ -344,9 +341,6 @@ shch.LoadFunc = function () {
 
     shch.watch11 = new shch.addDetect(.1);
     shch.watch11.checkVision(shch.watch.screen11);
-
-    shch.watch120 = new shch.addDetect(.5);
-    shch.watch120.checkVision(shch.watch.screenDigits);
 
     shch.watch12 = new shch.addDetect(.9);
     shch.watch12.checkVision(shch.watch.screen12);

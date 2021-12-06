@@ -315,12 +315,15 @@ li {
 
 .WhatWeDo {
     opacity: 0;
+    padding-top: 30vh;
+
 }
 
 .WhatWeDoAnim {
+    padding-top: 7vh;
     opacity: 1;
-    transition-property: opacity;
-    transition-delay: .2s;
+    transition-property: opacity, padding-top;
+    transition-delay: .7s;
     transition-duration: .7s;
     transition-timing-function: cubic-bezier(.68, -.55, .27, 1.55);
 }
@@ -430,7 +433,7 @@ li {
     transition: opacity, blur;
     transition-duration: .7s;
     transition-timing-function: ease;
-    transition-delay: 2.8s;
+    transition-delay: 3.5s;
 }
 
 .WhoWeH2Left {
@@ -1416,15 +1419,6 @@ a {
     padding: 110px 0;
     background: url(img/Digits.svg) center center no-repeat;
     background-size: 100%;
-}
-
-.DigitsScreen {
-    transform: translateY(40vh);
-}
-
-.DigitsScreenAnim {
-    transform: translateY(0);
-    transition: transform 1s;
 }
 
 .WhyVRH2 {
