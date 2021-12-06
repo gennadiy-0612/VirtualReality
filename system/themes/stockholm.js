@@ -156,8 +156,8 @@ shch.watch = {
     },
 
     screen121: {
-        selector: '.WhyVR',
-        animationName: 'WhyVRAnim'
+        selector: '.DigitsScreen',
+        animationName: 'DigitsScreenAnim'
     },
 
     screen12: {
@@ -355,19 +355,19 @@ shch.LoadFunc = function () {
     shch.watch120 = new shch.addDetect(.9);
     shch.watch120.checkVision(shch.watch.screen120);
 
-    shch.watch121 = new shch.addDetect(.8);
+    shch.watch121 = new shch.addDetect(.7);
     shch.watch121.checkVision(shch.watch.screen121);
 
-    shch.watch12 = new shch.addDetect(.9);
+    shch.watch12 = new shch.addDetect(.1);
     shch.watch12.checkVision(shch.watch.screen12);
 
-    shch.watch13 = new shch.addDetect(.9);
+    shch.watch13 = new shch.addDetect(.1);
     shch.watch13.checkVision(shch.watch.screen13);
 
-    shch.watch14 = new shch.addDetect(.9);
+    shch.watch14 = new shch.addDetect(.1);
     shch.watch14.checkVision(shch.watch.screen14);
 
-    shch.watch15 = new shch.addDetect(.9);
+    shch.watch15 = new shch.addDetect(.1);
     shch.watch15.checkVision(shch.watch.screen15);
 
     shch.watch151 = new shch.addDetect(.1);

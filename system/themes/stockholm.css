@@ -1405,13 +1405,13 @@ a {
     margin: auto
 }
 
-.WhyVR {
-    padding-top: 30vh;
+.DigitsScreen {
+    margin-top: 30vh;
 }
 
-.WhyVRAnim {
-    padding-top: 1vh;
-    transition-property: padding-top;
+.DigitsScreenAnim {
+    margin-top: 1vh;
+    transition-property: margin-top;
     transition-duration: 1.5s;
     transition-timing-function: ease-in-out
 }
