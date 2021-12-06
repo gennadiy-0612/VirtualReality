@@ -1435,7 +1435,6 @@ a {
     overflow:hidden
 }
 .steps {
-    flex:46 1 auto;
     margin:70px 0;
     background-size:73.8%;
     counter-reset:section;
@@ -1686,7 +1685,6 @@ a {
     }
     .stepsInfo {
         align-self:center;
-        margin:0 0 -140px 0
     }
     .arrow {
         transform:none;
@@ -1700,7 +1698,7 @@ a {
         color:#777
     }
     .steps::before {
-        height:90%
+        height:80%
     }
     .success-checkmark {
         width:88px
