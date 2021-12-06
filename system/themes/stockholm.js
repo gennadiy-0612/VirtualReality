@@ -155,6 +155,11 @@ shch.watch = {
         animationName: 'VRH2Anim'
     },
 
+    screen121: {
+        selector: '.WhyVR',
+        animationName: 'WhyVRAnim'
+    },
+
     screen12: {
         selector: '.Dig1',
         animationName: 'Dig1Anim'
@@ -349,6 +354,9 @@ shch.LoadFunc = function () {
 
     shch.watch120 = new shch.addDetect(.9);
     shch.watch120.checkVision(shch.watch.screen120);
+
+    shch.watch121 = new shch.addDetect(.9);
+    shch.watch121.checkVision(shch.watch.screen121);
 
     shch.watch12 = new shch.addDetect(.9);
     shch.watch12.checkVision(shch.watch.screen12);
