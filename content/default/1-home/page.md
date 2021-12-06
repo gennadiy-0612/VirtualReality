@@ -46,25 +46,25 @@ Title: Home Language: en
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
 </div>
 <ul class="doLinks" id="doLinks">
-<li class="doli DoLI1"><a title="title" href="#doLinks" class="Ag18 colorGrey doA doLinksActive">Immersive Trainings</a></li>
-<li class="doli DoLI2"><a title="title"  href="#doLinks" class="colorGrey doA Ag18">Realistic Simulations</a></li>
-<li class="doli DoLI3"><a title="title"  href="#doLinks" class="colorGrey doA Ag18">Aptitude Testing</a></li>
+<li class="doli DoLI1"><a title="title" href="#Screen2" class="Ag18 colorGrey doA doLinksActive">Immersive Trainings</a></li>
+<li class="doli DoLI2"><a title="title"  href="#Screen2" class="colorGrey doA Ag18">Realistic Simulations</a></li>
+<li class="doli DoLI3"><a title="title"  href="#Screen2" class="colorGrey doA Ag18">Aptitude Testing</a></li>
 </ul>
 </div>
 <div class="doImages FromSmall">
 <ul class="whatDid">
 <li class="whatDidWe whatDidWeAct" id="whatDid1">
-<a class="ImgA" title="t" href="#doLinks">
+<a class="ImgA" title="t" href="#Screen2">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo1.png">
 </a>
 </li>
 <li class="whatDidWe" id="whatDid2">
-<a class="ImgA" title="t" href="#doLinks">
+<a class="ImgA" title="t" href="#Screen2">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo2.png">
 </a>
 </li>
 <li class="whatDidWe" id="whatDid3">
-<a class="ImgA" title="t" href="#doLinks">
+<a class="ImgA" title="t" href="#Screen2">
 <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo" src="/media/images/img/WhatDoWeDo3.png">
 </a>
 </li>
