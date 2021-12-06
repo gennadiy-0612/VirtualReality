@@ -186,9 +186,9 @@ Title: Home Language: en
 </div>
 </section>
 <div class="Digits">
-<section id="S4" class="WhyVR">
+<section id="S4" class="WhyVR horizonLine">
 <div class="a1440 DigitsScreen">
-<h2 class="WhyVRH2 upperText Ag48 colorW horizonLine WhatWeDo">why vr?</h2>
+<h2 class="WhyVRH2 upperText Ag48 colorW WhatWeDo">why vr?</h2>
 <ul class="digits">
 <li class="digitsLi digits1 Dig1">
 <p class="digitsDigit Ag72 colorViolet">4x</p>
