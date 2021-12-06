@@ -1065,8 +1065,7 @@ a {
  border-bottom:1px solid #FFF
 }
 .whatDidWe {
- transform:scale(1);
- transition-property:flex,height,transform;
+ transition-property:flex,height;
  transition-duration:1s;
  flex:0 0 2%;
  height:40%;
@@ -1076,10 +1075,10 @@ a {
  align-items:center
 }
 .whatDidWe:not(.whatDidWeAct):hover {
-    transform: scale(0.8, 1.2);
  position:relative;
- flex:0 0 4%;
+ flex:0 0 16%;
  z-index:1;
+ height: 70%;
 }
 .ImgA {
  display:block;
@@ -1088,7 +1087,7 @@ a {
 .whatDidWeAct {
  display:block;
  height:100%;
- flex:0 0 94%
+ flex:0 0 80%;
 }
 .WhatDoImg {
  max-width:1438px;
