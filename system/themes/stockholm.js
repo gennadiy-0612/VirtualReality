@@ -35,6 +35,7 @@ shch.BS = function (cs, ps, papa) {
     this.passive = papa.querySelectorAll(ps);
     this.passivecurrent = papa.querySelectorAll(ps)[0];
     this.more = '';
+    this.n = 0;
     this.moveBack = function (act, actLink) {
         this.controlerDisplay.classList.remove(actLink);
         this.passive[this.display].classList.remove(act);
@@ -79,11 +80,19 @@ shch.BS = function (cs, ps, papa) {
             this.controler[this.i].addEventListener('click', this.setDisplay.bind(this, this.i, actLink, actSelect))
         }
     }
+    this.actSet = function (id, actLink, actSelect) {
+        this.display = id;
+        this.controlerDisplay.classList.remove(actLink);
+        console.log(this.controlerDisplay)
+        this.passivecurrent.classList.remove(actSelect);
+        this.controler[id].classList.add(actLink)
+        this.passive[id].classList.add(actSelect)
+        this.controlerDisplay = papa.querySelectorAll(cs)[id]
+        this.passivecurrent = this.passive[id];
+    }
     this.actMore = function (actLink, actSelect) {
-        console.clear()
-        console.log('gsfdg')
-        for (; this.i < this.controlerAll; this.i++) {
-            this.controler[this.i].addEventListener('click', this.setDisplay.bind(this, this.i, actLink, actSelect))
+        for (; this.n < this.passive.length; this.n++) {
+            this.passive[this.n].addEventListener('click', this.actSet.bind(this, this.n, actLink, actSelect))
         }
     }
 }
@@ -268,7 +277,7 @@ shch.LoadFunc = function () {
     for (; shch.WWD.Papa.start < shch.WWD.Papa.all; shch.WWD.Papa.start++) {
         shch.WWD[shch.WWD.Papa.start] = new shch.BS('.doA', '.whatDidWe', shch.WWD.Papa[shch.WWD.Papa.start]);
         shch.WWD[shch.WWD.Papa.start].addAct('doLinksActive', 'whatDidWeAct');
-        shch.WWD[shch.WWD.Papa.start].actMore('.whatDidWe', '.whatDidWeAct');
+        shch.WWD[shch.WWD.Papa.start].actMore('doLinksActive', 'whatDidWeAct');
     }
 
     shch.OP = {}

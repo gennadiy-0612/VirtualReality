@@ -1057,7 +1057,8 @@ a {
     letter-spacing:.7px;
     margin:0 0 16px;
     border-bottom:1px solid #707070;
-    text-transform:uppercase
+    text-transform:uppercase;
+    transition: color .7s;
 }
 .doLinksActive {
     color:#FFF;
