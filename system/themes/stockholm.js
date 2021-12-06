@@ -215,17 +215,16 @@ shch.watch = {
     }
 }
 shch.digits = {
-    start: 0,
+    start: 1,
     step: 1,
     scroll: window.pageYOffset,
     adds: function () {
-        window.removeEventListener('scroll', shch.digits.adds)
         if (shch.digits.step === 1) {
             let papa = document.querySelector(".Digits");
             let son = document.querySelector('.VRH2');
             let intViewportHeight = window.innerHeight / 20;
             let topPos = papa.offsetTop - intViewportHeight;
-            if (topPos < pageYOffset) {
+            if (topPos < window.pageYOffset) {
                 son.classList.add('VRH2Anim');
                 document.querySelector('.Dig1').classList.add('Dig1Anim')
                 document.querySelector('.Dig2').classList.add('Dig2Anim')
@@ -244,13 +243,13 @@ shch.digits = {
             let son = document.querySelector(".WhyVR");
             let intViewportHeight = window.innerHeight / 20;
             let topPos = papa.offsetTop + intViewportHeight;
-            if (topPos < pageYOffset) {
+            if (topPos < window.pageYOffset) {
                 son.classList.add('WhyVRAnim');
+                shch.digits.start = 0;
             }
             shch.digits.step = 3
         }
-        shch.digits.start = 1;
-        window.addEventListener('scroll', shch.digits.adds)
+        console.log(shch.digits.start)
     }
 }
 shch.LoadFunc = function () {
