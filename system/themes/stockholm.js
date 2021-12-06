@@ -355,7 +355,7 @@ shch.LoadFunc = function () {
     shch.watch120 = new shch.addDetect(.9);
     shch.watch120.checkVision(shch.watch.screen120);
 
-    shch.watch121 = new shch.addDetect(.9);
+    shch.watch121 = new shch.addDetect(.8);
     shch.watch121.checkVision(shch.watch.screen121);
 
     shch.watch12 = new shch.addDetect(.9);
