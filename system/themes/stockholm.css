@@ -416,7 +416,7 @@ li {
 
 .GoodTrainingAnim {
     opacity: 1;
-    transition: opacity .7s ease 1.4s;
+    transition: opacity .7s ease 2.8s;
 }
 
 .BadTraining {
@@ -427,7 +427,10 @@ li {
 .BadTrainingAnim {
     filter: brightness(1) blur(0);
     opacity: 1;
-    transition: opacity, filter 1s ease 1.4s;
+    transition: opacity, blur;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+    transition-delay: 2.8s;
 }
 
 .WhoWeH2Left {
