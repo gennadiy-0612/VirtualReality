@@ -1067,7 +1067,7 @@ a {
 .whatDidWe {
  transition-property:flex,height;
  transition-duration:1s;
- flex:0 0 2%;
+ flex:0 0 4%;
  height:40%;
  overflow:hidden;
  display:flex;
@@ -1076,9 +1076,9 @@ a {
 }
 .whatDidWe:not(.whatDidWeAct):hover {
  position:relative;
- flex:0 0 16%;
+ flex:0 0 18%;
  z-index:1;
- height: 70%;
+ height:70%
 }
 .ImgA {
  display:block;
@@ -1087,7 +1087,7 @@ a {
 .whatDidWeAct {
  display:block;
  height:100%;
- flex:0 0 80%;
+ flex:0 0 76%;
 }
 .WhatDoImg {
  max-width:1438px;
