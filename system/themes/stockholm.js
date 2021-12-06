@@ -141,41 +141,6 @@ shch.watch = {
         selector: '.FromSmall',
         animationName: 'FromSmallAnim'
     },
-    screen10: {
-        selector: '.GoodTraining',
-        animationName: 'GoodTrainingAnim'
-    },
-    screen11: {
-        selector: '.BadTraining',
-        animationName: 'BadTrainingAnim'
-    },
-
-    screen120: {
-        selector: '.VRH2',
-        animationName: 'VRH2Anim'
-    },
-
-    screen121: {
-        selector: '.DigitsScreen',
-        animationName: 'DigitsScreenAnim'
-    },
-
-    screen12: {
-        selector: '.Dig1',
-        animationName: 'Dig1Anim'
-    },
-    screen13: {
-        selector: '.Dig2',
-        animationName: 'Dig2Anim'
-    },
-    screen14: {
-        selector: '.Dig3',
-        animationName: 'Dig3Anim'
-    },
-    screen15: {
-        selector: '.Dig4',
-        animationName: 'Dig4Anim'
-    },
     screen151: {
         selector: '.WhoWeH2Left',
         animationName: 'WhoWeH2LeftAnim'
@@ -249,7 +214,45 @@ shch.watch = {
         animationName: 'mobile7Anim'
     }
 }
-
+shch.digits = {
+    start: 0,
+    step: 1,
+    scroll: window.pageYOffset,
+    adds: function () {
+        window.removeEventListener('scroll', shch.digits.adds)
+        if (shch.digits.step === 1) {
+            let papa = document.querySelector(".Digits");
+            let son = document.querySelector('.VRH2');
+            let intViewportHeight = window.innerHeight / 20;
+            let topPos = papa.offsetTop - intViewportHeight;
+            if (topPos < pageYOffset) {
+                son.classList.add('VRH2Anim');
+                document.querySelector('.Dig1').classList.add('Dig1Anim')
+                document.querySelector('.Dig2').classList.add('Dig2Anim')
+                document.querySelector('.Dig3').classList.add('Dig3Anim')
+                document.querySelector('.Dig4').classList.add('Dig4Anim')
+                document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim')
+                document.querySelector('.BadTraining').classList.add('BadTrainingAnim')
+                setTimeout(function () {
+                    shch.digits.step = 2
+                }, 500);
+            }
+        }
+        if (shch.digits.step === 2) {
+            window.scrollBy(0, shch.digits.scroll);
+            let papa = document.querySelector(".Digits");
+            let son = document.querySelector(".WhyVR");
+            let intViewportHeight = window.innerHeight / 20;
+            let topPos = papa.offsetTop + intViewportHeight;
+            if (topPos < pageYOffset) {
+                son.classList.add('WhyVRAnim');
+            }
+            shch.digits.step = 3
+        }
+        shch.digits.start = 1;
+        window.addEventListener('scroll', shch.digits.adds)
+    }
+}
 shch.LoadFunc = function () {
 
     shch.WWD = {}
@@ -300,7 +303,7 @@ shch.LoadFunc = function () {
         shch.OPMini[shch.OPMini.Papa.start].toward('.inLinkRight', 'actInSlide', 'outSlideImgAct');
         shch.OPMini[shch.OPMini.Papa.start].back('.inLinkLeft', 'actInSlide', 'outSlideImgAct');
     }
-
+    window.addEventListener('scroll', shch.digits.adds)
     shch.watchS01 = new shch.addDetect(.1);
     shch.watchS01.checkVision(shch.watch.screenS01);
 
@@ -345,30 +348,6 @@ shch.LoadFunc = function () {
 
     shch.watch9 = new shch.addDetect(.1);
     shch.watch9.checkVision(shch.watch.screen9);
-
-    shch.watch10 = new shch.addDetect(.1);
-    shch.watch10.checkVision(shch.watch.screen10);
-
-    shch.watch11 = new shch.addDetect(.1);
-    shch.watch11.checkVision(shch.watch.screen11);
-
-    shch.watch120 = new shch.addDetect(.9);
-    shch.watch120.checkVision(shch.watch.screen120);
-
-    shch.watch121 = new shch.addDetect(.7);
-    shch.watch121.checkVision(shch.watch.screen121);
-
-    shch.watch12 = new shch.addDetect(.1);
-    shch.watch12.checkVision(shch.watch.screen12);
-
-    shch.watch13 = new shch.addDetect(.1);
-    shch.watch13.checkVision(shch.watch.screen13);
-
-    shch.watch14 = new shch.addDetect(.1);
-    shch.watch14.checkVision(shch.watch.screen14);
-
-    shch.watch15 = new shch.addDetect(.1);
-    shch.watch15.checkVision(shch.watch.screen15);
 
     shch.watch151 = new shch.addDetect(.1);
     shch.watch151.checkVision(shch.watch.screen151);
