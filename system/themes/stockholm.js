@@ -150,6 +150,11 @@ shch.watch = {
         animationName: 'BadTrainingAnim'
     },
 
+    screen120: {
+        selector: '.VRH2',
+        animationName: 'VRH2Anim'
+    },
+
     screen12: {
         selector: '.Dig1',
         animationName: 'Dig1Anim'
@@ -341,6 +346,9 @@ shch.LoadFunc = function () {
 
     shch.watch11 = new shch.addDetect(.1);
     shch.watch11.checkVision(shch.watch.screen11);
+
+    shch.watch120 = new shch.addDetect(.9);
+    shch.watch120.checkVision(shch.watch.screen120);
 
     shch.watch12 = new shch.addDetect(.9);
     shch.watch12.checkVision(shch.watch.screen12);

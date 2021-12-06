@@ -315,14 +315,11 @@ li {
 
 .WhatWeDo {
     opacity: 0;
-    padding-top: 30vh;
-
 }
 
 .WhatWeDoAnim {
-    padding-top: 7vh;
     opacity: 1;
-    transition-property: opacity, padding-top;
+    transition-property: opacity;
     transition-delay: .7s;
     transition-duration: .7s;
     transition-timing-function: cubic-bezier(.68, -.55, .27, 1.55);
@@ -1424,6 +1421,19 @@ a {
 .WhyVRH2 {
     letter-spacing: 4.6px;
     padding-top: 75px;
+}
+
+.VRH2 {
+    opacity: 0;
+    padding-top: 90vh;
+}
+
+.VRH2Anim {
+    opacity: 1;
+    padding-top: 7vh;
+    transition-property: opacity, padding-top;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
 }
 
 .digits {
