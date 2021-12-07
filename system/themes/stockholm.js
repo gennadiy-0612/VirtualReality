@@ -241,7 +241,8 @@ shch.digits = {
         event.preventDefault()
         if (shch.digits.step === 1) {
             shch.digits.scroll = window.pageYOffset;
-            if (shch.digits.papa.offsetTop < window.pageYOffset) {
+            let HE = shch.digits.papa.offsetTop + shch.digits.papa.offsetHeight;
+            if (window.pageYOffset > shch.digits.papa.offsetTop && window.pageYOffset < HE) {
                 window.scrollTo(0, shch.digits.scroll)
                 shch.digits.son.classList.add('VRH2Anim');
                 setTimeout(function () {
