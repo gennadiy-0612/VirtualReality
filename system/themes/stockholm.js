@@ -234,21 +234,23 @@ shch.watch = {
 shch.digits = {
     start: 1,
     step: 1,
-    scroll: window.pageYOffset,
-    adds: function () {
+    scroll: '',
+    papa: document.querySelector(".Digits"),
+    son: document.querySelector('.VRH2'),
+    adds: function (event) {
+        event.preventDefault()
         if (shch.digits.step === 1) {
-            let papa = document.querySelector(".Digits");
-            let son = document.querySelector('.VRH2');
-            let intViewportHeight = window.innerHeight / 20;
-            let topPos = papa.offsetTop - intViewportHeight;
-            if (topPos < window.pageYOffset) {
-                son.classList.add('VRH2Anim');
+            shch.digits.scroll = window.pageYOffset;
+            if (shch.digits.papa.offsetTop < window.pageYOffset) {
+                window.scrollTo(0, shch.digits.scroll)
+                shch.digits.son.classList.add('VRH2Anim');
                 setTimeout(function () {
                     shch.digits.step = 2
                 }, 500);
             }
         }
         if (shch.digits.step === 2) {
+            window.scrollTo(0, shch.digits.scroll)
             document.querySelector(".WhyVR").classList.add('WhyVRAnim');
             shch.digits.start = 0;
             setTimeout(function () {
@@ -256,6 +258,7 @@ shch.digits = {
             }, 500);
         }
         if (shch.digits.step === 3) {
+            window.scrollTo(0, shch.digits.scroll)
             document.querySelector('.Dig1').classList.add('Dig1Anim');
             document.querySelector('.Dig2').classList.add('Dig2Anim');
             document.querySelector('.Dig3').classList.add('Dig3Anim');
@@ -266,12 +269,22 @@ shch.digits = {
             }, 500);
         }
         if (shch.digits.step === 4) {
+            window.scrollTo(0, shch.digits.scroll)
             document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
             document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
             shch.digits.start = 0;
             setTimeout(function () {
                 shch.digits.step = 5
             }, 500);
+        }
+        if (shch.digits.step === 5) {
+            window.scrollTo(0, shch.digits.scroll)
+            setTimeout(function () {
+                document.querySelector(".WhyVR").classList.remove('WhyVRAnim');
+                document.querySelector(".WhyVR").classList.add('WhyVRAnimFix');
+            }, 500);
+            shch.digits.start = 0;
+            shch.digits.step = 6
         }
     }
 }
