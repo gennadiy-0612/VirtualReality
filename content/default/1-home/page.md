@@ -43,7 +43,7 @@ Title: Home Language: en
 <section id="Screen2" class="do a1440 Screen2">
 <div class="doInfo">
 <div class="doInfoH2">
-<h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
+<h2 class="whatDo upperText Ag48 colorW  WhatDoWeDoH2 WhatWeDo">What do we do?</h2>
 </div>
 <ul class="doLinks" id="doLinks">
 <li class="doli DoLI1"><a title="title" href="#Screen2" class="Ag18 colorGrey doA doLinksActive">Immersive Trainings</a></li>
