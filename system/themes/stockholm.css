@@ -1257,7 +1257,7 @@ a {
 
 .whatDidWe {
     transition-property: flex, height;
-    transition-duration: 1s;
+    transition-duration: .7s;
     flex: 0 0 4%;
     height: 40%;
     overflow: hidden;
