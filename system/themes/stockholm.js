@@ -273,19 +273,12 @@ shch.digits = {
             window.scrollTo(0, shch.digits.scroll)
             document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
             document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
+            document.querySelector(".WhyVR").classList.remove('WhyVRAnim');
+            document.querySelector(".WhyVR").classList.add('WhyVRAnimFix');
             shch.digits.start = 0;
             setTimeout(function () {
                 shch.digits.step = 5
             }, 500);
-        }
-        if (shch.digits.step === 5) {
-            window.scrollTo(0, shch.digits.scroll)
-            setTimeout(function () {
-                document.querySelector(".WhyVR").classList.remove('WhyVRAnim');
-                document.querySelector(".WhyVR").classList.add('WhyVRAnimFix');
-            }, 500);
-            shch.digits.start = 0;
-            shch.digits.step = 6
         }
     }
 }
