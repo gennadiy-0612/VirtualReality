@@ -215,11 +215,11 @@ li {
 @keyframes title {
     0% {
         opacity: 0;
-        transform: translate3d(4.1vw, 44%, 4.6vw)
+        transform: translate3d(0, 44%, 4.6vw)
     }
     70% {
         opacity: 1;
-        transform: translate3d(4.1vw, 44%, 4.6vw)
+        transform: translate3d(0, 44%, 4.6vw)
     }
     100% {
         opacity: 1;
