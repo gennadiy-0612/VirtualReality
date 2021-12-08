@@ -282,12 +282,12 @@ shch.digits = {
             document.querySelector(".WhyVR").classList.add('WhyVRAnimFix');
             // document.querySelector(".Digits").removeAttribute('style');
             document.querySelector(".Digits").classList.remove('DigitsAnim');
-            shch.digits.sett()
             setTimeout(function () {
                 shch.digits.step = 5
             }, 500);
             shch.digits.step = 0
         }
+        if (shch.digits.step === 5) return
     }
 }
 shch.LoadFunc = function () {
