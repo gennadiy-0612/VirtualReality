@@ -241,7 +241,7 @@ shch.digits = {
     },
     adds: function (event) {
         let HE = shch.digits.papa.offsetTop + shch.digits.papa.offsetHeight;
-        shch.digits.scroll = shch.digits.papa.offsetTop;
+        shch.digits.scroll = shch.digits.papa.offsetTop-300;
         if (window.pageYOffset > shch.digits.papa.offsetTop) {
             if (shch.digits.step === 1) {
                 shch.digits.sett()
