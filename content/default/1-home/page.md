@@ -16,7 +16,7 @@ Title: Home Language: en
     </header>
     <div class="mainTitle">
         <div class="frame Frame">
-            <h2 class="opportunity colorW Ag24 FromLeftCorner">4444444444444 Unlock new opportunities with</h2>
+            <h2 class="opportunity colorW Ag24 FromLeftCorner">Unlock new opportunities with 4444444444</h2>
             <div class="virtual-word FromLeftCorner2"></div>
             <div class="reality-word FromLeftCorner2"></div>
         </div>
@@ -40,7 +40,7 @@ Title: Home Language: en
 <section id="Screen2" class="do a1440 Screen2">
 <div class="doInfo">
 <div class="doInfoH2">
-<h2 class="whatDo upperText Ag48 colorW WhatWeDo">1111111111 What do we do?</h2>
+<h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
 </div>
 <ul class="doLinks" id="doLinks">
 <li class="doli DoLI1"><a title="title" href="#Screen2" class="Ag18 colorGrey doA doLinksActive">Immersive Trainings</a></li>
