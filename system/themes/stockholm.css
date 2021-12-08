@@ -1292,11 +1292,15 @@ a {
 .whatDidWe:not(.whatDidWeAct):nth-child(2):hover,
 .whatDidWe:hover {
     position: relative;
-    flex: 0 0 9%;
-    padding: 0 1%;
-    height: 80%;
+    height: 50%;
+    flex: 0 0 5%;
+    padding: 0;
 }
-
+.whatDidWe:not(.whatDidWeAct):nth-child(1):hover,
+.whatDidWe:not(.whatDidWeAct):nth-child(3):hover{
+    height: 50%;
+    flex: 0 0 7%;
+}
 .ImgA {
     display: block;
     height: 100%
