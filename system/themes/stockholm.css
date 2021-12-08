@@ -1296,6 +1296,12 @@ a {
     flex: 0 0 5%;
     padding: 0;
 }
+.whatDidWe:not(.whatDidWeAct):nth-child(2):hover{
+    height: 80%;
+    flex: 0 0 10%;
+    padding: 0.5%;
+}
+
 .whatDidWe:not(.whatDidWeAct):nth-child(1):hover,
 .whatDidWe:not(.whatDidWeAct):nth-child(3):hover{
     height: 50%;
