@@ -1463,7 +1463,14 @@ a {
     background-size: 100%;
     position: relative
 }
-
+.DigitsAnim{
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*background-color: #000;*/
+    /*z-index: 1;*/
+    /*height: 100%;*/
+}
 .WhyVRH2 {
     letter-spacing: 4.6px;
     padding-top: 75px

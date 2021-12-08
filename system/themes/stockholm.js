@@ -236,8 +236,8 @@ shch.digits = {
     scroll: '',
     papa: document.querySelector(".Digits"),
     son: document.querySelector('.VRH2'),
-    sett:function () {
-        window.scrollTo(0, this.papa.offsetTop+110)
+    sett: function () {
+        window.scrollTo(0, this.papa.offsetTop + 110)
         console.log(this.papa.offsetTop)
         console.log(this.scroll)
     },
@@ -247,6 +247,7 @@ shch.digits = {
         if (window.pageYOffset > shch.digits.papa.offsetTop) {
             if (shch.digits.step === 1) {
                 shch.digits.son.classList.add('VRH2Anim');
+                // document.querySelector(".Digits").setAttribute('style', 'top:0px;');
                 document.querySelector(".Digits").classList.add('DigitsAnim');
                 shch.digits.sett()
                 setTimeout(function () {
@@ -279,6 +280,7 @@ shch.digits = {
             document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
             document.querySelector(".WhyVR").classList.remove('WhyVRAnim');
             document.querySelector(".WhyVR").classList.add('WhyVRAnimFix');
+            // document.querySelector(".Digits").removeAttribute('style');
             document.querySelector(".Digits").classList.remove('DigitsAnim');
             shch.digits.sett()
             setTimeout(function () {
