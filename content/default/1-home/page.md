@@ -39,7 +39,7 @@ Title: Home Language: en
 <div class="mouseBlock a1440"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
 <section id="Screen2" class="do a1440 Screen2">
 <div class="doInfo">
-<div class="doInfoH2">
+<div class="doInfoH2 doInfoH21">
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
 </div>
 <ul class="doLinks" id="doLinks">
