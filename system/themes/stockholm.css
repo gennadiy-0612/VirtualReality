@@ -1289,9 +1289,10 @@ a {
     padding: 0 1%
 }
 
+.whatDidWe:not(.whatDidWeAct):nth-child(2):hover,
 .whatDidWe:hover {
     position: relative;
-    flex: 0 0 8%;
+    flex: 0 0 9%;
     padding: 0 1%;
     height: 80%;
 }
@@ -1300,6 +1301,7 @@ a {
     display: block;
     height: 100%
 }
+
 .whatDidWeAct:hover,
 .whatDidWeAct {
     display: block;
