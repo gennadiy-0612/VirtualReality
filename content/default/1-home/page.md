@@ -16,7 +16,7 @@ Title: Home Language: en
     </header>
     <div class="mainTitle">
         <div class="frame Frame">
-            <h2 class="opportunity colorW Ag24 FromLeftCorner">Unlock new opportunities with 4444444444</h2>
+            <h2 class="opportunity colorW Ag24 FromLeftCorner">Unlock new opportunities with</h2>
             <div class="virtual-word FromLeftCorner2"></div>
             <div class="reality-word FromLeftCorner2"></div>
         </div>
