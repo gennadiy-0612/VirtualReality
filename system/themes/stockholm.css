@@ -1281,7 +1281,7 @@ a {
     max-height: 814px
 }
 
-.whatDidWe:not(.whatDidWeAct):hover {
+.whatDidWe:not(.whatDidWeAct):nth-child(2) {
     position: relative;
     flex: 1 0 8%;
     z-index: 1;
@@ -1289,15 +1289,23 @@ a {
     padding: 0 1%
 }
 
+.whatDidWe:hover {
+    position: relative;
+    flex: 0 0 8%;
+    padding: 0 1%;
+    height: 80%;
+}
+
 .ImgA {
     display: block;
     height: 100%
 }
-
+.whatDidWeAct:hover,
 .whatDidWeAct {
     display: block;
     height: 100%;
-    flex: 0 0 88%
+    flex: 0 0 88%;
+    padding: 0;
 }
 
 .WhatDoImg {
