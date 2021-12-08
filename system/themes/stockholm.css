@@ -1471,6 +1471,10 @@ a {
     /*z-index: 1;*/
     /*height: 100%;*/
 }
+.stop-scrolling{
+    height: 100%;
+    overflow: hidden;
+}
 .WhyVRH2 {
     letter-spacing: 4.6px;
     padding-top: 75px
@@ -2030,7 +2034,7 @@ a {
     }
 
     .stepsInfo {
-        align-self: center
+        align-self: center;
     }
 
     .arrow {
