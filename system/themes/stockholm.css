@@ -1051,7 +1051,7 @@ a {
 .doInfo {
  display:flex;
  flex-wrap:wrap;
- flex-direction: column;
+ flex-direction:column
 }
 .whatDid {
  position:relative;
@@ -1063,17 +1063,13 @@ a {
 .doLinks {
  display:flex;
  flex:4.9 1 auto;
- justify-content:space-between;
- align-items:end
+ align-items:end;
 }
 .doli {
- padding:0 0;
- width:100%
 }
 .doA {
- width:100%;
  display:block;
- padding:14px 0;
+ padding:14px 28px 14px 0;
  letter-spacing:.7px;
  margin:0 0 16px;
  border-bottom:1px solid #707070;
