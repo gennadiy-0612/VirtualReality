@@ -577,7 +577,21 @@ li {
     max-width: 360px;
     text-align: center
 }
-
+.stepsItem {
+    position: relative;
+}
+.stepsItem::before {
+    position: absolute;
+    top: 108px;
+    content: '';
+    width: 40%;
+    border-bottom: 1px dashed #A64DFF;
+    right: 10%;
+}
+.stepsItem:nth-child(2n)::before{
+    left: 10%;
+    right: auto;
+}
 .mobile7 {
     color: #777
 }
@@ -658,7 +672,7 @@ li {
     margin: auto;
     height: 30px;
     width: 30px;
-    color: #777;
+    color: #FFFFFF;
     transform: rotate(-45deg)
 }
 
