@@ -237,29 +237,36 @@ shch.digits = {
     scroll: '',
     papa: document.querySelector(".Digits"),
     son: document.querySelector('.VRH2'),
+    sett:function () {
+        window.scrollTo(0, this.papa.offsetTop+110)
+        console.log(this.papa.offsetTop)
+        console.log(this.scroll)
+    },
     adds: function (event) {
-        event.preventDefault()
-        if (shch.digits.step === 1) {
-            shch.digits.scroll = window.pageYOffset;
-            let HE = shch.digits.papa.offsetTop + shch.digits.papa.offsetHeight;
-            if (window.pageYOffset > shch.digits.papa.offsetTop && window.pageYOffset < HE) {
-                window.scrollTo(0, shch.digits.scroll)
+        shch.digits.scroll = window.pageYOffset;
+        let HE = shch.digits.papa.offsetTop + shch.digits.papa.offsetHeight;
+        if (window.pageYOffset > shch.digits.papa.offsetTop) {
+            if (shch.digits.step === 1) {
+                shch.digits.step = 0
+                shch.digits.sett()
                 shch.digits.son.classList.add('VRH2Anim');
+                document.querySelector(".Digits").classList.add('DigitsAnim');
                 setTimeout(function () {
                     shch.digits.step = 2
                 }, 500);
             }
         }
         if (shch.digits.step === 2) {
-            window.scrollTo(0, shch.digits.scroll)
+            shch.digits.step = 0
+            shch.digits.sett()
             document.querySelector(".WhyVR").classList.add('WhyVRAnim');
-            shch.digits.start = 0;
             setTimeout(function () {
                 shch.digits.step = 3
             }, 500);
         }
         if (shch.digits.step === 3) {
-            window.scrollTo(0, shch.digits.scroll)
+            shch.digits.step = 0
+            shch.digits.sett()
             document.querySelector('.Dig1').classList.add('Dig1Anim');
             document.querySelector('.Dig2').classList.add('Dig2Anim');
             document.querySelector('.Dig3').classList.add('Dig3Anim');
@@ -270,14 +277,16 @@ shch.digits = {
             }, 500);
         }
         if (shch.digits.step === 4) {
-            window.scrollTo(0, shch.digits.scroll)
+            shch.digits.step = 0
+            shch.digits.sett()
             document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
             document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
             document.querySelector(".WhyVR").classList.remove('WhyVRAnim');
             document.querySelector(".WhyVR").classList.add('WhyVRAnimFix');
-            shch.digits.start = 0;
+            document.querySelector(".Digits").classList.remove('DigitsAnim');
             setTimeout(function () {
                 shch.digits.step = 5
+                shch.digits.start = 0;
             }, 500);
         }
     }
