@@ -1083,7 +1083,7 @@ a {
 .whatDidWe {
  transition-property:flex,height;
  transition-duration:.7s;
- flex:0 0 8%;
+ flex:0 0 4%;
  height:40%;
  overflow:hidden;
  display:flex;
@@ -1093,7 +1093,7 @@ a {
 }
 .whatDidWe:not(.whatDidWeAct):hover {
  position:relative;
- flex:1 0 18%;
+ flex:1 0 8%;
  z-index:1;
  height:70%;
  padding:0 1%
@@ -1105,7 +1105,7 @@ a {
 .whatDidWeAct {
  display:block;
  height:100%;
- flex:0 0 76%
+ flex:0 0 88%;
 }
 .WhatDoImg {
  max-width:1438px;
@@ -1232,7 +1232,7 @@ a {
  max-width:1480px;
  margin:auto;
  padding-top:30vh;
- transition:padding-top 1.5s ease-in-out
+ transition:padding-top .7s ease-in-out
 }
 .WhyVRAnim {
  padding-top:1vh
