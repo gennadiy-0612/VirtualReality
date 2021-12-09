@@ -1256,6 +1256,7 @@ a {
  transition:padding-top .7s ease-in-out
 }
 .WhyVRAnim {
+ opacity: 1;
  padding-top:1vh
 }
 .WhyVRAnimFix {
