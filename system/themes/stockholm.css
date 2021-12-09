@@ -34,7 +34,7 @@ li {
 }
 .a1440 {
  max-width:1440px;
- margin:auto;
+ margin:90px auto;
  padding:0 20px
 }
 .colorW {
@@ -824,7 +824,8 @@ a {
  margin:auto;
  background:url(img/firstBack.svg) center 50px no-repeat;
  background-size:contain;
- height:91vh
+ height:91vh;
+ padding: 0 50px;
 }
 .firstScreen {
  padding-top:0;
@@ -1067,7 +1068,7 @@ a {
  display:flex;
  flex:4.9 1 auto;
  align-items:end;
- padding:50px 0 0 0;
+ padding:50px 0 0 0
 }
 .doA {
  display:block;
@@ -1138,7 +1139,7 @@ a {
 }
 .Slides {
  max-width:1700px;
- margin:auto;
+ margin:90px auto;
  padding:0 20px
 }
 .doLinks-project {
@@ -1280,12 +1281,12 @@ a {
 }
 .VRH2 {
  opacity:0;
- transform: translateY(30vh);
+ transform:translateY(30vh)
 }
 .VRH2Anim {
  opacity:1;
- transform: translateY(1vh);
- transition-property:opacity, transform;
+ transform:translateY(1vh);
+ transition-property:opacity,transform;
  transition-duration:.7s;
  transition-timing-function:ease-in-out
 }
@@ -1792,7 +1793,7 @@ a {
   min-width:100%
  }
  .doLinks {
-  flex-wrap:wrap;
+  flex-wrap:wrap
  }
  .arrowDirectionOut {
   width:24px;
