@@ -907,7 +907,7 @@ a {
 .virtual-word {
  width:100%;
  max-height:108px;
- background:url(img/Virtual.svg) left center no-repeat;
+ background:url(img/Virtual.png) left center no-repeat;
  background-size:contain;
  height:9.8vh
 }
