@@ -1249,9 +1249,10 @@ a {
  width:100%
 }
 .WhyVR {
+ opacity: 0;
  max-width:1480px;
  margin:auto;
- padding-top:1vh;
+ padding-top:30vh;
  transition:padding-top .7s ease-in-out
 }
 .WhyVRAnim {
@@ -1259,12 +1260,6 @@ a {
 }
 .WhyVRAnimFix {
  padding-top:1vh;
- position:fixed;
- top:0;
- left:0;
- right:0;
- margin:auto;
- z-index:1
 }
 .Digits {
  max-width:1920px;
@@ -1392,7 +1387,7 @@ a {
  flex-wrap:wrap;
  justify-content:space-between;
  padding-bottom:46px;
- margin-bottom:30px
+ margin-bottom:30px;
 }
 .faceGlasses {
  max-width:1920px;
