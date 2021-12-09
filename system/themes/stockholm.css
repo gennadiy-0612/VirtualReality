@@ -1063,9 +1063,7 @@ a {
 .doLinks {
  display:flex;
  flex:4.9 1 auto;
- align-items:end;
-}
-.doli {
+ align-items:end
 }
 .doA {
  display:block;
@@ -1250,14 +1248,20 @@ a {
 .WhyVR {
  max-width:1480px;
  margin:auto;
- padding-top:30vh;
+ padding-top:1vh;
  transition:padding-top .7s ease-in-out
 }
 .WhyVRAnim {
  padding-top:1vh
 }
 .WhyVRAnimFix {
- padding-top:1vh
+ padding-top:1vh;
+ position:fixed;
+ top:0;
+ left:0;
+ right:0;
+ margin:auto;
+ z-index:1
 }
 .Digits {
  max-width:1920px;
@@ -1265,11 +1269,8 @@ a {
  padding:110px 0;
  background:url(img/Digits.svg) center center no-repeat;
  background-size:100%;
- position:relative
-}
-.stop-scrolling {
- height:100%;
- overflow:hidden
+ position:relative;
+ height:100vh;
 }
 .WhyVRH2 {
  letter-spacing:4.6px;
