@@ -1068,16 +1068,6 @@ a {
  flex:4.9 1 auto;
  align-items:end;
  padding:50px 0 0 0;
- position:relative
-}
-.doLinks::after {
- content:'';
- position:absolute;
- bottom:16px;
- height:1px;
- width:100%;
- background-color:#777;
- z-index:-1
 }
 .doA {
  display:block;
@@ -1803,18 +1793,6 @@ a {
  }
  .doLinks {
   flex-wrap:wrap;
- }
- .doLinksTop {
-  position:relative
- }
- .doLinksTop::after {
-  content:'';
-  display:block;
-  position:absolute;
-  height:1px;
-  color:#777;
-  width:100%;
-  top:0
  }
  .arrowDirectionOut {
   width:24px;
