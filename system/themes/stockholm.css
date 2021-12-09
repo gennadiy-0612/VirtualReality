@@ -1269,6 +1269,7 @@ a {
  background:url(img/Digits.svg) center center no-repeat;
  background-size:100%;
  position:relative;
+ transition: padding-top 1s linear;
 }
 .WhyVRH2 {
  letter-spacing:4.6px;

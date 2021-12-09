@@ -291,7 +291,6 @@ shch.digits = {
             document.querySelector(".Digits").classList.remove('DigitsAnim');
             setTimeout(function () {
                 shch.digits.step = 5
-                window.scrollTo(0, shch.digits.papa.offsetTop + 700)
             }, 500);
             shch.digits.step = 0
         }
@@ -301,6 +300,7 @@ shch.digits = {
                 shch.digits.step = 6
                 document.querySelector(".WhyVR").classList.remove('WhyVRAnimFix');
                 this.outTag.classList.remove('outTagFixed')
+                window.scrollTo(0, shch.digits.papa.offsetTop + 700)
             }, 500);
             shch.digits.step = 0
         }
