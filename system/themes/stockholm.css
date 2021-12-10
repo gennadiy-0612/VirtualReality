@@ -945,7 +945,7 @@ a {
  width:51.4%;
  padding:20px;
  box-sizing:border-box;
- max-height:41vmin;
+ max-height:41vmin
 }
 .playPanel {
  position:absolute;
@@ -1101,37 +1101,20 @@ a {
 .whatDidWe {
  transition-property:flex,height,padding;
  transition-duration:.7s;
- flex:0 0 4%;
+ flex:0 0 6%;
  height:40%;
  overflow:hidden;
  display:flex;
  justify-content:center;
  align-items:center;
- max-height:814px
-}
-.whatDidWe:not(.whatDidWeAct):nth-child(2) {
- position:relative;
- flex:1 0 8%;
- z-index:1;
- height:70%;
- padding:0 1%
+ max-height:814px;
+ padding: .5%;
 }
 .whatDidWe:not(.whatDidWeAct):nth-child(2):hover,
 .whatDidWe:hover {
  position:relative;
- height:50%;
- flex:0 0 5%;
- padding:0
-}
-.whatDidWe:not(.whatDidWeAct):nth-child(2):hover {
  height:80%;
  flex:0 0 10%;
- padding:.5%
-}
-.whatDidWe:not(.whatDidWeAct):nth-child(1):hover,
-.whatDidWe:not(.whatDidWeAct):nth-child(3):hover {
- height:50%;
- flex:0 0 7%
 }
 .ImgA {
  display:block;
@@ -1141,8 +1124,7 @@ a {
 .whatDidWeAct {
  display:block;
  height:100%;
- flex:0 0 85%;
- padding:0
+ flex:0 0 81%;
 }
 .WhatDoImg {
  max-width:1438px;
