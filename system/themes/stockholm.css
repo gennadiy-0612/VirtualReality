@@ -169,7 +169,7 @@ li {
 }
 .FrameAnim {
  opacity:1;
- transform:translate3d(0,0,-16vh);
+ transform:translate3d(0,0,-78vh);
  animation:title 2s linear
 }
 @keyframes title {
@@ -183,7 +183,7 @@ li {
  }
  100% {
   opacity:1;
-  transform:translate3d(0,0,-16vh)
+  transform:translate3d(0,0,-78vh)
  }
 }
 .FromSmallTop1 {
@@ -905,24 +905,30 @@ a {
  max-width:1100px;
  margin:auto;
  display:flex;
- flex-direction:column
+ flex-direction:column;
+ padding-right:14%
 }
 .virtual-word {
+ width:140%;
+ max-height:175px;
  background:url(img/Virtual.svg) left center no-repeat;
  background-size:contain;
- height:16.3vh
+ height:18.5vh;
+ margin:0 0 3px
 }
 .reality-word {
+ width:140%;
+ max-height:175px;
  background:url(img/Reality.svg) left center no-repeat;
  background-size:contain;
  margin:16px 0;
- height:16.3vh
+ height:18.8vh
 }
 .opportunity {
- margin:17px 0;
+ margin:31px 0 23px;
  letter-spacing:9.8px;
  font-size:60px;
- line-height:60px
+ line-height:51px
 }
 .virtual {
  margin:17px 0
@@ -936,10 +942,10 @@ a {
  justify-content:center;
  flex-direction:column;
  height:53%;
- width:49.3%;
+ width:51.4%;
  padding:20px;
  box-sizing:border-box;
- max-height:40vmin
+ max-height:41vmin;
 }
 .playPanel {
  position:absolute;
