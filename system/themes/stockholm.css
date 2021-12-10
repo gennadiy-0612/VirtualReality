@@ -1269,11 +1269,11 @@ a {
 }
 .VRH2 {
  opacity:0;
- transform:translateY(30vh)
+ transform:translateY(40vh)
 }
 .WhyVRH2Anim {
  opacity: 1;
- transform:translateY(15vh);
+ transform:translateY(20vh);
 }
 .WhyVRH2Anim2 {
  transform:translateY(0);
@@ -1283,11 +1283,11 @@ a {
  flex-wrap:wrap;
  justify-content:space-between;
  max-width:1430px;
- transform: translateY(30vh);
+ transform: translateY(40vh);
  transition: transform .7s linear ;
 }
 .digitsAnim{
- transform: translateY(15vh);
+ transform: translateY(20vh);
 }
 .digitsAnim1{
  transform: translateY(0);
@@ -1520,7 +1520,6 @@ a {
  align-self:stretch
 }
 .approachH2 {
- max-width:340px;
  letter-spacing:3.7px
 }
 .approachH3 {
