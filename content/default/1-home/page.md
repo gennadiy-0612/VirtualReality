@@ -273,7 +273,7 @@ Title: Home Language: en
 <span class="roadmap-item__title-decor-bottom"></span></span>
 <div class="one stepsInfo StepToLeft">
 <p class="Ag18 stepsP colorGrey7">Understanding of your needs <span class="arrowDir arrow">→</span> </p>
-<p class="Ag18 stepsP colorW mobile7">Defined challenge</p>
+<p class="Ag18 stepsP colorW mobile7 Desktop7">Defined challenge</p>
 <div class="success-checkmark">
   <div class="check-icon Rotate">
     <span class="icon-line line-tip"></span>
@@ -291,7 +291,7 @@ Title: Home Language: en
 <div class="two stepsInfo StepToRight">
 <p class="Ag18 stepsP colorGrey7">Solution options proposal <span class="arrowDir arrow">→</span> </p>
 
-<p class="Ag18 stepsP colorW mobile7">Requirements specification </p>
+<p class="Ag18 stepsP colorW mobile7 Desktop7">Requirements specification </p>
 <div class="success-checkmark">
   <div class="check-icon">
     <span class="icon-line line-tip"></span>
@@ -309,7 +309,7 @@ Title: Home Language: en
 <div class="three stepsInfo StepToLeft">
 <p class="Ag18 stepsP colorGrey7">Cost & time estimation planning <span class="arrowDir arrow">→</span> </p>
 
-<p class="Ag18 stepsP colorW mobile7">Delivery planning</p>
+<p class="Ag18 stepsP colorW mobile7 Desktop7">Delivery planning</p>
 <div class="success-checkmark">
   <div class="check-icon">
     <span class="icon-line line-tip"></span>
@@ -327,7 +327,7 @@ Title: Home Language: en
 <div class="four stepsInfo StepToRight">
 <p class="Ag18 stepsP colorGrey7">Development with regular reviews <span class="arrowDir arrow">→</span> </p>
 
-<p class="Ag18 stepsP colorW mobile7">Product versions </p>
+<p class="Ag18 stepsP colorW mobile7 Desktop7">Product versions </p>
 <div class="success-checkmark">
   <div class="check-icon">
     <span class="icon-line line-tip"></span>
@@ -344,7 +344,7 @@ Title: Home Language: en
 <div class="five stepsInfo StepToLeft">
 <p class="Ag18 stepsP colorGrey7">Final review & evaluation <span class="arrowDir arrow">→</span></p>
 
-<p class="Ag18 stepsP colorW mobile7">Final product & support</p>
+<p class="Ag18 stepsP colorW mobile7 Desktop7">Final product & support</p>
 <div class="success-checkmark">
   <div class="check-icon">
     <span class="icon-line line-tip"></span>

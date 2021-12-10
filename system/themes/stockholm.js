@@ -234,6 +234,10 @@ shch.watch = {
     screen30: {
         selector: '.mobile7',
         animationName: 'mobile7Anim'
+    },
+    screen31: {
+        selector: '.Desktop7',
+        animationName: 'Desktop7Anim'
     }
 }
 shch.digits = {
@@ -434,6 +438,9 @@ shch.LoadFunc = function () {
 
     shch.watch30 = new shch.addDetect(.1);
     shch.watch30.checkVision(shch.watch.screen30);
+
+    shch.watch30 = new shch.addDetect(.1);
+    shch.watch30.checkVision(shch.watch.screen31);
 }
 
 window.addEventListener('load', shch.LoadFunc);
