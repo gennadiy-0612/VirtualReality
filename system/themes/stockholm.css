@@ -546,8 +546,7 @@ li {
  text-transform:uppercase;
  width:30px;
  height:30px;
- transform:rotate(45deg);
- position:relative
+ transform:rotate(45deg)
 }
 .roadmap-item__title::after {
  position:absolute;
@@ -825,7 +824,7 @@ a {
  background:url(img/firstBack.svg) center 50px no-repeat;
  background-size:contain;
  height:91vh;
- padding: 0 50px;
+ padding:0 50px
 }
 .firstScreen {
  padding-top:0;
@@ -1144,14 +1143,9 @@ a {
 }
 .doLinks-project {
  padding:71px 0 0;
- justify-content:flex-start;
  border-bottom:1px solid #707070;
  max-width:1440px;
  margin:auto
-}
-.doli-projects {
- flex:1 1 auto;
- max-width:360px
 }
 .doA-project {
  letter-spacing:1.9px;
@@ -1248,28 +1242,23 @@ a {
  display:block;
  width:100%
 }
-.WhyVR {
- opacity: 0;
- max-width:1480px;
- margin:auto;
- padding-top:30vh;
- transition:padding-top .7s ease-in-out
-}
-.WhyVRAnim {
- opacity: 1;
- padding-top:1vh
-}
-.WhyVRAnimFix {
- padding-top:1vh;
-}
 .Digits {
  max-width:1920px;
  margin:-110px auto;
  padding:110px 0;
  background:url(img/Digits.svg) center center no-repeat;
  background-size:100%;
- position:relative;
- transition: padding-top 1s linear;
+ height:100vh
+}
+.WhyVR {
+ opacity:0;
+ max-width:1480px;
+ margin:auto;
+ padding-top:1vh;
+ transition:padding-top .7s ease-in-out
+}
+.WhyVRAnim {
+ opacity: 1;
 }
 .WhyVRH2 {
  letter-spacing:4.6px;
@@ -1388,7 +1377,7 @@ a {
  flex-wrap:wrap;
  justify-content:space-between;
  padding-bottom:46px;
- margin-bottom:30px;
+ margin-bottom:30px
 }
 .faceGlasses {
  max-width:1920px;

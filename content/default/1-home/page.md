@@ -73,9 +73,9 @@ Title: Home Language: en
 <h2 id="ListPro" class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
 </div>
 <ul class="doLinks doLinks-project WhatWeDo">
-<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey Ag24 doA doA-project doLinksActive DoAPro cursorPoint">01. safety</a></li>
-<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey doA doA-project DoAPro Ag24 cursorPoint">02. defense</a></li>
-<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey doA doA-project DoAPro Ag24 cursorPoint">03. your project</a></li>
+<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey Ag24 doA doA-project doLinksActive DoAPro cursorPoint">safety</a></li>
+<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey doA doA-project DoAPro Ag24 cursorPoint">defense</a></li>
+<li class="doli doli-projects"><a title="title" href="#ListPro" class="colorGrey doA doA-project DoAPro Ag24 cursorPoint">your project</a></li>
 </ul>
 <div id="outSlide" class="outSlide">
 <a title="title" class="outSlideLeft arrowDirectionOut" href="#ListPro">
