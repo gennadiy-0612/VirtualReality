@@ -908,15 +908,11 @@ a {
  flex-direction:column
 }
 .virtual-word {
- width:100%;
- max-height:177px;
  background:url(img/Virtual.svg) left center no-repeat;
  background-size:contain;
  height:16.3vh
 }
 .reality-word {
- width:100%;
- max-height:177px;
  background:url(img/Reality.svg) left center no-repeat;
  background-size:contain;
  margin:16px 0;
@@ -1527,7 +1523,7 @@ a {
 .stepsP {
  line-height:29px;
  letter-spacing:1.7px;
- color:#FFF;
+ color:#FFF
 }
 .stepsInfo {
  position:relative;
@@ -1755,7 +1751,7 @@ a {
   max-width:initial
  }
  .stepsInfo {
-  align-self:center;
+  align-self:center
  }
  .arrow {
   transform:none;
