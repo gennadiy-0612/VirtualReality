@@ -257,24 +257,28 @@ shch.digits = {
         }
         if (shch.digits.step === 2) {
             document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim2');
+            document.querySelector(".digits").classList.add('digitsAnim');
+            document.querySelector('.Dig1').classList.add('Dig1Anim');
+            document.querySelector('.Dig2').classList.add('Dig2Anim');
+            document.querySelector('.Dig3').classList.add('Dig3Anim');
+            document.querySelector('.Dig4').classList.add('Dig4Anim');
             setTimeout(function () {
                 shch.digits.step = 3
             }, 500);
             shch.digits.step = 0
         }
         if (shch.digits.step === 3) {
-            document.querySelector('.Dig1').classList.add('Dig1Anim');
-            document.querySelector('.Dig2').classList.add('Dig2Anim');
-            document.querySelector('.Dig3').classList.add('Dig3Anim');
-            document.querySelector('.Dig4').classList.add('Dig4Anim');
+            document.querySelector(".digits").classList.add('digitsAnim1');
+            document.querySelector(".Compare").classList.add('CompareAnim');
+            document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
+            document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
             setTimeout(function () {
                 shch.digits.step = 4
             }, 500);
             shch.digits.step = 0
         }
         if (shch.digits.step === 4) {
-            document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
-            document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
+            document.querySelector(".Compare").classList.add('CompareAnim1');
             setTimeout(function () {
                 shch.digits.step = 5
             }, 500);

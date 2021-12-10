@@ -338,7 +338,9 @@ li {
 }
 .GoodTrainingAnim {
  opacity:1;
- transition:opacity .7s ease
+ transition-property:opacity, filter;
+ transition-duration: .7s;
+ transition-timing-function: linear;
 }
 .BadTraining {
  opacity:0;
@@ -349,7 +351,7 @@ li {
  opacity:1;
  transition:opacity,blur;
  transition-duration:.7s;
- transition-timing-function:ease;
+ transition-timing-function:linear;
  transition-delay:.2s
 }
 .WhoWeH2Left {
@@ -1242,6 +1244,7 @@ a {
  display:block;
  width:100%
 }
+.DigitsScreen{margin: 0}
 .Digits {
  max-width:1920px;
  margin:-110px auto;
@@ -1270,7 +1273,7 @@ a {
 }
 .WhyVRH2Anim {
  opacity: 1;
- transform:translateY(15vh);
+ transform:translateY(25vh);
 }
 .WhyVRH2Anim2 {
  transform:translateY(0);
@@ -1279,7 +1282,15 @@ a {
  display:flex;
  flex-wrap:wrap;
  justify-content:space-between;
- max-width:1430px
+ max-width:1430px;
+ transform: translateY(30vh);
+ transition: transform .7s linear ;
+}
+.digitsAnim{
+ transform: translateY(25vh);
+}
+.digitsAnim1{
+ transform: translateY(0);
 }
 .digitsDigit {
  letter-spacing:8.1px
@@ -1319,8 +1330,12 @@ a {
  display:flex;
  flex-wrap:wrap;
  justify-content:space-around;
- margin:13px 0 0
+ margin:13px 0 0;
+ transform: translateY(30vh);
+ transition: transform .7s linear;
 }
+.CompareAnim{ transform: translateY(15vh);}
+.CompareAnim1{ transform: translateY(0);}
 .good {
  flex:1 1 auto
 }
