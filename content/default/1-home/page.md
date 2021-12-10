@@ -42,7 +42,7 @@ Title: Home Language: en
 <div class="doInfoH2 doInfoH21">
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
 </div>
-<ul class="doLinks" id="doLinks">
+<ul class="doLinks doLinksTop" id="doLinks">
 <li class="doli DoLI1"><a title="title" href="#Screen2" class="Ag18 colorGrey doA doLinksActive">Immersive Trainings</a></li>
 <li class="doli DoLI2"><a title="title"  href="#Screen2" class="colorGrey doA Ag18">Realistic Simulations</a></li>
 <li class="doli DoLI3"><a title="title"  href="#Screen2" class="colorGrey doA Ag18">Aptitude Testing</a></li>
