@@ -248,9 +248,7 @@ shch.digits = {
         if (window.pageYOffset > shch.digits.papa.offsetTop) {
             if (shch.digits.step === 1) {
                 this.outTag = document.querySelector(".Digits");
-                this.outTag.classList.add('DigitsAnim');
-                shch.digits.son.classList.add('VRH2Anim');
-                document.querySelector(".WhyVR").classList.add('WhyVRAnimFix');
+                document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim');
                 setTimeout(function () {
                     shch.digits.step = 2
                 }, 500);
@@ -258,7 +256,7 @@ shch.digits = {
             }
         }
         if (shch.digits.step === 2) {
-            document.querySelector(".WhyVR").classList.add('WhyVRAnim');
+            document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim2');
             setTimeout(function () {
                 shch.digits.step = 3
             }, 500);
@@ -277,7 +275,6 @@ shch.digits = {
         if (shch.digits.step === 4) {
             document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
             document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
-            document.querySelector(".Digits").classList.remove('DigitsAnim');
             setTimeout(function () {
                 shch.digits.step = 5
             }, 500);
@@ -286,7 +283,6 @@ shch.digits = {
         if (shch.digits.step === 5) {
             setTimeout(function () {
                 shch.digits.step = 6
-                document.querySelector(".WhyVR").classList.remove('WhyVRAnimFix');
             }, 500);
             shch.digits.step = 0
         }

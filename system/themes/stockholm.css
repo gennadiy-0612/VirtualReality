@@ -1251,16 +1251,16 @@ a {
  height:100vh
 }
 .WhyVR {
- opacity:0;
  max-width:1480px;
  margin:auto;
  padding-top:1vh;
- transition:padding-top .7s ease-in-out
-}
-.WhyVRAnim {
- opacity: 1;
 }
 .WhyVRH2 {
+ opacity: 0;
+ transform: translateY(50vh);
+ transition: opacity,transform;
+ transition-duration: .7s;
+ transition-timing-function: ease-in-out;
  letter-spacing:4.6px;
  padding-top:75px
 }
@@ -1268,12 +1268,12 @@ a {
  opacity:0;
  transform:translateY(30vh)
 }
-.VRH2Anim {
- opacity:1;
- transform:translateY(1vh);
- transition-property:opacity,transform;
- transition-duration:.7s;
- transition-timing-function:ease-in-out
+.WhyVRH2Anim {
+ opacity: 1;
+ transform:translateY(15vh);
+}
+.WhyVRH2Anim2 {
+ transform:translateY(0);
 }
 .digits {
  display:flex;
