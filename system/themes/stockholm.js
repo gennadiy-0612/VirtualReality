@@ -1,5 +1,70 @@
 /* use strict*/
 let shch = {};
+shch.counter = function () {
+    this.GO = 1;
+    this.funcNumber = 0;
+    this.start = window.scrollY;
+    this.outTag = document.querySelector(".Digits").offsetTop;
+    this.outTagH = document.querySelector(".WhyVR").offsetHeight+document.querySelector(".Digits").offsetTop;
+    this.f={1:0,2:0,3:0,4:0,5:0,6:0,7:0}
+    this.addE = function () {window.addEventListener('wheel', shch.DG.counts.bind(shch.DG, window.scrollY))}
+    this.counts = function () {
+        if (this.outTag>window.pageYOffset) return;
+        if (!this.GO) return;
+        console.log(event)
+        if (event.wheelDeltaY>0) console.log('(event.deltaY>0)')
+        this.move = this.start - window.scrollY;
+        this.sc = 0;
+        if (this.funcNumber===8) {
+            this.GO = 0;
+            return;
+        }
+        this.funcNumber = this.funcNumber + 1;
+        this['f' + this.funcNumber]();
+    }
+    this.f1 = function () {
+        console.log('cont')
+        if (this.f[1]) return;
+        this.f[1] = 1;
+        document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
+        document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim1');
+    }
+    this.f2 = function () {
+        if (this.f[2]) return;
+        this.f[2] = 1;
+        document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim2');
+    }
+    this.f3 = function () {
+        if (this.f[3]) return;
+        this.f[3] = 1;
+        document.querySelector('.Dig1').classList.add('Dig1Anim');
+        document.querySelector('.Dig2').classList.add('Dig2Anim');
+        document.querySelector('.Dig3').classList.add('Dig3Anim');
+        document.querySelector('.Dig4').classList.add('Dig4Anim');
+    }
+    this.f4 = function () {
+        if (this.f[4]) return;
+        this.f[4] = 1;
+        document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
+    }
+    this.f5 = function () {
+        if (this.f[5]) return;
+        this.f[45] = 1;
+        document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
+    }
+    this.f6 = function () {
+        if (this.f[6]) return;
+        this.f[6] = 1;
+        document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
+    }
+    this.f7 = function () {
+        if (this.f[7]) return;
+        this.f[7] = 1;
+        document.querySelector(".Digits").classList.add('DigitsAnim');
+        // window.scrollTo(0, this.outTagH);
+    }
+};
+
 shch.addDetect = function (inter) {
 
     this.checkVision = function (init) {
@@ -11,9 +76,8 @@ shch.addDetect = function (inter) {
         function vdHandler(els) {
             els.forEach((data) => {
                 if (data.intersectionRatio === inter) {
-                    data.target.classList.toggle(init.animationName);
-                    console.log(init.animationName)
-                    console.log(data.intersectionRatio)
+                    data.target.classList.add(init.animationName);
+                    init.func();
                 }
                 if (data.intersectionRatio > inter) {
                     data.target.classList.add(init.animationName);
@@ -88,7 +152,6 @@ shch.BS = function (cs, ps, papa) {
     this.actSet = function (id, actLink, actSelect) {
         this.display = id;
         this.controlerDisplay.classList.remove(actLink);
-        console.log(this.controlerDisplay)
         this.passivecurrent.classList.remove(actSelect);
         this.controler[id].classList.add(actLink)
         this.passive[id].classList.add(actSelect)
@@ -240,62 +303,7 @@ shch.watch = {
         animationName: 'Desktop7Anim'
     }
 }
-shch.digits = {
-    outTag: '',
-    top: -100,
-    step: 1,
-    scroll: '',
-    papa: document.querySelector(".Digits"),
-    son: document.querySelector('.VRH2'),
-    adds: function (event) {
-        let HE = shch.digits.papa.offsetTop + shch.digits.papa.offsetHeight;
-        if (window.pageYOffset > shch.digits.papa.offsetTop) {
-            if (shch.digits.step === 1) {
-                this.outTag = document.querySelector(".Digits");
-                document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim');
-                setTimeout(function () {
-                    shch.digits.step = 2
-                }, 500);
-                shch.digits.step = 0
-            }
-        }
-        if (shch.digits.step === 2) {
-            document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim2');
-            document.querySelector(".digits").classList.add('digitsAnim');
-            document.querySelector('.Dig1').classList.add('Dig1Anim');
-            document.querySelector('.Dig2').classList.add('Dig2Anim');
-            document.querySelector('.Dig3').classList.add('Dig3Anim');
-            document.querySelector('.Dig4').classList.add('Dig4Anim');
-            setTimeout(function () {
-                shch.digits.step = 3
-            }, 500);
-            shch.digits.step = 0
-        }
-        if (shch.digits.step === 3) {
-            document.querySelector(".digits").classList.add('digitsAnim1');
-            document.querySelector(".Compare").classList.add('CompareAnim');
-            document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
-            document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
-            setTimeout(function () {
-                shch.digits.step = 4
-            }, 500);
-            shch.digits.step = 0
-        }
-        if (shch.digits.step === 4) {
-            document.querySelector(".Compare").classList.add('CompareAnim1');
-            setTimeout(function () {
-                shch.digits.step = 5
-            }, 500);
-            shch.digits.step = 0
-        }
-        if (shch.digits.step === 5) {
-            setTimeout(function () {
-                shch.digits.step = 6
-            }, 500);
-            shch.digits.step = 0
-        }
-    }
-}
+
 shch.LoadFunc = function () {
 
     shch.WWD = {}
@@ -338,7 +346,6 @@ shch.LoadFunc = function () {
         shch.OPMini[shch.OPMini.Papa.start].toward('.inLinkRight', 'actInSlide', 'outSlideImgAct');
         shch.OPMini[shch.OPMini.Papa.start].back('.inLinkLeft', 'actInSlide', 'outSlideImgAct');
     }
-    window.addEventListener('scroll', shch.digits.adds)
     shch.watchS01 = new shch.addDetect(.1);
     shch.watchS01.checkVision(shch.watch.screenS01);
 
@@ -439,8 +446,10 @@ shch.LoadFunc = function () {
     shch.watch30 = new shch.addDetect(.1);
     shch.watch30.checkVision(shch.watch.screen30);
 
-    shch.watch30 = new shch.addDetect(.1);
-    shch.watch30.checkVision(shch.watch.screen31);
+    shch.watch31 = new shch.addDetect(.1);
+    shch.watch31.checkVision(shch.watch.screen31);
 }
 
+shch.DG = new shch.counter();
 window.addEventListener('load', shch.LoadFunc);
+window.addEventListener('wheel', shch.DG.counts.bind(shch.DG));
