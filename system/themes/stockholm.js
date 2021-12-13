@@ -10,7 +10,7 @@ shch.counter = function () {
     this.addE = function () {window.addEventListener('wheel', shch.DG.counts.bind(shch.DG, window.scrollY))}
     this.counts = function () {
         if (event.wheelDeltaY>0) return;
-            if (window.pageYOffset < this.outTag) {
+        if (window.pageYOffset < this.outTag) {
             // this.f1();
             // this.f2();
             // this.f3();
@@ -19,7 +19,7 @@ shch.counter = function () {
             // this.f6();
             // this.f7();
             // this.GO = 0;
-            console.log('pageYOffset: ' + window.pageYOffset + ' < outTag: ' + this.outTag);
+            // console.log('pageYOffset: ' + window.pageYOffset + ' < outTag: ' + this.outTag);
             return;
         }
         if (!this.GO) return;
