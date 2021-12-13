@@ -9,17 +9,28 @@ shch.counter = function () {
     this.f={1:0,2:0,3:0,4:0,5:0,6:0,7:0}
     this.addE = function () {window.addEventListener('wheel', shch.DG.counts.bind(shch.DG, window.scrollY))}
     this.counts = function () {
-        if (this.outTag>window.pageYOffset) return;
+        if (window.pageYOffset < this.outTag) {
+            // this.f1();
+            // this.f2();
+            // this.f3();
+            // this.f4();
+            // this.f5();
+            // this.f6();
+            // this.f7();
+            // this.GO = 0;
+            console.log('pageYOffset: ' + window.pageYOffset + ' < outTag: ' + this.outTag);
+            return;
+        }
         if (!this.GO) return;
         console.log(event)
         if (event.wheelDeltaY>0) console.log('(event.deltaY>0)')
         this.move = this.start - window.scrollY;
         this.sc = 0;
+        this.funcNumber = this.funcNumber + 1;
         if (this.funcNumber===8) {
             this.GO = 0;
             return;
         }
-        this.funcNumber = this.funcNumber + 1;
         this['f' + this.funcNumber]();
     }
     this.f1 = function () {
@@ -49,7 +60,7 @@ shch.counter = function () {
     }
     this.f5 = function () {
         if (this.f[5]) return;
-        this.f[45] = 1;
+        this.f[5] = 1;
         document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
     }
     this.f6 = function () {
@@ -306,6 +317,9 @@ shch.watch = {
 
 shch.LoadFunc = function () {
 
+    shch.DG = new shch.counter();
+    window.addEventListener('wheel', shch.DG.counts.bind(shch.DG));
+
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
     shch.WWD.Papa.start = 0;
@@ -450,6 +464,4 @@ shch.LoadFunc = function () {
     shch.watch31.checkVision(shch.watch.screen31);
 }
 
-shch.DG = new shch.counter();
 window.addEventListener('load', shch.LoadFunc);
-window.addEventListener('wheel', shch.DG.counts.bind(shch.DG));

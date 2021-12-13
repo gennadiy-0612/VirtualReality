@@ -1639,8 +1639,8 @@ a {
 
 .faceGlasses {
  max-width: 1920px;
- margin: 0 auto;
- padding: 0;
+ margin: -90px auto;
+ padding: 60px 0;
  background: url(img/VRvision.png) 44.5% 73.9% no-repeat;
  background-size: 53%
 }
