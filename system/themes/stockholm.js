@@ -9,7 +9,8 @@ shch.counter = function () {
     this.f={1:0,2:0,3:0,4:0,5:0,6:0,7:0}
     this.addE = function () {window.addEventListener('wheel', shch.DG.counts.bind(shch.DG, window.scrollY))}
     this.counts = function () {
-        if (window.pageYOffset < this.outTag) {
+        if (event.wheelDeltaY>0) return;
+            if (window.pageYOffset < this.outTag) {
             // this.f1();
             // this.f2();
             // this.f3();
@@ -24,6 +25,7 @@ shch.counter = function () {
         if (!this.GO) return;
         console.log(event)
         if (event.wheelDeltaY>0) console.log('(event.deltaY>0)')
+        if (event.wheelDeltaY<0) console.log('(event.deltaY<0)')
         this.move = this.start - window.scrollY;
         this.sc = 0;
         this.funcNumber = this.funcNumber + 1;

@@ -124,7 +124,7 @@ li {
 .horizonLine::before {
  content: '';
  position: absolute;
- top: 0;
+ top: -1px;
  width: 100%;
  background-color: #FFF;
  height: 1px
