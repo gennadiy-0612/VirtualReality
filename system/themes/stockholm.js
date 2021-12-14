@@ -5,65 +5,41 @@ shch.h = function (e) {
     console.log('touch')
 };
 shch.counter = function () {
-    this.GO = 1;
     this.funcNumber = 0;
     this.start = window.scrollY;
     this.outTag = document.querySelector(".Digits").offsetTop;
     this.outTagH = document.querySelector(".WhyVR").offsetHeight + document.querySelector(".Digits").offsetTop;
     this.addE = function () {
-        window.addEventListener('wheel', shch.DG.counts.bind(shch.DG, window.scrollY, false));
+        window.addEventListener('wheel', shch.DG.counts.bind(shch.DG), window.scrollY, false);
     }
     this.counts = function () {
-        if (window.pageYOffset < this.outTag) {
-            // this.f1();
-            // this.f2();
-            // this.f3();
-            // this.f4();
-            // this.f5();
-            // this.f6();
-            // this.f7();
-            // this.GO = 0;
-            // console.log('pageYOffset: ' + window.pageYOffset + ' < outTag: ' + this.outTag);
-            return;
-        }
-        if (!this.GO) return;
+        if (window.pageYOffset < this.outTag) {return;}
         this.move = this.start - window.scrollY;
         this.sc = 0;
         this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
         if (this.funcNumber<0) this.funcNumber = 0;
         if (this.funcNumber===8) {
-            this.GO = 0;
             return;
         }
         event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']() ;
-        console.log(this.funcNumber);
-        console.log(event.wheelDeltaY)
     }
     this.f0 = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
         document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim1');
-        console.log('f1')
-
     }
     this.f0RB = function () {
         document.querySelector(".WhyVR").classList.remove('WhyVRAnim1');
         document.querySelector(".WhyVRH2").classList.remove('WhyVRH2Anim1');
-        console.log('RB1')
-
     }
     this.f1 = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
         document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim1');
-        console.log('f1')
-
     }
     this.f1RB = function () {
         document.querySelector(".WhyVRH2").classList.remove('WhyVRH2Anim2');
-        console.log('RB2')
     }
     this.f2 = function () {
         document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim2');
-        console.log('f2')
     }
     this.f2RB = function () {
         document.querySelector('.Dig1').classList.remove('Dig1Anim');
@@ -488,9 +464,7 @@ shch.LoadFunc = function () {
     shch.watch31 = new shch.addDetect(.1);
     shch.watch31.checkVision(shch.watch.screen31);
 
-    // document.querySelector(".Digits").addEventListener('touchstart',shch.h);
-    document.querySelector(".Digits").onpointerdown = shch.h;
-
+    document.querySelector(".Digits").onpointerdown = shch.DG.counts.bind(shch.DG);
 }
 
 window.addEventListener('load', shch.LoadFunc);
