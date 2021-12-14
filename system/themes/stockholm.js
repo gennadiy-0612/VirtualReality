@@ -1,26 +1,74 @@
 /* use strict*/
-console.log('t')
 let shch = {};
-shch.h = function (e) {
-    console.log('touch')
-};
-shch.counter = function () {
+shch.counter = function (papa, son) {
+    this.GO = 0;
     this.funcNumber = 0;
+    this.memoId=0;
     this.start = window.scrollY;
-    this.outTag = document.querySelector(".Digits").offsetTop;
-    this.outTagH = document.querySelector(".WhyVR").offsetHeight + document.querySelector(".Digits").offsetTop;
-    this.addE = function () {
-        window.addEventListener('wheel', shch.DG.counts.bind(shch.DG), window.scrollY, false);
-    }
-    this.counts = function () {
+    this.outTag = document.querySelector(papa).offsetTop;
+    this.outTagH = document.querySelector(son).offsetHeight + document.querySelector(papa).offsetTop;
+    this.counts = function (event) {
+        event.stopPropagation()
+        if (this.GO) {
+            this.GO = 0
+        }
         if (window.pageYOffset < this.outTag) {return;}
         if (window.pageYOffset > this.outTagH) {return;}
         this.move = this.start - window.scrollY;
         this.sc = 0;
         this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
         if (this.funcNumber < 0) this.funcNumber = 0;
-        if (this.funcNumber >7) this.funcNumber = 7;
+        if (this.funcNumber > 7) this.funcNumber = 7;
         event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']();
+        // this.pointAnim(event)
+        console.log(this.outTag+ ' '+this.outTagH)
+        if (window.pageYOffset>this.outTagH) window.scrollTo(0, this.outTagH);
+    }
+    this.pointAnim = function (event) {
+        let ELY = event.layerY/120;
+        // console.clear()
+        // console.log(ELY+' ELY')
+        // console.log(event.layerY+' event.layerY')
+        if (this.memoId<7) {
+            // window.scrollTo(0, document.querySelector(papa).offsetTop + 120);
+        }
+        if (this.memoId===7) {
+            this.memoId=7
+            // window.scrollTo(0, this.outTag);
+            return
+        }
+        if (ELY>1) {
+            // this['f' + 1]();
+            console.log('1')
+        }
+        if (ELY>2) {
+            // this['f' + 2]();
+            console.log('2')
+        }
+        if (ELY>3) {
+            // this['f' + 3]();
+            console.log('3')
+        }
+        if (ELY===4) {
+            // this['f' + 4]();
+            console.log('4')
+        }
+        if (ELY===5) {
+            // this['f' + 5]();
+            console.log('5')
+        }
+        if (ELY===6) {
+            // this['f' + 6]();
+            console.log('6')
+        }
+        if (ELY===7) {
+            // this['f' + 7]();
+            console.log('7')
+        }
+            // this['f' + this.memoId]();
+            // this.memoId++;
+            // this.funcNumber = this.memoId;
+        // }
     }
     this.f0 = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
@@ -71,14 +119,13 @@ shch.counter = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
     }
     this.f6RB = function () {
-        // document.querySelector(".Digits").classList.add('DigitsAnim');
-        window.scrollTo(0, this.outTagH);
-    }
-    this.f7RB = function () {
-        // document.querySelector(".Digits").classList.add('DigitsAnim');
-        window.scrollTo(0, this.outTagH);
+        document.querySelector(".WhyVR").classList.remove('WhyVRAnim2');
     }
     this.f7 = function () {
+        // document.querySelector(".Digits").classList.add('DigitsAnim');
+        // window.scrollTo(0, this.outTagH);
+    }
+    this.f7RB = function () {
         // document.querySelector(".Digits").classList.add('DigitsAnim');
         // window.scrollTo(0, this.outTagH);
     }
@@ -325,8 +372,9 @@ shch.watch = {
 
 shch.LoadFunc = function () {
 
-    shch.DG = new shch.counter();
-    window.addEventListener('wheel', shch.DG.counts.bind(shch.DG));
+    shch.DG = new shch.counter('.Digits', '.WhyVR');
+    document.querySelector(".Digits").addEventListener('wheel', shch.DG.counts.bind(shch.DG));
+    document.querySelector(".Digits").addEventListener('onpointerup', shch.DG.counts.bind(shch.DG));
 
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
@@ -471,7 +519,6 @@ shch.LoadFunc = function () {
     shch.watch31 = new shch.addDetect(.1);
     shch.watch31.checkVision(shch.watch.screen31);
 
-    document.querySelector(".Digits").onpointerdown = shch.DG.counts.bind(shch.DG);
 }
 
 window.addEventListener('load', shch.LoadFunc);
