@@ -1,6 +1,7 @@
 /* use strict*/
+console.log('t')
 let shch = {};
-shch.h = function () {
+shch.h = function (e) {
     console.log('touch')
 };
 shch.counter = function () {
@@ -8,14 +9,11 @@ shch.counter = function () {
     this.funcNumber = 0;
     this.start = window.scrollY;
     this.outTag = document.querySelector(".Digits").offsetTop;
-    this.outTagH = document.querySelector(".WhyVR").offsetHeight+document.querySelector(".Digits").offsetTop;
-    this.f={1:0,2:0,3:0,4:0,5:0,6:0,7:0}
+    this.outTagH = document.querySelector(".WhyVR").offsetHeight + document.querySelector(".Digits").offsetTop;
     this.addE = function () {
-        window.addEventListener('wheel', shch.DG.counts.bind(shch.DG, window.scrollY));
-        window.addEventListener('touchstart', shch.h);
+        window.addEventListener('wheel', shch.DG.counts.bind(shch.DG, window.scrollY, false));
     }
     this.counts = function () {
-        if (event.wheelDeltaY>0) return;
         if (window.pageYOffset < this.outTag) {
             // this.f1();
             // this.f2();
@@ -31,50 +29,73 @@ shch.counter = function () {
         if (!this.GO) return;
         this.move = this.start - window.scrollY;
         this.sc = 0;
-        this.funcNumber = this.funcNumber + 1;
+        this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
+        if (this.funcNumber<0) this.funcNumber = 0;
         if (this.funcNumber===8) {
             this.GO = 0;
             return;
         }
-        this['f' + this.funcNumber]();
+        event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']() ;
+        console.log(this.funcNumber);
+        console.log(event.wheelDeltaY)
     }
-    this.f1 = function () {
-        if (this.f[1]) return;
-        this.f[1] = 1;
+    this.f0 = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
         document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim1');
+        console.log('f1')
+
+    }
+    this.f0RB = function () {
+        document.querySelector(".WhyVR").classList.remove('WhyVRAnim1');
+        document.querySelector(".WhyVRH2").classList.remove('WhyVRH2Anim1');
+        console.log('RB1')
+
+    }
+    this.f1 = function () {
+        document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
+        document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim1');
+        console.log('f1')
+
+    }
+    this.f1RB = function () {
+        document.querySelector(".WhyVRH2").classList.remove('WhyVRH2Anim2');
+        console.log('RB2')
     }
     this.f2 = function () {
-        if (this.f[2]) return;
-        this.f[2] = 1;
         document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim2');
+        console.log('f2')
+    }
+    this.f2RB = function () {
+        document.querySelector('.Dig1').classList.remove('Dig1Anim');
+        document.querySelector('.Dig2').classList.remove('Dig2Anim');
+        document.querySelector('.Dig3').classList.remove('Dig3Anim');
+        document.querySelector('.Dig4').classList.remove('Dig4Anim');
     }
     this.f3 = function () {
-        if (this.f[3]) return;
-        this.f[3] = 1;
         document.querySelector('.Dig1').classList.add('Dig1Anim');
         document.querySelector('.Dig2').classList.add('Dig2Anim');
         document.querySelector('.Dig3').classList.add('Dig3Anim');
         document.querySelector('.Dig4').classList.add('Dig4Anim');
     }
+    this.f3RB = function () {
+        document.querySelector('.GoodTraining').classList.remove('GoodTrainingAnim');
+    }
     this.f4 = function () {
-        if (this.f[4]) return;
-        this.f[4] = 1;
         document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
     }
+    this.f4RB = function () {
+        document.querySelector('.BadTraining').classList.remove('BadTrainingAnim');
+    }
     this.f5 = function () {
-        if (this.f[5]) return;
-        this.f[5] = 1;
         document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
     }
+    this.f5RB = function () {
+        document.querySelector(".WhyVR").classList.remove('WhyVRAnim2');
+    }
     this.f6 = function () {
-        if (this.f[6]) return;
-        this.f[6] = 1;
         document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
     }
     this.f7 = function () {
-        if (this.f[7]) return;
-        this.f[7] = 1;
         // document.querySelector(".Digits").classList.add('DigitsAnim');
         window.scrollTo(0, this.outTagH);
     }
@@ -466,6 +487,9 @@ shch.LoadFunc = function () {
 
     shch.watch31 = new shch.addDetect(.1);
     shch.watch31.checkVision(shch.watch.screen31);
+
+    // document.querySelector(".Digits").addEventListener('touchstart',shch.h);
+    document.querySelector(".Digits").onpointerdown = shch.h;
 
 }
 
