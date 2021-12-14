@@ -14,14 +14,13 @@ shch.counter = function () {
     }
     this.counts = function () {
         if (window.pageYOffset < this.outTag) {return;}
+        if (window.pageYOffset > this.outTagH) {return;}
         this.move = this.start - window.scrollY;
         this.sc = 0;
         this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
-        if (this.funcNumber<0) this.funcNumber = 0;
-        if (this.funcNumber===8) {
-            return;
-        }
-        event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']() ;
+        if (this.funcNumber < 0) this.funcNumber = 0;
+        if (this.funcNumber >7) this.funcNumber = 7;
+        event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']();
     }
     this.f0 = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
@@ -71,9 +70,17 @@ shch.counter = function () {
     this.f6 = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
     }
-    this.f7 = function () {
+    this.f6RB = function () {
         // document.querySelector(".Digits").classList.add('DigitsAnim');
         window.scrollTo(0, this.outTagH);
+    }
+    this.f7RB = function () {
+        // document.querySelector(".Digits").classList.add('DigitsAnim');
+        window.scrollTo(0, this.outTagH);
+    }
+    this.f7 = function () {
+        // document.querySelector(".Digits").classList.add('DigitsAnim');
+        // window.scrollTo(0, this.outTagH);
     }
 };
 
