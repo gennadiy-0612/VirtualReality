@@ -1,5 +1,8 @@
 /* use strict*/
 let shch = {};
+shch.h = function () {
+    console.log('touch')
+};
 shch.counter = function () {
     this.GO = 1;
     this.funcNumber = 0;
@@ -7,7 +10,10 @@ shch.counter = function () {
     this.outTag = document.querySelector(".Digits").offsetTop;
     this.outTagH = document.querySelector(".WhyVR").offsetHeight+document.querySelector(".Digits").offsetTop;
     this.f={1:0,2:0,3:0,4:0,5:0,6:0,7:0}
-    this.addE = function () {window.addEventListener('wheel', shch.DG.counts.bind(shch.DG, window.scrollY))}
+    this.addE = function () {
+        window.addEventListener('wheel', shch.DG.counts.bind(shch.DG, window.scrollY));
+        window.addEventListener('touchstart', shch.h);
+    }
     this.counts = function () {
         if (event.wheelDeltaY>0) return;
         if (window.pageYOffset < this.outTag) {
@@ -23,9 +29,6 @@ shch.counter = function () {
             return;
         }
         if (!this.GO) return;
-        console.log(event)
-        if (event.wheelDeltaY>0) console.log('(event.deltaY>0)')
-        if (event.wheelDeltaY<0) console.log('(event.deltaY<0)')
         this.move = this.start - window.scrollY;
         this.sc = 0;
         this.funcNumber = this.funcNumber + 1;
@@ -36,7 +39,6 @@ shch.counter = function () {
         this['f' + this.funcNumber]();
     }
     this.f1 = function () {
-        console.log('cont')
         if (this.f[1]) return;
         this.f[1] = 1;
         document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
@@ -73,8 +75,8 @@ shch.counter = function () {
     this.f7 = function () {
         if (this.f[7]) return;
         this.f[7] = 1;
-        document.querySelector(".Digits").classList.add('DigitsAnim');
-        // window.scrollTo(0, this.outTagH);
+        // document.querySelector(".Digits").classList.add('DigitsAnim');
+        window.scrollTo(0, this.outTagH);
     }
 };
 
@@ -464,6 +466,7 @@ shch.LoadFunc = function () {
 
     shch.watch31 = new shch.addDetect(.1);
     shch.watch31.checkVision(shch.watch.screen31);
+
 }
 
 window.addEventListener('load', shch.LoadFunc);

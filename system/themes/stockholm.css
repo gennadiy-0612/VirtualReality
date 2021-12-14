@@ -1242,21 +1242,19 @@ a {
 }
 .DigitsScreen {
  margin:0;
- /*! height:100%; *//*! display:flex; *//*! flex-direction:column; *//*! justify-content:center */
+
 }
 .Digits {
  max-width:1920px;
- margin:0 auto 20vh;
+ margin:0 auto 10vh;
  padding:0;
  background:url(img/Digits.svg) center center no-repeat;
  background-size:100%;
- height:145vh;
+ height:138vh;
  position:relative;
  transition:margin-bottom .7s linear
 }
-.DigitsAnim {
- margin-bottom:10vh
-}
+
 .WhyVR {
  max-width:1480px;
  margin:auto;
@@ -1266,9 +1264,9 @@ a {
  right:0;
  bottom:initial;
  height:100vh;
- display: flex;
- flex-direction: column;
- justify-content: center;
+ display:flex;
+ flex-direction:column;
+ justify-content:center
 }
 .WhyVRAnim1 {
  position:fixed
@@ -1817,4 +1815,7 @@ a {
  .approachImg {
   display:none
  }
+}
+@media (max-height:1080px) {
+ .WhyVR{height: initial;}
 }
