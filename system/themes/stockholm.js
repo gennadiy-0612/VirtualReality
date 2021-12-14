@@ -8,21 +8,21 @@ shch.counter = function (papa, son) {
     this.outTag = document.querySelector(papa).offsetTop;
     this.outTagH = document.querySelector(son).offsetHeight + document.querySelector(papa).offsetTop;
     this.counts = function (event) {
+        if (!this.GO)
+        this.GO=0;
         event.stopPropagation()
         if (this.GO) {
             this.GO = 0
         }
         if (window.pageYOffset < this.outTag) {return;}
-        if (window.pageYOffset>this.outTagH) {
-            window.scrollTo(0, this.outTagH);
-            return;
-        }
+        if (window.pageYOffset>this.outTagH) {return;}
         this.move = this.start - window.scrollY;
         this.sc = 0;
         this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
         if (this.funcNumber < 0) this.funcNumber = 0;
         if (this.funcNumber > 7) this.funcNumber = 7;
         event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']();
+        console.log(this.funcNumber)
         // this.pointAnim(event)
     }
     this.pointAnim = function (event) {
@@ -72,8 +72,6 @@ shch.counter = function (papa, son) {
         // }
     }
     this.f0 = function () {
-        document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
-        document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim1');
     }
     this.f0RB = function () {
         document.querySelector(".WhyVR").classList.remove('WhyVRAnim1');
@@ -124,6 +122,7 @@ shch.counter = function (papa, son) {
     }
     this.f7 = function () {
         document.querySelector(".Digits").classList.add('DigitsAnim');
+        window.scrollTo(0, this.outTagH);
     }
     this.f7RB = function () {
         document.querySelector(".Digits").classList.remove('DigitsAnim');
