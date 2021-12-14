@@ -13,7 +13,10 @@ shch.counter = function (papa, son) {
             this.GO = 0
         }
         if (window.pageYOffset < this.outTag) {return;}
-        if (window.pageYOffset > this.outTagH) {return;}
+        if (window.pageYOffset>this.outTagH) {
+            window.scrollTo(0, this.outTagH);
+            return;
+        }
         this.move = this.start - window.scrollY;
         this.sc = 0;
         this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
@@ -21,8 +24,6 @@ shch.counter = function (papa, son) {
         if (this.funcNumber > 7) this.funcNumber = 7;
         event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']();
         // this.pointAnim(event)
-        console.log(this.outTag+ ' '+this.outTagH)
-        if (window.pageYOffset>this.outTagH) window.scrollTo(0, this.outTagH);
     }
     this.pointAnim = function (event) {
         let ELY = event.layerY/120;
@@ -122,12 +123,10 @@ shch.counter = function (papa, son) {
         document.querySelector(".WhyVR").classList.remove('WhyVRAnim2');
     }
     this.f7 = function () {
-        // document.querySelector(".Digits").classList.add('DigitsAnim');
-        // window.scrollTo(0, this.outTagH);
+        document.querySelector(".Digits").classList.add('DigitsAnim');
     }
     this.f7RB = function () {
-        // document.querySelector(".Digits").classList.add('DigitsAnim');
-        // window.scrollTo(0, this.outTagH);
+        document.querySelector(".Digits").classList.add('DigitsAnim');
     }
 };
 

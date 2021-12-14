@@ -1241,8 +1241,11 @@ a {
  width:100%
 }
 .DigitsScreen {
- margin:0;
-
+ margin-bottom: 5vh;
+ transition: margin-bottom 5s linear;
+}
+.DigitsAnim{
+    margin-bottom: 20vh;
 }
 .Digits {
  max-width:1920px;
