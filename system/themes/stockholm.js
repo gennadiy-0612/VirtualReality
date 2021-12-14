@@ -126,7 +126,7 @@ shch.counter = function (papa, son) {
         document.querySelector(".Digits").classList.add('DigitsAnim');
     }
     this.f7RB = function () {
-        document.querySelector(".Digits").classList.add('DigitsAnim');
+        document.querySelector(".Digits").classList.remove('DigitsAnim');
     }
 };
 
