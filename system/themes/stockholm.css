@@ -1246,7 +1246,7 @@ a {
 }
 .Digits {
  max-width:1920px;
- margin:0 auto 10vh;
+ margin:0 auto 20vh;
  padding:0;
  background:url(img/Digits.svg) center center no-repeat;
  background-size:100%;
