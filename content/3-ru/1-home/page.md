@@ -44,9 +44,9 @@ Language: ru
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">Что мы делаем?</h2>
 </div>
 <ul class="doLinks doLinksTop" id="doLinks">
-<li class="doli DoLI1"><a title="title" href="#Screen2" class="Ag18 colorGrey doA doLinksActive">Immersive Trainings</a></li>
-<li class="doli DoLI2"><a title="title"  href="#Screen2" class="colorGrey doA Ag18">Реалистичное моделирование</a></li>
-<li class="doli DoLI3"><a title="title"  href="#Screen2" class="colorGrey doA Ag18">Проверка способностей</a></li>
+<li class="doli DoLI1"><a title="title" href="#Screen2" class="Ag18 colorGrey doA-project doLinksActive">Immersive Trainings</a></li>
+<li class="doli DoLI2"><a title="title"  href="#Screen2" class="colorGrey doA-project Ag18">Реалистичное моделирование</a></li>
+<li class="doli DoLI3"><a title="title"  href="#Screen2" class="colorGrey doA-project Ag18">Проверка способностей</a></li>
 </ul>
 </div>
 <div class="doImages FromSmall">

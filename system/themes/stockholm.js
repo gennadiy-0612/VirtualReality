@@ -118,14 +118,14 @@ shch.counter = function (papa, son) {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
     }
     this.f6RB = function () {
-        document.querySelector(".WhyVR").classList.remove('WhyVRAnim2');
+        document.querySelector(".Digits").classList.remove('DigitsAnim');
     }
     this.f7 = function () {
         document.querySelector(".Digits").classList.add('DigitsAnim');
         window.scrollTo(0, this.outTagH);
     }
     this.f7RB = function () {
-        document.querySelector(".Digits").classList.remove('DigitsAnim');
+        window.scrollTo(0, this.outTagH-120);
     }
 };
 

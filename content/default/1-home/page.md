@@ -44,9 +44,9 @@ Language: en
 <h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
 </div>
 <ul class="doLinks doLinksTop" id="doLinks">
-<li class="doli DoLI1"><a title="title" href="#Screen2" class="Ag18 colorGrey doA doLinksActive">Immersive Trainings</a></li>
-<li class="doli DoLI2"><a title="title"  href="#Screen2" class="colorGrey doA Ag18">Realistic Simulations</a></li>
-<li class="doli DoLI3"><a title="title"  href="#Screen2" class="colorGrey doA Ag18">Aptitude Testing</a></li>
+<li class="doli DoLI1"><a title="title" href="#Screen2" class="Ag24 colorGrey doA doLinksActive">Immersive Trainings</a></li>
+<li class="doli DoLI2"><a title="title"  href="#Screen2" class="colorGrey doA Ag24">Realistic Simulations</a></li>
+<li class="doli DoLI3"><a title="title"  href="#Screen2" class="colorGrey doA Ag24">Aptitude Testing</a></li>
 </ul>
 </div>
 <div class="doImages FromSmall">
@@ -401,6 +401,6 @@ Language: en
 <span class="copyRightSpan Law Ag18 colorGrey8">All Rights Reserved</span>
 </p>
 <address class="address Ag18 colorGrey8 foot__item">VR.Consulting Sp. z o.o., NIP: 7011030959
-Nowogrodzka str., 50-515, 00-695,<br/> Warsaw</address>
+Nowogrodzka str., 50-515, 00-695, Warsaw</address>
 </footer>
 </div>

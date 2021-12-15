@@ -1088,7 +1088,7 @@ a {
 .doA {
  display:block;
  padding:14px 28px 14px 0;
- letter-spacing:.7px;
+ letter-spacing:1.9px;
  margin:0 0 16px;
  border-bottom:1px solid #707070;
  text-transform:uppercase;
@@ -1146,7 +1146,6 @@ a {
  margin:auto
 }
 .doA-project {
- letter-spacing:1.9px;
  margin-bottom:0
 }
 .biggerSlide {
