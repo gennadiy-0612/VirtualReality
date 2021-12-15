@@ -1050,10 +1050,11 @@ a {
  letter-spacing:4.6px
 }
 .Screen2 {
- height:100vh;
- display:flex;
- flex-direction:column;
- justify-content:space-between
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 3.4% 0;
 }
 .doInfo {
  display:flex;
@@ -1132,7 +1133,9 @@ a {
  object-fit:cover
 }
 .doImages {
- flex:1 1 auto
+ flex:1 1 auto;
+ max-height: 768px;
+ height: 71vh;
 }
 .Slides {
  max-width:1700px;
