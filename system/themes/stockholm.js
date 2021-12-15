@@ -9,7 +9,16 @@ shch.counter = function (papa, son) {
     this.DY = 0;
     this.counts = function (event) {
         event.stopPropagation()
-        if ( this.outTag > window.pageYOffset || window.pageYOffset > this.outTagH) {return;}
+        if (this.outTag > window.pageYOffset) return;
+        if (window.pageYOffset > this.outTagH) {
+            this.f1();
+            this.f2();
+            this.f3();
+            this.f4();
+            this.f5();
+            this.f6();
+            this.f7();
+        }
         this.sc = 0;
         // this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
         if (this.funcNumber < 0 || this.funcNumber > 7) return;
