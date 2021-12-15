@@ -3,75 +3,30 @@ let shch = {};
 shch.counter = function (papa, son) {
     this.GO = 0;
     this.funcNumber = 0;
-    this.memoId=0;
     this.start = window.scrollY;
     this.outTag = document.querySelector(papa).offsetTop;
     this.outTagH = document.querySelector(son).offsetHeight + document.querySelector(papa).offsetTop;
+    this.DY = 0;
     this.counts = function (event) {
-        if (!this.GO)
-        this.GO=0;
         event.stopPropagation()
-        if (this.GO) {
-            this.GO = 0
-        }
-        if (window.pageYOffset < this.outTag) {return;}
-        if (window.pageYOffset>this.outTagH) {return;}
-        this.move = this.start - window.scrollY;
+        if ( this.outTag > window.pageYOffset || window.pageYOffset > this.outTagH) {return;}
         this.sc = 0;
-        this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
-        if (this.funcNumber < 0) this.funcNumber = 0;
-        if (this.funcNumber > 7) this.funcNumber = 7;
-        event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']();
-        console.log(this.funcNumber)
+        // this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
+        if (this.funcNumber < 0 || this.funcNumber > 7) return;
+        // event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']();
         // this.pointAnim(event)
+        this.DY++
+        if (this.DY === 21 ) {
+            this.DY = 0;
+            this.funcNumber++;
+            this['f' + this.funcNumber]();
+        }
+        console.log('this.DY ------------ ' + this.DY);
     }
     this.pointAnim = function (event) {
-        let ELY = event.layerY/120;
-        // console.clear()
-        // console.log(ELY+' ELY')
-        // console.log(event.layerY+' event.layerY')
-        if (this.memoId<7) {
-            // window.scrollTo(0, document.querySelector(papa).offsetTop + 120);
-        }
-        if (this.memoId===7) {
-            this.memoId=7
-            // window.scrollTo(0, this.outTag);
-            return
-        }
-        if (ELY>1) {
-            // this['f' + 1]();
-            console.log('1')
-        }
-        if (ELY>2) {
-            // this['f' + 2]();
-            console.log('2')
-        }
-        if (ELY>3) {
-            // this['f' + 3]();
-            console.log('3')
-        }
-        if (ELY===4) {
-            // this['f' + 4]();
-            console.log('4')
-        }
-        if (ELY===5) {
-            // this['f' + 5]();
-            console.log('5')
-        }
-        if (ELY===6) {
-            // this['f' + 6]();
-            console.log('6')
-        }
-        if (ELY===7) {
-            // this['f' + 7]();
-            console.log('7')
-        }
-            // this['f' + this.memoId]();
-            // this.memoId++;
-            // this.funcNumber = this.memoId;
-        // }
     }
     this.f0 = function () {
+        console.log('f0')
     }
     this.f0RB = function () {
         document.querySelector(".WhyVR").classList.remove('WhyVRAnim1');
@@ -80,6 +35,7 @@ shch.counter = function (papa, son) {
     this.f1 = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
         document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim1');
+        console.log('f1')
     }
     this.f1RB = function () {
         document.querySelector(".WhyVRH2").classList.remove('WhyVRH2Anim2');
@@ -121,6 +77,7 @@ shch.counter = function (papa, son) {
         document.querySelector(".Digits").classList.remove('DigitsAnim');
     }
     this.f7 = function () {
+        document.querySelector(".WhyVR").classList.remove('WhyVRAnim1');
         document.querySelector(".Digits").classList.add('DigitsAnim');
         window.scrollTo(0, this.outTagH);
     }
