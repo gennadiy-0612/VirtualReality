@@ -7,8 +7,10 @@ shch.counter = function (papa, son) {
     this.outTag = document.querySelector(papa).offsetTop;
     this.outTagH = document.querySelector(son).offsetHeight + document.querySelector(papa).offsetTop;
     this.DY = 0;
+    this.WDY =0;
     this.counts = function (event) {
         event.stopPropagation()
+        // event.preventDefault()
         if (this.outTag > window.pageYOffset) return;
         if (window.pageYOffset > this.outTagH) {
             this.f1();
@@ -25,12 +27,17 @@ shch.counter = function (papa, son) {
         // event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']();
         // this.pointAnim(event)
         this.DY++
-        if (this.DY === 21 ) {
-            this.DY = 0;
+        if (window.onpointerup) console.log('window.onpointerup')
+        if (window.onwheel) console.log('window.onwheel')
+        this.WDY += event.wheelDeltaY;
+        console.log('this.WDY: '+this.WDY);
+        if (this.WDY < -100) {
+            this.WDY = 0;
             this.funcNumber++;
             this['f' + this.funcNumber]();
         }
         console.log('this.DY ------------ ' + this.DY);
+        console.log( event);
     }
     this.pointAnim = function (event) {
     }
@@ -51,6 +58,7 @@ shch.counter = function (papa, son) {
     }
     this.f2 = function () {
         document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim2');
+        console.log('f2')
     }
     this.f2RB = function () {
         document.querySelector('.Dig1').classList.remove('Dig1Anim');
@@ -63,24 +71,28 @@ shch.counter = function (papa, son) {
         document.querySelector('.Dig2').classList.add('Dig2Anim');
         document.querySelector('.Dig3').classList.add('Dig3Anim');
         document.querySelector('.Dig4').classList.add('Dig4Anim');
+        console.log('f3')
     }
     this.f3RB = function () {
         document.querySelector('.GoodTraining').classList.remove('GoodTrainingAnim');
     }
     this.f4 = function () {
         document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
+        console.log('f4')
     }
     this.f4RB = function () {
         document.querySelector('.BadTraining').classList.remove('BadTrainingAnim');
     }
     this.f5 = function () {
         document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
+        console.log('f5')
     }
     this.f5RB = function () {
         document.querySelector(".WhyVR").classList.remove('WhyVRAnim2');
     }
     this.f6 = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
+        console.log('f6')
     }
     this.f6RB = function () {
         document.querySelector(".Digits").classList.remove('DigitsAnim');
@@ -89,9 +101,10 @@ shch.counter = function (papa, son) {
         document.querySelector(".WhyVR").classList.remove('WhyVRAnim1');
         document.querySelector(".Digits").classList.add('DigitsAnim');
         window.scrollTo(0, this.outTagH);
+        console.log('f7')
     }
     this.f7RB = function () {
-        window.scrollTo(0, this.outTagH-120);
+        window.scrollTo(0, this.outTagH - 120);
     }
 };
 
