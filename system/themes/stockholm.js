@@ -323,7 +323,7 @@ shch.LoadFunc = function () {
 
     shch.DG = new shch.counter('.Digits', '.WhyVR');
     document.querySelector(".Digits").addEventListener('wheel', shch.DG.counts.bind(shch.DG));
-    document.querySelector(".Digits").addEventListener('onpointerup', shch.DG.counts.bind(shch.DG));
+    document.querySelector(".Digits").addEventListener('pointerup', shch.DG.counts.bind(shch.DG));
 
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
