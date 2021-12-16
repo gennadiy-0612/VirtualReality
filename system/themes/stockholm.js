@@ -1,10 +1,9 @@
 /* use strict*/
 let shch = {};
 shch.counter = function (papa, son) {
-    this.GO = 0;
     this.funcNumber = 0;
     this.start = window.scrollY;
-    this.outTagTop = document.querySelector(son).offsetTop;
+    this.outTagTop = document.querySelector(papa).offsetTop;
     this.outTagH = document.querySelector(son).offsetHeight + document.querySelector(papa).offsetTop;
     this.DY = 0;
     this.WDY = 0;
@@ -323,7 +322,7 @@ shch.LoadFunc = function () {
 
     shch.DG = new shch.counter('.Digits', '.WhyVR');
     document.querySelector(".Digits").addEventListener('wheel', shch.DG.counts.bind(shch.DG));
-    document.querySelector(".Digits").addEventListener('pointerup', shch.DG.counts.bind(shch.DG));
+    document.querySelector(".Digits").addEventListener('touchstart', shch.DG.counts.bind(shch.DG));
 
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
