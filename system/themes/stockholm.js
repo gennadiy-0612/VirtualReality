@@ -4,12 +4,13 @@ shch.counter = function (papa, son) {
     this.GO = 0;
     this.funcNumber = 0;
     this.start = window.scrollY;
+    this.outTagTop = document.querySelector(son).offsetTop;
     this.outTagH = document.querySelector(son).offsetHeight + document.querySelector(papa).offsetTop;
     this.DY = 0;
     this.WDY = 0;
     this.counts = function (event) {
-        // event.preventDefault()
-        // if (window.pageYOffset > this.outTagH) {
+        if ( window.scrollY < this.outTagTop) return
+        // if (window.scrollY > this.outTagTop+100){
         //     this.f1();
         //     this.f2();
         //     this.f3();
@@ -466,7 +467,6 @@ shch.LoadFunc = function () {
 
     shch.watch31 = new shch.addDetect(.1);
     shch.watch31.checkVision(shch.watch.screen31);
-
 }
 
 window.addEventListener('load', shch.LoadFunc);
