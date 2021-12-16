@@ -4,107 +4,78 @@ shch.counter = function (papa, son) {
     this.GO = 0;
     this.funcNumber = 0;
     this.start = window.scrollY;
-    this.outTag = document.querySelector(papa).offsetTop;
     this.outTagH = document.querySelector(son).offsetHeight + document.querySelector(papa).offsetTop;
     this.DY = 0;
-    this.WDY =0;
+    this.WDY = 0;
     this.counts = function (event) {
-        event.stopPropagation()
         // event.preventDefault()
-        if (this.outTag > window.pageYOffset) return;
-        if (window.pageYOffset > this.outTagH) {
-            this.f1();
-            this.f2();
-            this.f3();
-            this.f4();
-            this.f5();
-            this.f6();
-            this.f7();
-        }
-        this.sc = 0;
+        // if (window.pageYOffset > this.outTagH) {
+        //     this.f1();
+        //     this.f2();
+        //     this.f3();
+        //     this.f4();
+        //     this.f5();
+        //     this.f6();
+        //     this.f7();
+        // }
+        if ( window.scrollY > this.outTagH) document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
         // this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
-        if (this.funcNumber < 0 || this.funcNumber > 7) return;
         // event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']();
-        // this.pointAnim(event)
-        this.DY++
-        if (window.onpointerup) console.log('window.onpointerup')
-        if (window.onwheel) console.log('window.onwheel')
+        this.pointAnim(event)
+    }
+    this.pointAnim = function (event) {
+        this.DY++;
         this.WDY += event.wheelDeltaY;
-        console.log('this.WDY: '+this.WDY);
         if (this.WDY < -100) {
             this.WDY = 0;
             this.funcNumber++;
+            if (this.funcNumber < 0 || this.funcNumber > 7) return;
             this['f' + this.funcNumber]();
         }
-        console.log('this.DY ------------ ' + this.DY);
-        console.log( event);
-    }
-    this.pointAnim = function (event) {
     }
     this.f0 = function () {
         console.log('f0')
     }
     this.f0RB = function () {
-        document.querySelector(".WhyVR").classList.remove('WhyVRAnim1');
-        document.querySelector(".WhyVRH2").classList.remove('WhyVRH2Anim1');
     }
     this.f1 = function () {
         document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
         document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim1');
-        console.log('f1')
     }
     this.f1RB = function () {
-        document.querySelector(".WhyVRH2").classList.remove('WhyVRH2Anim2');
     }
     this.f2 = function () {
         document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim2');
-        console.log('f2')
     }
     this.f2RB = function () {
-        document.querySelector('.Dig1').classList.remove('Dig1Anim');
-        document.querySelector('.Dig2').classList.remove('Dig2Anim');
-        document.querySelector('.Dig3').classList.remove('Dig3Anim');
-        document.querySelector('.Dig4').classList.remove('Dig4Anim');
     }
     this.f3 = function () {
         document.querySelector('.Dig1').classList.add('Dig1Anim');
         document.querySelector('.Dig2').classList.add('Dig2Anim');
         document.querySelector('.Dig3').classList.add('Dig3Anim');
         document.querySelector('.Dig4').classList.add('Dig4Anim');
-        console.log('f3')
     }
     this.f3RB = function () {
-        document.querySelector('.GoodTraining').classList.remove('GoodTrainingAnim');
     }
     this.f4 = function () {
         document.querySelector('.GoodTraining').classList.add('GoodTrainingAnim');
-        console.log('f4')
     }
     this.f4RB = function () {
-        document.querySelector('.BadTraining').classList.remove('BadTrainingAnim');
     }
     this.f5 = function () {
         document.querySelector('.BadTraining').classList.add('BadTrainingAnim');
-        console.log('f5')
     }
     this.f5RB = function () {
-        document.querySelector(".WhyVR").classList.remove('WhyVRAnim2');
     }
     this.f6 = function () {
-        document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
-        console.log('f6')
     }
     this.f6RB = function () {
-        document.querySelector(".Digits").classList.remove('DigitsAnim');
     }
     this.f7 = function () {
-        document.querySelector(".WhyVR").classList.remove('WhyVRAnim1');
-        document.querySelector(".Digits").classList.add('DigitsAnim');
-        window.scrollTo(0, this.outTagH);
-        console.log('f7')
+        // document.querySelector(".WhyVR").classList.remove('WhyVRAnim1');
+        // if (this.outTag > window.pageYOffset) document.querySelector(".Digits").classList.add('DigitsAnim');
     }
     this.f7RB = function () {
-        window.scrollTo(0, this.outTagH - 120);
     }
 };
 
