@@ -8,8 +8,7 @@ shch.counter = function (papa, son) {
     this.DY = 0;
     this.WDY = 0;
     this.counts = function (event) {
-        // if (event.touches) console.log(event.touches[0].screenY)
-        if (window.scrollY < this.outTagTop) return
+        if ( window.scrollY < this.outTagTop) return
         // if (window.scrollY > this.outTagTop+100){
         //     this.f1();
         //     this.f2();
@@ -19,10 +18,10 @@ shch.counter = function (papa, son) {
         //     this.f6();
         //     this.f7();
         // }
-        if (window.scrollY > this.outTagH) document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
-        // this.pointAnim(event)
-        // document.querySelector(".WhyVRH2").classList.add('WhyVRH2Anim2');
-        shch['.WhyVRH2'].GO(event);
+        if ( window.scrollY > this.outTagH) document.querySelector(".WhyVR").classList.add('WhyVRAnim2');
+        // this.funcNumber = this.funcNumber + (event.wheelDeltaY < 0 ?  + 1 :  - 1);
+        // event.wheelDeltaY < 0 ? this['f' + this.funcNumber]() : this['f' + this.funcNumber + 'RB']();
+        this.pointAnim(event)
     }
     this.pointAnim = function (event) {
         this.DY++;
@@ -79,33 +78,6 @@ shch.counter = function (papa, son) {
     this.f7RB = function () {
     }
 };
-shch.manipulated = function (papa, son) {
-    this.allHeight = document.querySelector(papa).offsetHeight;
-    this.start = document.querySelector(papa).offsetTop;
-    this.finish = document.querySelector(papa).offsetHeight + document.querySelector(papa).offsetTop;
-    this.memo = document.querySelector(papa).offsetTop;
-    this.move = 0;
-    this.infoT = document.querySelector(son)
-    this.Anim = 0;
-    this.Opacity = 0;
-    this.GO = function (e) {
-        if (window.scrollY <= this.start || window.scrollY >= this.finish) return;
-        document.querySelector(".WhyVR").classList.add('WhyVRAnim1');
-        // if (e.type === "touchmove") {
-        //     this.move = e.touches[0].pageY - this.memo;
-        //     this.memo = e.touches[0].pageY;
-        // }
-        this.move = this.memo - window.scrollY;
-        this.memo = window.scrollY;
-        this.move < 0 ? this.Anim += 5 : this.Anim -=5;
-        if (this.Anim < 0) this.Anim = 0;
-        if (this.Anim > 99) this.Anim = 99;
-        this.MZmemo = this.move + this.MZmemo;
-        this.Opacity = '0.' + this.Anim;
-        this.infoT.setAttribute('style', 'opacity:' + this.Opacity + ';');
-        // this.infoT.textContent = 'memo: ' + this.memo + ' / move: ' + this.move+ ' / MZmemo: ' + this.MZmemo + ' / Anim: ' + this.Anim;
-    }
-}
 
 shch.addDetect = function (inter) {
 
@@ -346,33 +318,11 @@ shch.watch = {
     }
 }
 
-
 shch.LoadFunc = function () {
-    // function df(){
-    //     const options = {
-    //         rootMargins: '20pt 0pt',
-    //         threshold: [1.0]
-    //     };
-    //
-    //     function vdHandler(els, detector) {
-    //         els.forEach((data) => {
-    //             data.target.style.opacity = 0.2 + data.intersectionRatio * 0.8;
-    //             console.log(data);
-    //         });
-    //     }
-    //
-    //     const vd = new IntersectionObserver(vdHandler, options);
-    //
-    //     const cImgs = document.querySelectorAll('.DigitsScreen');
-    //     cImgs.forEach((el) => {
-    //         vd.observe(el);
-    //     });
-    // }
-    // df()
-    // shch['.WhyVRH2'] = new shch.manipulated('.Digits', '.WhyVRH2');
-    // shch.DG = new shch.counter('.Digits', '.WhyVR');
-    window.addEventListener('scroll', shch.DG.counts.bind(shch.DG), true);
-    window.addEventListener('touchmove', shch.DG.counts.bind(shch.DG), true);
+
+    shch.DG = new shch.counter('.Digits', '.WhyVR');
+    document.querySelector(".Digits").addEventListener('wheel', shch.DG.counts.bind(shch.DG));
+    document.querySelector(".Digits").addEventListener('touchstart', shch.DG.counts.bind(shch.DG));
 
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
