@@ -238,7 +238,6 @@ li {
  opacity:1;
  transform:translateY(0);
  transition-property:opacity,transform;
- ;
  transition-duration:.7s;
  transition-timing-function:cubic-bezier(.68,-.55,.27,1.55)
 }
@@ -1050,11 +1049,11 @@ a {
  letter-spacing:4.6px
 }
 .Screen2 {
- height: 100%;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- padding: 3.4% 20px;
+ height:100%;
+ display:flex;
+ flex-direction:column;
+ justify-content:space-between;
+ padding:3.4% 20px
 }
 .doInfo {
  display:flex;
@@ -1134,8 +1133,8 @@ a {
 }
 .doImages {
  flex:1 1 auto;
- max-height: 768px;
- height: 71vh;
+ max-height:768px;
+ height:71vh
 }
 .Slides {
  max-width:1700px;
@@ -1243,11 +1242,11 @@ a {
  width:100%
 }
 .DigitsScreen {
- margin-bottom: 5vh;
- transition: margin-bottom 5s linear;
+ margin-bottom:5vh;
+ transition:margin-bottom 5s linear
 }
-.DigitsAnim{
-    margin-bottom: 20vh;
+.DigitsAnim {
+ margin-bottom:20vh
 }
 .Digits {
  max-width:1920px;
@@ -1259,7 +1258,6 @@ a {
  position:relative;
  transition:margin-bottom .7s linear
 }
-
 .WhyVR {
  max-width:1480px;
  margin:auto;
@@ -1822,5 +1820,7 @@ a {
  }
 }
 @media (max-height:1080px) {
- .WhyVR{height: initial;}
+ .WhyVR {
+  height:initial
+ }
 }
