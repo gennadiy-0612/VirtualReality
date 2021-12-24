@@ -2,20 +2,7 @@
 Title: Home 
 Language: en
 ---
-<div class="firstBack">
-<div class="firstScreen relative">
-    <header class="topMenu a1440">
-        <div class="mainLinks">
-            <a class="logoA" href="/"></a>
-            <ul class="languageSet">
-                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="./">EN</a></li>
-                <li class="language verticalLine"><a class="languageText HeliosExtC" href="./ru/">RU</a></li>
-                <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
-            </ul>
-        </div>
-        <a href="#Screen2" title="Demo" class="navy"></a>
-    </header>
-    <div class="mainTitle">
+<div class="mainTitle">
         <div class="frame">
          <div class="frameH2">
             <h2 class="opportunity colorW Ag24 FromLeftCorner">Unlock new opportunities with</h2>
@@ -41,7 +28,20 @@ Language: en
              <div class="RoundBox-All RoundBox-12"></div>
             </div>
         </div>
-    </div>
+</div>
+<div class="firstBack">
+<div class="firstScreen relative">
+    <header class="topMenu a1440">
+        <div class="mainLinks">
+            <a class="logoA" href="/"></a>
+            <ul class="languageSet">
+                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="./">EN</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC" href="./ru/">RU</a></li>
+                <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
+            </ul>
+        </div>
+        <a href="#Screen2" title="Demo" class="navy"></a>
+    </header>
     <div class="video a1440">
         <div class="playPanel">
         <div class="play">
