@@ -232,10 +232,9 @@ li {
  right:0;
  top:0;
  bottom:0;
- margin:auto
-}
-.RoundBox-All {
- opacity:0
+ margin:auto;
+ opacity:0;
+ transition: opacity .5s linear;
 }
 .RoundBox-All,
 .RoundBox-All::after {
@@ -1020,8 +1019,7 @@ a {
 }
 .mainTitle {
  width:100%;
- height:170vh;
- box-sizing:border-box;
+ height:240vh;
  margin:auto
 }
 .frame {
@@ -1050,7 +1048,7 @@ a {
  opacity:0;
  display:flex;
  transform:translate3d(0,0,15vmin);
- transition: opacity .5s linear;
+ transition:opacity .5s linear
 }
 .VRwAnim {
  opacity:1
@@ -1086,15 +1084,15 @@ a {
  transform-style:preserve-3d
 }
 .opportunity {
- text-shadow: 0 0 14px black, 0 0 7px black;
+ text-shadow:0 0 14px black,0 0 7px #000;
  letter-spacing:9.8px;
- font-size: 6vw;
- line-height: 11.1vh;
+ font-size:6vw;
+ line-height:11.1vh;
  text-align:center;
  transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
- transition-property: transform, opacity;
- transition-duration: .2s;
- transition-timing-function: linear;
+ transition-property:transform,opacity;
+ transition-duration:.2s;
+ transition-timing-function:linear
 }
 .virtual {
  margin:17px 0
@@ -1804,8 +1802,8 @@ a {
   max-width:95%
  }
 }
-.hide{
- opacity: 0;
+.hide {
+ opacity:0
 }
 @media (max-width:1480px) {
  .outSlideUl {
