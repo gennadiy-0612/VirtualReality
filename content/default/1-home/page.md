@@ -8,7 +8,7 @@ Language: en
         <div class="mainLinks">
             <a class="logoA" href="/"></a>
             <ul class="languageSet">
-                <li class="language verticalLine"><a class="languageText HeliosExtC active" href=".****/">EN</a></li>
+                <li class="language verticalLine"><a class="languageText HeliosExtC active" href="./">EN</a></li>
                 <li class="language verticalLine"><a class="languageText HeliosExtC" href="./ru/">RU</a></li>
                 <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
             </ul>
@@ -16,13 +16,27 @@ Language: en
         <a href="#Screen2" title="Demo" class="navy"></a>
     </header>
     <div class="mainTitle">
-        <div class="frame Frame">
-            <h2 class="opportunity colorW Ag24 FromLeftCorner">Unlock new<br/> opportunities with</h2>
-            <div class="virtual-word FromLeftCorner2"></div>
-            <div class="reality-word FromLeftCorner2"></div>
+        <div class="frame">
+         <div class="frameH2">
+            <h2 class="opportunity colorW Ag24 FromLeftCorner">Unlock new opportunities with</h2>
+         </div>
+            <div class="VR-words">
+            <div class="VRw">
+            <div class="words virtual-word">V</div>
+            <div class="words reality-word">R</div>
+            </div>
+            <div class="RoundBox">
+            <div class="RoundBox-All RoundBox-1"></div>
+            <div class="RoundBox-All RoundBox-2"></div>
+            <div class="RoundBox-All RoundBox-3"></div>
+            <div class="RoundBox-All RoundBox-4"></div>
+            <div class="RoundBox-All RoundBox-5"></div>
+            <div class="RoundBox-All RoundBox-6"></div>
+            </div>
+            </div>
         </div>
     </div>
-    <div class="video a1440 FromSmallTop1">
+    <div class="video a1440">
         <div class="playPanel">
         <div class="play">
           <img class="triangle" alt="Demo" src="/media/images/img/playButton.svg">

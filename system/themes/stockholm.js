@@ -1,5 +1,5 @@
 /* use strict*/
-let shch = {};
+const shch = {};
 shch.counter = function (papa, son) {
     this.funcNumber = 0;
     this.start = window.scrollY;
@@ -78,6 +78,42 @@ shch.counter = function (papa, son) {
     this.f7RB = function () {
     }
 };
+shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, degree, colors, rotate) {
+    this.memo = startPoint;
+    this.go = startPoint;
+    this.stop = stopPoint;
+    this.MZmemo = startPoint;
+    this.move = 0;
+    this.Anim = 0;
+    this.Opacity = 0;
+    this.PZ = 0;
+    this.infoT = document.querySelector(son)
+    this.GO = function (e, op) {
+        if (window.scrollY <= this.go || window.scrollY >= this.stop) {this.infoT.removeAttribute('style');return;}
+        this.move = this.memo - window.scrollY;
+        this.memo = window.scrollY;
+        this.move < 0 ? this.Anim += 1 : this.Anim -=1;
+        if (this.Anim < 0) this.Anim = 0;
+        if (this.Anim > 100) this.Anim = 100;
+        this.MZmemo = this.move + this.MZmemo;
+        this.Opacity = '0.' + this.Anim;
+        this.PZ = ((this.stop - this.go) / longX + 50) - this.Anim * translateX;
+        if (this.Anim < 10 || this.Anim > 100 || window.scrollY < this.go || window.scrollY > this.stop) this.Opacity = 0;
+        if (this.MZmemo > this.stop) { this.Anim = 100; this.PZ = 1; }
+        // this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; transform: translate3d(0, 0, ' + this.PZ + 'px);');
+        // this.infoT.textContent = 'memo: ' + this.memo + ' / move: ' + this.move+ ' / MZmemo: ' + this.MZmemo + ' / Anim: ' + this.Anim;
+        this[cb]();
+    }
+    this.OpacityTrans = function () {
+        this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; transform: translate3d(0, 0, ' + this.PZ + 'px);');
+    }
+    this.Rotate = function () {
+        let d = parseInt(degree)+this.Anim;
+        let r =(rotate ? 'rotateY(180deg) ': '');
+        let tr =(rotate ? this.Anim * translateX : -this.Anim * translateX );
+        this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
+    }
+}
 
 shch.addDetect = function (inter) {
 
@@ -180,29 +216,13 @@ shch.BS = function (cs, ps, papa) {
 }
 
 shch.watch = {
-    screenS01: {
-        selector: '.Frame',
-        animationName: 'FrameAnim'
-    },
     screenS1: {
         selector: '.FromLeftCorner',
         animationName: 'FromLeftCornerAnim'
     },
-    screenS21: {
-        selector: '.FromSmallTop1',
-        animationName: 'FromSmallTop1Anim'
-    },
     screenS2: {
         selector: '.FromSmallTop',
         animationName: 'FromSmallTopAnim'
-    },
-    screenS3: {
-        selector: '.FromLeftCorner2',
-        animationName: 'FromLeftCorner2Anim'
-    },
-    screenS4: {
-        selector: '.FromLeftCorner2',
-        animationName: 'FromLeftCorner2Anim'
     },
     screen1: {
         selector: '.Know',
@@ -319,10 +339,41 @@ shch.watch = {
 }
 
 shch.LoadFunc = function () {
+    shch['.opportunity'] = new shch.manipulated('.opportunity', 50, 800, 4, 2, 'OpacityTrans');
+    window.addEventListener('scroll', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
+    window.addEventListener('touchmove', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
+
+    shch['.VRw'] = new shch.manipulated('.VRw', 500, 1300, 8, 2, 'OpacityTrans');
+    window.addEventListener('scroll', shch['.VRw'].GO.bind(shch['.VRw']), true);
+    window.addEventListener('touchmove', shch['.VRw'].GO.bind(shch['.VRw']), true);
+
+    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 800, 1900, 8, 3, 'Rotate', '45','#e80055');
+    window.addEventListener('scroll', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
+    window.addEventListener('touchmove', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
+
+    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 800, 1900, 8, 3, 'Rotate', '190', '#c20aa4');
+    window.addEventListener('scroll', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
+    window.addEventListener('touchmove', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
+
+    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 800, 1900, 8, 3, 'Rotate', '280','#16e7ff');
+    window.addEventListener('scroll', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
+    window.addEventListener('touchmove', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
+
+    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 800, 1900, 8, 3, 'Rotate', '75' ,'#5185ff', 1);
+    window.addEventListener('scroll', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+    window.addEventListener('touchmove', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+
+    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 800, 1900, 8, 3, 'Rotate', '66' ,'#9515ff');
+    window.addEventListener('scroll', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
+    window.addEventListener('touchmove', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
+
+    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 800, 1900, 8, 3, 'Rotate', '152', '#00dfe9', 1);
+    window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
+    window.addEventListener('touchmove', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
     shch.DG = new shch.counter('.Digits', '.WhyVR');
-    document.querySelector(".Digits").addEventListener('wheel', shch.DG.counts.bind(shch.DG));
-    document.querySelector(".Digits").addEventListener('touchstart', shch.DG.counts.bind(shch.DG));
+    window.addEventListener('scroll', shch.DG.counts.bind(shch.DG), true);
+    window.addEventListener('touchmove', shch.DG.counts.bind(shch.DG), true);
 
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
@@ -364,23 +415,12 @@ shch.LoadFunc = function () {
         shch.OPMini[shch.OPMini.Papa.start].toward('.inLinkRight', 'actInSlide', 'outSlideImgAct');
         shch.OPMini[shch.OPMini.Papa.start].back('.inLinkLeft', 'actInSlide', 'outSlideImgAct');
     }
-    shch.watchS01 = new shch.addDetect(.1);
-    shch.watchS01.checkVision(shch.watch.screenS01);
 
     shch.watchS1 = new shch.addDetect(.1);
     shch.watchS1.checkVision(shch.watch.screenS1);
 
     shch.watchS2 = new shch.addDetect(.1);
     shch.watchS2.checkVision(shch.watch.screenS2);
-
-    shch.watchS21 = new shch.addDetect(.1);
-    shch.watchS21.checkVision(shch.watch.screenS21);
-
-    shch.watchS3 = new shch.addDetect(.1);
-    shch.watchS3.checkVision(shch.watch.screenS3);
-
-    shch.watchS4 = new shch.addDetect(.1);
-    shch.watchS4.checkVision(shch.watch.screenS4);
 
     shch.watch1 = new shch.addDetect(.1);
     shch.watch1.checkVision(shch.watch.screen1);

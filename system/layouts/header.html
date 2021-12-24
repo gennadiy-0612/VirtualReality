@@ -9,13 +9,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <?php echo $this->yellow->page->getExtra("header") ?>
 </head>
-<body class="backBlack">
-<div class="<?php echo "page layout-".$this->yellow->page->getHtml("layout") ?>">
-<div class="header" role="banner">
+<body class="backBlack <?php echo "page layout-".$this->yellow->page->getHtml("layout") ?>">
 <div class="sitename">
-<a href="<?php echo $this->yellow->page->getBase(true)."/" ?>"><i class="sitename-logo"></i><?php echo $this->yellow->page->getHtml("sitename") ?></a>
+<a class="start-menu" href="<?php echo $this->yellow->page->getBase(true)."/" ?>"><i class="sitename-logo"></i><?php echo $this->yellow->page->getHtml("sitename") ?></a>
 <?php echo $this->yellow->page->getPage("header")->getContent() ?>
 </div>
-<div class="sitename-banner"></div>
 <?php $this->yellow->layout("navigation") ?>
-</div>
