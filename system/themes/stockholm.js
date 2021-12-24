@@ -17,14 +17,12 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
         this.memo = window.scrollY;
         if (this.move < 0) {this.Anim += 1;} else {this.Anim -= 1;}
         if (this.Anim < 0) this.Anim = 0;
-        if (this.Anim > 100) {
-            this.Anim = 100;
-        }
+        if (this.Anim > 100) {this.Anim = 100;}
         this.MZmemo = this.move + this.MZmemo;
         this.PZ = -50*this.Anim * this.wayStep;
         if (this.Anim < 11) this.Opacity = '0';
         if (10 < this.Anim < 91) this.Opacity = '1';
-        if (this.Anim > 91) this.Opacity = '0';
+        if (this.Anim > 100) this.Opacity = '0';
         if (this.Anim < 0 || this.Anim > 100 || window.scrollY < this.go || window.scrollY > this.stop) this.Opacity = 0;
         // this.infoT.textContent = 'memo: ' + this.memo + ' / move: ' + this.move+ ' / MZmemo: ' + this.MZmemo + ' / Anim: ' + this.Anim;
         this[cb]();
