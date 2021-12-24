@@ -1061,9 +1061,10 @@ a {
  font-family:"HeliosExtC",sans-serif
 }
 .words {
- font-size: 60vmin;
- height: 60vmin;
- line-height: 60vmin;
+ font-size: 90vmin;
+ height: 90vmin;
+ line-height: 90vmin;
+ font-weight: 600;
 }
 .frameH2{
  position: absolute;
@@ -1074,7 +1075,7 @@ a {
  margin: auto;
  z-index: 1;
  height: 5.1vmin;
- perspective:10vw;
+ perspective:15vw;
  transform-style:preserve-3d;
 }
 .opportunity {
@@ -1149,7 +1150,6 @@ a {
  object-fit:cover;
  max-width:1440px;
  margin:auto;
- height:100%;
  width:100%
 }
 .mouseBlock {

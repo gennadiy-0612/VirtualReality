@@ -90,25 +90,33 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.Opacity = 0;
     this.PZ = 0;
     this.infoT = document.querySelector(son)
-    this.GO = function (e, op) {
+    this.GO = function (e) {
         if (window.scrollY <= this.go || window.scrollY >= this.stop) {this.infoT.removeAttribute('style');return;}
         this.wayStep = this.way/100;
         this.move = this.memo - window.scrollY;
         this.memo = window.scrollY;
-        this.move < 0 ? this.Anim += 1 : this.Anim -=1;
+        this.move < 0 ? this.Anim += 1 : this.Anim -= 1;
         if (this.Anim < 0) this.Anim = 0;
         if (this.Anim > 100) this.Anim = 100;
         this.MZmemo = this.move + this.MZmemo;
-        this.Opacity = '0.' + this.Anim;
-        this.PZ = this.way / this.wayStep - this.Anim * this.wayStep;
-        if (this.Anim < 10 || this.Anim > 100 || window.scrollY < this.go || window.scrollY > this.stop) this.Opacity = 0;
-        if (this.MZmemo > this.stop) { this.Anim = 100; this.PZ = 1; }
-        // this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; transform: translate3d(0, 0, ' + this.PZ + 'px);');
+        this.PZ = (this.wayStep - this.Anim * this.wayStep)+300;
+        if (this.Anim < 10) {
+            this.Opacity = '0.' + this.Anim;
+        }
+        if (this.Anim === 10) {
+            this.Opacity = 1;
+        }
+        if (this.Anim > 90) {
+            this.Opacity = '0.' + (100 - this.Anim);
+        }
+        if (this.Anim < 0 || this.Anim > 100 || window.scrollY < this.go || window.scrollY > this.stop) {
+            this.Opacity = 0;
+        }
         // this.infoT.textContent = 'memo: ' + this.memo + ' / move: ' + this.move+ ' / MZmemo: ' + this.MZmemo + ' / Anim: ' + this.Anim;
         this[cb]();
     }
     this.OpacityTrans = function () {
-        this.infoT.setAttribute('style', 'opacity:1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + this.PZ + ', 1)');
+        this.infoT.setAttribute('style', 'opacity:'+this.Opacity+'; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + this.PZ + ', 1)');
     }
     this.Rotate = function () {
         let d = parseInt(degree) - this.Anim;
