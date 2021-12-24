@@ -26,7 +26,12 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
         if (this.Anim < 0 || this.Anim > 100 || window.scrollY < this.go || window.scrollY > this.stop) this.Opacity = 0;
         // this.infoT.textContent = 'memo: ' + this.memo + ' / move: ' + this.move+ ' / MZmemo: ' + this.MZmemo + ' / Anim: ' + this.Anim;
         this[cb]();
-        if (window.scrollY <= this.go || window.scrollY >= this.stop) {return;}
+        if (window.scrollY <= this.go){
+            if (son === '.opportunity'){this.infoT.setAttribute('style', 'opacity:1;');
+                return;
+            }
+        }
+        if (window.scrollY >= this.stop) {return;}
     }
     this.OpacityTrans = function () {
         this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + this.PZ + ', 1)');
@@ -34,7 +39,7 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.Rotate = function () {
         let d = parseInt(degree) - this.Anim;
         let r = (rotate ? 'rotateY(180deg) ': '');
-        let tr = (rotate ? -this.Anim * this.wayStep*2: this.Anim * this.wayStep*2);
+        let tr = (rotate ? -this.Anim * this.wayStep*70: this.Anim * this.wayStep*70);
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
     }
 }
