@@ -273,53 +273,53 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.VRw'].GO.bind(shch['.VRw']), true);
     window.addEventListener('pointermove', shch['.VRw'].GO.bind(shch['.VRw']), true);
 
-    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 600, 1400, 8, 3, 'Rotate', '45','#e80055', 0, 2);
+    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 600, 1400, 8, 3, 'Rotate', '45','#e80055', 1, 2);
     window.addEventListener('scroll', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
     window.addEventListener('pointermove', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
 
-    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 600, 1400, 8, 3, 'Rotate', '190', '#c20aa4', 0, 5);
-    window.addEventListener('scroll', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
+    // shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 600, 1400, 8, 3, 'Rotate', '190', '#c20aa4', 0, 5);
+    // window.addEventListener('scroll', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
+    // window.addEventListener('pointermove', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
 
     shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 600, 1400, 8, 3, 'Rotate', '280','#16e7ff', 0, 4);
     window.addEventListener('scroll', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
     window.addEventListener('pointermove', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true, 0, 8);
-
-    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 600, 1400, 8, 3, 'Rotate', '75' ,'#5185ff', 1, 10);
-    window.addEventListener('scroll', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+    //
+    // shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 600, 1400, 8, 3, 'Rotate', '75' ,'#5185ff', 1, 10);
+    // window.addEventListener('scroll', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+    // window.addEventListener('pointermove', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
 
     shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 600, 1400, 8, 3, 'Rotate', '66' ,'#9515ff', 0, 9);
     window.addEventListener('scroll', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
     window.addEventListener('pointermove', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
 
-    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 600, 1400, 8, 3, 'Rotate', '152', '#00dfe9', 1,  6);
-    window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
+    // shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 600, 1400, 8, 3, 'Rotate', '152', '#00dfe9', 1,  6);
+    // window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
+    // window.addEventListener('pointermove', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
     shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 600, 1400, 8, 3, 'Rotate', '12', '#e80055', 0, 2);
     window.addEventListener('scroll', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
     window.addEventListener('pointermove', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
 
-    shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 600, 1400, 8, 3, 'Rotate', '52', '#16e7ff', 0, 2);
-    window.addEventListener('scroll', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
+    // shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 600, 1400, 8, 3, 'Rotate', '52', '#16e7ff', 0, 2);
+    // window.addEventListener('scroll', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
+    // window.addEventListener('pointermove', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
 
     shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 600, 1400, 8, 3, 'Rotate', '102', '#c20aa4', 1, 5);
     window.addEventListener('scroll', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
     window.addEventListener('pointermove', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
-    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 600, 1400, 8, 3, 'Rotate', '200', '#5185ff', 0, 3);
-    window.addEventListener('scroll', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
+    // shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 600, 1400, 8, 3, 'Rotate', '200', '#5185ff', 0, 3);
+    // window.addEventListener('scroll', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
+    // window.addEventListener('pointermove', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
 
     shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 600, 1400, 8, 3, 'Rotate', '100', '#00dfe9', 0, 7);
     window.addEventListener('scroll', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
     window.addEventListener('pointermove', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
 
-    shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 600, 1400, 8, 3, 'Rotate', '111', '#9515ff', 1, 2);
-    window.addEventListener('scroll', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
+    // shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 600, 1400, 8, 3, 'Rotate', '111', '#9515ff', 1, 2);
+    // window.addEventListener('scroll', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
+    // window.addEventListener('pointermove', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
 
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
