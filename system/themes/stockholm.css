@@ -1047,7 +1047,6 @@ a {
  opacity:0;
  display:flex;
  transform:translate3d(0,0,15vmin);
- transition:opacity .5s linear
 }
 .VRwAnim {
  opacity:1
