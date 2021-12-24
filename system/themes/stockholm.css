@@ -1,7 +1,7 @@
 /* stockholm.css */
 @font-face {
  font-family:"HeliosExtC";
- src:url("/media/themes/fonts/HeliosExtC Regular.otf") format("otf")
+ src:url("fonts/HeliosExtC Regular.otf") format("otf")
 }
 html {
  scroll-behavior:smooth
@@ -772,7 +772,7 @@ li {
  border-radius:50%;
  z-index:10;
  box-shadow:0 0 10px #000 inset;
- background:url(/media/themes/img/stepIcon.jpg) center center no-repeat;
+ background:url(img/stepIcon.jpg) center center no-repeat;
  background-size:contain;
  transition:opacity 1s ease-in-out 1s
 }
@@ -942,7 +942,7 @@ a {
 }
 .firstBack {
  margin:auto;
- background:url(/media/themes/img/firstBack.svg) center 50px no-repeat;
+ background:url(img/firstBack.svg) center 50px no-repeat;
  background-size:contain
 }
 .firstScreen {
@@ -986,7 +986,7 @@ a {
 .logoA {
  width:224px;
  height:51px;
- background:url(/media/themes/img/logo.svg) center center no-repeat;
+ background:url(img/logo.svg) center center no-repeat;
  background-size:contain;
  display:block
 }
@@ -1015,7 +1015,7 @@ a {
 .navy {
  width:38px;
  height:25px;
- background:url(/media/themes/img/menu.svg) 0 0 no-repeat;
+ background:url(img/menu.svg) 0 0 no-repeat;
  background-size:contain
 }
 .mainTitle {
@@ -1190,7 +1190,7 @@ a {
 .moveScreen {
  width:32px;
  height:50px;
- background:url(/media/themes/img/mouse.svg) right center no-repeat;
+ background:url(img/mouse.svg) right center no-repeat;
  background-size:contain;
  margin:52px auto 44px 0;
  display:block
@@ -1345,7 +1345,7 @@ a {
  letter-spacing:1.8px;
  padding:0 34px 0 0;
  max-width:163px;
- background:url(/media/themes/img/arrow.svg) right center no-repeat;
+ background:url(img/arrow.svg) right center no-repeat;
  background-size:contain;
  margin:37px 0
 }
@@ -1411,7 +1411,7 @@ a {
  max-width:1920px;
  margin:0 auto 20vh;
  padding:0;
- background:url(/media/themes/img/Digits.svg) center center no-repeat;
+ background:url(img/Digits.svg) center center no-repeat;
  background-size:100%;
  /*! height:200vh; */position:relative;
  transition:margin-bottom .7s linear
@@ -1536,14 +1536,14 @@ a {
  bottom:0
 }
 .goodLi::before {
- background:url(/media/themes/img/burd.svg) center center no-repeat;
+ background:url(img/burd.svg) center center no-repeat;
  background-size:contain;
  width:18px;
  height:14px;
  left:-36px
 }
 .badLi::before {
- background:url(/media/themes/img/cross.svg) center center no-repeat;
+ background:url(img/cross.svg) center center no-repeat;
  background-size:contain;
  width:13px;
  height:13px;
@@ -1560,7 +1560,7 @@ a {
  max-width:1920px;
  margin:-90px auto;
  padding:60px 0;
- background:url(/media/themes/img/VRvision.png) 44.5% 73.9% no-repeat;
+ background:url(img/VRvision.png) 44.5% 73.9% no-repeat;
  background-size:53%
 }
 .leftInfo,
@@ -1624,7 +1624,7 @@ a {
 .BackWords {
  max-width:1820px;
  margin:auto;
- background:url(/media/themes/img/VRbottom.svg) bottom center no-repeat;
+ background:url(img/VRbottom.svg) bottom center no-repeat;
  background-size:79.6%;
  background-position-x:0;
  padding-bottom:11px
@@ -1723,34 +1723,34 @@ a {
  width:220px
 }
 .partner1 {
- background:url(/media/themes/img/partners.svg) 7px 0 no-repeat
+ background:url(img/partners.svg) 7px 0 no-repeat
 }
 .partner2 {
- background:url(/media/themes/img/partners.svg) -248px 0 no-repeat
+ background:url(img/partners.svg) -248px 0 no-repeat
 }
 .partner3 {
- background:url(/media/themes/img/partners.svg) -494px 0 no-repeat
+ background:url(img/partners.svg) -494px 0 no-repeat
 }
 .partner4 {
- background:url(/media/themes/img/partners.svg) -717px 0 no-repeat
+ background:url(img/partners.svg) -717px 0 no-repeat
 }
 .partner5 {
- background:url(/media/themes/img/partners.svg) -918px 0 no-repeat
+ background:url(img/partners.svg) -918px 0 no-repeat
 }
 .partner11 {
- background:url(/media/themes/img/partners.svg) 10px 0 no-repeat
+ background:url(img/partners.svg) 10px 0 no-repeat
 }
 .partner12 {
- background:url(/media/themes/img/partners.svg) -240px 0 no-repeat
+ background:url(img/partners.svg) -240px 0 no-repeat
 }
 .partner13 {
- background:url(/media/themes/img/partners.svg) -470px 0 no-repeat
+ background:url(img/partners.svg) -470px 0 no-repeat
 }
 .partner14 {
- background:url(/media/themes/img/partners.svg) -710px 0 no-repeat
+ background:url(img/partners.svg) -710px 0 no-repeat
 }
 .partner15 {
- background:url(/media/themes/img/partners.svg) -930px 0 no-repeat
+ background:url(img/partners.svg) -930px 0 no-repeat
 }
 .partners20 {
  display:flex;
