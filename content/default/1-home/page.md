@@ -21,18 +21,24 @@ Language: en
             <h2 class="opportunity colorW Ag24 FromLeftCorner">Unlock new opportunities with</h2>
          </div>
             <div class="VR-words">
-            <div class="VRw">
-            <div class="words virtual-word">V</div>
-            <div class="words reality-word">R</div>
+             <div class="VRw">
+              <div class="words virtual-word">V</div>
+              <div class="words reality-word">R</div>
+             </div>
             </div>
             <div class="RoundBox">
-            <div class="RoundBox-All RoundBox-1"></div>
-            <div class="RoundBox-All RoundBox-2"></div>
-            <div class="RoundBox-All RoundBox-3"></div>
-            <div class="RoundBox-All RoundBox-4"></div>
-            <div class="RoundBox-All RoundBox-5"></div>
-            <div class="RoundBox-All RoundBox-6"></div>
-            </div>
+             <div class="RoundBox-All RoundBox-1"></div>
+             <div class="RoundBox-All RoundBox-2"></div>
+             <div class="RoundBox-All RoundBox-3"></div>
+             <div class="RoundBox-All RoundBox-4"></div>
+             <div class="RoundBox-All RoundBox-5"></div>
+             <div class="RoundBox-All RoundBox-6"></div>
+             <div class="RoundBox-All RoundBox-7"></div>
+             <div class="RoundBox-All RoundBox-8"></div>
+             <div class="RoundBox-All RoundBox-9"></div>
+             <div class="RoundBox-All RoundBox-10"></div>
+             <div class="RoundBox-All RoundBox-11"></div>
+             <div class="RoundBox-All RoundBox-12"></div>
             </div>
         </div>
     </div>

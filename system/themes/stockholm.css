@@ -211,11 +211,15 @@ li {
  transition-timing-function:cubic-bezier(.68,-.55,.27,1.55)
 }
 .RoundBox {
- position:absolute;
- width:200vmin;
- height:200vmin;
+ position:absolute;left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ width:100vmin;
+ height:100vmin;
  z-index:-1;
- perspective: 55vmin;
+ perspective: 155vmin;
  transform-style: preserve-3d;
 }
 .RoundBox-All {
@@ -286,12 +290,60 @@ li {
  background-image:conic-gradient(from 66deg,#9515ff,transparent,transparent,transparent,transparent)
 }
 .RoundBox-6 {
- width:64%;
- height:64%;
+ width:74%;
+ height:74%;
  z-index:1
 }
 .RoundBox-6 {
  background-image:conic-gradient(from 152deg,#00dfe9,transparent,transparent,transparent,transparent)
+}
+.RoundBox-7 {
+ width:70%;
+ height:70%;
+ z-index:1
+}
+.RoundBox-7 {
+ background-image:conic-gradient(from 52deg,#00dfe9,transparent,transparent,transparent,transparent)
+}
+.RoundBox-8 {
+ width:66%;
+ height:66%;
+ z-index:1
+}
+.RoundBox-8 {
+ background-image:conic-gradient(from 12deg,#00dfe9,transparent,transparent,transparent,transparent)
+}
+.RoundBox-9 {
+ width:64%;
+ height:64%;
+ z-index:1
+}
+.RoundBox-9 {
+ background-image:conic-gradient(from 200deg,#00dfe9,transparent,transparent,transparent,transparent)
+}
+.RoundBox-10 {
+ width:60%;
+ height:60%;
+ z-index:1
+}
+.RoundBox-10 {
+ background-image:conic-gradient(from 160deg,#00dfe9,transparent,transparent,transparent,transparent)
+}
+.RoundBox-11 {
+ width:56%;
+ height:56%;
+ z-index:1
+}
+.RoundBox-11 {
+ background-image:conic-gradient(from 72deg,#00dfe9,transparent,transparent,transparent,transparent)
+}
+.RoundBox-12 {
+ width:46%;
+ height:46%;
+ z-index:1
+}
+.RoundBox-12 {
+ background-image:conic-gradient(from 100deg,#00dfe9,transparent,transparent,transparent,transparent)
 }
 .RealityWord {
  opacity:0;
@@ -1022,7 +1074,7 @@ a {
  margin: auto;
  z-index: 1;
  height: 5.1vmin;
- perspective:30vw;
+ perspective:10vw;
  transform-style:preserve-3d;
 }
 .opportunity {
