@@ -234,7 +234,6 @@ li {
  bottom:0;
  margin:auto;
  opacity:0;
- transition: opacity .5s linear;
 }
 .RoundBox-All,
 .RoundBox-All::after {

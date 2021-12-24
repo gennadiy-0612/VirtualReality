@@ -39,7 +39,7 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.Rotate = function () {
         let d = parseInt(degree) - this.Anim;
         let r = (rotate ? 'rotateY(180deg) ': '');
-        let tr = (rotate ? -this.Anim * this.wayStep*70: this.Anim * this.wayStep*70);
+        let tr = (rotate ? -this.Anim * this.wayStep*50: this.Anim * this.wayStep*50);
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
     }
 }
