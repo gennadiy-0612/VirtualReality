@@ -13,27 +13,28 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.PZ = 0;
     this.infoT = document.querySelector(son)
     this.GO = function (e) {
-        this.move = this.memo - window.scrollY;
-        this.memo = window.scrollY;
-        if (this.move < 0) {this.Anim += 1;} else {this.Anim -= 1;}
-        if (this.Anim < 0) this.Anim = 0;
-        if (this.Anim > 100) {this.Anim = 100;}
-        this.MZmemo = this.move + this.MZmemo;
-        this.PZ = -50*this.Anim * this.wayStep;
-        if (this.Anim < 11) this.Opacity = '0';
-        if (10 < this.Anim < 91) this.Opacity = '1';
-        if (this.Anim > 100) this.Opacity = '0';
-        if (this.Anim < 0 || this.Anim > 100 || window.scrollY < this.go || window.scrollY > this.stop) this.Opacity = 0;
-        // this.infoT.textContent = 'memo: ' + this.memo + ' / move: ' + this.move+ ' / MZmemo: ' + this.MZmemo + ' / Anim: ' + this.Anim;
-        this[cb]();
-        if (window.scrollY <= this.go){if (son === '.opportunity'){this.infoT.setAttribute('style', 'opacity:1;');return;}}
-        if (window.scrollY >= this.stop) {return;}
+        e.stopPropagation()
+        if (window.scrollY < this.stop){
+            if (son === '.opportunity') this.infoT.setAttribute('style', 'opacity:1;');
+            this.move = this.memo - window.scrollY;
+            this.memo = window.scrollY;
+            if (this.move < 0) {this.Anim += 1;} else {this.Anim -= 1;}
+            if (this.Anim < 0) this.Anim = 0;
+            if (this.Anim > 100) {this.Anim = 100;}
+            this.MZmemo = this.move + this.MZmemo;
+            this.PZ = -50*this.Anim * this.wayStep;
+            if (10 < this.Anim < 91) this.Opacity = '1';
+            if (this.Anim > 100) this.Opacity = '0';
+            if (this.Anim < 0 || this.Anim > 100 || window.scrollY < this.go || window.scrollY > (this.stop-100)) this.Opacity = 0
+            if (this.Anim < 11 ) { this.Opacity = '0'; if (son === '.opportunity') this.Opacity = '1';}
+            this[cb]();
+        }
     }
     this.OpacityTrans = function () {
         this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + this.PZ + ', 1)');
     }
     this.Rotate = function () {
-        let d = parseInt(degree) - this.Anim*speed;
+        let d = parseInt(degree) - this.Anim//*speed;
         let r = (rotate ? 'rotateY(180deg) ': '');
         let tr = (rotate ? -this.Anim * this.wayStep*50: this.Anim * this.wayStep*50);
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
@@ -273,53 +274,53 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.VRw'].GO.bind(shch['.VRw']), true);
     window.addEventListener('pointermove', shch['.VRw'].GO.bind(shch['.VRw']), true);
 
-    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 600, 1400, 8, 3, 'Rotate', '45','#e80055', 1, 2);
+    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 800, 1600, 8, 3, 'Rotate', '45','#e80055', 0, 2);
     window.addEventListener('scroll', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
     window.addEventListener('pointermove', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
 
-    // shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 600, 1400, 8, 3, 'Rotate', '190', '#c20aa4', 0, 5);
-    // window.addEventListener('scroll', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
-    // window.addEventListener('pointermove', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
+    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 800, 1600, 8, 3, 'Rotate', '190', '#c20aa4', 0, 5);
+    window.addEventListener('scroll', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
+    window.addEventListener('pointermove', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
 
-    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 600, 1400, 8, 3, 'Rotate', '280','#16e7ff', 0, 4);
+    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 800, 1600, 8, 3, 'Rotate', '280','#16e7ff', 0, 4);
     window.addEventListener('scroll', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true, 0, 8);
-    //
-    // shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 600, 1400, 8, 3, 'Rotate', '75' ,'#5185ff', 1, 10);
-    // window.addEventListener('scroll', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
-    // window.addEventListener('pointermove', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+    window.addEventListener('pointermove', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
 
-    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 600, 1400, 8, 3, 'Rotate', '66' ,'#9515ff', 0, 9);
+    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 800, 1600, 8, 3, 'Rotate', '75' ,'#5185ff', 1, 10);
+    window.addEventListener('scroll', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+    window.addEventListener('pointermove', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+
+    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 800, 1600, 8, 3, 'Rotate', '66' ,'#9515ff', 0, 9);
     window.addEventListener('scroll', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
     window.addEventListener('pointermove', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
 
-    // shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 600, 1400, 8, 3, 'Rotate', '152', '#00dfe9', 1,  6);
-    // window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
-    // window.addEventListener('pointermove', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
+    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 800, 1600, 8, 3, 'Rotate', '152', '#00dfe9', 1,  6);
+    window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
+    window.addEventListener('pointermove', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
-    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 600, 1400, 8, 3, 'Rotate', '12', '#e80055', 0, 2);
+    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 800, 1600, 8, 3, 'Rotate', '12', '#e80055', 0, 2);
     window.addEventListener('scroll', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
     window.addEventListener('pointermove', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
 
-    // shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 600, 1400, 8, 3, 'Rotate', '52', '#16e7ff', 0, 2);
-    // window.addEventListener('scroll', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
-    // window.addEventListener('pointermove', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
+    shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 800, 1600, 8, 3, 'Rotate', '52', '#16e7ff', 0, 2);
+    window.addEventListener('scroll', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
+    window.addEventListener('pointermove', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
 
-    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 600, 1400, 8, 3, 'Rotate', '102', '#c20aa4', 1, 5);
+    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 800, 1600, 8, 3, 'Rotate', '102', '#c20aa4', 1, 5);
     window.addEventListener('scroll', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
     window.addEventListener('pointermove', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
-    // shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 600, 1400, 8, 3, 'Rotate', '200', '#5185ff', 0, 3);
-    // window.addEventListener('scroll', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
-    // window.addEventListener('pointermove', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
+    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 800, 1600, 8, 3, 'Rotate', '200', '#5185ff', 0, 3);
+    window.addEventListener('scroll', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
+    window.addEventListener('pointermove', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
 
-    shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 600, 1400, 8, 3, 'Rotate', '100', '#00dfe9', 0, 7);
+    shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 800, 1600, 8, 3, 'Rotate', '100', '#00dfe9', 0, 7);
     window.addEventListener('scroll', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
     window.addEventListener('pointermove', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
 
-    // shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 600, 1400, 8, 3, 'Rotate', '111', '#9515ff', 1, 2);
-    // window.addEventListener('scroll', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
-    // window.addEventListener('pointermove', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
+    shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 800, 1600, 8, 3, 'Rotate', '111', '#9515ff', 1, 2);
+    window.addEventListener('scroll', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
+    window.addEventListener('pointermove', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
 
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
