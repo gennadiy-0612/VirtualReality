@@ -22,14 +22,17 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
             if (this.Anim < 0) this.Anim = 0;
             if (this.Anim > 100) {this.Anim = 100;}
             this.MZmemo = this.move + this.MZmemo;
-            this.PZ = -100*this.Anim * this.wayStep;
+            this.PZ = -200*this.Anim * this.wayStep;
             if (10 < this.Anim < 91) this.Opacity = '1';
             if (this.Anim > 100) this.Opacity = '0';
             if (this.Anim < 0 || this.Anim > 100 || window.scrollY+100 < this.go || window.scrollY > (this.stop-100)) this.Opacity = 0
-            if (this.Anim < 11 ) { this.Opacity = '0'; if (son === '.opportunity') {
-                this.Opacity = '1';
-                this.PZ = 0;
-            }}
+            if (this.Anim < 11 ) {
+                this.Opacity = '0';
+                if (son === '.opportunity') {
+                    this.Opacity = '1';
+                    this.PZ = 0;
+                }
+            }
             this[cb]();
         }
     }
@@ -37,9 +40,9 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
         this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + this.PZ + ', 1)');
     }
     this.Rotate = function () {
-        let d = parseInt(degree) - this.Anim//*speed;
+        let d = parseInt(degree) - this.Anim*speed;
         let r = (rotate ? 'rotateY(180deg) ': '');
-        let tr = (rotate ? -this.Anim * this.wayStep*50: this.Anim * this.wayStep*50);
+        let tr = (rotate ? -this.Anim * this.wayStep*120: this.Anim * this.wayStep*120);
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
     }
 }
