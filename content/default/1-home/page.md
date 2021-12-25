@@ -29,7 +29,6 @@ Language: en
             </div>
         </div>
 </div>
-<div class="firstBack">
 <div class="firstScreen relative">
     <header class="topMenu a1440">
         <div class="mainLinks">
@@ -54,7 +53,6 @@ Language: en
 <div class="VR">
     <img class="V" alt="Demo" src="/media/images/img/V.svg">
     <img class="R" alt="Demo" src="/media/images/img/R.svg">
-</div>
 </div>
 </div>
 <div class="mouseBlock a1440"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>

@@ -1,7 +1,7 @@
 /* use strict*/
 const shch = {};
 shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, degree, colors, rotate, speed) {
-    this.nextTag = document.querySelector('.firstBack').offsetTop;
+    this.nextTag = document.querySelector('.firstScreen').offsetTop;
     this.memo = startPoint;
     this.go = startPoint;
     this.stop = stopPoint;
@@ -25,7 +25,7 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
             this.memo = window.scrollY;
             if (this.move < 0) {this.Anim += 1;} else {this.Anim -= 1;}
             if (this.Anim < 0) this.Anim = 0;
-            if (this.Anim > 100) {this.Anim = 100;}
+            if (this.Anim > 100) this.Anim = 100;
             this.MZmemo = this.move + this.MZmemo;
             this.PZ = -200*this.Anim * this.wayStep;
             if (10 < this.Anim < 91) this.Opacity = '1';
@@ -284,7 +284,7 @@ shch.watch = {
 
 shch.LoadFunc = function () {
     shch['.opportunity'] = new shch.manipulated('.opportunity', 50, 800, 4, 2, 'OpacityTrans');
-    if (window.scrollY< window.innerHeight) shch['.opportunity']['.opportunity']();
+    if (window.scrollY < window.innerHeight) shch['.opportunity']['.opportunity']();
     window.addEventListener('scroll', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
     window.addEventListener('pointerup', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
