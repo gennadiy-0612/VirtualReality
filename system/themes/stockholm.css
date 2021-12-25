@@ -234,6 +234,7 @@ li {
  bottom:0;
  margin:auto;
  opacity:0;
+ transition: opacity .2s linear;
 }
 .RoundBox-All,
 .RoundBox-All::after {
@@ -953,7 +954,7 @@ a {
  margin:auto;
  letter-spacing:9.8px;
  font-size:9.1vmin;
- /*! font-size:80px; *//*! line-height:60px; */position:absolute;
+ position:absolute;
  top:0;
  right:0;
  bottom:0;
@@ -961,7 +962,6 @@ a {
  text-align:center;
  height:60px;
  transform:translate3d(0,0,0);
- /*! width: 230vmin; */
 
 }
 .topMenu {
@@ -1046,7 +1046,7 @@ a {
 .VRw {
  opacity:0;
  display:flex;
- transform:translate3d(0,0,15vmin);
+ transition: opacity .2s linear;
 }
 .VRwAnim {
  opacity:1
@@ -1064,9 +1064,9 @@ a {
  font-family:"HeliosExtC",sans-serif
 }
 .words {
- font-size:90vmin;
- height:90vmin;
- line-height:90vmin;
+ font-size:100vmin;
+ height:100vmin;
+ line-height:100vmin;
  font-weight:600
 }
 .frameH2 {
