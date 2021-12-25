@@ -1,6 +1,7 @@
 /* use strict*/
 const shch = {};
 shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, degree, colors, rotate, speed) {
+    this.papa = document.querySelector('.mainTitle').offsetHeight;
     this.memo = startPoint;
     this.go = startPoint;
     this.stop = stopPoint;
@@ -14,6 +15,7 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.infoT = document.querySelector(son)
     this.GO = function (e) {
         e.stopPropagation()
+        this.hideFS(this.papa)
         if (window.scrollY < this.stop){
             if (son === '.opportunity') this.infoT.setAttribute('style', 'opacity:1;');
             this.move = this.memo - window.scrollY;
@@ -42,8 +44,13 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.Rotate = function () {
         let d = parseInt(degree) - this.Anim*speed;
         let r = (rotate ? 'rotateY(180deg) ': '');
-        let tr = (rotate ? -this.Anim * this.wayStep*120: this.Anim * this.wayStep*120);
+        let tr = (rotate ? -this.Anim * this.wayStep*100: this.Anim * this.wayStep*100);
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
+    }
+    this.hideFS = function () {
+        if (window.scrollY > this.papa){
+            this.infoT.setAttribute('style', 'opacity:0; visibility:hidden;')
+        }
     }
 }
 
