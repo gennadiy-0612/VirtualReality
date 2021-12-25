@@ -1082,6 +1082,7 @@ a {
  transform-style:preserve-3d
 }
 .opportunity {
+ opacity: 0;
  text-shadow:0 0 14px black,0 0 7px #000;
  letter-spacing:9.8px;
  font-size:6vw;

@@ -1,7 +1,6 @@
 /* use strict*/
 const shch = {};
 shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, degree, colors, rotate, speed) {
-    this.papa = document.querySelector('.mainTitle').offsetHeight;
     this.nextTag = document.querySelector('.firstBack').offsetTop;
     this.memo = startPoint;
     this.go = startPoint;
@@ -13,7 +12,10 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.Anim = 0;
     this.Opacity = 0;
     this.PZ = 0;
-    this.infoT = document.querySelector(son)
+    this.infoT = document.querySelector(son);
+    this['.opportunity'] = function (cl) {
+        document.querySelector('.opportunity').setAttribute('style', 'opacity:1')
+    }
     this.GO = function (e) {
         console.log(e.type);
         e.stopPropagation()
@@ -281,8 +283,8 @@ shch.watch = {
 }
 
 shch.LoadFunc = function () {
-
     shch['.opportunity'] = new shch.manipulated('.opportunity', 50, 800, 4, 2, 'OpacityTrans');
+    if (window.scrollY< window.innerHeight) shch['.opportunity']['.opportunity']();
     window.addEventListener('scroll', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
     window.addEventListener('pointerup', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
