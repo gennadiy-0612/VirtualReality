@@ -941,15 +941,14 @@ a {
 }
 .firstBack {
  margin:auto;
- background:url(img/firstBack.svg) center 50px no-repeat;
- background-size:contain
 }
 .firstScreen {
  padding-top:0;
  overflow:hidden;
  display:flex;
  flex-direction:column;
- background-color: #000000;
+ background: url(img/firstBack.svg) center 50px no-repeat #000000;
+ background-size:contain
 }
 .backWhite {
  margin:auto;
