@@ -5,10 +5,10 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.memo = startPoint;
     this.go = startPoint;
     this.stop = stopPoint;
-    this.wayStep = (stopPoint-startPoint)/6;
+    this.wayStep = (stopPoint-startPoint)/5;
     this.move = 0;
     this.Anim = 0;
-    this.steps = {1:0, 2:0, 3:0, 4:0, 5:0}
+    this.steps = {1: {up:0, memo:0}, 2: {up:0, memo:0}, 3: {up:0, memo:0}, 4: {up:0, memo:0}, 5: {up:0, memo:0}}
     this.AnimScale = 0;
     this.animStart = startPoint;
     this.animFinish = stopPoint;
@@ -28,67 +28,58 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
                 if (this.Anim >= 100) this.Anim = 100;
             }
             // console.clear()
-            this.PZ = -.1*this.Anim * this.wayStep;
-            this.perspect = -1 * this.Anim * this.wayStep;
-            if (this.move < 0 && window.scrollY > this.wayStep && !this.steps['1']) {
-                this.steps['1'] = this.wayStep;
-                this.PZ = this.perspect/9;
+            this.PZ = -1*this.Anim * this.wayStep/50;
+            if (this.move < 0 && window.scrollY > this.wayStep && !this.steps['1'].up) {
+                if (this.steps['1'].up.PZ) this.PZ = this.steps['1'].up.PZ
+                this.steps['1'] = {up : 1, memo : this.wayStep, PZ: this.PZ }
                 this.Opacity = 1;
                 console.log(this.steps['1'])
+                console.log(this.PZ)
             }
-            // if (this.move < 0 && window.scrollY > this.wayStep*2 && !this.steps['2']) {
-            //     this.steps['2'] = this.wayStep*2;
-            //     this.PZ = this.perspect/9*2;
-            //     this.Opacity = 1;
-            //     console.log(this.steps['2'])
-            // }
-            // if (this.move < 0 && window.scrollY > this.wayStep*3 && !this.steps['3']) {
-            //     this.steps['3'] = this.wayStep*3;
-            //     this.PZ = this.perspect/9*3;
-            //     this.Opacity = 1;
-            //     console.log(this.steps['3'])
-            // }
-            // if (this.move < 0 && window.scrollY > this.wayStep*4 && !this.steps['4']) {
-            //     this.steps['4'] = this.wayStep*4;
-            //     this.PZ = this.perspect/9*4;
-            //     this.Opacity = 1;
-            //     console.log(this.steps['4'])
-            // }
-            if (this.move < 0 && window.scrollY > this.wayStep*5 && !this.steps['5']) {
-                this.steps['5'] = this.wayStep*5;
-                this.PZ = this.perspect/9*5;
+            if (this.move < 0 && window.scrollY > this.wayStep*2 && !this.steps['2'].up) {
+                this.steps['2'] = {up : 1, memo : this.wayStep * 2}
+                this.Opacity = 1;
+                console.log(this.steps['2'])
+            }
+            if (this.move < 0 && window.scrollY > this.wayStep*3 && !this.steps['3'].up) {
+                this.steps['3'] = {up : 1, memo : this.wayStep * 3}
+                this.Opacity = 1;
+                console.log(this.steps['3'])
+            }
+            if (this.move < 0 && window.scrollY > this.wayStep*4 && !this.steps['4'].up) {
+                this.steps['4'] = {up : 1, memo : this.wayStep * 4}
+                this.Opacity = 1;
+                console.log(this.steps['4'])
+            }
+            if (this.move < 0 && window.scrollY > this.wayStep*5 && !this.steps['5'].up) {
+                this.steps['5'] = {up : 1, memo : this.wayStep * 5, PZ: this.PZ }
                 this.Opacity = 0.5;
                 if (this.Anim > 100) this.Anim = 100;
                 console.log(this.steps['5'])
             }
-            if (this.move > 0 && window.scrollY < this.wayStep && this.steps['1']) {
-                this.steps['1'] = 0;
-                this.PZ = this.perspect/9*2;
+            if (this.move > 0 && window.scrollY < this.wayStep && this.steps['1'].up) {
+                this.steps['1'].up = 0;
                 this.Opacity = 0.5;
                 if (this.Anim > 100) this.Anim = 100;
                 console.log(this.steps['1'])
             }
-            // if (this.move > 0 && window.scrollY < this.wayStep*2 && this.steps['2']) {
-            //     this.steps['2'] = 0;
-            //     this.PZ = this.perspect/9*2;
-            //     this.Opacity = 1;
-            //     console.log(this.steps['2'])
-            // }
-            // if (this.move > 0 && window.scrollY < this.wayStep*3 && this.steps['3']) {
-            //     this.steps['3'] = 0;
-            //     this.PZ = this.perspect/9*3;
-            //     this.Opacity = 1;
-            //     console.log(this.steps['3'])
-            // }
-            // if (this.move > 0 && window.scrollY < this.wayStep*4 && this.steps['4']) {
-            //     this.steps['4'] = 0;
-            //     this.PZ = this.perspect/9*4;
-            //     this.Opacity = 1;
-            //     console.log(this.steps['4'])
-            // }
-            if (this.move > 0 && window.scrollY < this.wayStep*5 && this.steps['5']) {
-                this.steps['5'] = 0;
-                this.PZ = this.perspect/9*5;
+            if (this.move > 0 && window.scrollY < this.wayStep*2 && this.steps['2'].up) {
+                this.steps['2'].up = 0;
+                this.Opacity = 1;
+                console.log(this.steps['2'])
+            }
+            if (this.move > 0 && window.scrollY < this.wayStep*3 && this.steps['3'].up) {
+                this.steps['3'].up = 0;
+                this.Opacity = 1;
+                console.log(this.steps['3'])
+            }
+            if (this.move > 0 && window.scrollY < this.wayStep*4 && this.steps['4'].up) {
+                this.steps['4'].up = 0;
+                this.Opacity = 1;
+                console.log(this.steps['4'])
+            }
+            if (this.move > 0 && window.scrollY < this.wayStep*5 && this.steps['5'].up) {
+                this.steps['5'].up = 0;
                 this.Opacity = 1;
                 console.log(this.steps['5'])
             }
@@ -102,7 +93,7 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
             this[cb]();
             // console.clear();
             // console.log('this.animStart: '+ this.animStart + ' ' + 'this.animFinish: '+ this.animFinish)
-            console.log('this.Anim: ' + this.Anim + ' ' + 'window.scrollY: ' + window.scrollY)
+            // console.log('this.Anim: ' + this.Anim + ' ' + 'window.scrollY: ' + window.scrollY)
             // console.log(this.AnimScale)
         } else {
             this.hideFS(this.nextTag)

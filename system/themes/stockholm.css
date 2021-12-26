@@ -1018,6 +1018,7 @@ a {
  height:170vh;
  margin:auto;
  position: relative;
+ z-index: -1;
 }
 .frame {
  margin:auto;
