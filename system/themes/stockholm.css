@@ -1092,6 +1092,9 @@ a {
  transition-duration:.2s;
  transition-timing-function:linear
 }
+.opportunityShow{
+ opacity: 1;
+}
 .virtual {
  margin:17px 0
 }
