@@ -17,11 +17,13 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.infoT = document.querySelector(son);
     this.showIn = 0;
     this.showOut = 0;
+    this.init = init;
     this.GO = function (e) {
-        e.stopPropagation()
+        if (init) console.log(this.init)
+        if (e) e.stopPropagation()
         if (window.scrollY > this.go && window.scrollY < this.stop) {
-            if (e.type === "scroll") this.AnimScale = 1;
-            if (e.type === "pointermove") this.AnimScale = 1;
+            if (e) if (e.type === "scroll") this.AnimScale = 1;
+            if (e) if (e.type === "pointermove") this.AnimScale = 1;
             this.move = this.memo - window.scrollY;
             this.memo = window.scrollY;
             this.wayMove += this.wayStep;
@@ -46,19 +48,19 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
         }
         if (window.scrollY > this.stop && !this.showOut) {
             this.showOut = 1
-            this.hideFS(this.nextTag)
+            this.hideFS()
         }
         if (window.scrollY < this.stop && this.showOut) {
             this.showOut = 0
-            this.hideFS(this.nextTag)
+            this.hideFS()
         }
         if (window.scrollY < this.go && !this.showIn) {
             this.showIn = 1
-            this.hideFS(this.nextTag)
+            this.hideFS()
         }
         if (window.scrollY > this.go && this.showIn) {
             this.showIn = 0
-            this.hideFS(this.nextTag)
+            this.hideFS()
         }
     }
     this.OpacityTrans = function () {
@@ -72,8 +74,8 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
         let tr = this.move < 0 ? -wide: wide;
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
     }
-    this.hideFS = function (Tag) {
-        Tag.setAttribute('style', 'opacity:0; visibility:hidden;');
+    this.hideFS = function () {
+        this.infoT.setAttribute('style', 'opacity:0; visibility:hidden;');
     }
 }
 
@@ -303,11 +305,14 @@ shch.watch = {
 shch.LoadFunc = function () {
 
     if (window.scrollY<900) document.querySelector('.opportunity').classList.add('opportunityShow')
+
     shch['.opportunity'] = new shch.manipulated('.opportunity', 50, 1150, 4, 2, 'OpacityTrans');
+    shch['.opportunity'].GO()
     window.addEventListener('scroll', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
     window.addEventListener('touchmove', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
-    shch['.VRw'] = new shch.manipulated('.VRw', 400, 1550, 8, 2, 'OpacityTrans');
+    shch['.VRw'] = new shch.manipulated('.VRw', 400, 1550, 8, 2, 'OpacityTrans', 0, 0, '', '', {opacity:1,transform:0});
+    // shch['.VRw'].GO();
     window.addEventListener('scroll', shch['.VRw'].GO.bind(shch['.VRw']), true);
     window.addEventListener('touchmove', shch['.VRw'].GO.bind(shch['.VRw']), true);
 
