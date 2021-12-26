@@ -234,9 +234,7 @@ li {
  bottom:0;
  margin:auto;
  opacity:0;
- transition-padding: opacity,  background-image;
- transition-duration: .2s;
- transition-timing-function: linear;
+ transition: opacity .2s linear;
 }
 .RoundBox-All,
 .RoundBox-All::after {

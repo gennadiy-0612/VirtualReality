@@ -38,10 +38,10 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
                 } else {
                 this.Opacity = 0;
             }}
-            if (this.wayMove < stopPoint-startPoint - 100) {
+            if (100 < this.wayMove < stopPoint-startPoint - 200) {
                 this.Opacity = 1;
             }
-            if (this.wayMove > stopPoint-startPoint - 100) {
+            if (this.wayMove > stopPoint-startPoint - 200) {
                 this.Opacity = 0;
             }
             this.wayMove = window.scrollY - this.go;
@@ -306,7 +306,7 @@ shch.watch = {
 
 shch.LoadFunc = function () {
 
-    if (window.scrollY<900) document.querySelector('.opportunity').classList.add('opportunityShow')
+    if (window.scrollY<900) document.querySelector('.opportunity').setAttribute('style', 'opacity:1;')
 
     shch['.opportunity'] = new shch.manipulated('.opportunity', 50, 1150, 'OpacityTrans');
     window.addEventListener('scroll', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
