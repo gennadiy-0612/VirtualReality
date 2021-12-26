@@ -33,7 +33,7 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
                 }
             }
             if (window.scrollY < 100){
-                if (son ==='.opportunity') {
+                if (son ==='.opportunity' && window.scrollY < 100) {
                 this.Opacity = 1;
                 } else {
                 this.Opacity = 0;
