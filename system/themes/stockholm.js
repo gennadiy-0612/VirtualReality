@@ -68,7 +68,8 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
         let m = (this.move < 0 ? 1 : -1);
         let d = parseInt(degree) - this.Anim*speed;
         let r = (rotate ? 'rotateY(180deg) ': '');
-        let tr = (rotate ? -this.Anim * this.wayStep * m*1.1: this.Anim * this.wayStep * m*1.1);
+        let wide =this.Anim * this.wayStep * m;
+        let tr = this.move < 0 ? -wide: wide;
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
     }
     this.hideFS = function (Tag) {
