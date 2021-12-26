@@ -15,6 +15,8 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.Opacity = 1;
     this.PZ = 0;
     this.infoT = document.querySelector(son);
+    this.showIn = 0;
+    this.showOut = 0;
     this.GO = function (e) {
         e.stopPropagation()
         if (window.scrollY > this.go && window.scrollY < this.stop) {
@@ -39,16 +41,25 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
                 this.Opacity = 0;
             }
             this.wayMove = window.scrollY - this.go;
-            console.clear()
-            console.log('window.scrollY  ' + window.scrollY + ' ' + 'this.wayMove  ' + this.wayMove)
             this.PZ = -1*this.wayMove;
             this[cb]();
-            // console.clear();
-            // console.log('this.animStart: '+ this.animStart + ' ' + 'this.animFinish: '+ this.animFinish)
-            // console.log('this.Anim: ' + this.Anim + ' ' + 'window.scrollY: ' + window.scrollY)
-            // console.log(this.AnimScale)
         }
-        else this.hideFS(this.nextTag)
+        if (window.scrollY > this.stop && !this.showIn) {
+            this.showIn = 1
+            this.hideFS(this.nextTag)
+        }
+        if (window.scrollY < this.stop && this.showIn) {
+            this.showIn = 0
+            this.hideFS(this.nextTag)
+        }
+        if (window.scrollY < this.go && !this.showOut) {
+            this.showOut = 1
+            this.hideFS(this.nextTag)
+        }
+        if (window.scrollY < this.stop && this.showOut) {
+            this.showOut = 0
+            this.hideFS(this.nextTag)
+        }
     }
     this.OpacityTrans = function () {
         this.infoT.setAttribute('style', 'opacity:'+this.Opacity+'; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + this.PZ + ', 1)');
@@ -60,7 +71,7 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
     }
     this.hideFS = function (Tag) {
-        if (window.scrollY > (Tag-200)){this.infoT.setAttribute('style', 'opacity:0; visibility:hidden;')}
+        this.infoT.setAttribute('style', 'opacity:0; visibility:hidden;');
     }
 }
 
@@ -306,15 +317,15 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
     window.addEventListener('pointerup', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
     //
-    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 800, 1950, 8, 3, 'Rotate', '280','#16e7ff', 0, 4);
+    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 800, 1950, 8, 3, 'Rotate', '280','#16e7ff', 0, 14);
     window.addEventListener('scroll', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
     window.addEventListener('pointerup', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
 
-    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 800, 1950, 8, 3, 'Rotate', '75' ,'#5185ff', 1, 10);
+    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 800, 1950, 8, 3, 'Rotate', '75' ,'#5185ff', 1, 2);
     window.addEventListener('scroll', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
     window.addEventListener('pointerup', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
 
-    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 800, 1950, 8, 3, 'Rotate', '66' ,'#9515ff', 0, 9);
+    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 800, 1950, 8, 3, 'Rotate', '66' ,'#9515ff', 0, 13);
     window.addEventListener('scroll', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
     window.addEventListener('pointerup', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
 
@@ -322,15 +333,15 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
     window.addEventListener('pointerup', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
-    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 800, 1950, 8, 3, 'Rotate', '12', '#e80055', 0, 2);
+    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 800, 1950, 8, 3, 'Rotate', '12', '#e80055', 0, 12);
     window.addEventListener('scroll', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
     window.addEventListener('pointerup', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
 
-    shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 800, 1950, 8, 3, 'Rotate', '52', '#16e7ff', 0, 2);
+    shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 800, 1950, 8, 3, 'Rotate', '52', '#16e7ff', 0, 5);
     window.addEventListener('scroll', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
     window.addEventListener('pointerup', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
 
-    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 800, 1950, 8, 3, 'Rotate', '102', '#c20aa4', 1, 5);
+    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 800, 1950, 8, 3, 'Rotate', '102', '#c20aa4', 1, 10);
     window.addEventListener('scroll', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
     window.addEventListener('pointerup', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
@@ -338,7 +349,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
     window.addEventListener('pointerup', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
 
-    shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 800, 1950, 8, 3, 'Rotate', '100', '#00dfe9', 0, 7);
+    shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 800, 1950, 8, 3, 'Rotate', '100', '#00dfe9', 0, 17);
     window.addEventListener('scroll', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
     window.addEventListener('pointerup', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
 
