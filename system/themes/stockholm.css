@@ -1045,7 +1045,9 @@ a {
 .VRw {
  opacity:0;
  display:flex;
- transition: opacity .2s linear;
+ transition-property: opacity, transform;
+ transition-duration: .2s;
+ transition-timing-function: linear;
 }
 .VRwAnim {
  opacity:1
