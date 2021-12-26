@@ -32,12 +32,10 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
                     this.Anim -= this.AnimScale;
                 }
             }
-            if (window.scrollY < 100){
-                if (son ==='.opportunity' && window.scrollY < 100) {
-                this.Opacity = 1;
-                } else {
+            if (window.scrollY < 100) {
                 this.Opacity = 0;
-            }}
+                if (son ==='.opportunity') this.Opacity = 1;
+            }
             if (100 < this.wayMove < stopPoint-startPoint - 200) {
                 this.Opacity = 1;
             }
@@ -72,7 +70,7 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
         let m = (this.move < 0 ? 1 : -1);
         let d = parseInt(degree) - this.Anim*speed;
         let r = (rotate ? 'rotateY(180deg) ': '');
-        let wide =this.Anim * this.wayStep * m;
+        let wide =this.Anim * this.wayStep * m*.1;
         let tr = this.move < 0 ? -wide: wide;
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
     }
