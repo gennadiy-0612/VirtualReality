@@ -1087,7 +1087,7 @@ a {
  line-height:11.1vh;
  text-align:center;
  transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
- transition-property:opacity;
+ transition-property:opacity,transform;
  transition-duration:.2s;
  transition-timing-function:linear
 }
