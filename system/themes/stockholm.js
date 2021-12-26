@@ -19,7 +19,7 @@ shch.manipulated = function (son, startPoint, stopPoint, translateX, longX, cb, 
     this.showOut = 0;
     this.init = init;
     this.GO = function (e) {
-        if (init) console.log(this.init)
+        // if (init) console.log(this.init)
         if (e) e.stopPropagation()
         if (window.scrollY > this.go && window.scrollY < this.stop) {
             if (e) if (e.type === "scroll") this.AnimScale = 1;
@@ -307,7 +307,7 @@ shch.LoadFunc = function () {
     if (window.scrollY<900) document.querySelector('.opportunity').classList.add('opportunityShow')
 
     shch['.opportunity'] = new shch.manipulated('.opportunity', 50, 1150, 4, 2, 'OpacityTrans');
-    shch['.opportunity'].GO()
+    // shch['.opportunity'].GO()
     window.addEventListener('scroll', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
     window.addEventListener('touchmove', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
