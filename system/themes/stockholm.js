@@ -34,7 +34,6 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
             }
             if (window.scrollY < 100) {
                 this.Opacity = 0;
-                if (son ==='.opportunity') this.Opacity = 1;
             }
             if (100 < this.wayMove < stopPoint-startPoint - 200) {
                 this.Opacity = 1;
@@ -48,7 +47,7 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
         }
         if (window.scrollY > this.stop && !this.showOut) {
             this.showOut = 1
-            this.hideFS()
+            this.hideFS(0,0)
         }
         if (window.scrollY < this.stop && this.showOut) {
             this.showOut = 0
@@ -56,14 +55,20 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
         }
         if (window.scrollY < this.go && !this.showIn) {
             this.showIn = 1
-            this.hideFS()
+            this.hideFS(0,0)
+        }
+        if (window.scrollY < this.go) {
+            if (son ==='.opportunity') {
+                this.Opacity = 1
+                console.log('window.scrollY < this.go')
+            }
         }
         if (window.scrollY > this.go && this.showIn) {
             this.showIn = 0
-            this.hideFS()
+            this.hideFS(0,0)
         }
     }
-    this.OpacityTrans = function () {
+    this.OpacityTrans = function (op, wide) {
         this.infoT.setAttribute('style', 'opacity:'+this.Opacity+'; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + this.PZ + ', 1)');
     }
     this.Rotate = function () {
@@ -303,10 +308,8 @@ shch.watch = {
 }
 
 shch.LoadFunc = function () {
-
-    if (window.scrollY<900) document.querySelector('.opportunity').setAttribute('style', 'opacity:1;')
-
     shch['.opportunity'] = new shch.manipulated('.opportunity', 50, 1150, 'OpacityTrans');
+    if (window.scrollY < 50) shch['.opportunity'].infoT.setAttribute('style', 'opacity:1');
     window.addEventListener('scroll', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
     window.addEventListener('touchmove', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
@@ -318,7 +321,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
     window.addEventListener('touchmove', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
 
-    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 800, 1950, 'Rotate', '190', '#c20aa4', 0, 5);
+    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 800, 1950, 'Rotate', '190', '#c20aa4', 0, .5);
     window.addEventListener('scroll', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
     window.addEventListener('touchmove', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
     //
@@ -326,7 +329,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
     window.addEventListener('touchmove', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
 
-    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 800, 1950, 'Rotate', '75' ,'#5185ff', 1, 2);
+    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 800, 1950, 'Rotate', '75' ,'#5185ff', 1, .2);
     window.addEventListener('scroll', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
     window.addEventListener('touchmove', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
 
@@ -334,7 +337,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
     window.addEventListener('touchmove', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
 
-    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 800, 1950, 'Rotate', '152', '#00dfe9', 1,  6);
+    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 800, 1950, 'Rotate', '152', '#00dfe9', 1,  .6);
     window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
     window.addEventListener('touchmove', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
@@ -350,7 +353,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
     window.addEventListener('touchmove', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
-    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 800, 1950, 'Rotate', '200', '#5185ff', 0, 3);
+    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 800, 1950, 'Rotate', '200', '#5185ff', 0, .3);
     window.addEventListener('scroll', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
     window.addEventListener('touchmove', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
 
