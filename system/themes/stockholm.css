@@ -234,7 +234,9 @@ li {
  bottom:0;
  margin:auto;
  opacity:0;
- transition: opacity .2s linear;
+ transition-padding: opacity,  background-image;
+ transition-duration: .2s;
+ transition-timing-function: linear;
 }
 .RoundBox-All,
 .RoundBox-All::after {
@@ -1091,8 +1093,8 @@ a {
  text-align:center;
  transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
  transition-property:opacity,transform;
- transition-duration:.2s;
- transition-timing-function:linear
+ transition-duration:.7s, .2s;
+ transition-timing-function:linear;
 }
 .opportunityShow{
  opacity: 1;

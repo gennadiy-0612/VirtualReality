@@ -32,15 +32,17 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
                     this.Anim -= this.AnimScale;
                 }
             }
-            if (this.wayMove < 100 && son !=='.opportunity') {
-                this.Opacity = 0;
-            } else if (this.wayMove < stopPoint-startPoint - 100) {
+            if (window.scrollY < 100){
+                if (son ==='.opportunity') {
                 this.Opacity = 1;
-            } else if (this.wayMove > stopPoint-startPoint - 100) {
+                } else {
                 this.Opacity = 0;
+            }}
+            if (this.wayMove < stopPoint-startPoint - 100) {
+                this.Opacity = 1;
             }
-            if (window.scrollY < 200 && son ==='.opportunity') {
-                this.Opacity = 1;
+            if (this.wayMove > stopPoint-startPoint - 100) {
+                this.Opacity = 0;
             }
             this.wayMove = window.scrollY - this.go;
             this.PZ = -1*this.wayMove;
@@ -75,7 +77,7 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
         this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
     }
     this.hideFS = function () {
-        this.infoT.setAttribute('style', 'opacity:0; visibility:hidden;');
+        this.infoT.setAttribute('style', 'opacity:0;');
     }
 }
 
