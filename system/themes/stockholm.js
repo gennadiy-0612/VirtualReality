@@ -1,7 +1,6 @@
 /* use strict*/
 const shch = {};
 shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rotate, speed) {
-    this.nextTag = document.querySelector('.firstScreen').offsetTop;
     this.memo = startPoint;
     this.go = startPoint;
     this.stop = stopPoint;
@@ -9,7 +8,6 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     this.wayMove = (stopPoint-startPoint)/100;
     this.move = 0;
     this.Anim = 0;
-    this.AnimScale = 0;
     this.animStart = startPoint;
     this.animFinish = stopPoint;
     this.Opacity = 1;
@@ -20,16 +18,14 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     this.GO = function (e) {
         if (e) e.stopPropagation()
         if (window.scrollY > this.go && window.scrollY < this.stop) {
-            if (e) if (e.type === "scroll") this.AnimScale = 1;
-            if (e) if (e.type === "pointermove") this.AnimScale = 1;
             this.move = this.memo - window.scrollY;
             this.memo = window.scrollY;
             this.wayMove += this.wayStep;
             if (this.animFinish > window.scrollY && this.animStart < window.scrollY) {
                 if (this.move < 0) {
-                    this.Anim += this.AnimScale;
+                    this.Anim ++;
                 } else {
-                    this.Anim -= this.AnimScale;
+                    this.Anim --;
                 }
             }
             this.wayMove = window.scrollY - this.go;
@@ -67,13 +63,14 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
         this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + this.PZ + ', 1)');
     }
     this.Rotate = function () {
-        let m = (this.move < 0 ? 1 : -1);
-        let d = parseInt(degree) - this.Anim*speed;
-        let r = '';//(rotate ? 'rotateY(180deg) ': '');
-        let wide =this.Anim * this.wayStep * m*.01;
-        let tr = this.move < 0 ? -wide: wide;
-        this.infoT.setAttribute('style',  'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
-    }
+        if (this.move) {
+            let m = (this.move < 0 ? 1 : -1);
+            let d = parseInt(degree) - this.Anim * speed;
+            let r = '';//(rotate ? 'rotateY(180deg) ': '');
+            let wide = this.Anim * this.wayStep * m * .01;
+            let tr = this.move < 0 ? -wide : wide;
+            this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: ' + r + ' translate3d(0, 0, ' + (tr) + 'px)');
+        } }
     this.hideFS = function (op, wide) {
         this.infoT.setAttribute('style', 'opacity:' + op + '; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + wide + ', 1)');
     }
