@@ -7,9 +7,6 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     this.wayStep = (stopPoint-startPoint)/100;
     this.wayMove = (stopPoint-startPoint)/100;
     this.move = 0;
-    this.Anim = 0;
-    this.animStart = startPoint;
-    this.animFinish = stopPoint;
     this.Opacity = 1;
     this.PZ = 0;
     this.infoT = document.querySelector(son);
@@ -21,13 +18,6 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
             this.move = this.memo - window.scrollY;
             this.memo = window.scrollY;
             this.wayMove += this.wayStep;
-            if (this.animFinish > window.scrollY && this.animStart < window.scrollY) {
-                if (this.move < 0) {
-                    this.Anim ++;
-                } else {
-                    this.Anim --;
-                }
-            }
             this.wayMove = window.scrollY - this.go;
             this.PZ = -this.wayMove;
             if (window.scrollY < 100) {
@@ -67,8 +57,8 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     this.Rotate = function () {
         if (this.move) {
             let m = (this.move < 0 ? 1 : -1);
-            let d = parseInt(degree) - this.Anim * speed;
-            let wide = this.Anim * this.wayStep * m * .01;
+            let d = parseInt(degree) - this.wayMove * speed*.05;
+            let wide = this.wayMove * m * .01;
             let tr = this.move < 0 ? -wide : wide;
             this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: translate3d(0, 0, ' + (tr) + 'px)');
         }

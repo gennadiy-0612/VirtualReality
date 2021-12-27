@@ -234,7 +234,7 @@ li {
  bottom:0;
  margin:auto;
  opacity:0;
- transition: opacity .2s linear;
+ transition: opacity .2s  linear;
 }
 .RoundBox-All,
 .RoundBox-All::after {
@@ -1046,7 +1046,7 @@ a {
  opacity:0;
  display:flex;
  transition-property: opacity, transform;
- transition-duration: .2s;
+ transition-duration: .7s, .2s;
  transition-timing-function: linear;
 }
 .VRwAnim {
