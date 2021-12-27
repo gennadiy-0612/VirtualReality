@@ -1,7 +1,7 @@
 /* stockholm.css */
 @font-face {
  font-family:"HeliosExtC";
- src:url("fonts/HeliosExtC Regular.otf") format("otf")
+ src:url("/media/themes/fonts/HeliosExtC Regular.otf") format("otf")
 }
 html {
  scroll-behavior:smooth
@@ -234,7 +234,7 @@ li {
  bottom:0;
  margin:auto;
  opacity:0;
- transition: opacity .2s  linear;
+ transition:opacity .2s linear
 }
 .RoundBox-All,
 .RoundBox-All::after {
@@ -771,7 +771,7 @@ li {
  border-radius:50%;
  z-index:10;
  box-shadow:0 0 10px #000 inset;
- background:url(img/stepIcon.jpg) center center no-repeat;
+ background:url(/media/themes/img/stepIcon.jpg) center center no-repeat;
  background-size:contain;
  transition:opacity 1s ease-in-out 1s
 }
@@ -944,7 +944,7 @@ a {
  overflow:hidden;
  display:flex;
  flex-direction:column;
- background: url(img/firstBack.svg) center 50px no-repeat #000000;
+ background:url(/media/themes/img/firstBack.svg) center 50px no-repeat #000;
  background-size:contain
 }
 .backWhite {
@@ -958,30 +958,37 @@ a {
  left:0;
  text-align:center;
  height:60px;
- transform:translate3d(0,0,0);
-
+ transform:translate3d(0,0,0)
 }
 .topMenu {
  display:flex;
- margin:2.7% auto;
+ margin:0 auto;
  flex-wrap:wrap;
  justify-content:space-between;
  align-items:center;
  width:100%;
  box-sizing:border-box;
- z-index:1
+ z-index:1;
+ position:fixed;
+ top:0;
+ background-color:#000000b0;
+ padding:4px 20px;
+ left:0;
+ right:0
 }
 .mainLinks {
  display:flex;
  flex-wrap:wrap;
  align-items:center;
  justify-content:space-between;
- flex:1 1 auto
+ flex:1 1 auto;
+ /*! background-color: #000; */
+
 }
 .logoA {
  width:224px;
  height:51px;
- background:url(img/logo.svg) center center no-repeat;
+ background:url(/media/themes/img/logo.svg) center center no-repeat;
  background-size:contain;
  display:block
 }
@@ -1010,15 +1017,15 @@ a {
 .navy {
  width:38px;
  height:25px;
- background:url(img/menu.svg) 0 0 no-repeat;
+ background:url(/media/themes/img/menu.svg) 0 0 no-repeat;
  background-size:contain
 }
 .mainTitle {
  width:100%;
- height:170vh;
+ height:250vh;
  margin:auto;
- position: relative;
- z-index: -1;
+ position:relative;
+ z-index:-1
 }
 .frame {
  margin:auto;
@@ -1045,9 +1052,9 @@ a {
 .VRw {
  opacity:0;
  display:flex;
- transition-property: opacity, transform;
- transition-duration: .7s, .2s;
- transition-timing-function: linear;
+ transition-property:opacity,transform;
+ transition-duration:.7s,.2s;
+ transition-timing-function:linear
 }
 .VRwAnim {
  opacity:1
@@ -1083,7 +1090,7 @@ a {
  transform-style:preserve-3d
 }
 .opportunity {
- opacity: 0;
+ opacity:0;
  text-shadow:0 0 14px black,0 0 7px #000;
  letter-spacing:9.8px;
  font-size:6vw;
@@ -1091,11 +1098,11 @@ a {
  text-align:center;
  transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
  transition-property:opacity,transform;
- transition-duration:.7s, .2s;
- transition-timing-function:linear;
+ transition-duration:.7s,.2s;
+ transition-timing-function:linear
 }
-.opportunityShow{
- opacity: 1;
+.opportunityShow {
+ opacity:1
 }
 .virtual {
  margin:17px 0
@@ -1124,7 +1131,8 @@ a {
  flex-direction:column;
  align-items:center;
  bottom:0;
- justify-content:center
+ justify-content:center;
+ z-index:0
 }
 .play {
  width:13vh;
@@ -1195,7 +1203,7 @@ a {
 .moveScreen {
  width:32px;
  height:50px;
- background:url(img/mouse.svg) right center no-repeat;
+ background:url(/media/themes/img/mouse.svg) right center no-repeat;
  background-size:contain;
  margin:52px auto 44px 0;
  display:block
@@ -1350,7 +1358,7 @@ a {
  letter-spacing:1.8px;
  padding:0 34px 0 0;
  max-width:163px;
- background:url(img/arrow.svg) right center no-repeat;
+ background:url(/media/themes/img/arrow.svg) right center no-repeat;
  background-size:contain;
  margin:37px 0
 }
@@ -1416,7 +1424,7 @@ a {
  max-width:1920px;
  margin:0 auto 20vh;
  padding:0;
- background:url(img/Digits.svg) center center no-repeat;
+ background:url(/media/themes/img/Digits.svg) center center no-repeat;
  background-size:100%;
  /*! height:200vh; */position:relative;
  transition:margin-bottom .7s linear
@@ -1541,14 +1549,14 @@ a {
  bottom:0
 }
 .goodLi::before {
- background:url(img/burd.svg) center center no-repeat;
+ background:url(/media/themes/img/burd.svg) center center no-repeat;
  background-size:contain;
  width:18px;
  height:14px;
  left:-36px
 }
 .badLi::before {
- background:url(img/cross.svg) center center no-repeat;
+ background:url(/media/themes/img/cross.svg) center center no-repeat;
  background-size:contain;
  width:13px;
  height:13px;
@@ -1565,7 +1573,7 @@ a {
  max-width:1920px;
  margin:-90px auto;
  padding:60px 0;
- background:url(img/VRvision.png) 44.5% 73.9% no-repeat;
+ background:url(/media/themes/img/VRvision.png) 44.5% 73.9% no-repeat;
  background-size:53%
 }
 .leftInfo,
@@ -1629,7 +1637,7 @@ a {
 .BackWords {
  max-width:1820px;
  margin:auto;
- background:url(img/VRbottom.svg) bottom center no-repeat;
+ background:url(/media/themes/img/VRbottom.svg) bottom center no-repeat;
  background-size:79.6%;
  background-position-x:0;
  padding-bottom:11px
@@ -1728,34 +1736,34 @@ a {
  width:220px
 }
 .partner1 {
- background:url(img/partners.svg) 7px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) 7px 0 no-repeat
 }
 .partner2 {
- background:url(img/partners.svg) -248px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) -248px 0 no-repeat
 }
 .partner3 {
- background:url(img/partners.svg) -494px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) -494px 0 no-repeat
 }
 .partner4 {
- background:url(img/partners.svg) -717px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) -717px 0 no-repeat
 }
 .partner5 {
- background:url(img/partners.svg) -918px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) -918px 0 no-repeat
 }
 .partner11 {
- background:url(img/partners.svg) 10px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) 10px 0 no-repeat
 }
 .partner12 {
- background:url(img/partners.svg) -240px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) -240px 0 no-repeat
 }
 .partner13 {
- background:url(img/partners.svg) -470px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) -470px 0 no-repeat
 }
 .partner14 {
- background:url(img/partners.svg) -710px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) -710px 0 no-repeat
 }
 .partner15 {
- background:url(img/partners.svg) -930px 0 no-repeat
+ background:url(/media/themes/img/partners.svg) -930px 0 no-repeat
 }
 .partners20 {
  display:flex;
@@ -1985,5 +1993,30 @@ a {
 @media (max-height:1080px) {
  .WhyVR {
   height:initial
+ }
+}
+@media (min-height:200px) {
+ .mainTitle {
+  height:710vh;
+ }
+}
+@media (min-height:480px) {
+ .mainTitle {
+  height:360vh
+ }
+}
+@media (min-height:768px) {
+ .mainTitle {
+  height:320vh
+ }
+}
+@media (min-height:1080px) {
+ .mainTitle {
+  height:290vh
+ }
+}
+@media (min-height:1200px) {
+ .mainTitle {
+  height:170vh
  }
 }
