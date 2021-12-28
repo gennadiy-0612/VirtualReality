@@ -56,7 +56,7 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
                 this.hideFS(0, 0, 'collapse');
             }
             if (window.scrollY < this.opacityUp && son === '.opportunity') {
-                this.hideFS(1, 0, 'visible');
+                this.hideFS(1, this.wayMove, 'visible');
             }
         }
     }
