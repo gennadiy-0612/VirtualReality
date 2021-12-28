@@ -1059,13 +1059,14 @@ a {
  opacity:1
 }
 .virtual-word {
- background:-webkit-linear-gradient(#FF0A6C, #0014FF);
+ background:-webkit-linear-gradient(#e80055, #c20aa4);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
- font-family:"HeliosExtC",sans-serif
+ font-family:"HeliosExtC",sans-serif;
+ /*background:-webkit-linear-gradient(#e80055, #c20aa4, #16e7ff, #5185ff, #9515ff, #00dfe9);*/
 }
 .reality-word {
- background:-webkit-linear-gradient(#FF0A6C, #0014FF);
+ background:-webkit-linear-gradient(#e80055, #c20aa4);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:"HeliosExtC",sans-serif
