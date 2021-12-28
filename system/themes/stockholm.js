@@ -65,6 +65,7 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     }
     this.Rotate = function () {
         let d =  speed * this.wayMove + parseInt(degree);
+        if (rotate) d =  speed * this.wayMove - parseInt(degree);
         let tr = -.9*this.wayMove;
         this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: translate3d(0, 0, ' + (tr) + 'px)');
     }
