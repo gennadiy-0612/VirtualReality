@@ -217,8 +217,8 @@ li {
  top:0;
  bottom:0;
  margin:auto;
- width:100vmin;
- height:100vmin;
+ width:60vmin;
+ height:60vmin;
  z-index:-1;
  perspective:155vmin;
  transform-style:preserve-3d
@@ -982,7 +982,6 @@ a {
  align-items:center;
  justify-content:space-between;
  flex:1 1 auto;
- /*! background-color: #000; */
 
 }
 .logoA {
@@ -1052,21 +1051,21 @@ a {
 .VRw {
  opacity:0;
  display:flex;
- transition-property:opacity,transform;
- transition-duration:.7s,.2s;
+ transition-property:opacity,transform,visibility;
+ transition-duration:.1s,.2s, .7s;
  transition-timing-function:linear
 }
 .VRwAnim {
  opacity:1
 }
 .virtual-word {
- background:-webkit-linear-gradient(#FFFFFF,#898989);
+ background:-webkit-linear-gradient(#FFE53B,#FF2525);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:"HeliosExtC",sans-serif
 }
 .reality-word {
- background:-webkit-linear-gradient(#FFFFFF,#898989);
+ background:-webkit-linear-gradient(#FFE53B,#FF2525);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:"HeliosExtC",sans-serif
@@ -1097,8 +1096,8 @@ a {
  line-height:11.1vh;
  text-align:center;
  transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
- transition-property:opacity,transform;
- transition-duration:.7s,.2s;
+ transition-property:opacity,transform,visibility;
+ transition-duration:.7s,.2s, .7s;
  transition-timing-function:linear
 }
 .opportunityShow {
@@ -1126,7 +1125,6 @@ a {
  margin:auto;
  width:10%;
  height:80%;
- z-index:1;
  display:flex;
  flex-direction:column;
  align-items:center;
