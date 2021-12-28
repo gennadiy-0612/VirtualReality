@@ -28,12 +28,13 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
             if (window.scrollY > this.go && window.scrollY < this.stop) {
                 this.wayMove = this.go - window.scrollY;
                 this.Opacity = 1;
+                let opacity = (this.way + this.wayMove) / this.wayStep;
                 if (-this.wayMove < this.opacityUp) {
-                    let op = Math.floor((100 - (this.way + this.wayMove) / this.wayStep)/2);
+                    let op = Math.floor(100 - opacity/2);
                     this.Opacity = '0.' + op;
                 }
                 if (-this.wayMove > this.opacityDown) {
-                    let op = Math.floor(((this.way + this.wayMove) / this.wayStep)/2);
+                    let op = Math.floor(opacity/2);
                     this.Opacity = '0.' + op;
                 }
                 this[cb]();
