@@ -343,7 +343,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
     window.addEventListener('pointermove', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
-    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 800, 2200, 'Rotate', '200', '#5185ff', 1, .3);
+    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 800, 2200, 'Rotate', '200', '#5185ff', 0, .3);
     window.addEventListener('scroll', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
     window.addEventListener('pointermove', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
 
@@ -351,7 +351,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
     window.addEventListener('pointermove', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
 
-    shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 800, 2200, 'Rotate', '111', '#9515ff', 0, .9);
+    shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 800, 2200, 'Rotate', '111', '#9515ff', 1, .9);
     window.addEventListener('scroll', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
     window.addEventListener('pointermove', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
 
