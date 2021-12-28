@@ -255,7 +255,7 @@ li {
  height:98%
 }
 .RoundBox-1 {
- background-image:conic-gradient(from 45deg,#e80055,transparent,transparent,transparent,transparent)
+ background-image:conic-gradient(from 45deg,transparent,transparent,transparent,transparent,#e80055)
 }
 .RoundBox-2 {
  width:96%;
@@ -1059,13 +1059,13 @@ a {
  opacity:1
 }
 .virtual-word {
- background:-webkit-linear-gradient(#FF0A6C,#2D27FF);
+ background:-webkit-linear-gradient(#FF0A6C, #0700ff);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:"HeliosExtC",sans-serif
 }
 .reality-word {
- background:-webkit-linear-gradient(#FF0A6C,#2D27FF);
+ background:-webkit-linear-gradient(#FF0A6C, #0700ff);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:"HeliosExtC",sans-serif
