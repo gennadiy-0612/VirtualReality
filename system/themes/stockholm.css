@@ -1059,13 +1059,13 @@ a {
  opacity:1
 }
 .virtual-word {
- background:-webkit-linear-gradient(#FFE53B,#FF2525);
+ background:-webkit-linear-gradient(#FF0A6C,#2D27FF);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:"HeliosExtC",sans-serif
 }
 .reality-word {
- background:-webkit-linear-gradient(#FFE53B,#FF2525);
+ background:-webkit-linear-gradient(#FF0A6C,#2D27FF);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:"HeliosExtC",sans-serif
