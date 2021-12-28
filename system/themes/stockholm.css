@@ -1046,7 +1046,7 @@ a {
  left:0;
  align-items:center;
  justify-content:center;
- perspective:55vmin;
+ perspective:25vmin;
  transform-style:preserve-3d
 }
 .VRw {
@@ -1073,9 +1073,9 @@ a {
  font-family:'Rubik',sans-serif
 }
 .words {
- font-size:120vmin;
- height:120vmin;
- line-height:120vmin;
+ font-size:150vmin;
+ height:150vmin;
+ line-height:150vmin;
  font-weight:600
 }
 .frameH2 {

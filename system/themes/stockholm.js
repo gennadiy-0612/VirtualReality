@@ -20,8 +20,8 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     this.infoT = document.querySelector(son);
     this.showIn = 0;
     this.showOut = 0;
-    this.opacityUp = this.way/100*30;
-    this.opacityDown = this.way/100*70;
+    this.opacityUp = this.way/100*20;
+    this.opacityDown = this.way/100*80;
     this.GO = function (e) {
         if (this.movement.detect()) {
             e.stopPropagation()
@@ -30,11 +30,11 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
                 this.Opacity = 1;
                 let opacity = (this.way + this.wayMove) / this.wayStep;
                 if (-this.wayMove < this.opacityUp) {
-                    let op = Math.floor((100 - opacity)/3);
+                    let op = Math.floor((100 - opacity)/2);
                     this.Opacity = '0.' + op;
                 }
                 if (-this.wayMove > this.opacityDown) {
-                    let op = Math.floor(opacity/3);
+                    let op = Math.floor(opacity/2);
                     this.Opacity = '0.' + op;
                 }
                 this[cb]();
