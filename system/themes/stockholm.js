@@ -66,8 +66,8 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     this.Rotate = function () {
         let d =  speed * this.wayMove + parseInt(degree);
         let tr = -.9*this.wayMove;
-        this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: translate3d(0, 0, ' + (tr) + 'px)');
-        if (rotate) this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + (-1*d) + 'deg,transparent,transparent,transparent,transparent,' + colors + '); transform: translate3d(0, 0, ' + (tr) + 'px)');
+        this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent,' + colors + '); transform: translate3d(0, 0, ' + (tr) + 'px)');
+        if (rotate) this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + (-1*d) + 'deg,' + colors + ',transparent,transparent,transparent,transparent,' + colors + '); transform: translate3d(0, 0, ' + (tr) + 'px)');
         }
     this.hideFS = function (op, wide, vis) {
         this.infoT.setAttribute('style', 'visibility: ' + vis + '; opacity:' + op + '; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + wide + ', 1)');
@@ -339,7 +339,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
     window.addEventListener('pointermove', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
 
-    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 800, 2500, 'Rotate', '102', '#c20aa4', 0, .25);
+    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 800, 2500, 'Rotate', '102', '#c20aa4', 0, 1.25);
     window.addEventListener('scroll', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
     window.addEventListener('pointermove', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 

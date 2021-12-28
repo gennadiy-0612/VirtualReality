@@ -1,4 +1,5 @@
 /* stockholm.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
  font-family:"HeliosExtC";
  src:url("fonts/HeliosExtC Regular.otf") format("otf")
@@ -56,25 +57,25 @@ li {
  width:100%
 }
 .HeliosExtC {
- font-family:"HeliosExtC",sans-serif
+ font-family:'Rubik',sans-serif
 }
 .Ag14 {
- font:normal 400 14px/24px "HeliosExtC",sans-serif
+ font:normal 400 14px/24px 'Rubik',sans-serif
 }
 .Ag18 {
- font:normal 400 18px/22px "HeliosExtC",sans-serif
+ font:normal 400 18px/22px 'Rubik',sans-serif
 }
 .Ag24 {
- font:normal normal 24px/30px "HeliosExtC",sans-serif
+ font:normal normal 24px/30px 'Rubik',sans-serif
 }
 .Ag36 {
- font:normal normal 36px/42px "HeliosExtC",sans-serif
+ font:normal normal 36px/42px 'Rubik',sans-serif
 }
 .Ag48 {
- font:normal 400 48px/60px "HeliosExtC",sans-serif
+ font:normal 400 48px/60px 'Rubik',sans-serif
 }
 .Ag72 {
- font:normal 400 72px/86px "HeliosExtC",sans-serif
+ font:normal 400 72px/86px 'Rubik',sans-serif
 }
 .lineHeight24 {
  line-height:24px
@@ -1062,14 +1063,14 @@ a {
  background:-webkit-linear-gradient(#e80055, #c20aa4);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
- font-family:"HeliosExtC",sans-serif;
+ font-family:'Rubik',sans-serif;
  /*background:-webkit-linear-gradient(#e80055, #c20aa4, #16e7ff, #5185ff, #9515ff, #00dfe9);*/
 }
 .reality-word {
  background:-webkit-linear-gradient(#e80055, #c20aa4);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
- font-family:"HeliosExtC",sans-serif
+ font-family:'Rubik',sans-serif
 }
 .words {
  font-size:120vmin;
