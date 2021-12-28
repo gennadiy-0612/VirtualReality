@@ -65,10 +65,10 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     }
     this.Rotate = function () {
         let d =  speed * this.wayMove + parseInt(degree);
-        if (rotate) d =  speed * this.wayMove - parseInt(degree);
         let tr = -.9*this.wayMove;
         this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent); transform: translate3d(0, 0, ' + (tr) + 'px)');
-    }
+        if (rotate) this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + (-1*d) + 'deg,transparent,transparent,transparent,transparent,' + colors + '); transform: translate3d(0, 0, ' + (tr) + 'px)');
+        }
     this.hideFS = function (op, wide, vis) {
         this.infoT.setAttribute('style', 'visibility: ' + vis + '; opacity:' + op + '; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + wide + ', 1)');
     }
@@ -331,7 +331,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
     window.addEventListener('pointermove', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
-    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 800, 2200, 'Rotate', '12', '#e80055', 0, .12);
+    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 800, 2200, 'Rotate', '12', '#e80055', 1, .12);
     window.addEventListener('scroll', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
     window.addEventListener('pointermove', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
 
@@ -343,7 +343,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
     window.addEventListener('pointermove', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
-    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 800, 2200, 'Rotate', '200', '#5185ff', 0, .3);
+    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 800, 2200, 'Rotate', '200', '#5185ff', 1, .3);
     window.addEventListener('scroll', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
     window.addEventListener('pointermove', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
 
