@@ -339,7 +339,7 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
     window.addEventListener('pointermove', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
 
-    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 800, 2500, 'Rotate', '102', '#c20aa4', 0, .1);
+    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 800, 2500, 'Rotate', '102', '#c20aa4', 0, .25);
     window.addEventListener('scroll', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
     window.addEventListener('pointermove', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
