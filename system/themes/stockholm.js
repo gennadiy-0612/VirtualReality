@@ -30,7 +30,7 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
                 this.Opacity = 1;
                 let opacity = (this.way + this.wayMove) / this.wayStep;
                 if (-this.wayMove < this.opacityUp) {
-                    let op = Math.floor(100 - opacity/3);
+                    let op = Math.floor((100 - opacity)/3);
                     this.Opacity = '0.' + op;
                 }
                 if (-this.wayMove > this.opacityDown) {
