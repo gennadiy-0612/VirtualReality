@@ -1,5 +1,5 @@
 /* stockholm.css */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @font-face {
  font-family:"HeliosExtC";
  src:url("fonts/HeliosExtC Regular.otf") format("otf")
@@ -256,7 +256,7 @@ li {
  height:98%
 }
 .RoundBox-1 {
- background-image:conic-gradient(from 45deg,transparent,transparent,transparent,transparent,#e80055)
+ background-image:conic-gradient(from 45deg,transparent,transparent,transparent,transparent,#ff9f01)
 }
 .RoundBox-2 {
  width:96%;
@@ -264,7 +264,7 @@ li {
  z-index:1
 }
 .RoundBox-2 {
- background-image:conic-gradient(from 190deg,#c20aa4,transparent,transparent,transparent,transparent)
+ background-image:conic-gradient(from 190deg,#ff4e00,transparent,transparent,transparent,transparent)
 }
 .RoundBox-3 {
  width:90%;
@@ -272,7 +272,7 @@ li {
  z-index:1
 }
 .RoundBox-3 {
- background-image:conic-gradient(from 280deg,#16e7ff,transparent,transparent,transparent,transparent)
+ background-image:conic-gradient(from 280deg,#ce00ff,transparent,transparent,transparent,transparent)
 }
 .RoundBox-4 {
  width:84%;
@@ -280,7 +280,7 @@ li {
  z-index:1
 }
 .RoundBox-4 {
- background-image:conic-gradient(from 75deg,#5185ff,transparent,transparent,transparent,transparent)
+ background-image:conic-gradient(from 75deg,#ff2f00,transparent,transparent,transparent,transparent)
 }
 .RoundBox-5 {
  width:76%;
@@ -288,7 +288,7 @@ li {
  z-index:1
 }
 .RoundBox-5 {
- background-image:conic-gradient(from 66deg,#9515ff,transparent,transparent,transparent,transparent)
+ background-image:conic-gradient(from 66deg,#ff2800,transparent,transparent,transparent,transparent)
 }
 .RoundBox-6 {
  width:74%;
@@ -296,7 +296,7 @@ li {
  z-index:1
 }
 .RoundBox-6 {
- background-image:conic-gradient(from 152deg,#00dfe9,transparent,transparent,transparent,transparent)
+ background-image:conic-gradient(from 152deg,#ff8b00,transparent,transparent,transparent,transparent)
 }
 .RoundBox-7 {
  width:70%;
@@ -982,8 +982,7 @@ a {
  flex-wrap:wrap;
  align-items:center;
  justify-content:space-between;
- flex:1 1 auto;
-
+ flex:1 1 auto
 }
 .logoA {
  width:224px;
@@ -1027,6 +1026,26 @@ a {
  position:relative;
  z-index:-1
 }
+.topGlasses {
+ width:100%;
+ display:flex;
+ justify-content:center;
+ align-content:center;
+ align-items:center;
+ height:100vh
+}
+.topGlasses__img {
+ max-width:1235px;
+ max-height:879px;
+ object-fit: contain;
+}
+.topGlasses__imgAnim{
+ animation:appear .7s linear;
+}
+@keyframes appear {
+ from{opacity: 0;}
+ to{opacity: 1;}
+}
 .frame {
  margin:auto;
  height:100vh;
@@ -1053,21 +1072,20 @@ a {
  opacity:0;
  display:flex;
  transition-property:opacity,transform,visibility;
- transition-duration:.1s,.2s, .7s;
+ transition-duration:.1s,.2s,.7s;
  transition-timing-function:linear
 }
 .VRwAnim {
  opacity:1
 }
 .virtual-word {
- background:-webkit-linear-gradient(#e80055, #c20aa4);
+ background:-webkit-linear-gradient(#e80055,#c20aa4);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
- font-family:'Rubik',sans-serif;
- /*background:-webkit-linear-gradient(#e80055, #c20aa4, #16e7ff, #5185ff, #9515ff, #00dfe9);*/
+ font-family:'Rubik',sans-serif
 }
 .reality-word {
- background:-webkit-linear-gradient(#e80055, #c20aa4);
+ background:-webkit-linear-gradient(#e80055,#c20aa4);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:'Rubik',sans-serif
@@ -1099,7 +1117,7 @@ a {
  text-align:center;
  transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
  transition-property:opacity,transform,visibility;
- transition-duration:.7s,.2s, .7s;
+ transition-duration:.7s,.2s,.7s;
  transition-timing-function:linear
 }
 .opportunityShow {
@@ -2002,7 +2020,7 @@ a {
 }
 @media (min-height:480px) {
  .mainTitle {
-  height:370vh;
+  height:370vh
  }
 }
 @media (min-height:768px) {

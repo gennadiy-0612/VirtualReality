@@ -104,6 +104,31 @@ shch.addDetect = function (inter) {
     }
 }
 
+shch.DetectInter = function () {
+    this.checkVision = function (init) {
+        const options = {
+            rootMargins: '20vmin 0px',
+            threshold: [0.6, 0.7, 0.8, 0.9, 1]
+        };
+
+        function vdHandler(els) {
+            els.forEach((data) => {
+                let gray= (100 - data.intersectionRatio*100) *2.5
+                data.target.setAttribute('style', 'filter:grayscale('+ gray+'%);')
+                console.log(this)
+            });
+        }
+
+        const vd = new IntersectionObserver(vdHandler, options);
+
+        const cImps = document.querySelectorAll(init.selector);
+
+        cImps.forEach((el) => {
+            vd.observe(el);
+        });
+    }
+}
+
 shch.BS = function (cs, ps, papa) {
     this.display = 0;
     this.i = 0;
@@ -307,27 +332,27 @@ shch.LoadFunc = function () {
     window.addEventListener('scroll', shch['.VRw'].GO.bind(shch['.VRw']), true);
     window.addEventListener('pointermove', shch['.VRw'].GO.bind(shch['.VRw']), true);
 
-    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 800, 2500, 'Rotate', '45','#e80055', 1, .6);
+    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 800, 2500, 'Rotate', '45','#ff9f01', 1, .6);
     window.addEventListener('scroll', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
     window.addEventListener('pointermove', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
 
-    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 800, 2500, 'Rotate', '190', '#c20aa4', 0, .5);
+    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 800, 2500, 'Rotate', '190', '#ff4e00', 0, .5);
     window.addEventListener('scroll', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
     window.addEventListener('pointermove', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
-    //
-    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 800, 2500, 'Rotate', '280','#16e7ff', 0, .5);
+
+    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 800, 2500, 'Rotate', '280','#ce00ff', 0, .5);
     window.addEventListener('scroll', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
     window.addEventListener('pointermove', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
 
-    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 800, 2500, 'Rotate', '75' ,'#5185ff', 0, .3);
+    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 800, 2500, 'Rotate', '75' ,'#ff2f00', 0, .3);
     window.addEventListener('scroll', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
     window.addEventListener('pointermove', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
 
-    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 800, 2500, 'Rotate', '66' ,'#9515ff', 0, .2);
+    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 800, 2500, 'Rotate', '66' ,'#ff2800', 0, .2);
     window.addEventListener('scroll', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
     window.addEventListener('pointermove', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
 
-    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 800, 2500, 'Rotate', '152', '#00dfe9', 0,  .7);
+    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 800, 2500, 'Rotate', '152', '#ff8b00', 0,  .7);
     window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
     window.addEventListener('pointermove', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
@@ -395,6 +420,10 @@ shch.LoadFunc = function () {
         shch.OPMini[shch.OPMini.Papa.start].toward('.inLinkRight', 'actInSlide', 'outSlideImgAct');
         shch.OPMini[shch.OPMini.Papa.start].back('.inLinkLeft', 'actInSlide', 'outSlideImgAct');
     }
+
+    shch.DES = { selector:'.topGlasses__img'}
+    shch.DE = new shch.DetectInter();
+    shch.DE.checkVision(shch.DES);
 
     shch.watchS1 = new shch.addDetect(.1);
     shch.watchS1.checkVision(shch.watch.screenS1);

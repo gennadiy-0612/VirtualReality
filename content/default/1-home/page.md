@@ -3,6 +3,9 @@ Title: Home
 Language: en
 ---
 <div class="mainTitle">
+         <div class="topGlasses">
+           <img alt="Demo" class="topGlasses__img topGlasses__imgAnim" width="1295" height="972" src="/media/images/img/TopGlasses.png">
+         </div>
         <div class="frame">
          <div class="frameH2">
             <h2 class="opportunity colorW Ag24 FromLeftCorner">Unlock new opportunities with</h2>
