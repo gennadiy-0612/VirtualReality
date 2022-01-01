@@ -1037,14 +1037,19 @@ a {
 .topGlasses__img {
  max-width:1235px;
  max-height:879px;
- object-fit: contain;
+ object-fit:contain;
+ filter: grayscale(100%);
 }
-.topGlasses__imgAnim{
- animation:appear .7s linear;
+.topGlasses__imgAnim {
+ animation:appear .7s linear
 }
 @keyframes appear {
- from{opacity: 0;}
- to{opacity: 1;}
+ from {
+  opacity:0
+ }
+ to {
+  opacity:1
+ }
 }
 .frame {
  margin:auto;

@@ -108,14 +108,16 @@ shch.DetectInter = function () {
     this.checkVision = function (init) {
         const options = {
             rootMargins: '20vmin 0px',
-            threshold: [0.6, 0.7, 0.8, 0.9]
+            threshold: [0.5, 0.6, 0.7, 0.8, 0.9]
         };
 
         function vdHandler(els) {
             els.forEach((data) => {
-                if (data.intersectionRatio>.6) data.target.setAttribute('style', 'filter:grayscale(100%);')
-                if (data.intersectionRatio>.7) data.target.setAttribute('style', 'filter:grayscale(70%);')
-                if (data.intersectionRatio>.8) data.target.setAttribute('style', 'filter:grayscale(30%);')
+                if (data.intersectionRatio>.5) data.target.setAttribute('style', 'filter:grayscale(100%);')
+                if (data.intersectionRatio>.6) data.target.setAttribute('style', 'filter:grayscale(80%);')
+                if (data.intersectionRatio>.7) data.target.setAttribute('style', 'filter:grayscale(40%);')
+                if (data.intersectionRatio>.8) data.target.setAttribute('style', 'filter:grayscale(20%);')
+                if (data.intersectionRatio>.9) data.target.setAttribute('style', 'filter:grayscale(10%);')
                 if (data.intersectionRatio>.9) data.target.setAttribute('style', 'filter:grayscale(100%);')
                 console.log(data.intersectionRatio)
             });
