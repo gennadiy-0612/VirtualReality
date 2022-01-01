@@ -117,7 +117,6 @@ shch.DetectInter = function () {
                 if (data.intersectionRatio>.6) data.target.setAttribute('style', 'filter:grayscale(80%);')
                 if (data.intersectionRatio>.7) data.target.setAttribute('style', 'filter:grayscale(40%);')
                 if (data.intersectionRatio>.8) data.target.setAttribute('style', 'filter:grayscale(20%);')
-                if (data.intersectionRatio>.9) data.target.setAttribute('style', 'filter:grayscale(10%);')
                 if (data.intersectionRatio>.9) data.target.setAttribute('style', 'filter:grayscale(100%);')
                 console.log(data.intersectionRatio)
             });
