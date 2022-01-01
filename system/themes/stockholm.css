@@ -1041,15 +1041,7 @@ a {
  filter: grayscale(100%);
 }
 .topGlasses__imgAnim {
- animation:appear .7s linear
-}
-@keyframes appear {
- from {
-  opacity:0
- }
- to {
-  opacity:1
- }
+ transition: filrter .2s linear
 }
 .frame {
  margin:auto;
