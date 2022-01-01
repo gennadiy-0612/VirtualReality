@@ -114,9 +114,9 @@ shch.DetectInter = function () {
         function vdHandler(els) {
             els.forEach((data) => {
                 if (data.intersectionRatio>.5) data.target.setAttribute('style', 'filter:grayscale(100%);')
-                if (data.intersectionRatio>.6) data.target.setAttribute('style', 'filter:grayscale(0%);')
-                if (data.intersectionRatio>.7) data.target.setAttribute('style', 'filter:grayscale(50%);')
-                if (data.intersectionRatio>.8) data.target.setAttribute('style', 'filter:grayscale(80%);')
+                if (data.intersectionRatio>.6) data.target.setAttribute('style', 'filter:grayscale(60%);')
+                if (data.intersectionRatio>.7) data.target.setAttribute('style', 'filter:grayscale(20%);')
+                if (data.intersectionRatio>.8) data.target.setAttribute('style', 'filter:grayscale(0%);')
                 if (data.intersectionRatio>.9) data.target.setAttribute('style', 'filter:grayscale(100%);')
                 console.log(data.intersectionRatio)
             });
