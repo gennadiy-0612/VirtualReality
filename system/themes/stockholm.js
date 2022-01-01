@@ -113,7 +113,7 @@ shch.DetectInter = function () {
 
         function vdHandler(els) {
             els.forEach((data) => {
-                let gray= (100 - data.intersectionRatio*100) *2.5
+                let gray = data.intersectionRatio*100
                 data.target.setAttribute('style', 'filter:grayscale('+ gray+'%);')
                 console.log(this)
             });
