@@ -74,6 +74,11 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     }
 }
 
+shch.FPhoto = function (e) {
+    // console.clear()
+    // console.log(e)
+}
+
 shch.addDetect = function (inter) {
 
     this.checkVision = function (init) {
@@ -118,7 +123,6 @@ shch.DetectInter = function () {
                 if (data.intersectionRatio>.7) data.target.setAttribute('style', 'filter:grayscale(20%);')
                 if (data.intersectionRatio>.8) data.target.setAttribute('style', 'filter:grayscale(0%);')
                 if (data.intersectionRatio>.9) data.target.setAttribute('style', 'filter:grayscale(100%);')
-                console.log(data.intersectionRatio)
             });
         }
 
@@ -325,63 +329,66 @@ shch.watch = {
     }
 }
 
+
 shch.LoadFunc = function () {
-    shch['.opportunity'] = new shch.manipulated('.opportunity', 0, 1100, 'OpacityTrans');
+    let p ;
+    shch.DT = function (){
+        if ( 'scroll' in window ) p ='scroll';
+        if ('pointermove' in window )  p ='pointermove';
+        console.log(p)
+    }
+    shch.DT()
+    // shch.testZone = function () {
+    //     if (0 < window.scrollY < 500) {
+    //         window.addEventListener('scroll', shch.FPhoto)
+    //     }
+    //     if (window.scrollY > 500) {
+    //         window.removeEventListener('scroll', shch.FPhoto)
+    //     }
+    // }
+    // window.addEventListener('scroll', shch.testZone)
+    shch['.opportunity'] = new shch.manipulated('.opportunity', 400, 1500, 'OpacityTrans');
     if (window.scrollY < 50) shch['.opportunity'].infoT.setAttribute('style', 'opacity:1');
-    window.addEventListener('scroll', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
-    window.addEventListener('pointermove', shch['.opportunity'].GO.bind(shch['.opportunity']), true);
+    window.addEventListener(p, shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
-    shch['.VRw'] = new shch.manipulated('.VRw', 400, 1550, 'OpacityTrans');
-    window.addEventListener('scroll', shch['.VRw'].GO.bind(shch['.VRw']), true);
-    window.addEventListener('pointermove', shch['.VRw'].GO.bind(shch['.VRw']), true);
+    shch['.VRw'] = new shch.manipulated('.VRw', 800, 1950, 'OpacityTrans');
+    window.addEventListener(p, shch['.VRw'].GO.bind(shch['.VRw']), true);
 
-    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 800, 2500, 'Rotate', '45','#ff9f01', 1, .6);
-    window.addEventListener('scroll', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
+    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 1200, 2900, 'Rotate', '45','#ff9f01', 1, .6);
+    window.addEventListener(p, shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
 
-    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 800, 2500, 'Rotate', '190', '#ff4e00', 0, .5);
-    window.addEventListener('scroll', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
+    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 1200, 2900, 'Rotate', '190', '#ff4e00', 0, .5);
+    window.addEventListener(p, shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
 
-    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 800, 2500, 'Rotate', '280','#ce00ff', 0, .5);
-    window.addEventListener('scroll', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
+    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 1200, 2900, 'Rotate', '280','#ce00ff', 0, .5);
+    window.addEventListener(p, shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
 
-    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 800, 2500, 'Rotate', '75' ,'#ff2f00', 0, .3);
-    window.addEventListener('scroll', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 1200, 2900, 'Rotate', '75' ,'#ff2f00', 0, .3);
+    window.addEventListener(p, shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
 
-    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 800, 2500, 'Rotate', '66' ,'#ff2800', 0, .2);
-    window.addEventListener('scroll', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
+    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 1200, 2900, 'Rotate', '66' ,'#ff2800', 0, .2);
+    window.addEventListener(p, shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
 
-    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 800, 2500, 'Rotate', '152', '#ff8b00', 0,  .7);
-    window.addEventListener('scroll', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
+    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 1200, 2900, 'Rotate', '152', '#ff8b00', 0,  .7);
+    window.addEventListener(p, shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
-    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 800, 2500, 'Rotate', '12', '#e80055', 1, .4);
-    window.addEventListener('scroll', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
+    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 1200, 2900, 'Rotate', '12', '#e80055', 1, .4);
+    window.addEventListener(p, shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
 
-    shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 800, 2500, 'Rotate', '52', '#16e7ff', 0, .4);
-    window.addEventListener('scroll', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
+    shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 1200, 2900, 'Rotate', '52', '#16e7ff', 0, .4);
+    window.addEventListener(p, shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
 
-    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 800, 2500, 'Rotate', '102', '#c20aa4', 0, 1.25);
-    window.addEventListener('scroll', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
+    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 1200, 2900, 'Rotate', '102', '#c20aa4', 0, 1.25);
+    window.addEventListener(p, shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
-    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 800, 2500, 'Rotate', '200', '#5185ff', 0, .3);
-    window.addEventListener('scroll', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
+    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 1200, 2900, 'Rotate', '200', '#5185ff', 0, .3);
+    window.addEventListener(p, shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
 
-    shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 800, 2500, 'Rotate', '100', '#00dfe9', 0, .5);
-    window.addEventListener('scroll', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
+    shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 1200, 2900, 'Rotate', '100', '#00dfe9', 0, .5);
+    window.addEventListener(p, shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
 
-    shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 800, 2500, 'Rotate', '111', '#9515ff', 1, .9);
-    window.addEventListener('scroll', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
-    window.addEventListener('pointermove', shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
+    shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 1200, 2900, 'Rotate', '111', '#9515ff', 1, .9);
+    window.addEventListener(p, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
 
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
