@@ -76,7 +76,6 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
 
 shch.FPhoto = function (son, startPoint, endPoint) {
     this.animTag = document.querySelector(son);
-    this.animTagTop = document.querySelector(son).getBoundingClientRect().top;
     this.way = endPoint - startPoint;
     this.startScroll = startPoint;
     this.endScroll =  endPoint;
@@ -90,6 +89,7 @@ shch.FPhoto = function (son, startPoint, endPoint) {
     this.lift = function () {
         if ((window.scrollY + window.innerHeight) > this.endScroll) this.animTag.setAttribute('style', 'top:' + ((this.endScroll - window.innerHeight) - window.scrollY)*3 + 'px;');
         else this.animTag.setAttribute('style', '');
+        if (((this.endScroll - window.innerHeight) - window.scrollY)*(-1) > window.innerHeight) this.animTag.setAttribute('style', 'display:none;');
     }
 }
 
