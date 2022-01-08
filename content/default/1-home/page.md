@@ -4,8 +4,8 @@ Language: en
 ---
 <div class="mainTitle">
          <div class="topGlasses">
-           <img width="1440" height="837" alt="Img" class="topGlasses__img TGI1 topGlasses__imgAnim" src="/media/images/img/TopGlasses.webp">
-           <img width="1440" height="837" alt="Img" class="topGlasses__img TGI2 topGlasses__imgAnim" src="/media/images/img/TopGlassesOff.webp">
+           <img width="1440" height="873" alt="Img" class="topGlasses__img TGI1 topGlasses__imgAnim" src="/media/images/img/TopGlasses.webp">
+           <img width="1440" height="873" alt="Img" class="topGlasses__img TGI2 topGlasses__imgAnim" src="/media/images/img/TopGlassesOff.webp">
          </div>
         <div class="frame">
          <div class="frameH2">

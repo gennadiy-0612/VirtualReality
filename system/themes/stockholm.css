@@ -1014,10 +1014,8 @@ a {
  margin: auto;
 }
 .topGlasses__img {
- max-width: 1440px;
- max-height: 832px;
- width: 90%;
- height: 90%;
+ width: auto;
+ height: 80%;
  position: absolute;
 }
 .TGI2{
