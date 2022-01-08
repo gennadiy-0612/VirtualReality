@@ -2013,3 +2013,9 @@ a {
   height:170vh
  }
 }
+@media (orientation:portrait) {
+ .topGlasses__img{
+  width: 90%;
+  height: auto;
+ }
+}
