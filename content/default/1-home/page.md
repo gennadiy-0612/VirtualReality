@@ -4,8 +4,8 @@ Language: en
 ---
 <div class="mainTitle">
          <div class="topGlasses">
-           <p class="topGlasses__img TGI1 topGlasses__imgAnim"></p>
-           <p class="topGlasses__img TGI2 topGlasses__imgAnim"></p>
+           <img alt="Img" class="topGlasses__img TGI1 topGlasses__imgAnim" src="/media/images/TopGlasses.webp">
+           <img alt="Img" class="topGlasses__img TGI2 topGlasses__imgAnim" src="/media/images/TopGlasses.webp">
          </div>
         <div class="frame">
          <div class="frameH2">
