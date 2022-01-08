@@ -165,20 +165,6 @@ li {
 .frame {
  max-width:100vw
 }
-@keyframes title {
- 0% {
-  opacity:0;
-  transform:translate3d(0,44%,0)
- }
- 70% {
-  opacity:1;
-  transform:translate3d(0,44%,0)
- }
- 100% {
-  opacity:1;
-  transform:translate3d(0,0,-78vh)
- }
-}
 .FromSmallTop {
  opacity:0;
  transform:scale(.4)
@@ -948,19 +934,6 @@ a {
  background:url(img/firstBack.svg) center 50px no-repeat #000;
  background-size:contain
 }
-.backWhite {
- margin:auto;
- letter-spacing:9.8px;
- font-size:9.1vmin;
- position:absolute;
- top:0;
- right:0;
- bottom:0;
- left:0;
- text-align:center;
- height:60px;
- transform:translate3d(0,0,0)
-}
 .topMenu {
  display:flex;
  margin:0 auto;
@@ -1032,16 +1005,29 @@ a {
  justify-content:center;
  align-content:center;
  align-items:center;
- height:100vh
+ height:100vh;
+ position:fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ margin: auto;
 }
 .topGlasses__img {
- max-width:1235px;
- max-height:879px;
- object-fit:contain;
- filter: grayscale(100%);
+ max-width: 1440px;
+ max-height: 832px;
+ width: 90%;
+ height: 90%;
+ position: absolute;
 }
-.topGlasses__imgAnim {
- transition: filrter .2s linear
+.TGI1{
+ background:url(img/TopGlassesOff.png) center no-repeat;
+ background-size:contain
+}
+.TGI2{
+ opacity: 0;
+ background:url(img/TopGlasses.png) center no-repeat;
+ background-size:contain
 }
 .frame {
  margin:auto;
@@ -1076,13 +1062,13 @@ a {
  opacity:1
 }
 .virtual-word {
- background:-webkit-linear-gradient(#e80055,#c20aa4);
+ background:-webkit-linear-gradient(#ff9f01,#e80055);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:'Rubik',sans-serif
 }
 .reality-word {
- background:-webkit-linear-gradient(#e80055,#c20aa4);
+ background:-webkit-linear-gradient(#ff9f01,#e80055);
  -webkit-background-clip:text;
  -webkit-text-fill-color:transparent;
  font-family:'Rubik',sans-serif

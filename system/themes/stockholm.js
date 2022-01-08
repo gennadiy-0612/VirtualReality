@@ -74,9 +74,23 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     }
 }
 
-shch.FPhoto = function (e) {
-    // console.clear()
-    // console.log(e)
+shch.FPhoto = function (son, startPoint, endPoint) {
+    this.animTag = document.querySelector(son);
+    this.animTagTop = document.querySelector(son).getBoundingClientRect().top;
+    this.way = endPoint - startPoint;
+    this.startScroll = startPoint;
+    this.endScroll =  endPoint;
+    this.wayStep =  this.way/100;
+    this.fixed = this.wayStep*30;
+    this.lightUp = function () {
+        if (window.scrollY < (this.fixed + this.startScroll)) this.animTag.setAttribute('style', 'opacity:' + (1 - (this.fixed - window.scrollY) / this.wayStep / 30) + ';');
+        else this.animTag.setAttribute('style', 'opacity:1;');
+        if (window.scrollY < this.endScroll) return;
+    }
+    this.lift = function () {
+        if ((window.scrollY + window.innerHeight) > this.endScroll) this.animTag.setAttribute('style', 'top:' + ((this.endScroll - window.innerHeight) - window.scrollY)*3 + 'px;');
+        else this.animTag.setAttribute('style', '');
+    }
 }
 
 shch.addDetect = function (inter) {
@@ -104,33 +118,6 @@ shch.addDetect = function (inter) {
         const cImgs = document.querySelectorAll(init.selector);
 
         cImgs.forEach((el) => {
-            vd.observe(el);
-        });
-    }
-}
-
-shch.DetectInter = function () {
-    this.checkVision = function (init) {
-        const options = {
-            rootMargins: '20vmin 0px',
-            threshold: [0.5, 0.6, 0.7, 0.8, 0.9]
-        };
-
-        function vdHandler(els) {
-            els.forEach((data) => {
-                if (data.intersectionRatio>.5) data.target.setAttribute('style', 'filter:grayscale(100%);')
-                if (data.intersectionRatio>.6) data.target.setAttribute('style', 'filter:grayscale(60%);')
-                if (data.intersectionRatio>.7) data.target.setAttribute('style', 'filter:grayscale(20%);')
-                if (data.intersectionRatio>.8) data.target.setAttribute('style', 'filter:grayscale(0%);')
-                if (data.intersectionRatio>.9) data.target.setAttribute('style', 'filter:grayscale(100%);')
-            });
-        }
-
-        const vd = new IntersectionObserver(vdHandler, options);
-
-        const cImps = document.querySelectorAll(init.selector);
-
-        cImps.forEach((el) => {
             vd.observe(el);
         });
     }
@@ -329,66 +316,58 @@ shch.watch = {
     }
 }
 
-
 shch.LoadFunc = function () {
-    let p ;
-    shch.DT = function (){
-        if ( 'scroll' in window ) p ='scroll';
-        if ('pointermove' in window )  p ='pointermove';
-        console.log(p)
-    }
-    shch.DT()
-    // shch.testZone = function () {
-    //     if (0 < window.scrollY < 500) {
-    //         window.addEventListener('scroll', shch.FPhoto)
-    //     }
-    //     if (window.scrollY > 500) {
-    //         window.removeEventListener('scroll', shch.FPhoto)
-    //     }
-    // }
-    // window.addEventListener('scroll', shch.testZone)
+    if ('scroll' in window) shch.Etype = 'scroll';
+    if ('pointermove' in window)  shch.Etype = 'pointermove';
+
+    shch['.TGI2'] = new shch.FPhoto('.TGI2', 0, 1200);
+    window.addEventListener(shch.Etype, shch['.TGI2'].lightUp.bind(shch['.TGI2']), true);
+
+    shch['.topGlasses'] = new shch.FPhoto('.topGlasses', 0, 1200);
+    window.addEventListener(shch.Etype, shch['.topGlasses'].lift.bind(shch['.topGlasses']), true);
+
     shch['.opportunity'] = new shch.manipulated('.opportunity', 400, 1500, 'OpacityTrans');
     if (window.scrollY < 50) shch['.opportunity'].infoT.setAttribute('style', 'opacity:1');
-    window.addEventListener(p, shch['.opportunity'].GO.bind(shch['.opportunity']), true);
+    window.addEventListener(shch.Etype, shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
     shch['.VRw'] = new shch.manipulated('.VRw', 800, 1950, 'OpacityTrans');
-    window.addEventListener(p, shch['.VRw'].GO.bind(shch['.VRw']), true);
+    window.addEventListener(shch.Etype, shch['.VRw'].GO.bind(shch['.VRw']), true);
 
     shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 1200, 2900, 'Rotate', '45','#ff9f01', 1, .6);
-    window.addEventListener(p, shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
 
     shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 1200, 2900, 'Rotate', '190', '#ff4e00', 0, .5);
-    window.addEventListener(p, shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
 
     shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 1200, 2900, 'Rotate', '280','#ce00ff', 0, .5);
-    window.addEventListener(p, shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
 
     shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 1200, 2900, 'Rotate', '75' ,'#ff2f00', 0, .3);
-    window.addEventListener(p, shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
 
     shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 1200, 2900, 'Rotate', '66' ,'#ff2800', 0, .2);
-    window.addEventListener(p, shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
 
     shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 1200, 2900, 'Rotate', '152', '#ff8b00', 0,  .7);
-    window.addEventListener(p, shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
     shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 1200, 2900, 'Rotate', '12', '#e80055', 1, .4);
-    window.addEventListener(p, shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
 
     shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 1200, 2900, 'Rotate', '52', '#16e7ff', 0, .4);
-    window.addEventListener(p, shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
 
     shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 1200, 2900, 'Rotate', '102', '#c20aa4', 0, 1.25);
-    window.addEventListener(p, shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
     shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 1200, 2900, 'Rotate', '200', '#5185ff', 0, .3);
-    window.addEventListener(p, shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
 
     shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 1200, 2900, 'Rotate', '100', '#00dfe9', 0, .5);
-    window.addEventListener(p, shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
 
     shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 1200, 2900, 'Rotate', '111', '#9515ff', 1, .9);
-    window.addEventListener(p, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
 
     shch.WWD = {}
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
@@ -430,10 +409,6 @@ shch.LoadFunc = function () {
         shch.OPMini[shch.OPMini.Papa.start].toward('.inLinkRight', 'actInSlide', 'outSlideImgAct');
         shch.OPMini[shch.OPMini.Papa.start].back('.inLinkLeft', 'actInSlide', 'outSlideImgAct');
     }
-
-    shch.DES = { selector:'.topGlasses__img'}
-    shch.DE = new shch.DetectInter();
-    shch.DE.checkVision(shch.DES);
 
     shch.watchS1 = new shch.addDetect(.1);
     shch.watchS1.checkVision(shch.watch.screenS1);
