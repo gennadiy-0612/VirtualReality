@@ -52,7 +52,7 @@ Language: en
         </div>
         <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
         </div>
-<img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.png">
+<img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.webp">
     </div>
 <div class="VR">
     <img class="V" alt="Demo" src="/media/images/img/V.svg">

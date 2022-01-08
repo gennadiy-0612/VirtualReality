@@ -1021,12 +1021,14 @@ a {
  position: absolute;
 }
 .TGI1{
- background:url(img/TopGlassesOff.png) center no-repeat;
+ background:url(img/TopGlassesOff.webp) center no-repeat;
+ /*background:url(img/TopGlassesOff.png) center no-repeat;*/
  background-size:contain
 }
 .TGI2{
  opacity: 0;
- background:url(img/TopGlasses.png) center no-repeat;
+ background:url(img/TopGlasses.webp) center no-repeat;
+ /*background:url(img/TopGlasses.png) center no-repeat;*/
  background-size:contain
 }
 .frame {
