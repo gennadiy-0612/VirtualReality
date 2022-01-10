@@ -55,6 +55,7 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
                 this.hideFS(0, 0, 'collapse');
             }
             if (window.scrollY < this.opacityUp && son === '.opportunity') {
+                this.Opacity = 1;
                 this.hideFS(1, this.wayMove, 'visible');
             }
         }
@@ -86,8 +87,9 @@ shch.FPhoto = function (son, startPoint, endPoint) {
         if (window.scrollY < this.endScroll) return false;
     };
     this.lift = function () {
-        if ((this.endScroll - window.scrollY) < 0) this.animTag.setAttribute('style', 'top:' + (this.endScroll-window.scrollY)*4 + 'px;');
-        else this.animTag.setAttribute('style', '');
+        if (this.endScroll > window.scrollY) this.animTag.setAttribute('style', 'opacity:1;');
+        if (this.endScroll < window.scrollY) this.animTag.setAttribute('style', 'top:' + (this.endScroll - window.scrollY) * 4 + 'px; opacity:1;');
+        if ((this.endScroll + window.innerHeight) < window.scrollY) this.animTag.setAttribute('style', '');
     };
 };
 
@@ -327,6 +329,7 @@ shch.LoadFunc = function () {
 
     shch['.opportunity'] = new shch.manipulated('.opportunity', 400, 1500, 'OpacityTrans');
     shch['.opportunity'].GO();
+    if (window.scrollY < 400) shch['.opportunity'].infoT.setAttribute('style', 'opacity:1');
     window.addEventListener(shch.Etype, shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
     shch['.VRw'] = new shch.manipulated('.VRw', 800, 1950, 'OpacityTrans');
@@ -469,7 +472,6 @@ shch.LoadFunc = function () {
 
     shch.watch16 = new shch.addDetect(.1);
     shch.watch16.checkVision(shch.watch.screen16);
-
 
     shch.watch18 = new shch.addDetect(.1);
     shch.watch18.checkVision(shch.watch.screen18);
