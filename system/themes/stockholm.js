@@ -1,9 +1,9 @@
 /* use strict*/
 const shch = {};
-shch.motion = function (){
+shch.motion = function () {
     this.memo = 0;
     this.move = 0;
-    this.detect = function (){
+    this.detect = function () {
         this.move = this.memo - window.scrollY;
         this.memo = window.scrollY;
         return this.move;
@@ -12,7 +12,7 @@ shch.motion = function (){
 shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rotate, speed) {
     this.movement = new shch.motion();
     this.way = stopPoint - startPoint;
-    this.wayStep = (stopPoint - startPoint)/100;
+    this.wayStep = (stopPoint - startPoint) / 100;
     this.go = startPoint;
     this.stop = stopPoint;
     this.wayMove = 0;
@@ -20,21 +20,21 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
     this.infoT = document.querySelector(son);
     this.showIn = 0;
     this.showOut = 0;
-    this.opacityUp = this.way/100*20;
-    this.opacityDown = this.way/100*80;
+    this.opacityUp = this.way / 100 * 20;
+    this.opacityDown = this.way / 100 * 80;
     this.GO = function (e) {
         if (this.movement.detect()) {
-            e.stopPropagation()
+            e.stopPropagation();
             if (window.scrollY > this.go && window.scrollY < this.stop) {
                 this.wayMove = this.go - window.scrollY;
                 this.Opacity = 1;
                 let opacity = (this.way + this.wayMove) / this.wayStep;
                 if (-this.wayMove < this.opacityUp) {
-                    let op = Math.floor((100 - opacity)/2);
+                    let op = Math.floor((100 - opacity) / 2);
                     this.Opacity = '0.' + op;
                 }
                 if (-this.wayMove > this.opacityDown) {
-                    let op = Math.floor(opacity/2);
+                    let op = Math.floor(opacity / 2);
                     this.Opacity = '0.' + op;
                 }
                 this[cb]();
@@ -59,39 +59,38 @@ shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rot
                 this.hideFS(1, this.wayMove, 'visible');
             }
         }
-    }
+    };
     this.OpacityTrans = function () {
         this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + this.wayMove + ', 1)');
-    }
+    };
     this.Rotate = function () {
-        let d =  speed * this.wayMove + parseInt(degree);
-        let tr = -.9*this.wayMove;
+        let d = speed * this.wayMove + parseInt(degree);
+        let tr = -.9 * this.wayMove;
         this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + d + 'deg,' + colors + ',transparent,transparent,transparent,transparent,' + colors + '); transform: translate3d(0, 0, ' + (tr) + 'px)');
-        if (rotate) this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + (-1*d) + 'deg,' + colors + ',transparent,transparent,transparent,transparent,' + colors + '); transform: translate3d(0, 0, ' + (tr) + 'px)');
-        }
+        if (rotate) this.infoT.setAttribute('style', 'opacity:' + this.Opacity + '; background-image:conic-gradient(from ' + (-1 * d) + 'deg,' + colors + ',transparent,transparent,transparent,transparent,' + colors + '); transform: translate3d(0, 0, ' + (tr) + 'px)');
+    };
     this.hideFS = function (op, wide, vis) {
         this.infoT.setAttribute('style', 'visibility: ' + vis + '; opacity:' + op + '; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, ' + wide + ', 1)');
     }
-}
+};
 
 shch.FPhoto = function (son, startPoint, endPoint) {
     this.animTag = document.querySelector(son);
     this.way = endPoint - startPoint;
     this.startScroll = startPoint;
-    this.endScroll =  endPoint;
-    this.wayStep =  this.way/100;
-    this.fixed = this.wayStep*30;
+    this.endScroll = endPoint;
+    this.wayStep = this.way / 100;
+    this.fixed = this.wayStep * 30;
     this.lightUp = function () {
         if (window.scrollY < (this.fixed + this.startScroll)) this.animTag.setAttribute('style', 'opacity:' + (1 - (this.fixed - window.scrollY) / this.wayStep / 30) + ';');
         else this.animTag.setAttribute('style', 'opacity:1;');
-        if (window.scrollY < this.endScroll) return;
-    }
+        if (window.scrollY < this.endScroll) return false;
+    };
     this.lift = function () {
-        if ((window.scrollY + window.innerHeight) > this.endScroll) this.animTag.setAttribute('style', 'top:' + ((this.endScroll - window.innerHeight) - window.scrollY)*3 + 'px;');
+        if ((this.endScroll - window.scrollY) < 0) this.animTag.setAttribute('style', 'top:' + (this.endScroll-window.scrollY)*4 + 'px;');
         else this.animTag.setAttribute('style', '');
-        if (((this.endScroll - window.innerHeight) - window.scrollY)*(-1) > window.innerHeight) this.animTag.setAttribute('style', 'display:none;');
-    }
-}
+    };
+};
 
 shch.addDetect = function (inter) {
 
@@ -121,7 +120,7 @@ shch.addDetect = function (inter) {
             vd.observe(el);
         });
     }
-}
+};
 
 shch.BS = function (cs, ps, papa) {
     this.display = 0;
@@ -131,7 +130,6 @@ shch.BS = function (cs, ps, papa) {
     this.controlerAll = papa.querySelectorAll(cs).length;
     this.passive = papa.querySelectorAll(ps);
     this.passivecurrent = papa.querySelectorAll(ps)[0];
-    this.more = '';
     this.n = 0;
     this.moveBack = function (act, actLink) {
         this.controlerDisplay.classList.remove(actLink);
@@ -144,10 +142,10 @@ shch.BS = function (cs, ps, papa) {
         this.controlerDisplay.classList.add(actLink);
         this.passivecurrent = this.passive[this.display];
         this.passivecurrent.classList.add(act);
-    }
+    };
     this.back = function (selTag, act, actLink) {
         papa.querySelector(selTag).addEventListener('click', this.moveBack.bind(this, act, actLink))
-    }
+    };
     this.moveToward = function (act, actLink) {
         this.controlerDisplay.classList.remove(actLink);
         this.passive[this.display].classList.remove(act);
@@ -159,39 +157,39 @@ shch.BS = function (cs, ps, papa) {
         this.controlerDisplay.classList.add(actLink);
         this.passivecurrent = this.passive[this.display];
         this.passivecurrent.classList.add(act);
-    }
+    };
     this.toward = function (selTag, act, actLink) {
         papa.querySelector(selTag).addEventListener('click', this.moveToward.bind(this, act, actLink))
-    }
+    };
     this.setDisplay = function (id, actL, active) {
         this.display = id;
         this.controlerDisplay.classList.remove(actL);
         this.passivecurrent.classList.remove(active);
-        this.controler[id].classList.add(actL)
-        this.passive[id].classList.add(active)
-        this.controlerDisplay = papa.querySelectorAll(cs)[id]
+        this.controler[id].classList.add(actL);
+        this.passive[id].classList.add(active);
+        this.controlerDisplay = papa.querySelectorAll(cs)[id];
         this.passivecurrent = this.passive[id];
-    }
+    };
     this.addAct = function (actLink, actSelect) {
         for (; this.i < this.controlerAll; this.i++) {
             this.controler[this.i].addEventListener('click', this.setDisplay.bind(this, this.i, actLink, actSelect))
         }
-    }
+    };
     this.actSet = function (id, actLink, actSelect) {
         this.display = id;
         this.controlerDisplay.classList.remove(actLink);
         this.passivecurrent.classList.remove(actSelect);
-        this.controler[id].classList.add(actLink)
-        this.passive[id].classList.add(actSelect)
-        this.controlerDisplay = papa.querySelectorAll(cs)[id]
+        this.controler[id].classList.add(actLink);
+        this.passive[id].classList.add(actSelect);
+        this.controlerDisplay = papa.querySelectorAll(cs)[id];
         this.passivecurrent = this.passive[id];
-    }
+    };
     this.actMore = function (actLink, actSelect) {
         for (; this.n < this.passive.length; this.n++) {
             this.passive[this.n].addEventListener('click', this.actSet.bind(this, this.n, actLink, actSelect))
         }
     }
-}
+};
 
 shch.watch = {
     screenS1: {
@@ -314,16 +312,16 @@ shch.watch = {
         selector: '.Desktop7',
         animationName: 'Desktop7Anim'
     }
-}
+};
 
 shch.LoadFunc = function () {
     if ('scroll' in window) shch.Etype = 'scroll';
-    if ('pointermove' in window)  shch.Etype = 'pointermove';
+    if ('pointermove' in window) shch.Etype = 'pointermove';
 
     shch['.TGI2'] = new shch.FPhoto('.TGI2', 0, 1200);
     window.addEventListener(shch.Etype, shch['.TGI2'].lightUp.bind(shch['.TGI2']), true);
 
-    shch['.topGlasses'] = new shch.FPhoto('.topGlasses', 0, 1200);
+    shch['.topGlasses'] = new shch.FPhoto('.topGlasses', 0, 360);
     window.addEventListener(shch.Etype, shch['.topGlasses'].lift.bind(shch['.topGlasses']), true);
 
     shch['.opportunity'] = new shch.manipulated('.opportunity', 400, 1500, 'OpacityTrans');
@@ -333,22 +331,22 @@ shch.LoadFunc = function () {
     shch['.VRw'] = new shch.manipulated('.VRw', 800, 1950, 'OpacityTrans');
     window.addEventListener(shch.Etype, shch['.VRw'].GO.bind(shch['.VRw']), true);
 
-    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 1200, 2900, 'Rotate', '45','#ff9f01', 1, .6);
+    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 1200, 2900, 'Rotate', '45', '#ff9f01', 1, .6);
     window.addEventListener(shch.Etype, shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
 
     shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 1200, 2900, 'Rotate', '190', '#ff4e00', 0, .5);
     window.addEventListener(shch.Etype, shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
 
-    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 1200, 2900, 'Rotate', '280','#ce00ff', 0, .5);
+    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 1200, 2900, 'Rotate', '280', '#ce00ff', 0, .5);
     window.addEventListener(shch.Etype, shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
 
-    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 1200, 2900, 'Rotate', '75' ,'#ff2f00', 0, .3);
+    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 1200, 2900, 'Rotate', '75', '#ff2f00', 0, .3);
     window.addEventListener(shch.Etype, shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
 
-    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 1200, 2900, 'Rotate', '66' ,'#ff2800', 0, .2);
+    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 1200, 2900, 'Rotate', '66', '#ff2800', 0, .2);
     window.addEventListener(shch.Etype, shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
 
-    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 1200, 2900, 'Rotate', '152', '#ff8b00', 0,  .7);
+    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 1200, 2900, 'Rotate', '152', '#ff8b00', 0, .7);
     window.addEventListener(shch.Etype, shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
     shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 1200, 2900, 'Rotate', '12', '#e80055', 1, .4);
@@ -369,7 +367,7 @@ shch.LoadFunc = function () {
     shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 1200, 2900, 'Rotate', '111', '#9515ff', 1, .9);
     window.addEventListener(shch.Etype, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
 
-    shch.WWD = {}
+    shch.WWD = {};
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
     shch.WWD.Papa.start = 0;
     shch.WWD.Papa.all = shch.WWD.Papa.length;
@@ -379,7 +377,7 @@ shch.LoadFunc = function () {
         shch.WWD[shch.WWD.Papa.start].actMore('doLinksActive', 'whatDidWeAct');
     }
 
-    shch.OP = {}
+    shch.OP = {};
     shch.OP.Papa = document.querySelectorAll('.Screen3');
     shch.OP.Papa.start = 0;
     shch.OP.Papa.all = shch.OP.Papa.length;
@@ -388,7 +386,7 @@ shch.LoadFunc = function () {
         shch.OP[shch.OP.Papa.start].addAct('doLinksActive', 'biggerSlideAct');
     }
 
-    shch.OPMove = {}
+    shch.OPMove = {};
     shch.OPMove.Papa = document.querySelectorAll('.Screen3');
     shch.OPMove.Papa.start = 0;
     shch.OPMove.Papa.all = shch.OPMove.Papa.length;
@@ -399,7 +397,7 @@ shch.LoadFunc = function () {
         shch.OPMove[shch.OPMove.Papa.start].toward('.OutR', 'biggerSlideAct', 'doLinksActive');
     }
 
-    shch.OPMini = {}
+    shch.OPMini = {};
     shch.OPMini.Papa = document.querySelectorAll('.biggerSlide');
     shch.OPMini.Papa.start = 0;
     shch.OPMini.Papa.all = shch.OPMini.Papa.length;
@@ -500,6 +498,6 @@ shch.LoadFunc = function () {
 
     shch.watch31 = new shch.addDetect(.1);
     shch.watch31.checkVision(shch.watch.screen31);
-}
+};
 
 window.addEventListener('load', shch.LoadFunc);
