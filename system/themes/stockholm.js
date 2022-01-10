@@ -87,7 +87,7 @@ shch.FPhoto = function (son, startPoint, endPoint) {
     };
     this.lift = function () {
         if ((this.endScroll - window.scrollY) < 0) this.animTag.setAttribute('style', 'top:' + (this.endScroll-window.scrollY)*4 + 'px;');
-        else this.animTag.setAttribute('style', 'opacity:0');
+        else this.animTag.setAttribute('style', '');
     };
 };
 
@@ -326,7 +326,7 @@ shch.LoadFunc = function () {
     window.addEventListener(shch.Etype, shch['.topGlasses'].lift.bind(shch['.topGlasses']), true);
 
     shch['.opportunity'] = new shch.manipulated('.opportunity', 400, 1500, 'OpacityTrans');
-    if (window.scrollY < 50) shch['.opportunity'].infoT.setAttribute('style', 'opacity:1');
+    shch['.opportunity'].GO();
     window.addEventListener(shch.Etype, shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
     shch['.VRw'] = new shch.manipulated('.VRw', 800, 1950, 'OpacityTrans');
