@@ -82,8 +82,8 @@ shch.FPhoto = function (son, startPoint, endPoint) {
     this.wayStep = this.way / 100;
     this.fixed = this.wayStep * 30;
     this.lightUp = function () {
-        if (window.scrollY < (this.fixed + this.startScroll)) this.animTag.setAttribute('style', 'opacity:' + (1 - (this.fixed - window.scrollY) / this.wayStep / 30) + ';');
-        else this.animTag.setAttribute('style', 'opacity:1;');
+        if (window.scrollY < (this.fixed + this.startScroll)) this.animTag.setAttribute('style', 'opacity:' + ((this.fixed - window.scrollY) / this.wayStep / 30) + ';');
+        else this.animTag.setAttribute('style', 'opacity:0;');
         if (window.scrollY < this.endScroll) return false;
     };
     this.lift = function () {
