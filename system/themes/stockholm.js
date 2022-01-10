@@ -87,7 +87,7 @@ shch.FPhoto = function (son, startPoint, endPoint) {
     };
     this.lift = function () {
         if ((this.endScroll - window.scrollY) < 0) this.animTag.setAttribute('style', 'top:' + (this.endScroll-window.scrollY)*4 + 'px;');
-        else this.animTag.setAttribute('style', '');
+        else this.animTag.setAttribute('style', 'opacity:0');
     };
 };
 
