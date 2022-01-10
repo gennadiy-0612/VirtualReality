@@ -89,7 +89,7 @@ shch.FPhoto = function (son, startPoint, endPoint) {
     this.lift = function () {
         if (this.endScroll > window.scrollY) this.animTag.setAttribute('style', 'opacity:1;');
         if (this.endScroll < window.scrollY) this.animTag.setAttribute('style', 'top:' + (this.endScroll - window.scrollY) * 4 + 'px; opacity:1;');
-        if ((this.endScroll + window.innerHeight) < window.scrollY) this.animTag.setAttribute('style', '');
+        if ((this.endScroll + window.innerHeight) < window.scrollY) this.animTag.setAttribute('style', 'display:none;');
     };
 };
 

@@ -1000,6 +1000,7 @@ a {
  z-index:-1
 }
 .topGlasses {
+ opacity: 0;
  width:100%;
  display:flex;
  justify-content:center;
@@ -1012,6 +1013,7 @@ a {
  left: 0;
  right: 0;
  margin: auto;
+ transition: opacity .5s linear;
 }
 .topGlasses__img {
  width: auto;
