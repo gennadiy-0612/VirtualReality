@@ -326,7 +326,7 @@ shch.LoadFunc = function () {
     window.addEventListener(shch.Etype, shch['.topGlasses'].lift.bind(shch['.topGlasses']), true);
 
     shch['.opportunity'] = new shch.manipulated('.opportunity', 400, 1500, 'OpacityTrans');
-    shch['.opportunity'].infoT.setAttribute('style', 'opacity:1');
+    if (window.scrollY < 50) shch['.opportunity'].infoT.setAttribute('style', 'opacity:1');
     window.addEventListener(shch.Etype, shch['.opportunity'].GO.bind(shch['.opportunity']), true);
 
     shch['.VRw'] = new shch.manipulated('.VRw', 800, 1950, 'OpacityTrans');
