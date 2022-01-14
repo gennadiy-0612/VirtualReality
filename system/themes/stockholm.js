@@ -349,51 +349,51 @@ shch.LoadFunc = function () {
     shch['.VRw'].GO();
     window.addEventListener(shch.Etype, shch['.VRw'].GO.bind(shch['.VRw']), true);
 
-    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 1200, 2900, 'Rotate', '45', '#ff9f01', 1, .6);
+    shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 1200, 2500, 'Rotate', '45', '#ff9f01', 1, .6);
     shch['.RoundBox-1'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
 
-    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 1200, 2900, 'Rotate', '190', '#ff4e00', 0, .5);
+    shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 1200, 2500, 'Rotate', '190', '#ff4e00', 0, .5);
     shch['.RoundBox-2'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
 
-    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 1200, 2900, 'Rotate', '280', '#ce00ff', 0, .5);
+    shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 1200, 2500, 'Rotate', '280', '#ce00ff', 0, .5);
     shch['.RoundBox-3'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
 
-    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 1200, 2900, 'Rotate', '75', '#ff2f00', 0, .3);
+    shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 1200, 2500, 'Rotate', '75', '#ff2f00', 0, .3);
     shch['.RoundBox-4'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
 
-    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 1200, 2900, 'Rotate', '66', '#ff2800', 0, .2);
+    shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 1200, 2500, 'Rotate', '66', '#ff2800', 0, .2);
     shch['.RoundBox-5'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
 
-    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 1200, 2900, 'Rotate', '152', '#ff8b00', 0, .7);
+    shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 1200, 2500, 'Rotate', '152', '#ff8b00', 0, .7);
     shch['.RoundBox-6'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
 
-    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 1200, 2900, 'Rotate', '12', '#e80055', 1, .4);
+    shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 1200, 2500, 'Rotate', '12', '#e80055', 1, .4);
     shch['.RoundBox-7'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
 
-    shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 1200, 2900, 'Rotate', '52', '#16e7ff', 0, .4);
+    shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 1200, 2500, 'Rotate', '52', '#16e7ff', 0, .4);
     shch['.RoundBox-8'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
 
-    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 1200, 2900, 'Rotate', '102', '#c20aa4', 0, 1.25);
+    shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 1200, 2500, 'Rotate', '102', '#c20aa4', 0, 1.25);
     shch['.RoundBox-9'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
 
-    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 1200, 2900, 'Rotate', '200', '#5185ff', 0, .3);
+    shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 1200, 2500, 'Rotate', '200', '#5185ff', 0, .3);
     shch['.RoundBox-10'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
 
-    shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 1200, 2900, 'Rotate', '100', '#00dfe9', 0, .5);
+    shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 1200, 2500, 'Rotate', '100', '#00dfe9', 0, .5);
     shch['.RoundBox-11'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
 
-    shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 1200, 2900, 'Rotate', '111', '#9515ff', 1, .9);
+    shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 1200, 2500, 'Rotate', '111', '#9515ff', 1, .9);
     shch['.RoundBox-12'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
 
