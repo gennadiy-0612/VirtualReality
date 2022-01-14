@@ -823,7 +823,7 @@ a {
 .firstScreen,
 .main {
  width:100%;
- height:100%
+ height:60%
 }
 .page {
  overflow-x:hidden
@@ -833,8 +833,7 @@ a {
  overflow:hidden;
  display:flex;
  flex-direction:column;
- background:url(img/firstBack.svg) center 50px no-repeat #000;
- background-size:contain
+ /*! background:url(img/firstBack.svg) center 50px no-repeat #000; *//*! background-size:contain; */background-color: #000000;
 }
 .mainLinks,
 .topMenu {
@@ -945,7 +944,7 @@ a {
  display:flex;
  justify-content:space-around;
  flex-wrap:wrap;
- height:70%
+ height:100%;
 }
 .slogan {
  align-self:center;
@@ -954,7 +953,7 @@ a {
 }
 .frame-v {
  flex:1 1 50%;
- height:50%;
+ height:60%;
  align-self:center;
  display:flex;
  flex-direction:column;
@@ -1035,8 +1034,8 @@ a {
  position:relative;
  flex-direction:column;
  box-sizing:border-box;
- height:80%;
- width:90%;
+ height:100%;
+ width:80%;
  align-self:center
 }
 .play,
@@ -1056,8 +1055,8 @@ a {
  z-index:0
 }
 .play {
- width:9vh;
- height:9vh;
+ width:7vh;
+ height:7vh;
  max-width:140px;
  max-height:140px;
  border:2px solid #fff;
