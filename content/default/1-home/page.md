@@ -52,13 +52,13 @@ Language: en
             <h2 class="slogan--h2 whyWork upperText Ag48 colorW">WHAT WE CAN:</h2>
             <h3 class="colorW Ag24 upperText WhoWeH3">Help to level up your business by:</h3>
             <ul>
-                <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">A demo worth 1000 words:</li>
                 <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Understanding your business challenges</li>
-                <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1"> Bringing best talents together</li>
-                <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1"> Empowering suitable technologies</li>
+                <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Bringing best talents together</li>
+                <li class="Ag18 lineHeight40 blueLine WhoWeText blueLine colorW WhoWeLi1">Empowering suitable technologies</li>
             </ul>
         </div>
-
+<div class="frame-v">
+                <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3-video">A demo worth 1000 words:</h3>
         <div class="video">
             <div class="playPanel">
                 <div class="play"><img class="triangle" alt="Demo" src="/media/images/img/playButton.svg"></div>
@@ -66,6 +66,7 @@ Language: en
             </div>
             <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.webp">
         </div>
+</div>
 </div>
         <div class="VR">
             <img class="V" alt="Demo" src="/media/images/img/V.svg">
