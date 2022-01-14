@@ -7,8 +7,17 @@ shch.motion = function () {
         this.move = this.memo - window.scrollY;
         this.memo = window.scrollY;
         return this.move;
+    };
+};
+
+shch.menu = function (move) {
+    this.menu = document.querySelector('.topMenu');
+    this.menuStick = function () {
+        let up = move() ;
+        up < 0 ? this.menu.classList.add('moveUp') : this.menu.classList.remove('moveUp');
     }
 };
+
 shch.manipulated = function (son, startPoint, stopPoint, cb, degree, colors, rotate, speed) {
     this.movement = new shch.motion();
     this.way = stopPoint - startPoint;
@@ -318,6 +327,10 @@ shch.watch = {
 shch.LoadFunc = function () {
     if ('scroll' in window) shch.Etype = 'scroll';
     if ('pointermove' in window) shch.Etype = 'pointermove';
+
+    shch['.topMenu'] = new shch.motion();
+    shch.moveIt = new shch.menu(shch['.topMenu'].detect);
+    window.addEventListener(shch.Etype, shch.moveIt.menuStick.bind(shch.moveIt), false);
 
     shch['.TGI2'] = new shch.FPhoto('.TGI2', 0, 1200);
     shch['.TGI2'].lightUp();
