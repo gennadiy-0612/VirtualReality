@@ -47,7 +47,7 @@ Language: en
         </div>
         <a href="#Screen2" title="Demo" class="navy"></a>
     </header>
-    <div class="set">
+    <div class="set a1440">
         <div class="slogan">
             <h2 class="slogan--h2 whyWork upperText Ag48 colorW">WHAT WE CAN:</h2>
             <h3 class="colorW Ag24 upperText WhoWeH3">Help to level up your business by:</h3>
