@@ -13,7 +13,7 @@ shch.motion = function () {
 shch.menu = function (move) {
     this.menu = document.querySelector('.topMenu');
     this.menuStick = function () {
-        let up = move() ;
+        let up = move();
         up < 0 ? this.menu.classList.add('moveUp') : this.menu.classList.remove('moveUp');
     }
 };
