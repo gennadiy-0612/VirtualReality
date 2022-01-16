@@ -833,7 +833,7 @@ a {
  overflow:hidden;
  display:flex;
  flex-direction:column;
- /*! background:url(img/firstBack.svg) center 50px no-repeat #000; *//*! background-size:contain; */background-color:#000
+ /*! background:url(img/firstBack.svg) center 50px no-repeat #000; *//*! background-size:contain; *//*! background-color:#000 */
 }
 .mainLinks,
 .topMenu {
@@ -945,12 +945,13 @@ a {
  flex-wrap:wrap;
  height:100%;
  /*! align-items: center; *//*! align-content: center; */
+
 }
 .slogan {
  align-self:center;
  flex:1 1 auto;
- padding:0 0 0 3%;
- align-self: flex-start;
+ padding:0;
+ align-self:flex-start
 }
 .frame-v {
  flex:1 1 50%;
@@ -1102,7 +1103,7 @@ a {
 .doLinksTop::before {
  position:absolute;
  width:100%;
- z-index:-1
+ z-index:-1;
 }
 .VR {
  left:0;
