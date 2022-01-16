@@ -110,7 +110,7 @@ li {
 }
 .a1440 {
  max-width:1440px;
- margin:90px auto;
+ margin:0 auto;
  padding:0 20px
 }
 .colorW {
@@ -823,17 +823,17 @@ a {
 .firstScreen,
 .main {
  width:100%;
- height:60%
+ height:60%;
 }
 .page {
  overflow-x:hidden
 }
 .firstScreen {
- padding-top:0;
  overflow:hidden;
  display:flex;
  flex-direction:column;
  /*! background:url(img/firstBack.svg) center 50px no-repeat #000; *//*! background-size:contain; *//*! background-color:#000 */
+
 }
 .mainLinks,
 .topMenu {
@@ -948,10 +948,12 @@ a {
 
 }
 .slogan {
- align-self:center;
  flex:1 1 auto;
  padding:0;
- align-self:flex-start
+ align-self:start;
+}
+.slogan--ul {
+ padding:0 0 0 47px
 }
 .frame-v {
  flex:1 1 50%;
@@ -960,7 +962,8 @@ a {
  display:flex;
  flex-direction:column;
  justify-content:center;
- align-items:center
+ align-items:center;
+ align-self: end;
 }
 .VR-words {
  display:flex;
@@ -1102,13 +1105,12 @@ a {
 .VR,
 .doLinksTop::before {
  position:absolute;
- width:100%;
  z-index:-1;
+ height:100%
 }
 .VR {
  left:0;
  right:0;
- top:-46px;
  margin:auto;
  max-width:1474px;
  opacity:.3;
