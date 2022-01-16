@@ -833,7 +833,7 @@ a {
  overflow:hidden;
  display:flex;
  flex-direction:column;
- /*! background:url(img/firstBack.svg) center 50px no-repeat #000; *//*! background-size:contain; */background-color: #000000;
+ /*! background:url(img/firstBack.svg) center 50px no-repeat #000; *//*! background-size:contain; */background-color:#000
 }
 .mainLinks,
 .topMenu {
@@ -942,19 +942,20 @@ a {
 }
 .set {
  display:flex;
- justify-content:space-around;
  flex-wrap:wrap;
  height:100%;
+ /*! align-items: center; *//*! align-content: center; */
 }
 .slogan {
  align-self:center;
  flex:1 1 auto;
- padding:0 0 0 6%
+ padding:0 0 0 3%;
+ align-self: flex-start;
 }
 .frame-v {
  flex:1 1 50%;
  height:60%;
- align-self:center;
+ align-self:flex-start;
  display:flex;
  flex-direction:column;
  justify-content:center;
@@ -1034,7 +1035,7 @@ a {
  position:relative;
  flex-direction:column;
  box-sizing:border-box;
- height:100%;
+ height:85%;
  width:80%;
  align-self:center
 }
