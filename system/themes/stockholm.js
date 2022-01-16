@@ -102,17 +102,15 @@ shch.FPhoto = function (son, startPoint, endPoint) {
     };
 };
 
-shch.S2 = function () {
-    this.papa = document.querySelector('.slogan');
+shch.S2 = function (select, ind) {
+    this.papa = document.querySelector(select);
     this.lift = 0;
     this.lifting = function () {
-        if (this.papa.getBoundingClientRect().top < 0) this.papa.setAttribute('style', 'transform:translateY(0%)');
-        if (this.papa.getBoundingClientRect().bottom < window.innerHeight && this.papa.getBoundingClientRect().top > 0) {
-            this.lift = this.papa.getBoundingClientRect().top * .1;
+        if (this.papa.getBoundingClientRect().top > 0 && this.papa.getBoundingClientRect().bottom < (window.innerHeight + this.papa.getBoundingClientRect().height)) {
+            this.lift = this.papa.getBoundingClientRect().top * ind;
             this.papa.setAttribute('style', 'transform:translateY(' + this.lift + '%)');
-            console.log(this.papa.getBoundingClientRect().bottom + this.papa.getBoundingClientRect().height)
+            console.log(this.papa.getBoundingClientRect().bottom + ' ' + this.papa.getBoundingClientRect().height + ' - ' + window.innerHeight);
         }
-        if (this.papa.getBoundingClientRect().bottom > window.innerHeight) this.papa.setAttribute('style', 'transform:translateY(' + this.lift + '%)');
     };
 };
 
@@ -338,8 +336,13 @@ shch.LoadFunc = function () {
     if ('scroll' in window) shch.Etype = 'scroll';
     if ('pointermove' in window) shch.Etype = 'pointermove';
 
-    shch.Scr2 = new shch.S2();
-    window.addEventListener(shch.Etype, shch.Scr2.lifting.bind(shch.Scr2), true);
+    shch.Scr21 = new shch.S2('.slogan', .1);
+    shch.Scr21.lifting();
+    window.addEventListener(shch.Etype, shch.Scr21.lifting.bind(shch.Scr21), true);
+
+    shch.Scr22 = new shch.S2('.frame-v', .05);
+    shch.Scr22.lifting();
+    window.addEventListener(shch.Etype, shch.Scr22.lifting.bind(shch.Scr22), true);
 
     shch['.topMenu'] = new shch.motion();
     shch.moveIt = new shch.menu(shch['.topMenu'].detect);
