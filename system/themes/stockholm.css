@@ -951,6 +951,7 @@ a {
  flex:1 1 auto;
  padding:0;
  align-self:start;
+ transition: transorm .2s linear;
 }
 .slogan--ul {
  padding:0 0 0 47px

@@ -102,6 +102,18 @@ shch.FPhoto = function (son, startPoint, endPoint) {
     };
 };
 
+shch.S2 = function () {
+    this.papa = document.querySelector('.slogan');
+    this.lift = 0;
+    this.lifting = function () {
+        if (this.papa.getBoundingClientRect().top < 0) this.papa.setAttribute('style', 'transform:translateY(0%)')
+        if (this.papa.getBoundingClientRect().bottom < window.innerHeight && this.papa.getBoundingClientRect().top > 0) {
+            this.lift = this.papa.getBoundingClientRect().top * .1;
+            this.papa.setAttribute('style', 'transform:translateY(' + this.lift + '%)')
+        }
+    }
+};
+
 shch.addDetect = function (inter) {
 
     this.checkVision = function (init) {
@@ -112,10 +124,6 @@ shch.addDetect = function (inter) {
 
         function vdHandler(els) {
             els.forEach((data) => {
-                if (data.intersectionRatio === inter) {
-                    data.target.classList.add(init.animationName);
-                    init.func();
-                }
                 if (data.intersectionRatio > inter) {
                     data.target.classList.add(init.animationName);
                 }
@@ -327,6 +335,9 @@ shch.watch = {
 shch.LoadFunc = function () {
     if ('scroll' in window) shch.Etype = 'scroll';
     if ('pointermove' in window) shch.Etype = 'pointermove';
+
+    shch.Scr2 = new shch.S2();
+    window.addEventListener(shch.Etype, shch.Scr2.lifting.bind(shch.Scr2), true);
 
     shch['.topMenu'] = new shch.motion();
     shch.moveIt = new shch.menu(shch['.topMenu'].detect);
