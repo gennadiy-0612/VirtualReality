@@ -106,12 +106,14 @@ shch.S2 = function () {
     this.papa = document.querySelector('.slogan');
     this.lift = 0;
     this.lifting = function () {
-        if (this.papa.getBoundingClientRect().top < 0) this.papa.setAttribute('style', 'transform:translateY(0%)')
+        if (this.papa.getBoundingClientRect().top < 0) this.papa.setAttribute('style', 'transform:translateY(0%)');
         if (this.papa.getBoundingClientRect().bottom < window.innerHeight && this.papa.getBoundingClientRect().top > 0) {
             this.lift = this.papa.getBoundingClientRect().top * .1;
-            this.papa.setAttribute('style', 'transform:translateY(' + this.lift + '%)')
+            this.papa.setAttribute('style', 'transform:translateY(' + this.lift + '%)');
+            console.log(this.papa.getBoundingClientRect().bottom + this.papa.getBoundingClientRect().height)
         }
-    }
+        if (this.papa.getBoundingClientRect().bottom > window.innerHeight) this.papa.setAttribute('style', 'transform:translateY(' + this.lift + '%)');
+    };
 };
 
 shch.addDetect = function (inter) {
