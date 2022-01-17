@@ -950,7 +950,7 @@ a {
 .slogan {
  flex:1 1 auto;
  padding:0;
- align-self:start;
+ align-self:end;
  transition: transorm .2s linear;
 }
 .slogan--ul {
@@ -959,7 +959,6 @@ a {
 .frame-v {
  flex:1 1 50%;
  height:60%;
- align-self:flex-start;
  display:flex;
  flex-direction:column;
  justify-content:center;
