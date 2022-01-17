@@ -112,7 +112,25 @@ shch.S2 = function (select, ind, topY) {
         }
     };
 };
-
+shch.Screen = function (id1, id2, id3) {
+    if (id1) this.back = document.querySelector(id1);
+    this.topBord = 0;
+    if (id3) this.toward = document.querySelector(id3);
+    this.bottompBord = 0;
+    this.Scr = document.querySelector(id2);
+    this.switching = function () {
+        if (this.Scr.getBoundingClientRect().top < 0 && !this.topBord) {
+            console.log(this.Scr.getBoundingClientRect().top);
+            this.topBord = 1;
+            this.Scr.classList.add('Screen2--up');
+            if (this.toward) this.toward.classList.add('Screen2--up')
+        }
+        if (this.Scr.getBoundingClientRect().bottom < 0 && !this.bottompBord) {
+            console.log(this.Scr.getBoundingClientRect().bottom);
+            this.bottompBord = 1;
+        }
+    }
+};
 shch.addDetect = function (inter) {
 
     this.checkVision = function (init) {
@@ -342,6 +360,15 @@ shch.LoadFunc = function () {
     shch.Scr22 = new shch.S2('.frame-v', .04, .33 * window.innerHeight);
     shch.Scr22.lifting();
     window.addEventListener(shch.Etype, shch.Scr22.lifting.bind(shch.Scr22), true);
+
+    // shch['#S3'] = new shch.Screen('', '#S3', '#S4');
+    // window.addEventListener(shch.Etype, shch['#S3'].switching.bind(shch['#S3']), false);
+    //
+    // shch['#S4'] = new shch.Screen('#S3', '#S4', '#S5');
+    // window.addEventListener(shch.Etype, shch['#S4'].switching.bind(shch['#S4']), false);
+    //
+    // shch['#S4'] = new shch.Screen('#S4', '#S5', '');
+    // window.addEventListener(shch.Etype, shch['#S4'].switching.bind(shch['#S4']), false);
 
     shch['.topMenu'] = new shch.motion();
     shch.moveIt = new shch.menu(shch['.topMenu'].detect);
