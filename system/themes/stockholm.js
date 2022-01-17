@@ -102,12 +102,12 @@ shch.FPhoto = function (son, startPoint, endPoint) {
     };
 };
 
-shch.S2 = function (select, ind) {
+shch.S2 = function (select, ind, topY) {
     this.papa = document.querySelector(select);
     this.lift = 0;
     this.lifting = function () {
-        if (this.papa.getBoundingClientRect().top > window.innerHeight * .33 && this.papa.getBoundingClientRect().bottom < (window.innerHeight + this.papa.getBoundingClientRect().height)) {
-            this.lift = this.papa.getBoundingClientRect().bottom * ind - window.innerHeight*.05;
+        if (this.papa.getBoundingClientRect().top > topY && this.papa.getBoundingClientRect().bottom < (window.innerHeight + this.papa.getBoundingClientRect().height)) {
+            this.lift = this.papa.getBoundingClientRect().bottom * ind - window.innerHeight * .05;
             this.papa.setAttribute('style', 'transform:translateY(' + this.lift + 'vmin)');
         }
     };
@@ -335,11 +335,11 @@ shch.LoadFunc = function () {
     if ('scroll' in window) shch.Etype = 'scroll';
     if ('pointermove' in window) shch.Etype = 'pointermove';
 
-    shch.Scr21 = new shch.S2('.slogan', .04);
+    shch.Scr21 = new shch.S2('.slogan', .04, -.33 * window.innerHeight);
     shch.Scr21.lifting();
     window.addEventListener(shch.Etype, shch.Scr21.lifting.bind(shch.Scr21), true);
 
-    shch.Scr22 = new shch.S2('.frame-v', .04);
+    shch.Scr22 = new shch.S2('.frame-v', .04, .33 * window.innerHeight);
     shch.Scr22.lifting();
     window.addEventListener(shch.Etype, shch.Scr22.lifting.bind(shch.Scr22), true);
 
