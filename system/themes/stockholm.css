@@ -1150,15 +1150,6 @@ a {
 .whatDo--h2 {
  padding:0
 }
-.id100 {
- transform:translateY(0)
-}
-.id200 {
- transform:translateY(-100%)
-}
-.id300 {
- transform:translateY(-200%)
-}
 .setFixed{
  height: 100vh;
  overflow: hidden;
@@ -1170,10 +1161,14 @@ a {
 }
 .Screen2 {
  height:100%;
- justify-content:center
+ justify-content:center;
+ transition: margin-top .7s linear;
 }
-.Screen2--up {
- transform:translateY(-100%)
+.id200 {
+ margin-top: -100vh !important;
+}
+.id300 {
+ margin-top: -200vh !important;
 }
 .doInfo {
  display:flex;

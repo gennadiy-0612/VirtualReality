@@ -120,39 +120,42 @@ shch.scrollScr.stopIt = 1;
 shch.Screen = function (ids) {
     this.Scr = document.querySelector(ids);
     this.ScrDef = document.querySelector(ids);
-    this.scrollTop = 0;
+    this.scrollTop = 100;
     this.start = 1;
     this.m = new shch.motion();
     this.changeB = function (event) {
         event.preventDefault();
         // if (!shch.scrollScr.stopIt) return true;
         // shch.scrollScr.stopIt = 0;
+        let t = document.querySelector('.Screen2').classList;
         if (event.deltaY < 0) {
             shch.scrollScr.num--;
-            if (shch.scrollScr.num < 1) shch.scrollScr.num = 1;
+            if (shch.scrollScr.num < 2) shch.scrollScr.num = 2;
         }
         if (event.deltaY > 0) {
             shch.scrollScr.num++;
-            if (shch.scrollScr.num > 5) shch.scrollScr.num = 5;
+            if (shch.scrollScr.num > 3) shch.scrollScr.num = 3;
         }
-        window.location.hash = '#id' + shch.scrollScr.num;
-        let pos = document.querySelector('#id' + shch.scrollScr.num).getBoundingClientRect().top - window.scrollY;
-        if (pos) window.scrollTo(0, -pos);
-        let stopIt = function () {
-            shch.scrollScr.stopIt = 1;
-        };
-        setTimeout(stopIt.bind(this), 1000);
+        t.remove('id' + shch.scrollScr.num);
+        t.add('id' + shch.scrollScr.num);
+        // let stopIt = function () {
+        //     shch.scrollScr.stopIt = 1;
+        // };
+        // setTimeout(stopIt.bind(this), 1000);
+        console.log(shch.scrollScr.num)
     };
     this.switching = function (mover) {
-        this.ScrDef.addEventListener('wheel', this.changeB, true);
+        // this.ScrDef.addEventListener('wheel', this.changeB, true);
         if (this.Scr.getBoundingClientRect().top < 0 && this.Scr.getBoundingClientRect().bottom > 0) {
             let m = mover();
             this.m.detect();
             this.Scr.classList.remove('id' + this.scrollTop);
             if (m < 0) this.scrollTop += 100;
             if (m > 0) this.scrollTop -= 100;
-            if (this.scrollTop > 300) this.scrollTop = 300;
-            if (this.scrollTop < 0 || !this.scrollTop) this.scrollTop = 100;
+            if (this.scrollTop <= 100) this.scrollTop = 200;
+            if (this.scrollTop >= 300) this.scrollTop = 300;
+            console.log(this.scrollTop);
+            this.Scr.classList.add('id' + this.scrollTop);
         }
     }
 };
@@ -389,18 +392,18 @@ shch.LoadFunc = function () {
 
     shch['#S2move'] = new shch.motion();
     shch['#S2move'].detect();
-    shch['#id2'] = new shch.Screen('#id2');
+    shch['#id2'] = new shch.Screen('.Screen2');
     window.addEventListener(shch.Etype, shch['#id2'].switching.bind(shch['#id2'], shch['#S2move'].detect), false);
 
-    shch['#S3move'] = new shch.motion();
-    shch['#S3move'].detect();
-    shch['#id3'] = new shch.Screen('#id3');
-    window.addEventListener(shch.Etype, shch['#id3'].switching.bind(shch['#id3'], shch['#S3move'].detect), false);
-
-    shch['#S4move'] = new shch.motion();
-    shch['#S4move'].detect();
-    shch['#id4'] = new shch.Screen('#id4');
-    window.addEventListener(shch.Etype, shch['#id4'].switching.bind(shch['#id4'], shch['#S4move'].detect), false);
+    // shch['#S3move'] = new shch.motion();
+    // shch['#S3move'].detect();
+    // shch['#id3'] = new shch.Screen('#id3');
+    // window.addEventListener(shch.Etype, shch['#id3'].switching.bind(shch['#id3'], shch['#S3move'].detect), false);
+    //
+    // shch['#S4move'] = new shch.motion();
+    // shch['#S4move'].detect();
+    // shch['#id4'] = new shch.Screen('#id4');
+    // window.addEventListener(shch.Etype, shch['#id4'].switching.bind(shch['#id4'], shch['#S4move'].detect), false);
 
     // shch['#S4'] = new shch.Screen('#S4', '#S5', '');
     // window.addEventListener(shch.Etype, shch['#S4'].switching.bind(shch['#S4']), false);
