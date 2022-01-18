@@ -112,25 +112,51 @@ shch.S2 = function (select, ind, topY) {
         }
     };
 };
-shch.Screen = function (id1, id2, id3) {
-    if (id1) this.back = document.querySelector(id1);
-    this.topBord = 0;
-    if (id3) this.toward = document.querySelector(id3);
-    this.bottompBord = 0;
-    this.Scr = document.querySelector(id2);
-    this.switching = function () {
-        if (this.Scr.getBoundingClientRect().top < 0 && !this.topBord) {
-            console.log(this.Scr.getBoundingClientRect().top);
-            this.topBord = 1;
-            this.Scr.classList.add('Screen2--up');
-            if (this.toward) this.toward.classList.add('Screen2--up')
+
+shch.scrollScr = new shch.motion();
+shch.scrollScr.num = 2;
+shch.scrollScr.stopIt = 1;
+
+shch.Screen = function (ids) {
+    this.Scr = document.querySelector(ids);
+    this.ScrDef = document.querySelector(ids);
+    this.scrollTop = 0;
+    this.start = 1;
+    this.m = new shch.motion();
+    this.changeB = function (event) {
+        event.preventDefault();
+        // if (!shch.scrollScr.stopIt) return true;
+        // shch.scrollScr.stopIt = 0;
+        if (event.deltaY < 0) {
+            shch.scrollScr.num--;
+            if (shch.scrollScr.num < 1) shch.scrollScr.num = 1;
         }
-        if (this.Scr.getBoundingClientRect().bottom < 0 && !this.bottompBord) {
-            console.log(this.Scr.getBoundingClientRect().bottom);
-            this.bottompBord = 1;
+        if (event.deltaY > 0) {
+            shch.scrollScr.num++;
+            if (shch.scrollScr.num > 5) shch.scrollScr.num = 5;
+        }
+        window.location.hash = '#id' + shch.scrollScr.num;
+        let pos = document.querySelector('#id' + shch.scrollScr.num).getBoundingClientRect().top - window.scrollY;
+        if (pos) window.scrollTo(0, -pos);
+        let stopIt = function () {
+            shch.scrollScr.stopIt = 1;
+        };
+        setTimeout(stopIt.bind(this), 1000);
+    };
+    this.switching = function (mover) {
+        this.ScrDef.addEventListener('wheel', this.changeB, true);
+        if (this.Scr.getBoundingClientRect().top < 0 && this.Scr.getBoundingClientRect().bottom > 0) {
+            let m = mover();
+            this.m.detect();
+            this.Scr.classList.remove('id' + this.scrollTop);
+            if (m < 0) this.scrollTop += 100;
+            if (m > 0) this.scrollTop -= 100;
+            if (this.scrollTop > 300) this.scrollTop = 300;
+            if (this.scrollTop < 0 || !this.scrollTop) this.scrollTop = 100;
         }
     }
 };
+
 shch.addDetect = function (inter) {
 
     this.checkVision = function (init) {
@@ -361,12 +387,21 @@ shch.LoadFunc = function () {
     shch.Scr22.lifting();
     window.addEventListener(shch.Etype, shch.Scr22.lifting.bind(shch.Scr22), true);
 
-    // shch['#S3'] = new shch.Screen('', '#S3', '#S4');
-    // window.addEventListener(shch.Etype, shch['#S3'].switching.bind(shch['#S3']), false);
-    //
-    // shch['#S4'] = new shch.Screen('#S3', '#S4', '#S5');
-    // window.addEventListener(shch.Etype, shch['#S4'].switching.bind(shch['#S4']), false);
-    //
+    shch['#S2move'] = new shch.motion();
+    shch['#S2move'].detect();
+    shch['#id2'] = new shch.Screen('#id2');
+    window.addEventListener(shch.Etype, shch['#id2'].switching.bind(shch['#id2'], shch['#S2move'].detect), false);
+
+    shch['#S3move'] = new shch.motion();
+    shch['#S3move'].detect();
+    shch['#id3'] = new shch.Screen('#id3');
+    window.addEventListener(shch.Etype, shch['#id3'].switching.bind(shch['#id3'], shch['#S3move'].detect), false);
+
+    shch['#S4move'] = new shch.motion();
+    shch['#S4move'].detect();
+    shch['#id4'] = new shch.Screen('#id4');
+    window.addEventListener(shch.Etype, shch['#id4'].switching.bind(shch['#id4'], shch['#S4move'].detect), false);
+
     // shch['#S4'] = new shch.Screen('#S4', '#S5', '');
     // window.addEventListener(shch.Etype, shch['#S4'].switching.bind(shch['#S4']), false);
 
