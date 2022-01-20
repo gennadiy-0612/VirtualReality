@@ -122,39 +122,18 @@ shch.Screen = function (ids) {
     this.ScrDef = document.querySelector(ids);
     this.scrollTop = 100;
     this.start = 1;
-    this.m = new shch.motion();
     this.changeB = function (event) {
-        event.preventDefault();
-        // if (!shch.scrollScr.stopIt) return true;
-        // shch.scrollScr.stopIt = 0;
-        let t = document.querySelector('.Screen2').classList;
-        if (event.deltaY < 0) {
-            shch.scrollScr.num--;
-            if (shch.scrollScr.num < 2) shch.scrollScr.num = 2;
+        function ff() {
+            // event.preventDefault();
+            console.log(';;;')
         }
-        if (event.deltaY > 0) {
-            shch.scrollScr.num++;
-            if (shch.scrollScr.num > 3) shch.scrollScr.num = 3;
-        }
-        t.remove('id' + shch.scrollScr.num);
-        t.add('id' + shch.scrollScr.num);
-        // let stopIt = function () {
-        //     shch.scrollScr.stopIt = 1;
-        // };
-        // setTimeout(stopIt.bind(this), 1000);
-        console.log(shch.scrollScr.num)
+
+        ff();
     };
-    this.switching = function (mover) {
-        // this.ScrDef.addEventListener('wheel', this.changeB, true);
-        if (this.Scr.getBoundingClientRect().top < 0 && this.Scr.getBoundingClientRect().bottom > 0) {
-            let m = mover();
-            this.m.detect();
+    this.switching = function (event) {
+        this.ScrDef.addEventListener('wheel', this.changeB, {passive: true});
+        if (this.Scr.getBoundingClientRect().top < 0) {
             this.Scr.classList.remove('id' + this.scrollTop);
-            if (m < 0) this.scrollTop += 100;
-            if (m > 0) this.scrollTop -= 100;
-            if (this.scrollTop <= 100) this.scrollTop = 200;
-            if (this.scrollTop >= 300) this.scrollTop = 300;
-            console.log(this.scrollTop);
             this.Scr.classList.add('id' + this.scrollTop);
         }
     }
@@ -384,98 +363,85 @@ shch.LoadFunc = function () {
 
     shch.Scr21 = new shch.S2('.slogan', .04, -.33 * window.innerHeight);
     shch.Scr21.lifting();
-    window.addEventListener(shch.Etype, shch.Scr21.lifting.bind(shch.Scr21), true);
+    window.addEventListener(shch.Etype, shch.Scr21.lifting.bind(shch.Scr21), {passive: true});
 
     shch.Scr22 = new shch.S2('.frame-v', .04, .33 * window.innerHeight);
     shch.Scr22.lifting();
-    window.addEventListener(shch.Etype, shch.Scr22.lifting.bind(shch.Scr22), true);
+    window.addEventListener(shch.Etype, shch.Scr22.lifting.bind(shch.Scr22), {passive: true});
 
     shch['#S2move'] = new shch.motion();
     shch['#S2move'].detect();
     shch['#id2'] = new shch.Screen('.Screen2');
-    window.addEventListener(shch.Etype, shch['#id2'].switching.bind(shch['#id2'], shch['#S2move'].detect), false);
-
-    // shch['#S3move'] = new shch.motion();
-    // shch['#S3move'].detect();
-    // shch['#id3'] = new shch.Screen('#id3');
-    // window.addEventListener(shch.Etype, shch['#id3'].switching.bind(shch['#id3'], shch['#S3move'].detect), false);
-    //
-    // shch['#S4move'] = new shch.motion();
-    // shch['#S4move'].detect();
-    // shch['#id4'] = new shch.Screen('#id4');
-    // window.addEventListener(shch.Etype, shch['#id4'].switching.bind(shch['#id4'], shch['#S4move'].detect), false);
-
-    // shch['#S4'] = new shch.Screen('#S4', '#S5', '');
-    // window.addEventListener(shch.Etype, shch['#S4'].switching.bind(shch['#S4']), false);
+    window.addEventListener('wheel', shch['#id2'].switching.bind(shch['#id2']), {passive: true});
 
     shch['.topMenu'] = new shch.motion();
     shch.moveIt = new shch.menu(shch['.topMenu'].detect);
-    window.addEventListener(shch.Etype, shch.moveIt.menuStick.bind(shch.moveIt), false);
+    window.addEventListener(shch.Etype, shch.moveIt.menuStick.bind(shch.moveIt), {passive: true});
 
     shch['.TGI2'] = new shch.FPhoto('.TGI2', 0, 1200);
     shch['.TGI2'].lightUp();
-    window.addEventListener(shch.Etype, shch['.TGI2'].lightUp.bind(shch['.TGI2']), true);
+    window.addEventListener(shch.Etype, shch['.TGI2'].lightUp.bind(shch['.TGI2']), {passive: true});
 
     shch['.topGlasses'] = new shch.FPhoto('.topGlasses', 0, 360);
     shch['.topGlasses'].lift();
-    window.addEventListener(shch.Etype, shch['.topGlasses'].lift.bind(shch['.topGlasses']), true);
+    window.addEventListener(shch.Etype, shch['.topGlasses'].lift.bind(shch['.topGlasses']), {passive: true});
 
     shch['.opportunity'] = new shch.manipulated('.opportunity', 400, 1500, 'OpacityTrans');
     shch['.opportunity'].GO();
     if (window.scrollY < 400) shch['.opportunity'].infoT.setAttribute('style', 'opacity:1');
-    window.addEventListener(shch.Etype, shch['.opportunity'].GO.bind(shch['.opportunity']), true);
+    window.addEventListener(shch.Etype, shch['.opportunity'].GO.bind(shch['.opportunity']), {passive: true});
 
     shch['.VRw'] = new shch.manipulated('.VRw', 800, 1950, 'OpacityTrans');
     shch['.VRw'].GO();
-    window.addEventListener(shch.Etype, shch['.VRw'].GO.bind(shch['.VRw']), true);
+    window.addEventListener(shch.Etype, shch['.VRw'].GO.bind(shch['.VRw']), {passive: true});
 
     shch['.RoundBox-1'] = new shch.manipulated('.RoundBox-1', 1200, 2500, 'Rotate', '45', '#ff9f01', 1, .6);
     shch['.RoundBox-1'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-1'].GO.bind(shch['.RoundBox-1']), {passive: true});
 
     shch['.RoundBox-2'] = new shch.manipulated('.RoundBox-2', 1200, 2500, 'Rotate', '190', '#ff4e00', 0, .5);
     shch['.RoundBox-2'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-2'].GO.bind(shch['.RoundBox-2']), {passive: true});
 
     shch['.RoundBox-3'] = new shch.manipulated('.RoundBox-3', 1200, 2500, 'Rotate', '280', '#ce00ff', 0, .5);
     shch['.RoundBox-3'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-3'].GO.bind(shch['.RoundBox-3']), {passive: true});
 
     shch['.RoundBox-4'] = new shch.manipulated('.RoundBox-4', 1200, 2500, 'Rotate', '75', '#ff2f00', 0, .3);
     shch['.RoundBox-4'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-4'].GO.bind(shch['.RoundBox-4']), {passive: true});
 
     shch['.RoundBox-5'] = new shch.manipulated('.RoundBox-5', 1200, 2500, 'Rotate', '66', '#ff2800', 0, .2);
     shch['.RoundBox-5'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-5'].GO.bind(shch['.RoundBox-5']), {passive: true});
 
     shch['.RoundBox-6'] = new shch.manipulated('.RoundBox-6', 1200, 2500, 'Rotate', '152', '#ff8b00', 0, .7);
     shch['.RoundBox-6'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-6'].GO.bind(shch['.RoundBox-6']), {passive: true});
 
     shch['.RoundBox-7'] = new shch.manipulated('.RoundBox-7', 1200, 2500, 'Rotate', '12', '#e80055', 1, .4);
     shch['.RoundBox-7'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-7'].GO.bind(shch['.RoundBox-7']), {passive: true});
 
     shch['.RoundBox-8'] = new shch.manipulated('.RoundBox-8', 1200, 2500, 'Rotate', '52', '#16e7ff', 0, .4);
     shch['.RoundBox-8'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-8'].GO.bind(shch['.RoundBox-8']), {passive: true});
 
     shch['.RoundBox-9'] = new shch.manipulated('.RoundBox-9', 1200, 2500, 'Rotate', '102', '#c20aa4', 0, 1.25);
     shch['.RoundBox-9'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-9'].GO.bind(shch['.RoundBox-9']), {passive: true});
 
     shch['.RoundBox-10'] = new shch.manipulated('.RoundBox-10', 1200, 2500, 'Rotate', '200', '#5185ff', 0, .3);
     shch['.RoundBox-10'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-10'].GO.bind(shch['.RoundBox-10']), {passive: true});
 
     shch['.RoundBox-11'] = new shch.manipulated('.RoundBox-11', 1200, 2500, 'Rotate', '100', '#00dfe9', 0, .5);
     shch['.RoundBox-11'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-11'].GO.bind(shch['.RoundBox-11']), {passive: true});
 
     shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 1200, 2500, 'Rotate', '111', '#9515ff', 1, .9);
     shch['.RoundBox-12'].GO();
-    window.addEventListener(shch.Etype, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), true);
+    window.addEventListener(shch.Etype, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), {passive: true});
 
     shch.WWD = {};
     shch.WWD.Papa = document.querySelectorAll('.Screen2');

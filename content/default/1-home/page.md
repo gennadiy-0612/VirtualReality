@@ -35,7 +35,7 @@ Language: en
         </div>
     </div>
 </div>
-<div class="firstScreen relative">
+<div id="id1" class="firstScreen relative">
     <header class="topMenu a1440">
         <div class="mainLinks">
             <a class="logoA" href="/"></a>
@@ -45,7 +45,7 @@ Language: en
                 <li class="language"><a class="languageText HeliosExtC" href="#">PL</a></li>
             </ul>
         </div>
-        <a href="#Screen2" title="Demo" class="navy"></a>
+        <a href="#id2" title="Demo" class="navy"></a>
     </header>
     <div class="set a1440">
         <div class="slogan">
@@ -64,7 +64,7 @@ Language: en
                 <div class="play"><img class="triangle" alt="Demo" src="/media/images/img/playButton.svg"></div>
                 <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
             </div>
-            <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/topVideoPoster.webp">
+            <img alt="Demo" class="topPoster" width="1440" height="815" src="/media/images/img/hqdefault.webp">
         </div>
 </div>
 </div>
@@ -73,37 +73,38 @@ Language: en
             <img class="R" alt="Demo" src="/media/images/img/R.svg">
         </div>
     </div>
-<div class="mouseBlock a1440"><a title="title" class="moveScreen Mouse" href="#Screen2"></a></div>
-<section id="Screen2" class="do a1440 Screen2">
+<div class="mouseBlock a1440"><a title="title" class="moveScreen Mouse" href="#id2"></a></div>
+<div class="setFixed">
+<section id="id2" class="id2 do a1440 Screen2">
     <div class="doInfo">
         <div class="doInfoH2 doInfoH21">
-            <h2 class="whatDo upperText Ag48 colorW WhatWeDo">What do we do?</h2>
+            <h2 class="whatDo whatDo--h2 upperText Ag48 colorW WhatWeDo">What do we do?</h2>
         </div>
         <ul class="doLinks doLinksTop" id="doLinks">
-            <li class="doli DoLI1"><a title="title" href="#Screen2" class="Ag24 colorGrey doA doLinksActive">Immersive
+            <li class="doli DoLI1"><a title="title" href="#id2" class="Ag24 colorGrey doA doLinksActive">Immersive
                 Trainings</a></li>
-            <li class="doli DoLI2"><a title="title" href="#Screen2" class="colorGrey doA Ag24">Realistic
+            <li class="doli DoLI2"><a title="title" href="#id2" class="colorGrey doA Ag24">Realistic
                 Simulations</a></li>
-            <li class="doli DoLI3"><a title="title" href="#Screen2" class="colorGrey doA Ag24">Aptitude Testing</a>
+            <li class="doli DoLI3"><a title="title" href="#id2" class="colorGrey doA Ag24">Aptitude Testing</a>
             </li>
         </ul>
     </div>
     <div class="doImages FromSmall">
         <ul class="whatDid">
             <li class="whatDidWe whatDidWeAct" id="whatDid1">
-                <a class="ImgA" title="t" href="#Screen2">
+                <a class="ImgA" title="t" href="#id2">
                     <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo"
                          src="/media/images/img/WhatDoWeDo1.png">
                 </a>
             </li>
             <li class="whatDidWe" id="whatDid2">
-                <a class="ImgA" title="t" href="#Screen2">
+                <a class="ImgA" title="t" href="#id2">
                     <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo"
                          src="/media/images/img/WhatDoWeDo2.png">
                 </a>
             </li>
             <li class="whatDidWe" id="whatDid3">
-                <a class="ImgA" title="t" href="#Screen2">
+                <a class="ImgA" title="t" href="#id2">
                     <img class="w100percents WhatDoImg" width="1438" height="814" alt="Demo"
                          src="/media/images/img/WhatDoWeDo3.png">
                 </a>
@@ -111,22 +112,22 @@ Language: en
         </ul>
     </div>
 </section>
-<section class="Screen3 Slides">
+<section id="id3" class="id3 Screen3 Slides">
     <div class="doInfoH2">
-        <h2 id="ListPro" class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
+        <h2 class="whatDo upperText Ag48 colorW WhatWeDo">Our projects</h2>
     </div>
     <ul class="doLinks doLinks-project WhatWeDo">
-        <li class="doli doli-projects"><a title="title" href="#ListPro"
+        <li class="doli doli-projects"><a title="title" href="#id3"
                                           class="colorGrey Ag24 doA doA-project doLinksActive DoAPro cursorPoint">safety</a>
         </li>
-        <li class="doli doli-projects"><a title="title" href="#ListPro"
+        <li class="doli doli-projects"><a title="title" href="#id3"
                                           class="colorGrey doA doA-project DoAPro Ag24 cursorPoint">defense</a></li>
-        <li class="doli doli-projects"><a title="title" href="#ListPro"
+        <li class="doli doli-projects"><a title="title" href="#id3"
                                           class="colorGrey doA doA-project DoAPro Ag24 cursorPoint">your project</a>
         </li>
     </ul>
     <div id="outSlide" class="outSlide">
-        <a title="title" class="outSlideLeft arrowDirectionOut" href="#ListPro">
+        <a title="title" class="outSlideLeft arrowDirectionOut" href="#id3">
             <img class="arrowDirectionOut OutL" width="94" height="94" alt="arrowLeftIn"
                  src="/media/images/img/arrowLeftOut.svg">
         </a>
@@ -147,15 +148,15 @@ Language: en
                         Education and examination modes ...
                     </li>
                 </ul>
-                <a title="title" href="#ListPro" class="GoTo colorW Ag14 lineHeight30 upperText">Learn more</a>
+                <a title="title" href="#id3" class="GoTo colorW Ag14 lineHeight30 upperText">Learn more</a>
             </div>
             <div class="outSlideSet">
                 <div class="SlideSetIn relative">
-                    <a class="inLinkLeft inLink" title="title" href="#ListPro">
+                    <a class="inLinkLeft inLink" title="title" href="#id3">
                         <img class="arrowDirectionIn arrowLeftIn cursorPoint hoverBigger" alt="arrowLeftIn"
                              width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
                     </a>
-                    <a class="inLinkRight inLink" title="title" href="#ListPro">
+                    <a class="inLinkRight inLink" title="title" href="#id3">
                         <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn"
                              width="41" height="41" src="/media/images/img/arrowRightIn.svg">
                     </a>
@@ -197,15 +198,15 @@ Language: en
                         Education and examination modes ...
                     </li>
                 </ul>
-                <a title="title" href="#ListPro" class="GoTo colorW Ag14 lineHeight30 upperText">learn more</a>
+                <a title="title" href="#id3" class="GoTo colorW Ag14 lineHeight30 upperText">learn more</a>
             </div>
             <div class="outSlideSet">
                 <div class="SlideSetIn relative">
-                    <a class="inLinkLeft inLink" title="title" href="#ListPro">
+                    <a class="inLinkLeft inLink" title="title" href="#id3">
                         <img class="arrowDirectionIn arrowLeftIn cursorPoint hoverBigger" alt="arrowLeftIn"
                              width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
                     </a>
-                    <a class="inLinkRight inLink" title="title" href="#ListPro">
+                    <a class="inLinkRight inLink" title="title" href="#id3">
                         <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn"
                              width="41" height="41" src="/media/images/img/arrowRightIn.svg">
                     </a>
@@ -247,15 +248,15 @@ Language: en
                         Education and examination modes ...
                     </li>
                 </ul>
-                <a title="title" href="#ListPro" class="GoTo colorW Ag14 lineHeight30 upperText">learn more</a>
+                <a title="title" href="#id3" class="GoTo colorW Ag14 lineHeight30 upperText">learn more</a>
             </div>
             <div class="outSlideSet">
                 <div class="SlideSetIn relative">
-                    <a class="inLinkLeft inLink" title="title" href="#ListPro">
+                    <a class="inLinkLeft inLink" title="title" href="#id3">
                         <img class="arrowDirectionIn arrowLeftIn cursorPoint hoverBigger" alt="arrowLeftIn"
                              width="41" height="41" src="/media/images/img/arrowLeftIn.svg">
                     </a>
-                    <a class="inLinkRight inLink" title="title" href="#ListPro">
+                    <a class="inLinkRight inLink" title="title" href="#id3">
                         <img class="arrowDirectionIn arrowRightIn cursorPoint hoverBigger" alt="arrowRightIn"
                              width="41" height="41" src="/media/images/img/arrowRightIn.svg">
                     </a>
@@ -280,12 +281,12 @@ Language: en
                 </div>
             </div>
         </div>
-        <a title="title" class="outSlideRight arrowDirectionOut" href="#ListPro">
+        <a title="title" class="outSlideRight arrowDirectionOut" href="#id3">
             <img class="arrowDirectionOut OutR" alt="arrowRightIn" src="/media/images/img/arrowRightOut.svg">
         </a>
     </div>
 </section>
-<div class="Digits">
+<div id="id4" class="id4 Digits">
     <section id="S4" class="WhyVR horizonLine">
         <div class="a1440 DigitsScreen">
             <h2 class="WhyVRH2 upperText Ag48 colorW">why vr?</h2>
@@ -350,8 +351,9 @@ Language: en
         </div>
     </section>
 </div>
-<div class="faceGlasses">
-    <section id="S5" class="a1440 WhoWe horizonLine horizonLineWhoWe">
+</div>
+<div id="id5" class="faceGlasses">
+    <section class="a1440 WhoWe horizonLine horizonLineWhoWe">
         <div class="leftInfo WhoWeH2Left">
             <h2 class="whyWork upperText Ag48 colorW">Why to work with us?</h2>
             <h3 class="colorW Ag24 upperText WhoWeH3">We offer you more than an IT firm does:</h3>

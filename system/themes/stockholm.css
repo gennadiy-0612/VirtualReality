@@ -1162,13 +1162,6 @@ a {
 .Screen2 {
  height:100%;
  justify-content:center;
- transition: margin-top .7s linear;
-}
-.id200 {
- margin-top: -100vh !important;
-}
-.id300 {
- margin-top: -200vh !important;
 }
 .doInfo {
  display:flex;
@@ -1511,7 +1504,7 @@ a {
 }
 .faceGlasses {
  max-width:1920px;
- margin:-90px auto;
+ margin:0 auto;
  padding:60px 0;
  background:url(img/VRvision.png) 44.5% 73.9% no-repeat;
  background-size:53%
