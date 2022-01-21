@@ -113,29 +113,39 @@ shch.S2 = function (select, ind, topY) {
     };
 };
 
-shch.scrollScr = new shch.motion();
-shch.scrollScr.num = 2;
-shch.scrollScr.stopIt = 1;
+function ttt(e) {
+    e.preventDefault();
+}
+
+function ttt1(e) {
+    console.log('ttt')
+    e.returnValue = true;
+}
 
 shch.Screen = function (ids) {
     this.Scr = document.querySelector(ids);
-    this.ScrDef = document.querySelector(ids);
-    this.scrollTop = 100;
-    this.start = 1;
-    this.changeB = function (event) {
-        function ff() {
-            // event.preventDefault();
-            console.log(';;;')
+    this.bodie = document.querySelector('body');
+    this.start = 2;
+    this.switching = function (event) {
+        this.bodie.addEventListener('wheel', ttt, {passive: false})
+        // if (this.Scr.getBoundingClientRect().top < 0) {
+        //     this.start++;
+        //     if (this.start > 4) this.start = 4;
+        //     // document.querySelector('#id' + this.start).classList.add('id' + this.start);
+        //
+        function myGreeting() {
+            console.log(this);
+            document.addEventListener('wheel', ttt1, {passive: true})
+            console.log('eee')
         }
 
-        ff();
-    };
-    this.switching = function (event) {
-        this.ScrDef.addEventListener('wheel', this.changeB, {passive: true});
-        if (this.Scr.getBoundingClientRect().top < 0) {
-            this.Scr.classList.remove('id' + this.scrollTop);
-            this.Scr.classList.add('id' + this.scrollTop);
+        const myTimeout = setTimeout(myGreeting, 1000);
+
+        function myStopFunction() {
+            clearTimeout(myTimeout);
         }
+
+        // }
     }
 };
 

@@ -1150,10 +1150,6 @@ a {
 .whatDo--h2 {
  padding:0
 }
-.setFixed{
- height: 100vh;
- overflow: hidden;
-}
 .Screen2,
 .doInfo {
  display:flex;
