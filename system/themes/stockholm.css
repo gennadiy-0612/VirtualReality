@@ -1111,7 +1111,10 @@ a {
 }
 .topPoster {
  object-fit:cover;
- width:80%
+ width:80%;
+}
+.topPoster-hide{
+ opacity: 0;
 }
 .mouseBlock {
  padding:0 20px;
