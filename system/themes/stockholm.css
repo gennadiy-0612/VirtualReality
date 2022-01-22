@@ -1112,6 +1112,7 @@ a {
 .topPoster {
  object-fit:cover;
  width:80%;
+ transition: opacity .7s linear;
 }
 .topPoster-hide{
  opacity: 0;
