@@ -414,7 +414,7 @@ shch.LoadFunc = function () {
 
     shch.playIt = function (){
         document.querySelector(".loadVideo").innerHTML ='<iframe class=\"iframe-hide iframe\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7lBF-VLundY?autoplay=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>'
-        document.querySelector(".loadVideo").classList.add('topPoster-hide');
+        document.querySelector(".topPoster").classList.add('topPoster-hide');
     };
     document.querySelector('.play').addEventListener('click', shch.playIt, {passive: true});
 
