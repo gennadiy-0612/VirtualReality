@@ -1070,7 +1070,7 @@ a {
  flex-direction:column;
  bottom:0;
  z-index:0;
- transition: transform .7s linear;
+
 }
 .play:hover{
  transform: scale(1.1);
@@ -1082,7 +1082,8 @@ a {
  max-height:140px;
  border:2px solid #fff;
  border-radius:50%;
- box-shadow:0 0 2px #000
+ box-shadow:0 0 2px #000;
+ transition: transform .25s linear;
 }
 .playButton {
  margin-left:20px
