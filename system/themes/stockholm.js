@@ -413,7 +413,7 @@ shch.LoadFunc = function () {
     window.addEventListener(shch.Etype, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), {passive: true});
 
     shch.playIt = function (){
-        document.querySelector(".loadVideo").innerHTML ='<iframe class=\"iframe-hide iframe\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7lBF-VLundY?autoplay=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>'
+        document.querySelector(".loadVideo").innerHTML ='<iframe class=\"iframe\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7lBF-VLundY?autoplay=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>'
         document.querySelector(".topPoster").classList.add('topPoster-hide');
     };
     document.querySelector('.play').addEventListener('click', shch.playIt, {passive: true});
