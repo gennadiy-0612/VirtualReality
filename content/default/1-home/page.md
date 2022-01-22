@@ -60,6 +60,8 @@ Language: en
 <div class="frame-v">
                 <h3 class="colorW Ag24 upperText WhoWeH3 WhoWeH3-video">A demo worth 1000 words:</h3>
         <div class="video">
+<div class="loadVideo"></div>
+
             <div class="playPanel">
                 <div class="play"><img class="triangle" alt="Demo" src="/media/images/img/playButton.svg"></div>
                 <p class="watch HeliosExtC">WATCH FULL VIDEO</p>
@@ -74,7 +76,6 @@ Language: en
         </div>
     </div>
 <div class="mouseBlock a1440"><a title="title" class="moveScreen Mouse" href="#id2"></a></div>
-<div class="setFixed">
 <section id="id2" class="id2 do a1440 Screen2">
     <div class="doInfo">
         <div class="doInfoH2 doInfoH21">
@@ -350,7 +351,6 @@ Language: en
             </div>
         </div>
     </section>
-</div>
 </div>
 <div id="id5" class="faceGlasses">
     <section class="a1440 WhoWe horizonLine horizonLineWhoWe">

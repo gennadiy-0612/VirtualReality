@@ -113,42 +113,6 @@ shch.S2 = function (select, ind, topY) {
     };
 };
 
-function ttt(e) {
-    e.preventDefault();
-}
-
-function ttt1(e) {
-    console.log('ttt')
-    e.returnValue = true;
-}
-
-shch.Screen = function (ids) {
-    this.Scr = document.querySelector(ids);
-    this.bodie = document.querySelector('body');
-    this.start = 2;
-    this.switching = function (event) {
-        this.bodie.addEventListener('wheel', ttt, {passive: false})
-        // if (this.Scr.getBoundingClientRect().top < 0) {
-        //     this.start++;
-        //     if (this.start > 4) this.start = 4;
-        //     // document.querySelector('#id' + this.start).classList.add('id' + this.start);
-        //
-        function myGreeting() {
-            console.log(this);
-            document.addEventListener('wheel', ttt1, {passive: true})
-            console.log('eee')
-        }
-
-        const myTimeout = setTimeout(myGreeting, 1000);
-
-        function myStopFunction() {
-            clearTimeout(myTimeout);
-        }
-
-        // }
-    }
-};
-
 shch.addDetect = function (inter) {
 
     this.checkVision = function (init) {
@@ -379,11 +343,6 @@ shch.LoadFunc = function () {
     shch.Scr22.lifting();
     window.addEventListener(shch.Etype, shch.Scr22.lifting.bind(shch.Scr22), {passive: true});
 
-    shch['#S2move'] = new shch.motion();
-    shch['#S2move'].detect();
-    shch['#id2'] = new shch.Screen('.Screen2');
-    window.addEventListener('wheel', shch['#id2'].switching.bind(shch['#id2']), {passive: true});
-
     shch['.topMenu'] = new shch.motion();
     shch.moveIt = new shch.menu(shch['.topMenu'].detect);
     window.addEventListener(shch.Etype, shch.moveIt.menuStick.bind(shch.moveIt), {passive: true});
@@ -452,6 +411,11 @@ shch.LoadFunc = function () {
     shch['.RoundBox-12'] = new shch.manipulated('.RoundBox-12', 1200, 2500, 'Rotate', '111', '#9515ff', 1, .9);
     shch['.RoundBox-12'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), {passive: true});
+
+    shch.playIt = function (){
+        document.querySelector(".loadVideo").innerHTML ='<iframe class=\"iframe-hide iframe\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7lBF-VLundY?autoplay=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>'
+    };
+    document.querySelector('.play').addEventListener('click', shch.playIt, {passive: true});
 
     shch.WWD = {};
     shch.WWD.Papa = document.querySelectorAll('.Screen2');
