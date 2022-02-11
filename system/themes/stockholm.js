@@ -208,7 +208,7 @@ shch.BS = function (cs, ps, papa) {
     }
 };
 
-shch.schema = function (inform) {
+shch.schemaH = function (inform) {
     this.elem = document.querySelector(inform);
     this.leftLine = function () {
         this.persentOpacity = window.innerHeight / 100;
@@ -217,6 +217,27 @@ shch.schema = function (inform) {
         this.persentGoneAll = Math.abs(parseInt(this.persentGone)) / 100;
         if (this.topHide < 0 && this.persentGoneAll > 0 && this.persentGoneAll < 1.01) {
             this.elem.setAttribute('style', 'opacity:' + this.persentGoneAll);
+        }
+    }
+};
+
+shch.stepsSet = function () {
+    this.main = document.querySelector('.BackWords');
+    this.tag = document.querySelector('.StepsSet');
+    this.iteme = document.querySelectorAll('.stepsItem');
+    this.stopIt = function () {
+        let main = this.main.getBoundingClientRect().top;
+        let top = this.tag.getBoundingClientRect().top;
+        let differ = main - top;
+        console.clear();
+        console.log(differ);
+        if (main < 0) {
+            this.iteme[0].classList.add('stepsItem-hide');
+            this.tag.classList.add('StepsSetFixed');
+        }
+        if (main > 0) {
+            this.iteme[0].classList.remove('stepsItem-hide');
+            this.tag.classList.remove('StepsSetFixed');
         }
     }
 };
@@ -282,10 +303,6 @@ shch.watch = {
         selector: '.WhoWeOlRight',
         animationName: 'WhoWeOlRightAnim'
     },
-    screen16: {
-        selector: '.Approach',
-        animationName: 'ApproachAnim'
-    },
     screen18: {
         selector: '.Partner1',
         animationName: 'Partner1Anim'
@@ -310,30 +327,6 @@ shch.watch = {
         selector: '.Partner6',
         animationName: 'Partner6Anim'
     },
-    screen24: {
-        selector: '.Rotate',
-        animationName: 'RotateAnim'
-    },
-    screen25: {
-        selector: '.StepToRight',
-        animationName: 'StepToRightAnim'
-    },
-    screen26: {
-        selector: '.StepToLeft',
-        animationName: 'StepToLeftAnim'
-    },
-    screen27: {
-        selector: '.check-icon',
-        animationName: 'birdAnim'
-    },
-    screen28: {
-        selector: '.success-checkmark',
-        animationName: 'birdAnim'
-    },
-    screen29: {
-        selector: '.icon-line',
-        animationName: 'birdAnim'
-    },
     screen30: {
         selector: '.mobile7',
         animationName: 'mobile7Anim'
@@ -348,11 +341,14 @@ shch.LoadFunc = function () {
     if ('scroll' in window) shch.Etype = 'scroll';
     if ('pointermove' in window) shch.Etype = 'pointermove';
 
-    shch.schema1 = new shch.schema('.approachH2');
+    shch.schema1 = new shch.schemaH('.approachH2');
     window.addEventListener(shch.Etype, shch.schema1.leftLine.bind(shch.schema1), {passive: true});
 
-    shch.schema2 = new shch.schema('.approachH3');
+    shch.schema2 = new shch.schemaH('.approachH3');
     window.addEventListener(shch.Etype, shch.schema2.leftLine.bind(shch.schema2), {passive: true});
+
+    shch.steps1 = new shch.stepsSet();
+    window.addEventListener(shch.Etype, shch.steps1.stopIt.bind(shch.steps1), {passive: true});
 
     shch.Scr21 = new shch.S2('.slogan', .04, -.33 * window.innerHeight);
     shch.Scr21.lifting();
@@ -523,9 +519,6 @@ shch.LoadFunc = function () {
     shch.watch1521 = new shch.addDetect(.5);
     shch.watch1521.checkVision(shch.watch.screen1521);
 
-    shch.watch16 = new shch.addDetect(.1);
-    shch.watch16.checkVision(shch.watch.screen16);
-
     shch.watch18 = new shch.addDetect(.1);
     shch.watch18.checkVision(shch.watch.screen18);
 
@@ -543,24 +536,6 @@ shch.LoadFunc = function () {
 
     shch.watch23 = new shch.addDetect(.1);
     shch.watch23.checkVision(shch.watch.screen23);
-
-    shch.watch24 = new shch.addDetect(.1);
-    shch.watch24.checkVision(shch.watch.screen24);
-
-    shch.watch25 = new shch.addDetect(.5);
-    shch.watch25.checkVision(shch.watch.screen25);
-
-    shch.watch26 = new shch.addDetect(.5);
-    shch.watch26.checkVision(shch.watch.screen26);
-
-    shch.watch27 = new shch.addDetect(.5);
-    shch.watch27.checkVision(shch.watch.screen27);
-
-    shch.watch28 = new shch.addDetect(.5);
-    shch.watch28.checkVision(shch.watch.screen28);
-
-    shch.watch29 = new shch.addDetect(.5);
-    shch.watch29.checkVision(shch.watch.screen29);
 
     shch.watch30 = new shch.addDetect(.1);
     shch.watch30.checkVision(shch.watch.screen30);

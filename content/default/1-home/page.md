@@ -394,28 +394,21 @@ Language: en
 <div class="BackWords">
     <section id="S6" class="a1440 relative">
         <div class="approach horizonLine">
-            <div class="approachOl Approach">
+            <div class="approachOl">
                 <h2 class="approachH2 upperText Ag48 colorW">Our approach?</h2>
             </div>
             <div class="stepPartners">
                 <h3 class="colorW Ag24 upperText WhoWeH3 approachH3">Phases and output:</h3>
-                <div class="steps Step">
+                <div class="steps StepsSet">
+                <div class="stepsIn">
                     <div class="stepsItem">
 <span class="roadmap-item__title Ag18 colorW">
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span></span>
                         <div class="one stepsInfo StepToLeft">
-                            <p class="Ag18 stepsP colorGrey7">Understanding of your needs <span
-                                    class="arrowDir arrow">→</span></p>
+                            <p class="Ag18 stepsP colorGrey7">Understanding of your needs</p>
+                              <img class="arrowDown" alt="alt" src="/media/images/img/arrowLeftIn.svg"/>
                             <p class="Ag18 stepsP colorW mobile7 Desktop7">Defined challenge</p>
-                            <div class="success-checkmark">
-                                <div class="check-icon Rotate">
-                                    <span class="icon-line line-tip"></span>
-                                    <span class="icon-line line-long"></span>
-                                    <div class="icon-circle"></div>
-                                    <div class="icon-fix"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="stepsItem">
@@ -423,18 +416,9 @@ Language: en
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span></span>
                         <div class="two stepsInfo StepToRight">
-                            <p class="Ag18 stepsP colorGrey7">Solution options proposal <span
-                                    class="arrowDir arrow">→</span></p>
-
+                            <p class="Ag18 stepsP colorGrey7">Solution options proposal</p>
+                              <img class="arrowDown" alt="alt" src="/media/images/img/arrowLeftIn.svg"/>
                             <p class="Ag18 stepsP colorW mobile7 Desktop7">Requirements specification </p>
-                            <div class="success-checkmark">
-                                <div class="check-icon">
-                                    <span class="icon-line line-tip"></span>
-                                    <span class="icon-line line-long"></span>
-                                    <div class="icon-circle"></div>
-                                    <div class="icon-fix"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="stepsItem">
@@ -442,18 +426,9 @@ Language: en
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span></span>
                         <div class="three stepsInfo StepToLeft">
-                            <p class="Ag18 stepsP colorGrey7">Cost & time estimation planning <span
-                                    class="arrowDir arrow">→</span></p>
-
+                            <p class="Ag18 stepsP colorGrey7">Cost & time estimation planning</p>
+                              <img class="arrowDown" alt="alt" src="/media/images/img/arrowLeftIn.svg"/>
                             <p class="Ag18 stepsP colorW mobile7 Desktop7">Delivery planning</p>
-                            <div class="success-checkmark">
-                                <div class="check-icon">
-                                    <span class="icon-line line-tip"></span>
-                                    <span class="icon-line line-long"></span>
-                                    <div class="icon-circle"></div>
-                                    <div class="icon-fix"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="stepsItem">
@@ -461,18 +436,9 @@ Language: en
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span></span>
                         <div class="four stepsInfo StepToRight">
-                            <p class="Ag18 stepsP colorGrey7">Development with regular reviews <span
-                                    class="arrowDir arrow">→</span></p>
-
+                            <p class="Ag18 stepsP colorGrey7">Development with regular reviews</p>
+                              <img class="arrowDown" alt="alt" src="/media/images/img/arrowLeftIn.svg"/>
                             <p class="Ag18 stepsP colorW mobile7 Desktop7">Product versions </p>
-                            <div class="success-checkmark">
-                                <div class="check-icon">
-                                    <span class="icon-line line-tip"></span>
-                                    <span class="icon-line line-long"></span>
-                                    <div class="icon-circle"></div>
-                                    <div class="icon-fix"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="stepsItem">
@@ -480,20 +446,12 @@ Language: en
 <span class="roadmap-item__title-decor-top"></span>
 <span class="roadmap-item__title-decor-bottom"></span></span>
                         <div class="five stepsInfo StepToLeft">
-                            <p class="Ag18 stepsP colorGrey7">Final review & evaluation <span
-                                    class="arrowDir arrow">→</span></p>
-
+                            <p class="Ag18 stepsP colorGrey7">Final review & evaluation</p>
+                              <img class="arrowDown" alt="alt" src="/media/images/img/arrowLeftIn.svg"/>
                             <p class="Ag18 stepsP colorW mobile7 Desktop7">Final product & support</p>
-                            <div class="success-checkmark">
-                                <div class="check-icon">
-                                    <span class="icon-line line-tip"></span>
-                                    <span class="icon-line line-long"></span>
-                                    <div class="icon-circle"></div>
-                                    <div class="icon-fix"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div class="partnersSet">
                     <div class="partnersSetTop partnersSetH2 horizonLine horizonLinePartners">
