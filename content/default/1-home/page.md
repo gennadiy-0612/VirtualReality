@@ -289,7 +289,7 @@ Language: en
 </section>
 <div id="id4" class="id4 Digits">
     <section id="S4" class="WhyVR horizonLine">
-        <div class="a1440 DigitsScreen">
+        <div class="a1440">
             <h2 class="WhyVRH2 upperText Ag48 colorW">why vr?</h2>
             <ul class="digits">
                 <li class="digitsLi digits1 Dig1">

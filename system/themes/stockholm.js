@@ -208,6 +208,19 @@ shch.BS = function (cs, ps, papa) {
     }
 };
 
+shch.schema = function (inform) {
+    this.elem = document.querySelector(inform);
+    this.leftLine = function () {
+        this.persentOpacity = window.innerHeight / 100;
+        this.topHide = this.elem.getBoundingClientRect().top - window.innerHeight;
+        this.persentGone = this.topHide / this.persentOpacity;
+        this.persentGoneAll = Math.abs(parseInt(this.persentGone)) / 100;
+        if (this.topHide < 0 && this.persentGoneAll > 0 && this.persentGoneAll < 1.01) {
+            this.elem.setAttribute('style', 'opacity:' + this.persentGoneAll);
+        }
+    }
+};
+
 shch.watch = {
     screenS1: {
         selector: '.FromLeftCorner',
@@ -335,6 +348,12 @@ shch.LoadFunc = function () {
     if ('scroll' in window) shch.Etype = 'scroll';
     if ('pointermove' in window) shch.Etype = 'pointermove';
 
+    shch.schema1 = new shch.schema('.approachH2');
+    window.addEventListener(shch.Etype, shch.schema1.leftLine.bind(shch.schema1), {passive: true});
+
+    shch.schema2 = new shch.schema('.approachH3');
+    window.addEventListener(shch.Etype, shch.schema2.leftLine.bind(shch.schema2), {passive: true});
+
     shch.Scr21 = new shch.S2('.slogan', .04, -.33 * window.innerHeight);
     shch.Scr21.lifting();
     window.addEventListener(shch.Etype, shch.Scr21.lifting.bind(shch.Scr21), {passive: true});
@@ -412,8 +431,8 @@ shch.LoadFunc = function () {
     shch['.RoundBox-12'].GO();
     window.addEventListener(shch.Etype, shch['.RoundBox-12'].GO.bind(shch['.RoundBox-12']), {passive: true});
 
-    shch.playIt = function (){
-        document.querySelector(".loadVideo").innerHTML ='<iframe class=\"iframe\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7lBF-VLundY?autoplay=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>'
+    shch.playIt = function () {
+        document.querySelector(".loadVideo").innerHTML = '<iframe class=\"iframe\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7lBF-VLundY?autoplay=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>'
         document.querySelector(".topPoster").classList.add('topPoster-hide');
     };
     document.querySelector('.play').addEventListener('click', shch.playIt, {passive: true});

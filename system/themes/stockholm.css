@@ -1363,10 +1363,6 @@ a {
  display:block;
  width:100%
 }
-.DigitsScreen {
- margin-bottom:5vh;
- transition:margin-bottom 5s linear
-}
 .DigitsAnim {
  margin-bottom:20vh
 }
@@ -1377,7 +1373,8 @@ a {
  background:url(img/Digits.svg) center center no-repeat;
  background-size:100%;
  position:relative;
- transition:margin-bottom .7s linear
+ transition:margin-bottom .7s linear;
+ height: 100%;
 }
 .WhyVR {
  max-width:1480px;
@@ -1596,6 +1593,16 @@ a {
  background-size:79.6%;
  background-position-x:0;
  padding-bottom:11px
+}
+.DigitsFixed{
+ position: fixed;
+ left: 0;
+ top: 100%;
+ right: 0;
+ bottom: 0;
+ background-color: #000000;
+ margin: auto;
+ z-index: 1;
 }
 .approach {
  display:flex;
